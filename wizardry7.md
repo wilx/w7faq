@@ -1,0 +1,5400 @@
+% A random Crusaders of the Dark Savant FAQ
+% Written by:  Ravashack
+% v. 1.95a
+
+# Mandatory Copyright information
+
+This file is copyright 2000 by Ravashack, a.k.a. Leo Wang in the non-internet
+world.  If you want to use any of the information here in any form, feel free
+to contact me at <asianfro@hotmail.com> to get my permission--that way I can
+keep better track of who's using it and who isn't.  If I don't reply back,
+then I'm busy at the moment and that the answer to whatever your request is
+is no--never assume that I will automatically answer yes.  Usage of this
+document without my permission violates copyright laws, no matter what you say.
+For an interesting essay on copyright myths by Brad Templeton, take a look at
+
+<http://www.templetons.com/brad/copymyths.html>
+
+and read to your heart's content.
+
+
+# A little "getting to know you" stuff and Contact Info
+
+This here is a FAQ for the game Crusaders of the Dark Savant.  It can also be
+used for people playing Wizardry Gold, which is the same thing with more bugs.
+^_^  It is the first FAQ I have ever made, so feel free to point out the
+mistakes, screw-ups, and suggestions that I'm sure will be in here to me at
+asianfro@hotmail.com.  This email address will ALWAYS be in use unless I update
+this FAQ stating that I have closed this email.  I have problems answering
+email when it is not a normal working weekday however.  (You do the math...)
+
+If you wish to chat with me, I'm on ICQ as Orlandu.  Of course, I'm not just
+going to *give* out my UIN just like that--I want to know who you are before
+I let you add me, which means I'll want an email or two from you to check that
+you aren't the malicious type; I'm getting too much spam to be trusting
+anymore.  If you wish to avoid that hassle, I am also (occasionally) on the
+Galaxynet IRC server as "Rava" or "Ravashack" on weekdays--just login to
+www.galaxynet.org with a browser or use mIRC to connect to a Galaxynet server.
+
+Minor updates such as spelling errors, typos, site additions, etc. will be
+habitually done at <http://www.gamefaqs.com>.  Major updates (such as adding a
+new section or changing the format of the document) will be done to all the
+sites that have this FAQ...or at least the administrator of the site or whoever
+it is that manages the FAQs will be notifed of the update.
+
+Emails asking about cheat codes, editors or about games I have not written a
+FAQ about will go under the Block Sender list and be ignored for the rest of
+time.  If you need to look up something like that, just use a search engine
+like www.google.com and type in your query.
+
+Just so you know, an actual walkthrough of this game *requires* maps.  The game
+is just too big to do it effectively without them.  Because of that, I cannot
+enclose a full length walkthrough until I solve my map problem--otherwise I
+would.  It is currently in the works however.
+
+----
+
+The big appreciative 'Thank You' goes to
+
+Llevram, who decided to help me out on this little venture by looking over my
+pre-born FAQ and suggesting a lot of things--too many to thank him individually
+on each section he suggested.  His site is at: <http://www.softwarespecialties.com/>
+If you really have to cheat and aren't stingy about it, at least take a look at
+the programs he's written for Wizardry 7, even though Wiz7Edit must be bought
+Excellent interface, and the Item Viewer Wiz7Item(a separate program) is more
+accurate than the in-game methods!  Llevram's always there to help you with
+problems if you need him.
+
+The folks on the Software Specialties board for the surprises that pop up
+about the game every few days and so.  You know who you are.  Thanks for
+putting up with me ever since I joined
+
+Sir-Tech Canada, for trying to get Wizardry 8 done even though they are having
+difficulties.  I know you guys will find a way...
+
+D.W. Bradley, for being the brains behind the game.  He's working with a
+different company on a game similar in view to Dark Savant.  If you liked
+Crusaders of the Dark Savant, you'll probably like his upcoming game as it
+seems similar.  Try visiting <http://www.heuristicpark.com>.  (Unfortunately
+it is quite buggy...)
+
+DSimpson a.k.a. ManyMoose, a GameFAQs FAQ writer, for unconsciously planting
+the idea in my head that I should try writing a FAQ a year or so ago.  The
+lengths of his FAQs should only show that there is a wealth of information
+inside
+
+Some of my friends at Panumbra, who reminded me of the existence of this game
+with a few off-topic posts on the webboard.
+
+Anyone who I've actually helped at the game for listening to me, and anyone
+who I've missed. :)
+
+Anyone who sent in a question not covered here.  I appreciate the feedback
+guys.  :)
+
+The folks at various game sites for being interested in my FAQ--especially
+the ones that put it up.
+
+GameFAQs and CJayC, just for being there (and posting this up).
+
+Dallas on the GameFAQs message boards, for taking the time to review this
+FAQ and give pointers about it.
+
+The Ironworks Wizardry 8 board at
+<http://www.ironworksforum.com/ubb/cgi-bin/ultimatebb.cgi>
+for just being a Wizardry 8 board.
+
+Bernice Carter, a nice 40-something year old lady who wishes to point out that
+not all avid gamers are young male "whippersnappers."
+
+Baz, for reminding me about an oversight.
+
+----
+
+
+This FAQ is currently displayed at:
+
+- <http://www.gamefaqs.com/>
+- <http://www.the-spoiler.com/>
+
+If you want to doublecheck where this FAQ should be, go to <http://www.gamefaqs.com>
+and look.  If you want to alert me to someone who may be ripping off my FAQ,
+feel free to drop me a line--I will appreciate it.
+
+
+# Character Creation
+
+## Male vs. Female
+
+What's the difference?  Females, when they start out, get a -2 in Strength, +1
+in Personality, and a +1 in Karma compared to the base statistics given in the
+manual.  Males start out with the base statistics given in the manual
+
+### Males
+
+Perks:
+
+* Classes based on strength are easier to get for males.
+* Males can wear the Cameo Locket
+
+Flaws:
+
+* See benefits of Females
+
+* Cameo Locket is only attainable by importing a party from Bane of the Cosmic
+  Forge or saved game editing
+
+### Females
+
+Perks:
+
+* Classes based on Personality will require 1 less point to get for females,
+  unless it has a strength requirement as well
+* Females can use certain items like Stud-Cuir Bras and Jazeraint Skirts.
+  (Sorry, no cross-dressers in the game.)  Some of these items are the best for
+  the particular class the female may end up in.
+* Females can become Valkyries, which are Lords with less experience point
+  requirements and no guaranteed starting Diplomacy.
+
+Flaws:
+
+* See benefits of Males
+
+* Diamond Ring, one of the better female-only items, must be imported from Bane
+  or edited into the saved game.
+
+### Overall
+
+Use Male characters only if you are importing a game from Bane of the Cosmic
+Forge, if you are rolling up a Fighter-type character or a Psionic, or you
+cheat
+
+Use Female characters whenever you are rolling up a spellcaster and all other
+situations that don't apply to male characters--you don't lose anything out of
+it, and it gives you the option to class change into a Valkyrie later.
+
+## Races
+
+
+Basic Layout:
+
+Name of Race
+
+Race's Stats
+
+List of Perks
+
+List of Flaws
+
+A chart of how many points the race needs to achieve a class
+
+Sample Chart:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Fighter    |  3  |     |     |     |     |     |     |  N   |    3  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+
+Explanations:
+
+* STR – Points towards Strength needed.
+* INT – Points towards Intelligence needed.
+* PIE – Points towards Piety needed.
+* VIT – Points towards Vitality needed.
+* DEX – Points towards Dexterity needed.
+* SPE – Points towards Speed needed.
+* PER – Points towards Personality needed.
+* F?  – Should I use a Female for the class?
+* Y – Yes, it will lower the amount of points needed.
+* – – Doesn't matter
+* N – No, it won't help you in the points.
+
+(Note:  Any class with Y will have point distribution altered to reflect stat
+ changes for female characters)
+
+Total – Total amount of points needed for the class.
+
+Convenient Starting Professions
+
+*  A profession(s) which the race excels at naturally OR
+   A non-basic (not Fighter, Mage, Priest, or Thief) profession that can be
+   achieved with a below average amount of points out of all the races OR
+   A basic profession achievable within 2 points or less
+
+
+### Human
+
+Base Human stats:
+9
+8
+8
+9
+9
+8
+8
+
+Perks:
+
+* No inherent weaknesses to an attack type.
+
+Flaws:
+
+* No inherent resistances to an attack type.
+* Too average.
+* Someone else can fit a class better than they do in most cases
+
+Points needed to meet Class Requirements for Human:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Fighter    |  3  |     |     |     |     |     |     |  N   |    3  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Mage       |     |  4  |     |     |     |     |     |  -   |    4  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Priest     |     |     |  4  |     |     |     |     |  -   |    4  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Thief      |     |     |     |     |  3  |     |     |  -   |    3  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ranger     |  1  |     |     |  2  |  1  |     |     |  N   |    4  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bard       |     |  2  |     |     |  3  |     |  3  |  Y   |    8  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Psionic    |  1  |  6  |     |  5  |     |     |  2  |  N   |   14  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Alchemist  |     |  5  |     |     |  4  |     |     |  -   |    9  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Valkyrie   |  3  |     |  3  |  2  |  1  |  3  |     |  Y   |   12  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bishop     |     |  7  |  7  |     |     |     |     |  -   |   14  |
++------------+-----+-----------+-----+-----+-----+-----+------+-------+
+| Lord       |  3  |  1  |  4  |  3  |     |  1  |  6  |  N   |   18  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Samurai    |  3  |  3  |     |     |  3  |  6  |     |  N   |   15  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Monk       |  4  |     |  5  |     |  1  |  5  |     |  N   |   15  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ninja      |  3  |  2  |  2  |  3  |  3  |  4  |     |  N   |   17  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Thief
+
+* Ranger (don't expect your spell points to come back quickly though)
+
+
+### Elf
+
+Base Elf stats
+7
+10
+10
+7
+9
+9
+8
+
+Perks:
+
+* Higher resistance to sleep spells.
+* Combat-types can take advantage of a Race-specific weapon (Elven Bow).
+* Decent spell point recharge rate.
+
+Flaws:
+
+* Strength- and Vitality-based classes harder to get in the beginning.
+* Race has slightly lower hit points than normal
+
+Suggestions:
+
+* When picking an Elf, pick female unless you fully intend to make it a
+  fighting character
+
+* Go for a spellcasting class
+
+Points needed to meet Class Requirements for Elf:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Fighter    |  5  |     |     |     |     |     |     |  N   |    5  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Mage       |     |  2  |     |     |     |     |     |  -   |    2  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Priest     |     |     |  2  |     |     |     |     |  -   |    2  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Thief      |     |     |     |     |  3  |     |     |  -   |    3  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ranger     |  3  |     |     |  4  |  1  |     |     |  N   |    8  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bard       |     |     |     |     |  3  |     |  3  |  Y   |    6  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Psionic    |  3  |  4  |     |  7  |     |     |  2  |  N   |   16  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Alchemist  |     |  3  |     |     |  4  |     |     |  -   |    7  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Valkyrie   |  5  |     |  1  |  4  |  1  |  2  |     |  Y   |   13  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bishop     |     |  5  |  5  |     |     |     |     |  -   |   10  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Lord       |  5  |     |  2  |  5  |     |     |  6  |  N   |   18  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Samurai    |  5  |  1  |     |  2  |  3  |  5  |     |  N   |   16  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Monk       |  6  |     |  3  |     |  1  |  4  |     |  N   |   14  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ninja      |  5  |     |     |  5  |  3  |  3  |     |  N   |   16  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+
+Convenient Starting Professions
+
+* Mage
+
+* Priest
+
+* Bard
+
+* Alchemist
+
+* Bishop
+
+
+### Dwarf
+
+Base Dwarf stats
+11
+6
+10
+12
+7
+7
+7
+
+Perks:
+
+* Poison resistance
+
+* Magic resistance (i.e. to spells like Lifesteal or Make Wounds)
+
+Flaws:
+
+* Slow.  Don't expect them to go first anytime soon unless you sacrifice
+  all your bonus points towards their Dexterity and Speed.
+
+Points needed to meet Class Requirements for Dwarf:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Fighter    |  1  |     |     |     |     |     |     |  N   |    1  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Mage       |     |  6  |     |     |     |     |     |  -   |    6  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Priest     |     |     |  2  |     |     |     |     |  -   |    2  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Thief      |     |     |     |     |  5  |  1  |     |  -   |    6  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ranger     |     |  2  |     |     |  3  |  1  |  1  |  N   |    7  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bard       |     |  4  |     |     |  5  |  1  |  4  |  Y   |   14  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Psionic    |     |  8  |     |  2  |     |     |  3  |  N   |   13  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Alchemist  |     |  7  |     |     |  6  |     |     |  -   |   13  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Valkyrie   |     |     |  1  |     |  3  |  4  |     |  Y   |    8  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bishop     |     |  9  |  5  |     |     |     |     |  Y   |   14  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Lord       |  1  |  3  |  2  |     |  2  |  2  |  7  |  N   |   17  |
++------------+-----+-----+-----+-----+-----+-----+----+------+-------+
+| Samurai    |  1  |  5  |     |     |  5  |  7  |  1  |  N   |   19  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Monk       |  2  |  2  |  3  |     |  3  |  6  |  1  |  N   |   17  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ninja      |  1  |  4  |     |     |  5  |  5  |     |  N   |   15  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Priest
+
+* Ranger
+
+* Valkyrie
+
+
+### Gnome
+
+Base Gnome Stats
+10
+7
+13
+10
+8
+6
+6
+
+Perks:
+
+* Magic resistance (i.e. to spells like Lifesteal or Make Wounds)
+
+Flaws:
+
+* Slow.  Don't expect them to go first anytime soon unless you sacrifice
+  all your bonus points towards their Speed
+
+Points needed to meet Class Requirements for Gnome:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Fighter    |  2  |     |     |     |     |     |     |  N   |    2  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Mage       |     |  5  |     |     |     |     |     |  -   |    5  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Priest     |     |     |     |     |     |     |     |  -   |    0  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Thief      |     |     |     |  4  |  2  |     |     |  -   |    6  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ranger     |     |  1  |     |  1  |  2  |  2  |  2  |  N   |    8  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bard       |     |  3  |     |     |  4  |  2  |  7  |  Y   |   16  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Psionic    |     |  7  |     |  4  |     |     |  4  |  N   |   15  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Alchemist  |     |  6  |     |     |  5  |     |     |  -   |   11  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Valkyrie   |  2  |     |     |  2  |  1  |  5  |  1  |  Y   |   11  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Bishop     |     |  8  |  2  |     |     |     |  1  |  Y   |   11  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Lord       |  2  |  2  |     |  2  |  1  |  3  |  8  |  N   |   18  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Samurai    |  2  |  4  |     |  1  |  4  |  8  |  2  |  N   |   21  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Monk       |  3  |  1  |     |     |  2  |  7  |  2  |  N   |   15  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Ninja      |  2  |  3  |     |  2  |  4  |  6  |     |  N   |   17  |
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Priest
+
+* Ranger
+
+* Valkyrie
+
+
+### Hobbit
+
+Base Hobbit stats
+8
+7
+6
+9
+10
+7
+13
+
+Perks:
+
+* Magic Resistance (i.e. to spells like Lifesteal or Make Wounds)
+* Natural thieving characters
+
+Flaws:
+
+* Poor Intelligence and Piety makes them poor spellcasters.  Don't rely
+  on any spells they may use on coming back quickly.
+
+Points needed to meet Class Requirements for Hobbit:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  4  |     |     |     |     |     |     |  N   |    4  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  5  |     |     |     |     |     |  -   |    5  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  6  |     |     |     |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  2  |  1  |     |  -   |    3  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |  2  |  1  |  2  |  2  |     |  1  |     |  N   |    8  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |  3  |     |     |  2  |  1  |     |  Y   |    6  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |  2  |  7  |     |  5  |     |     |  1  |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  6  |     |     |  3  |     |     |  -   |    9  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  4  |     |  5  |  2  |     |  4  |     |  Y   |   15  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  8  |  9  |     |     |     |     |  -   |   17  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  4  |  2  |  6  |  3  |     |  2  |  1  |  N   |   18  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  4  |  4  |     |     |  2  |  7  |     |  N   |   17  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  5  |  1  |  7  |     |     |  6  |     |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  4  |  3  |  4  |  3  |  2  |  5  |     |  N   |   21  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Thief
+
+* Bard
+
+
+### Faerie
+
+Base Faerie Stats
+5
+11
+6
+6
+10
+14
+12
+
+Perks:
+
+* Character always start with Gossamer Gown (U), Gossamer Gown (L), Faerie
+  Stick, Faerie Dust(5), and Lt. Heal(3) regardless of class
+* Lower AC than other races
+
+* Magic Resistance (i.e. to spells like Lifesteal or Make Wounds)
+* Spell points return at a very quick rate.
+* Natural spellcaster
+
+* Race specific helmet (Faerie Cap)
+* Race & class specific weapon (Cane of Corpus for the Faerie Ninja)
+Flaws:
+
+* Cannot use most weapons and armor
+
+* Consistency of starting equipment prevents Faerie characters from using
+  sometimes irreplaceable equipment such as the Poet's Lute.
+* Low carrying capacity
+
+* Tends to have low amounts of hit points
+
+Points needed to meet Class Requirements for Faerie:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  7  |     |     |     |     |     |     |  N   |    7  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  1  |     |     |     |     |     |  -   |    1  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  6  |     |     |     |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  2  |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |  5  |     |  2  |  5  |     |     |     |  N   |   12  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |     |     |     |  2  |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |  5  |  3  |     |  8  |     |     |     |  N   |   16  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  2  |     |     |  3  |     |     |  -   |    5  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  7  |     |  5  |  5  |     |     |     |  Y   |   17  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  4  |  9  |     |     |     |     |  -   |   13  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  7  |     |  6  |  6  |     |     |  2  |  N   |   21  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  7  |     |     |  3  |  2  |     |     |  N   |   12  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  8  |     |  7  |     |     |     |     |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  7  |     |  4  |  6  |  2  |     |     |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Mage
+
+* Priest -- Most extended weapons available for Faeries are Priest/Bishop.
+* Thief
+
+* Alchemist
+
+* Bard -- A pointless choice after playing as you do not get the Poet's Lute.
+* Samurai -- A semi-useless choice as you cannot wear most decent armor
+
+### Lizardman
+
+Base Lizardman Stats
+12
+5
+5
+14
+8
+10
+3
+
+Perks:
+
+* Mental Resistance
+
+* Acid Resistance
+
+* Greater than normal amount of hit points
+
+Flaws:
+
+* Very slow mana recharge rate
+
+* Academia skills tend to not mature
+
+* Intelligence and Piety go DOWN on level ups if too high.
+
+Points needed to meet Class Requirements for Lizardman:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |     |     |     |     |     |     |     |  N   |    0  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  7  |     |     |     |     |     |  -   |    7  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  7  |     |     |     |     |  -   |    7  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  4  |     |     |  -   |    4  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |     |  3  |  3  |     |  2  |     |  4  |  Y   |   12  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |  5  |     |     |  4  |     |  8  |  Y   |   17  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |     |  9  |     |     |     |     |  6  |  Y   |   15  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  7  |     |     |  5  |     |     |  -   |   12  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |     |     |  6  |     |  2  |  1  |  4  |  Y   |   13  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     | 10  | 10  |     |     |     |  4  |  Y   |   24  |
++------------+-----------------------------------------+------+-------+
+| Lord       |     |  4  |  7  |     |  1  |     |  9  |  N   |   21  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |     |  6  |     |     |  4  |  4  |  5  |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  1  |  3  |  8  |     |  2  |  3  |  5  |  N   |   22  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |     |  5  |  5  |     |  4  |  2  |     |  N   |   16  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Ninja
+
+
+### Dracon
+
+Base Dracon Stats
+10
+7
+6
+12
+10
+8
+6
+
+Perks:
+
+* Breathe Acid
+
+* Acid resistance
+
+* Mental Resistance
+Flaws:
+
+* Breathing Acid takes out a large percentage of stamina, regardless
+  of your level.
+* Damage of Breath is based on amount of stamina used
+
+Points needed to meet Class Requirements for Dracon:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  2  |     |     |     |     |     |     |  N   |    2  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  5  |     |     |     |     |     |  -   |    5  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  6  |     |     |     |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  2  |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |  1  |     |  2  |     |     |     |  2  |  N   |    5  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |  3  |     |     |  2  |     |  5  |  Y   |   10  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |     |  7  |     |  2  |     |     |  4  |  N   |   13  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  6  |     |     |  3  |     |     |  -   |    9  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  2  |     |  5  |     |     |  3  |  1  |  Y   |   11  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  8  |  9  |     |     |     |  1  |  Y   |   11  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  2  |  2  |  6  |     |     |  1  |  8  |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  2  |  4  |     |     |  2  |  6  |  2  |  N   |   16  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  3  |  1  |  7  |     |     |  5  |  2  |  N   |   18  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  2  |  3  |  4  |  2  |     |  4  |     |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Thief
+
+* Ranger
+
+* Bishop
+
+* Ninja
+
+
+### Rawulf
+
+Base Rawulf stats:
+8
+6
+12
+10
+8
+8
+10
+
+Perks:
+
+* Cold resistance
+Flaws:
+
+* None I know of
+
+Points needed to meet Class Requirements for Rawulf:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  4  |     |     |     |     |     |     |  N   |    4  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  6  |     |     |     |     |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |     |     |     |     |     |  -   |    0  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  4  |     |     |  -   |    4  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |  2  |  2  |     |  1  |  2  |     |     |  N   |    7  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |  4  |     |     |  4  |     |  1  |  Y   |    9  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |  2  |  8  |     |  4  |     |     |     |  N   |   14  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  7  |     |     |  5  |     |     |  -   |   12  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  4  |     |     |  1  |  2  |  3  |     |  Y   |   10  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  9  |  3  |     |     |     |     |  -   |   12  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  4  |  3  |     |  2  |  1  |  1  |  4  |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  4  |  5  |     |     |  4  |  6  |     |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  5  |  2  |  1  |     |  2  |  5  |     |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  4  |  4  |     |  2  |  4  |  4  |     |  N   |   18  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Priest
+
+* Bard
+
+* Valkyrie
+
+* Lord
+
+* Monk
+
+
+### Felpurr
+
+Base Felpurr Stats:
+7
+10
+7
+7
+10
+12
+10
+
+Perks:
+
+* Dodge missile attacks
+
+* Dodge spells
+
+Flaws:
+
+* None that I can tell
+
+Points needed to meet Class Requirements for Felpurr:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  5  |     |     |     |     |     |     |  N   |    5  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  2  |     |     |     |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  5  |     |     |     |     |  -   |    5  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  2  |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |  3  |     |  1  |  4  |     |     |     |  N   |    8  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |     |     |     |  2  |     |  1  |  Y   |    3  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |  3  |  4  |     |  7  |     |     |     |  N   |   14  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  6  |     |     |  5  |     |     |  -   |   11  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  5  |     |  4  |  4  |     |     |     |  Y   |   13  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  5  |  8  |     |     |     |     |  -   |   13  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  5  |     |  5  |  5  |     |     |  4  |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  5  |  1  |     |  2  |  2  |  2  |     |  N   |   12  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  6  |     |  6  |     |     |  1  |     |  N   |   13  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  5  |     |  3  |  5  |  2  |     |     |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Mage
+
+* Thief
+
+* Bard
+
+* Samurai
+
+* Monk
+
+* Ninja
+
+
+### Mook
+
+Base Mook Stats:
+10
+10
+6
+10
+7
+7
+9
+
+Perks:
+
+* Cold Resistance
+
+* Magic Resistance (i.e. to spells like Lifesteal or Make Wounds)
+
+Flaws:
+
+* None that I can see
+
+Points needed to meet Class Requirements for Mook:
+
++------------+-----+-----+-----+-----+-----+-----+-----+------+-------+
+| Class Name | STR | INT | PIE | VIT | DEX | SPE | PER |  F?  | Total |
++------------+-----------------------------------------+------+-------+
+| Fighter    |  2  |     |     |     |     |     |     |  N   |    2  |
++------------+-----------------------------------------+------+-------+
+| Mage       |     |  2  |     |     |     |     |     |  -   |    2  |
++------------+-----------------------------------------+------+-------+
+| Priest     |     |     |  6  |     |     |     |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Thief      |     |     |     |     |  5  |  1  |     |  -   |    6  |
++------------+-----------------------------------------+------+-------+
+| Ranger     |     |     |  2  |  1  |  3  |  1  |     |  N   |    7  |
++------------+-----------------------------------------+------+-------+
+| Bard       |     |     |     |     |  5  |  1  |  2  |  Y   |    8  |
++------------+-----------------------------------------+------+-------+
+| Psionic    |     |  4  |     |  5  |     |     |  1  |  N   |   10  |
++------------+-----------------------------------------+------+-------+
+| Alchemist  |     |  6  |     |     |  5  |     |     |  N   |   11  |
++------------+-----------------------------------------+------+-------+
+| Valkyrie   |  2  |     |  5  |  1  |  3  |  4  |     |  Y   |   15  |
++------------+-----------------------------------------+------+-------+
+| Bishop     |     |  5  |  9  |     |     |     |     |  -   |   14  |
++------------+-----------------------------------------+------+-------+
+| Lord       |  2  |     |  6  |  2  |  2  |  2  |  5  |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Samurai    |  2  |  1  |     |     |  5  |  7  |     |  N   |   15  |
++------------+-----------------------------------------+------+-------+
+| Monk       |  3  |  7  |     |     |  3  |  6  |     |  N   |   19  |
++------------+-----------------------------------------+------+-------+
+| Ninja      |  2  |     |  4  |  2  |  5  |  5  |     |  N   |   18  |
++------------+-----------------------------------------+------+-------+
+
+Convenient Starting Professions
+
+* Fighter
+
+* Mage
+
+* Psionic
+
+## Classes
+
+### Fighter
+
+requirements: 12 0 0 0 0 0 0
+
+Perks:
+
+* Starting kit is very advanced compared to other characters
+
+* Gain levels quickly compared to most classes
+
+* May use a majority of weapons and the strongest armor available
+
+* Greater than normal amount of hit points
+
+Flaws:
+
+* No spells
+
+* Heavy armor weighs a LOT.
+* Lessened skill points for Academia
+
+Profession changing suggestions:
+
+* Priest→Valkyrie
+
+* Mage→Samurai
+
+* Thief→Alchemist→Ninja
+
+* Ranger→Ninja
+
+* Valkyrie (females only)
+* Lord
+
+* Samurai
+
+
+### Mage
+
+requirements: 0 12 0 0 0 0 0
+
+Perks:
+
+* Learns the Thaumaturgic spells the quickest
+
+* Increased skill points for Academia
+
+Flaws:
+
+* Low hit points
+
+* No healing
+
+* Doesn't start with a ranged weapon
+
+* Lessened skill points for Weapon
+
+Profession changing suggestions:
+
+* Fighter→Samurai
+
+* Priest→Bishop
+
+* Thief→Alchemist
+
+* Psionic→Monk
+
+* Bishop→Psionic
+
+* Bard
+
+* Samurai
+
+
+### Priest
+
+requirements: 0 0 12 0 0 0 0
+
+Perks:
+
+* Learns the Theological spells the fastest
+
+* Healer
+
+* Starts with healing potions
+
+* Starts with a ranged weapon if not Faerie
+
+* Automatically has the Diplomat skill
+
+* Increased skill points for Academia
+
+Flaws:
+
+* Few attacking spells
+
+* Poor armor selection
+
+* Lessened skill points for weapon
+
+Profession changing suggestions:
+
+* Fighter→Valkyrie (females only)/Lord
+
+* Mage→Bishop
+
+* Bishop→Valkyrie(females only)/Lord/Psionic
+
+* Psionic→Monk
+
+* Valkyrie (females only)
+* Lord
+
+
+### Thief
+
+requirements: 0 0 0 0 12 8 0
+
+Perks:
+
+* Gets a LARGE boost in Skulduggery every level for a good while
+
+* Class specific weapon (Thieves Dagger) that is cursed, allowing use as
+  a secondary weapon for thieves that change professions.
+* Learns Ninjutsu
+
+* Learns Legerdemain
+
+* Learns Skulduggery
+
+* Increased skill points to Physical
+
+Flaws:
+
+* No spells
+
+* Class specific weapon is weak compared to other class specific weapons
+
+* Becomes outdated after mid-game as other classes get better kit
+
+* Poor armor selection
+
+* Limited weapon selection
+
+Profession changing suggestions:
+
+* Ranger→Ninja
+
+* Bard→Samurai
+
+* Alchemist→Ninja
+
+* Samurai
+
+* Monk
+
+* Ninja
+
+
+### Ranger
+
+requirements: 10 8 8 11 10 8 8
+
+Perks:
+
+* Kirijutsu effect with missile weapons
+
+* Class specific weapon and accessory (Estoc de Olivia, Forest Cape)
+* Learns Alchemical spells
+
+* Cannot be silenced
+
+* Learns Skulduggery
+
+* Learns Legerdemain
+
+* Learns Ninjutsu
+
+* Limited Healing capabilities (Heal Wounds)
+
+Flaws:
+
+* Second rate protection
+
+* Bows run out of ammo
+
+* Scouting is better suited for Fighters
+
+* Limited weapon selection
+
+Profession changing suggestions:
+
+* Bard→Samurai
+
+* Alchemist→Ninja
+
+* Psionic→Monk
+
+* Ninja
+
+
+### Bard
+
+requirements: 0 10 0 0 12 8 12
+
+Perks:
+
+* Learns Thamaturgical spells
+
+* Learns Ninjutsu
+
+* Can play musical instruments
+
+* Learns Skulduggery
+
+* Learns Legerdemain
+
+* Starts with a Poet's Lute (unless character is a Faerie)
+* Increased skill points to Physical
+
+Flaws:
+
+* Must be a female character to use the best protection available to the class
+
+* Limited weapon selection
+
+Profession changing suggestions:
+
+* Mage
+
+* Thief
+
+* Samurai
+
+
+### Psionic
+
+requirements: 10 14 0 14 0 0 10
+
+Perks:
+
+* Learns Theosophical spells the fastest
+
+* Class-specific accessory (PK Crystal)
+* Starts with Shadow Cloak (unless character is a Faerie)
+* Limited Healing capabilities (Heal Wounds, Lifesteal)
+* Increased skill points to Academia
+
+Flaws:
+
+* Many monsters resist Mental attacks more often than other attacks, making
+  most of the spells available to the Psionic useless.
+* Shadow Cloak useless if no Thief, Ninja, or Bard in party
+
+Profession changing suggestions:
+
+* Valkyrie (females only)
+* Bishop
+
+* Lord
+
+
+### Alchemist
+
+requirements: 0 13 0 0 13 0 0
+
+Perks:
+
+* Learns Alchemical spells the fastest
+
+* Cannot be silenced
+
+* Starts with Cherry Bomb (unless starting character is a Faerie)
+* Class specific accessory (Medicine Bag)
+* Increased skill points to Academia
+
+* Limited Healing capabilities (Heal Wounds)
+
+Flaws:
+
+* Class specific accessory...stinks and is only found near the end of the
+  game.
+
+Profession changing suggestions:
+
+* Thief
+
+* Ranger→Ninja
+
+* Bard→Samurai
+
+* Ninja
+
+
+### Valkyrie
+
+requirements: 10 0 11 11 10 11 8
+
+Perks:
+
+* Learns Theological spells
+
+* Class-specific weapon (Maenad's Lance)
+* May use a majority of weapons and the strongest armor available
+
+* Anything a Lord can do, a Valkyrie can do better
+
+* Healer
+
+* Greater than normal amount of hit points
+
+* Valkyries require less experience to gain a level
+
+Flaws:
+
+* Available to only female characters
+
+* Heavy armor weighs a LOT.
+
+Profession changing suggestions:
+
+* Samurai
+
+* Monk
+
+* Ninja
+
+
+### Bishop
+
+requirements: 0 15 15 0 0 0 8
+
+Perks:
+
+* Learns both Theological and Thaumaturgical spells
+
+* Learns Diplomacy
+
+* Can wear better armor than the Priest
+
+* Healer
+
+* Greatly increased skill points to Academia
+
+Flaws:
+
+* Spell progression is SLOW as research must be divided in half.
+
+Profession changing suggestions:
+
+* Psionic
+
+* Alchemist
+
+
+### Lord
+
+requirements: 12 9 12 12 9 9 14
+
+Perks:
+
+* Learns Theological spells
+
+* Learns Diplomacy
+
+* May use a majority of weapons and the strongest armor available
+
+* Starts with very good equipment
+
+* Greater than normal amount of hit points
+
+* Increased skill points to Weapon
+
+Flaws:
+
+* Very expensive class to attain
+
+* Very expensive experience requirements
+
+* Most things a Lord can do, a Valkyrie can do better
+
+* Heavy armor weighs a LOT.
+* Valkyries have smaller experience requirements.
+
+Profession changing suggestions:
+
+* Priest
+
+* Ranger
+
+* Bard
+
+* Samurai
+
+* Monk
+
+* Ninja
+
+
+### Samurai
+
+Requirements: 12 11 0 9 12 14 8
+
+Perks:
+
+* Learns Kirijutsu
+
+* Learns Thaumaturgical spells
+
+* Class specific weapons and armor(Muramasa Blade, Do-Maru(U) and (L),
+  Tosei-Do (U) & (L), Hi-Kane-Do (U) & (L), Kabuto)
+* Increased skill points to Weapon
+
+Flaws:
+
+* Semi-limited selection of weapons and armor
+
+* Expensive class to attain and maintain
+
+Profession changing suggestions:
+
+* Valkyrie (female)
+* Monk
+
+
+### Monk
+
+Requirements: 13 8 13 0 10 13 8
+
+Perks:
+
+* Learns Kirijutsu
+
+* Learns Theosophical spells
+
+* Learns Ninjutsu
+
+* Learns Hands and Feet
+
+* AC benefits from Ninjutsu
+
+* Limited Healing capabilities (Heal Wounds, Lifesteal)
+
+Flaws:
+
+* Theosophical spells resisted more often
+
+* Expensive class to attain
+
+* Limited weapon selection
+
+* Armor restricted to robes
+
+Profession changing suggestions:
+
+* Ninja
+
+
+### Ninja
+
+Requirements: 12 10 10 12 12 12 0
+
+Perks:
+
+* Learns Kirijutsu
+
+* Learns Alchemical spells
+
+* Cannot be silenced
+
+* Learns Ninjutsu
+
+* Learns Hands and Feet
+
+* AC benefits from Ninjutsu
+
+* Learns Skulduggery
+
+* Learns Legerdemain
+
+* Limited Healing capabilities (Heal Wounds)
+* Weapons Ninjas can use are useful
+
+* Class specific weapons, armor, and accessory (Sai, Nunchuku, Ninjato,
+  Ninja Cowl, Ninja Garb(U), Ninja Garb(L), Tabi Boots, Blackbelt of 5
+  Flowers)
+
+Flaws:
+
+* Expensive class to attain
+
+* Very expensive experience requirements
+
+* Slightly decreased skill points to Academia
+
+* Usage as a 'Jack of all Trades' creates difficulties mid-game
+
+* Semi-limited weapon selection
+
+* May only equip Ninja Cowl, Ninja Garb(U) & (L), Tabi Boots, and race
+  specific items for armor
+
+Profession changing suggestions:
+
+* None
+
+## Skill selection
+### Essential Skills
+
+Swimming:  Everyone needs to have at least a 10 in swimming before attempting
+to enter the water to practice.  There are three places to practice without
+wasting too much time:  New City (using the fountain in the Starter Dungeon or
+the one at Father Rulae), the Ra-sep-re-tep pool in the Starter Dungeon (using
+the fountain in the same area) and Munkharama (at the Polar Munk Society...
+bring healing though...).  Get your swimming to at least a 20 using these three
+places--the Lost Temple has a fountain that is in the water, but you need to
+have at least a 20 swimming to reach it.  Once you do, you can practice until
+you have a 100 in it.
+
+Climbing:  In the beginning of the game, you won't need this.  However, once
+you get to the mountains in Guardia you're going to need at least a 30 in
+climbing skill.  Don't say I didn't warn you...Levitate can temporarily boost
+your climbing skill when attempting to climb by the way.
+
+Scouting:  If this is your first time through, you need scouting.  Without it,
+you won't be able to pass several areas, as you won't know to search an area
+On second and subsequent times through the game however, it is safe to skip
+this if you remember where everything is.
+
+Skulduggery:  When starting, don't settle for less than at least a 5 or 6 in
+Skulduggery on a character that is going to be your lockpicker.  At least,
+start with that amount before you try to disarm a chest.  Chests are HARD to
+disarm.  You will be Quit/No Save-Restoring very often--having an actual
+Thief in the party instead of a Bard, Ninja, or Ranger substitute can
+eliminate this problem after a couple level ups, as they gain a nice bonus
+to Skulduggery every level up to a certain point.
+
+Mapping:  You need a minimum of 10 in Mapping to map walls, a minimum of 30 to
+map 1x1 rooms, and a minimum of 60 to map stairs and pits.  Some teleporters
+aren't mapped, as far as I can tell; only the ones that use pits are.  In some
+areas of the game, the inability to map will leave you stuck or moving at a
+snail's crawl if you do not know the area, especially in the darkened areas
+where the only thing you CAN map are the walls.
+
+Theosophy/Theology/Thaumaturgy/Alchemy:  Essential for anyone that learns
+them.  Until it reaches 95-100, if you don't put points into this, you're
+potentially missing out on a spell that might help you in game
+
+### "Nice to have" skills
+
+Artifacts:  Having a high Artifacts skill lets you assay items to find out what
+they are without casting Identify.  Don't worry about putting points into it
+however; you automatically gain points every time you successfully use
+(not equip and throw) a wand in battle as an item.  This, however, doesn't
+eliminate the need for Identify unless you already know what an item does.
+
+Ninjutsu:  Monks and Ninjas gain an AC bonus from this, in addition to
+anything else that other Ninjutsu practitioners get.  They should build this
+up all the time by practicing hiding instead of putting precious skill
+points into it.  Anyone else with this simply gains a nice ability to hide
+and do a backstab or surprise attack.
+
+Legerdemain:  The 5 Fingered Discount is a nice thing to have, but you won't
+pilfer much.  The chance of getting caught is quite high as well, even with a
+level 100 Legerdemain, so save before trying.  If the character's inventory
+slots are full only gold will be taken, which keeps this skill from being
+totally useless; most shopkeepers have horrible items in their inventory--you
+wouldn't want to steal them if your life depended on it.  Legerdemain is best
+when the pickpocket using it is rather high level, is decent at it (has at least
+a 30 so in Legerdemain), and pickpocketing someone worthwhile like Belcanzor for
+his items or Dame Ke-Li for her Ankhs.  Be especially careful pickpocketing
+wandering NPCs.  Some like Capt. Boerigard have very nice weapons and such, but
+they may attack you if they catch you pickpocketing them, which is a bad thing.
+
+Kirijutsu:  This skill gives you a chance to get a Critical Hit that instantly
+kills a monster.  Very nice to have, but try not to get the person with it
+confused!
+
+Mind Control:  A personal skill that you can get in Dionysceus; it reduces
+the effectiveness of psionics and other mental spells.  A minor side effect
+is that you will never fall asleep in the poppy field with even 1 point in
+this skill.
+
+Power Strike:  I don't know about you, but I LIKE hitting for more damage. :)
+
+Diplomacy:  Diplomacy is kind of a unused skill in the game--most of the time.
+However, when used it can be really useful, when an NPC is very angry with you
+and you need to calm them down (and maybe get friendly again).  The fact that
+characters with a Personality of 14 can automatically get it, AND the fact that
+anyone who successfully "pleases" an NPC automatically gets a one point raise
+in the skill regardless of whether they have it or not however makes the skill
+kind of a "I'll get it when I need it" skill.  Warning:  Diplomacy is a useless
+skill in the Wizardry Gold version of Wizardry 7.  No matter how pleased you
+make an NPC, they will never trade with you until you please the NPC by doing
+things for them (i.e. doing Barlone a favor will please Mick the Pick and
+Ratsputin enough to trade with you)
+
+### "Really depends on your playing style" skills
+
+Mythology:  This lets you successfully ID the monster you're fighting.  In
+some cases it will be very useful, if you're conserving mana and don't want
+to mistake Night Rooks for Vampire Vultures.  In most cases however, it is
+easy to figure out what the monster is after a round, or even based on where
+it is.  Putting points into this is really up to your strategy, but it goes
+up naturally over time, albeit slowly.
+
+Scribe:  If you like to save on mana, you may find a use for this skill
+Personally, I've gone through the game with only one point put into this skill
+for Knock-Knock scrolls to be slightly more effective--other than Magic
+Screen, Armorplate, Locate Person, and Enchanted Blade scrolls, Knock-Knock
+scrolls are the only other ones I actually use and all of them can (or are
+supposed to) be used outside of battle.  Some nice spells are on scrolls, but
+chances are, you're going to sell them for the cash they give you--by the point
+you don't need cash anymore, scrolls are already quite useless
+
+Firearms:  I personally don't like 2 of the 5 weapons that use this skill
+Still, you might as well get it.  Raising it is up to you however
+
+
+# Choosing a Party
+
+
+Depending on what difficulty you are playing, there are five types of parties
+that will be used throughout the game: the 'Super' Party, the 'Quick and Easy'
+Party, the 'Dual Class' Party, the 'Blender' Party, and the 'Vanilla' Party
+
+## The 'Super' Party
+
+
+The Super Party is what everyone wants to end up with at the end of the game,
+but it is very hard to use in the beginning.  The reason is because the Super
+Party is a party with hard to get characters such as a Faerie
+Samurai/Monk/Ninja, Elf Lords, or other such hard to get/play classes for
+example.  Because these guys are hard to get, you don't have a lot of
+excess points to distribute for other stats.  To top it off, the class
+usually has almost double the experience requirements of the easier-to-achieve
+classes such as the Fighter.  With all these factors thrown together, this
+party is not recommended for a purist new to the game--various maps that hint
+at what to do are your only clues as to what should be done if you do not wish
+to consult outside sources, and with a Super party it will take too long to
+level them up; the NPCs will have snatched them away before you get to them,
+and the only ways to get your hands on them are buying it for 10,000
+gold--which you won't have for a long time--or killing them, which is very
+difficult with this kind of party until much much later
+
+Sample Super Party:
+
+- Lizardman Samurai
+- Faerie Ninja
+- Elf Lord
+- Mook Monk
+- Faerie Bishop
+- Elf Valkyrie
+
+## The 'Quick and Easy' Party
+
+
+The Quick and Easy Party is the exact opposite of the Super Party.  This party
+is usually made up of characters quickly rolled up, and is usually something
+like 2 Fighters, an offensive spellcaster (Mage or a Psionic), a healing
+spellcaster like a Priest, a thief, and maybe a miscellaneous character
+thrown in for fun.  Races are chosen by whether the race can get a class
+easier than other races, thereby giving you more points to distribute
+elsewhere.  Sometimes, the party will be rolled up with higher scores
+so that you can distribute the excess points as you see fit.  The game will
+be easy in the beginning, but after a while you will get the urge to change
+profession as experience requirements get higher and higher and your diversity
+in what you can do gets lower and lower.  Which brings us to...
+
+Sample Quick and Easy Party:
+
+- Lizardman Fighter
+- Human Ranger
+- Faerie Thief
+- Rawulf Priest
+- Faerie/Elf Mage
+- Mook Psionic
+
+## The 'Dual class' Party
+
+
+This party is similar to the Quick and Easy Party except for one major
+difference:  The characters rolled up are customized to be able to switch
+professions at will.  For example, say you have an Elf who can be a Ranger
+You choose Fighter instead, add points to meet the minimum requirements for a
+Ranger, and put any excess points where you want it (usually Vitality in this
+case, as you will be hurting for hit points from all the profession changing).
+The reasoning for this party is to mainly take advantage of the relatively low
+amount of experience needed in the first 5-10 levels to accumulate skills and
+spells quickly--a Faery Thief that I converted into a Ninja after hitting
+level 7 already had 100 Skulduggery at level 3!
+
+Sample Dual Class Party (Characters rolled with 15 points to distribute):
+
+- Elf Fighter → Converts to Ranger at level 10
+- Felpurr Fighter → Converts to Samurai at level 10.
+- Faerie Thief → Converts to Ninja when stats meet minimum Ninja
+requirements and Skulduggery > 80.
+- Elf Priest (F) → Converts to Valkyrie when Theology > 80.
+- Elf Mage (F) → Converts to Bard when Thaumaturgy > 80.
+- Elf Bard (F) → Converts to Bishop when Mage converts to Bard.
+
+(F) means female.
+
+Assuming that each character gets 15 points to distribute, this is what
+would happen normally.
+
+Stats are given in the order of:
+Strength, Intelligence, Piety, Vitality, Dexterity, Speed, Personality.
+
+Elf Fighter-
+Elf Base stats:
+
+- 7: 5 points added(meet Fighter requirements)
+- 10:
+- 10:
+- 7: 4 points added(meet Ranger requirements)
+- 9: 1 point added(meet Ranger requirements)
+- 9:
+- 8:
+
+That leaves you with 5 more points to redistribute; in this case we
+distribute the excess to Vitality as all the ability scores will be reset
+down to the bare minimum after the profession change; might as well get
+some extra hit points and stamina out of it.
+
+Felpurr Fighter-
+Felpurr Base stats:
+
+- 7: 5 points added(meet Fighter requirements)
+- 10: 1 points added(meet Samurai requirements)
+- 7:
+- 7: 2 points added(meet Samurai requirements)
+- 10: 2 points added(meet Samurai requirements)
+- 12: 2 points added(meet Samurai requirements)
+- 10:
+
+There are three points to distribute left as you wish.  Again, I would put
+it into Vitality.
+
+Faerie Thief-
+Faerie Base stats:
+
+- 5: 5 points added(almost meet Ninja requirements)
+- 11:
+- 6: 3 points added(almost meet Ninja requirements)
+- 6: 5 points added(almost meet Ninja requirements)
+- 10: 2 points added(meet Thief requirements)
+- 14:
+- 12:
+
+In this case, there are no excess points to use.  You will be relying on
+level ups to give you the rest of the stat boost you need.  This could
+easily be met by level 7 or 8--less if you reload your level ups to get
+the bonuses you want
+
+Elf Priest (F)-
+Elf Base stats:
+
+- 7: -2 for being female, 5 points added(meet Valkyrie requirements)
+- 10:
+- 10: 2 points added(meet Priest requirements)
+- 7: 4 points added(meet Valkyrie requirements)
+- 9: 1 point added(meet Valkyrie requirements)
+- 9: 2 points added(meet Valkyrie requirements)
+- 8: +1 for being female
+
+This leaves you with 1 extra point to distribute.  Either Vitality
+or Intelligence is a good choice; getting more Academia points to
+speed up getting the higher level spells is nice, but so is more
+hit points.
+
+Elf Mage (F)-
+Elf Base stats:
+
+- 7: -2 for being female
+- 10: 2 points added(meet Mage requirements)
+- 10:
+- 7:
+- 9: 3 points added(meet Bard requirements)
+- 9:
+- 8: +1 for being female, 3 points added(meet Bard requirements)
+
+You've got 7 points to redistribute.  As Mages don't have a hope
+to gain a lot of hit points a level, dump them either in Intelligence for
+increased amount of Academia points or in Piety for better spell point
+gain/level and spell point recovery.
+
+Elf Bard (F)-
+Elf Base stats:
+
+- 7: -2 for being female
+- 10: 5 points added (meet Bishop requirements)
+- 10: 4 points added (almost meet Bishop requirements)
+- 7:
+- 9: 3 points added(meet Bard requirements)
+- 9:
+- 8: +1 for being female, 3 points added(meet Bard requirements)
+
+Again, you have no points to redistribute after that, but like the Faerie
+Thief, level ups will take care of the rest of the stat requirements--only
+quicker in this case as you only need Piety to go up one
+
+I think you can see the pattern: If you can afford it, fill out the
+requirements of the 2nd class first before distributing the points to other
+statistics.  If you can't, spread out the requirements somewhat so that it
+only requires as few level gains as possible to get there.  15 is the number
+I use for a minimum when creating profession changing characters; you might
+use a lesser amount or a greater amount, depending on your patience.  Whatever
+you do, if you want to take the greatest advantage out of changing professions
+do so by level 10.  This is because it takes the same amount of experience to
+get from level 1 to level 10 as it does to get from level 10 to level 11.
+
+## The 'Blender' Party
+
+
+I call this the Blender party mainly because it takes a little bit of the
+Super Party and a little bit of the Quick and Easy Party and/or the Dual class
+party.  Basically, there will be a couple characters that may have been chosen
+because of the items they start with, and others which were chosen because you
+like the class or some other reason.  Most people new to the game will
+probably end up using something like this, where they have a prize character
+that they do not wish to change profession with--especially when the character
+gets a 19 or 20 in Intelligence or Personality, which are scores that cannot be
+improved by certain items that can be bought, or a 19 or 20 in Vitality, which
+cannot go over 18 with items
+
+Sample Blender Party:
+
+- Felpurr Samurai
+- Lizardman Ninja
+- Faerie Monk
+- Faerie Thief → Converts to Ninja when stats meet minimum Ninja
+requirements and Skulduggery > 80.
+- Elf Priest (F) → Converts to Valkyrie when Theology > 80.
+- Hobbit Bard
+
+## The 'Vanilla' Party
+
+
+Called the Vanilla Party for its simpleness, this party NEVER changes classes,
+so pick carefully.  You'll need at least 1 healer, 1 offensive spellcaster,
+and 1 Skulduggery character unless you're looking for a challenge.  After
+you're familiar with the game, try going through with only a single character!
+It *can* be done.  This party is usually done as a Quick and Easy party, but
+Super parties that don't class change are done too
+
+Sample Vanilla Party:
+(See Sample Quick and Easy Party or Sample Super Party)
+
+
+
+# Picking Spells
+
+Thank you Llevram for much of the information in this section.
+
+## General spellcasting
+
+
+All spells that you can cast are cumulative.  That means you can cast them
+over and over to make them last longer (if they have a duration), reduce the
+duration of all status ailments except disease, stoning and death
+(in the case of the ailment cures), or increase the effectiveness of the spell
+(which only happens with battle-only spells if at all).  The six spells you
+can cast at any time (Enchanted Blade, Armorplate, Magic Screen, Detect
+Secret, Direction, Levitate) are reflected in the globes on top of the game
+screen and are cumulative in duration only.
+
+Casting any of the other battle-helping spells (such as Bless, Haste, etc)
+outside of battle will have NO EFFECT, even if cast before a fight or some
+action that causes damage of some sort, so don't waste your spell points and
+stamina.  Keep in mind that when casting the six out-of-battle spells
+repeatedly that it is best done in front of a fountain so you can restore
+yourself.  Also keep in mind that the longer the spell has been active, the
+weaker it gets, so don't rely on multiple castings casted 3 game days ago to
+get you through certain tougher fights.
+
+## Learning spells from books
+
+
+The following spells may be learned from books:
+
+- Air Pocket
+- Anti-Magic
+- Astral Gate
+- Fire Shield
+- Ice Shield
+- Missile Shield
+- Bless
+- Charm
+- Conjuration
+- Detect Secret
+- Direction
+- Haste
+- Knock-Knock
+- Levitate
+- Identify (*anyone* can learn this from a book!)
+- Stamina
+- Wizard's Eye
+- Armor Shield
+- Remove Curse
+- Watchbells
+
+Be warned however; if you do not have a spell already of the same type as the
+one you wish to scribe in your book (for example, having Shrill Sound when you
+scribe Missile Shield in the case of a mage), you will NOT gain any spell
+points in that category until a spell from the same category is "learned" from
+a level up.  For example, an Alchemist scribes Stamina instead of learning it
+the normal way.  The Alchemist will NOT gain any water spell points until he
+or she learns another water spell by a level up--in this case Cure Paralysis,
+Draining Cloud, or Cure Disease.
+
+## Commonly used spells
+
+
+- Heal Wounds
+- Stamina
+- Dispel Undead
+- Enchanted Blade
+- Cure Lesser Condition
+- Air Pocket
+- Purify Air
+- Cure Poison
+- Cure Paralysis
+- Silence
+- Armorplate
+- Magic Screen
+- Haste
+- Mindread (only on your first time through--it tells you what to ask
+the NPC sometimes; otherwise it gives you a bit of information you
+could have gotten with Lore or just gives Nothing)
+- Fire Shield/Ice Shield
+- Lifesteal
+- Poison Gas/Acid Bomb/Firestorm
+- Conjuration/Illusion/Create Life
+- Nuclear Blast/Deadly Air/Word of Death/Mind Flay
+- Asphyxiation(expert mode only for crowd control and convenience)
+
+## Spell-picking Choices
+
+*Note:  The required amount of skill points for a group of spells may be off
+        by one or two points
+
+Thaumaturgy (Mage spellbook)
+
+Level 1 spells:
+
+Energy Blast
+Your (possible) first damaging spell.  Nothing special.
+
+Chilling Touch
+Your other (possible) first damaging spell.  Nothing special.
+
+Terror
+Give the opponent the "Afraid" ailment for a short time.  I do not advise
+using this spell if you are looking for experience.  This becomes useless
+mid-game if it wasn't useless before already.
+
+Sleep
+Gives the opponent the "Asleep" status for a short time.  One of the most
+useful spells in the game, even if your party already has a Bard with the
+Poet's Lute.  This becomes useless after mid-game however, as you'll have
+ways of dealing with multiple targets.
+
+Armor Shield
+Grants an Armor Class bonus to a character.  Initially, the meager protection
+offered by the spell will not be too helpful.  Later on however, it is a very
+useful spell to cast while hiding (or after you drank an invisibility potion)
+due to its cheap costs and noticeable drop in Armor Class when cast at level
+7
+
+Direction
+Shows the direction your party is facing.  A useless spell after you get the
+Journey Map Kit, as you can easily check which way you are facing by using
+the map.
+
+Level 2 spells: (18 Thaumaturgy)
+Magic Missile
+Damages a limited number of opponents.  Useful when you need to deal medium
+amounts of damage to a group.
+
+Shrill Sound
+Damages an entire group, regardless of the size of the group.  Very useful
+when you don't want to waste extra spell points to hit everything in a group.
+
+Missile Shield
+Deflects any attacks that are projectile attacks (i.e. uses "Throw" or "Shoot"
+as a form of attack).  Chance of being deflected is related to how high of
+a spell level you use to cast the spell, with around a 99% deflection rate for
+a level 7 Missile Shield
+
+Knock-Knock
+Opens locked chests and doors.  Success rate is related to the power of the
+spell and the complexity of the lock.  Don't expect to use this spell
+successfully midgame and onwards.
+
+Detect Secret
+Acts like you have a high amount of scouting skill.  Very useful the first
+time through the game if you don't want to build up scouting.  Very useless
+subsequent times.  When you need to search, the eye will twinkle; however
+if you have a weak Detect Secret, the eye may not pick up on some things.
+
+Watchbells
+Wakes up everyone who is asleep.  The success rate of the spell depends on
+how tired the characters are and how long they've been sleeping.  Not very
+useful after you get the Mind Control Personal skill--even before then,
+the spell doesn't really work too well if you're not already at full
+stamina.
+
+Weaken
+Makes the opponent do less damage when they attack.  Useful I suppose, but
+I prefer killing them as quickly as possible.  Supposedly this spell also
+lowers resistances, which can be very useful, but there's no way to tell for
+certain.
+
+Level 3 spells: (37 Thaumaturgy)
+Fireball
+Once you get this, you'll be avoiding usage of Magic Missile except on
+Undead and fire-resistant monsters
+
+Fire Shield
+Reduces or eliminates the effectiveness of all Fire Realm spells and Fire
+based attacks.  Don't expect it to eliminate spell damage to nothing when
+it is coming from something strong, although Fire Crow breath will be
+much less painful.
+
+Ice Shield
+Reduces or eliminates the effectiveness of all Water Realm spells and
+Ice-based attacks.  You'll be happy to have this up when something decides
+to cast Deep Freeze on you.
+
+Web
+Paralyzes one target.  Yuck.  There are better things out there to learn;
+the only monsters you would want to cast this on are incredibly
+resistant to it because they are NPCs or the monster equivalent of one
+If you can paralyze an NPC with this, you're WAAAY above the NPC's level.
+
+Whipping Rocks
+For a group hitting spell, this isn't that great.  A lot of monsters have
+enough Earth resistance to make this spell relatively useless--however,
+when the damage gets through it is all right.
+
+Stink Bomb
+Not a very useful spell.  It will hit from 1-3 targets only, which explains
+the relatively inexpensive casting cost.  However, Shrill Sound and Magic
+Missile are better, AND you get them earlier.  If you think the added
+chance of Nausea is worth it though, go right ahead and get it.
+
+Air Pocket
+Deflects Asphyxiation spells and reduces the effectiveness of incoming
+Air-based spells that stick around as clouds.  It also reduces the
+effectiveness of breath weapons like Dragonlizard breath.  Don't expect
+this spell to have any effects on Whirlwind or Firestorm however.
+
+Blink
+Randomly makes you invisible/uninvisible during the round.  You will
+always become uninvisible to attack.  Lasts quite a while too.  Don't
+bother with this spell if the character knows Ninjitsu though.
+
+Level 4 spells: (54 Thaumaturgy)
+Iceball
+The Ice equivalent of Fireball, only more expensive.  But then, it hurts
+more, so that's a fair trade off.  With Fireball and Iceball in your
+belt, you're probably finished with mass-target spells for a long while
+through the game--at least for your mage.
+
+Magic Screen
+Reduces the effectiveness of all incoming spells and spell-like attacks.
+That includes breath weapons and fireball-like blasts, but not little
+laser beams like the ones the T'Rang Tecniks use to attack.  Remember:
+this can be casted outside of battle.
+
+Conjuration
+Summons a monster to help you.  They range from the pathetic Vulture at
+a level 1 casting to perhaps Fieros and Myxlmynx at level 7 (which are
+pretty darn useful).  The best out of the three summoning spells if you
+want magical damage.
+
+Armormelt
+Makes the opponent easier to hit.  Think of it as the opposite of
+Armor Shield, except it targets everyone.
+
+Crush
+Does up to 200 damage to one target.  Of course, it misses so much that
+it just isn't worth it.  That's right, MISSES, not resisted.
+
+Wizard Eye
+Gives an overhead view of the area--just like you had a Journey Map kit.
+(Surprise...)  Skip this spell if I were you, unless you've been
+skimping on your Mapping skill or don't know if there is a secret passage
+behind a wall.
+
+Spooks
+A Terror spell that affects all opponents.  I don't recommend it.
+
+Level 5 spells: (72 Thaumaturgy)
+Prismic Missile
+Causes random status ailments or damage.  It is more likely to cause damage
+on weaker opponents and more likely to cause status ailments (which rarely
+includes "withers and dies") on more powerful ones.  Keep in mind that this
+won't work on something with 100% or greater Light Resistance, like Man O'
+Groves.
+
+Anti-Magic
+Tries to prevent a group from casting spells successfully.  Not too useful
+when you're fighting multiple groups of spellcasters as it is better to
+just off them all right off the bat, but insanely useful when fighting one
+group of spellcasters if you want to conserve on your mass-target spells.
+
+Levitate
+Prevents damage if you fall into a pit, and augments your Climbing skill
+when you climb.  Levitate won't help you if you jump off a cliff however;
+you'll still die.  The power level in this case is for duration, not
+damage prevented as a level 1 Levitate will protect you from falling into
+pits.
+
+Deep Freeze
+Learn to love this spell.  It is the most consistently damaging spell in
+the game--which is why you need Ice Shield when monsters cast it on you!
+
+
+Level 6 spells: (90 Thaumaturgy)
+Firestorm
+Fun fun fun.  Burns the enemy for a small amount for several turns.  Very
+useful up to mid-game to kill things--after that it's useful to add a bit
+of damage here and there to cut battle time down.
+
+Astral Gate
+Instantly kills demons.  Since it's specialized, getting this is up to you.
+You *will* run into demons however.
+
+Zap Undead
+Useless.  Don't waste your time with this spell--anything undead you find
+is either going to be real easy or real resistant to this expensive spell.
+
+Recharge
+Very useful when used on items that have the effect of Magicfood when used
+and can be used multiple times.  Otherwise mildly useful to get back
+charges on items like the Amulet of Asphyxiation.
+
+Noxious Fumes
+Not very useful.  Just a better version of Stink Bomb that hits a group.
+However, there is a much better chance of nausea than Stink Bomb.
+
+Asphyxiation
+Wipes out lower level critters with ease.  You can get this decently fast
+with a mage, so try to grab this spell as fast as possible if you're on
+hard mode and the 5 groups of critters that ambush you each fight start
+to get on your nerves.  Becomes useless near the end of the game though.
+
+Level 7 spells: (98 Thaumaturgy)
+Nuclear Blast
+Can't go wrong with this spell.  Just watch your Fire spell points.
+
+Ressurection
+You can always quit-reload, and unlike Ressurection, you don't have to wait
+forever to get it.  However, since it can be used in a fight, it isn't totally
+useless.  However, if you're the perfectionist type you're probably going
+to skip this spell.  If you ressurect a character, the character loses 1 point
+of Vitality and their life counter increases by 1.
+
+Theology (Priest spellbook)
+
+Level 1 spells:
+Heal Wounds
+Get it if you like it, get it if you don't
+
+Make Wounds
+An attacking spell which uses spell points better suited for healing?
+I sure don't like that.  You might, but saving the spell points for healing
+will save you some nap time
+
+Stamina
+Get it if you like it, get it if you don't
+
+Bless
+Grants you bonuses to hit.  Hey, I'd take that any day.  Even later in the
+game, this spell is useful.
+
+Charm
+Paralyzes an opponent.  Out of battle, it makes it easier to make friends
+with NPCs.  If you have diplomatic problems, this may be useful.  Otherwise,
+skip for a better spell unless you have no choice.
+
+Level 2 spells: (18 Theology)
+Enchanted Blade
+Helps with hitting and dealing damage, AND you can cast it out of battle.
+Love this spell
+
+Dispel Undead
+Only works on undead, but there's a lot of undead in the game.  It works
+more often on the skeleton types of undead than the ghost types of undead.
+Keep in mind that any of the "Spectral" monsters like Spectral Ravens or
+Spectral Moths are considered undead as well.  Don't expect it to work too
+well on some unique undead monsters, with a very notable exception of the
+ones in Witch Mountains.
+
+Cure Lesser Condition
+Cures or reduces the duration of the "Irritation," "Sleep," "Afraid,"
+"Blind," and "Nausea" ailments.  This spell is very useful to cut down on
+the time you spend sleeping, and if you run out of Mental spell points it is
+no big deal, so there is no need to ration uses of this spell.
+
+Divine Trap
+Helps to identify which trap a chest is booby trapped with.  You will only
+need it if your Skulduggery character has a low amount of Skulduggery, or
+if you are unfamiliar with guessing the traps of the game.
+
+Identify
+Tells you how much damage (if applicable) the item does and what special
+effects it may have.  If it has a special power, it won't tell you what it
+is, but it will mention the that it has one.  Special powers are where when
+you equip the item, it asks you if you want to invoke its special power, and
+generally are very limited in usage.  This is best used as a "what does this
+item do" check, where you cast and reload--however, for some things (like
+weapon damage for some weapons) it will give the wrong numbers
+
+Slow
+Slows down an enemy group.  Useful when fighting enemies stronger than you
+so that you can try to go first in subsequent rounds.  Much more useful
+when combined with Haste to make sure you go first
+
+Level 3 spells: (37 Theology)
+Hold Monsters
+Attempts to paralyze a group.  Unlike Web or Paralyze, the "Paralyze"
+ailment caused by this spell is easily removed by an attack.
+
+Sane Mind
+Cures or reduces the duration of the "Insanity" ailment.
+
+Silence
+Silences a group of monsters.  Don't try it on the Umpani, most Munks,
+Gorn Rangers, and other Alchemical spellcasters
+
+Armorplate
+Improves the armor class of each character (although you won't see
+any changes in the review screen).  The bonus is that it can be casted
+outside of battle
+
+Blades
+Does decent damage, especially considering that it's a damaging spell
+the Priest has access to.  After multiple castings of Armorplate, you'll
+want to do *something* with all the spare Earth spell points you have.
+
+Haste
+Speeds up your party.  Very useful in fights against monsters faster
+than you (or higher level).
+
+Cure Paralysis
+Cures or reduces the duration of the "Paralyze" ailment.  Useful.  Get it.
+:)
+
+Restfull
+Restores everyone's stamina.  The amount restored is less than what you
+would get back if you casted Stamina on each character, but the convenience
+makes this spell useful.  Still, if you can, there are better spells to get
+than this.
+
+Level 4 spells: (54 Theology)
+Conjuration
+Summons a monster to help you.  They range from the pathetic Vulture at
+a level 1 casting to perhaps Fieros and Myxlmynx at level 7 (which are
+pretty darn useful).  The best out of the three summoning spells if you
+want magical damage.
+
+Paralyze
+Paralyzes an enemy.  Is about as useful as Web is for mages and Alchemists.
+
+Superman
+VERY useful.  It reduces the amount of stamina you use when you take a
+swing at a monster, or whatever form of attack you use.
+
+Cure Poison
+Cures or reduces the "Poison" ailment, or reduces the "Badly Poisoned"
+ailment to "Poison".  Grab this quickly--you won't always have that
+Cure Poison potion handy.
+
+Whirlwind
+Another attacking spell for the Priest.  Unfortunately, most monsters
+don't take a whole lot of damage from this, if they get hurt at all.
+
+Level 5 spells: (72 Theology)
+Lightning
+The only Fire spell for Priests, and it hits in a group to boot.
+Grab it as early as possible so that you can have as many spell points
+for it as possible unless you already have Fire spell points.
+
+Death
+Instantly kills one target.  Not too handy as it doesn't work often--the
+things it works on are easy to kill anyway in most cases
+
+Remove Curse
+Makes it possible to unequip a cursed item.  Quite useful; however, a weak
+enough Remove Curse will only allow you to unequip some items and not others,
+so make sure you use a level 6 or 7 Remove Curse.
+
+Healthfull
+Heals everyone for a small amount of hit points.  This spell would be nicer
+if it actually healed more damage--a level 1 Healthfull seems to heal around
+1-4 damage; you do the math.  Still, it's group healing, and that's always
+nice.
+
+Purify Air
+Eliminates or reduces the duration of any cloud spells casted on your party.
+Handy when you get pounded with Poison Gas or Firestorm.
+
+Cure Disease
+Cures the "Disease" ailment.  If it doesn't go away when you cast it, cast
+a stronger Cure Disease.  The higher your vitality, the lower the spell level
+you will need to cure the disease.
+
+Level 6 spells: (90 Theology)
+Cure Stone
+Cures the "Stone" ailment.  If it doesn't go away when you cast it, cast
+a stronger Cure Stone.  The higher your vitality, the lower the spell level
+you will need to cure the petrification.  When cured, the character who
+was stoned loses 1 point in Vitality.
+
+Locate Object
+Acts like Wizard Eye, only it shows the locations of any chests in the area
+(not dropped items).
+
+Lifesteal
+Attempts to do a large amount of damage to one enemy and heal you with that
+damage.  Your spellcaster will never need to cast Heal Wounds on him or
+herself again.  It works on a *lot* of enemies, but don't expect it to
+work on the real nasties like Rexx or Godzylli very often--even at level
+7
+
+Astral Gate
+Instantly kills demons.  Since it's specialized, getting this is up to you.
+You *will* run into demons however.
+
+Recharge
+Very useful when used on items that have the effect of Magicfood when used
+and can be used multiple times.  Otherwise mildly useful to get back
+charges on items like the Amulet of Asphyxiation.
+
+Level 7 spells: (98 Theology)
+Locate Person
+Attempts to find all the NPCs.  Level 7 Locate Person tends to find all
+of them.
+
+Word of Death
+The Priest equivalent of Nuclear Blast.  Get it if you need another
+source of mass damage.
+
+Ressurection
+You can always quit-reload, and unlike Ressurection you don't have to wait
+forever to get it.  However, since it can be used in a fight, it isn't totally
+useless.  However, if you're the perfectionist type you're probably going
+to skip this spell.  If you ressurect a character, the character loses 1 point
+of Vitality and their life counter increases by 1.
+
+Death Wish
+Tries to instantly kill everything.  Better than Death, but still horrible.
+Get it if you really like instant-death; otherwise don't bother with it if
+you have a choice, unless you really need another 20 Divine spell points or
+you're getting this early in the game.
+
+Theosophy (Psionic spellbook)
+
+Level 1 spells:
+Mental Attack
+Your typical level 1 damage spell.  It has the bonus of a large possibility
+of inflicting "Insanity" but this bonus is rather useless after mid-game.
+
+Bless
+Grants you bonuses to hit.  Hey, I'd take that any day.  Even later in the
+game, this spell is useful.
+
+Charm
+Paralyzes an opponent.  Out of battle, it makes it easier to make friends
+with NPCs.  If you have diplomatic problems, this may be useful.  Otherwise,
+skip for a better spell unless you have no choice.
+
+Sleep
+Gives the opponent the "Asleep" status for a short time.  One of the most
+useful spells in the game, even if your party already has a Bard with the
+Poet's Lute.  This becomes useless after mid-game however.
+
+Heal Wounds
+There really shouldn't be a reason why you didn't pick this as your first
+spell.  Any healing is nice.
+
+Stamina
+Unlike the Priest, get this at your leisure.  Still, get it quick, as you'll
+need stamina recovery spells and items in the game.
+
+Terror
+Attempts to give the "Afraid" ailment to a group.  Not very helpful if you're
+trying to get experience
+
+Level 2 spells: (18 Theosophy)
+
+Psionic Fires
+The Psionic equivalent of Fireball, only earlier.  Quite useful at this point
+in the game.
+
+Knock-Knock
+Opens locked chests and doors.  Success rate is related to the power of the
+spell and the complexity of the lock.  Don't expect to use this spell
+successfully midgame and onwards.
+
+Cure Lesser Condition
+Cures or reduces the duration of the ailments "Irritation," "Sleep," "Afraid,"
+"Blind," and "Nausea."  This spell is not that crucial for the
+Psionic--everything can be cured with a little rest or by the Priest if
+you have one in your party.  In the case of "Nausea," make *sure* it is
+"Nausea."  "Disease" looks a lot like "Nausea" if you weren't paying attention
+whenyou got it.  The reason why this spell isn't too useful for the Psionic is
+because the Psionic actually needs his/her Mental spell points for spells
+like Mental attack.
+
+Divine Trap
+Helps to identify which trap a chest is booby trapped with.  You will only
+need it if your Skulduggery character has a low amount of Skulduggery, or
+if you are unfamiliar with guessing the traps of the game.
+
+Detect Secret
+Acts like you have a high amount of scouting skill.  Very useful the first
+time through the game if you don't want to build up scouting.  Very useless
+subsequent times
+
+Identify
+Tells you how much damage (if applicable) the item does and what special
+effects it may have.  If it has a special power, it won't tell you what it
+is, but it will mention the that it has one.  Special powers are where when
+you equip the item, it asks you if you want to invoke its special power, and
+generally are very limited in usage.  This is best used as a "what does this
+item do" check, where you cast and reload--however, for some things (like
+weapon damage for some weapons) it will give the wrong numbers
+
+Confusion
+Attempts to inflicts the "Insanity" ailment on an enemy group.  Insanity
+is a nice ailment to have inflicted, but after a while most of the monsters
+you want to nail with this are pretty darn resistant to it.
+
+Watchbells
+Wakes up everyone who is asleep.  The success rate of the spell depends on
+how tired the characters are and how long they've been sleeping.  Not very
+useful after you get the Mind Control Personal skill--even before then,
+the spell doesn't really work too well if you're not already at full
+stamina.
+
+Shrill Sound
+Hurts an entire enemy group, regardless of number.  For the Psionic however,
+it takes a backseat for Psionic Fires in priority unless you have mass
+enemy group problems (i.e. hordes of Rattkin Rogues/Bandits).
+
+Weaken
+Makes the opponent do less damage when they attack.  Useful I suppose, but
+I prefer killing them as quickly as possible.  Supposedly this spell also
+lowers resistances, which can be very useful, but there's no way to really
+tell for certain.
+
+Slow
+Slows down an enemy group.  Useful when fighting enemies stronger than you
+so that you can try to go first in subsequent rounds.  Much more useful
+when combined with Haste to make sure you go first.
+
+Level 3 spells: (36 Theosophy)
+Dazzling Lights
+The Psionic version of Prismic Missile, it dispenses status ailments or
+just sheer damage.  For some odd reason, this spell in my experience tends
+to dispense status ailments more than just pure damage--however, the
+"withers and dies" effect seems to pop up more often with this.  Note:
+This spell will not work on enemies with 100% or greater Light Resistance.
+
+Blades
+Unlike the Priest, the Psionic already has decent damage dealing spells.
+Still, it's useful when you run out of spell points
+
+Hold Monsters
+Attempts to paralyze an enemy group.  Unlike the other paralyzing spells,
+the paralyze effect from this is very likely to go away from getting
+attacked
+
+Mind Read
+Attempts to read an NPC's mind.  You will either see a phrase that will
+trigger some tidbit of information from the NPC, something you could have
+found out by Loring with the NPC, or "Nothing" will flash on the text part
+of the screen.  Pointless after the first time through the game.
+
+Sane Mind
+Cures or reduces the duration of the "Insanity" ailment.  Comes in handy
+at times, as unlike the monsters your characters seem to be subsceptible to
+insanity quite often.
+
+Blink
+Randomly makes the character invisible/visible throughout the round.  Lasts
+for quite a while, but is not a suggested spell if you are using a Monk to
+get these spells.
+
+Silence
+Attempts to silence a group of monsters.  Try to avoid casting this on
+Alchemical-casting monsters.
+
+Haste
+Speeds up your party.  Quite useful in trying to make everyone go first.
+
+Cure Paralysis
+Cures or reduces the duration of the "Paralysis" ailment.  Especially useful
+when the trap goes off in your face and leaves you paralyzed for days.
+
+Level 4 spells: (54 Theosophy)
+Armormelt
+Makes it easier to hit and damage monsters.  Think of it as the opposite
+of Armor Shield.
+
+Psionic Blast
+A group version of Mental Attack, and just about as useful
+
+Illusion
+Summons monsters to fight for you.  Fantasmogoras are at the high end of
+things that are summoned by this.  The best out of the three summon spells
+if you like instant death spellcasters.
+
+Wizard Eye
+Gives an overhead view of the area--just like you had a Journey Map kit.
+(Surprise...)  Skip this spell if I were you, unless you've been
+skimping on your Mapping skill or don't know if there is a secret passage
+behind a wall.
+
+Spooks
+The mass, hit-everything version of Terror.  Yay.  You're better off picking
+Psionic Blast than this.
+
+Paralyze
+Paralyzes one enemy.  Same thing as Web.  You're not going to be using this
+successfully when you want to.
+
+Level 5 spells: (72 Theosophy)
+Death
+Useless, if it weren't for the fact that with the huge amount of Mental
+spell points the Psionic has, it actually might work on something after the
+umpteenth time.  So near useless.
+
+Level 6 spells: (90 Theosophy)
+Locate Object
+Is a Wizard Eye spell that also shows the locations of chests (but not
+dropped items)
+
+Lifesteal
+The *only* true spell the Psionic will get at high levels of Theosophy that
+is actually quite useful.  Take it as soon as you can learn it.  The massive
+amounts of healing is really nice, and you kill something in the process
+(sometimes something nasty like a Vampire Vulture or a Dragorra)
+
+Level 7 spells: (98 Theosophy)
+Mind Flay
+It's a mass target spell, and it's really nice.  Unfortunately it is the
+worst out of all the mass target spells because a lot of monsters tend to
+resist the type of damage it deals, just like Psionic Blast and Mental
+Attack.
+
+Locate Person
+Tries to find all the NPCs in the world.  A level 7 Locate Person tends
+to find all the NPCs.
+
+Ressurection
+You can always quit-reload, and unlike Ressurection, you don't have to wait
+forever to get it.  However, since it can be used in a fight, it isn't totally
+useless.  However, if you're the perfectionist type you're probably going
+to skip this spell.  If you ressurect a character, the character loses 1 point
+of Vitality and their life counter increases by 1
+Alchemy (Alchemist spellbook)
+
+Level 1 spells:
+Acid Splash
+Your basic level 1 damage spell.  A couple groups of monsters (the vapors in
+particular) are pretty much immune to acid, but not a lot are
+
+Itching Skin
+Attempts to inflict the "Irritated" ailment on a group of monsters.  Tends to
+work on a lot of them (even some boss-like monsters like *S P O T*).
+
+Heal Wounds
+Heals one guy.  There shouldn't be a reason why you aren't picking this spell
+first.
+
+Stamina
+Restores stamina.  Very useful, so get it in the early stages of the game.
+
+Sleep
+Gives the opponent the "Asleep" status for a short time.  One of the most
+useful spells in the game, even if your party already has a Bard with the
+Poet's Lute.  This becomes useless after mid-game however.
+
+Charm
+Paralyzes an opponent.  Out of battle, it makes it easier to make friends
+with NPCs.  If you have diplomatic problems, this may be useful.  Otherwise,
+skip for a better spell unless you have no choice.
+
+Poison
+Deals damage and attempts to poison the damaged enemy.  Much more useful
+than Acid Splash in some cases, and less so in others
+
+Level 2 spells: (18 Alchemy)
+Blinding Flash
+Attempts to inflict the "Blind" ailment on a group of monsters.  Don't
+expect this to work on monsters with light resistance like Man' O' Groves.
+If Dazzling Lights or Prismic Missile don't work on that monster, this won't
+either
+
+Cure Lesser Condition
+Extremely useful for the Alchemist to have--unlike the other spellcasters,
+Alchemists got a lot of ailment-happy spells; what do you think happens when
+they backfire on their spells? :)
+
+Confusion
+Yet another ailment spell--it attempts to inflict the "Insanity" ailment on
+a group of monsters.  You won't be using this too much after mid-game, as
+most monsters seem to shrug off this spell.
+
+Level 3 spells: (36 Alchemy)
+Stink Bomb
+Yuck.  You have better ways of making people sick.  Still, you might like
+the spell.  I don't
+
+Air Pocket
+Deflects Asphyxiation spells and reduces the effectiveness of incoming
+Air-based spells that stick around as clouds.  It also reduces the
+effectiveness of breath weapons like Dragonlizard breath.  Don't expect
+this spell to have any effects on Whirlwind or Firestorm however.
+
+Web
+You really don't need this spell.  What do you prefer, paralyzing one guy
+or Blinding the entire group?
+
+Whipping Rocks
+Your first group-target damage spell as an Alchemist.  The fact that it
+doesn't seem to effectively hit most of the group at times can be
+overlooked in this case, as you have nothing better as a group damage spell
+at this point.
+
+Cure Paralysis
+Cures or reduces the duration of the "Paralyze" ailment.  Keep it handy
+Level 4 spells: (54 Alchemy)
+Fire Bomb
+Once you get this, you can stop using Whipping Rocks if you got it.  It's
+the Alchemist's equivalent of Fireball, and as a Fire spell it hits quite
+often.  Still, you may pass this up for the Cloud-type spells you get in
+this batch of spells.
+
+Acid Bomb
+A lasting cloud of Acid damage that lasts around 3-4 turns.  Does decent
+damage, like Firestorm, only not as much.
+
+Crush
+Tries to do up to 200 points of damage to one enemy.  I say "tries" because
+it misses quite often.  That's right, MISSES, not resisted.
+
+Poison Gas
+Like Acid Bomb, it is a lasting cloud that sticks around for around 3-4 turns.
+However, unlike Acid Bomb, it has a chance of poisoning anyone in the cloud,
+and if they are hit multiple times, the poison lasts longer.  Enjoy.
+
+Cure Poison
+Cures or reduces the duration of the "Poison" ailment.  You will need this
+as you get hit with nasty things like Vorpal Swords and attacks that poison
+you on each hit.
+
+Level 5 spells: (72 Alchemy)
+Draining Cloud
+Drains the stamina out of the group it is casted on, and lasts for a short
+while.  Useful when you're trying to tire out the enemy--especially if they
+use breath attacks or spells.
+
+Cure Disease
+Cures the "Disease" ailment.  If it doesn't go away when you cast it, cast
+a stronger Cure Disease.  The higher your vitality, the lower the spell level
+you will need to cure the disease.
+
+Purify Air
+Eliminates or reduces the duration of any cloud spells casted on your party.
+Handy when you get pounded with Poison Gas or Firestorm.
+
+Deadly Poison
+Attempts to make the opponent wither and die; failing that, it attempts
+to damage and inflict the "Badly Poisoned" status on the opponent.  When
+this spell works, it REALLY works.  You'll either love this spell or hate
+it.  Either way, it's much better than Death is.
+
+Create Life
+Creates monsters out of nothing.  Monsters range from Spectral Moths to
+Godzylli and Bloodwyrms.  The best summoning spell out of the three if you
+want sheer muscle; heck, it's the best period since the Godzylli can last
+much longer than the other summoned creatures.
+
+Level 6 Spells: (90 Alchemy)
+Toxic Vapors
+The cloud version of Stink Bomb.  Very useful, and makes sure that at least
+even powerful monsters can be incapacitated at times.
+
+Noxious Fumes
+Not very useful.  Just a better version of Stink Bomb that hits a group.
+However, there is a much better chance of nausea than Stink Bomb.
+
+Asphyxiation
+Wipes out lower level critters with ease.  You can get this decently fast
+with a mage, so try to grab this spell as fast as possible if you're on
+hard mode and the 5 groups of critters that ambush you each fight start
+to get on your nerves.  Becomes useless near the end of the game though.
+
+Cure Stone
+Cures the "Stone" ailment.  If it doesn't go away when you cast it, cast
+a stronger Cure Stone.  The higher your vitality, the lower the spell level
+you will need to cure the petrification.  When cured, the character who
+was stoned loses 1 point in Vitality.
+
+Level 7 Spells: (98 Alchemy)
+Deadly Air
+The Alchemist mass target spell.  Quite useful.  For an air spell, it isn't
+resisted very much at all
+
+Death Cloud
+The Alchemist instant-death spell.  Not very great though, especially with
+that expensive amount of spell points needed
+
+
+
+
+# Survival 101
+
+
+## Status Ailments
+
+Ailment:  Sleep
+Cure:  Watchbells, Cure Lesser Condition, (automatic rousing)
+
+Ailment:  Afraid
+Cure:  Cure Lesser Condition, (resting--quick)
+
+Ailment:  Irritated
+Cure:  Cure Lesser Condition, (resting--quick)
+
+Ailment:  Blindness
+Cure:  Cure Lesser Condition, (resting--quick)
+
+Ailment:  Nausea
+Cure:  Cure Lesser Condition, (resting--medium)
+
+Ailment:  Insanity
+Cure:  Sane Mind, (resting--medium)
+
+Ailment:  Paralysis
+Cure:  Cure Paralysis, (resting--long), successful hit in combat (small chance)
+
+Ailment:  Poison
+Cure:  Cure Poison, (resting--short to long and dangerous!)
+
+Ailment:  Badly Poisoned (getting hit with Deadly Poison)
+Cure:  Cure Poison--reduces to Poison
+
+Ailment:  Disease
+Cure:  Cure Disease
+
+Ailment:  Stone
+Cure:  Cure Stone
+
+"Ailment":  Death
+Cure:  Ressurection
+
+For ailments that can be cured by resting, the appropriate spell reduces the
+duration of the ailment until it is down to 0 (i.e. the ailment is cured)
+For ailments that CANNOT be cured by resting, you must use a set level of the
+curative spell to restore the character or the ailment will not go away.  This
+level is based roughly on the subject's Vitality stat: the higher it is,
+the lower your casting level can be
+
+## Killing NPCs
+
+
+Generally, it is a good idea not to kill NPCs unless you know you don't need
+them--and can deal with the consequences.  For example, some people kill
+Father Rulae in New City and Brother TShober at Eryn River for experience,
+which is fine (although pointless)...until they run into Xen Xheng and get
+slaughtered.  If you want to kill NPCs, make sure there are no more mobile NPCs
+of the same race still alive.  Making them angry enough to attack you can
+become awkward at the worst times possible until your party is a killing
+machine, as most of the mobile NPCs tend to stalk you
+
+## Inventory Management
+
+
+Some pointers:
+
+*  Try to keep your inventories organized
+*  Move heavy non-essentials to characters with room, not characters with
+   the highest strength.  If you move them to a character with high strength,
+   chances are that character has the high strength because it is wearing heavy
+   armor and can't carry anymore.  If the character isn't wearing heavy armor
+   though, go for it.
+*  Try not to carry more than what you need, for two reasons:
+    1.  You will almost always pick up loot.  If you're in front of a
+    battle generator killing monsters, they will end up dropping loot
+    eventually unless you're killing something with no loot at all,
+    like the Savant Androids.
+    2.  When you get an item from dialog, it automatically goes to the
+    first person with room in their inventory.  If no one has room, it
+    REPLACES an item.  You could do this to try to get rid of a key
+    item, but chances are that you'll lose something valuable instead.
+    So don't have a full inventory whenever possible.
+*  Merge items together to save space.  When you need to spread the items
+   around (i.e. you want everyone to have an invisibility potion before a
+   fixed fight) merge the said item onto an empty inventory space to separate
+   them.
+*  If you're not wearing it, chances are you don't need to be lugging it
+   around if it isn't a key item or a restorative item.  Sell what you don't
+   want, or drop it if you want it around just in case (Thesminster Abbey
+   in New City is a good place to drop items as it is often used and rather
+   large).  Try not to drop TOO many items however--there is a set amount
+   of items that can be dropped in each map area.
+*  Avoid overloading your characters.  When their carrying capacity score
+   changes color from grey, their equipment is heavy enough to affect their
+   AC, which is bad.  Hey, what do you expect after carrying 300 lbs. of stuff?
+
+
+# Playing the Game
+
+
+The order of the following locations are a recommended, but not required, order
+to get through the game for a brand new party starting just outside of New
+City, based on when maps disappear.
+
+## Basic Format
+
+Name of Area
+
+List of monsters encountered
+  (fixed) – can only be fought in a fixed encounter (you can't avoid it)
+
+Potential Questions
+
+## Questionaire Walkthrough (Semi-Spoilers)
+
+### Starting Area (Near New City)
+
+Monsters encountered:
+
+- Bambiphoots
+- Dandiphoots
+- Bitterbugs
+- Stag Weevils
+- Ravens
+- Glow Moths
+- Dane Initiates
+- Alliphoots (fixed)
+- Rattkin Rogues (fixed)
+- Rattkin Bandits (fixed)
+
+Q:  What do I do?  I'm in the middle of nowhere!
+
+A:  Well first off, equip your items.  Then SAVE.  Get used to saving, as you
+    will be doing it constantly.  Look around for a road and explore a bit.
+
+Q:  What about the forest area?  Can't I look there too?
+
+A:  Of course you can.  In fact, you should.  There's a Journey Map kit that
+    will definitely help you hiding in a chest in the forest if you are
+    starting a new game.  However, you should put that off until after you
+    have cleared out the Starter Dungeon, which is what you are looking for
+    on the road.  This is because the monsters GUARDING the path to the
+    chest are very tough, and in your new condition you will most likely
+    get creamed.  Instead, find a path on the road leading to a ladder going
+    into the ground.  That's the starter dungeon
+
+Q:  I imported a saved game from Bane of the Cosmic Forge, but I'm not where
+    you say I am!
+
+A:  If you instead started out in a different area because you imported your
+    game, I really can't help you too much
+
+If you started near Dionysceus skip directly to the Dionysceus section of this
+FAQ and see if you can get the ?CRYSTAL? map in the Temple of Deadly
+Coffers...if you can afford the outrageous fees.  You may need to use
+Legerdemain on Almagorte to pay your way through.  At the very least try to get
+the Mind Control skill before going to New City when you run out of cash, so
+that you have a much easier time getting back to Dionysceus.  Keep in mind that
+you're on the same map as a newly created party, but on the other side of the
+poppy fields.
+
+If you started near Nyctalinth: go into the city, talk with H'Jenn-Ra, meet
+Shritis (who you can say no to if you like the Umpani more, but don't kill
+any T'rang NPCs until you can take on Shritis if you do!), and then
+exit into New City instead of going back into the Anthracax.  Be warned that
+most NPCs don't like the T'Rang and will not trade with you, as you are
+considered to be their ally (and enemies of their enemies).
+
+If you started near Ukpyr: go in the city, join the Umpani I.U.F., decide
+whether or not you actually want to help K'borra T'Rang, and proceed until you
+have to deliver a message to Rodan Lewarx.  (This is the most profitable way to
+start, coincidentally.)
+
+Incomplete Bane of the Cosmic Forge games will start where a new party starts
+
+Regardless of where you start, you need to get to New City
+eventually--the first quarter of the game is linear if you have not
+played the game before (and therefore know what the maps say) and
+unless you started in Dionysceus, the only map you've got a chance of
+getting is the ?TEMPLE? map in Orkogre Castle unless you know exactly
+what you are doing
+
+
+### Starter Dungeon
+
+Monsters encountered:
+
+Encountered everywhere:
+
+- Mottle Cruds
+- Bitterbugs
+- Ravens
+
+Level 1-
+
+(No floor specific monsters)
+
+Level 2-
+
+- Stag Weevils
+- Boring Beetles
+- Night Rooks(fixed)
+- Ra-sep-re-tep(fixed)
+
+Q:  What's this fountain here?
+
+A:  That fountain restores some health, stamina, and mana every time you sip
+    it.  Don't forget that you can sip multiple times if once isn't enough
+    To sip, either click on the fountain once and then on the characters
+    that you want to drink from the fountain, or search and then click on
+    the characters that you want to drink from it.  Don't forget that you
+    can use the number keys (1-6) if you consider the mouse to be too slow
+    for this!  However, be VERY careful with fountains.  Most are beneficial,
+    but some have nasty effects on you.  Save before drinking from any
+    fountain.
+
+Q:  What the heck am I supposed to do here?
+
+A:  Build levels.  Clean out the entire dungeon.  And to get to know the
+    game better of course.  The most important tactic that you will learn
+    over and over here is to save before entering unexplored rooms and
+    areas.  If you have someone with access to Priest spells, try to get
+    Dispel Undead if you can--you'll be happy to have it, I will guarantee
+    that.  If something seems confusing, read the manual!  It is quite
+    descriptive in how to do things.  If you're using a copied version of
+    the game and didn't bother to get the manual, look for a copy of
+    Wizardry Gold--the manual is built in in that version by using the
+    F1 key, although Wizardry Gold tends to be more buggy than Crusaders
+    of the Dark Savant
+    Despite what people may say about the game being non-linear, the first
+    part of the game is linear--you just can't handle most of the monsters
+    in the game at the level you are at.  You'll see what I mean after
+    deciding where to go after New City--anywhere but Orkogre Castle,
+    Dionysceus(via the poppy fields), and Munkharama is lethal
+
+### New City
+
+Monsters encountered (varies by area of New City):
+
+- Gorn Spearmen
+- Gorn Rangers
+- Demented Munks
+- Dark Forest Munks
+- Rattkin Rogues
+- Rattkin Bandits
+- Dane Initiates
+- Dane Disciples
+- Savant Guards
+- Savant Troopers (fixed)
+- Savant Controllers (fixed)
+- T'Rang Youngers
+- T'Rang Wilders
+- Umpani Ruffians
+- Umpani Renegade
+
+
+Q:  The Savant Trooper won't let me through!  Why?
+
+A:  You probably didn't state a place in New City for it to confirm.
+    Maybe there's an ad for a store in the Starter Dungeon somewhere...
+    you must have found SOMETHING resembling paper in there.
+
+Q:  What should I do here?
+
+A:  Think of New City as a bigger version of the Starter Dungeon, except
+    with stores and healing that you have to pay for, for now.  Definitely
+    save before entering a place, as there are a couple doors that hide very
+    nasty encounters
+
+Q:  Hey!  I can't pick or force some of these doors!  How do I get in?
+
+A:  If you're referring to the Umpani Detache and the T'Rshieches House,
+    you'll get in...but from a different place.  If you are referring to a
+    certain always-jammed door near the Marina, buy a Knock-Knock scroll
+    from Belcanzor and have someone with at least 1 point in scribe use it
+    on the door...but save first.  Either that or use a level 6 Knock-Knock
+    spell to open the door.  Very useful treasure in the chest behind it,
+    considering how early in the game it is
+
+Q:  What's with the Wand Majestik in the Curio Museum?  I stick my hand in
+    but I can't grab it!  All I get is this weird stone when I leave my hand
+    in there and my leader gets diseased!
+
+A:  *Don't* stick your hand in there unless you have a way to cure your
+    first character of disease.  You can use Father Rulae in the Abbey in
+    the middle of New City, but you have to "donate" all your gold.  Better
+    to wait until later when you can buy Cure Disease potions in Munkharama
+    or learn the spell yourself, as the Wand isn't going anywhere anyway.
+
+Q:  Can I use the boat Sogheim has in the Marina?
+
+A:  No, but you'll find a better one.
+
+Q:  What the heck do I do at these Devil Faces in the Curio Museum?
+
+A:  Read the ?BOAT? Map.  Funny, some of those words match the devils...
+
+Q:  What is that sign in the Condemned Area?
+
+A:  It's a way into Old City.  You'll figure out how to get in after you
+    help Barlone in the Rattkin Ruins' Funhouse with a favor.  Maybe
+    Professor Wunderland was the friend he was speaking of--after all, he IS
+    a Rattkin, and he IS interested in Old City.  Perhaps mentioning the
+    place Barlone mentioned will help jog his memory.
+
+Q:  What's the Book of Fables for?  I managed to sneak past the Savant
+    Android guarding it with my fastest character.
+
+A:  It is for figuring out the witches names.  Read it when you're in the
+    Witch Mountains, and especially pay attention to the last parts.
+
+Q:  Who's the Gorn Officer that Palukes mentioned?
+
+A:  You'll find out.  Keep in mind when NPCs mention nouns like Officer or
+    even a place, there is a possibility that saying those words can open a
+    flood of useful info
+
+Q:  I found a Black Wafer.  What does it do?
+
+A:  It's for the Constabulary.  Think of ETX as Entrance.  Don't use it in
+    the Forbidden Zone however, unless you WANT to fight Savant Troopers and
+    Savant Guards.
+
+Q:  How *do* I get in the Forbidden Zone?
+
+A:  You walk in.  :)  You mean inside the inside area?  Get the Control Card
+    from the T'Rshieches House...but you'll need to have a chat with
+    Shiritis before you can get a chance at the chest.
+
+Q:  How do I turn on the computers in the Forbidden Zone?
+
+A:  Use the Comm-Link Device from the Umpani Detache.
+
+Q:  What can I do with the computer?  It wants me to login to some server.
+
+A:  Nose around Nyctalinth and wake up a few Savant Androids lying around
+    Don't forget to nose around the Observation Center there for some other
+    answers.  This is where the information you got in those two places is
+    used
+
+Q:  How do I open the Security Cell?
+
+A:  Whichever server you didn't use (or used but it didn't work) the first
+    time, use it now.
+
+Q:  Nooo!  This isn't fair!!!  Why isn't the ?LEGEND? map in New City?!?
+
+A:  It tends to disappear VERY fast for some odd reason.  Consequently,
+    return the Holy Work to Xen Xheng as soon as possible and go looking for
+    Xen Xheng after he leaves the dojo.  (Locate Person scrolls WILL help).
+    Ask Xen Xheng about "5 Flowers" and see what he says.  Try to get the
+    ?LEGEND? map now while it is early in the game after following the
+    instructions he gives you.  Seeing as Ratsputin seems to come down here
+    pretty early, I'd say that he's the one that normally takes the ?LEGEND?
+    map before it switches hands
+
+
+### Orkogre Castle
+
+Monsters Encountered:
+
+Encountered Everywhere (except below Prison):
+
+- Gorn Spearmen
+- Gorn Rangers
+- Gorn Lancers
+- Gorn Shamans
+- Gorn Leaders
+- Gorn Lords
+- Gorn Ashigaru
+- Demented Munks
+- Dark Forest Munks
+- Mad Warders
+- Munk Ninjas
+
+Level 1-
+
+- Rattkin Thieves
+- Rattkin Hunters
+- Savant Guards
+
+Level 2-
+
+
+Level 3-
+
+
+Prison-
+
+- Dragonlizards(fixed)
+- Fungus Oozes(fixed)
+- Crawling Wastes(fixed)
+- T'Rang Watchers(fixed)
+- T'Rang Wilders(fixed)
+- T'Rang Guarders(fixed)
+- Rattkin Hunters(fixed)
+- Rattkin Thieves(fixed)
+- Rattkin Bandits(fixed)
+- Dane Initiates(fixed)
+- Dane Disciples(fixed)
+- Boar Weevils(fixed)
+- Venom Weevils(fixed)
+- Rattkin Thieves
+- Rattkin Hunters
+
+Below Prison-
+
+- Iguanadons
+- Glow Mothras
+- Spectral Moths
+- Fungus Oozes
+- Venom Weevils
+- Stag Weevils
+
+
+Murkatos' Inner Sanctum-
+
+- Shadow Guardian (fixed)
+- Spectral Ravens (fixed)
+
+
+Q:  How the heck do I get into the Throne Room?  I haven't found a key for the
+    place!
+
+A:  You'll have to get into the Ape's room first and flip a switch.  I hear
+    apes like bananas...but if you didn't bring one with you there are some in
+    the prison.
+
+Q:  How do I open the doors in the Prison then?  Is there a switch somewhere
+    to throw?
+
+A:  No, you have to get the Prison Keys from Murkatos' Outer Sanctum
+
+Q:  *Glares* OK, and how do I get in the Outer Sanctum?
+
+A:  You'll need a Polished Steelplate from below to reflect a beam of light
+    into the gate.  Funny, why does my Detect Secret eye glow when I pass by
+    that splot of blood in front?
+
+Q:  I found these Boney Combs and Brushes.  When is it used?
+
+A:  Much, MUCH later in the game.  Isle of Crypts to be exact.  Look for a
+    hideous Gorn woman there
+
+Q:  Hey!  The chest in the Gorn King's room is empty!  What gives?
+
+A:  It looks like someone beat you to the map that was here.  Whenever you
+    come across an empty chest or a chest that had waxy wrappings in it, that
+    is where a map was located.  If the chest is empty, an NPC beat you to the
+    map because you were too slow.  At this point in the game however, only
+    Brother TShober can beat you to this chest at your top speed--so don't
+    talk to Brother TShober before coming here!  This map was the ?TEMPLE? map.
+    Be very careful when you run into NPCs in an area that has a map--when you
+    see them around, you're probably too late to get the map!  Of course, if
+    you take your time coming here almost anyone could have the map...
+
+Q:  That Shadow Guardian is too hard!  How do I beat it?
+
+A:  Looks like you went way too fast.  However, in the area below that you came
+    from, if you go back to where you fell down a fixed encounter (where you
+    have to fight some monsters) at a certain spot respawns--you will always
+    walk into the spot where the encounter is on your way back up.  This must
+    have been put there for people that got stuck here because they were low
+    level
+
+    You wanted to know how to beat it though:  You'll NEED the Air Pocket spell
+    here.  Otherwise, when Asphyxiation pops up (and it will 90% of the time),
+    you will see most or all of your party die unless you're high level
+    Useful spells on the Shadow Guardian in addition to Air Pocket include
+    Purify Air(because of Poison Gas spells it seems to love), Cure Poison,
+    Haste, Magic Screen, Armorplate, and Enchanted Blade.  The last three
+    spells (if you have any of them) should be casted out of battle before you
+    engage the Shadow Guardian.  If you can summon help with
+    Conjuration/Illusion/Create Life, call some up the first turn as well
+    With those spells under your belt, the Shadow Guardian shouldn't be too
+    much of a problem.
+
+Q:  Aaack!  All the sudden I'm silenced and 20-30 Spectral Ravens fight me!
+    What do I do?
+
+A:  This is an example where saving saves your butt.  If you saved before
+    entering this area, you'll immediately realize that you're too weak for
+    this section.  Come back later when your party can deal with all those
+    blinking birds without spells, and you'll have a better chance
+
+    You will want to come back anyway--there's a key in the chest there that
+    will unlock the gate to a Magic-restoring only fountain here; other contents
+    of the chest includes the nifty Gem of Power, which can, when invoking it's
+    special power, give a character the Power Strike Personal Skill at the cost
+    of losing the Gem; you may want to use the Gem as a protective item
+    instead for a while however--it grants a -2 AC bonus to the wearer which is
+    a lot right now
+
+    If you want to fight them now though, bring lots of Faerie Dust to put them
+    to sleep, and ready your Dispel Undead and any bombs that you may have found
+    or bought.  You may want some Cure Lesser Condition potions in case a party
+    member manages to run away from the fight because of the "Terror" status the
+    Ravens inflict on you.  Cure Paralysis potions are nice too
+
+### Munkharama
+
+Monsters Encountered:
+
+Encountered Everywhere:
+
+- Demented Munks
+- Dark Forest Munks
+- Mad Warders
+- Munk Ninjas
+
+Munkharama and Land of Dreams (Land of Dreams-only Monsters marked with an L)-
+
+- Gorn Spearmen
+- Gorn Rangers
+- Gorn Lancers
+- Gorn Ashigaru
+- Umpani Ruffians
+- Umpani Renegade
+- Spectral Ravens
+- Vampire Rooks
+- Night Rooks
+- Glow Mothras
+- Rattkin Leaders
+- Rattkin Thieves
+- Rattkin Hunters
+- T'Rang Wilders
+- Nightmares L
+- Dream Weavers L
+- Nightmares (fixed) L
+- Dream Weavers (fixed) L
+- Furies (fixed) L
+
+Lost Temple Level 1-
+
+- Gorn Rangers
+- Gorn Ashigaru
+- Umpani Ruffians
+- Umpani Renegade
+- Dragonlizards
+- Komodo Dragons
+- Skeletons
+- Minoskell
+- Vampire Rooks
+- Spectral Ravens
+- Dragonlizards
+- Fungus Oozes
+- Puxic Oozes
+
+Lost Temple Level 2-
+
+- Gorn Rangers
+- Gorn Ashigaru
+- Umpani Ruffians
+- Umpani Renegade
+- Umpani Scouts
+- Spectral Ravens
+- Spirits
+- Ghosts
+- Skeletons
+- Minoskell
+- Water Nymphs
+- Jelly Stingers
+- Frothing Munks (fixed)
+- Leper Giants (fixed)
+- Lord of Dark Forest (fixed)
+
+Crypt-
+
+- Skeleton Lords (fixed)
+
+
+Q:  What's the answer to the well's riddle?
+
+A:  What's another name for a quarter, a dime, a nickel, or a penny?
+
+Q:  What is with that @#@!@ Roulette?  I put the beans in, but it always comes
+    out WHITE WHITE WHITE WHITE!
+
+A:  Well, you can avoid it by swimming past it to the Rubber Bear chest; you'll
+    just miss out on money and experience.  If you want to solve it however,
+    from what I can tell the order the beans are placed in the receptables
+    depends on which rooms you go first, and in which order you end up placing
+    the beans.  Meaning it's random.  :)  The listed colors on the roulette
+    only reflect how many beans you got right, and not which rooms they are
+    in.  (Sorry about that.)  Try doing this as a process of elimination:
+
+1.  Grab all the beans.  Try to have some system where you know which
+    corner you found a bean.  The easiest way is I can think of is to
+    make a chart on paper with four boxes making up a larger square,
+    kind of like this:
+
+        (TODO, copy from original text file)
+
+2.  Clear out all the receptacle rooms if you haven't already.
+
+3.  SAVE.
+
+4.  Now, to mark things, NW, SW, NE, and SE are the four corners and
+    the beans found in each corner as the lowercase version of the
+    direction.  If you use the grid above though, you can just mark an
+    x in the appropriate corner.
+
+5.  Now try this to eliminate:
+
+    - nw → NW
+    - sw → SW
+    - ne → NE
+    - se → SE
+
+This places the beans in the receptacle closest to them.  After you spin
+the roulette, you will have several options
+
+Option 0:  One White
+
+This will never show up.  Don't even try to tell me that you can get
+this!
+
+Option 1:  Two whites.
+
+Pick two of the beans and switch them the next time you try.  For
+example, if the roulette came out Black Black White White, try
+
+- nw → NW
+- sw → SW
+- ne → SE
+- se → NE
+
+If this worsens things to four whites, then you know the two that you
+did NOT switch don't belong where they are and can solve the puzzle by
+switching them.  If this worsens to three whites, then you know that
+one of the beans you switched was right, and you'll have to go back to
+the order you had before and pick one of the same beans you switched
+the previous time and a bean you didn't switch and see what happens In
+my case, you would put that the NW and SW don't belong in the NW and
+SW receptacles, respectively.  If it turns out better, then you've
+solved the puzzle.  Whichever it is, it can't stay the same
+
+Option 2:  Three whites.
+
+Pick one of the white spots and try out the other beans in there until
+you come up with that spot as black as well.  Then treat it like it
+was two white two black, only you'll know exactly which two beans need
+to be switched
+
+Option 3:  Four whites.
+
+Since you've now eliminated four places where beans should be, your
+grid is probably marked like this:
+
++---+---+
+|x  |  x|
++---+---+
+|x  |  x|
++---+---+
+
+Try:
+
+- nw → NE
+- sw → SE
+- ne → NW
+- se → SW
+
+If that comes out all white, then you now have more places eliminated,
+and your grid probably looks like this:
+
++---+---+
+|x x|x x|
++---+---+
+|x x|x x|
++---+---+
+
+So try:
+
+- nw → SE
+- sw → NE
+- ne → SW
+- se → NW
+
+and use the process of elimination to figure out where the beans go If
+you still can't solve it there's nothing I can say that will help you.
+It's hard to keep track of the beans though, and you may have switched
+one pair accidentally.  I have only managed to get BLACK BLACK BLACK
+BLACK on the first try ONCE Usually I end up getting it right by the
+3rd or 4th try.  As a reward however you get free cash, experience,
+and a secret door opens up in the SE room
+
+Q:  What do I do at the Land of Dreams?  The Palace Munk doesn't like my
+    answers!
+
+A:  I hope you remembered to ask Brother Moser about rumors if you've met him
+    already.  Ask him about the other name you saw with "Land of Dreams" on
+    the front door for answers the Munk will like.
+
+Q:  OK, I'm in the Land of Dreams, I stepped through the black door, but now
+    I can't get out.  What do I do?
+
+A:  Remember what those Munks you saw were doing?  Maybe you can too with the
+    junk they left behind.  You have to go through the entire scenario until
+    it repeats before the activity will have some effect though
+
+Q:  What's a good item to pick?
+
+A:  Totally up to you.  The weapons are cursed but really strong (for this
+    point in the game) and the protective items, although cursed, grant a
+    regeneration bonus on the wearer(at least two of them do) and REALLY good
+    protection.
+
+Q:  What the heck is Xen Xheng saying?
+
+A:  You should have talked to Father Rulae way back in New City and said you
+    wanted guidance, and followed his directions and the subsequent directions
+    from Brother TShober.  Otherwise, this is a dead end for you
+
+Q:  Is there something special about that middle area in Munkharama with
+    Phoonzang's statue?
+
+A:  Read the ?TEMPLE? map for hints.  I hope you have decent swimming (at
+    least 20) to at least get to the middle area!  Hope your Scouting is
+    decently high, or that you use Detect Secret quite often.  If your
+    swimming isn't up to par, you may have to practice in the Polar Munk
+    wading pool.
+
+Q:  OK, I'm in this big underground dungeon.  What do I do here?
+
+A:  Locate an exit first.  ALWAYS locate an exit if you get dumped into the
+    middle of nowhere--that way when you're half-dead you have a way out
+    When you come out of the place, SAVE, and clear a way back to
+    Munkharama--Munkharama is going west on the path you will end up on
+    After you have a way out that is cleared of fixed encounters (i.e.
+    encounters that aren't random), go in back in and explore...after you get
+    healed.
+
+Q:  Um...why did I just fall down a pit?
+
+A:  Uh oh...I hope you didn't save.  This area is annoying.  However, it *is*
+    a good source of XP if you have Asphyxiation and Cure Disease, at least
+    for your first time through.  And you can get out eventually
+
+See, you're going to be fighting Frothing Munks and a Leper Giant (two
+    if on Expert mode) here.  The Leper Giant is annoying because he's
+    a giant--they tend to squash you like a bug if they hit you.  The
+    annoying thing about the Frothing Munks though is that they throw
+    up on you--and you get diseased!
+
+However, the Monks are at least weak against Asphyxiation (or a mass
+    target damage spell like Nuclear Blast), so if you have that and
+    Cure Disease, they'll be an easy source of XP for you.  Keep in
+    mind that they don't have a lot of hit points if you try using
+    Nuclear Blast or another similar spell.  A level 2 or 3 one should
+    kill them.  The Leper Giant just takes a bit of perseverance (and
+    lots of luck with status ailment spells).
+
+Q:  But I don't have those spells! (See previous question)  What can I do about
+    it?
+
+A:  Not much.  Don't go there is the only advice I can give--getting diseased
+    at this point in the game is *very* nasty, and it's not really a necessary
+    area.
+
+Q:  Yikes!  That Lord of the Dark Forest is hard!  How do I kill him?
+
+A:  With persistence.  If you are VERY lucky, you can silence him--he's a
+    monk, unlike the rest of the Munks who are ninjas, so shutting him up is a
+    very effective way of stopping the nastier spells like Lifesteal.  Deal
+    with anyone he has with him first though.  He might be dangerous, but so
+    is 6 Dark Forest Munks that get a chance to cast stuff on you as well,
+    leaving you blind, irritated (both literally and figuratively), and
+    possibly insane, making it near impossible for you to beat the Lord of the
+    Dark Forest
+
+If you have Fireball/Iceball or Nuclear Blast by this point (Nuclear
+    Blast not very likely at this point unless you had a mage that
+    changed profession to a Bishop), the others shouldn't be too much
+    of a problem if you are faster.  This is why you needed to find
+    the exit first, so that you can come here in better health.
+    However, if you cannot defeat the Lord of the Dark Forest at this
+    point, you have no hope of getting the ?CRYPT? map before someone
+    else, as it means that you are too low level to effectively kill
+    him--by the time you're not, the map will be gone
+
+Q:  What do I do with the Notched Shaft I found?
+
+A:  Look for what looks to be like a pressed button and use it there while
+    facing it.  It closes that pit that dropped you into the Frothing Munks
+    and Leper Giant.  Keep in mind that the pressed button is located in the
+    same region (although not the same passageway) as the pit and ladder.
+
+Q:  I can't find the Holy Work!
+
+A:  Remember what Brother TShober said about the "golden face."
+
+Q:  What is with these waxy wrappings with the Holy Work?
+
+A:  The chest also contained the ?CRYPT? map.  Looks like someone beat you to
+    it.  Try hunting down some Gorn NPCs or Brother TShober (strangely
+    enough).  They seem to be the first ones with it if you don't get it in
+    all the games I've played.
+
+Q:  Aaah!  Those Skeleton Lords are creaming me!!  And why am I paralyzed?
+
+A:  Oh dear.  Yet another example of "Come back later."  If you're playing on
+    expert mode you will NEED either Word of Death on two characters (because
+    1 level 7 Word of Death OR Nuclear Blast won't send them back to the grave
+    most of the time) or at least 3 characters with access to Silence or the
+    Silent Lyre, or (for the power hungry) characters high level enough to
+    shrug off Death and Fireball spells.  Then you have to hope that the
+    characters with Silence don't get paralyzed.  Nuclear Blast tends to not
+    work as well as Word of Death on undead.  There's no way you can take more
+    than 2 turns of spells from the Skeleton Lords without getting someone
+    clobbered to death, even with Magic Screen up.  If you can, you're
+    lucky--Death and 6 Fireballs have a nasty effect on my party at this point
+
+### Dionysceus
+
+Encountered Everywhere:
+Dane Initiates (level 1 up)
+Dane Disciples (level 2 up)
+Dane Canons (level 3 up)
+Dane Priests (level 4 up)
+Dane Apostles (level 5 up)
+High Fathers (level 6 up)
+
+First level/Temple of the Initiate-
+Cachre Sludges
+Glow Moths
+Spectral Moths
+Bitterbugs
+Stag Weevils
+Night Rooks
+
+Second level/Temple of Divine Order-
+Night Rooks
+Vampire Rooks
+Stag Weevils
+Iguanadons
+Skeletons
+Venom Weevils
+Stag Weevils
+
+Third level/Temple of Eternal Night-
+Bantari
+Vampire Rooks
+Dragonlizards
+Fungus Oozes
+Minoskells
+The Beast (fixed)
+Boar Weevils
+Venom Weevils
+Stag Weevils
+
+Fourth level/Temple of Aerial Whimsey-
+Bantari
+Vampire Rooks
+Spectral Ravens
+Fire Crows
+Dragonlizards
+Fungus Oozes
+Minoskells
+Bear Weevils
+Boar Weevils
+Venom Weevils
+Stag Weevils
+
+Fifth level/Temple of Deadly Coffers-
+Dragon Rooks
+Fire Crows
+Hog Beetles
+Wraiths
+Spirits
+Ghosts
+Water Nymphs
+Jelly Stingers
+Gelimaga
+
+Sixth level/Temple of Wanderers-
+Shadow Crusts
+Puxic Oozes
+Fungus Oozes
+Skeleton Lords
+Fetid Corpses
+Zombie Skells
+Savant Troopers
+Savant Guards
+Fire Crows
+Dragon Rooks
+Vampire Vultures
+Komodo Dragons
+Bear Weevils
+Boar Weevils
+Venom Weevils
+Magna Dane(fixed)
+
+Tower Pit Exit-
+See Temple of Wanderers and Tower's Top (except any fixed encounters)
+
+Tower's Top-
+Luna Mothras
+Glow Mothras
+
+*S P A W N* (fixed)
+Vampire Vultures
+Wraiths
+Spirits
+
+
+Q:  I can't make it through the Poppy Field to get here!  Are you nuts?
+
+A:  Do the Save/Restore method.  Save each step ONLY if at most 1 person falls
+    asleep.  You only need to make it through the poppy field once doing this
+    tedious method.  Then turn left at the intersection you will come across
+    after the field.  Now if you started near Dionysceus, you don't have to go
+    through this.  Don't forget to bring Watchbells, Cure Lesser Condition
+    spells and Cure Lesser Condition potions to stay awake if necessary, and
+    if you have the Deadman's Hair, equip it on someone (an elf character
+    preferrably, as elves already have hypnosis resistance and this will boost
+    it)
+
+    Alternately, you can spin your party until they wake up.  Spinning counts
+    as taking a step without actually taking a step, so you can move, spin the
+    party awake, and repeat.  However this is very time consuming.
+
+Q:  What is Almagorte talking about?
+
+A:  These guys are greedy little misers.  What do misers love most?
+
+Q:  Aaack!  I'm getting clobbered by traps!
+
+A:  Buy some Jonga Powder from Almagorte if you can't take the traps. (I can't
+    unless Dionysceus is the last area for me to tackle before trying to go to
+    the Dragon Mountains.)  On most of the levels there will be an urn like
+    the one in that little 1x1 arched area you saw right after entering the
+    Temple of the Initiate.  Use some Jonga Powder there.  You'll need to buy
+    Jonga Powder twice from Almagorte.  Save a use of Jonga Powder for after
+    this Tower by the way.  You'll need it.
+
+Q:  What are these little Golden Idols for?
+
+A:  For opening the gate to the next level of course.  Each level has one, and
+    you have to find the altar for it.  Have fun looking.
+
+Q:  (Pick a level) of the Dane Tower is too hard!
+
+A:  Then come back later when you're stronger.  However, it is possible on
+    expert mode for a party created from level one characters to get to the
+    Temple of Wanderers after clearing out the Starter Dungeon and New City,
+    so don't worry TOO much if a fight seems too hard.
+
+Q:  What do I do on the Temple of Divine Order?
+
+A:  Move around.  There are little 1x1 alcoves here.  Stepping in them moves
+    the pits around.  Try to fudge your way through.  Burning powder in the urn
+    here (in an alcove before entering the Temple) acts as a Levitate so you
+    don't have to worry about accidentally falling, and turns off a trap that
+    Silences your characters.
+
+Q:  There's a doorway that opens onto darkness.  Should I go in?
+
+A:  Yes.  That's the Temple of Eternal Night.  I hope your mapping skills are
+    adequate. (at least 10 to be able to map walls--30 if you want to see
+    alcoves)  Turn left immediately upon entering the Temple to look for the
+    urn--don't be afraid to try walking into what seems to be a wall if you
+    have horrible mapping skills--it might be the alcove with the urn.  After
+    that, explore the Temple at your leisure.  There's a fountain on this floor
+    in the western half of the temple that restores HP, Stamina and Mana, so
+    have fun looking.
+
+Q:  Bah.  I hate that purple haze.  Any way to turn it off?
+
+A:  Yeah, if you went left in the beginning of the Temple like I said to and
+    looked for the urn.  That automatic fight after the haze will go away as
+    well
+
+Q:  Should I try to learn "the word"?
+
+A:  Yes.  Do as the Dane ask and then come back here.  Meditate on the word and
+    you'll find that everyone who doesn't fall asleep learns 1 point in the Mind
+    Control Personal skill.  Repeat until everyone has a minimum of 1 point in
+    the skill.  Now you'll never worry about the poppy field again, and as a
+    bonus you get better resistance to mental stuff
+
+Q:  Where is my money going?  It seems to be disappearing!
+
+A:  Just so you know, when Tollen Dane comes out to congradulate your rank,
+    you're also paying fees.  The most expensive up at the top is 10,000 gold!
+    Meaning, if you can't pay up, come back later when you can
+
+Q:  What is with the Temple of Aerial Whimsey?
+
+A:  It's a teleporter maze.  Happy mapping--those teleporters aren't going to
+    show up.  After a while the places you get sent to will look familiar
+    Also, turn on the Direction spell (or look at your Journey Map Kit) as
+    there is a spinner teleporter as well.  There are also two teleporters here
+    that will send you back to the Temple of Eternal Night, which can be a
+    blessing or a pain depending on whether you need a couple of drinks at the
+    fountain or not.
+
+Q:  Who's the girl in the vision?
+
+A:  That's Vi Domina.  Remember the girl from the introduction?  (assuming you
+    watched it)  Maybe you should find more about her when you can.
+
+Q:  Aack!  Treasure Chests are exploding!
+
+A:  Sounds like you're in the Temple of Deadly Coffers.  You're just going to
+    have to take the punishment--try to get it so that booby traps that hit you
+    are only benign ones like Stunner or minorly hurting ones like
+    Dagger--getting stoned or killed means you reload for sure
+
+Q:  There's a locked gate here in the far right area with the little islands of
+    chests, but none of the keys from the chests here work!  What's in the
+    chest behind it?
+
+A:  You need a key from the first area of the Temple of Deadly Coffers where
+    the urn in the middle is.  The chest behind it contains the ?CRYSTAL? map,
+    but if you're playing on Expert mode, it's long gone by now unless you
+    started in the area--Kymas Turan or Ratsputin probably took it first.
+
+Q:  Where is everything in the Temple of Wanderers?  It just looks like a
+    bunch of deadends.
+
+A:  In this area, you have to see what new areas open up when you step in an
+    alcove.  That means you're going to have to step in *every* alcove and
+    check your Journey Map Kit to see if new areas opened up, and if your
+    mapping skill is below 30 here, you're going to be in big trouble.  Keep
+    in mind that when I say alcove, I mean a 1x1 room that only has one way in
+    and out
+
+Q:  What's the buzzing sensation I'm getting?
+
+A:  In this case, it means that you've reset the level to its original
+    configuration with everything closed
+Q:  Where do I put the Idol on this floor?  I can't find an altar anywhere!
+
+A:  Look in the far NW area of the Temple on this floor.  There should be an
+    alcove you circle around while walking that is opened up by a secret
+    button on the wall.
+
+Q:  What the...I'm getting hit with fireballs!  What's going on?
+
+A:  You're in a nasty area of the Tower.  The area behind the grates to your
+    east (where the fireballs are coming from) is the Temple of the Magna Dane,
+    which you will be able to get to after passing the Temple of Wanderers and
+    paying for your membership as a Lord of Dane.  Be warned that going down
+    this corridor means you will be taking heavy unpreventable (except by luck
+    and your fire resistances) fire damage and get into a fight with High
+    Fathers and other Danes after the gate at the very end.  The fire damage
+    goes away after you kill *S P A W N* or talk (and take the Pit challenge)
+    with the Magna Dane though, as the Magna Dane will have left his Temple
+    I've gotten stuck here before though, as the Pit exits here after a bit of
+    winding and my party just can't take 80-100+ hp fireballs at this point
+
+Q:  What is with this lever?  I pull it and it resets?
+
+A:  Yeah.  It opens (and closes) all the passageways that are opened by
+    alcoves on the level.  So if you walked in here when the fireballs are still
+    going off and yanked the lever, do it twice.  Otherwise you'll be in a world
+    of hurt as you leave, find the passageway closed, and then have to go back
+    to the lever to reopen it again.
+
+Q:  What do I do at the Pit?
+
+A:  Talk to Magna Dane to find out.  You get to him by taking the stairs down
+    after going to the top of the tower, not by yanking a lever.
+
+Q:  Magna Dane is HARD.  Everytime I start the fight, half my party is dead
+    before I can do anything!
+
+A:  Come back later.  It is easier when everyone has at least a Dexterity of 16
+    After the fight, don't forget to search the area for any extra booty.
+    *hint* *hint*
+
+Q:  Ack!  The Ring of Demons is killing me when I put it on!
+
+A:  *Don't* put it on anyone that doesn't already have a Regen +1 or a Regen +2
+    item equipped.  That being said, if you have a Faerie and got the Faerie
+    Cap from the chest in the Temple of Deadly Coffers, or the one with the
+    Chrome Key in the Temple of Wanderers, it is safe to put it on him or
+    her--the Faerie will just lose the HP regen bonus because it cancels out.
+    As a note about negative Regen items, the game appears to take the highest
+    regeneration bonus out of all the items you have, and add the lowest
+    negative regeneration penalty of the items you have to it, to get an end
+    result.  That means that if you have a Ring of Demons and both Gowns of
+    Divine Mail on the same character, that character ends up with no
+    regeneration bonus, NOT a Regen +2 bonus.  So that Regen +1 item allows you
+    to have as many -1 regen items equipped as you want.
+
+Q:  How do I open the demon-head gate?
+
+A:  What did you chop off the last demon you killed?
+
+Q:  But it didn't work!  (see last question)
+
+A:  Try it from the Magna Dane's chamber.  You DID see that secret button
+    right?
+
+Q:  What do I do with what's inside?
+
+A:  Whatever you want.  You need the Coil for later though
+
+
+Ukpyr
+
+Monsters Encountered:
+
+Ukpyr-
+Umpani Ruffians
+Umpani Renegades
+Umpani Scouts
+Umpani Armsmen
+Umpani Troopers
+General Yamo(fixed)
+Sgt. Balbrak(fixed)
+Lt. Gromo(fixed)
+Spirits
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Rattkin Bandits
+Rattkin Rogues
+T'Rang Wilders
+
+Q:  Why do the Umpani immediately attack me when I enter Ukpyr?
+(From Bernice Carter)
+
+A:  One of the following might have happened:
+
+* You imported a game and started near Nyctalinth.
+* You killed too many Umpani NPCs and didn't bother to rectify the situation
+  by Trucing with other Umpani NPCs and making them happy.
+    Either way, find an Umpani NPC (Rossarian in the Arms of Argus at New City
+    is ideal) and Truce until the NPC is willing to trade with you.  If you're
+    using Wizardry Gold however, you're out of luck due to the bug with
+    diplomacy (bug being that it just simply doesn't work...at all)
+
+Q:  Should I join the Umpani?
+
+A:  Definitely--even if you hate them.  You can betray them for the T'Rang by
+    helping K'Borra and lying about his presence near Ukpyr to the Umpani if
+    you hate the Umpani.  Keep in mind that here is a great way to make
+    money--especially if you need it to pay off the Danes for going up in
+    their tower.  You need at least 8000 gold for an outfitting however or you
+    won't get the returns on your investment
+
+Q:  What's the Humpawhammer?
+
+A:  It's a teleportation device.  It will transport you to the Umpani Detache
+    in New City and is used for your (more profitable) mission
+
+Q:  Should I help K'borra and the T'Rangs?
+
+A:  Again, it is totally up to you.  You may want to know that I've yet
+    to get any compensation from K'borra, although it may involve me finding
+    him again.  Supposedly though, you need to talk to Shritis to get your
+    reward.
+
+Q:  Where exactly is information K'borra wants?
+
+A:  It's in the Spaceport Authority.  If you're going to help K'borra, don't
+    tell Sgt. Balbrak that you found T'Rangs!  After you talk to General Yamo,
+    you'll be able to go into the Spaceport Authority without problems.
+
+Q:  I'm giving K'borra the information he wants, but he's calling me a traitor!
+    Why?
+
+A:  Don't put a space between the + and the rest of the coordinates.  The only
+    space in there should be after the 2nd number and before the 'D'
+Q:  I can't get that promotion Lt. Gromo said I'd get, even though I hit the
+    practice target 3 times!
+
+A:  He said to get 3 BULL'S EYEs, not 3 hits.  That being said, even though it
+    is possible to get a BULL'S EYE at 0 Firearms skill (My Valkyrie once got
+    BULL'S EYE HIT HIT at a Firearms skill of 0), chances are you won't get 3
+    BULL'S EYEs at a high enough rate until you have a skill of at least 40 in
+    Firearms.  After that it is very possible, but sometimes it takes a while.
+    (Once I got 3 BULL'S EYEs at 43 Firearms skill, another time it was at
+    64, and yet another at 53.)   You will get a IUFSTFTUFS badge to bring to
+    the Supply Depot, and then be offered 14250 for a Blunderbuss and Flak
+    Jacket.  No discounts on that unfortunately.  If you want the items though,
+    get them before meeting General Yamo
+Rattkin Ruins
+
+Monsters encountered:
+
+Encountered everywhere-
+Rattkin Ronin
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Rattkin Bandits
+Rattkin Rogues
+T'Rang Wisers
+T'Rang Watchers
+T'Rang Tecniks
+T'Rang Keepers
+T'Rang Guarders
+T'Rang Youngers
+Dane Canons
+Dane Disciples
+Dane Initiates
+Puxic Oozes
+Fungus Oozes
+Crawling Wastes
+Fire Crows
+
+Rattkin Ruins-
+
+Grimal (fixed)
+Rattkin Razuka(fixed)
+Savant Controllers
+Savant Troopers
+Savant Guards
+
+Funhouse-
+Upstairs:
+Zombie Skells
+
+Underground:
+Gelimagas
+Jelly Stingers
+Zombie Skells
+Fetid Corpses
+
+
+Q:  How do I get in?  The entrance is blocked off!
+
+A:  Go back to where the path split into East (to the Ruins) and West (to
+    Nyctalinth) and explore around.  You'll find something interesting (not to
+    mention the fights).  This is an example of why it pays to explore around
+    no matter where you go
+
+Q:  What do I do after all the Man' O' Grove fights?
+
+A:  You see that little square that isn't grass in the middle of all the 1x1
+    pillars?  Use the Bonsai Tree you got from Murkatos' Inner Sanctum on it
+    It doesn't matter what you answer when you get asked a question by the
+    tree
+
+Q:  How exactly did that help me get in?
+
+A:  Look around north of the blocked entrance for a tree with a gnarled face
+    It should be in an area next to city walls
+
+Q:  Why couldn't I have gone here in the first place?
+
+A:  Because if you did go here before using the Bonsai Tree in that Grove, the
+    tree wouldn't let you up.
+
+Q:  I can't get in Ratskells!
+
+A:  Steal from a blind rat NPC outside.  Check your inventory before and after
+    you meet him--you might get something stolen along the way!  I've had key
+    items stolen this way before, so remember to save/restore until either
+    nothing is stolen or an item you don't care about gets stolen.
+
+Q:  How do I get in the Funhouse?
+
+A:  Ask Blienmeis about "Funhouse".  Oh, and have 1000 gold before you do.
+
+Q:  What do I do in the Funhouse?
+
+A:  You're going to be setting up a lot of things.  You NEED a Detect Secret
+    or a good amount of scouting skill in here--especially after going
+    downstairs--or you won't be able to find the necessary items needed to set
+    up the place.  You need various items found throughout the Funhouse and a
+    Feather Weight potion from Birdie's store.  Don't forget the Black Pyramid
+    and the Wooden Dowel from upstairs!  After you've set everything up, save,
+    use the Feather Weight potion (but on the main screen!) and set things off
+
+Q:  What does Barlone want?
+
+A:  Give him a time of the next T'Rang ship to leave/come.  You should find the
+    information in the Landing Port (in the form of the T'Rang Logbook) and the
+    Observation Control Center (in the form of the TX-Coder) in Nyctalinth
+    Use the Coder on the Logbook while you're in the full-screen view of your
+    inventory to read it.  You're advised to go to Nyctalinth at this
+    point--the information Barlone gives you will give you access to the
+    ?DRAGON? map in Old City, but the ?DRAGON? map is one of the maps that
+    tends to get taken away real fast--hence the need for haste.  The ?BOAT?
+    map in the Funhouse however doesn't go away for a while in comparison to
+    the ?DRAGON? map but it DOES go away if you dawdle too long.
+
+Q:  What's the "another favor" Barlone mentions?
+
+A:  Well, if Mick the Pick or Ratsputin is alive, you'll find out when you meet
+    them and then come back here to Barlone.  Otherwise...there's no way to
+    find out.  One of CODS' great mysteries. :)  Think of it as an incentive to
+    get here fast.
+
+Q:  Aack!  There's MORE?  When does this "Funhouse" end?!?
+
+A:  Not for a while.  Have fun scrambling and trying to piece things out.  If
+    you're REALLY stuck on things, the Walkthrough at GameFAQs written by Tom
+    Needham will be able to get you through.  It is a very good resource for
+    figuring out how to get through an area, although I disagree with some
+    things he states.  You WILL, however, need to find a Bar & Rope and a
+    Black Ball and used them in the appropriate areas to get through.  You
+    will also need to make sure you've found a place to use the Wooden Dowel.
+    You will also find it completely necessary to fall down pits and such to
+    find everything you need.  Hope you have Levitate handy.
+
+Q:  What do I do at the target?
+
+A:  Throw the Speckled White Ball at it of course.  Look for some "cascading
+    troughs" as the game calls it and jump in to find said ball.
+
+Q:  What's with this rack of spears?
+
+A:  It guards the ?BOAT? Map.  Talk to H'Jenn-Ra T'Rang in Nyctalinth to
+    figure out the combination, if you haven't talked to him already
+
+Q:  I'm in wilderness after climbing out!  Where am I?
+
+A:  The Witch Mountains.  Have fun looking around.  Watch out for Q'ua-tari.
+
+Old City
+
+Monsters Encountered:
+
+Old City-
+
+Spirits
+Ghosts
+Puxic Oozes (fixed)
+Fungus Oozes
+Water Nymphs
+Dragonlizards
+Iguanadons
+Minoskells
+Skeletons
+
+Q:  Why are there footprints in the dust?
+
+A:  Why?  Because someone got here before you and nabbed the ?DRAGON? map!
+
+Q:  (continuation of previous question)Does that mean I should turn back then?
+
+A:  Not really.  There's some useful random loot in here too--especially what
+    is probably your first Ankh.  Most Ankhs can raise either Strength,
+    Vitality, Dexterity, Piety, or Speed, depending on what type of Ankh it
+    is.  There are other Ankhs that do other things, but most of the ones that
+    you run across will be the stat-raising kind.  If you already knew what to
+    do to get in however, you can go in here as early as after Orkogre Castle
+Nyctalinth
+
+Monsters Encountered:
+
+Nyctalinth-
+
+T'Rang Youngers
+T'Rang Guarders
+T'Rang Wilders
+T'Rang Keepers
+T'Rang Watchers
+T'Rang Assassins
+T'Rang Wisers
+T'Rang Elders
+H'Jenn-Ra (fixed)
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Savant Controllers
+Savant Troopers
+Savant Guards
+Spirits
+Fetid Corpses
+Zombie Skells
+Ymmu (fixed)
+Vilet Kanebe (fixed)
+Dragon Rooks
+Hog Beetles
+
+Underground area-
+Cave Thraxes
+Crust Thraxes
+Cave Slimes
+Rock Lizards
+Puxic Oozes
+Fungus Oozes
+Bear Weevils
+Boar Weevils
+Venom Weevils
+
+Q:  Where's H'Jenn-Ra?
+
+A:  Come on, it's not THAT hard to walk around and explore!  He's in the
+    Northwest area in the High Chamber though, since you asked.
+
+Q:  Should I say yes to Shritis?
+
+A:  It depends on if you hate the Umpani or not.  Be warned that if you say
+    yes, Shritis will constantly ask you (not to mention hunt you down) if
+    you've killed Rodan or not until you kill Rodan and keep his Golden
+    Medallion to present to Shritis, or until he gets immensely ticked off at
+    you and attacks you every time he sees you
+
+    If you really want to kill Rodan Lewarx however, he's not *too* hard, for
+    an NPC--use Missile Shield to stop the bullets he shoots at you most of
+    the time.  It's those irritating Alchemist-type spells he and his
+    reinforcements may have that will get you.  Also, as a word of warning,
+    they get an increased chance of a critical hit with ALL missile weapons,
+    including Blunderbusses and Muskets.  Of course, if you say no to Shritis
+    you're going to have to tread lightly every time you see him--he'll be
+    cranky when he sees you again, but at least he won't be trying to hunt you
+    down unless you kill T'Rang NPCs (including K'borra)
+
+Q:  Should I go back to Nyctalinth after talking to Shritis instead of going
+    into New City?
+
+A:  Yes, unless you got the information from Barlone already--if you did you
+    should head for Professor Wunderland and the entrance to Old City to get
+    the ?DRAGON? map quickly before someone steals it.
+
+Q:  Why don't these Finger Rods work on the Breeding Grounds door?
+
+A:  Because they're for the Tactical Depot.  The one for the Breeding Grounds
+    can be found in the High Chamber on a T'Rang who is cooking gruel.
+
+Q:  What is the Mystery Ray for?
+
+A:  You will use it on any Savant Androids you may find--especially the
+    sleeping ones in the T'Rang larder in the High Chamber.  Use it as an
+    item when it prompts you with the Use, Talk, and Leave buttons.  You can
+
+    *also* use the Mystery Ray to hurt _any_ Savant Androids you run
+    across--including those nasty Savant Kui'sa-ka near the end of the game
+    and those Savant Berserkers you wake up
+
+Q:  Is the information that the Savant Berserker spoke and the stuff that
+    flashed on the computer screen in the Observatain Center important?
+
+A:  You betcha.  Take a walk into the Forbidden Zone after you're bored of
+    Nyctalinth.  Make sure you have the Comm-Link Device from the Umpani
+    Detache first though.  BTW, if you helping Barlone, I hope you remembered
+    to look for the TX-Coder in the Observation Center.  Otherwise you won't
+    be able to read the logbook.  Told you to build up scouting!
+
+Q:  What do I do in the Graveyard?  All I see are lots of graves, a building,
+    and two alcoves with a psycho ghost who steals a jeweled staff before I
+    can grab it.
+
+A:  Well, you HAVE to do three things:  You have to grab the Longstem Spade in
+    the chest in the building here--it's going to be your shovel and you're
+    going grave robbing! :)  You also have to dig out the grave of Notera
+    Furmi (Not Firm) to get out of here.  Lastly, you have to get the
+    ?SERPENT? map from the Tomb of Vilet Kanebe behind the energy barrier,
+    and that means getting that Crux of Crossing away from the crazy ghost and
+    equipping the cursed (literally) staff on someone while going through the
+    barrier--both in and out.  That also means that you're going to be in the
+    graveyard at least twice--you need a little idol called the "Tydnab Emyt"
+    (Time Bandit backwards with y's for i's) which can only be found in the
+    middle area of Nyctalinth--if you took out your Journey Map kit and looked
+    at that big black spot in the middle of the map, you'd find it somewhere
+    in the middle of that.  Unfortunately you have to go through the graveyard
+    to get there
+
+Q:  Help!  I've fallen and can't get up!
+
+A:  I take it you dug up Notera Furmi's grave and fell in.  Now, before you go
+    exploring, you have to watch out for gas pockets--some of your characters
+    will get poisoned from these.  When you first bump into one, you should try
+    to step in every square in the room that had the Gas Pocket--there are more
+    than one, and they block all the exits.  After that, deal with the poison
+    however you feel like; you stepped in every square so that you don't have
+    to Cure Poison as many times, saving on mana
+
+    The Gas Pocket Rooms also signify one of the two ways out--the Eastern Gas
+    Pocket room has a path that leads directly to the middle area of
+    Nyctalinth, and the Western Gas Pocket room leads to another exit that is
+    blocked by T'Rang eggs--you need a Thermal Pineapple to get out this way,
+    and if you have that you should know that one heck of a fight is on your
+    way out if you choose to go out that way...and you can't avoid it if you
+    insist on using this route as the way out
+
+Q:  I'm in the middle area now.  So where exactly is the Tydnab Emyt?
+
+A:  It's beneath a statue of Phoonzang. (What a surprise...)  Use the Spade to
+    dig it up after you deal with the undead waiting in ambush where the statue
+    is
+
+Q:  So how exactly do I get the Crux of Crossing?
+
+A:  Go into either alcove.  It doesn't matter if the staff is in it or not, or
+    even if you already saw the ghost take it.  Then just use the Tydnab Emyt
+    and watch
+
+Q:  Hey!  I thought you said the ?SERPENT? map is here!  I'm just getting waxy
+    wrappings again!
+
+A:  It is...unless you took too long getting here and an NPC nabbed it
+    However, the ?SERPENT? map can usually be gotten even if you take your
+    time on expert mode--it's not as irritating to get as the ?CRYPT? map or
+    the ?CRYSTAL? map.  Since I can usually get it however, I can't take a
+    guess as to who took it first.
+
+Q:  H'Jenn-Ra is killing my party!  How do I deal with him?
+
+A:  I guess you had a Pineapple after all.  I won't lie to you--if your party
+    is not faster than H'Jenn-Ra's party, you're screwed unless you're on
+    easy mode, where there's a chance she'll appear by herself, or you're much
+    higher level, where most of their stuff has a reduced chance of working on
+    you.  You will need the full gamut of protective and enhancement spells to
+    kill her otherwise, including Air Pocket but not Fire or Ice Shield unless
+    she has company.  On Expert mode, you need at least 2 characters that can
+    cast mass target spells like Nuclear Blast or Word of Death to kill off
+    all the reinforcement T'Rang or the Assassins and Elders will lay waste
+    to you.  Fire spells tend to be more effective on the T'Rang.  Good luck!
+
+Note:  If you travel from Nyctalinth to Dionysceus, you will run into T'Rangs
+       ambushing the Helazoid Jan-Ette.  Help her if you want the Eagle Eye
+       skill later and to be on friendly terms with the Helazoid
+
+
+Witch Mountains
+
+Monsters Encountered:
+
+Bantari
+Q'ua-tari
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Forest Giants
+Boulder Giants
+Frost Giants
+Dinkle Wisps
+
+Q:  What do I do here?
+
+A:  Well, if you've returned the Holy Work to Xen Xheng and joined his school
+    of 5 Flowers, you can start collecting the flowers for one.  If you haven't
+    read the Book of Fables from New City yet, take it out and read it now,
+    and remind yourself about when the witches meet.  This next part doesn't
+    seem to be hinted anywhere in the game--you have to high-tail it to the
+    Giant Cave.  That means you're going to be looking for a path DOWN, so
+    you're going to look for a cliff where if you take another step, you fall
+    into the air.  Make a mental note of a place where you can climb up if you
+    find it first--you will go there later.  If you end up near a river, you're
+    in the wrong direction--you're on the Eryn River right now, which you've
+    been to before
+
+Q:  So what's up the path that you told me not to go up right now?
+
+A:  Well after the Giant Cave, you should climb up and explore.  Besides flower
+    hunting (and always save before trying to pick any flower now!) you are
+    also looking for the entrance to the Witch Cave, a very high cliff that
+    doesn't look like it can be climbed (but someone tried before), and 4 250
+    ft. vines to merge together into 1 big 1000 vine to be used at the cliff
+    If you find the cliff first, drop any vines you've found already there to
+    relieve encumbrance problems--they're very heavy.  You need to climb down
+    into that area before going into the Witch Cave.
+
+Q:  And what exactly do I do after that?
+
+A:  Why go into the Witch Cave with what you learned of course!
+
+
+Giant Cave
+
+Monsters Encountered:
+
+*S P O T* (fixed)
+Gruengard (fixed)
+Bonehead (fixed)
+Brunatz (fixed)
+Munstachio (fixed)
+Boulder Giants
+Forest Giants
+Frost Giants
+Water Nymphs
+Red Pirannhas
+Glow Mothras
+Rock Lizards
+Dinkle Wisps
+Jelly Stingers
+
+Q:  These giants keep killing me!  How can I kill them?
+
+A:  You kill them like anything else.  I don't advise using attacking spells on
+    them, although cloud-type spells like Poison Gas and Firestorm can help
+    deal the damage
+
+Q:  *S P O T* is insane!  Any pointers on how to stop him?
+
+A:  Treat him as a more...dangerous version of the giants you've been killing.
+    Consequently, anyone that can't dish out (and take) damage should be
+    hidden away via hide or invisibility potions bombing *S P O T* with
+    cloud-type spells and boosting spells on your party.  Create Life is a
+    GREAT help here, but not the other two summon spells--*S P O T* can flatten
+    those silly demons quickly, but the Myxlmynx might be able to take a couple
+    more hits.
+
+Q:  Anything special here?
+
+A:  Yes.  *S P O T* has the Necromantic Helm somewhere in his lair.  Look for
+    it; it's the witching glass mentioned in the Book of Fables.  Also, the Red
+    Rosis is in the underground river.  If you can swim four or more steps (and
+    have a mass target spell) go to the nearest access to the underground river
+    east of the entrance to the giant caves and swim south to that little
+    chokepoint of water(where you fight a lot of fishes--hence the need for the
+    mass target spell)--the Red Rosis should be on that little piece of dry
+    land right next to you to your west.  The alternate (and slower way) is to
+    take the far eastern entrance to the water and swim to another region of
+    the caves that will wrap around the bottom area and stick you near the Red
+    Rosis...after a couple fights.
+
+    There's also a chest in the extreme south area...but you'll need either
+    Stamina Potions or lots of Water mana for Stamina and Restfull to get to it
+Witch Grove
+
+Monsters Encountered:
+
+Bantari
+Q'ua-tari
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+
+Q:  Huh?  I've never heard of this place!
+
+A:  It's actually my name for the area of the Ukpyr Mountains you climb down
+    into from the tall cliff.
+
+Q:  So what exactly is so special about this area that you gave it a made-up
+    name?
+
+A:  You'll find out the names of the four witches here.  Remember the witching
+    hour comment from the Book of Fables?  That's right--you need to explore
+    around at night.  If you find the area here that gives your characters the
+    chill, stay out of the clearing, rest until night, and then go back in with
+    the Necromantic Helm equipped.  Too bad nothing seems to really hint that
+    the Necromantic Helm is the "witching glass".  You can also find the White
+    Dahlia in this area
+
+Witch Cave
+
+Monsters Encountered:
+
+?Alethedies? (fixed)
+?Dk.Savant? (fixed)
+?Vi Domina? (fixed)
+?Statue? (fixed)
+Witches' Lights (fixed)
+Spirits
+Ghosts
+Nightmares
+Dream Weavers
+Minoskells
+Puxic Oozes
+Cave Slimes
+Rock Lizards
+Luna Mothras
+Glow Mothras
+Spectral Ravens
+Faerie Witches
+
+
+Q:  Do I HAVE to pay the witches 1000 gold?
+
+A:  Yes.  Sorry.  That means you need 4000 gold here...not that you're in the
+    poorhouse at this point in the game anyway.
+
+Q:  What exactly is this Elysiad of Divinity?
+
+A:  It is for the Final Boss fight.  I'll mention which fight it is when you
+    get there.  Basically, stick it on your toughest character--when it is used
+    it immediately ressurects ALL your characters and restores them to full hit
+    points, stamina, and Mana even if they weren't resurrected.  At the end of
+    battle it does this AGAIN, making sure that everyone get's the massive
+    amount of experience points for it (hey, 800,000 so XP per character for
+    six characters on Expert mode is NICE, although you'll get less on Normal
+    and Easy.)  Best of all, it doesn't add to your "life" number, so it
+    treats you like you never actually died.  It ONLY works for the Final Boss
+    battle however.  Then there's the tiny detail that your character has to be
+    ALIVE to use it
+
+Q:  Wow!  The ?SPHINX? Map!  No one beat me to it?
+
+A:  I guess having it locked up means there's no way in hell someone can beat
+    you to it.  This is usually one of the last maps I get--because it never
+    seems to disappear no matter how long I take!
+
+Ukpyr Mountains
+
+Monsters Encountered:
+
+Bantari
+Q'ua-tari
+Rock Lizards
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Mtn. Thraxes (fixed)
+
+Q:  I take it the other two flowers are here?
+
+A:  Yep.  Save before picking either of them.  Don't forget to look for the
+    entrance to the Sphinx Cave.  You'll get here by the way from climbing
+    down the vine on the tall cliff to the area where the spirits were
+    partying, and then exploring further, or by exiting Ukpyr to the north
+    and snooping around all the sidepaths and the main path
+
+Sphinx Cave:
+
+Monsters Encountered:
+Red Pirannhas
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Water Nymphs
+Rock Lizards
+
+Q:  What do I do here?
+
+A:  Read that handy ?SPHINX? map you just got.  The Rebus Egge that you got
+    from attempting to get the Wand Majestik in New City is used here--you DID
+    assay/identify it eventually to find out what it was to tell it apart from
+    other stones right?  It's the "seed" the map refers to.  You're going to
+    need to swim at most 3 to 4 spaces by the way.
+
+Q:  What do I do at the slugs in the floor?
+
+A:  Isn't your Detect Secret going off right now?
+
+Isle of Crypts & Mandolian Isles
+
+Monsters Encountered:
+
+Above ground:
+Night Rooks
+Dragon Rooks
+Vampire Vultures
+Glow Mothras
+Luna Mothras
+Red Pirannhas
+
+Below ground:
+Ghosts of Gorn (fixed)
+Ungorn Daimyo (fixed)
+*D O O M* (fixed)
+Wraiths
+Spirits
+Kolidras
+Necromani
+Fieros
+Phantasmagoras
+Skeletons
+Zombie Skells
+Fetid Corpses
+Skeleton Lords
+Q'ua-tari
+Bantari
+Dragon Rooks
+Fire Crows
+Witch's Lights
+
+Q:  Um...which island do I go to?
+
+A:  Which island has more than a 1x1 pillar?
+
+Q:  What exactly is on the islands with 1x1 pillars?
+
+A:  You can walk through them to go somewhere special.  But you're going to
+    need something in the Hall of Gorrors before being able to do anything
+    special with them...and yes, you have to go in the pillars eventually.
+
+Q:  I found this picture of the Sphinx on one of the walls.  Anything special?
+
+A:  Use the Wand Majestik on it.  If you're a Greek Mythology buff (or at least
+    have been paying attention when the Sphinx was talking before!) you'll know
+    the question she refers to, but you don't have to get the question right.
+
+Q:  Waaa!  That's a lot of booby traps!
+
+A:  Yep.  Save often.  You're looking for secret buttons and levers.  You're
+    also looking for a gold urn to burn that extra use of Jonga Powder.  Aren't
+    those traps nasty?  If you want an (easier) time getting to the urn, after
+    you get to the area with fountains go east (turn left that is) and hug the
+    left wall until you get to all the little alcoves, then hug the right wall,
+    ignoring any alcoves for the moment.  You'll only run into a few fixed
+    encounters for the first half of the way and get smacked by Evilspeak once
+    or twice along the second half
+
+Q:  What the hell?  Why are my characters stoned (or various other nasty
+    effects) after drinking?  I thought fountains were beneficial?
+
+A:  Not all of them.  SAVE before trying one.  Heck, most of them here are
+    booby traps--I can only think of two fountains on this level that aren't
+    completely bad.
+
+Q:  OK, so I've burned the Jonga Powder and turned off the nasty traps.  What
+    now?
+
+A:  Explore of course.  There's at least 1 nice treasure chest in here that
+    you can get no matter what keys you have.  The best item you can get in
+    said chest is a Dragon Kite--a shield for Valkyries, Fighters, and Lords
+    that reduces their armor class by 4.  That's if you have them and need one
+    however.  Otherwise, a Faery Cap if you missed it before (or Chamail items)
+    is the 2nd best.  Most of the other stuff is overshadowed by better loot
+    elsewhere.  Bt the way, search all the Gorn Noblemen you can find, but save
+    before doing so!
+
+
+Dragon Mountains
+
+Monsters Encountered:
+Emerald Dragons(fixed)
+Dragonessas
+Dragorras
+Dragon Pups
+Fetid Corpses
+Vampire Vultures
+Dragon Rooks
+Fire Crows
+Komodo Dragons
+Rock Lizards
+Dragonlizards
+Dinkle Wisps
+Jelly Stingers
+
+Q:  OK, how do I get here?
+
+A:  Well, according to the map that came with the game, it's waaay south and a
+    little west.  Maybe you should follow the coast that way until you hit
+    something unusual...  (Minor note:  You're looking for fog!)
+
+Q:  I found the fog, but when I go through there's just a blank cliff here!
+
+A:  Come here at night, then take a peek at the ?SERPENT? map.  You're going
+    to need something from the Dane Tower here you know...
+
+Q:  Uh oh.  Brombadeg's tough!
+
+A:  No kidding. :)  Well OK, he's not THAT hard.  Silence seems to stop the
+    "cast enchantment" thing he does, but I'm not going to guarantee it
+    Treat him like any other unique monster though and you'll be fine
+
+Q:  Geez--this place is huge!  What do I do?
+
+A:  Read the ?DRAGON? map for hints of course.  And watch out for cave-ins
+    Have fun exploring and watch out for the tightwad! (Well, you have to find
+    the tightwad anyway.)
+
+Q:  A cave-in just occured!  How do I get out?
+
+A:  You will never get completely trapped by a cave-in--all the places that
+    have cave-ins have an alternate way out, although at least one of those
+    ways requires you to have lots of swimming if you want to make it back to
+    the boat.
+
+Q:  Where do I use the Key of the Dragon?
+
+A:  Remember the gate with the black dragon on it in the Isle of Crypts?
+
+Q:  Where does that ladder go?
+
+A:  Climb up and find out.  It's (relatively) safe
+City of Sky
+
+Savant Kui'sa-ka
+Savant Controllers
+Savant Guards
+Helazoid Aces (fixed)
+Xenozoid Runners
+Xenozoid Flyers
+T'Rang Elders
+T'Rang Assassins
+T'Rang Watchers
+Meta-Droid (fixed)
+Ravens
+
+Q:  Hey!  What's with the invisible walls?
+
+A:  Beats me.  You're going to have to figure out the path through them.  Good
+    luck and happy mapping. *evil grin*  It's not that hard.  Make a saved game
+    at the ladder and then try to find your way around.  If the fights here are
+    too hard, I suggest you go gain experience elsewhere, gain perhaps 4 or 5
+    levels, and then come back and see if they are easier for you.  The reason
+    is because by using a FAQ (or the clue book) to get answers, there is the
+    possibility that you are too low level for the area, and levels are very
+    important in this game as it affects many things, including your resistances
+    and whether enemy monsters will resist your attacks or not
+
+    If you're too lazy though, look at John Needham's FAQ at GameFAQs (if the
+    site you're using for FAQs lacks it) for directions on how to get to Dame
+    Ke-Li--if you don't have a Credit Card you have to go there first--and then
+    you probably want to buy some of her fun supply of items as well
+
+Q:  Insert one credit?  Where do I get a credit?
+
+A:  It's referring to credit cards.  Surely the Helazoids you've bumped into
+    dropped one or two?  If not, look around for Dame Ke-Li here--she sells
+    Credit Cards for 100 gold
+
+Q:  How do I get into the Storage Facility?
+
+A:  The Storage Key for the Storage Facility is in the Hall of Preservation.
+
+Q:  What about that gazebo with the glowing key?  There are invisible walls
+    around it.
+
+A:  You need to get into the Storage Facility first.  Then go into an alcove on
+    your way out (through the other side--there are two exits in the Storage
+    Facility).
+
+Q:  What is the Key of Light used for?
+
+A:  Remember those REALLY nice looking weapons in the Hall of Preservation?
+
+Q:  So which one should I pick then?
+
+A:  Like all choices, it is up to you.  The Frontier Phasers and the Cobaltine
+    Power Glove require Powerpaks for use however.  If you've imported your
+    party from Bane of the Cosmic Forge, you probably have the Diamond Ring
+    which can open another one.  The Light Sword and the Power Glove get
+    bonuses when fighting against robots like the Battle Droid (but not against
+    Savant Androids).  Be warned that when you use the Diamond Ring to grab
+    an item, the Ring gets sacrificed for the item
+
+Q:  Anything special I should do with Dame Ke-Li?
+
+A:  You mean besides buy all those nice, wonderful things she's selling?
+    Yeah--give her the Helazoid Pennant you got from Jan-Ette if you helped
+    Jan-Ette.  Other than that, she's the perfect person to have fun using the
+    Five Fingered Discount.  Just don't get caught.
+
+Q:  What exactly does that PK Crystal do?
+
+A:  -4 AC bonus, Regen +1, Psionic Resistance +50%, usable only by Psionics
+
+Q:  What are the answers to the tests in the Hall of Crusaders?
+
+A:  The first one is very obvious if you've been paying attention during the
+    game!  The second one requires help from the ?STAR? Map and the Gaelin
+    Stone in the Hall of Gorrors.  The third one...well, you'll see
+
+Q:  How do I get in the spaceship?
+
+A:  Speak the answer to the first test.
+
+Q:  What do I do inside?
+
+A:  Search the place, like any other group of nosy adventurers would.  Don't
+    stop searching until the game keeps you from searching!
+
+Q:  Where can I get more Powerpaks, other than killing lots of Helazoids?
+
+A:  Buy those Credit Cards from Dame Ke-Li and use them in a machine in the
+    Storage Facility--the machine gives out Powerpaks for Credits.  If you
+    really have to make money at this point, you *can* keep getting Powerpaks
+    and then selling them to Paluke--or anyone other than Dame Ke-li
+
+
+Hall of Gorrors (in the Isle of Crypts):
+
+Monsters Encountered:
+
+Ra-sep-re-tep (fixed)
+Thing from Hell (fixed)
+Horragoth (fixed)
+Myxlmynx (fixed)/ Fieros (fixed)
+D'Arboleth (fixed)
+Wraiths (fixed)
+Fiend of 9 Worlds (fixed)
+Beast of 1000 Eyes (fixed)
+Kolidra
+Necromani
+Red Pirannhas
+
+Q:  Do I have to kill any of these Gorrors?
+
+A:  Not really.  They're supposed to be challenges, with the exception of the
+    lonely little Ra-sep-re-tep in the SE area
+
+Q:  You said I needed something in here?
+
+A:  Yeah.  Whip out the ?CRYPT? map and read it.  Then follow the directions
+    You'll nab something that needs to be used in the Mandolian Isles.
+
+Q:  What do I do with it?
+
+A:  Remember seeing an indentation with a similar design on the Isles?  Stick
+    it in that pillar and then go in the other one.
+
+Q:  How do I open the gate to the Hall of the Past?
+
+A:  Do you have the ?LEGEND? map?  It's also called the Gaelin Legend.  Funny,
+    there's a stone in the same area called the Gaelin Stone.  I wonder if
+    there's a connection...maybe you can use the map on the stone somewhere.
+
+Q:  These !@#@! chests here hurt!  Is there any reason to open them?  The loot
+    I'm getting sucks!
+
+A:  Well, yes there is a reason to open them:  They will occasionally spew out
+    the best items, weapons, and armor in the game.  You're going to be here
+    for HOURS finding nice stuff to keep. :)  If you REALLY just want to know
+    what's in there, go to
+    http://www.softwarespecialties.com/GorrorsRevealed.html
+    While you're at it, visit http://www.softwarespecialties.com/ and thank the
+    guy (Llevram that is) if you did look for his hard work. :)
+
+Q:  I want to kill the Gorrors!  Can't you suggest anything?
+
+A:  Well, let's see...besides always cast Enchanted Blade, Armorplate, and
+    Magic Screen before the fight (except for Ra-sep-re-tep)...
+
+Ra-sep-re-tep: If you actually need help on him, that's not a good sign. :)
+
+Thing from Hell:
+
+Quick and Dirty Way--Silence him, then Deadly Poison him.  He'll go down fast.
+
+Slow and Boring Way--Silence him and whack away.  Use Armormelt to speed things
+                     up.
+
+The Demon Horragoth: Get high enough level that Death Cloud and Death Wish have
+                     no effect on you.  Then treat him as a monster that does
+                     nothing except a rare Word of Death or two and start
+                     hacking away.  Kill his companion(s) first though.
+
+The Spirit D'Arboleth:  Watch out for Lifesteal.  Otherwise treat him the same
+                        way as Horragoth, minus the Word of Death.
+
+The Fiend of 9 Worlds:  Immediately Hide/Drink Invisibility Potion.  Pummel
+                        him with as many different gas spells as possible,
+                        i.e. Draining Cloud, Poison Gas, Toxic Vapors,
+                        Firestorm, Acid Bomb.  Especially Toxic Vapors.  Cast
+                        Create Life for a distraction.  Send out either
+                        someone with Reflextion or with Armor Shield and other
+                        protective and hit-improving spells (who can hide again)
+                        to attack/hide once he gets nauseous from the Toxic
+                        Vapors and renew that spell and the non-air based gas
+                        spells with a vengeance.  Casting Armormelt, Haste,
+                        (and Missile Shield if you're on expert mode) and casting
+                        Armor Shield on the attacker should help.  Keep the Cure
+                        Poison and Heal Wounds prepared
+
+Beast of 1000 Eyes:  He's tough.  Very tough.  The way I beat him was with a
+                     level 50th so party on easy mode:  Everyone casted
+                     beneficial spells the first turn (Especially Fire Shield
+                     and Missile Shield), then hid/turned invisible the next.
+                     If no one is visible, he won't attack (usually).  Then,
+                     I casted Create Life to bring out a punching bag for the
+                     Beast and pumped the Beast with all the Cloud-type spells I
+                     had, the same ones as the ones used on the Fiend.  After
+                     that, everyone who could hide went in waves of Attack/Hide
+                     whenever it seemed like the Beast was overdue for a coughing
+                     fit or was otherwise distracted by my summoned help, and
+                     refreshed the Cloud spells constantly.  Eventually (after 4
+                     hours) he croaked
+
+                     Another suggestion I saw on the Software Specialties board
+                     is to equip someone who can't hide with the Necromantic
+                     Helm, Bat Necklace or another Light-resisting item like the
+                     Helazoid Pendant, and have him take all the Dazzling Lights
+                     hits; Dazzling Lights will go straight for the character if
+                     he's the only one visible, but with 100% so Light
+                     resistance + Magic Screen, you should be able to resist it
+                     and shrug it off.  This is because if everyone is invisible
+                     and the Beast casts Dazzling Lights at you (because you had
+                     someone visible in the beginning of the round), it is more
+                     likely to hit everyone with the Lights.  Trying with an
+                     average level party of around 30th so level is extremely
+                     difficult; once you get your party to around (or over)
+                     100th level however, the Beast stops becoming so
+                     invulnerable
+
+
+Hall of the Past
+
+Monsters Encountered:
+
+Rexx
+Myxlmynx
+Wraiths
+Spirits
+Bloodwyrms
+Yreguoths
+Necromanis
+Fieros
+Phantasmagoras
+Kolidras
+Skeleton Lords
+
+Q:  Um...I need a map.  Bad.
+
+A:  Sorry, I don't have one for you.  You're going to have to do it yourself,
+    although having a 70+ Mapping skill here REALLY helps.
+
+Q:  Gee, thanks for the help.{/sarcasm}
+
+A:  Heheh ^^;;;...well, before you go in, you'll probably want Dispel Undead,
+    Astral Gate, Fire Shield...basically all the commonly used spells I listed
+    waaay earlier.  If you didn't use them before, you're definitely going to
+    be using them here eventually.  The only exception is probably
+    Asphyxiation--most things in here aren't affected by it.  Bring lots of
+    Moser's Mojo Tea your first time through, as well as Heavy Heal/Stamina
+    potions.  Don't settle for the weaker stuff by this point
+
+Q:  There's a fountain there that I keep getting teleported away from!
+
+A:  You'll need to find the Key of Waters and open a gate elsewhere that opens
+    into the same room.  As long as you avoid the teleporter spot, you'll be
+    able to drink from the fountain.  It restores mana only
+
+Q:  What's with these crystals?
+
+A:  Read the ?CRYSTAL? map.  It applies to here.  You have to hit all eight
+    crystals, and one of them won't figure into the descriptions on the map
+    Just so you know: if you get it wrong, when you step in the pentagram it
+    will open up a passageway to the left.  When you're right it will open up a
+    passage to the right instead.
+
+Q:  Great, I've found the Star map.  How exactly do I use it?
+
+A:  "Look first at a man, and if thee looks rightly, then soon shall ye come
+    full circle. Then look beneath him, and if thee looks rightly, then soon
+    shall thee once again come full circle. Thus may thee divine the puzzle
+    from the pieces, and from it derive thy solutions."  That's the actual
+    lines in the map that you're interesting in.  If you've copied down the
+    buttons from the 2nd test, great.  If you haven't, they're Serpent, Gate,
+    Wand, Pyramid, Star, Dragon, Cross, Skull, Map.  Start at the side with a
+    Man symbol, look for one of the buttons in that group of symbols (the
+    Temple Map) and write it down.  Move to the next face on the right side of
+    the stone (in other words, circle the stone counterclockwise) repeating the
+    same thing but using the top section only.  Once you're back on the side
+    with the Man, do the same thing for the bottom row.  The buttons will fall
+    into place
+
+
+Tomb of the Astral Dominae
+
+Monsters Encountered:
+Dk. Savant (fixed)
+Savant Kui'sa-ka (fixed)
+Cosmo-Bots (fixed)
+Mega-Bots (fixed)
+Meta-Droids (fixed)
+Battle Droids (fixed)
+Mega-Bots
+Meta-Droids
+Battle Droids
+
+Q:  Any suggestions on surviving these robots?
+
+A:  Liberal use of Magic Screen, Fire Shield, and Ice Shield will dampen the
+    damage from the cannons.  Can't do squat about the lasers other than kill
+    the darn things as fast as possible, although Missile Shield may deflect
+    them.  The Light Sword and Power Glove will do double damage to these
+    guys though
+
+Q:  How do I open the tomb?
+
+A:  Look for various places in the tomb that have something written on the
+    floor and step on them.  This will take you all over the map.  After you
+    have stepped in all those marked spaces, the gate will automatically open.
+
+Q:  Hey!  Is the Astral Dominae gone?
+
+A:  No.  Just signal Vitalia to come on down and give her the Ring of the
+    Globe and the Locket of the Tomb.
+
+Q:  Huh?  Where did I get the Locket from?
+
+A:  You *did* remember to go back up to those 1x1 pillars after solving the
+    ?CRYPT? map...right?
+
+Q:  What about the Ring?
+
+A:  Did you finish the Great Test in City of Sky and completely search the
+    shuttle?
+
+Q:  And while we're baffled, how the heck do we signal Vitalia?
+
+A:  You *did* visit the Forbidden Zone in New City after getting that strange
+    information from the Savant Berserker and the Observation Center in
+    Nyctalinth and the Comm-Link Device...didn't you?
+
+Q:  Why does the Dark Savant keep wiping the floor with my party?
+
+A:  You're just unlucky.  :(  Still, you can use the Elysiad in this fight,
+    and this fight only.  Personally, I didn't really need it.  The Mystery
+    Ray was helpful too, at least on the Kui'sa-ka.  Hope you have 100 Mind
+    Control by the way: they LOVE Psionics
+
+Q:  Why does Vitalia ask me about a spaceship?
+
+A:  This decides what endings you can get.  Yes means that you have to go to
+    Phoonzang's shuttle to grab an ending.  No means you go back to the
+    Forbidden Zone for the endings, although I didn't have problems getting an
+    ending from Phoonzang's shuttle as well by saying no
+
+
+Various other possible questions:
+
+Q:  What should I bring with me for the ending?
+
+A:  That is (sort of) covered in the very last part of the Spoilers section.
+
+# Version Updates
+
+
+a    (11/17/01)Quick minor correction.
+
+v1.95(11/16/01)Added a section about transferring to Wizardry 8 and made a few
+               changes.  Trimmed down the list of places where this FAQ is
+               displayed due to various sites going down and changing over
+               time
+
+v1.94(3/3/01)  Made a few changes to some areas of the FAQ and credited Bernice
+               Carter.
+
+v1.93(10/20/00)Added Neoseeker to the list of places that can display this FAQ.
+
+v1.92(10/13/00)Added VGMasters to the list of places that can display this FAQ.
+               Did some minor editing here and there, and added another two
+               possible questions so that this wouldn't feel like a totally
+               pointless update.  ;)
+
+v1.91(10/2/00) Added Cheat Empire to the list of places that can display this
+               FAQ.  Also did some minor editing, and added a paragraph's worth
+               of words in the closing paragraph.
+
+v1.9 (8/15/00) Forgot to trim down another section in the beginning.  Minor
+               editing.  Expecting to update with a full Walkthrough next
+               update, but don't hope too much.
+
+v1.8 (8/7/00)  Trimmed down some areas and spaced out others as per Dallas'
+               recommendations, and minor editing.  Added a question in Ukpyr.
+
+v1.7 (7/9/00)  Fixed some errors thanks to the people who volunteered on the
+               Software Specialties board.  Thanks guys
+
+v1.6 (7/5/00)  Added a new section in Spellcasting.  Editing changes.  Added
+               www.rpgclassics.com to the list where this FAQ is displayed.
+
+v1.5 (6/22/00) Added www.the-spoiler.com to the list where this FAQ is
+               displayed.  Very slight editing changes.
+
+v1.4 (6/20/00) Added www.psxcodez.com to the list where this FAQ is displayed.
+               Very slight editing changes.
+
+v1.3 (6/13/00) Minor editing corrections.  Added Spoilers section.
+
+v1.2 (6/8/00)  Minor editing corrections.  Sources added.
+
+v1.1 (6/7/00)  Added Version updates section and two sites to the list where
+               this FAQ is displayed.
+
+v1.0 (6/6/00)  None.
+
+----
+
+Sources:
+
+Software Specialties Wizardry 7 board
+Crusaders of the Dark Savant Clue Book (comes with Wizardry Gold, although it
+has some errors that you don't know about until you play through the game)
+My own playing experience
+
+----
+
+Future plans.  The bottom item is what will most likely come up next.  Don't
+expect anything on the top to come anytime soon.
+
+*  HTML version of the Dark Savant clue book.  I won't be copying it, but it
+   will try to be in a similar format.  It will also use the maps below to help
+   navigate around.  Don't expect this in the near future at all, as my HTML is
+   horrible.
+*  Monster list, with the type of weapon the monster wields, what spells it
+   casts, and any special abilities.  Don't expect this to occur before
+   September of 2001, and if any other CRPGs come out within that time, don't
+   expect it at all.  Still, it will get done eventually, although now I don't
+   know if I'll finish it before Wizardry 8 comes out.  However, Llevram has
+   kindly put together a program that does all this already in the meantime.  :)
+   You should be able to get it at www.softwarespecialties.com.  Just scroll down
+   the left menu and click on the last link there.
+*  Full color maps saved from the game (and slightly modified in cases like the
+   Funhouse where the waterslide isn't mapped).  Some of these are actually
+   done, but I don't have time to go through each and every single area and map
+   everything the way it appears on the Journey Map Kit, AND pass my classes
+   I'll get too distracted.
+*  A spoiler walkthrough.  This FAQ is only a semi-spoiler and skips some
+   things.  The walkthrough will try to guide you on the quickest way around
+   things.  I can probably get this done before the Monster List and is next on
+   my to do list for this FAQ unless someone has a suggestion for an existing
+   section of the FAQ.  This has now been combined with the Full color maps.  I
+   will most likely table this and everything above due to lack of time, but
+   let's see how my time turns out.
+*  A beginner's section that is designed to explain how some things work
+   that will not spoil the game in anyway.
+*  Any minor corrections and suggestions to the FAQ.  I'll try to do what I
+   can, but remember:  I'm only human
+
+
+
+# Spoilers
+
+
+This is a (minor) spoiler section
+If you don't like spoilers, ignore this last section.  There's a reason why the
+spoiler section is LAST--although some of the questions above are semi-spoilish
+in nature, this section assumes that you know most of the things in the game
+Besides any spontaneous blurbs I may have, if you've got a question about the
+game that I feel is spoilish I will add it here
+
+## Items
+
+
+As I'm a rather avid item collector, I thought it would be nice to spill some
+information just for the heck of it
+
+Q:  Where are all the bard instruments?  What do they do?
+
+A:  Here are all I know of:
+
+Poet's Lute     Sleep         Most bards start with it.
+Angel's Tongue  Bless         Buy/steal from Brother T'Shober when you first
+                              meet him.
+Chromatic Lyre  Itching Skin  Land of Dreams.
+Lute of Sloth   Slow          Search the area where you summoned Maa-Gogg the
+                              Man'O'Grove for a chest.
+Silent Lyre     Silence       Dionysceus, in the Book of Immortals chest.
+Pipes of Doom   Terror        Buy/steal from Blienmeis at Ratskells in Rattkin
+                              Ruins when he is in Ratskells.
+Cornu of
+Demonspawn      Astral Gate   Kill *S P A W N*
+Siren's Wail    Confuse       Dragon Mountains, in the pirate chest or a
+                              Gorrors chest.
+Horn of
+Prometheus      Fireball      Gorrors chest or a certain Hall of Past chest
+Lyre of Cakes   Healthfull*   A certain Hall of Past chest--you choose between
+                              this and the Horn of Prometheus.
+
+* Lyre of Cakes has been proven to not give back your health.  People have
+  theorized that it instead acts like a mass version Cure Lesser Condition
+Q:  Where are the items that give me personal skills?
+
+A:  Everywhere.  Not all skills require items by the way:
+
+Firearms        Have a character practice on the firing range; can be given
+                to all, but each character must practice individually; you
+                can't have everyone learn the skill after one person uses
+                it--only the characters practicing will learn the skill.
+Snakespeed      Get the 5 flowers as Xen Xheng asked and merge them together
+                Use a Holy Water to merge with the White Dahlia before merging
+                the Dahlia with the other 4 merged flowers.  Only one person
+                can get this.
+Reflextion      Ask Blienmeis about "Reflextion" when he is in Ratskells.  He
+                will offer to sell you a Ring of Reflextion for 12000 gold
+                Use the Ring's special ability to give the character using it
+                Reflextion.  Only one character/game can get this.
+Power Strike    Use the Gem of Power's special ability to give the character
+                using it Power Strike.  The Gem of Power is located in the
+                secret room in Murkato's Inner Sanctum.  Only one
+                character/game can get this.
+Eagle Eye       Rescue Jan-Ette from the T'Rang Assassins.  Give the Helazoid
+                Pennant she gives you to Dame Ke-Li at City of Sky for the
+                Helazoid Pendant.  Use the Pendant's special ability to give
+                the character using it Eagle Eye.  Only one character/game can
+                get this.
+Mind Control    Kill the Psi-Beast(s) on the Temple of Eternal Night level of
+                Dionysceus and return to the room the Danes were in on the same
+                level to meditate.  Anyone who doesn't fall asleep gains a
+                point in the skill.
+
+Q:  Can I get the other items in the Hall of Preservation?
+
+A:  As far as I know, the answer is no if you didn't import a party from Bane
+    of the Cosmic Forge.  The Diamond Ring you get in Bane of the Cosmic Forge
+    can open up the doors as well, although like the Key of Light it goes away
+    when you use it--which means you have to decide whether the item inside
+    is worth losing a -5 AC accessory that females can use.  In my opinion, the
+    Cobaltine Power Glove, the Light Shield, and the Light Sword are all worth
+    it, but not the Frontier Phasers.
+
+Q:  What do the wandering NPCs sell?
+
+A:  This is from what I can remember, so there may be some mistakes:
+
+Lord Galiere and King Ulgar:
+    Spear
+    Awl Pike
+    Spear+2 (rarely or only in the beginning of the game)
+    Quilt Tunic (sometimes)
+    Quilt Leggings (sometimes)
+    Fur Leggings  (sometimes)
+    Cuir Gauntlets (sometimes)
+    Leather Cuirass (sometimes)
+    Studded Hauberk (sometimes)
+
+Capt. Boerigard:
+    Spear+2
+    Studded Hauberk
+
+Brother TShober:
+    Random potion (most of the times)
+    Random potion (sometimes)
+    Random potion (rarely)
+
+Xen Xheng
+    Sai  (sometimes)
+    Nunchukas  (sometimes)
+    Ninjato  (sometimes)
+    Shuriken (15)
+    Bushido Blade (higher levels)
+    Do-Maru (U)
+    Do-Maru (L)
+    Ninja Cowl     |
+    Ninja Garb (U) +--may not have all at once
+    Ninja Garb (L) |
+    Tabi Boots     |
+    Tosei-do (U) (higher levels)
+    Tosei-do (L) (higher levels)
+
+Kymas Turan
+    Mitre
+    Brimstone Nuggets
+    Ju-ju Stones (sometimes)
+    Dragon's Teeth (sometimes)
+    Random scroll
+    Random scroll
+    Random scroll (sometimes)
+    Random scroll (rarely)
+    Random scroll (rarely)
+
+All Umpani NPCs
+    Powder and Shot (25) (sometimes)
+    Walriblade (sometimes)
+    Flak Vest (sometimes)
+
+All T'Rang NPCs
+    ??? (I think nothing, but possibly Shock Rod)
+
+All Rattkin NPCs
+    Various keys
+    (Don't remember what else--they die too fast)
+
+Jan-Ette
+    Credit Card  (most of the time)
+    Powerpak (sometimes)
+
+Any maps the NPCs may have are always displayed first when you go to the
+"Buy" screen
+
+Q:  What are some good equipment that I can get?
+
+A:  Depends on your point in the game.  Here's some treasure troves where you
+    can get items better than what you should normally be getting if you go
+    ASAP:
+
+Orkogre Castle:  Try to get into the Armory early.  (You have to get in
+                 anyway.)  Leather and Studded Hauberks may be helpful as well
+                 as the bows and the occasional naginata or halberd
+
+Eryn River:  After meeting Brother TShober, take the first path you see on the
+             left, and follow it to the first place with water that you see
+             Save, and swim north--you'll need 30 swimming however.  Follow the
+             path to the end; the giant battle at the end is a doozy for a weak
+             party.  When you open the chest there though, you will get
+             a Crusaders's 2H Axe +1, Bracers of Defense, Chain Mail +1 (U),
+             Chain Mail +1 (L), and a Crusader Helm as well as gold
+
+Giant Cave:  You can get here early by exploring the Eryn River map (The same
+             map that you meet Brother TShober the first time) and locating
+             the path that leads to the Witch Mountains area.  You should max
+             out your swimming however.  When you enter, crack open the
+             Journey Map Kit and as west and south as possible (you may have
+             to explore the entire west area) until you both hit water and
+             can't go west anymore.  Now, if you have some area effect spells
+             like Fireball handy and lots of Water points for Stamina spells
+             (or lots Stamina potions), look at the area this way.
+
+             You should be facing south, with a wall to your right, part of the
+             passageway to your left, and water in front of you and to the left
+             in front of the other part of the passageway.  The water should
+             have walls that are visible from this point.  Now, go left until
+             you're line up with the wall on the left side, so that if you took
+             two or three steps forward you'd be lined up with the wall.  Now
+             for the first annoying part:  Take two steps forward and into
+             the Glow Mothra fight.  Deal with them.  (Level 4 Asphyxiation
+             works wonders here.)
+
+             Go back to shore and rest, then get ready to use some spells/items
+             and head back into the water facing south all the way until you get
+             to an opening on your left.  Go in that watery opening, but before
+             you go into the more open room after the opening, get some stamina
+             back and (if you want to, save) walk into the room to fight
+             Pirannha Sharks, which are tougher Red Pirannhas
+
+             After you've (hopefully) successfully dealt with them, go forward
+             until you hit the wall (you should be facing east now), turn right,
+             take a step forward in the water, turn left (facing east again)
+             and you'll see a treasure chest.  Go in and get your Plate Mail +2
+             (both upper and lower) and some random loot.  Reload the loot until
+             you see some weapon you like--I like the Cat O' 9 Tails, but some
+             may like the Vulcan Hammer or Sword of Fire
+
+Nyctalinth:  In the underground area, if you explore past the Western Gas
+             Pocket Area, you will eventually find a path that leads to an
+             encounter with Cave Thraxes, but starts with some text.  After you
+             fry those bugs, if you go to the northeast corner of the room and
+             search, you'll find a Broadsword +1 and random loot.  Reload until
+             you get something you like, which may include a Dragon Kite.
+
+Rattkin Funhouse:  After you do Barlone a favor, if Ratsputin is still alive you
+                   can run into him and he will demand that you pay dues that
+                   are 20% of your current amount of gold.  Pay at least once,
+                   then return to Barlone--he will offer you his treasure trove
+                   and a Displacer Cloak (you better have inventory room before
+                   talking!) for 40,000 gold.  The loot is decent and can
+                   include a Dragon Kite (again).
+
+Isle of Crypts:  West area after the area with all the fountains contains a
+                 secret button in one of the alcoves.  Press it, go in the
+                 passage, deal with the demon fight, and pick the chest open
+                 for a last chance at Chamail items, a Faerie Cap, or a Dragon
+                 Kite without wasting a spot in a Gorrors chest (although you
+                 might get the Dragon Kite again in the Dragon Cave).
+
+                 Or, if you feel you are strong enough, go to the extreme
+                 southwest area of the map (where the Ugly Gorn Woman corpse
+                 is buried) and enter the alcove with the Gorn Nobleman that is
+                 directly west of her.  Save, cast prepartory spells, then
+                 search to fight Ungorn Daimyo and possibly a bunch of Skeleton
+                 Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a
+                 Bushido Blade, and a Wakizashi +1
+
+Q:  Where can I get the Cane of Corpus?
+
+A:  Kill Blienmeis.  Easier said than done of course.
+
+Q:  Where are some monster generators?
+
+A:  Several places
+
+New City:  In the Control Center, stick the Black Wafer instead of the Control
+           Card in the slot to summon Savant Guards and Troopers.
+
+Orkogre Castle:  In the area below the prison; you must step in the square you
+                 fall in to respawn.
+
+Greater Wilds:  You will find an area that has a path circling a small area.
+                Step in the middle of that area to set off an encounter.  Step
+                on the square you had to go through to get in this area to
+                reset the encounter.
+
+Isle of Crypts:  The intersection in front of the fountain in the Hall of the
+                 Past.  Encounters reset automatically.
+
+## Gameplay
+
+
+
+Q:  What's the best party to get through the game?
+
+A:  Almost anything works, really.  If you want to be able to use the most
+    items in the game, you will need an Elf fighter-type, a Faerie Ninja, (the
+    following non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop, and one
+    of the character profession changed from a (non-Faerie) bard.  You still
+    can't use the Medicine Bag, but you're not missing much from it.  If you
+    want to just play for fun, anything can work.  If you want to get through
+    the first areas quickly, you may opt for a simple party of two Fighters, a
+    Mage, a Priest, a Thief, and a Bard for relative speed through the initial
+    parts.  Heck, even a party of all Ninjas can get through the game.  If all
+    else fails, use the change profession button to get a class that you need
+    at the moment once you have the minimum stat requirements to change into
+    the class.
+
+Q:  Should I use missile weapons?
+
+A:  You can if you want to.  A lot of them are pretty nice in damage and
+    effects.  However, the really nice missiles are in limited quantities;
+    unless you cheat, you may end up finding yourself never using them.  If
+    you are the economic type, you will hate any missile weapons, including
+    the Musket and Blunderbuss, which must be reloaded every other turn in
+    order for you to use it effectively.  Keep in mind however that missile
+    weapons are long range, and can target monsters no matter where they are.
+
+Q:  Should I put the difficulty on easy?  There are some places in the game
+    where I just want to get past a fight to go on with the game, not spend
+    extra time gaining levels, but if I do I feel like I'm cheating...
+
+A:  If you're just trying to get through the game, there's nothing wrong with
+    it.  Expert mode is there when you think that the game has become too easy;
+    I wrote this playing on Expert mode, and I can tell you that some fights
+    that seem easy on Easy are royal pains on Expert.  The Magna Dane fight is
+    a good example
+
+Q:  What are some battle strategies I can use?
+
+A:  Well for starters, you can try to keep Enchanted Blade, Armorplate, and
+    Magic Screen on all the time.  Although they will be less effective than if
+    you had just casted them should you get into a nasty fight, at least you
+    will be somewhat prepared for it.  In-battle spells you may wish to cast
+    to beef up your characters are Bless, Armor Shield, Haste, and Superman on
+    someone who will be attacking a lot.  Most of the other helping spells
+    should only be used if the situation calls for it--for example, casting
+    Ice Shield and Fire Shield when you're up against enemies that can use the
+    appropriate type of spells or attacks.  If you have a bard, take advantage
+    of his or her instruments and start hammering the enemy away with a status
+    ailment (or just Blessing everyone constantly with the Angel's Tongue).
+
+Q:  I keep missing the ?LEGEND? map.  Is there any way I can get it faster?
+
+A:  Actually, yes.  You can say the trigger "Holy Sacrament" to Father Rulae
+    at any point in the game, and he will let you in.  Be warned--do NOT say
+    Holy Sacrament if you just sacrificed all your money, as the Holy Sacrament
+    pathway will open up, closing the path to the other fountain he has
+## Transferring to Wizardry 8
+
+
+Q:  What items transfer?
+
+A:  Quite a bit actually.  Your starting equipment and low level equipment for
+    sure.  As for other, more powerful things, it depends on the type of item.
+
+    Armor:  Anything you can buy in New City should transfer.  Also, Chamail
+            and Chain Mail+1 will transfer.  Nothing else that you find in the
+            last several areas of the game appear to transfer though, so far,
+            although the Wizard's Cone should transfer.
+
+    Weapons:  All Bows, Arrows, Crossbows, Quarrels, Slings, and Sling Bullets
+              appear to transfer, no matter what kind, with exception to the
+              Siege Arbalest.  Any weapon you can buy in the New City area
+              when you initially enter the area also appears to transfer, but
+              not later equipment like Vorpal Blades.  Also, Stun Rods
+              transfer and are HEAVILY suggested as they do rather obscene
+              amounts of damage for a low level party
+              Although I don't have one on a transferring party, the Spear+2
+              should most likely transfer as well.  The Mystery Ray transfers
+              and goes from a weapon that only hurts Savant Androids to a
+              weapon that can hurt anything.  Strangely enough, Powder and
+              Shots will transfer, but not Muskets or the Blunderbuss.  Any
+              Shuriken will transfer, so if you have Death Stars, you keep
+              them
+    Miscellaneous:  All reagents transfer.  The Book of Relics transfers
+                    The Valentine Necklace and Storage Key are supposed to
+                    transfer according to "myrddin" on the Software Specialties
+                    Wizardry 8 forum.  Bat Necklaces transfer.  Scrolls, Wands,
+                    and Potions transfer (even Moser's Mojo Tea!).  Mana Stones
+                    transfer.  Cross of Protection apparantly transfers,
+                    according to Scronan of the Ironworks Wizardry 8 board.
+
+    Bardic Instruments: Poet's Lute, Angel's Tongue, Chromatic Lyre,
+    Siren's Wail, Cornu of Demonspawn, and Lute of Sloth will transfer
+
+    What definitely does not transfer:  Any of the good Gorrors treasure.
+
+Q:  Do all items transfer automatically?
+
+A:  Yes, they all transfer automatically
+
+Q:  Will my skills transfer?
+
+A:  Yes and no.  Don't expect your personal skills to, except Firearms
+    All your scores will be reduced to approximately 1/5 or less of what they
+    were originally, so a 100 in Swords turns into a 20 in Swords.  Also,
+    skills that aren't supposed to be raised by the class you transfer in are
+    there, but unavailable.  Your spells are stripped to 2 level 1 spells of
+    your own class.
+
+Q:  Where do I end up starting in Wizardry 8?
+
+A:  You start with who you left with.  :)  Failing that, you start in a
+    Monastery.  I do not know what you start with if you decide to take the
+    Globe for an ending however.
+
+Q:  I want to ask you something about Wizardry 8.  Can I?
+
+A:  That's not a good idea, as I do not have a FAQ for Wizardry 8 specifically.
+    This section is here only because it also pertains to Wizardry 7
+
+----
+
+
+Thanks for reading this guide.  As I've said before, any comments and such
+non-spam and non-flame in nature are appreciated.  If you have a question not
+answered here, I'll be happy to add it after you ask me.  Right now, I'm in
+the middle of mapping all of the game and doing the "online Walkthrough" train
+of thought to kill two birds with one stone.  This is going to take a LOT
+longer than I expected, due to the need to do assignments for class and the
+relocation (and swapping) of the computer I was using to map the game, so it is
+on hiatus for the moment while I get my life organized.  I can still answer
+questions however as well as update this FAQ if more questions get asked
+pertaining to the game (but not technical stuff)
