@@ -53,14 +53,22 @@ contents={%
     \includegraphics[width=\paperwidth,height=\paperheight]{parchemin_6.jpg}}{}
 }}
 
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+
 \title{A random Crusaders of the Dark Savant FAQ}
 \author{Written by: Ravashack}
 \date{v. 1.95a}
 
-\newcommand{\faqentry}[2]{\begin{description}[align=left,leftmargin=0cm]
-  \item [Q:] \textbf{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}
-  \item [A:] #2
-\end{description}}
+% \newcommand{\faqentry}[2]{\begin{description}[align=left,leftmargin=0cm]
+%   \item [Q:] \textbf{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}
+%   \item [A:] #2
+% \end{description}}
+\newcommand{\faqentry}[1]{%
+  \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\par\nopagebreak[4]}
+
 
 \begin{document}
 \maketitle
@@ -9389,111 +9397,6 @@ Q: What should I bring with me for the ending?
 A: That is (sort of) covered in the very last part of the Spoilers
 section.
 
-\section{Version Updates}\label{version-updates}
-
-a (11/17/01)Quick minor correction.
-
-v1.95(11/16/01)Added a section about transferring to Wizardry 8 and made
-a few changes. Trimmed down the list of places where this FAQ is
-displayed due to various sites going down and changing over time
-
-v1.94(3/3/01) Made a few changes to some areas of the FAQ and credited
-Bernice Carter.
-
-v1.93(10/20/00)Added Neoseeker to the list of places that can display
-this FAQ.
-
-v1.92(10/13/00)Added VGMasters to the list of places that can display
-this FAQ. Did some minor editing here and there, and added another two
-possible questions so that this wouldn't feel like a totally pointless
-update. ;)
-
-v1.91(10/2/00) Added Cheat Empire to the list of places that can display
-this FAQ. Also did some minor editing, and added a paragraph's worth of
-words in the closing paragraph.
-
-v1.9 (8/15/00) Forgot to trim down another section in the beginning.
-Minor editing. Expecting to update with a full Walkthrough next update,
-but don't hope too much.
-
-v1.8 (8/7/00) Trimmed down some areas and spaced out others as per
-Dallas' recommendations, and minor editing. Added a question in Ukpyr.
-
-v1.7 (7/9/00) Fixed some errors thanks to the people who volunteered on
-the Software Specialties board. Thanks guys
-
-v1.6 (7/5/00) Added a new section in Spellcasting. Editing changes.
-Added www.rpgclassics.com to the list where this FAQ is displayed.
-
-v1.5 (6/22/00) Added www.the-spoiler.com to the list where this FAQ is
-displayed. Very slight editing changes.
-
-v1.4 (6/20/00) Added www.psxcodez.com to the list where this FAQ is
-displayed. Very slight editing changes.
-
-v1.3 (6/13/00) Minor editing corrections. Added Spoilers section.
-
-v1.2 (6/8/00) Minor editing corrections. Sources added.
-
-v1.1 (6/7/00) Added Version updates section and two sites to the list
-where this FAQ is displayed.
-
-v1.0 (6/6/00) None.
-
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-Sources:
-
-Software Specialties Wizardry 7 board Crusaders of the Dark Savant Clue
-Book (comes with Wizardry Gold, although it has some errors that you
-don't know about until you play through the game) My own playing
-experience
-
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-Future plans. The bottom item is what will most likely come up next.
-Don't expect anything on the top to come anytime soon.
-
-\begin{itemize}
-\tightlist
-\item
-  HTML version of the Dark Savant clue book. I won't be copying it, but
-  it will try to be in a similar format. It will also use the maps below
-  to help navigate around. Don't expect this in the near future at all,
-  as my HTML is horrible.
-\item
-  Monster list, with the type of weapon the monster wields, what spells
-  it casts, and any special abilities. Don't expect this to occur before
-  September of 2001, and if any other CRPGs come out within that time,
-  don't expect it at all. Still, it will get done eventually, although
-  now I don't know if I'll finish it before Wizardry 8 comes out.
-  However, Llevram has kindly put together a program that does all this
-  already in the meantime. :) You should be able to get it at
-  www.softwarespecialties.com. Just scroll down the left menu and click
-  on the last link there.
-\item
-  Full color maps saved from the game (and slightly modified in cases
-  like the Funhouse where the waterslide isn't mapped). Some of these
-  are actually done, but I don't have time to go through each and every
-  single area and map everything the way it appears on the Journey Map
-  Kit, AND pass my classes I'll get too distracted.
-\item
-  A spoiler walkthrough. This FAQ is only a semi-spoiler and skips some
-  things. The walkthrough will try to guide you on the quickest way
-  around things. I can probably get this done before the Monster List
-  and is next on my to do list for this FAQ unless someone has a
-  suggestion for an existing section of the FAQ. This has now been
-  combined with the Full color maps. I will most likely table this and
-  everything above due to lack of time, but let's see how my time turns
-  out.
-\item
-  A beginner's section that is designed to explain how some things work
-  that will not spoil the game in anyway.
-\item
-  Any minor corrections and suggestions to the FAQ. I'll try to do what
-  I can, but remember: I'm only human
-\end{itemize}
-
 \section{Spoilers}\label{spoilers}
 
 This is a (minor) spoiler section If you don't like spoilers, ignore
@@ -9571,54 +9474,117 @@ item inside is worth losing a -5 AC accessory that females can use. In
 my opinion, the Cobaltine Power Glove, the Light Shield, and the Light
 Sword are all worth it, but not the Frontier Phasers.
 
-Q: What do the wandering NPCs sell?
+\faqentry{What do the wandering NPCs sell?}{This is from what I can remember,
+  so there may be some mistakes:}
 
-A: This is from what I can remember, so there may be some mistakes:
+\begin{itemize}
+\item Lord Galiere and King Ulgar
+  \begin{itemize}
+    \tightlist
+    \item Spear
+    \item Awl Pike
+    \item Spear+2 (rarely or only in the beginning of the game)
+    \item Quilt Tunic (sometimes) 
+    \item Quilt Leggings (sometimes)
+    \item Fur Leggings (sometimes) 
+    \item Cuir Gauntlets (sometimes)
+    \item Leather Cuirass (sometimes)
+    \item Studded Hauberk (sometimes)
+  \end{itemize}
+    
+\item Capt.~Boerigard
+  \begin{itemize}
+    \tightlist
+    \item Spear+2
+    \item Studded Hauberk
+  \end{itemize}
+    
+\item Brother TShober
+  \begin{itemize}
+    \tightlist
+    \item Random potion (most of the times)
+    \item Random potion (sometimes)
+    \item Random potion (rarely)
+  \end{itemize}
+    
+\item Xen Xheng
+  \begin{itemize}
+    \tightlist
+    \item Sai (sometimes)
+    \item Nunchukas (sometimes)
+    \item Ninjato (sometimes)
+    \item Shuriken (15)
+    \item Bushido Blade (higher levels) 
+    \item Do-Maru (U)
+    \item Do-Maru (L)
+    \item Ninja Cowl \tikzmark{xen-xheng-topbrace}
+    \item Ninja Garb (U)
+    \item Ninja Garb (L)
+    \item Tabi Boots \tikzmark{xen-xheng-bottombrace}
+    \item Tosei-do (U) (higher levels)
+    \item Tosei-do (L) (higher levels)
+      \begin{tikzpicture}[overlay, remember picture]
+        \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
+        let \p1=(xen-xheng-topbrace), \p2=(xen-xheng-bottombrace) in
+        ({max(\x1,\x2)+2em}, {\y1+0.8em}) -- node[right=0.6em] {may not have all at once} ({max(\x1,\x2)+2em}, {\y2});
+      \end{tikzpicture}
+  \end{itemize}
+    
+\item Kymas Turan
+  \begin{itemize}
+    \tightlist
+    \item Mitre
+    \item Brimstone Nuggets 
+    \item Ju-ju Stones (sometimes)
+    \item Dragon's Teeth (sometimes)
+    \item Random scroll
+    \item Random scroll
+    \item Random scroll (sometimes)
+    \item Random scroll (rarely)
+    \item Random scroll (rarely)
+  \end{itemize}
 
-Lord Galiere and King Ulgar: Spear Awl Pike Spear+2 (rarely or only in
-the beginning of the game) Quilt Tunic (sometimes) Quilt Leggings
-(sometimes) Fur Leggings (sometimes) Cuir Gauntlets (sometimes) Leather
-Cuirass (sometimes) Studded Hauberk (sometimes)
-
-Capt.~Boerigard: Spear+2 Studded Hauberk
-
-Brother TShober: Random potion (most of the times) Random potion
-(sometimes) Random potion (rarely)
-
-Xen Xheng Sai (sometimes) Nunchukas (sometimes) Ninjato (sometimes)
-Shuriken (15) Bushido Blade (higher levels) Do-Maru (U) Do-Maru (L)
-Ninja Cowl \textbar{} Ninja Garb (U) +--may not have all at once Ninja
-Garb (L) \textbar{} Tabi Boots \textbar{} Tosei-do (U) (higher levels)
-Tosei-do (L) (higher levels)
-
-Kymas Turan Mitre Brimstone Nuggets Ju-ju Stones (sometimes) Dragon's
-Teeth (sometimes) Random scroll Random scroll Random scroll (sometimes)
-Random scroll (rarely) Random scroll (rarely)
-
-All Umpani NPCs Powder and Shot (25) (sometimes) Walriblade (sometimes)
-Flak Vest (sometimes)
-
-All T'Rang NPCs ??? (I think nothing, but possibly Shock Rod)
-
-All Rattkin NPCs Various keys (Don't remember what else--they die too
-fast)
-
-Jan-Ette Credit Card (most of the time) Powerpak (sometimes)
+\item All Umpani NPCs
+  \begin{itemize}
+    \tightlist
+    \item Powder and Shot (25) (sometimes)
+    \item Walriblade (sometimes)
+    \item Flak Vest (sometimes)
+  \end{itemize}
+    
+\item All T'Rang NPCs
+  \begin{itemize}
+    \tightlist
+    \item ??? (I think nothing, but possibly Shock Rod)
+  \end{itemize}
+    
+\item All Rattkin NPCs
+  \begin{itemize}
+    \tightlist
+    \item Various keys
+    \item (Don't remember what else--they die too fast)
+  \end{itemize}
+    
+\item Jan-Ette
+  \begin{itemize}
+    \tightlist
+    \item Credit Card (most of the time)
+    \item Powerpak (sometimes)
+  \end{itemize}
+\end{itemize}
 
 Any maps the NPCs may have are always displayed first when you go to the
 ``Buy'' screen
 
-Q: What are some good equipment that I can get?
+\faqentry{What are some good equipment that I can get?}{Depends on your point
+  in the game. Here's some treasure troves where you can get items better
+  than what you should normally be getting if you go ASAP:}
 
-A: Depends on your point in the game. Here's some treasure troves where
-you can get items better than what you should normally be getting if you
-go ASAP:
-
-Orkogre Castle: Try to get into the Armory early. (You have to get in
+\paragraph{Orkogre Castle} Try to get into the Armory early. (You have to get in
 anyway.) Leather and Studded Hauberks may be helpful as well as the bows
 and the occasional naginata or halberd
 
-Eryn River: After meeting Brother TShober, take the first path you see
+\paragraph{Eryn River} After meeting Brother TShober, take the first path you see
 on the left, and follow it to the first place with water that you see
 Save, and swim north--you'll need 30 swimming however. Follow the path
 to the end; the giant battle at the end is a doozy for a weak party.
@@ -9626,7 +9592,7 @@ When you open the chest there though, you will get a Crusaders's 2H Axe
 +1, Bracers of Defense, Chain Mail +1 (U), Chain Mail +1 (L), and a
 Crusader Helm as well as gold
 
-Giant Cave: You can get here early by exploring the Eryn River map (The
+\paragraph{Giant Cave} You can get here early by exploring the Eryn River map (The
 same map that you meet Brother TShober the first time) and locating the
 path that leads to the Witch Mountains area. You should max out your
 swimming however. When you enter, crack open the Journey Map Kit and as
@@ -9661,184 +9627,263 @@ this way.
          you see some weapon you like--I like the Cat O' 9 Tails, but some
          may like the Vulcan Hammer or Sword of Fire
 
-Nyctalinth: In the underground area, if you explore past the Western Gas
+\paragraph{Nyctalinth} In the underground area, if you explore past the Western Gas
 Pocket Area, you will eventually find a path that leads to an encounter
 with Cave Thraxes, but starts with some text. After you fry those bugs,
 if you go to the northeast corner of the room and search, you'll find a
 Broadsword +1 and random loot. Reload until you get something you like,
 which may include a Dragon Kite.
 
-Rattkin Funhouse: After you do Barlone a favor, if Ratsputin is still
+\paragraph{Rattkin Funhouse} After you do Barlone a favor, if Ratsputin is still
 alive you can run into him and he will demand that you pay dues that are
 20\% of your current amount of gold. Pay at least once, then return to
 Barlone--he will offer you his treasure trove and a Displacer Cloak (you
 better have inventory room before talking!) for 40,000 gold. The loot is
 decent and can include a Dragon Kite (again).
 
-Isle of Crypts: West area after the area with all the fountains contains
+\paragraph{Isle of Crypts} West area after the area with all the fountains contains
 a secret button in one of the alcoves. Press it, go in the passage, deal
 with the demon fight, and pick the chest open for a last chance at
 Chamail items, a Faerie Cap, or a Dragon Kite without wasting a spot in
 a Gorrors chest (although you might get the Dragon Kite again in the
 Dragon Cave).
 
-             Or, if you feel you are strong enough, go to the extreme
-             southwest area of the map (where the Ugly Gorn Woman corpse
-             is buried) and enter the alcove with the Gorn Nobleman that is
-             directly west of her.  Save, cast prepartory spells, then
-             search to fight Ungorn Daimyo and possibly a bunch of Skeleton
-             Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a
-             Bushido Blade, and a Wakizashi +1
+Or, if you feel you are strong enough, go to the extreme southwest area of
+the map (where the Ugly Gorn Woman corpse is buried) and enter the alcove
+with the Gorn Nobleman that is directly west of her.  Save, cast prepartory
+spells, then search to fight Ungorn Daimyo and possibly a bunch of Skeleton
+Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a Bushido Blade,
+and a Wakizashi +1
 
-Q: Where can I get the Cane of Corpus?
+\faqentry{Where can I get the Cane of Corpus?}{Kill Blienmeis. Easier said
+  than done of course.}
 
-A: Kill Blienmeis. Easier said than done of course.
+\faqentry{Where are some monster generators?}{Several places:}
 
-Q: Where are some monster generators?
+\paragraph{New City} In the Control Center, stick the Black Wafer instead of
+the Control Card in the slot to summon Savant Guards and Troopers.
 
-A: Several places
-
-New City: In the Control Center, stick the Black Wafer instead of the
-Control Card in the slot to summon Savant Guards and Troopers.
-
-Orkogre Castle: In the area below the prison; you must step in the
+\paragraph{Orkogre Castle} In the area below the prison; you must step in the
 square you fall in to respawn.
 
-Greater Wilds: You will find an area that has a path circling a small
-area. Step in the middle of that area to set off an encounter. Step on
-the square you had to go through to get in this area to reset the
-encounter.
+\paragraph{Greater Wilds} You will find an area that has a path circling a
+small area. Step in the middle of that area to set off an encounter. Step on
+the square you had to go through to get in this area to reset the encounter.
 
-Isle of Crypts: The intersection in front of the fountain in the Hall of
-the Past. Encounters reset automatically.
+\paragraph{Isle of Crypts} The intersection in front of the fountain in the
+Hall of the Past. Encounters reset automatically.
 
 \subsection{Gameplay}\label{gameplay}
 
-Q: What's the best party to get through the game?
+\faqentry{What's the best party to get through the game?}{Almost anything
+  works, really. If you want to be able to use the most items in the game,
+  you will need an Elf fighter-type, a Faerie Ninja, (the following
+  non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop, and one of the
+  character profession changed from a (non-Faerie) bard.  You still can't use
+  the Medicine Bag, but you're not missing much from it. If you want to just
+  play for fun, anything can work. If you want to get through the first areas
+  quickly, you may opt for a simple party of two Fighters, a Mage, a Priest,
+  a Thief, and a Bard for relative speed through the initial parts. Heck,
+  even a party of all Ninjas can get through the game. If all else fails, use
+  the change profession button to get a class that you need at the moment
+  once you have the minimum stat requirements to change into the class.}
 
-A: Almost anything works, really. If you want to be able to use the most
-items in the game, you will need an Elf fighter-type, a Faerie Ninja,
-(the following non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop,
-and one of the character profession changed from a (non-Faerie) bard.
-You still can't use the Medicine Bag, but you're not missing much from
-it. If you want to just play for fun, anything can work. If you want to
-get through the first areas quickly, you may opt for a simple party of
-two Fighters, a Mage, a Priest, a Thief, and a Bard for relative speed
-through the initial parts. Heck, even a party of all Ninjas can get
-through the game. If all else fails, use the change profession button to
-get a class that you need at the moment once you have the minimum stat
-requirements to change into the class.
+\faqentry{Should I use missile weapons?}{You can if you want to. A lot of
+  them are pretty nice in damage and effects. However, the really nice
+  missiles are in limited quantities; unless you cheat, you may end up
+  finding yourself never using them. If you are the economic type, you will
+  hate any missile weapons, including the Musket and Blunderbuss, which must
+  be reloaded every other turn in order for you to use it effectively. Keep
+  in mind however that missile weapons are long range, and can target
+  monsters no matter where they are.}
 
-Q: Should I use missile weapons?
+\faqentry{Should I put the difficulty on easy? There are some places in the
+  game where I just want to get past a fight to go on with the game, not
+  spend extra time gaining levels, but if I do I feel like I'm
+  cheating\ldots{}}{If you're just trying to get through the game, there's
+  nothing wrong with it. Expert mode is there when you think that the game
+  has become too easy; I wrote this playing on Expert mode, and I can tell
+  you that some fights that seem easy on Easy are royal pains on Expert. The
+  Magna Dane fight is a good example.}
 
-A: You can if you want to. A lot of them are pretty nice in damage and
-effects. However, the really nice missiles are in limited quantities;
-unless you cheat, you may end up finding yourself never using them. If
-you are the economic type, you will hate any missile weapons, including
-the Musket and Blunderbuss, which must be reloaded every other turn in
-order for you to use it effectively. Keep in mind however that missile
-weapons are long range, and can target monsters no matter where they
-are.
+\faqentry{What are some battle strategies I can use?}{Well for starters, you
+  can try to keep Enchanted Blade, Armorplate, and Magic Screen on all the
+  time. Although they will be less effective than if you had just casted them
+  should you get into a nasty fight, at least you will be somewhat prepared
+  for it. In-battle spells you may wish to cast to beef up your characters
+  are Bless, Armor Shield, Haste, and Superman on someone who will be
+  attacking a lot. Most of the other helping spells should only be used if
+  the situation calls for it--for example, casting Ice Shield and Fire Shield
+  when you're up against enemies that can use the appropriate type of spells
+  or attacks. If you have a bard, take advantage of his or her instruments
+  and start hammering the enemy away with a status ailment (or just Blessing
+  everyone constantly with the Angel's Tongue).}
 
-Q: Should I put the difficulty on easy? There are some places in the
-game where I just want to get past a fight to go on with the game, not
-spend extra time gaining levels, but if I do I feel like I'm
-cheating\ldots{}
+\faqentry{I keep missing the ?LEGEND? map. Is there any way I can get it
+  faster?}{Actually, yes. You can say the trigger ``Holy Sacrament'' to
+  Father Rulae at any point in the game, and he will let you in. Be
+  warned--do NOT say Holy Sacrament if you just sacrificed all your money, as
+  the Holy Sacrament pathway will open up, closing the path to the other
+  fountain he has \#\# Transferring to Wizardry 8.}
 
-A: If you're just trying to get through the game, there's nothing wrong
-with it. Expert mode is there when you think that the game has become
-too easy; I wrote this playing on Expert mode, and I can tell you that
-some fights that seem easy on Easy are royal pains on Expert. The Magna
-Dane fight is a good example
+\faqentry{What items transfer?}{Quite a bit actually. Your starting equipment
+  and low level equipment for sure. As for other, more powerful things, it
+  depends on the type of item.}
 
-Q: What are some battle strategies I can use?
+\paragraph{Armor} Anything you can buy in New City should transfer.  Also,
+Chamail and Chain Mail+1 will transfer.  Nothing else that you find in the
+last several areas of the game appear to transfer though, so far, although
+the Wizard's Cone should transfer.
 
-A: Well for starters, you can try to keep Enchanted Blade, Armorplate,
-and Magic Screen on all the time. Although they will be less effective
-than if you had just casted them should you get into a nasty fight, at
-least you will be somewhat prepared for it. In-battle spells you may
-wish to cast to beef up your characters are Bless, Armor Shield, Haste,
-and Superman on someone who will be attacking a lot. Most of the other
-helping spells should only be used if the situation calls for it--for
-example, casting Ice Shield and Fire Shield when you're up against
-enemies that can use the appropriate type of spells or attacks. If you
-have a bard, take advantage of his or her instruments and start
-hammering the enemy away with a status ailment (or just Blessing
-everyone constantly with the Angel's Tongue).
+\paragraph{Weapons} All Bows, Arrows, Crossbows, Quarrels, Slings, and Sling
+Bullets appear to transfer, no matter what kind, with exception to the Siege
+Arbalest.  Any weapon you can buy in the New City area when you initially
+enter the area also appears to transfer, but not later equipment like Vorpal
+Blades.  Also, Stun Rods transfer and are HEAVILY suggested as they do rather
+obscene amounts of damage for a low level party Although I don't have one on
+a transferring party, the Spear+2 should most likely transfer as well.  The
+Mystery Ray transfers and goes from a weapon that only hurts Savant Androids
+to a weapon that can hurt anything.  Strangely enough, Powder and Shots will
+transfer, but not Muskets or the Blunderbuss.  Any Shuriken will transfer, so
+if you have Death Stars, you keep them
 
-Q: I keep missing the ?LEGEND? map. Is there any way I can get it
-faster?
+\paragraph{Miscellaneous} All reagents transfer.  The Book of Relics
+transfers The Valentine Necklace and Storage Key are supposed to transfer
+according to "myrddin" on the Software Specialties Wizardry 8 forum.  Bat
+Necklaces transfer.  Scrolls, Wands, and Potions transfer (even Moser's Mojo
+Tea!).  Mana Stones transfer.  Cross of Protection apparantly transfers,
+according to Scronan of the Ironworks Wizardry 8 board.
 
-A: Actually, yes. You can say the trigger ``Holy Sacrament'' to Father
-Rulae at any point in the game, and he will let you in. Be warned--do
-NOT say Holy Sacrament if you just sacrificed all your money, as the
-Holy Sacrament pathway will open up, closing the path to the other
-fountain he has \#\# Transferring to Wizardry 8
-
-Q: What items transfer?
-
-A: Quite a bit actually. Your starting equipment and low level equipment
-for sure. As for other, more powerful things, it depends on the type of
-item.
-
-Armor:  Anything you can buy in New City should transfer.  Also, Chamail
-        and Chain Mail+1 will transfer.  Nothing else that you find in the
-        last several areas of the game appear to transfer though, so far,
-        although the Wizard's Cone should transfer.
-
-Weapons:  All Bows, Arrows, Crossbows, Quarrels, Slings, and Sling Bullets
-          appear to transfer, no matter what kind, with exception to the
-          Siege Arbalest.  Any weapon you can buy in the New City area
-          when you initially enter the area also appears to transfer, but
-          not later equipment like Vorpal Blades.  Also, Stun Rods
-          transfer and are HEAVILY suggested as they do rather obscene
-          amounts of damage for a low level party
-          Although I don't have one on a transferring party, the Spear+2
-          should most likely transfer as well.  The Mystery Ray transfers
-          and goes from a weapon that only hurts Savant Androids to a
-          weapon that can hurt anything.  Strangely enough, Powder and
-          Shots will transfer, but not Muskets or the Blunderbuss.  Any
-          Shuriken will transfer, so if you have Death Stars, you keep
-          them
-
-Miscellaneous:  All reagents transfer.  The Book of Relics transfers
-                The Valentine Necklace and Storage Key are supposed to
-                transfer according to "myrddin" on the Software Specialties
-                Wizardry 8 forum.  Bat Necklaces transfer.  Scrolls, Wands,
-                and Potions transfer (even Moser's Mojo Tea!).  Mana Stones
-                transfer.  Cross of Protection apparantly transfers,
-                according to Scronan of the Ironworks Wizardry 8 board.
-
-Bardic Instruments: Poet's Lute, Angel's Tongue, Chromatic Lyre,
+\paragraph{Bardic Instruments} Poet's Lute, Angel's Tongue, Chromatic Lyre,
 Siren's Wail, Cornu of Demonspawn, and Lute of Sloth will transfer
 
-What definitely does not transfer:  Any of the good Gorrors treasure.
+\paragraph{What definitely does not transfer} Any of the good Gorrors
+treasure.
 
-Q: Do all items transfer automatically?
+\faqentry{Do all items transfer automatically?}{Yes, they all transfer
+  automatically.}
 
-A: Yes, they all transfer automatically
+\faqentry{Will my skills transfer?}{Yes and no. Don't expect your personal
+  skills to, except Firearms. All your scores will be reduced to approximately
+  1/5 or less of what they were originally, so a 100 in Swords turns into a
+  20 in Swords. Also, skills that aren't supposed to be raised by the class
+  you transfer in are there, but unavailable. Your spells are stripped to 2
+  level 1 spells of your own class.}
 
-Q: Will my skills transfer?
+\faqentry{Where do I end up starting in Wizardry 8?}{You start with who you
+  left with. \texttt{:)} Failing that, you start in a Monastery. I do not know what
+  you start with if you decide to take the Globe for an ending however.}
 
-A: Yes and no. Don't expect your personal skills to, except Firearms All
-your scores will be reduced to approximately 1/5 or less of what they
-were originally, so a 100 in Swords turns into a 20 in Swords. Also,
-skills that aren't supposed to be raised by the class you transfer in
-are there, but unavailable. Your spells are stripped to 2 level 1 spells
-of your own class.
+\faqentry{I want to ask you something about Wizardry 8. Can I?}{That's not a
+  good idea, as I do not have a FAQ for Wizardry 8 specifically. This section
+  is here only because it also pertains to Wizardry 7.}
 
-Q: Where do I end up starting in Wizardry 8?
 
-A: You start with who you left with. :) Failing that, you start in a
-Monastery. I do not know what you start with if you decide to take the
-Globe for an ending however.
+\section{Version Updates}\label{version-updates}
 
-Q: I want to ask you something about Wizardry 8. Can I?
+v1.95a (11/17/01) Quick minor correction.
 
-A: That's not a good idea, as I do not have a FAQ for Wizardry 8
-specifically. This section is here only because it also pertains to
-Wizardry 7
+v1.95 (11/16/01) Added a section about transferring to Wizardry 8 and made a
+few changes. Trimmed down the list of places where this FAQ is displayed due
+to various sites going down and changing over time
 
+v1.94 (3/3/01) Made a few changes to some areas of the FAQ and credited
+Bernice Carter.
+
+v1.93 (10/20/00) Added Neoseeker to the list of places that can display
+this FAQ.
+
+v1.92 (10/13/00) Added VGMasters to the list of places that can display
+this FAQ. Did some minor editing here and there, and added another two
+possible questions so that this wouldn't feel like a totally pointless
+update. ;)
+
+v1.91 (10/2/00) Added Cheat Empire to the list of places that can display
+this FAQ. Also did some minor editing, and added a paragraph's worth of
+words in the closing paragraph.
+
+v1.9 (8/15/00) Forgot to trim down another section in the beginning.
+Minor editing. Expecting to update with a full Walkthrough next update,
+but don't hope too much.
+
+v1.8 (8/7/00) Trimmed down some areas and spaced out others as per
+Dallas' recommendations, and minor editing. Added a question in Ukpyr.
+
+v1.7 (7/9/00) Fixed some errors thanks to the people who volunteered on
+the Software Specialties board. Thanks guys
+
+v1.6 (7/5/00) Added a new section in Spellcasting. Editing changes.
+Added www.rpgclassics.com to the list where this FAQ is displayed.
+
+v1.5 (6/22/00) Added www.the-spoiler.com to the list where this FAQ is
+displayed. Very slight editing changes.
+
+v1.4 (6/20/00) Added www.psxcodez.com to the list where this FAQ is
+displayed. Very slight editing changes.
+
+v1.3 (6/13/00) Minor editing corrections. Added Spoilers section.
+
+v1.2 (6/8/00) Minor editing corrections. Sources added.
+
+v1.1 (6/7/00) Added Version updates section and two sites to the list
+where this FAQ is displayed.
+
+v1.0 (6/6/00) None.
+
+\subsection{Sources}\label{sources}
+
+\begin{itemize}
+\tightlist
+\item Software Specialties Wizardry 7 board Crusaders of the Dark Savant Clue
+Book (comes with Wizardry Gold, although it has some errors that you
+don't know about until you play through the game)
+\item My own playing experience
+\end{itemize}
+
+\subsection{Future plans}\label{future-plans}
+
+The bottom item is what will most likely come up next.  Don't expect anything
+on the top to come anytime soon.
+
+\begin{itemize}
+\tightlist
+\item
+  HTML version of the Dark Savant clue book. I won't be copying it, but
+  it will try to be in a similar format. It will also use the maps below
+  to help navigate around. Don't expect this in the near future at all,
+  as my HTML is horrible.
+\item
+  Monster list, with the type of weapon the monster wields, what spells
+  it casts, and any special abilities. Don't expect this to occur before
+  September of 2001, and if any other CRPGs come out within that time,
+  don't expect it at all. Still, it will get done eventually, although
+  now I don't know if I'll finish it before Wizardry 8 comes out.
+  However, Llevram has kindly put together a program that does all this
+  already in the meantime. :) You should be able to get it at
+  www.softwarespecialties.com. Just scroll down the left menu and click
+  on the last link there.
+\item
+  Full color maps saved from the game (and slightly modified in cases
+  like the Funhouse where the waterslide isn't mapped). Some of these
+  are actually done, but I don't have time to go through each and every
+  single area and map everything the way it appears on the Journey Map
+  Kit, AND pass my classes I'll get too distracted.
+\item
+  A spoiler walkthrough. This FAQ is only a semi-spoiler and skips some
+  things. The walkthrough will try to guide you on the quickest way
+  around things. I can probably get this done before the Monster List
+  and is next on my to do list for this FAQ unless someone has a
+  suggestion for an existing section of the FAQ. This has now been
+  combined with the Full color maps. I will most likely table this and
+  everything above due to lack of time, but let's see how my time turns
+  out.
+\item
+  A beginner's section that is designed to explain how some things work
+  that will not spoil the game in anyway.
+\item
+  Any minor corrections and suggestions to the FAQ. I'll try to do what
+  I can, but remember: I'm only human
+\end{itemize}
 
 \section{Afterword}\label{afterword}
 
@@ -9852,5 +9897,6 @@ the relocation (and swapping) of the computer I was using to map the game, so
 it is on hiatus for the moment while I get my life organized. I can still
 answer questions however as well as update this FAQ if more questions get
 asked pertaining to the game (but not technical stuff)
+
 
 \end{document}
