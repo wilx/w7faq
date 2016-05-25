@@ -6,17 +6,13 @@
 \usepackage{fontspec}
 \usepackage{microtype}
 \usepackage[font={slshape},leftmargin=0.5\leftmargin,rightmargin=0.5\rightmargin]{quoting}
-
-\usepackage{siunitx}
-%SIUNITX STUFF
-\let\DeclareUSUnit\DeclareSIUnit
-\let\US\SI
-\let\us\si%means of separating SI and US units
-%us unit declarations
-\DeclareUSUnit\foot{ft}
+\usepackage{multicol}
+\usepackage[defaultlines=2,all]{nowidow}
+\usepackage{ragged2e}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-\setmainfont[]{Charis SIL}
+%\setmainfont[]{Charis SIL}
+\setmainfont[]{TeX Gyre Pagella}
 
 %\usepackage{bigfoot}
 %\DeclareNewFootnote{default}
@@ -38,8 +34,12 @@
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
+\tolerance=1000
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\makeatletter
+\newcommand*\nobreaklist{\@beginparpenalty=\@M}
+\makeatother
 \setcounter{secnumdepth}{0}
 
 % Redefines (sub)paragraphs to behave more like sections
@@ -68,7 +68,7 @@ contents={%
 \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
 
 \title{A random Crusaders of the Dark Savant FAQ}
-\author{Written by: Ravashack}
+\author{Written by: Ravashack\protect\footnote{\LaTeX{} conversion by Václav Haisman}}
 \date{v. 1.95a}
 
 % \newcommand{\faqentry}[2]{\begin{description}[align=left,leftmargin=0cm]
@@ -84,6 +84,7 @@ contents={%
 \newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
 
 \begin{document}
+
 \maketitle
 
 \section{Mandatory Copyright
@@ -99,10 +100,8 @@ to whatever your request is is no--never assume that I will automatically
 answer yes. Usage of this document without my permission violates copyright
 laws, no matter what you say. For an interesting essay on copyright myths by
 Brad Templeton, take a look at
-
-\url{http://www.templetons.com/brad/copymyths.html}
-
-and read to your heart's content.
+\url{http://www.templetons.com/brad/copymyths.html} and read to your heart's
+content.
 
 \section{\texorpdfstring{A little ``getting to know you'' stuff and
 Contact
@@ -6446,6 +6445,7 @@ books}\label{learning-spells-from-books}
 
 The following spells may be learned from books:
 
+\begin{multicols}{2}
 \begin{itemize}
 \tightlist
 \item
@@ -6477,7 +6477,7 @@ The following spells may be learned from books:
 \item
   Levitate
 \item
-  Identify (\emph{anyone} can learn this from a book!)
+  Identify\protect\footnote{\emph{Anyone} can learn this from a book!}
 \item
   Stamina
 \item
@@ -6489,6 +6489,7 @@ The following spells may be learned from books:
 \item
   Watchbells
 \end{itemize}
+\end{multicols}
 
 Be warned however; if you do not have a spell already of the same type
 as the one you wish to scribe in your book (for example, having Shrill
@@ -6502,6 +6503,7 @@ or Cure Disease.
 
 \subsection{Commonly used spells}\label{commonly-used-spells}
 
+\begin{multicols}{2}
 \begin{itemize}
 \tightlist
 \item
@@ -6531,9 +6533,9 @@ or Cure Disease.
 \item
   Haste
 \item
-  Mindread (only on your first time through--it tells you what to ask
-  the NPC sometimes; otherwise it gives you a bit of information you
-  could have gotten with Lore or just gives Nothing)
+  Mindread\protect\footnote{Only on your first time through--it tells you
+    what to ask the NPC sometimes; otherwise it gives you a bit of
+    information you could have gotten with Lore or just gives Nothing.}
 \item
   Fire Shield/Ice Shield
 \item
@@ -6545,8 +6547,10 @@ or Cure Disease.
 \item
   Nuclear Blast/Deadly Air/Word of Death/Mind Flay
 \item
-  Asphyxiation(expert mode only for crowd control and convenience)
+  Asphyxiation\protect\footnote{Expert mode only for crowd control and
+    convenience.}
 \end{itemize}
+\end{multicols}
 
 \subsection{Spell-picking Choices}\label{spell-picking-choices}
 
@@ -7207,40 +7211,42 @@ especially with that expensive amount of spell points needed
 
 \subsection{Status Ailments}\label{status-ailments}
 
-Ailment: Sleep Cure: Watchbells, Cure Lesser Condition, (automatic
+Ailments and their cures:
+
+\paragraph{Sleep} Watchbells, Cure Lesser Condition, (automatic
 rousing)
 
-Ailment: Afraid Cure: Cure Lesser Condition, (resting--quick)
+\paragraph{Afraid} Cure Lesser Condition, (resting--quick)
 
-Ailment: Irritated Cure: Cure Lesser Condition, (resting--quick)
+\paragraph{Irritated} Cure Lesser Condition, (resting--quick)
 
-Ailment: Blindness Cure: Cure Lesser Condition, (resting--quick)
+\paragraph{Blindness} Cure Lesser Condition, (resting--quick)
 
-Ailment: Nausea Cure: Cure Lesser Condition, (resting--medium)
+\paragraph{Nausea} Cure Lesser Condition, (resting--medium)
 
-Ailment: Insanity Cure: Sane Mind, (resting--medium)
+\paragraph{Insanity} Sane Mind, (resting--medium)
 
-Ailment: Paralysis Cure: Cure Paralysis, (resting--long), successful hit
-in combat (small chance)
+\paragraph{Paralysis} Cure Paralysis, (resting--long), successful hit in
+combat (small chance)
 
-Ailment: Poison Cure: Cure Poison, (resting--short to long and
-dangerous!)
+\paragraph{Poison} Cure Poison, (resting--short to long and dangerous!)
 
-Ailment: Badly Poisoned (getting hit with Deadly Poison) Cure: Cure
+\paragraph{Badly Poisoned (getting hit with Deadly Poison)} Cure
 Poison--reduces to Poison
 
-Ailment: Disease Cure: Cure Disease
+\paragraph{Disease Cure} Cure Disease
 
-Ailment: Stone Cure: Cure Stone
+\paragraph{Stone Cure} Cure Stone
 
-``Ailment'': Death Cure: Ressurection
+\paragraph{Death\protect\footnotemark{}} Ressurection
+\footnotetext{“Ailment”}
 
-For ailments that can be cured by resting, the appropriate spell reduces
-the duration of the ailment until it is down to 0 (i.e.~the ailment is
-cured) For ailments that CANNOT be cured by resting, you must use a set
-level of the curative spell to restore the character or the ailment will
-not go away. This level is based roughly on the subject's Vitality stat:
-the higher it is, the lower your casting level can be
+For ailments that can be cured by resting, the appropriate spell reduces the
+duration of the ailment until it is down to 0 (i.e.~the ailment is
+cured). For ailments that CANNOT be cured by resting, you must use a set
+level of the curative spell to restore the character or the ailment will not
+go away. This level is based roughly on the subject's Vitality stat: the
+higher it is, the lower your casting level can be.
 
 \subsection{Killing NPCs}\label{killing-npcs}
 
@@ -7352,23 +7358,27 @@ Monsters encountered:
   Rattkin Bandits (fixed)
 \end{itemize}
 
-\faqentry{What do I do? I'm in the middle of nowhere!}{Well first off, equip
-  your items. Then \textsc{save}. Get used to saving, as you will be doing it
-  constantly. Look around for a road and explore a bit.}
+\faqentry{What do I do? I'm in the middle of nowhere!}
 
-\faqentry{What about the forest area? Can't I look there too?}{Of course you
-  can. In fact, you should. There's a Journey Map kit that will definitely
-  help you hiding in a chest in the forest if you are starting a new
-  game. However, you should put that off until after you have cleared out the
-  Starter Dungeon, which is what you are looking for on the road. This is
-  because the monsters \textsc{guarding} the path to the chest are very
-  tough, and in your new condition you will most likely get creamed. Instead,
-  find a path on the road leading to a ladder going into the ground. That's
-  the starter dungeon.}
+Well first off, equip your items. Then \textsc{save}. Get used to saving, as
+you will be doing it constantly. Look around for a road and explore a bit.
+
+\faqentry{What about the forest area? Can't I look there too?}
+
+Of course you can. In fact, you should. There's a Journey Map kit that will
+definitely help you hiding in a chest in the forest if you are starting a new
+game. However, you should put that off until after you have cleared out the
+Starter Dungeon, which is what you are looking for on the road. This is
+because the monsters \textsc{guarding} the path to the chest are very tough,
+and in your new condition you will most likely get creamed. Instead, find a
+path on the road leading to a ladder going into the ground. That's the
+starter dungeon.
 
 \faqentry{I imported a saved game from Bane of the Cosmic Forge, but I'm not
-  where you say I am!}{If you instead started out in a different area because
-  you imported your game, I really can't help you too much.}
+  where you say I am!}
+
+If you instead started out in a different area because you imported your
+game, I really can't help you too much.
 
 If you started near Dionysceus skip directly to the Dionysceus section
 of this FAQ and see if you can get the \qmwordqm{CRYSTAL} map in the Temple of
@@ -7404,8 +7414,9 @@ Castle unless you know exactly what you are doing.
 
 Monsters encountered:
 
-Encountered everywhere:
-
+\begin{multicols}{2}
+  \begin{itemize}
+\item Encountered everywhere
 \begin{itemize}
 \tightlist
 \item
@@ -7416,11 +7427,13 @@ Encountered everywhere:
   Ravens
 \end{itemize}
 
-Level 1-
+{\nobreaklist{}\item Level 1
+  \begin{itemize}
+    \tightlist
+  \item (No floor specific monsters)
+  \end{itemize}}
 
-(No floor specific monsters)
-
-Level 2-
+\item Level 2
 
 \begin{itemize}
 \tightlist
@@ -7429,41 +7442,46 @@ Level 2-
 \item
   Boring Beetles
 \item
-  Night Rooks(fixed)
+  Night Rooks (fixed)
 \item
-  Ra-sep-re-tep(fixed)
+  Ra-sep-re-tep (fixed)
 \end{itemize}
+\end{itemize}
+\end{multicols}
 
-\faqentry{What's this fountain here?}{That fountain restores some health,
-  stamina, and mana every time you sip it. Don't forget that you can sip
-  multiple times if once isn't enough To sip, either click on the fountain
-  once and then on the characters that you want to drink from the fountain,
-  or search and then click on the characters that you want to drink from
-  it. Don't forget that you can use the number keys (1-6) if you consider the
-  mouse to be too slow for this! However, be VERY careful with
-  fountains. Most are beneficial, but some have nasty effects on you. Save
-  before drinking from any fountain.}
+\faqentry{What's this fountain here?}
 
-\faqentry{What the heck am I supposed to do here?}{Build levels. Clean out
-  the entire dungeon. And to get to know the game better of course. The most
-  important tactic that you will learn over and over here is to save before
-  entering unexplored rooms and areas. If you have someone with access to
-  Priest spells, try to get Dispel Undead if you can--you'll be happy to have
-  it, I will guarantee that. If something seems confusing, read the manual!
-  It is quite descriptive in how to do things. If you're using a copied
-  version of the game and didn't bother to get the manual, look for a copy of
-  Wizardry Gold--the manual is built in in that version by using the F1 key,
-  although Wizardry Gold tends to be more buggy than Crusaders of the Dark
-  Savant Despite what people may say about the game being non-linear, the
-  first part of the game is linear--you just can't handle most of the
-  monsters in the game at the level you are at. You'll see what I mean after
-  deciding where to go after New City--anywhere but Orkogre Castle,
-  Dionysceus(via the poppy fields), and Munkharama is lethal}
+That fountain restores some health, stamina, and mana every time you sip
+it. Don't forget that you can sip multiple times if once isn't enough To sip,
+either click on the fountain once and then on the characters that you want to
+drink from the fountain, or search and then click on the characters that you
+want to drink from it. Don't forget that you can use the number keys (1-6) if
+you consider the mouse to be too slow for this! However, be VERY careful with
+fountains. Most are beneficial, but some have nasty effects on you. Save
+before drinking from any fountain.
+
+\faqentry{What the heck am I supposed to do here?}
+
+Build levels. Clean out the entire dungeon. And to get to know the game
+better of course. The most important tactic that you will learn over and over
+here is to save before entering unexplored rooms and areas. If you have
+someone with access to Priest spells, try to get Dispel Undead if you
+can--you'll be happy to have it, I will guarantee that. If something seems
+confusing, read the manual!  It is quite descriptive in how to do things. If
+you're using a copied version of the game and didn't bother to get the
+manual, look for a copy of Wizardry Gold--the manual is built in in that
+version by using the F1 key, although Wizardry Gold tends to be more buggy
+than Crusaders of the Dark Savant Despite what people may say about the game
+being non-linear, the first part of the game is linear--you just can't handle
+most of the monsters in the game at the level you are at. You'll see what I
+mean after deciding where to go after New City--anywhere but Orkogre Castle,
+Dionysceus(via the poppy fields), and Munkharama is lethal.
 
 \subsubsection{New City}\label{new-city}
 
 Monsters encountered (varies by area of New City):
 
+\begin{multicols}{2}
 \begin{itemize}
 \tightlist
 \item
@@ -7497,96 +7515,119 @@ Monsters encountered (varies by area of New City):
 \item
   Umpani Renegade
 \end{itemize}
+\end{multicols}
 
-\faqentry{The Savant Trooper won't let me through! Why?}{You probably didn't
-  state a place in New City for it to confirm.  Maybe there's an ad for a
-  store in the Starter Dungeon somewhere\ldots{} you must have found
-  \textsc{something} resembling paper in there.}
+\faqentry{The Savant Trooper won't let me through! Why?}
 
-\faqentry{What should I do here?}{Think of New City as a bigger version of
-  the Starter Dungeon, except with stores and healing that you have to pay
-  for, for now. Definitely save before entering a place, as there are a
-  couple doors that hide very nasty encounters.}
+You probably didn't state a place in New City for it to confirm.  Maybe
+there's an ad for a store in the Starter Dungeon somewhere\ldots{} you must
+have found \textsc{something} resembling paper in there.
+
+\faqentry{What should I do here?}
+
+Think of New City as a bigger version of the Starter Dungeon, except with
+stores and healing that you have to pay for, for now. Definitely save before
+entering a place, as there are a couple doors that hide very nasty
+encounters.
 
 \faqentry{Hey! I can't pick or force some of these doors! How do I get
-  in?}{If you're referring to the Umpani Detache and the T'Rshieches House,
-  you'll get in\ldots{}but from a different place. If you are referring to a
-  certain always-jammed door near the Marina, buy a Knock-Knock scroll from
-  Belcanzor and have someone with at least 1 point in scribe use it on the
-  door\ldots{}but save first. Either that or use a level 6 Knock-Knock spell
-  to open the door. Very useful treasure in the chest behind it, considering
-  how early in the game it is.}
+  in?}
+
+If you're referring to the Umpani Detache and the T'Rshieches House, you'll
+get in\ldots{}but from a different place. If you are referring to a certain
+always-jammed door near the Marina, buy a Knock-Knock scroll from Belcanzor
+and have someone with at least 1 point in scribe use it on the
+door\ldots{}but save first. Either that or use a level 6 Knock-Knock spell to
+open the door. Very useful treasure in the chest behind it, considering how
+early in the game it is.
 
 \faqentry{What's with the Wand Majestik in the Curio Museum? I stick my hand
   in but I can't grab it! All I get is this weird stone when I leave my hand
-  in there and my leader gets diseased!}{\emph{Don't} stick your hand in
-  there unless you have a way to cure your first character of disease. You
-  can use Father Rulae in the Abbey in the middle of New City, but you have
-  to ``donate'' all your gold.  Better to wait until later when you can buy
-  Cure Disease potions in Munkharama or learn the spell yourself, as the Wand
-  isn't going anywhere anyway.}
+  in there and my leader gets diseased!}
 
-\faqentry{Can I use the boat Sogheim has in the Marina?}{No, but you'll find
-  a better one.}
+\emph{Don't} stick your hand in there unless you have a way to cure your
+first character of disease. You can use Father Rulae in the Abbey in the
+middle of New City, but you have to ``donate'' all your gold.  Better to wait
+until later when you can buy Cure Disease potions in Munkharama or learn the
+spell yourself, as the Wand isn't going anywhere anyway.
+
+\faqentry{Can I use the boat Sogheim has in the Marina?}
+
+No, but you'll find a better one.
 
 \faqentry{What the heck do I do at these Devil Faces in the Curio
-  Museum?}{Read the \qmwordqm{BOAT} Map. Funny, some of those words match the
-  devils\ldots{}}
+  Museum?}
 
-\faqentry{What is that sign in the Condemned Area?}{It's a way into Old
-  City. You'll figure out how to get in after you help Barlone in the Rattkin
-  Ruins' Funhouse with a favor. Maybe Professor Wunderland was the friend he
-  was speaking of--after all, he IS a Rattkin, and he IS interested in Old
-  City. Perhaps mentioning the place Barlone mentioned will help jog his
-  memory.}
+Read the \qmwordqm{BOAT} Map. Funny, some of those words match the
+devils\ldots{}
+
+\faqentry{What is that sign in the Condemned Area?}
+
+It's a way into Old City. You'll figure out how to get in after you help
+Barlone in the Rattkin Ruins' Funhouse with a favor. Maybe Professor
+Wunderland was the friend he was speaking of--after all, he IS a Rattkin, and
+he IS interested in Old City. Perhaps mentioning the place Barlone mentioned
+will help jog his memory.
 
 \faqentry{What's the Book of Fables for? I managed to sneak past the Savant
-  Android guarding it with my fastest character.}{It is for figuring out the
-  witches names. Read it when you're in the Witch Mountains, and especially
-  pay attention to the last parts.}
+  Android guarding it with my fastest character.}
 
-\faqentry{Who's the Gorn Officer that Palukes mentioned?}{You'll find
-  out. Keep in mind when NPCs mention nouns like Officer or even a place,
-  there is a possibility that saying those words can open a flood of useful
-  info.}
+It is for figuring out the witches names. Read it when you're in the Witch
+Mountains, and especially pay attention to the last parts.
 
-\faqentry{I found a Black Wafer. What does it do?}{It's for the
-  Constabulary. Think of ETX as Entrance. Don't use it in the Forbidden Zone
-  however, unless you \textsc{want} to fight Savant Troopers and Savant
-  Guards.}
+\faqentry{Who's the Gorn Officer that Palukes mentioned?}
 
-\faqentry{How \emph{do} I get in the Forbidden Zone?}{You walk
-  in. \texttt{:)} You mean inside the inside area? Get the Control Card from
-  the T'Rshieches House\ldots{}but you'll need to have a chat with Shiritis
-  before you can get a chance at the chest.}
+You'll find out. Keep in mind when NPCs mention nouns like Officer or even a
+place, there is a possibility that saying those words can open a flood of
+useful info.
 
-\faqentry{How do I turn on the computers in the Forbidden Zone?}{Use the
-  Comm-Link Device from the Umpani Detache.}
+\faqentry{I found a Black Wafer. What does it do?}
+
+It's for the Constabulary. Think of ETX as Entrance. Don't use it in the
+Forbidden Zone however, unless you \textsc{want} to fight Savant Troopers and
+Savant Guards.
+
+\faqentry{How \emph{do} I get in the Forbidden Zone?}
+
+You walk in. \texttt{:)} You mean inside the inside area? Get the Control
+Card from the T'Rshieches House\ldots{}but you'll need to have a chat with
+Shiritis before you can get a chance at the chest.
+
+\faqentry{How do I turn on the computers in the Forbidden Zone?}
+
+Use the Comm-Link Device from the Umpani Detache.
 
 \faqentry{What can I do with the computer? It wants me to login to some
-  server.}{Nose around Nyctalinth and wake up a few Savant Androids lying
-  around Don't forget to nose around the Observation Center there for some
-  other answers. This is where the information you got in those two places is
-  used.}
+  server.}
 
-\faqentry{How do I open the Security Cell?}{Whichever server you didn't use
-  (or used but it didn't work) the first time, use it now.}
+Nose around Nyctalinth and wake up a few Savant Androids lying around Don't
+forget to nose around the Observation Center there for some other
+answers. This is where the information you got in those two places is used.
+
+\faqentry{How do I open the Security Cell?}
+
+Whichever server you didn't use (or used but it didn't work) the first time,
+use it now.
 
 \faqentry{Nooo! This isn't fair!!! Why isn't the \qmwordqm{LEGEND} map in New
-  City?!?}{It tends to disappear VERY fast for some odd reason. Consequently,
-  return the Holy Work to Xen Xheng as soon as possible and go looking for
-  Xen Xheng after he leaves the dojo. (Locate Person scrolls \textsc{will}
-  help).  Ask Xen Xheng about ``5 Flowers'' and see what he says. Try to get
-  the \qmwordqm{LEGEND} map now while it is early in the game after following
-  the instructions he gives you. Seeing as Ratsputin seems to come down here
-  pretty early, I'd say that he's the one that normally takes the
-  \qmwordqm{LEGEND} map before it switches hands.}
+  City?!?}
+
+It tends to disappear VERY fast for some odd reason. Consequently, return the
+Holy Work to Xen Xheng as soon as possible and go looking for Xen Xheng after
+he leaves the dojo. (Locate Person scrolls \textsc{will} help).  Ask Xen
+Xheng about ``5 Flowers'' and see what he says. Try to get the
+\qmwordqm{LEGEND} map now while it is early in the game after following the
+instructions he gives you. Seeing as Ratsputin seems to come down here pretty
+early, I'd say that he's the one that normally takes the \qmwordqm{LEGEND}
+map before it switches hands.
 
 \subsubsection{Orkogre Castle}\label{orkogre-castle}
 
 Monsters Encountered:
 
-Encountered Everywhere (except below Prison):
+\begin{multicols}{2}
+\begin{itemize}
+\item Encountered Everywhere (except below Prison):
 
 \begin{itemize}
 \tightlist
@@ -7614,7 +7655,7 @@ Encountered Everywhere (except below Prison):
   Munk Ninjas
 \end{itemize}
 
-Level 1-
+\item Level 1
 
 \begin{itemize}
 \tightlist
@@ -7626,47 +7667,47 @@ Level 1-
   Savant Guards
 \end{itemize}
 
-Level 2-
+\item Level 2
 
-Level 3-
+\item Level 3
 
-Prison-
+\item Prison
 
 \begin{itemize}
 \tightlist
 \item
-  Dragonlizards(fixed)
+  Dragonlizards (fixed)
 \item
-  Fungus Oozes(fixed)
+  Fungus Oozes (fixed)
 \item
-  Crawling Wastes(fixed)
+  Crawling Wastes (fixed)
 \item
-  T'Rang Watchers(fixed)
+  T'Rang Watchers (fixed)
 \item
-  T'Rang Wilders(fixed)
+  T'Rang Wilders (fixed)
 \item
-  T'Rang Guarders(fixed)
+  T'Rang Guarders (fixed)
 \item
-  Rattkin Hunters(fixed)
+  Rattkin Hunters (fixed)
 \item
-  Rattkin Thieves(fixed)
+  Rattkin Thieves (fixed)
 \item
-  Rattkin Bandits(fixed)
+  Rattkin Bandits (fixed)
 \item
-  Dane Initiates(fixed)
+  Dane Initiates (fixed)
 \item
-  Dane Disciples(fixed)
+  Dane Disciples (fixed)
 \item
-  Boar Weevils(fixed)
+  Boar Weevils (fixed)
 \item
-  Venom Weevils(fixed)
+  Venom Weevils (fixed)
 \item
   Rattkin Thieves
 \item
   Rattkin Hunters
 \end{itemize}
 
-Below Prison-
+\item Below Prison
 
 \begin{itemize}
 \tightlist
@@ -7684,7 +7725,7 @@ Below Prison-
   Stag Weevils
 \end{itemize}
 
-Murkatos' Inner Sanctum-
+\item Murkatos' Inner Sanctum
 
 \begin{itemize}
 \tightlist
@@ -7693,6 +7734,8 @@ Murkatos' Inner Sanctum-
 \item
   Spectral Ravens (fixed)
 \end{itemize}
+\end{itemize}
+\end{multicols}
 
 \faqentry{How the heck do I get into the Throne Room? I haven't found a key
   for the place!}
@@ -7774,7 +7817,9 @@ Ravens inflict on you.  Cure Paralysis potions are nice too.
 
 Monsters Encountered:
 
-Encountered Everywhere:
+\begin{multicols}{2}
+\begin{itemize}
+\item Encountered Everywhere
 
 \begin{itemize}
 \tightlist
@@ -7788,8 +7833,8 @@ Encountered Everywhere:
   Munk Ninjas
 \end{itemize}
 
-Munkharama and Land of Dreams (Land of Dreams-only Monsters marked with
-an L)-
+\item {\RaggedRight\ Munkharama and Land of Dreams\protect\footnote{Land of Dreams-only
+    Monsters marked with an L}}
 
 \begin{itemize}
 \tightlist
@@ -7833,7 +7878,7 @@ an L)-
   Furies (fixed) L
 \end{itemize}
 
-Lost Temple Level 1-
+\item Lost Temple Level 1
 
 \begin{itemize}
 \tightlist
@@ -7865,7 +7910,7 @@ Lost Temple Level 1-
   Puxic Oozes
 \end{itemize}
 
-Lost Temple Level 2-
+\item Lost Temple Level 2
 
 \begin{itemize}
 \tightlist
@@ -7901,13 +7946,15 @@ Lost Temple Level 2-
   Lord of Dark Forest (fixed)
 \end{itemize}
 
-Crypt-
+\item Crypt
 
 \begin{itemize}
 \tightlist
 \item
   Skeleton Lords (fixed)
 \end{itemize}
+\end{itemize}
+\end{multicols}
 
 \faqentry{What's the answer to the well's riddle?}
 
@@ -8201,38 +8248,125 @@ Fireballs have a nasty effect on my party at this point.
 
 \subsubsection{Dionysceus}\label{dionysceus}
 
-Encountered Everywhere: Dane Initiates (level 1 up) Dane Disciples
-(level 2 up) Dane Canons (level 3 up) Dane Priests (level 4 up) Dane
-Apostles (level 5 up) High Fathers (level 6 up)
+\begin{multicols}{2}\RaggedRight{}
+  \begin{itemize}
+  \item Encountered Everywhere
 
-First level/Temple of the Initiate- Cachre Sludges Glow Moths Spectral
-Moths Bitterbugs Stag Weevils Night Rooks
+    \begin{itemize}
+      \tightlist
+    \item Dane Initiates (level 1 up)
+    \item Dane Disciples (level 2 up)
+    \item Dane Canons (level 3 up)
+    \item Dane Priests (level 4 up)
+    \item Dane Apostles (level 5 up)
+    \item High Fathers (level 6 up)
+    \end{itemize}
 
-Second level/Temple of Divine Order- Night Rooks Vampire Rooks Stag
-Weevils Iguanadons Skeletons Venom Weevils Stag Weevils
+  \item First level/Temple of the Initiate
+    \begin{itemize}
+      \tightlist
+    \item Cachre Sludges
+    \item Glow Moths
+    \item Spectral Moths
+    \item Bitterbugs
+    \item Stag Weevils
+    \item Night Rooks
+    \end{itemize}
 
-Third level/Temple of Eternal Night- Bantari Vampire Rooks Dragonlizards
-Fungus Oozes Minoskells The Beast (fixed) Boar Weevils Venom Weevils
-Stag Weevils
+  \item Second level/Temple of Divine Order
+    \begin{itemize}
+      \tightlist
+    \item Night Rooks
+    \item Vampire Rooks
+    \item Stag Weevils
+    \item Iguanadons
+    \item Skeletons
+    \item Venom Weevils
+    \item Stag Weevils
+    \end{itemize}
 
-Fourth level/Temple of Aerial Whimsey- Bantari Vampire Rooks Spectral
-Ravens Fire Crows Dragonlizards Fungus Oozes Minoskells Bear Weevils
-Boar Weevils Venom Weevils Stag Weevils
+    \item Third level/Temple of Eternal Night
+      \begin{itemize}
+        \tightlist
+      \item Bantari
+      \item Vampire Rooks
+      \item Dragonlizards
+      \item Fungus Oozes
+      \item Minoskells
+      \item The Beast (fixed)
+      \item Boar Weevils
+      \item Venom Weevils
+      \item Stag Weevils
+      \end{itemize}
 
-Fifth level/Temple of Deadly Coffers- Dragon Rooks Fire Crows Hog
-Beetles Wraiths Spirits Ghosts Water Nymphs Jelly Stingers Gelimaga
+    \item Fourth level/Temple of Aerial Whimsey
+      \begin{itemize}
+        \tightlist
+      \item Bantari
+      \item Vampire Rooks
+      \item Spectral Ravens
+      \item Fire Crows
+      \item Dragonlizards
+      \item Fungus Oozes
+      \item Minoskells
+      \item Bear Weevils
+      \item Boar Weevils
+      \item Venom Weevils
+      \item Stag Weevils
+      \end{itemize}
 
-Sixth level/Temple of Wanderers- Shadow Crusts Puxic Oozes Fungus Oozes
-Skeleton Lords Fetid Corpses Zombie Skells Savant Troopers Savant Guards
-Fire Crows Dragon Rooks Vampire Vultures Komodo Dragons Bear Weevils
-Boar Weevils Venom Weevils Magna Dane(fixed)
+    \item Fifth level/Temple of Deadly Coffers
+      \begin{itemize}
+        \tightlist
+      \item Dragon Rooks
+      \item Fire Crows
+      \item Hog Beetles
+      \item Wraiths Spirits
+      \item Ghosts
+      \item Water Nymphs
+      \item Jelly Stingers
+      \item Gelimaga
+      \end{itemize}
 
-Tower Pit Exit- See Temple of Wanderers and Tower's Top (except any
-fixed encounters)
+    \item Sixth level/Temple of Wanderers
+      \begin{itemize}
+        \tightlist
+      \item Shadow Crusts
+        \item Puxic Oozes
+        \item Fungus Oozes
+        \item Skeleton Lords
+        \item Fetid Corpses
+        \item Zombie Skells
+        \item Savant Troopers
+        \item Savant Guards
+        \item Fire Crows
+        \item Dragon Rooks
+        \item Vampire Vultures
+        \item Komodo Dragons
+        \item Bear Weevils
+        \item Boar Weevils
+        \item Venom Weevils
+        \item Magna Dane (fixed)
+      \end{itemize}
 
-Tower's Top- Luna Mothras Glow Mothras
+    \item Tower Pit Exit
+      \begin{itemize}
+        \tightlist
+      \item See Temple of Wanderers and Tower's Top (except any fixed
+        encounters)
+      \end{itemize}
 
-\WviiSPAWN{} (fixed) Vampire Vultures Wraiths Spirits
+    \item Tower's Top
+      \begin{itemize}
+        \tightlist
+      \item Luna Mothras
+      \item Glow Mothras
+      \item \WviiSPAWN{} (fixed)
+      \item Vampire Vultures
+      \item Wraiths Spirits
+      \end{itemize}
+\end{itemize}
+\end{multicols}
 
 \faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
 
@@ -8431,22 +8565,26 @@ Whatever you want. You need the Coil for later though.
 
 Monsters Encountered:
 
-Ukpyr-
-Umpani Ruffians
-Umpani Renegades
-Umpani Scouts
-Umpani Armsmen
-Umpani Troopers
-General Yamo(fixed)
-Sgt.~Balbrak(fixed)
-Lt.~Gromo(fixed)
-Spirits
-Rattkin Leaders
-Rattkin Hunters
-Rattkin Thieves
-Rattkin Bandits
-Rattkin Rogues
-T'Rang Wilders
+\begin{multicols}{2}
+  \begin{itemize}
+    \tightlist
+  \item Umpani Ruffians
+  \item Umpani Renegades
+  \item Umpani Scouts
+  \item Umpani Armsmen
+  \item Umpani Troopers
+  \item General Yamo (fixed)
+  \item Sgt.~Balbrak (fixed)
+  \item Lt.~Gromo (fixed)
+  \item Spirits
+  \item Rattkin Leaders
+  \item Rattkin Hunters
+  \item Rattkin Thieves
+  \item Rattkin Bandits
+  \item Rattkin Rogues
+  \item T'Rang Wilders
+  \end{itemize}
+\end{multicols}
 
 \faqentry{\texorpdfstring{Why do the Umpani immediately attack me when I
     enter Ukpyr?\protect\footnotemark{}}{Why do the Umpani immediately attack
@@ -8465,7 +8603,7 @@ One of the following might have happened:
   City is ideal) and Truce until the NPC is willing to trade with you.
   If you're using Wizardry Gold however, you're out of luck due to the
   bug with diplomacy (bug being that it just simply doesn't
-  work\ldots{}at all)
+  work\ldots{}at all).
 \end{itemize}
 
 \faqentry{Should I join the Umpani?}
@@ -8519,44 +8657,62 @@ If you want the items though, get them before meeting General Yamo.
 
 Monsters encountered:
 
-Encountered everywhere-
-Rattkin Ronin
-Rattkin Leaders
-Rattkin Hunters
-Rattkin Thieves
-Rattkin Bandits
-Rattkin Rogues
-T'Rang Wisers
-T'Rang Watchers
-T'Rang Tecniks
-T'Rang Keepers
-T'Rang Guarders
-T'Rang Youngers
-Dane Canons
-Dane Disciples
-Dane Initiates
-Puxic Oozes
-Fungus Oozes
-Crawling Wastes
-Fire Crows
+\begin{multicols}{2}
+  \begin{itemize}
+  \item Encountered everywhere
+    \begin{itemize}
+      \tightlist
+    \item Rattkin Ronin
+    \item Rattkin Leaders
+    \item Rattkin Hunters
+    \item Rattkin Thieves
+    \item Rattkin Bandits
+    \item Rattkin Rogues
+    \item T'Rang Wisers
+    \item T'Rang Watchers
+    \item T'Rang Tecniks
+    \item T'Rang Keepers
+    \item T'Rang Guarders
+    \item T'Rang Youngers
+    \item Dane Canons
+    \item Dane Disciples
+    \item Dane Initiates
+    \item Puxic Oozes
+    \item Fungus Oozes
+    \item Crawling Wastes
+    \item Fire Crows
+    \end{itemize}
 
-Rattkin Ruins-
+  \item Rattkin Ruins
+    \begin{itemize}
+      \tightlist
+    \item Grimal (fixed)
+    \item Rattkin Razuka (fixed)
+    \item Savant Controllers
+    \item Savant Troopers
+    \item Savant Guards
+    \end{itemize}
 
-Grimal (fixed)
-Rattkin Razuka(fixed)
-Savant Controllers
-Savant Troopers
-Savant Guards
+  \item Funhouse
+    \begin{itemize}
+      \tightlist
+    \item Upstairs
+      \begin{itemize}
+        \tightlist
+      \item Zombie Skells
+      \end{itemize}
 
-Funhouse-
-Upstairs:
-Zombie Skells
-
-Underground:
-Gelimagas
-Jelly Stingers
-Zombie Skells
-Fetid Corpses
+      \item Underground
+        \begin{itemize}
+          \tightlist
+        \item Gelimagas
+        \item Jelly Stingers
+        \item Zombie Skells
+        \item Fetid Corpses
+        \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{multicols}
 
 \faqentry{How do I get in? The entrance is blocked off!}
 
@@ -8653,17 +8809,18 @@ The Witch Mountains. Have fun looking around. Watch out for Q'ua-tari.
 
 Monsters Encountered:
 
-Old City-
-
-Spirits
-Ghosts
-Puxic Oozes (fixed)
-Fungus Oozes
-Water Nymphs
-Dragonlizards
-Iguanadons
-Minoskells
-Skeletons
+\begin{itemize}
+  \tightlist
+\item Spirits
+\item Ghosts
+\item Puxic Oozes (fixed)
+\item Fungus Oozes
+\item Water Nymphs
+\item Dragonlizards
+\item Iguanadons
+\item Minoskells
+\item Skeletons
+\end{itemize}
 
 \faqentry{Why are there footprints in the dust?}
 
@@ -8683,41 +8840,50 @@ however, you can go in here as early as after Orkogre Castle.
 
 Monsters Encountered:
 
-Nyctalinth-
+\begin{multicols}{2}
+\begin{itemize}
+\item Nyctalinth
+  \begin{itemize}
+    \tightlist
+  \item T'Rang Youngers
+  \item T'Rang Guarders
+  \item T'Rang Wilders
+  \item T'Rang Keepers
+  \item T'Rang Watchers
+  \item T'Rang Assassins
+  \item T'Rang Wisers
+  \item T'Rang Elders
+  \item H'Jenn-Ra (fixed)
+  \item Rattkin Leaders
+  \item Rattkin Hunters
+  \item Rattkin Thieves
+  \item Savant Controllers
+  \item Savant Troopers
+  \item Savant Guards
+  \item Spirits
+  \item Fetid Corpses
+  \item Zombie Skells
+  \item Ymmu (fixed)
+  \item Vilet Kanebe (fixed)
+  \item Dragon Rooks
+  \item Hog Beetles
+  \end{itemize}
 
-T'Rang Youngers
-T'Rang Guarders
-T'Rang Wilders
-T'Rang Keepers
-T'Rang Watchers
-T'Rang Assassins
-T'Rang Wisers
-T'Rang Elders
-H'Jenn-Ra (fixed)
-Rattkin Leaders
-Rattkin Hunters
-Rattkin Thieves
-Savant Controllers
-Savant Troopers
-Savant Guards
-Spirits
-Fetid Corpses
-Zombie Skells
-Ymmu (fixed)
-Vilet Kanebe (fixed)
-Dragon Rooks
-Hog Beetles
-
-Underground area-
-Cave Thraxes
-Crust Thraxes
-Cave Slimes
-Rock Lizards
-Puxic Oozes
-Fungus Oozes
-Bear Weevils
-Boar Weevils
-Venom Weevils
+\item Underground area
+  \begin{itemize}
+    \tightlist
+  \item Cave Thraxes
+  \item Crust Thraxes
+  \item Cave Slimes
+  \item Rock Lizards
+  \item Puxic Oozes
+  \item Fungus Oozes
+  \item Bear Weevils
+  \item Boar Weevils
+  \item Venom Weevils
+  \end{itemize}
+\end{itemize}
+\end{multicols}
 
 \faqentry{Where's H'Jenn-Ra?}
 
@@ -8851,19 +9017,24 @@ Eye skill later and to be on friendly terms with the Helazoid.
 
 Monsters Encountered:
 
-Bantari
-Q'ua-tari
-Vampire Vultures
-Fire Crows
-Dragon Rooks
-Vampire Rooks
-Vultures
-Wood Dryads
-Faerie Witches
-Forest Giants
-Boulder Giants
-Frost Giants
-Dinkle Wisps
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Bantari
+\item Q'ua-tari
+\item Vampire Vultures
+\item Fire Crows
+\item Dragon Rooks
+\item Vampire Rooks
+\item Vultures
+\item Wood Dryads
+\item Faerie Witches
+\item Forest Giants
+\item Boulder Giants
+\item Frost Giants
+\item Dinkle Wisps
+\end{itemize}
+\end{multicols}
 
 \faqentry{What do I do here?}
 
@@ -8897,10 +9068,25 @@ Why go into the Witch Cave with what you learned of course!
 
 Monsters Encountered:
 
-\WviiSPOT{} (fixed) Gruengard (fixed) Bonehead (fixed) Brunatz
-(fixed) Munstachio (fixed) Boulder Giants Forest Giants Frost Giants
-Water Nymphs Red Pirannhas Glow Mothras Rock Lizards Dinkle Wisps Jelly
-Stingers
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item \WviiSPOT{} (fixed)
+\item Gruengard (fixed)
+\item Bonehead (fixed)
+\item Brunatz (fixed)
+\item Munstachio (fixed)
+\item Boulder Giants
+\item Forest Giants
+\item Frost Giants
+\item Water Nymphs
+\item Red Pirannhas
+\item Glow Mothras
+\item Rock Lizards
+\item Dinkle Wisps
+\item Jelly Stingers
+\end{itemize}
+\end{multicols}
 
 \faqentry{These giants keep killing me! How can I kill them?}
 
@@ -8940,15 +9126,20 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 Monsters Encountered:
 
-Bantari
-Q'ua-tari
-Vampire Vultures
-Fire Crows
-Dragon Rooks
-Vampire Rooks
-Vultures
-Wood Dryads
-Faerie Witches
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Bantari
+\item Q'ua-tari
+\item Vampire Vultures
+\item Fire Crows
+\item Dragon Rooks
+\item Vampire Rooks
+\item Vultures
+\item Wood Dryads
+\item Faerie Witches
+\end{itemize}
+\end{multicols}
 
 \faqentry{Huh? I've never heard of this place!}
 
@@ -8970,23 +9161,28 @@ Dahlia in this area.
 
 Monsters Encountered:
 
-\qmwordqm{Alethedies} (fixed)
-\qmwordqm{Dk.Savant} (fixed)
-\qmwordqm{Vi~Domina} (fixed)
-\qmwordqm{Statue} (fixed)
-Witches' Lights (fixed)
-Spirits
-Ghosts
-Nightmares
-Dream Weavers
-Minoskells
-Puxic Oozes
-Cave Slimes
-Rock Lizards
-Luna Mothras
-Glow Mothras
-Spectral Ravens
-Faerie Witches
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item \qmwordqm{Alethedies} (fixed)
+\item \qmwordqm{Dk.Savant} (fixed)
+\item \qmwordqm{Vi~Domina} (fixed)
+\item \qmwordqm{Statue} (fixed)
+\item Witches' Lights (fixed)
+\item Spirits
+\item Ghosts
+\item Nightmares
+\item Dream Weavers
+\item Minoskells
+\item Puxic Oozes
+\item Cave Slimes
+\item Rock Lizards
+\item Luna Mothras
+\item Glow Mothras
+\item Spectral Ravens
+\item Faerie Witches
+\end{itemize}
+\end{multicols}
 
 \faqentry{Do I HAVE to pay the witches 1000 gold?}
 
@@ -9017,17 +9213,22 @@ disappear no matter how long I take!
 
 Monsters Encountered:
 
-Bantari
-Q'ua-tari
-Rock Lizards
-Vampire Vultures
-Fire Crows
-Dragon Rooks
-Vampire Rooks
-Vultures
-Wood Dryads
-Faerie Witches
-Mtn. Thraxes (fixed)
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Bantari
+\item Q'ua-tari
+\item Rock Lizards
+\item Vampire Vultures
+\item Fire Crows
+\item Dragon Rooks
+\item Vampire Rooks
+\item Vultures
+\item Wood Dryads
+\item Faerie Witches
+\item Mtn. Thraxes (fixed)
+\end{itemize}
+\end{multicols}
 
 \faqentry{I take it the other two flowers are here?}
 
@@ -9041,16 +9242,21 @@ all the sidepaths and the main path.
 
 Monsters Encountered:
 
-Red Pirannhas
-Vampire Vultures
-Fire Crows
-Dragon Rooks
-Vampire Rooks
-Vultures
-Wood Dryads
-Faerie Witches
-Water Nymphs
-Rock Lizards
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Red Pirannhas
+\item Vampire Vultures
+\item Fire Crows
+\item Dragon Rooks
+\item Vampire Rooks
+\item Vultures
+\item Wood Dryads
+\item Faerie Witches
+\item Water Nymphs
+\item Rock Lizards
+\end{itemize}
+\end{multicols}
 
 \faqentry{What do I do here?}
 
@@ -9068,33 +9274,45 @@ Isn't your Detect Secret going off right now?
 
 Monsters Encountered:
 
-Above ground:
-Night Rooks
-Dragon Rooks
-Vampire Vultures
-Glow Mothras
-Luna Mothras
-Red Pirannhas
+\begin{multicols}{2}
+\begin{itemize}
+\item Above ground
+  \begin{itemize}
+    \tightlist
+  \item Night Rooks
+  \item Dragon Rooks
+  \item Vampire Vultures
+  \item Glow Mothras
+  \item Luna Mothras
+  \item Red Pirannhas
+  \end{itemize}
 
-Below ground:
-Ghosts of Gorn (fixed)
-Ungorn Daimyo (fixed)
-\WviiDOOM{} (fixed)
-Wraiths
-Spirits
-Kolidras
-Necromani
-Fieros
-Phantasmagoras
-Skeletons
-Zombie Skells
-Fetid Corpses
-Skeleton Lords
-Q'ua-tari
-Bantari
-Dragon Rooks
-Fire Crows
-Witch's Lights
+
+\item Below ground
+
+  \begin{itemize}
+    \tightlist
+  \item Ghosts of Gorn (fixed)
+  \item Ungorn Daimyo (fixed)
+  \item \WviiDOOM{} (fixed)
+  \item Wraiths
+  \item Spirits
+  \item Kolidras
+  \item Necromani
+  \item Fieros
+  \item Phantasmagoras
+  \item Skeletons
+  \item Zombie Skells
+  \item Fetid Corpses
+  \item Skeleton Lords
+  \item Q'ua-tari
+  \item Bantari
+  \item Dragon Rooks
+  \item Fire Crows
+  \item Witch's Lights
+  \end{itemize}
+\end{itemize}
+\end{multicols}
 
 \faqentry{Um\ldots{}which island do I go to?}
 
@@ -9147,19 +9365,25 @@ before doing so!
 \subsubsection{Dragon Mountains}\label{dragon-mountains}
 
 Monsters Encountered:
-Emerald Dragons(fixed)
-Dragonessas
-Dragorras
-Dragon Pups
-Fetid Corpses
-Vampire Vultures
-Dragon Rooks
-Fire Crows
-Komodo Dragons
-Rock Lizards
-Dragonlizards
-Dinkle Wisps
-Jelly Stingers
+
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Emerald Dragons (fixed)
+\item Dragonessas
+\item Dragorras
+\item Dragon Pups
+\item Fetid Corpses
+\item Vampire Vultures
+\item Dragon Rooks
+\item Fire Crows
+\item Komodo Dragons
+\item Rock Lizards
+\item Dragonlizards
+\item Dinkle Wisps
+\item Jelly Stingers
+\end{itemize}
+\end{multicols}
 
 \faqentry{OK, how do I get here?}
 
@@ -9203,17 +9427,22 @@ Climb up and find out. It's (relatively) safe.
 
 \subsubsection{City of Sky}\label{city-of-sky}
 
-Savant Kui'sa-ka
-Savant Controllers
-Savant Guards
-Helazoid Aces (fixed)
-Xenozoid Runners
-Xenozoid Flyers
-T'Rang Elders
-T'Rang Assassins
-T'Rang Watchers
-Meta-Droid (fixed)
-Ravens
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Savant Kui'sa-ka
+\item Savant Controllers
+\item Savant Guards
+\item Helazoid Aces (fixed)
+\item Xenozoid Runners
+\item Xenozoid Flyers
+\item T'Rang Elders
+\item T'Rang Assassins
+\item T'Rang Watchers
+\item Meta-Droid (fixed)
+\item Ravens
+\end{itemize}
+\end{multicols}
 
 \faqentry{Hey! What's with the invisible walls?}
 
@@ -9301,16 +9530,21 @@ then selling them to Paluke--or anyone other than Dame Ke-li.
 
 Monsters Encountered:
 
-Ra-sep-re-tep (fixed)
-Thing from Hell (fixed)
-Horragoth (fixed)
-Myxlmynx (fixed) / Fieros (fixed)
-D'Arboleth (fixed)
-Wraiths (fixed)
-Fiend of 9 Worlds (fixed)
-Beast of 1000 Eyes (fixed)
-Kolidra Necromani
-Red Pirannhas
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Ra-sep-re-tep (fixed)
+\item Thing from Hell (fixed)
+\item Horragoth (fixed)
+\item Myxlmynx (fixed) / Fieros (fixed)
+\item D'Arboleth (fixed)
+\item Wraiths (fixed)
+\item Fiend of 9 Worlds (fixed)
+\item Beast of 1000 Eyes (fixed)
+\item Kolidra Necromani
+\item Red Pirannhas
+\end{itemize}
+\end{multicols}
 
 \faqentry{Do I have to kill any of these Gorrors?}
 
@@ -9404,18 +9638,22 @@ so level is extremely difficult; once you get your party to around (or over)
 \subsubsection{Hall of the Past}\label{hall-of-the-past}
 
 Monsters Encountered:
-
-Rexx
-Myxlmynx
-Wraiths
-Spirits
-Bloodwyrms
-Yreguoths
-Necromanis
-Fieros
-Phantasmagoras
-Kolidras
-Skeleton Lords
+\begin{multicols}{2}
+\begin{itemize}
+  \tightlist
+\item Rexx
+\item Myxlmynx
+\item Wraiths
+\item Spirits
+\item Bloodwyrms
+\item Yreguoths
+\item Necromanis
+\item Fieros
+\item Phantasmagoras
+\item Kolidras
+\item Skeleton Lords
+\end{itemize}
+\end{multicols}
 
 \faqentry{Um\ldots{}I need a map. Bad.}
 
@@ -9552,7 +9790,7 @@ some information just for the heck of it
 
 Here are all I know of:
 
-\begin{tabular}{@{}
+\begin{longtable}{@{}
   P{0.25\linewidth-\tabcolsep}
   p{0.2\linewidth-\tabcolsep}
   P{0.55\linewidth-\tabcolsep}@{}} \toprule
@@ -9566,7 +9804,7 @@ Cornu of Demonspawn & Astral Gate & Kill \WviiSPAWN{} \\[1.2ex]
 Siren's Wail & Confuse & Dragon Mountains, in the pirate chest or a Gorrors chest. \\[1.2ex]
 Horn of Prometheus & Fireball & Gorrors chest or a certain Hall of Past chest. \\[1.2ex]
 Lyre of Cakes & Healthfull\footnotemark{} & A certain Hall of Past chest--you choose between this and the Horn of Prometheus. \\ \bottomrule
-\end{tabular}
+\end{longtable}
 
 \footnotetext{Lyre of Cakes has been proven to not give back your health. People
   have theorized that it instead acts like a mass version Cure Lesser
@@ -9615,7 +9853,8 @@ the Frontier Phasers.
 \faqentry{What do the wandering NPCs sell?}{This is from what I can remember,
   so there may be some mistakes:}
 
-\begin{itemize}
+\begin{multicols}{2}
+\begin{itemize}\RaggedRight{}
 \item Lord Galiere and King Ulgar
   \begin{itemize}
     \tightlist
@@ -9664,7 +9903,7 @@ the Frontier Phasers.
       \begin{tikzpicture}[overlay, remember picture]
         \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
         let \p1=(xen-xheng-topbrace), \p2=(xen-xheng-bottombrace) in
-        ({max(\x1,\x2)+2em}, {\y1+0.8em}) -- node[right=0.6em] {may not have all at once} ({max(\x1,\x2)+2em}, {\y2});
+        ({max(\x1,\x2)+2em}, {\y1+0.8em}) -- node[right=0.6em] {\parbox{5em}{may not have all at once}} ({max(\x1,\x2)+2em}, {\y2});
       \end{tikzpicture}
   \end{itemize}
 
@@ -9710,6 +9949,7 @@ the Frontier Phasers.
     \item Powerpak (sometimes)
   \end{itemize}
 \end{itemize}
+\end{multicols}
 
 Any maps the NPCs may have are always displayed first when you go to the
 ``Buy'' screen.
