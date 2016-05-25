@@ -5,12 +5,21 @@
 \usepackage{fixltx2e} % provides \textsubscript
 \usepackage{fontspec}
 \usepackage{microtype}
+\usepackage[font={slshape},leftmargin=0.5\leftmargin,rightmargin=0.5\rightmargin]{quoting}
+
+\usepackage{siunitx}
+%SIUNITX STUFF
+\let\DeclareUSUnit\DeclareSIUnit
+\let\US\SI
+\let\us\si%means of separating SI and US units
+%us unit declarations
+\DeclareUSUnit\foot{ft}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \setmainfont[]{Charis SIL}
 
-\usepackage{bigfoot}
-\DeclareNewFootnote{default}
+%\usepackage{bigfoot}
+%\DeclareNewFootnote{default}
 
 \usepackage{bookmark}
 \hypersetup{unicode=true,
@@ -69,6 +78,10 @@ contents={%
 \newcommand{\faqentry}[1]{%
   \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\par\nopagebreak[4]}
 
+\newcommand{\qmwordqm}[1]{\mbox{?#1?}}
+\newcommand{\WviiSPOT}{\mbox{*S~P~O~T*}}
+\newcommand{\WviiDOOM}{\mbox{*D~O~O~M*}}
+\newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
 
 \begin{document}
 \maketitle
@@ -113,7 +126,7 @@ also (occasionally) on the Galaxynet IRC server as ``Rava'' or
 ``Ravashack'' on weekdays--just login to www.galaxynet.org with a
 browser or use mIRC to connect to a Galaxynet server.
 
-Minor updates such as spelling errors, typos, site additions, etc. will
+Minor updates such as spelling errors, typos, site additions, etc.\ will
 be habitually done at \url{http://www.gamefaqs.com}. Major updates (such
 as adding a new section or changing the format of the document) will be
 done to all the sites that have this FAQ\ldots{}or at least the
@@ -140,7 +153,7 @@ over my pre-born FAQ and suggesting a lot of things--too many to thank
 him individually on each section he suggested. His site is at:
 \url{http://www.softwarespecialties.com/} If you really have to cheat
 and aren't stingy about it, at least take a look at the programs he's
-written for Wizardry 7, even though Wiz7Edit must be bought Excellent
+written for Wizardry~7, even though Wiz7Edit must be bought Excellent
 interface, and the Item Viewer Wiz7Item(a separate program) is more
 accurate than the in-game methods! Llevram's always there to help you
 with problems if you need him.
@@ -149,7 +162,7 @@ The folks on the Software Specialties board for the surprises that pop
 up about the game every few days and so. You know who you are. Thanks
 for putting up with me ever since I joined
 
-Sir-Tech Canada, for trying to get Wizardry 8 done even though they are
+Sir-Tech Canada, for trying to get Wizardry~8 done even though they are
 having difficulties. I know you guys will find a way\ldots{}
 
 D.W. Bradley, for being the brains behind the game. He's working with a
@@ -167,10 +180,10 @@ Some of my friends at Panumbra, who reminded me of the existence of this
 game with a few off-topic posts on the webboard.
 
 Anyone who I've actually helped at the game for listening to me, and
-anyone who I've missed. :)
+anyone who I've missed. \texttt{:)}
 
 Anyone who sent in a question not covered here. I appreciate the
-feedback guys. :)
+feedback guys. \texttt{:)}
 
 The folks at various game sites for being interested in my
 FAQ--especially the ones that put it up.
@@ -180,9 +193,9 @@ GameFAQs and CJayC, just for being there (and posting this up).
 Dallas on the GameFAQs message boards, for taking the time to review
 this FAQ and give pointers about it.
 
-The Ironworks Wizardry 8 board at
+The Ironworks Wizardry~8 board at
 \url{http://www.ironworksforum.com/ubb/cgi-bin/ultimatebb.cgi} for just
-being a Wizardry 8 board.
+being a Wizardry~8 board.
 
 Bernice Carter, a nice 40-something year old lady who wishes to point
 out that not all avid gamers are young male ``whippersnappers.''
@@ -6033,7 +6046,7 @@ effect is that you will never fall asleep in the poppy field with even 1
 point in this skill.
 
 \paragraph{Power Strike} I don't know about you, but I \textsc{like} hitting
-for more damage. :)
+for more damage. \texttt{:)}
 
 \paragraph{Diplomacy} Diplomacy is kind of a unused skill in the game--most
 of the time. However, when used it can be really useful, when an NPC is very
@@ -6043,7 +6056,7 @@ get it, AND the fact that anyone who successfully ``pleases'' an NPC
 automatically gets a one point raise in the skill regardless of whether they
 have it or not however makes the skill kind of a ``I'll get it when I need
 it'' skill. Warning: Diplomacy is a useless skill in the Wizardry Gold
-version of Wizardry 7. No matter how pleased you make an NPC, they will never
+version of Wizardry~7. No matter how pleased you make an NPC, they will never
 trade with you until you please the NPC by doing things for them (i.e.~doing
 Barlone a favor will please Mick the Pick and Ratsputin enough to trade with
 you).
@@ -6165,8 +6178,7 @@ in the first 5-10 levels to accumulate skills and spells quickly--a
 Faery Thief that I converted into a Ninja after hitting level 7 already
 had 100 Skulduggery at level 3!
 
-Sample Dual Class Party (Characters rolled with 15 points to
-distribute):
+Sample Dual Class Party (Characters rolled with 15 points to distribute):
 
 \begin{itemize}
 \tightlist
@@ -6394,7 +6406,7 @@ Sample Blender Party:
 \subsection{\texorpdfstring{The `Vanilla'
 Party}{The Vanilla Party}}\label{the-vanilla-party}
 
-Called the Vanilla Party for its simpleness, this party \textsc{NEVER}
+Called the Vanilla Party for its simpleness, this party \textsc{never}
 changes classes, so pick carefully. You'll need at least 1 healer, 1
 offensive spellcaster, and 1 Skulduggery character unless you're looking for
 a challenge. After you're familiar with the game, try going through with only
@@ -6538,8 +6550,8 @@ or Cure Disease.
 
 \subsection{Spell-picking Choices}\label{spell-picking-choices}
 
-*Note: The required amount of skill points for a group of spells may be
-off by one or two points
+\paragraph{Note:} The required amount of skill points for a group of spells
+may be off by one or two points.
 
 Thaumaturgy (Mage spellbook)
 
@@ -6802,7 +6814,7 @@ Haste Speeds up your party. Very useful in fights against monsters
 faster than you (or higher level).
 
 Cure Paralysis Cures or reduces the duration of the ``Paralyze''
-ailment. Useful. Get it. :)
+ailment. Useful. Get it. \texttt{:)}
 
 Restfull Restores everyone's stamina. The amount restored is less than
 what you would get back if you casted Stamina on each character, but the
@@ -7073,7 +7085,7 @@ acid, but not a lot are
 
 Itching Skin Attempts to inflict the ``Irritated'' ailment on a group of
 monsters. Tends to work on a lot of them (even some boss-like monsters
-like \emph{S P O T}).
+like \WviiSPOT{}).
 
 Heal Wounds Heals one guy. There shouldn't be a reason why you aren't
 picking this spell first.
@@ -7099,7 +7111,7 @@ or Prismic Missile don't work on that monster, this won't either
 
 Cure Lesser Condition Extremely useful for the Alchemist to have--unlike
 the other spellcasters, Alchemists got a lot of ailment-happy spells;
-what do you think happens when they backfire on their spells? :)
+what do you think happens when they backfire on their spells? \texttt{:)}
 
 Confusion Yet another ailment spell--it attempts to inflict the
 ``Insanity'' ailment on a group of monsters. You won't be using this too
@@ -7290,14 +7302,14 @@ Some pointers:
   Avoid overloading your characters. When their carrying capacity score
   changes color from grey, their equipment is heavy enough to affect
   their AC, which is bad. Hey, what do you expect after carrying 300
-  lbs. of stuff?
+  lbs.\ of stuff?
 \end{itemize}
 
 \section{Playing the Game}\label{playing-the-game}
 
-The order of the following locations are a recommended, but not
-required, order to get through the game for a brand new party starting
-just outside of New City, based on when maps disappear.
+The order of the following locations are a recommended, but not required,
+order to get through the game for a brand new party starting just outside of
+New City, based on when maps disappear.
 
 \subsection{Basic Format}\label{basic-format}
 
@@ -7359,7 +7371,7 @@ Monsters encountered:
   you imported your game, I really can't help you too much.}
 
 If you started near Dionysceus skip directly to the Dionysceus section
-of this FAQ and see if you can get the ?CRYSTAL? map in the Temple of
+of this FAQ and see if you can get the \qmwordqm{CRYSTAL} map in the Temple of
 Deadly Coffers\ldots{}if you can afford the outrageous fees. You may
 need to use Legerdemain on Almagorte to pay your way through. At the
 very least try to get the Mind Control skill before going to New City
@@ -7385,7 +7397,7 @@ starts.
 Regardless of where you start, you need to get to New City eventually--the
 first quarter of the game is linear if you have not played the game before
 (and therefore know what the maps say) and unless you started in Dionysceus,
-the only map you've got a chance of getting is the ?TEMPLE? map in Orkogre
+the only map you've got a chance of getting is the \qmwordqm{TEMPLE} map in Orkogre
 Castle unless you know exactly what you are doing.
 
 \subsubsection{Starter Dungeon}\label{starter-dungeon}
@@ -7422,35 +7434,31 @@ Level 2-
   Ra-sep-re-tep(fixed)
 \end{itemize}
 
-Q: What's this fountain here?
+\faqentry{What's this fountain here?}{That fountain restores some health,
+  stamina, and mana every time you sip it. Don't forget that you can sip
+  multiple times if once isn't enough To sip, either click on the fountain
+  once and then on the characters that you want to drink from the fountain,
+  or search and then click on the characters that you want to drink from
+  it. Don't forget that you can use the number keys (1-6) if you consider the
+  mouse to be too slow for this! However, be VERY careful with
+  fountains. Most are beneficial, but some have nasty effects on you. Save
+  before drinking from any fountain.}
 
-A: That fountain restores some health, stamina, and mana every time you
-sip it. Don't forget that you can sip multiple times if once isn't
-enough To sip, either click on the fountain once and then on the
-characters that you want to drink from the fountain, or search and then
-click on the characters that you want to drink from it. Don't forget
-that you can use the number keys (1-6) if you consider the mouse to be
-too slow for this! However, be VERY careful with fountains. Most are
-beneficial, but some have nasty effects on you. Save before drinking
-from any fountain.
-
-Q: What the heck am I supposed to do here?
-
-A: Build levels. Clean out the entire dungeon. And to get to know the
-game better of course. The most important tactic that you will learn
-over and over here is to save before entering unexplored rooms and
-areas. If you have someone with access to Priest spells, try to get
-Dispel Undead if you can--you'll be happy to have it, I will guarantee
-that. If something seems confusing, read the manual! It is quite
-descriptive in how to do things. If you're using a copied version of the
-game and didn't bother to get the manual, look for a copy of Wizardry
-Gold--the manual is built in in that version by using the F1 key,
-although Wizardry Gold tends to be more buggy than Crusaders of the Dark
-Savant Despite what people may say about the game being non-linear, the
-first part of the game is linear--you just can't handle most of the
-monsters in the game at the level you are at. You'll see what I mean
-after deciding where to go after New City--anywhere but Orkogre Castle,
-Dionysceus(via the poppy fields), and Munkharama is lethal
+\faqentry{What the heck am I supposed to do here?}{Build levels. Clean out
+  the entire dungeon. And to get to know the game better of course. The most
+  important tactic that you will learn over and over here is to save before
+  entering unexplored rooms and areas. If you have someone with access to
+  Priest spells, try to get Dispel Undead if you can--you'll be happy to have
+  it, I will guarantee that. If something seems confusing, read the manual!
+  It is quite descriptive in how to do things. If you're using a copied
+  version of the game and didn't bother to get the manual, look for a copy of
+  Wizardry Gold--the manual is built in in that version by using the F1 key,
+  although Wizardry Gold tends to be more buggy than Crusaders of the Dark
+  Savant Despite what people may say about the game being non-linear, the
+  first part of the game is linear--you just can't handle most of the
+  monsters in the game at the level you are at. You'll see what I mean after
+  deciding where to go after New City--anywhere but Orkogre Castle,
+  Dionysceus(via the poppy fields), and Munkharama is lethal}
 
 \subsubsection{New City}\label{new-city}
 
@@ -7490,107 +7498,89 @@ Monsters encountered (varies by area of New City):
   Umpani Renegade
 \end{itemize}
 
-Q: The Savant Trooper won't let me through! Why?
+\faqentry{The Savant Trooper won't let me through! Why?}{You probably didn't
+  state a place in New City for it to confirm.  Maybe there's an ad for a
+  store in the Starter Dungeon somewhere\ldots{} you must have found
+  \textsc{something} resembling paper in there.}
 
-A: You probably didn't state a place in New City for it to confirm.
-Maybe there's an ad for a store in the Starter Dungeon somewhere\ldots{}
-you must have found SOMETHING resembling paper in there.
+\faqentry{What should I do here?}{Think of New City as a bigger version of
+  the Starter Dungeon, except with stores and healing that you have to pay
+  for, for now. Definitely save before entering a place, as there are a
+  couple doors that hide very nasty encounters.}
 
-Q: What should I do here?
+\faqentry{Hey! I can't pick or force some of these doors! How do I get
+  in?}{If you're referring to the Umpani Detache and the T'Rshieches House,
+  you'll get in\ldots{}but from a different place. If you are referring to a
+  certain always-jammed door near the Marina, buy a Knock-Knock scroll from
+  Belcanzor and have someone with at least 1 point in scribe use it on the
+  door\ldots{}but save first. Either that or use a level 6 Knock-Knock spell
+  to open the door. Very useful treasure in the chest behind it, considering
+  how early in the game it is.}
 
-A: Think of New City as a bigger version of the Starter Dungeon, except
-with stores and healing that you have to pay for, for now. Definitely
-save before entering a place, as there are a couple doors that hide very
-nasty encounters
+\faqentry{What's with the Wand Majestik in the Curio Museum? I stick my hand
+  in but I can't grab it! All I get is this weird stone when I leave my hand
+  in there and my leader gets diseased!}{\emph{Don't} stick your hand in
+  there unless you have a way to cure your first character of disease. You
+  can use Father Rulae in the Abbey in the middle of New City, but you have
+  to ``donate'' all your gold.  Better to wait until later when you can buy
+  Cure Disease potions in Munkharama or learn the spell yourself, as the Wand
+  isn't going anywhere anyway.}
 
-Q: Hey! I can't pick or force some of these doors! How do I get in?
+\faqentry{Can I use the boat Sogheim has in the Marina?}{No, but you'll find
+  a better one.}
 
-A: If you're referring to the Umpani Detache and the T'Rshieches House,
-you'll get in\ldots{}but from a different place. If you are referring to
-a certain always-jammed door near the Marina, buy a Knock-Knock scroll
-from Belcanzor and have someone with at least 1 point in scribe use it
-on the door\ldots{}but save first. Either that or use a level 6
-Knock-Knock spell to open the door. Very useful treasure in the chest
-behind it, considering how early in the game it is
+\faqentry{What the heck do I do at these Devil Faces in the Curio
+  Museum?}{Read the \qmwordqm{BOAT} Map. Funny, some of those words match the
+  devils\ldots{}}
 
-Q: What's with the Wand Majestik in the Curio Museum? I stick my hand in
-but I can't grab it! All I get is this weird stone when I leave my hand
-in there and my leader gets diseased!
+\faqentry{What is that sign in the Condemned Area?}{It's a way into Old
+  City. You'll figure out how to get in after you help Barlone in the Rattkin
+  Ruins' Funhouse with a favor. Maybe Professor Wunderland was the friend he
+  was speaking of--after all, he IS a Rattkin, and he IS interested in Old
+  City. Perhaps mentioning the place Barlone mentioned will help jog his
+  memory.}
 
-A: \emph{Don't} stick your hand in there unless you have a way to cure
-your first character of disease. You can use Father Rulae in the Abbey
-in the middle of New City, but you have to ``donate'' all your gold.
-Better to wait until later when you can buy Cure Disease potions in
-Munkharama or learn the spell yourself, as the Wand isn't going anywhere
-anyway.
+\faqentry{What's the Book of Fables for? I managed to sneak past the Savant
+  Android guarding it with my fastest character.}{It is for figuring out the
+  witches names. Read it when you're in the Witch Mountains, and especially
+  pay attention to the last parts.}
 
-Q: Can I use the boat Sogheim has in the Marina?
+\faqentry{Who's the Gorn Officer that Palukes mentioned?}{You'll find
+  out. Keep in mind when NPCs mention nouns like Officer or even a place,
+  there is a possibility that saying those words can open a flood of useful
+  info.}
 
-A: No, but you'll find a better one.
+\faqentry{I found a Black Wafer. What does it do?}{It's for the
+  Constabulary. Think of ETX as Entrance. Don't use it in the Forbidden Zone
+  however, unless you \textsc{want} to fight Savant Troopers and Savant
+  Guards.}
 
-Q: What the heck do I do at these Devil Faces in the Curio Museum?
+\faqentry{How \emph{do} I get in the Forbidden Zone?}{You walk
+  in. \texttt{:)} You mean inside the inside area? Get the Control Card from
+  the T'Rshieches House\ldots{}but you'll need to have a chat with Shiritis
+  before you can get a chance at the chest.}
 
-A: Read the ?BOAT? Map. Funny, some of those words match the
-devils\ldots{}
+\faqentry{How do I turn on the computers in the Forbidden Zone?}{Use the
+  Comm-Link Device from the Umpani Detache.}
 
-Q: What is that sign in the Condemned Area?
+\faqentry{What can I do with the computer? It wants me to login to some
+  server.}{Nose around Nyctalinth and wake up a few Savant Androids lying
+  around Don't forget to nose around the Observation Center there for some
+  other answers. This is where the information you got in those two places is
+  used.}
 
-A: It's a way into Old City. You'll figure out how to get in after you
-help Barlone in the Rattkin Ruins' Funhouse with a favor. Maybe
-Professor Wunderland was the friend he was speaking of--after all, he IS
-a Rattkin, and he IS interested in Old City. Perhaps mentioning the
-place Barlone mentioned will help jog his memory.
+\faqentry{How do I open the Security Cell?}{Whichever server you didn't use
+  (or used but it didn't work) the first time, use it now.}
 
-Q: What's the Book of Fables for? I managed to sneak past the Savant
-Android guarding it with my fastest character.
-
-A: It is for figuring out the witches names. Read it when you're in the
-Witch Mountains, and especially pay attention to the last parts.
-
-Q: Who's the Gorn Officer that Palukes mentioned?
-
-A: You'll find out. Keep in mind when NPCs mention nouns like Officer or
-even a place, there is a possibility that saying those words can open a
-flood of useful info
-
-Q: I found a Black Wafer. What does it do?
-
-A: It's for the Constabulary. Think of ETX as Entrance. Don't use it in
-the Forbidden Zone however, unless you WANT to fight Savant Troopers and
-Savant Guards.
-
-Q: How \emph{do} I get in the Forbidden Zone?
-
-A: You walk in. :) You mean inside the inside area? Get the Control Card
-from the T'Rshieches House\ldots{}but you'll need to have a chat with
-Shiritis before you can get a chance at the chest.
-
-Q: How do I turn on the computers in the Forbidden Zone?
-
-A: Use the Comm-Link Device from the Umpani Detache.
-
-Q: What can I do with the computer? It wants me to login to some server.
-
-A: Nose around Nyctalinth and wake up a few Savant Androids lying around
-Don't forget to nose around the Observation Center there for some other
-answers. This is where the information you got in those two places is
-used
-
-Q: How do I open the Security Cell?
-
-A: Whichever server you didn't use (or used but it didn't work) the
-first time, use it now.
-
-Q: Nooo! This isn't fair!!! Why isn't the ?LEGEND? map in New City?!?
-
-A: It tends to disappear VERY fast for some odd reason. Consequently,
-return the Holy Work to Xen Xheng as soon as possible and go looking for
-Xen Xheng after he leaves the dojo. (Locate Person scrolls WILL help).
-Ask Xen Xheng about ``5 Flowers'' and see what he says. Try to get the
-?LEGEND? map now while it is early in the game after following the
-instructions he gives you. Seeing as Ratsputin seems to come down here
-pretty early, I'd say that he's the one that normally takes the ?LEGEND?
-map before it switches hands
+\faqentry{Nooo! This isn't fair!!! Why isn't the \qmwordqm{LEGEND} map in New
+  City?!?}{It tends to disappear VERY fast for some odd reason. Consequently,
+  return the Holy Work to Xen Xheng as soon as possible and go looking for
+  Xen Xheng after he leaves the dojo. (Locate Person scrolls \textsc{will}
+  help).  Ask Xen Xheng about ``5 Flowers'' and see what he says. Try to get
+  the \qmwordqm{LEGEND} map now while it is early in the game after following
+  the instructions he gives you. Seeing as Ratsputin seems to come down here
+  pretty early, I'd say that he's the one that normally takes the
+  \qmwordqm{LEGEND} map before it switches hands.}
 
 \subsubsection{Orkogre Castle}\label{orkogre-castle}
 
@@ -7704,52 +7694,50 @@ Murkatos' Inner Sanctum-
   Spectral Ravens (fixed)
 \end{itemize}
 
-Q: How the heck do I get into the Throne Room? I haven't found a key for
-the place!
+\faqentry{How the heck do I get into the Throne Room? I haven't found a key
+  for the place!}
 
-A: You'll have to get into the Ape's room first and flip a switch. I
-hear apes like bananas\ldots{}but if you didn't bring one with you there
-are some in the prison.
+You'll have to get into the Ape's room first and flip a switch. I hear apes
+like bananas\ldots{}but if you didn't bring one with you there are some in
+the prison.
 
-Q: How do I open the doors in the Prison then? Is there a switch
-somewhere to throw?
+\faqentry{How do I open the doors in the Prison then? Is there a switch
+  somewhere to throw?}
 
-A: No, you have to get the Prison Keys from Murkatos' Outer Sanctum
+No, you have to get the Prison Keys from Murkatos' Outer Sanctum.
 
-Q: \emph{Glares} OK, and how do I get in the Outer Sanctum?
+\faqentry{\emph{Glares} OK, and how do I get in the Outer Sanctum?}
 
-A: You'll need a Polished Steelplate from below to reflect a beam of
-light into the gate. Funny, why does my Detect Secret eye glow when I
-pass by that splot of blood in front?
+You'll need a Polished Steelplate from below to reflect a beam of light into
+the gate. Funny, why does my Detect Secret eye glow when I pass by that splot
+of blood in front?
 
-Q: I found these Boney Combs and Brushes. When is it used?
+\faqentry{I found these Boney Combs and Brushes. When is it used?}
 
-A: Much, MUCH later in the game. Isle of Crypts to be exact. Look for a
-hideous Gorn woman there
+Much, \textsc{much} later in the game. Isle of Crypts to be exact. Look for a
+hideous Gorn woman there.
 
-Q: Hey! The chest in the Gorn King's room is empty! What gives?
+\faqentry{Hey! The chest in the Gorn King's room is empty! What gives?}
 
-A: It looks like someone beat you to the map that was here. Whenever you
-come across an empty chest or a chest that had waxy wrappings in it,
-that is where a map was located. If the chest is empty, an NPC beat you
-to the map because you were too slow. At this point in the game however,
-only Brother TShober can beat you to this chest at your top speed--so
-don't talk to Brother TShober before coming here! This map was the
-?TEMPLE? map. Be very careful when you run into NPCs in an area that has
-a map--when you see them around, you're probably too late to get the
-map! Of course, if you take your time coming here almost anyone could
-have the map\ldots{}
+It looks like someone beat you to the map that was here. Whenever you come
+across an empty chest or a chest that had waxy wrappings in it, that is where
+a map was located. If the chest is empty, an NPC beat you to the map because
+you were too slow. At this point in the game however, only Brother TShober
+can beat you to this chest at your top speed--so don't talk to Brother
+TShober before coming here! This map was the \qmwordqm{TEMPLE} map. Be very
+careful when you run into NPCs in an area that has a map--when you see them
+around, you're probably too late to get the map! Of course, if you take your
+time coming here almost anyone could have the map\ldots{}
 
-Q: That Shadow Guardian is too hard! How do I beat it?
+\faqentry{That Shadow Guardian is too hard! How do I beat it?}
 
-A: Looks like you went way too fast. However, in the area below that you
-came from, if you go back to where you fell down a fixed encounter
-(where you have to fight some monsters) at a certain spot respawns--you
-will always walk into the spot where the encounter is on your way back
-up. This must have been put there for people that got stuck here because
-they were low level
+Looks like you went way too fast. However, in the area below that you came
+from, if you go back to where you fell down a fixed encounter (where you have
+to fight some monsters) at a certain spot respawns--you will always walk into
+the spot where the encounter is on your way back up. This must have been put
+there for people that got stuck here because they were low level.
 
-You wanted to know how to beat it though: You'll \textsc{NEED} the Air Pocket
+You wanted to know how to beat it though: You'll \textsc{need} the Air Pocket
 spell here.  Otherwise, when Asphyxiation pops up (and it will 90\% of the
 time), you will see most or all of your party die unless you're high level
 Useful spells on the Shadow Guardian in addition to Air Pocket include Purify
@@ -7760,27 +7748,27 @@ Guardian.  If you can summon help with Conjuration/Illusion/Create Life, call
 some up the first turn as well With those spells under your belt, the Shadow
 Guardian shouldn't be too much of a problem.
 
-Q: Aaack! All the sudden I'm silenced and 20-30 Spectral Ravens fight
-me! What do I do?
+\faqentry{Aaack! All the sudden I'm silenced and 20-30 Spectral Ravens fight
+  me! What do I do?}
 
-A: This is an example where saving saves your butt. If you saved before
-entering this area, you'll immediately realize that you're too weak for
-this section. Come back later when your party can deal with all those
-blinking birds without spells, and you'll have a better chance
+This is an example where saving saves your butt. If you saved before entering
+this area, you'll immediately realize that you're too weak for this
+section. Come back later when your party can deal with all those blinking
+birds without spells, and you'll have a better chance.
 
-You will want to come back anyway--there's a key in the chest there that
-will unlock the gate to a Magic-restoring only fountain here; other contents
-of the chest includes the nifty Gem of Power, which can, when invoking it's
+You will want to come back anyway--there's a key in the chest there that will
+unlock the gate to a Magic-restoring only fountain here; other contents of
+the chest includes the nifty Gem of Power, which can, when invoking it's
 special power, give a character the Power Strike Personal Skill at the cost
-of losing the Gem; you may want to use the Gem as a protective item
-instead for a while however--it grants a -2 AC bonus to the wearer which is
-a lot right now
+of losing the Gem; you may want to use the Gem as a protective item instead
+for a while however--it grants a -2 AC bonus to the wearer which is a lot
+right now.
 
 If you want to fight them now though, bring lots of Faerie Dust to put them
 to sleep, and ready your Dispel Undead and any bombs that you may have found
 or bought.  You may want some Cure Lesser Condition potions in case a party
 member manages to run away from the fight because of the "Terror" status the
-Ravens inflict on you.  Cure Paralysis potions are nice too
+Ravens inflict on you.  Cure Paralysis potions are nice too.
 
 \subsubsection{Munkharama}\label{munkharama}
 
@@ -7921,21 +7909,20 @@ Crypt-
   Skeleton Lords (fixed)
 \end{itemize}
 
-Q: What's the answer to the well's riddle?
+\faqentry{What's the answer to the well's riddle?}
 
-A: What's another name for a quarter, a dime, a nickel, or a penny?
+What's another name for a quarter, a dime, a nickel, or a penny?
 
-Q: What is with that @\#@!@ Roulette? I put the beans in, but it always
-comes out WHITE WHITE WHITE WHITE!
+\faqentry{What is with that @\#@!@ Roulette? I put the beans in, but it
+  always comes out WHITE WHITE WHITE WHITE!}
 
-A: Well, you can avoid it by swimming past it to the Rubber Bear chest;
-you'll just miss out on money and experience. If you want to solve it
-however, from what I can tell the order the beans are placed in the
-receptables depends on which rooms you go first, and in which order you
-end up placing the beans. Meaning it's random. :) The listed colors on
-the roulette only reflect how many beans you got right, and not which
-rooms they are in. (Sorry about that.) Try doing this as a process of
-elimination:
+Well, you can avoid it by swimming past it to the Rubber Bear chest; you'll
+just miss out on money and experience. If you want to solve it however, from
+what I can tell the order the beans are placed in the receptables depends on
+which rooms you go first, and in which order you end up placing the
+beans. Meaning it's random. \texttt{:)} The listed colors on the roulette
+only reflect how many beans you got right, and not which rooms they are
+in. (Sorry about that.)  Try doing this as a process of elimination:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -8082,66 +8069,63 @@ So try:
   se → NW
 \end{itemize}
 
-and use the process of elimination to figure out where the beans go If
-you still can't solve it there's nothing I can say that will help you.
-It's hard to keep track of the beans though, and you may have switched
-one pair accidentally. I have only managed to get BLACK BLACK BLACK
-BLACK on the first try ONCE Usually I end up getting it right by the 3rd
-or 4th try. As a reward however you get free cash, experience, and a
-secret door opens up in the SE room
+and use the process of elimination to figure out where the beans go If you
+still can't solve it there's nothing I can say that will help you.  It's hard
+to keep track of the beans though, and you may have switched one pair
+accidentally. I have only managed to get BLACK BLACK BLACK BLACK on the first
+try ONCE Usually I end up getting it right by the 3rd or 4th try. As a reward
+however you get free cash, experience, and a secret door opens up in the SE
+room.
 
-Q: What do I do at the Land of Dreams? The Palace Munk doesn't like my
-answers!
+\faqentry{What do I do at the Land of Dreams? The Palace Munk doesn't like my
+  answers!}
 
-A: I hope you remembered to ask Brother Moser about rumors if you've met
-him already. Ask him about the other name you saw with ``Land of
-Dreams'' on the front door for answers the Munk will like.
+I hope you remembered to ask Brother Moser about rumors if you've met him
+already. Ask him about the other name you saw with ``Land of Dreams'' on the
+front door for answers the Munk will like.
 
-Q: OK, I'm in the Land of Dreams, I stepped through the black door, but
-now I can't get out. What do I do?
+\faqentry{OK, I'm in the Land of Dreams, I stepped through the black door,
+  but now I can't get out. What do I do?}
 
-A: Remember what those Munks you saw were doing? Maybe you can too with
-the junk they left behind. You have to go through the entire scenario
-until it repeats before the activity will have some effect though
+Remember what those Munks you saw were doing? Maybe you can too with the junk
+they left behind. You have to go through the entire scenario until it repeats
+before the activity will have some effect though.
 
-Q: What's a good item to pick?
+\faqentry{What's a good item to pick?}
 
-A: Totally up to you. The weapons are cursed but really strong (for this
-point in the game) and the protective items, although cursed, grant a
-regeneration bonus on the wearer(at least two of them do) and REALLY
-good protection.
+Totally up to you. The weapons are cursed but really strong (for this point
+in the game) and the protective items, although cursed, grant a regeneration
+bonus on the wearer(at least two of them do) and \textsc{really} good
+protection.
 
-Q: What the heck is Xen Xheng saying?
+\faqentry{What the heck is Xen Xheng saying?}
 
-A: You should have talked to Father Rulae way back in New City and said
-you wanted guidance, and followed his directions and the subsequent
-directions from Brother TShober. Otherwise, this is a dead end for you
+You should have talked to Father Rulae way back in New City and said you
+wanted guidance, and followed his directions and the subsequent directions
+from Brother TShober. Otherwise, this is a dead end for you.
 
-Q: Is there something special about that middle area in Munkharama with
-Phoonzang's statue?
+\faqentry{Is there something special about that middle area in Munkharama
+  with Phoonzang's statue?}
 
-A: Read the ?TEMPLE? map for hints. I hope you have decent swimming (at
-least 20) to at least get to the middle area! Hope your Scouting is
-decently high, or that you use Detect Secret quite often. If your
-swimming isn't up to par, you may have to practice in the Polar Munk
-wading pool.
+Read the \qmwordqm{TEMPLE} map for hints. I hope you have decent swimming (at
+least 20) to at least get to the middle area!  Hope your Scouting is decently
+high, or that you use Detect Secret quite often. If your swimming isn't up to
+par, you may have to practice in the Polar Munk wading pool.
 
-Q: OK, I'm in this big underground dungeon. What do I do here?
+\faqentry{OK, I'm in this big underground dungeon. What do I do here?}
 
-A: Locate an exit first. ALWAYS locate an exit if you get dumped into
-the middle of nowhere--that way when you're half-dead you have a way out
-When you come out of the place, SAVE, and clear a way back to
-Munkharama--Munkharama is going west on the path you will end up on
-After you have a way out that is cleared of fixed encounters (i.e.
-encounters that aren't random), go in back in and explore\ldots{}after
-you get healed.
+Locate an exit first. A\textsc{lways} locate an exit if you get dumped into
+the middle of nowhere--that way when you're half-dead you have a way out When
+you come out of the place, \textsc{save}, and clear a way back to
+Munkharama--Munkharama is going west on the path you will end up on After you
+have a way out that is cleared of fixed encounters (i.e.  encounters that
+aren't random), go in back in and explore\ldots{}after you get healed.
 
-Q: Um\ldots{}why did I just fall down a pit?
+\faqentry{Um\ldots{}why did I just fall down a pit?}
 
-A: Uh oh\ldots{}I hope you didn't save. This area is annoying. However,
-it \emph{is} a good source of XP if you have Asphyxiation and Cure
-Disease, at least for your first time through. And you can get out
-eventually.
+Uh oh\ldots{}I hope you didn't save. This area is annoying. However, it
+\emph{is} a good source of XP if you have Asphyxiation and Cure Disease, at
+least for your first time through. And you can get out eventually.
 
 See, you're going to be fighting Frothing Munks and a Leper Giant (two
 if on Expert mode) here. The Leper Giant is annoying because he's a
@@ -8157,67 +8141,63 @@ similar spell. A level 2 or 3 one should kill them. The Leper Giant just
 takes a bit of perseverance (and lots of luck with status ailment
 spells).
 
-Q: But I don't have those spells! (See previous question) What can I do
-about it?
+\faqentry{But I don't have those spells! (See previous question.) What can I
+  do about it?}
 
-A: Not much. Don't go there is the only advice I can give--getting
-diseased at this point in the game is \emph{very} nasty, and it's not
-really a necessary area.
+Not much. Don't go there is the only advice I can give--getting diseased at
+this point in the game is \emph{very} nasty, and it's not really a necessary
+area.
 
-Q: Yikes! That Lord of the Dark Forest is hard! How do I kill him?
+\faqentry{Yikes! That Lord of the Dark Forest is hard! How do I kill him?}
 
-A: With persistence. If you are VERY lucky, you can silence him--he's a
-monk, unlike the rest of the Munks who are ninjas, so shutting him up is
-a very effective way of stopping the nastier spells like Lifesteal. Deal
-with anyone he has with him first though. He might be dangerous, but so
-is 6 Dark Forest Munks that get a chance to cast stuff on you as well,
-leaving you blind, irritated (both literally and figuratively), and
-possibly insane, making it near impossible for you to beat the Lord of
-the Dark Forest
+With persistence. If you are \textsc{very} lucky, you can silence him--he's a
+monk, unlike the rest of the Munks who are ninjas, so shutting him up is a
+very effective way of stopping the nastier spells like Lifesteal. Deal with
+anyone he has with him first though. He might be dangerous, but so is 6 Dark
+Forest Munks that get a chance to cast stuff on you as well, leaving you
+blind, irritated (both literally and figuratively), and possibly insane,
+making it near impossible for you to beat the Lord of the Dark Forest.
 
-If you have Fireball/Iceball or Nuclear Blast by this point (Nuclear
-Blast not very likely at this point unless you had a mage that changed
-profession to a Bishop), the others shouldn't be too much of a problem
-if you are faster. This is why you needed to find the exit first, so
-that you can come here in better health. However, if you cannot defeat
-the Lord of the Dark Forest at this point, you have no hope of getting
-the ?CRYPT? map before someone else, as it means that you are too low
-level to effectively kill him--by the time you're not, the map will be
-gone
+If you have Fireball/Iceball or Nuclear Blast by this point (Nuclear Blast
+not very likely at this point unless you had a mage that changed profession
+to a Bishop), the others shouldn't be too much of a problem if you are
+faster. This is why you needed to find the exit first, so that you can come
+here in better health. However, if you cannot defeat the Lord of the Dark
+Forest at this point, you have no hope of getting the \qmwordqm{CRYPT} map
+before someone else, as it means that you are too low level to effectively
+kill him--by the time you're not, the map will be gone.
 
-Q: What do I do with the Notched Shaft I found?
+\faqentry{What do I do with the Notched Shaft I found?}
 
-A: Look for what looks to be like a pressed button and use it there
-while facing it. It closes that pit that dropped you into the Frothing
-Munks and Leper Giant. Keep in mind that the pressed button is located
-in the same region (although not the same passageway) as the pit and
-ladder.
+Look for what looks to be like a pressed button and use it there while facing
+it. It closes that pit that dropped you into the Frothing Munks and Leper
+Giant. Keep in mind that the pressed button is located in the same region
+(although not the same passageway) as the pit and ladder.
 
-Q: I can't find the Holy Work!
+\faqentry{I can't find the Holy Work!}
 
-A: Remember what Brother TShober said about the ``golden face.''
+Remember what Brother TShober said about the ``golden face.''
 
-Q: What is with these waxy wrappings with the Holy Work?
+\faqentry{What is with these waxy wrappings with the Holy Work?}
 
-A: The chest also contained the ?CRYPT? map. Looks like someone beat you
-to it. Try hunting down some Gorn NPCs or Brother TShober (strangely
-enough). They seem to be the first ones with it if you don't get it in
-all the games I've played.
+The chest also contained the \qmwordqm{CRYPT} map. Looks like someone beat
+you to it. Try hunting down some Gorn NPCs or Brother TShober (strangely
+enough). They seem to be the first ones with it if you don't get it in all
+the games I've played.
 
-Q: Aaah! Those Skeleton Lords are creaming me!! And why am I paralyzed?
+\faqentry{Aaah! Those Skeleton Lords are creaming me!! And why am I paralyzed?}
 
-A: Oh dear. Yet another example of ``Come back later.'' If you're
-playing on expert mode you will NEED either Word of Death on two
-characters (because 1 level 7 Word of Death OR Nuclear Blast won't send
-them back to the grave most of the time) or at least 3 characters with
-access to Silence or the Silent Lyre, or (for the power hungry)
-characters high level enough to shrug off Death and Fireball spells.
-Then you have to hope that the characters with Silence don't get
-paralyzed. Nuclear Blast tends to not work as well as Word of Death on
-undead. There's no way you can take more than 2 turns of spells from the
-Skeleton Lords without getting someone clobbered to death, even with
-Magic Screen up. If you can, you're lucky--Death and 6 Fireballs have a
-nasty effect on my party at this point
+Oh dear. Yet another example of ``Come back later.'' If you're playing on
+expert mode you will \textsc{need} either Word of Death on two characters
+(because 1 level 7 Word of Death OR Nuclear Blast won't send them back to the
+grave most of the time) or at least 3 characters with access to Silence or
+the Silent Lyre, or (for the power hungry) characters high level enough to
+shrug off Death and Fireball spells.  Then you have to hope that the
+characters with Silence don't get paralyzed. Nuclear Blast tends to not work
+as well as Word of Death on undead. There's no way you can take more than 2
+turns of spells from the Skeleton Lords without getting someone clobbered to
+death, even with Magic Screen up. If you can, you're lucky--Death and 6
+Fireballs have a nasty effect on my party at this point.
 
 \subsubsection{Dionysceus}\label{dionysceus}
 
@@ -8252,179 +8232,176 @@ fixed encounters)
 
 Tower's Top- Luna Mothras Glow Mothras
 
-\emph{S P A W N} (fixed) Vampire Vultures Wraiths Spirits
+\WviiSPAWN{} (fixed) Vampire Vultures Wraiths Spirits
 
-Q: I can't make it through the Poppy Field to get here! Are you nuts?
+\faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
 
-A: Do the Save/Restore method. Save each step ONLY if at most 1 person
-falls asleep. You only need to make it through the poppy field once
-doing this tedious method. Then turn left at the intersection you will
-come across after the field. Now if you started near Dionysceus, you
-don't have to go through this. Don't forget to bring Watchbells, Cure
-Lesser Condition spells and Cure Lesser Condition potions to stay awake
-if necessary, and if you have the Deadman's Hair, equip it on someone
-(an elf character preferrably, as elves already have hypnosis resistance
-and this will boost it)
+Do the Save/Restore method. Save each step \textsc{only} if at most 1 person
+falls asleep. You only need to make it through the poppy field once doing
+this tedious method. Then turn left at the intersection you will come across
+after the field. Now if you started near Dionysceus, you don't have to go
+through this. Don't forget to bring Watchbells, Cure Lesser Condition spells
+and Cure Lesser Condition potions to stay awake if necessary, and if you have
+the Deadman's Hair, equip it on someone (an elf character preferrably, as
+elves already have hypnosis resistance and this will boost it).
 
-Alternately, you can spin your party until they wake up.  Spinning counts
-as taking a step without actually taking a step, so you can move, spin the
-party awake, and repeat.  However this is very time consuming.
+Alternately, you can spin your party until they wake up.  Spinning counts as
+taking a step without actually taking a step, so you can move, spin the party
+awake, and repeat.  However this is very time consuming.
 
-Q: What is Almagorte talking about?
+\faqentry{What is Almagorte talking about?}
 
-A: These guys are greedy little misers. What do misers love most?
+These guys are greedy little misers. What do misers love most?
 
-Q: Aaack! I'm getting clobbered by traps!
+\faqentry{Aaack! I'm getting clobbered by traps!}
 
-A: Buy some Jonga Powder from Almagorte if you can't take the traps. (I
-can't unless Dionysceus is the last area for me to tackle before trying
-to go to the Dragon Mountains.) On most of the levels there will be an
-urn like the one in that little 1x1 arched area you saw right after
-entering the Temple of the Initiate. Use some Jonga Powder there. You'll
-need to buy Jonga Powder twice from Almagorte. Save a use of Jonga
-Powder for after this Tower by the way. You'll need it.
+Buy some Jonga Powder from Almagorte if you can't take the traps. (I can't
+unless Dionysceus is the last area for me to tackle before trying to go to
+the Dragon Mountains.) On most of the levels there will be an urn like the
+one in that little 1x1 arched area you saw right after entering the Temple of
+the Initiate. Use some Jonga Powder there. You'll need to buy Jonga Powder
+twice from Almagorte. Save a use of Jonga Powder for after this Tower by the
+way. You'll need it.
 
-Q: What are these little Golden Idols for?
+\faqentry{What are these little Golden Idols for?}
 
-A: For opening the gate to the next level of course. Each level has one,
-and you have to find the altar for it. Have fun looking.
+For opening the gate to the next level of course. Each level has one, and you
+have to find the altar for it. Have fun looking.
 
-Q: (Pick a level) of the Dane Tower is too hard!
+\faqentry{(Pick a level) of the Dane Tower is too hard!}
 
-A: Then come back later when you're stronger. However, it is possible on
-expert mode for a party created from level one characters to get to the
-Temple of Wanderers after clearing out the Starter Dungeon and New City,
-so don't worry TOO much if a fight seems too hard.
+Then come back later when you're stronger. However, it is possible on expert
+mode for a party created from level one characters to get to the Temple of
+Wanderers after clearing out the Starter Dungeon and New City, so don't worry
+\textsc{too} much if a fight seems too hard.
 
-Q: What do I do on the Temple of Divine Order?
+\faqentry{What do I do on the Temple of Divine Order?}
 
-A: Move around. There are little 1x1 alcoves here. Stepping in them
-moves the pits around. Try to fudge your way through. Burning powder in
-the urn here (in an alcove before entering the Temple) acts as a
-Levitate so you don't have to worry about accidentally falling, and
-turns off a trap that Silences your characters.
+Move around. There are little 1$\times$1 alcoves here. Stepping in them moves
+the pits around. Try to fudge your way through. Burning powder in the urn
+here (in an alcove before entering the Temple) acts as a Levitate so you
+don't have to worry about accidentally falling, and turns off a trap that
+Silences your characters.
 
-Q: There's a doorway that opens onto darkness. Should I go in?
+\faqentry{There's a doorway that opens onto darkness. Should I go in?}
 
-A: Yes. That's the Temple of Eternal Night. I hope your mapping skills
-are adequate. (at least 10 to be able to map walls--30 if you want to
-see alcoves) Turn left immediately upon entering the Temple to look for
-the urn--don't be afraid to try walking into what seems to be a wall if
-you have horrible mapping skills--it might be the alcove with the urn.
-After that, explore the Temple at your leisure. There's a fountain on
-this floor in the western half of the temple that restores HP, Stamina
-and Mana, so have fun looking.
+Yes. That's the Temple of Eternal Night. I hope your mapping skills are
+adequate.\footnote{At least 10 to be able to map walls--30 if you want to see
+  alcoves.} Turn left immediately upon entering the Temple to look for the
+urn--don't be afraid to try walking into what seems to be a wall if you have
+horrible mapping skills--it might be the alcove with the urn.  After that,
+explore the Temple at your leisure. There's a fountain on this floor in the
+western half of the temple that restores HP, Stamina and Mana, so have fun
+looking.
 
-Q: Bah. I hate that purple haze. Any way to turn it off?
+\faqentry{Bah. I hate that purple haze. Any way to turn it off?}
 
-A: Yeah, if you went left in the beginning of the Temple like I said to
-and looked for the urn. That automatic fight after the haze will go away
-as well
+Yeah, if you went left in the beginning of the Temple like I said to and
+looked for the urn. That automatic fight after the haze will go away as well.
 
-Q: Should I try to learn ``the word''?
+\faqentry{Should I try to learn ``the word''?}
 
-A: Yes. Do as the Dane ask and then come back here. Meditate on the word
-and you'll find that everyone who doesn't fall asleep learns 1 point in
-the Mind Control Personal skill. Repeat until everyone has a minimum of
-1 point in the skill. Now you'll never worry about the poppy field
-again, and as a bonus you get better resistance to mental stuff
+Yes. Do as the Dane ask and then come back here. Meditate on the word and
+you'll find that everyone who doesn't fall asleep learns 1 point in the Mind
+Control Personal skill. Repeat until everyone has a minimum of 1 point in the
+skill. Now you'll never worry about the poppy field again, and as a bonus you
+get better resistance to mental stuff.
 
-Q: Where is my money going? It seems to be disappearing!
+\faqentry{Where is my money going? It seems to be disappearing!}
 
-A: Just so you know, when Tollen Dane comes out to congradulate your
-rank, you're also paying fees. The most expensive up at the top is
-10,000 gold! Meaning, if you can't pay up, come back later when you can
+Just so you know, when Tollen Dane comes out to congradulate your rank,
+you're also paying fees. The most expensive up at the top is 10,000 gold!
+Meaning, if you can't pay up, come back later when you can.
 
-Q: What is with the Temple of Aerial Whimsey?
+\faqentry{What is with the Temple of Aerial Whimsey?}
 
-A: It's a teleporter maze. Happy mapping--those teleporters aren't going
-to show up. After a while the places you get sent to will look familiar
-Also, turn on the Direction spell (or look at your Journey Map Kit) as
-there is a spinner teleporter as well. There are also two teleporters
-here that will send you back to the Temple of Eternal Night, which can
-be a blessing or a pain depending on whether you need a couple of drinks
-at the fountain or not.
+It's a teleporter maze. Happy mapping--those teleporters aren't going to show
+up. After a while the places you get sent to will look familiar Also, turn on
+the Direction spell (or look at your Journey Map Kit) as there is a spinner
+teleporter as well. There are also two teleporters here that will send you
+back to the Temple of Eternal Night, which can be a blessing or a pain
+depending on whether you need a couple of drinks at the fountain or not.
 
-Q: Who's the girl in the vision?
+\faqentry{Who's the girl in the vision?}
 
-A: That's Vi Domina. Remember the girl from the introduction? (assuming
-you watched it) Maybe you should find more about her when you can.
+That's Vi Domina. Remember the girl from the introduction? (assuming you
+watched it) Maybe you should find more about her when you can.
 
-Q: Aack! Treasure Chests are exploding!
+\faqentry{Aack! Treasure Chests are exploding!}
 
-A: Sounds like you're in the Temple of Deadly Coffers. You're just going
-to have to take the punishment--try to get it so that booby traps that
-hit you are only benign ones like Stunner or minorly hurting ones like
-Dagger--getting stoned or killed means you reload for sure
+Sounds like you're in the Temple of Deadly Coffers. You're just going to have
+to take the punishment--try to get it so that booby traps that hit you are
+only benign ones like Stunner or minorly hurting ones like Dagger--getting
+stoned or killed means you reload for sure.
 
-Q: There's a locked gate here in the far right area with the little
+\faqentry{There's a locked gate here in the far right area with the little
 islands of chests, but none of the keys from the chests here work!
-What's in the chest behind it?
+What's in the chest behind it?}
 
-A: You need a key from the first area of the Temple of Deadly Coffers
-where the urn in the middle is. The chest behind it contains the
-?CRYSTAL? map, but if you're playing on Expert mode, it's long gone by
-now unless you started in the area--Kymas Turan or Ratsputin probably
-took it first.
+You need a key from the first area of the Temple of Deadly Coffers where the
+urn in the middle is. The chest behind it contains the \qmwordqm{CRYSTAL}
+map, but if you're playing on Expert mode, it's long gone by now unless you
+started in the area--Kymas Turan or Ratsputin probably took it first.
 
-Q: Where is everything in the Temple of Wanderers? It just looks like a
-bunch of deadends.
+\faqentry{Where is everything in the Temple of Wanderers? It just looks like
+  a bunch of deadends.}
 
-A: In this area, you have to see what new areas open up when you step in
-an alcove. That means you're going to have to step in \emph{every}
-alcove and check your Journey Map Kit to see if new areas opened up, and
-if your mapping skill is below 30 here, you're going to be in big
-trouble. Keep in mind that when I say alcove, I mean a 1x1 room that
-only has one way in and out
+In this area, you have to see what new areas open up when you step in an
+alcove. That means you're going to have to step in \emph{every} alcove and
+check your Journey Map Kit to see if new areas opened up, and if your mapping
+skill is below 30 here, you're going to be in big trouble. Keep in mind that
+when I say alcove, I mean a 1x1 room that only has one way in and out.
 
-Q: What's the buzzing sensation I'm getting?
+\faqentry{What's the buzzing sensation I'm getting?}
 
-A: In this case, it means that you've reset the level to its original
-configuration with everything closed Q: Where do I put the Idol on this
-floor? I can't find an altar anywhere!
+In this case, it means that you've reset the level to its original
+configuration with everything closed.
 
-A: Look in the far NW area of the Temple on this floor. There should be
-an alcove you circle around while walking that is opened up by a secret
-button on the wall.
+\faqentry{Where do I put the Idol on this floor? I can't find an altar
+  anywhere!}
 
-Q: What the\ldots{}I'm getting hit with fireballs! What's going on?
+Look in the far NW area of the Temple on this floor. There should be an
+alcove you circle around while walking that is opened up by a secret button
+on the wall.
 
-A: You're in a nasty area of the Tower. The area behind the grates to
+\faqentry{What the\ldots{}I'm getting hit with fireballs! What's going on?}
+
+You're in a nasty area of the Tower. The area behind the grates to
 your east (where the fireballs are coming from) is the Temple of the
 Magna Dane, which you will be able to get to after passing the Temple of
 Wanderers and paying for your membership as a Lord of Dane. Be warned
 that going down this corridor means you will be taking heavy
 unpreventable (except by luck and your fire resistances) fire damage and
 get into a fight with High Fathers and other Danes after the gate at the
-very end. The fire damage goes away after you kill \emph{S P A W N} or
+very end. The fire damage goes away after you kill \WviiSPAWN{} or
 talk (and take the Pit challenge) with the Magna Dane though, as the
 Magna Dane will have left his Temple I've gotten stuck here before
 though, as the Pit exits here after a bit of winding and my party just
-can't take 80-100+ hp fireballs at this point
+can't take 80-100+ hp fireballs at this point.
 
-Q: What is with this lever? I pull it and it resets?
+\faqentry{What is with this lever? I pull it and it resets?}
 
-A: Yeah. It opens (and closes) all the passageways that are opened by
-alcoves on the level. So if you walked in here when the fireballs are
-still going off and yanked the lever, do it twice. Otherwise you'll be
-in a world of hurt as you leave, find the passageway closed, and then
-have to go back to the lever to reopen it again.
+Yeah. It opens (and closes) all the passageways that are opened by alcoves on
+the level. So if you walked in here when the fireballs are still going off
+and yanked the lever, do it twice. Otherwise you'll be in a world of hurt as
+you leave, find the passageway closed, and then have to go back to the lever
+to reopen it again.
 
-Q: What do I do at the Pit?
+\faqentry{What do I do at the Pit?}
 
-A: Talk to Magna Dane to find out. You get to him by taking the stairs
-down after going to the top of the tower, not by yanking a lever.
+Talk to Magna Dane to find out. You get to him by taking the stairs down
+after going to the top of the tower, not by yanking a lever.
 
-Q: Magna Dane is HARD. Everytime I start the fight, half my party is
-dead before I can do anything!
+\faqentry{Magna Dane is \textsc{hard}. Everytime I start the fight, half my party is
+dead before I can do anything!}
 
-A: Come back later. It is easier when everyone has at least a Dexterity
-of 16 After the fight, don't forget to search the area for any extra
+Come back later. It is easier when everyone has at least a Dexterity of 16
+After the fight, don't forget to search the area for any extra
 booty. \emph{hint} \emph{hint}
 
-Q: Ack! The Ring of Demons is killing me when I put it on!
+\faqentry{Ack! The Ring of Demons is killing me when I put it on!}
 
-A: \emph{Don't} put it on anyone that doesn't already have a Regen +1 or
+\emph{Don't} put it on anyone that doesn't already have a Regen +1 or
 a Regen +2 item equipped. That being said, if you have a Faerie and got
 the Faerie Cap from the chest in the Temple of Deadly Coffers, or the
 one with the Chrome Key in the Temple of Wanderers, it is safe to put it
@@ -8437,32 +8414,45 @@ and both Gowns of Divine Mail on the same character, that character ends
 up with no regeneration bonus, NOT a Regen +2 bonus. So that Regen +1
 item allows you to have as many -1 regen items equipped as you want.
 
-Q: How do I open the demon-head gate?
+\faqentry{How do I open the demon-head gate?}
 
-A: What did you chop off the last demon you killed?
+What did you chop off the last demon you killed?
 
-Q: But it didn't work! (see last question)
+\faqentry{But it didn't work! (see last question)}
 
-A: Try it from the Magna Dane's chamber. You DID see that secret button
+Try it from the Magna Dane's chamber. You \textsc{did} see that secret button
 right?
 
-Q: What do I do with what's inside?
+\faqentry{What do I do with what's inside?}
 
-A: Whatever you want. You need the Coil for later though
+Whatever you want. You need the Coil for later though.
 
-Ukpyr
+\subsubsection{Ukpyr}\label{ukpyr}
 
 Monsters Encountered:
 
-Ukpyr- Umpani Ruffians Umpani Renegades Umpani Scouts Umpani Armsmen
-Umpani Troopers General Yamo(fixed) Sgt.~Balbrak(fixed) Lt. Gromo(fixed)
-Spirits Rattkin Leaders Rattkin Hunters Rattkin Thieves Rattkin Bandits
-Rattkin Rogues T'Rang Wilders
+Ukpyr-
+Umpani Ruffians
+Umpani Renegades
+Umpani Scouts
+Umpani Armsmen
+Umpani Troopers
+General Yamo(fixed)
+Sgt.~Balbrak(fixed)
+Lt.~Gromo(fixed)
+Spirits
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Rattkin Bandits
+Rattkin Rogues
+T'Rang Wilders
 
-Q: Why do the Umpani immediately attack me when I enter Ukpyr? (From
-Bernice Carter)
+\faqentry{\texorpdfstring{Why do the Umpani immediately attack me when I
+    enter Ukpyr?\protect\footnotemark{}}{Why do the Umpani immediately attack
+    me when I enter Ukpyr?}}\footnotetext{From Bernice Carter.}
 
-A: One of the following might have happened:
+One of the following might have happened:
 
 \begin{itemize}
 \tightlist
@@ -8478,43 +8468,42 @@ A: One of the following might have happened:
   work\ldots{}at all)
 \end{itemize}
 
-Q: Should I join the Umpani?
+\faqentry{Should I join the Umpani?}
 
-A: Definitely--even if you hate them. You can betray them for the T'Rang
-by helping K'Borra and lying about his presence near Ukpyr to the Umpani
-if you hate the Umpani. Keep in mind that here is a great way to make
-money--especially if you need it to pay off the Danes for going up in
-their tower. You need at least 8000 gold for an outfitting however or
-you won't get the returns on your investment
+Definitely--even if you hate them. You can betray them for the T'Rang by
+helping K'Borra and lying about his presence near Ukpyr to the Umpani if you
+hate the Umpani. Keep in mind that here is a great way to make
+money--especially if you need it to pay off the Danes for going up in their
+tower. You need at least 8000 gold for an outfitting however or you won't get
+the returns on your investment.
 
-Q: What's the Humpawhammer?
+\faqentry{What's the Humpawhammer?}
 
-A: It's a teleportation device. It will transport you to the Umpani
-Detache in New City and is used for your (more profitable) mission
+It's a teleportation device. It will transport you to the Umpani Detache in
+New City and is used for your (more profitable) mission.
 
-Q: Should I help K'borra and the T'Rangs?
+\faqentry{Should I help K'borra and the T'Rangs?}
 
-A: Again, it is totally up to you. You may want to know that I've yet to
-get any compensation from K'borra, although it may involve me finding
-him again. Supposedly though, you need to talk to Shritis to get your
-reward.
+Again, it is totally up to you. You may want to know that I've yet to get any
+compensation from K'borra, although it may involve me finding him
+again. Supposedly though, you need to talk to Shritis to get your reward.
 
-Q: Where exactly is information K'borra wants?
+\faqentry{Where exactly is information K'borra wants?}
 
-A: It's in the Spaceport Authority. If you're going to help K'borra,
-don't tell Sgt.~Balbrak that you found T'Rangs! After you talk to
-General Yamo, you'll be able to go into the Spaceport Authority without
-problems.
+It's in the Spaceport Authority. If you're going to help K'borra, don't tell
+Sgt.~Balbrak that you found T'Rangs! After you talk to General Yamo, you'll
+be able to go into the Spaceport Authority without problems.
 
-Q: I'm giving K'borra the information he wants, but he's calling me a
-traitor! Why?
+\faqentry{I'm giving K'borra the information he wants, but he's calling me a
+  traitor! Why?}
 
-A: Don't put a space between the + and the rest of the coordinates. The
-only space in there should be after the 2nd number and before the `D' Q:
-I can't get that promotion Lt. Gromo said I'd get, even though I hit the
-practice target 3 times!
+Don't put a space between the ‘+’ and the rest of the coordinates. The only
+space in there should be after the 2nd number and before the `D'
 
-A: He said to get 3 BULL'S EYEs, not 3 hits. That being said, even
+\faqentry{I can't get that promotion Lt.~Gromo said I'd get, even though I
+  hit the practice target 3 times!}
+
+He said to get 3 BULL'S EYEs, not 3 hits. That being said, even
 though it is possible to get a BULL'S EYE at 0 Firearms skill (My
 Valkyrie once got BULL'S EYE HIT HIT at a Firearms skill of 0), chances
 are you won't get 3 BULL'S EYEs at a high enough rate until you have a
@@ -8523,223 +8512,275 @@ sometimes it takes a while. (Once I got 3 BULL'S EYEs at 43 Firearms
 skill, another time it was at 64, and yet another at 53.) You will get a
 IUFSTFTUFS badge to bring to the Supply Depot, and then be offered 14250
 for a Blunderbuss and Flak Jacket. No discounts on that unfortunately.
-If you want the items though, get them before meeting General Yamo
-Rattkin Ruins
+If you want the items though, get them before meeting General Yamo.
+
+
+\subsubsection{Rattkin Ruins}\label{rattkin-ruins}
 
 Monsters encountered:
 
-Encountered everywhere- Rattkin Ronin Rattkin Leaders Rattkin Hunters
-Rattkin Thieves Rattkin Bandits Rattkin Rogues T'Rang Wisers T'Rang
-Watchers T'Rang Tecniks T'Rang Keepers T'Rang Guarders T'Rang Youngers
-Dane Canons Dane Disciples Dane Initiates Puxic Oozes Fungus Oozes
-Crawling Wastes Fire Crows
+Encountered everywhere-
+Rattkin Ronin
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Rattkin Bandits
+Rattkin Rogues
+T'Rang Wisers
+T'Rang Watchers
+T'Rang Tecniks
+T'Rang Keepers
+T'Rang Guarders
+T'Rang Youngers
+Dane Canons
+Dane Disciples
+Dane Initiates
+Puxic Oozes
+Fungus Oozes
+Crawling Wastes
+Fire Crows
 
 Rattkin Ruins-
 
-Grimal (fixed) Rattkin Razuka(fixed) Savant Controllers Savant Troopers
+Grimal (fixed)
+Rattkin Razuka(fixed)
+Savant Controllers
+Savant Troopers
 Savant Guards
 
-Funhouse- Upstairs: Zombie Skells
+Funhouse-
+Upstairs:
+Zombie Skells
 
-Underground: Gelimagas Jelly Stingers Zombie Skells Fetid Corpses
+Underground:
+Gelimagas
+Jelly Stingers
+Zombie Skells
+Fetid Corpses
 
-Q: How do I get in? The entrance is blocked off!
+\faqentry{How do I get in? The entrance is blocked off!}
 
-A: Go back to where the path split into East (to the Ruins) and West (to
-Nyctalinth) and explore around. You'll find something interesting (not
-to mention the fights). This is an example of why it pays to explore
-around no matter where you go
+Go back to where the path split into East (to the Ruins) and West (to
+Nyctalinth) and explore around. You'll find something interesting (not to
+mention the fights). This is an example of why it pays to explore around no
+matter where you go.
 
-Q: What do I do after all the Man' O' Grove fights?
+\faqentry{What do I do after all the Man' O' Grove fights?}
 
-A: You see that little square that isn't grass in the middle of all the
-1x1 pillars? Use the Bonsai Tree you got from Murkatos' Inner Sanctum on
-it It doesn't matter what you answer when you get asked a question by
-the tree
+You see that little square that isn't grass in the middle of all the
+1$\times$1 pillars? Use the Bonsai Tree you got from Murkatos' Inner Sanctum
+on it It doesn't matter what you answer when you get asked a question by the
+tree.
 
-Q: How exactly did that help me get in?
+\faqentry{How exactly did that help me get in?}
 
-A: Look around north of the blocked entrance for a tree with a gnarled
-face It should be in an area next to city walls
+Look around north of the blocked entrance for a tree with a gnarled face It
+should be in an area next to city walls.
 
-Q: Why couldn't I have gone here in the first place?
+\faqentry{Why couldn't I have gone here in the first place?}
 
-A: Because if you did go here before using the Bonsai Tree in that
-Grove, the tree wouldn't let you up.
+Because if you did go here before using the Bonsai Tree in that Grove, the
+tree wouldn't let you up.
 
-Q: I can't get in Ratskells!
+\faqentry{I can't get in Ratskells!}
 
-A: Steal from a blind rat NPC outside. Check your inventory before and
-after you meet him--you might get something stolen along the way! I've
-had key items stolen this way before, so remember to save/restore until
-either nothing is stolen or an item you don't care about gets stolen.
+Steal from a blind rat NPC outside. Check your inventory before and after you
+meet him--you might get something stolen along the way! I've had key items
+stolen this way before, so remember to save/restore until either nothing is
+stolen or an item you don't care about gets stolen.
 
-Q: How do I get in the Funhouse?
+\faqentry{How do I get in the Funhouse?}
 
-A: Ask Blienmeis about ``Funhouse''. Oh, and have 1000 gold before you
-do.
+Ask Blienmeis about ``Funhouse''. Oh, and have 1000 gold before you do.
 
-Q: What do I do in the Funhouse?
+\faqentry{What do I do in the Funhouse?}
 
-A: You're going to be setting up a lot of things. You NEED a Detect
-Secret or a good amount of scouting skill in here--especially after
-going downstairs--or you won't be able to find the necessary items
-needed to set up the place. You need various items found throughout the
-Funhouse and a Feather Weight potion from Birdie's store. Don't forget
-the Black Pyramid and the Wooden Dowel from upstairs! After you've set
-everything up, save, use the Feather Weight potion (but on the main
-screen!) and set things off
+You're going to be setting up a lot of things. You \textsc{need} a Detect
+Secret or a good amount of scouting skill in here--especially after going
+downstairs--or you won't be able to find the necessary items needed to set up
+the place. You need various items found throughout the Funhouse and a Feather
+Weight potion from Birdie's store. Don't forget the Black Pyramid and the
+Wooden Dowel from upstairs! After you've set everything up, save, use the
+Feather Weight potion (but on the main screen!) and set things off.
 
-Q: What does Barlone want?
+\faqentry{What does Barlone want?}
 
-A: Give him a time of the next T'Rang ship to leave/come. You should
-find the information in the Landing Port (in the form of the T'Rang
-Logbook) and the Observation Control Center (in the form of the
-TX-Coder) in Nyctalinth Use the Coder on the Logbook while you're in the
-full-screen view of your inventory to read it. You're advised to go to
-Nyctalinth at this point--the information Barlone gives you will give
-you access to the ?DRAGON? map in Old City, but the ?DRAGON? map is one
-of the maps that tends to get taken away real fast--hence the need for
-haste. The ?BOAT? map in the Funhouse however doesn't go away for a
-while in comparison to the ?DRAGON? map but it DOES go away if you
-dawdle too long.
+Give him a time of the next T'Rang ship to leave/come. You should find the
+information in the Landing Port (in the form of the T'Rang Logbook) and the
+Observation Control Center (in the form of the TX-Coder) in Nyctalinth Use
+the Coder on the Logbook while you're in the full-screen view of your
+inventory to read it. You're advised to go to Nyctalinth at this point--the
+information Barlone gives you will give you access to the \qmwordqm{DRAGON}
+map in Old City, but the \qmwordqm{DRAGON} map is one of the maps that tends
+to get taken away real fast--hence the need for haste. The \qmwordqm{BOAT}
+map in the Funhouse however doesn't go away for a while in comparison to the
+\qmwordqm{DRAGON} map but it DOES go away if you dawdle too long.
 
-Q: What's the ``another favor'' Barlone mentions?
+\faqentry{What's the ``another favor'' Barlone mentions?}
 
-A: Well, if Mick the Pick or Ratsputin is alive, you'll find out when
-you meet them and then come back here to Barlone.
-Otherwise\ldots{}there's no way to find out. One of CODS' great
-mysteries. :) Think of it as an incentive to get here fast.
+Well, if Mick the Pick or Ratsputin is alive, you'll find out when you meet
+them and then come back here to Barlone.  Otherwise\ldots{}there's no way to
+find out. One of CODS' great mysteries. \texttt{:)} Think of it as an
+incentive to get here fast.
 
-Q: Aack! There's MORE? When does this ``Funhouse'' end?!?
+\faqentry{Aack! There's \textsc{more}? When does this ``Funhouse'' end?!?}
 
-A: Not for a while. Have fun scrambling and trying to piece things out.
-If you're REALLY stuck on things, the Walkthrough at GameFAQs written by
-Tom Needham will be able to get you through. It is a very good resource
-for figuring out how to get through an area, although I disagree with
-some things he states. You WILL, however, need to find a Bar \& Rope and
-a Black Ball and used them in the appropriate areas to get through. You
-will also need to make sure you've found a place to use the Wooden
-Dowel. You will also find it completely necessary to fall down pits and
-such to find everything you need. Hope you have Levitate handy.
+Not for a while. Have fun scrambling and trying to piece things out.  If
+you're REALLY stuck on things, the Walkthrough at GameFAQs written by Tom
+Needham will be able to get you through. It is a very good resource for
+figuring out how to get through an area, although I disagree with some things
+he states. You WILL, however, need to find a Bar \& Rope and a Black Ball and
+used them in the appropriate areas to get through. You will also need to make
+sure you've found a place to use the Wooden Dowel. You will also find it
+completely necessary to fall down pits and such to find everything you
+need. Hope you have Levitate handy.
 
-Q: What do I do at the target?
+\faqentry{What do I do at the target?}
 
-A: Throw the Speckled White Ball at it of course. Look for some
-``cascading troughs'' as the game calls it and jump in to find said
-ball.
+Throw the Speckled White Ball at it of course. Look for some ``cascading
+troughs'' as the game calls it and jump in to find said ball.
 
-Q: What's with this rack of spears?
+\faqentry{What's with this rack of spears?}
 
-A: It guards the ?BOAT? Map. Talk to H'Jenn-Ra T'Rang in Nyctalinth to
-figure out the combination, if you haven't talked to him already
+It guards the \qmwordqm{BOAT} Map. Talk to H'Jenn-Ra T'Rang in Nyctalinth to
+figure out the combination, if you haven't talked to him already.
 
-Q: I'm in wilderness after climbing out! Where am I?
+\faqentry{I'm in wilderness after climbing out! Where am I?}
 
-A: The Witch Mountains. Have fun looking around. Watch out for
-Q'ua-tari.
+The Witch Mountains. Have fun looking around. Watch out for Q'ua-tari.
 
-Old City
+\subsubsection{Old City}\label{old-city}
 
 Monsters Encountered:
 
 Old City-
 
-Spirits Ghosts Puxic Oozes (fixed) Fungus Oozes Water Nymphs
-Dragonlizards Iguanadons Minoskells Skeletons
+Spirits
+Ghosts
+Puxic Oozes (fixed)
+Fungus Oozes
+Water Nymphs
+Dragonlizards
+Iguanadons
+Minoskells
+Skeletons
 
-Q: Why are there footprints in the dust?
+\faqentry{Why are there footprints in the dust?}
 
-A: Why? Because someone got here before you and nabbed the ?DRAGON? map!
+Why? Because someone got here before you and nabbed the \qmwordqm{DRAGON} map!
 
-Q: (continuation of previous question)Does that mean I should turn back
+\faqentry{(continuation of previous question)} Does that mean I should turn back
 then?
 
-A: Not really. There's some useful random loot in here too--especially
-what is probably your first Ankh. Most Ankhs can raise either Strength,
-Vitality, Dexterity, Piety, or Speed, depending on what type of Ankh it
-is. There are other Ankhs that do other things, but most of the ones
-that you run across will be the stat-raising kind. If you already knew
-what to do to get in however, you can go in here as early as after
-Orkogre Castle Nyctalinth
+Not really. There's some useful random loot in here too--especially what is
+probably your first Ankh. Most Ankhs can raise either Strength, Vitality,
+Dexterity, Piety, or Speed, depending on what type of Ankh it is. There are
+other Ankhs that do other things, but most of the ones that you run across
+will be the stat-raising kind. If you already knew what to do to get in
+however, you can go in here as early as after Orkogre Castle.
+
+\subsubsection{Nyctalinth}\label{nyctalinth}
 
 Monsters Encountered:
 
 Nyctalinth-
 
-T'Rang Youngers T'Rang Guarders T'Rang Wilders T'Rang Keepers T'Rang
-Watchers T'Rang Assassins T'Rang Wisers T'Rang Elders H'Jenn-Ra (fixed)
-Rattkin Leaders Rattkin Hunters Rattkin Thieves Savant Controllers
-Savant Troopers Savant Guards Spirits Fetid Corpses Zombie Skells Ymmu
-(fixed) Vilet Kanebe (fixed) Dragon Rooks Hog Beetles
+T'Rang Youngers
+T'Rang Guarders
+T'Rang Wilders
+T'Rang Keepers
+T'Rang Watchers
+T'Rang Assassins
+T'Rang Wisers
+T'Rang Elders
+H'Jenn-Ra (fixed)
+Rattkin Leaders
+Rattkin Hunters
+Rattkin Thieves
+Savant Controllers
+Savant Troopers
+Savant Guards
+Spirits
+Fetid Corpses
+Zombie Skells
+Ymmu (fixed)
+Vilet Kanebe (fixed)
+Dragon Rooks
+Hog Beetles
 
-Underground area- Cave Thraxes Crust Thraxes Cave Slimes Rock Lizards
-Puxic Oozes Fungus Oozes Bear Weevils Boar Weevils Venom Weevils
+Underground area-
+Cave Thraxes
+Crust Thraxes
+Cave Slimes
+Rock Lizards
+Puxic Oozes
+Fungus Oozes
+Bear Weevils
+Boar Weevils
+Venom Weevils
 
-Q: Where's H'Jenn-Ra?
+\faqentry{Where's H'Jenn-Ra?}
 
-A: Come on, it's not THAT hard to walk around and explore! He's in the
+Come on, it's not \textsc{that} hard to walk around and explore! He's in the
 Northwest area in the High Chamber though, since you asked.
 
-Q: Should I say yes to Shritis?
+\faqentry{Should I say yes to Shritis?}
 
-A: It depends on if you hate the Umpani or not. Be warned that if you
-say yes, Shritis will constantly ask you (not to mention hunt you down)
-if you've killed Rodan or not until you kill Rodan and keep his Golden
-Medallion to present to Shritis, or until he gets immensely ticked off
-at you and attacks you every time he sees you
+It depends on if you hate the Umpani or not. Be warned that if you say yes,
+Shritis will constantly ask you (not to mention hunt you down) if you've
+killed Rodan or not until you kill Rodan and keep his Golden Medallion to
+present to Shritis, or until he gets immensely ticked off at you and attacks
+you every time he sees you.
 
-If you really want to kill Rodan Lewarx however, he's not *too* hard, for
-an NPC--use Missile Shield to stop the bullets he shoots at you most of
+If you really want to kill Rodan Lewarx however, he's not \emph{too} hard,
+for an NPC--use Missile Shield to stop the bullets he shoots at you most of
 the time.  It's those irritating Alchemist-type spells he and his
-reinforcements may have that will get you.  Also, as a word of warning,
-they get an increased chance of a critical hit with ALL missile weapons,
+reinforcements may have that will get you.  Also, as a word of warning, they
+get an increased chance of a critical hit with \textsc{all} missile weapons,
 including Blunderbusses and Muskets.  Of course, if you say no to Shritis
-you're going to have to tread lightly every time you see him--he'll be
-cranky when he sees you again, but at least he won't be trying to hunt you
-down unless you kill T'Rang NPCs (including K'borra)
+you're going to have to tread lightly every time you see him--he'll be cranky
+when he sees you again, but at least he won't be trying to hunt you down
+unless you kill T'Rang NPCs (including K'borra).
 
-Q: Should I go back to Nyctalinth after talking to Shritis instead of
-going into New City?
+\faqentry{Should I go back to Nyctalinth after talking to Shritis instead of
+  going into New City?}
 
-A: Yes, unless you got the information from Barlone already--if you did
-you should head for Professor Wunderland and the entrance to Old City to
-get the ?DRAGON? map quickly before someone steals it.
+Yes, unless you got the information from Barlone already--if you did you
+should head for Professor Wunderland and the entrance to Old City to get the
+\qmwordqm{DRAGON} map quickly before someone steals it.
 
-Q: Why don't these Finger Rods work on the Breeding Grounds door?
+\faqentry{Why don't these Finger Rods work on the Breeding Grounds door?}
 
-A: Because they're for the Tactical Depot. The one for the Breeding
-Grounds can be found in the High Chamber on a T'Rang who is cooking
-gruel.
+Because they're for the Tactical Depot. The one for the Breeding Grounds can
+be found in the High Chamber on a T'Rang who is cooking gruel.
 
-Q: What is the Mystery Ray for?
+\faqentry{What is the Mystery Ray for?}
 
-A: You will use it on any Savant Androids you may find--especially the
-sleeping ones in the T'Rang larder in the High Chamber. Use it as an
-item when it prompts you with the Use, Talk, and Leave buttons. You can
+You will use it on any Savant Androids you may find--especially the sleeping
+ones in the T'Rang larder in the High Chamber. Use it as an item when it
+prompts you with the Use, Talk, and Leave buttons. You can \emph{also} use
+the Mystery Ray to hurt \emph{any} Savant Androids you run across--including
+those nasty Savant Kui'sa-ka near the end of the game and those Savant
+Berserkers you wake up.
 
-\emph{also} use the Mystery Ray to hurt \emph{any} Savant Androids you run
-across--including those nasty Savant Kui'sa-ka near the end of the game
-and those Savant Berserkers you wake up
+\faqentry{Is the information that the Savant Berserker spoke and the stuff
+  that flashed on the computer screen in the Observatain Center important?}
 
-Q: Is the information that the Savant Berserker spoke and the stuff that
-flashed on the computer screen in the Observatain Center important?
+You betcha. Take a walk into the Forbidden Zone after you're bored of
+Nyctalinth. Make sure you have the Comm-Link Device from the Umpani Detache
+first though. BTW, if you helping Barlone, I hope you remembered to look for
+the TX-Coder in the Observation Center. Otherwise you won't be able to read
+the logbook. Told you to build up scouting!
 
-A: You betcha. Take a walk into the Forbidden Zone after you're bored of
-Nyctalinth. Make sure you have the Comm-Link Device from the Umpani
-Detache first though. BTW, if you helping Barlone, I hope you remembered
-to look for the TX-Coder in the Observation Center. Otherwise you won't
-be able to read the logbook. Told you to build up scouting!
+\faqentry{What do I do in the Graveyard? All I see are lots of graves, a
+  building, and two alcoves with a psycho ghost who steals a jeweled staff
+  before I can grab it.}
 
-Q: What do I do in the Graveyard? All I see are lots of graves, a
-building, and two alcoves with a psycho ghost who steals a jeweled staff
-before I can grab it.
-
-A: Well, you HAVE to do three things: You have to grab the Longstem
+Well, you \textsc{have} to do three things: You have to grab the Longstem
 Spade in the chest in the building here--it's going to be your shovel
-and you're going grave robbing! :) You also have to dig out the grave of
+and you're going grave robbing! \texttt{:)} You also have to dig out the grave of
 Notera Furmi (Not Firm) to get out of here. Lastly, you have to get the
-?SERPENT? map from the Tomb of Vilet Kanebe behind the energy barrier,
+\qmwordqm{SERPENT} map from the Tomb of Vilet Kanebe behind the energy barrier,
 and that means getting that Crux of Crossing away from the crazy ghost
 and equipping the cursed (literally) staff on someone while going
 through the barrier--both in and out. That also means that you're going
@@ -8748,187 +8789,213 @@ to be in the graveyard at least twice--you need a little idol called the
 be found in the middle area of Nyctalinth--if you took out your Journey
 Map kit and looked at that big black spot in the middle of the map,
 you'd find it somewhere in the middle of that. Unfortunately you have to
-go through the graveyard to get there
+go through the graveyard to get there.
 
-Q: Help! I've fallen and can't get up!
+\faqentry{Help! I've fallen and can't get up!}
 
-A: I take it you dug up Notera Furmi's grave and fell in. Now, before
-you go exploring, you have to watch out for gas pockets--some of your
-characters will get poisoned from these. When you first bump into one,
-you should try to step in every square in the room that had the Gas
-Pocket--there are more than one, and they block all the exits. After
-that, deal with the poison however you feel like; you stepped in every
-square so that you don't have to Cure Poison as many times, saving on
-mana
+I take it you dug up Notera Furmi's grave and fell in. Now, before you go
+exploring, you have to watch out for gas pockets--some of your characters
+will get poisoned from these. When you first bump into one, you should try to
+step in every square in the room that had the Gas Pocket--there are more than
+one, and they block all the exits. After that, deal with the poison however
+you feel like; you stepped in every square so that you don't have to Cure
+Poison as many times, saving on mana.
 
 The Gas Pocket Rooms also signify one of the two ways out--the Eastern Gas
 Pocket room has a path that leads directly to the middle area of
 Nyctalinth, and the Western Gas Pocket room leads to another exit that is
 blocked by T'Rang eggs--you need a Thermal Pineapple to get out this way,
 and if you have that you should know that one heck of a fight is on your
-way out if you choose to go out that way...and you can't avoid it if you
-insist on using this route as the way out
+way out if you choose to go out that way\ldots{}and you can't avoid it if you
+insist on using this route as the way out.
 
-Q: I'm in the middle area now. So where exactly is the Tydnab Emyt?
+\faqentry{I'm in the middle area now. So where exactly is the Tydnab Emyt?}
 
-A: It's beneath a statue of Phoonzang. (What a surprise\ldots{}) Use the
-Spade to dig it up after you deal with the undead waiting in ambush
-where the statue is
+It's beneath a statue of Phoonzang. (What a surprise\ldots{}) Use the Spade
+to dig it up after you deal with the undead waiting in ambush where the
+statue is.
 
-Q: So how exactly do I get the Crux of Crossing?
+\faqentry{So how exactly do I get the Crux of Crossing?}
 
-A: Go into either alcove. It doesn't matter if the staff is in it or
+Go into either alcove. It doesn't matter if the staff is in it or
 not, or even if you already saw the ghost take it. Then just use the
-Tydnab Emyt and watch
+Tydnab Emyt and watch.
 
-Q: Hey! I thought you said the ?SERPENT? map is here! I'm just getting
-waxy wrappings again!
+\faqentry{Hey! I thought you said the \qmwordqm{SERPENT} map is here! I'm
+  just getting waxy wrappings again!}
 
-A: It is\ldots{}unless you took too long getting here and an NPC nabbed
-it However, the ?SERPENT? map can usually be gotten even if you take
-your time on expert mode--it's not as irritating to get as the ?CRYPT?
-map or the ?CRYSTAL? map. Since I can usually get it however, I can't
-take a guess as to who took it first.
+It is\ldots{}unless you took too long getting here and an NPC nabbed it
+However, the \qmwordqm{SERPENT} map can usually be gotten even if you take
+your time on expert mode--it's not as irritating to get as the
+\qmwordqm{CRYPT} map or the \qmwordqm{CRYSTAL} map. Since I can usually get
+it however, I can't take a guess as to who took it first.
 
-Q: H'Jenn-Ra is killing my party! How do I deal with him?
+\faqentry{H'Jenn-Ra is killing my party! How do I deal with him?}
 
-A: I guess you had a Pineapple after all. I won't lie to you--if your
-party is not faster than H'Jenn-Ra's party, you're screwed unless you're
-on easy mode, where there's a chance she'll appear by herself, or you're
-much higher level, where most of their stuff has a reduced chance of
-working on you. You will need the full gamut of protective and
-enhancement spells to kill her otherwise, including Air Pocket but not
-Fire or Ice Shield unless she has company. On Expert mode, you need at
-least 2 characters that can cast mass target spells like Nuclear Blast
-or Word of Death to kill off all the reinforcement T'Rang or the
-Assassins and Elders will lay waste to you. Fire spells tend to be more
-effective on the T'Rang. Good luck!
+I guess you had a Pineapple after all. I won't lie to you--if your party is
+not faster than H'Jenn-Ra's party, you're screwed unless you're on easy mode,
+where there's a chance she'll appear by herself, or you're much higher level,
+where most of their stuff has a reduced chance of working on you. You will
+need the full gamut of protective and enhancement spells to kill her
+otherwise, including Air Pocket but not Fire or Ice Shield unless she has
+company. On Expert mode, you need at least 2 characters that can cast mass
+target spells like Nuclear Blast or Word of Death to kill off all the
+reinforcement T'Rang or the Assassins and Elders will lay waste to you. Fire
+spells tend to be more effective on the T'Rang. Good luck!
 
-Note: If you travel from Nyctalinth to Dionysceus, you will run into
-T'Rangs ambushing the Helazoid Jan-Ette. Help her if you want the Eagle
-Eye skill later and to be on friendly terms with the Helazoid
+\paragraph{Note:} If you travel from Nyctalinth to Dionysceus, you will run
+into T'Rangs ambushing the Helazoid Jan-Ette. Help her if you want the Eagle
+Eye skill later and to be on friendly terms with the Helazoid.
 
-Witch Mountains
-
-Monsters Encountered:
-
-Bantari Q'ua-tari Vampire Vultures Fire Crows Dragon Rooks Vampire Rooks
-Vultures Wood Dryads Faerie Witches Forest Giants Boulder Giants Frost
-Giants Dinkle Wisps
-
-Q: What do I do here?
-
-A: Well, if you've returned the Holy Work to Xen Xheng and joined his
-school of 5 Flowers, you can start collecting the flowers for one. If
-you haven't read the Book of Fables from New City yet, take it out and
-read it now, and remind yourself about when the witches meet. This next
-part doesn't seem to be hinted anywhere in the game--you have to
-high-tail it to the Giant Cave. That means you're going to be looking
-for a path DOWN, so you're going to look for a cliff where if you take
-another step, you fall into the air. Make a mental note of a place where
-you can climb up if you find it first--you will go there later. If you
-end up near a river, you're in the wrong direction--you're on the Eryn
-River right now, which you've been to before
-
-Q: So what's up the path that you told me not to go up right now?
-
-A: Well after the Giant Cave, you should climb up and explore. Besides
-flower hunting (and always save before trying to pick any flower now!)
-you are also looking for the entrance to the Witch Cave, a very high
-cliff that doesn't look like it can be climbed (but someone tried
-before), and 4 250 ft. vines to merge together into 1 big 1000 vine to
-be used at the cliff If you find the cliff first, drop any vines you've
-found already there to relieve encumbrance problems--they're very heavy.
-You need to climb down into that area before going into the Witch Cave.
-
-Q: And what exactly do I do after that?
-
-A: Why go into the Witch Cave with what you learned of course!
-
-Giant Cave
+\subsubsection{Witch Mountains}\label{witch-mountains}
 
 Monsters Encountered:
 
-\emph{S P O T} (fixed) Gruengard (fixed) Bonehead (fixed) Brunatz
+Bantari
+Q'ua-tari
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Forest Giants
+Boulder Giants
+Frost Giants
+Dinkle Wisps
+
+\faqentry{What do I do here?}
+
+Well, if you've returned the Holy Work to Xen Xheng and joined his school of
+5 Flowers, you can start collecting the flowers for one. If you haven't read
+the Book of Fables from New City yet, take it out and read it now, and remind
+yourself about when the witches meet. This next part doesn't seem to be
+hinted anywhere in the game--you have to high-tail it to the Giant Cave. That
+means you're going to be looking for a path DOWN, so you're going to look for
+a cliff where if you take another step, you fall into the air. Make a mental
+note of a place where you can climb up if you find it first--you will go
+there later. If you end up near a river, you're in the wrong
+direction--you're on the Eryn River right now, which you've been to before.
+
+\faqentry{So what's up the path that you told me not to go up right now?}
+
+Well after the Giant Cave, you should climb up and explore. Besides flower
+hunting (and always save before trying to pick any flower now!)  you are also
+looking for the entrance to the Witch Cave, a very high cliff that doesn't
+look like it can be climbed (but someone tried before), and four 250~ft.\
+vines to merge together into one big 1000 vine to be used at the cliff If you
+find the cliff first, drop any vines you've found already there to relieve
+encumbrance problems--they're very heavy.  You need to climb down into that
+area before going into the Witch Cave.
+
+\faqentry{And what exactly do I do after that?}
+
+Why go into the Witch Cave with what you learned of course!
+
+\subsubsection{Giant Cave}\label{giant-cave}
+
+Monsters Encountered:
+
+\WviiSPOT{} (fixed) Gruengard (fixed) Bonehead (fixed) Brunatz
 (fixed) Munstachio (fixed) Boulder Giants Forest Giants Frost Giants
 Water Nymphs Red Pirannhas Glow Mothras Rock Lizards Dinkle Wisps Jelly
 Stingers
 
-Q: These giants keep killing me! How can I kill them?
+\faqentry{These giants keep killing me! How can I kill them?}
 
-A: You kill them like anything else. I don't advise using attacking
+You kill them like anything else. I don't advise using attacking
 spells on them, although cloud-type spells like Poison Gas and Firestorm
-can help deal the damage
+can help deal the damage.
 
-Q: \emph{S P O T} is insane! Any pointers on how to stop him?
+\faqentry{\WviiSPOT{} is insane! Any pointers on how to stop him?}
 
-A: Treat him as a more\ldots{}dangerous version of the giants you've
-been killing. Consequently, anyone that can't dish out (and take) damage
-should be hidden away via hide or invisibility potions bombing \emph{S P
-O T} with cloud-type spells and boosting spells on your party. Create
-Life is a GREAT help here, but not the other two summon spells--\emph{S
-P O T} can flatten those silly demons quickly, but the Myxlmynx might be
-able to take a couple more hits.
+Treat him as a more\ldots{}dangerous version of the giants you've been
+killing. Consequently, anyone that can't dish out (and take) damage should be
+hidden away via hide or invisibility potions bombing \WviiSPOT{} with
+cloud-type spells and boosting spells on your party. Create Life is a
+\textsc{great} help here, but not the other two summon spells--\WviiSPOT{}
+can flatten those silly demons quickly, but the Myxlmynx might be able to
+take a couple more hits.
 
-Q: Anything special here?
+\faqentry{Anything special here?}
 
-A: Yes. \emph{S P O T} has the Necromantic Helm somewhere in his lair.
-Look for it; it's the witching glass mentioned in the Book of Fables.
-Also, the Red Rosis is in the underground river. If you can swim four or
-more steps (and have a mass target spell) go to the nearest access to
-the underground river east of the entrance to the giant caves and swim
-south to that little chokepoint of water(where you fight a lot of
-fishes--hence the need for the mass target spell)--the Red Rosis should
-be on that little piece of dry land right next to you to your west. The
-alternate (and slower way) is to take the far eastern entrance to the
-water and swim to another region of the caves that will wrap around the
-bottom area and stick you near the Red Rosis\ldots{}after a couple
-fights.
+Yes. \WviiSPOT{} has the Necromantic Helm somewhere in his lair.  Look for
+it; it's the witching glass mentioned in the Book of Fables.  Also, the Red
+Rosis is in the underground river. If you can swim four or more steps (and
+have a mass target spell) go to the nearest access to the underground river
+east of the entrance to the giant caves and swim south to that little
+chokepoint of water(where you fight a lot of fishes--hence the need for the
+mass target spell)--the Red Rosis should be on that little piece of dry land
+right next to you to your west. The alternate (and slower way) is to take the
+far eastern entrance to the water and swim to another region of the caves
+that will wrap around the bottom area and stick you near the Red
+Rosis\ldots{}after a couple fights.
 
-There's also a chest in the extreme south area...but you'll need either
-Stamina Potions or lots of Water mana for Stamina and Restfull to get to it
+There's also a chest in the extreme south area\ldots{}but you'll need either
+Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 
-Witch Grove
-
-Monsters Encountered:
-
-Bantari Q'ua-tari Vampire Vultures Fire Crows Dragon Rooks Vampire Rooks
-Vultures Wood Dryads Faerie Witches
-
-Q: Huh? I've never heard of this place!
-
-A: It's actually my name for the area of the Ukpyr Mountains you climb
-down into from the tall cliff.
-
-Q: So what exactly is so special about this area that you gave it a
-made-up name?
-
-A: You'll find out the names of the four witches here. Remember the
-witching hour comment from the Book of Fables? That's right--you need to
-explore around at night. If you find the area here that gives your
-characters the chill, stay out of the clearing, rest until night, and
-then go back in with the Necromantic Helm equipped. Too bad nothing
-seems to really hint that the Necromantic Helm is the ``witching
-glass''. You can also find the White Dahlia in this area
-
-Witch Cave
+\subsubsection{Witch Grove}\label{witch-grove}
 
 Monsters Encountered:
 
-?Alethedies? (fixed) ?Dk.Savant? (fixed) ?Vi Domina? (fixed) ?Statue?
-(fixed) Witches' Lights (fixed) Spirits Ghosts Nightmares Dream Weavers
-Minoskells Puxic Oozes Cave Slimes Rock Lizards Luna Mothras Glow
-Mothras Spectral Ravens Faerie Witches
+Bantari
+Q'ua-tari
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
 
-Q: Do I HAVE to pay the witches 1000 gold?
+\faqentry{Huh? I've never heard of this place!}
 
-A: Yes. Sorry. That means you need 4000 gold here\ldots{}not that you're
-in the poorhouse at this point in the game anyway.
+It's actually my name for the area of the Ukpyr Mountains you climb down into
+from the tall cliff.
 
-Q: What exactly is this Elysiad of Divinity?
+\faqentry{So what exactly is so special about this area that you gave it a
+  made-up name?}
 
-A: It is for the Final Boss fight. I'll mention which fight it is when
+You'll find out the names of the four witches here. Remember the witching
+hour comment from the Book of Fables? That's right--you need to explore
+around at night. If you find the area here that gives your characters the
+chill, stay out of the clearing, rest until night, and then go back in with
+the Necromantic Helm equipped. Too bad nothing seems to really hint that the
+Necromantic Helm is the ``witching glass''. You can also find the White
+Dahlia in this area.
+
+\subsubsection{Witch Cave}\label{witch-cave}
+
+Monsters Encountered:
+
+\qmwordqm{Alethedies} (fixed)
+\qmwordqm{Dk.Savant} (fixed)
+\qmwordqm{Vi~Domina} (fixed)
+\qmwordqm{Statue} (fixed)
+Witches' Lights (fixed)
+Spirits
+Ghosts
+Nightmares
+Dream Weavers
+Minoskells
+Puxic Oozes
+Cave Slimes
+Rock Lizards
+Luna Mothras
+Glow Mothras
+Spectral Ravens
+Faerie Witches
+
+\faqentry{Do I HAVE to pay the witches 1000 gold?}
+
+Yes. Sorry. That means you need 4000 gold here\ldots{}not that you're in the
+poorhouse at this point in the game anyway.
+
+\faqentry{What exactly is this Elysiad of Divinity?}
+
+It is for the Final Boss fight. I'll mention which fight it is when
 you get there. Basically, stick it on your toughest character--when it
 is used it immediately ressurects ALL your characters and restores them
 to full hit points, stamina, and Mana even if they weren't resurrected.
@@ -8938,482 +9005,552 @@ character for six characters on Expert mode is NICE, although you'll get
 less on Normal and Easy.) Best of all, it doesn't add to your ``life''
 number, so it treats you like you never actually died. It ONLY works for
 the Final Boss battle however. Then there's the tiny detail that your
-character has to be ALIVE to use it
+character has to be ALIVE to use it.
 
-Q: Wow! The ?SPHINX? Map! No one beat me to it?
+\faqentry{Wow! The \qmwordqm{SPHINX} Map! No one beat me to it?}
 
-A: I guess having it locked up means there's no way in hell someone can
-beat you to it. This is usually one of the last maps I get--because it
-never seems to disappear no matter how long I take!
+I guess having it locked up means there's no way in hell someone can beat you
+to it. This is usually one of the last maps I get--because it never seems to
+disappear no matter how long I take!
 
-Ukpyr Mountains
+\subsubsection{Ukpyr Mountains}\label{ukpyr-mountains}
 
 Monsters Encountered:
 
-Bantari Q'ua-tari Rock Lizards Vampire Vultures Fire Crows Dragon Rooks
-Vampire Rooks Vultures Wood Dryads Faerie Witches Mtn. Thraxes (fixed)
+Bantari
+Q'ua-tari
+Rock Lizards
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Mtn. Thraxes (fixed)
 
-Q: I take it the other two flowers are here?
+\faqentry{I take it the other two flowers are here?}
 
-A: Yep. Save before picking either of them. Don't forget to look for the
-entrance to the Sphinx Cave. You'll get here by the way from climbing
-down the vine on the tall cliff to the area where the spirits were
-partying, and then exploring further, or by exiting Ukpyr to the north
-and snooping around all the sidepaths and the main path
+Yep. Save before picking either of them. Don't forget to look for the
+entrance to the Sphinx Cave. You'll get here by the way from climbing down
+the vine on the tall cliff to the area where the spirits were partying, and
+then exploring further, or by exiting Ukpyr to the north and snooping around
+all the sidepaths and the main path.
 
-Sphinx Cave:
+\subsubsection{Sphinx Cave}\label{sphinx-cave}
 
-Monsters Encountered: Red Pirannhas Vampire Vultures Fire Crows Dragon
-Rooks Vampire Rooks Vultures Wood Dryads Faerie Witches Water Nymphs
+Monsters Encountered:
+
+Red Pirannhas
+Vampire Vultures
+Fire Crows
+Dragon Rooks
+Vampire Rooks
+Vultures
+Wood Dryads
+Faerie Witches
+Water Nymphs
 Rock Lizards
 
-Q: What do I do here?
+\faqentry{What do I do here?}
 
-A: Read that handy ?SPHINX? map you just got. The Rebus Egge that you
-got from attempting to get the Wand Majestik in New City is used
-here--you DID assay/identify it eventually to find out what it was to
-tell it apart from other stones right? It's the ``seed'' the map refers
-to. You're going to need to swim at most 3 to 4 spaces by the way.
+Read that handy \qmwordqm{SPHINX} map you just got. The Rebus Egge that you
+got from attempting to get the Wand Majestik in New City is used here--you
+DID assay/identify it eventually to find out what it was to tell it apart
+from other stones right? It's the ``seed'' the map refers to. You're going to
+need to swim at most 3 to 4 spaces by the way.
 
-Q: What do I do at the slugs in the floor?
+\faqentry{What do I do at the slugs in the floor?}
 
-A: Isn't your Detect Secret going off right now?
+Isn't your Detect Secret going off right now?
 
-Isle of Crypts \& Mandolian Isles
+\subsubsection{Isle of Crypts \& Mandolian Isles}\label{isle-of-crypts-and-mandolian-isles}
 
 Monsters Encountered:
 
-Above ground: Night Rooks Dragon Rooks Vampire Vultures Glow Mothras
-Luna Mothras Red Pirannhas
+Above ground:
+Night Rooks
+Dragon Rooks
+Vampire Vultures
+Glow Mothras
+Luna Mothras
+Red Pirannhas
 
-Below ground: Ghosts of Gorn (fixed) Ungorn Daimyo (fixed) \emph{D O O
-M} (fixed) Wraiths Spirits Kolidras Necromani Fieros Phantasmagoras
-Skeletons Zombie Skells Fetid Corpses Skeleton Lords Q'ua-tari Bantari
-Dragon Rooks Fire Crows Witch's Lights
+Below ground:
+Ghosts of Gorn (fixed)
+Ungorn Daimyo (fixed)
+\WviiDOOM{} (fixed)
+Wraiths
+Spirits
+Kolidras
+Necromani
+Fieros
+Phantasmagoras
+Skeletons
+Zombie Skells
+Fetid Corpses
+Skeleton Lords
+Q'ua-tari
+Bantari
+Dragon Rooks
+Fire Crows
+Witch's Lights
 
-Q: Um\ldots{}which island do I go to?
+\faqentry{Um\ldots{}which island do I go to?}
 
-A: Which island has more than a 1x1 pillar?
+Which island has more than a 1$\times$1 pillar?
 
-Q: What exactly is on the islands with 1x1 pillars?
+\faqentry{\texorpdfstring{What exactly is on the islands with 1$\times$1
+    pillars?}{What exactly is on the islands with 1x1 pillars?}}
 
-A: You can walk through them to go somewhere special. But you're going
-to need something in the Hall of Gorrors before being able to do
-anything special with them\ldots{}and yes, you have to go in the pillars
-eventually.
+You can walk through them to go somewhere special. But you're going to need
+something in the Hall of Gorrors before being able to do anything special
+with them\ldots{}and yes, you have to go in the pillars eventually.
 
-Q: I found this picture of the Sphinx on one of the walls. Anything
-special?
+\faqentry{I found this picture of the Sphinx on one of the walls. Anything
+  special?}
 
-A: Use the Wand Majestik on it. If you're a Greek Mythology buff (or at
-least have been paying attention when the Sphinx was talking before!)
-you'll know the question she refers to, but you don't have to get the
-question right.
+Use the Wand Majestik on it. If you're a Greek Mythology buff (or at least
+have been paying attention when the Sphinx was talking before!)  you'll know
+the question she refers to, but you don't have to get the question right.
 
-Q: Waaa! That's a lot of booby traps!
+\faqentry{Waaa! That's a lot of booby traps!}
 
-A: Yep. Save often. You're looking for secret buttons and levers. You're
-also looking for a gold urn to burn that extra use of Jonga Powder.
-Aren't those traps nasty? If you want an (easier) time getting to the
-urn, after you get to the area with fountains go east (turn left that
-is) and hug the left wall until you get to all the little alcoves, then
-hug the right wall, ignoring any alcoves for the moment. You'll only run
-into a few fixed encounters for the first half of the way and get
-smacked by Evilspeak once or twice along the second half
+Yep. Save often. You're looking for secret buttons and levers. You're also
+looking for a gold urn to burn that extra use of Jonga Powder.  Aren't those
+traps nasty? If you want an (easier) time getting to the urn, after you get
+to the area with fountains go east (turn left that is) and hug the left wall
+until you get to all the little alcoves, then hug the right wall, ignoring
+any alcoves for the moment. You'll only run into a few fixed encounters for
+the first half of the way and get smacked by Evilspeak once or twice along
+the second half.
 
-Q: What the hell? Why are my characters stoned (or various other nasty
-effects) after drinking? I thought fountains were beneficial?
+\faqentry{What the hell? Why are my characters stoned (or various other nasty
+  effects) after drinking? I thought fountains were beneficial?}
 
-A: Not all of them. SAVE before trying one. Heck, most of them here are
+Not all of them. S\textsc{ave} before trying one. Heck, most of them here are
 booby traps--I can only think of two fountains on this level that aren't
 completely bad.
 
-Q: OK, so I've burned the Jonga Powder and turned off the nasty traps.
-What now?
+\faqentry{OK, so I've burned the Jonga Powder and turned off the nasty traps.
+  What now?}
 
-A: Explore of course. There's at least 1 nice treasure chest in here
-that you can get no matter what keys you have. The best item you can get
-in said chest is a Dragon Kite--a shield for Valkyries, Fighters, and
-Lords that reduces their armor class by 4. That's if you have them and
-need one however. Otherwise, a Faery Cap if you missed it before (or
-Chamail items) is the 2nd best. Most of the other stuff is overshadowed
-by better loot elsewhere. Bt the way, search all the Gorn Noblemen you
-can find, but save before doing so!
+Explore of course. There's at least 1 nice treasure chest in here that you
+can get no matter what keys you have. The best item you can get in said chest
+is a Dragon Kite--a shield for Valkyries, Fighters, and Lords that reduces
+their armor class by 4. That's if you have them and need one
+however. Otherwise, a Faery Cap if you missed it before (or Chamail items) is
+the 2nd best. Most of the other stuff is overshadowed by better loot
+elsewhere. Bt the way, search all the Gorn Noblemen you can find, but save
+before doing so!
 
-Dragon Mountains
+\subsubsection{Dragon Mountains}\label{dragon-mountains}
 
-Monsters Encountered: Emerald Dragons(fixed) Dragonessas Dragorras
-Dragon Pups Fetid Corpses Vampire Vultures Dragon Rooks Fire Crows
-Komodo Dragons Rock Lizards Dragonlizards Dinkle Wisps Jelly Stingers
+Monsters Encountered:
+Emerald Dragons(fixed)
+Dragonessas
+Dragorras
+Dragon Pups
+Fetid Corpses
+Vampire Vultures
+Dragon Rooks
+Fire Crows
+Komodo Dragons
+Rock Lizards
+Dragonlizards
+Dinkle Wisps
+Jelly Stingers
 
-Q: OK, how do I get here?
+\faqentry{OK, how do I get here?}
 
-A: Well, according to the map that came with the game, it's waaay south
+Well, according to the map that came with the game, it's waaay south
 and a little west. Maybe you should follow the coast that way until you
 hit something unusual\ldots{} (Minor note: You're looking for fog!)
 
-Q: I found the fog, but when I go through there's just a blank cliff
-here!
+\faqentry{I found the fog, but when I go through there's just a blank cliff
+  here!}
 
-A: Come here at night, then take a peek at the ?SERPENT? map. You're
+Come here at night, then take a peek at the \qmwordqm{SERPENT} map. You're
 going to need something from the Dane Tower here you know\ldots{}
 
-Q: Uh oh. Brombadeg's tough!
+\faqentry{Uh oh. Brombadeg's tough!}
 
-A: No kidding. :) Well OK, he's not THAT hard. Silence seems to stop the
-``cast enchantment'' thing he does, but I'm not going to guarantee it
-Treat him like any other unique monster though and you'll be fine
+No kidding. \texttt{:)} Well OK, he's not \textsc{that} hard. Silence seems
+to stop the ``cast enchantment'' thing he does, but I'm not going to
+guarantee it Treat him like any other unique monster though and you'll be
+fine.
 
-Q: Geez--this place is huge! What do I do?
+\faqentry{Geez--this place is huge! What do I do?}
 
-A: Read the ?DRAGON? map for hints of course. And watch out for cave-ins
-Have fun exploring and watch out for the tightwad! (Well, you have to
-find the tightwad anyway.)
+Read the \qmwordqm{DRAGON} map for hints of course. And watch out for
+cave-ins Have fun exploring and watch out for the tightwad! (Well, you have
+to find the tightwad anyway.)
 
-Q: A cave-in just occured! How do I get out?
+\faqentry{A cave-in just occured! How do I get out?}
 
-A: You will never get completely trapped by a cave-in--all the places
-that have cave-ins have an alternate way out, although at least one of
-those ways requires you to have lots of swimming if you want to make it
-back to the boat.
+You will never get completely trapped by a cave-in--all the places that have
+cave-ins have an alternate way out, although at least one of those ways
+requires you to have lots of swimming if you want to make it back to the
+boat.
 
-Q: Where do I use the Key of the Dragon?
+\faqentry{Where do I use the Key of the Dragon?}
 
-A: Remember the gate with the black dragon on it in the Isle of Crypts?
+Remember the gate with the black dragon on it in the Isle of Crypts?
 
-Q: Where does that ladder go?
+\faqentry{Where does that ladder go?}
 
-A: Climb up and find out. It's (relatively) safe City of Sky
+Climb up and find out. It's (relatively) safe.
 
-Savant Kui'sa-ka Savant Controllers Savant Guards Helazoid Aces (fixed)
-Xenozoid Runners Xenozoid Flyers T'Rang Elders T'Rang Assassins T'Rang
-Watchers Meta-Droid (fixed) Ravens
+\subsubsection{City of Sky}\label{city-of-sky}
 
-Q: Hey! What's with the invisible walls?
+Savant Kui'sa-ka
+Savant Controllers
+Savant Guards
+Helazoid Aces (fixed)
+Xenozoid Runners
+Xenozoid Flyers
+T'Rang Elders
+T'Rang Assassins
+T'Rang Watchers
+Meta-Droid (fixed)
+Ravens
 
-A: Beats me. You're going to have to figure out the path through them.
-Good luck and happy mapping. \emph{evil grin} It's not that hard. Make a
-saved game at the ladder and then try to find your way around. If the
-fights here are too hard, I suggest you go gain experience elsewhere,
-gain perhaps 4 or 5 levels, and then come back and see if they are
-easier for you. The reason is because by using a FAQ (or the clue book)
-to get answers, there is the possibility that you are too low level for
-the area, and levels are very important in this game as it affects many
-things, including your resistances and whether enemy monsters will
-resist your attacks or not
+\faqentry{Hey! What's with the invisible walls?}
+
+Beats me. You're going to have to figure out the path through them.  Good
+luck and happy mapping. \emph{evil grin} It's not that hard. Make a saved
+game at the ladder and then try to find your way around. If the fights here
+are too hard, I suggest you go gain experience elsewhere, gain perhaps 4 or 5
+levels, and then come back and see if they are easier for you. The reason is
+because by using a FAQ (or the clue book) to get answers, there is the
+possibility that you are too low level for the area, and levels are very
+important in this game as it affects many things, including your resistances
+and whether enemy monsters will resist your attacks or not.
 
 If you're too lazy though, look at John Needham's FAQ at GameFAQs (if the
 site you're using for FAQs lacks it) for directions on how to get to Dame
 Ke-Li--if you don't have a Credit Card you have to go there first--and then
-you probably want to buy some of her fun supply of items as well
+you probably want to buy some of her fun supply of items as well.
 
-Q: Insert one credit? Where do I get a credit?
+\faqentry{Insert one credit? Where do I get a credit?}
 
-A: It's referring to credit cards. Surely the Helazoids you've bumped
+It's referring to credit cards. Surely the Helazoids you've bumped
 into dropped one or two? If not, look around for Dame Ke-Li here--she
-sells Credit Cards for 100 gold
+sells Credit Cards for 100 gold.
 
-Q: How do I get into the Storage Facility?
+\faqentry{How do I get into the Storage Facility?}
 
-A: The Storage Key for the Storage Facility is in the Hall of
-Preservation.
+The Storage Key for the Storage Facility is in the Hall of Preservation.
 
-Q: What about that gazebo with the glowing key? There are invisible
-walls around it.
+\faqentry{What about that gazebo with the glowing key? There are invisible
+  walls around it.}
 
-A: You need to get into the Storage Facility first. Then go into an
-alcove on your way out (through the other side--there are two exits in
-the Storage Facility).
+You need to get into the Storage Facility first. Then go into an alcove on
+your way out (through the other side--there are two exits in the Storage
+Facility).
 
-Q: What is the Key of Light used for?
+\faqentry{What is the Key of Light used for?}
 
-A: Remember those REALLY nice looking weapons in the Hall of
+Remember those \textsc{really} nice looking weapons in the Hall of
 Preservation?
 
-Q: So which one should I pick then?
+\faqentry{So which one should I pick then?}
 
-A: Like all choices, it is up to you. The Frontier Phasers and the
-Cobaltine Power Glove require Powerpaks for use however. If you've
-imported your party from Bane of the Cosmic Forge, you probably have the
-Diamond Ring which can open another one. The Light Sword and the Power
-Glove get bonuses when fighting against robots like the Battle Droid
-(but not against Savant Androids). Be warned that when you use the
-Diamond Ring to grab an item, the Ring gets sacrificed for the item
+Like all choices, it is up to you. The Frontier Phasers and the Cobaltine
+Power Glove require Powerpaks for use however. If you've imported your party
+from Bane of the Cosmic Forge, you probably have the Diamond Ring which can
+open another one. The Light Sword and the Power Glove get bonuses when
+fighting against robots like the Battle Droid (but not against Savant
+Androids). Be warned that when you use the Diamond Ring to grab an item, the
+Ring gets sacrificed for the item.
 
-Q: Anything special I should do with Dame Ke-Li?
+\faqentry{Anything special I should do with Dame Ke-Li?}
 
-A: You mean besides buy all those nice, wonderful things she's selling?
+You mean besides buy all those nice, wonderful things she's selling?
 Yeah--give her the Helazoid Pennant you got from Jan-Ette if you helped
-Jan-Ette. Other than that, she's the perfect person to have fun using
-the Five Fingered Discount. Just don't get caught.
+Jan-Ette. Other than that, she's the perfect person to have fun using the
+Five Fingered Discount. Just don't get caught.
 
-Q: What exactly does that PK Crystal do?
+\faqentry{What exactly does that PK Crystal do?}
 
-A: -4 AC bonus, Regen +1, Psionic Resistance +50\%, usable only by
-Psionics
+-4 AC bonus, Regen +1, Psionic Resistance +50\%, usable only by Psionics.
 
-Q: What are the answers to the tests in the Hall of Crusaders?
+\faqentry{What are the answers to the tests in the Hall of Crusaders?}
 
-A: The first one is very obvious if you've been paying attention during
-the game! The second one requires help from the ?STAR? Map and the
-Gaelin Stone in the Hall of Gorrors. The third one\ldots{}well, you'll
-see
+The first one is very obvious if you've been paying attention during the
+game! The second one requires help from the \qmwordqm{STAR} Map and the
+Gaelin Stone in the Hall of Gorrors. The third one\ldots{}well, you'll see.
 
-Q: How do I get in the spaceship?
+\faqentry{How do I get in the spaceship?}
 
-A: Speak the answer to the first test.
+Speak the answer to the first test.
 
-Q: What do I do inside?
+\faqentry{What do I do inside?}
 
-A: Search the place, like any other group of nosy adventurers would.
-Don't stop searching until the game keeps you from searching!
+Search the place, like any other group of nosy adventurers would.  Don't stop
+searching until the game keeps you from searching!
 
-Q: Where can I get more Powerpaks, other than killing lots of Helazoids?
+\faqentry{Where can I get more Powerpaks, other than killing lots of Helazoids?}
 
-A: Buy those Credit Cards from Dame Ke-Li and use them in a machine in
-the Storage Facility--the machine gives out Powerpaks for Credits. If
-you really have to make money at this point, you \emph{can} keep getting
-Powerpaks and then selling them to Paluke--or anyone other than Dame
-Ke-li
+Buy those Credit Cards from Dame Ke-Li and use them in a machine in the
+Storage Facility--the machine gives out Powerpaks for Credits. If you really
+have to make money at this point, you \emph{can} keep getting Powerpaks and
+then selling them to Paluke--or anyone other than Dame Ke-li.
 
-Hall of Gorrors (in the Isle of Crypts):
+\subsubsection{Hall of Gorrors (in the Isle of Crypts)}\label{hall-of-gorrors-in-the-isle-of-crypts}
 
 Monsters Encountered:
 
-Ra-sep-re-tep (fixed) Thing from Hell (fixed) Horragoth (fixed) Myxlmynx
-(fixed)/ Fieros (fixed) D'Arboleth (fixed) Wraiths (fixed) Fiend of 9
-Worlds (fixed) Beast of 1000 Eyes (fixed) Kolidra Necromani Red
-Pirannhas
+Ra-sep-re-tep (fixed)
+Thing from Hell (fixed)
+Horragoth (fixed)
+Myxlmynx (fixed) / Fieros (fixed)
+D'Arboleth (fixed)
+Wraiths (fixed)
+Fiend of 9 Worlds (fixed)
+Beast of 1000 Eyes (fixed)
+Kolidra Necromani
+Red Pirannhas
 
-Q: Do I have to kill any of these Gorrors?
+\faqentry{Do I have to kill any of these Gorrors?}
 
-A: Not really. They're supposed to be challenges, with the exception of
-the lonely little Ra-sep-re-tep in the SE area
+Not really. They're supposed to be challenges, with the exception of the
+lonely little Ra-sep-re-tep in the SE area.
 
-Q: You said I needed something in here?
+\faqentry{You said I needed something in here?}
 
-A: Yeah. Whip out the ?CRYPT? map and read it. Then follow the
-directions You'll nab something that needs to be used in the Mandolian
-Isles.
+Yeah. Whip out the \qmwordqm{CRYPT} map and read it. Then follow the
+directions You'll nab something that needs to be used in the Mandolian Isles.
 
-Q: What do I do with it?
+\faqentry{What do I do with it?}
 
-A: Remember seeing an indentation with a similar design on the Isles?
-Stick it in that pillar and then go in the other one.
+Remember seeing an indentation with a similar design on the Isles?  Stick it
+in that pillar and then go in the other one.
 
-Q: How do I open the gate to the Hall of the Past?
+\faqentry{How do I open the gate to the Hall of the Past?}
 
-A: Do you have the ?LEGEND? map? It's also called the Gaelin Legend.
-Funny, there's a stone in the same area called the Gaelin Stone. I
-wonder if there's a connection\ldots{}maybe you can use the map on the
-stone somewhere.
+Do you have the \qmwordqm{LEGEND} map? It's also called the Gaelin Legend.
+Funny, there's a stone in the same area called the Gaelin Stone. I wonder if
+there's a connection\ldots{}maybe you can use the map on the stone somewhere.
 
-Q: These !@\#@! chests here hurt! Is there any reason to open them? The
-loot I'm getting sucks!
+\faqentry{These !@\#@! chests here hurt! Is there any reason to open them?
+  The loot I'm getting sucks!}
 
-A: Well, yes there is a reason to open them: They will occasionally spew
-out the best items, weapons, and armor in the game. You're going to be
-here for HOURS finding nice stuff to keep. :) If you REALLY just want to
-know what's in there, go to
-http://www.softwarespecialties.com/GorrorsRevealed.html While you're at
-it, visit http://www.softwarespecialties.com/ and thank the guy (Llevram
-that is) if you did look for his hard work. :)
+Well, yes there is a reason to open them: They will occasionally spew out the
+best items, weapons, and armor in the game. You're going to be here for HOURS
+finding nice stuff to keep. \texttt{:)} If you \textsc{really} just want to know
+what's in there, go to
+\url{http://www.softwarespecialties.com/GorrorsRevealed.html}. While you're
+at it, visit \url{http://www.softwarespecialties.com/} and thank the guy
+(Llevram that is) if you did look for his hard work. \texttt{:)}
 
-Q: I want to kill the Gorrors! Can't you suggest anything?
+\faqentry{I want to kill the Gorrors! Can't you suggest anything?}
 
-A: Well, let's see\ldots{}besides always cast Enchanted Blade,
-Armorplate, and Magic Screen before the fight (except for
-Ra-sep-re-tep)\ldots{}
+Well, let's see\ldots{}besides always cast Enchanted Blade, Armorplate, and
+Magic Screen before the fight (except for Ra-sep-re-tep)\ldots{}
 
 Ra-sep-re-tep: If you actually need help on him, that's not a good sign.
-:)
+\texttt{:)}
 
-Thing from Hell:
-
-Quick and Dirty Way--Silence him, then Deadly Poison him. He'll go down
-fast.
+\paragraph{Thing from Hell} Quick and Dirty Way--Silence him, then Deadly
+Poison him. He'll go down fast.
 
 Slow and Boring Way--Silence him and whack away. Use Armormelt to speed
 things up.
 
-The Demon Horragoth: Get high enough level that Death Cloud and Death
-Wish have no effect on you. Then treat him as a monster that does
-nothing except a rare Word of Death or two and start hacking away. Kill
-his companion(s) first though.
+\paragraph{The Demon Horragoth} Get high enough level that Death Cloud and
+Death Wish have no effect on you. Then treat him as a monster that does
+nothing except a rare Word of Death or two and start hacking away. Kill his
+companion(s) first though.
 
-The Spirit D'Arboleth: Watch out for Lifesteal. Otherwise treat him the
-same way as Horragoth, minus the Word of Death.
+\paragraph{The Spirit D'Arboleth} Watch out for Lifesteal. Otherwise treat
+him the same way as Horragoth, minus the Word of Death.
 
-The Fiend of 9 Worlds: Immediately Hide/Drink Invisibility Potion.
+\paragraph{The Fiend of 9 Worlds} Immediately Hide/Drink Invisibility Potion.
 Pummel him with as many different gas spells as possible, i.e.~Draining
 Cloud, Poison Gas, Toxic Vapors, Firestorm, Acid Bomb. Especially Toxic
 Vapors. Cast Create Life for a distraction. Send out either someone with
-Reflextion or with Armor Shield and other protective and hit-improving
-spells (who can hide again) to attack/hide once he gets nauseous from
-the Toxic Vapors and renew that spell and the non-air based gas spells
-with a vengeance. Casting Armormelt, Haste, (and Missile Shield if
-you're on expert mode) and casting Armor Shield on the attacker should
-help. Keep the Cure Poison and Heal Wounds prepared
+Reflextion or with Armor Shield and other protective and hit-improving spells
+(who can hide again) to attack/hide once he gets nauseous from the Toxic
+Vapors and renew that spell and the non-air based gas spells with a
+vengeance. Casting Armormelt, Haste, (and Missile Shield if you're on expert
+mode) and casting Armor Shield on the attacker should help. Keep the Cure
+Poison and Heal Wounds prepared.
 
-Beast of 1000 Eyes: He's tough. Very tough. The way I beat him was with
-a level 50th so party on easy mode: Everyone casted beneficial spells
-the first turn (Especially Fire Shield and Missile Shield), then
-hid/turned invisible the next. If no one is visible, he won't attack
-(usually). Then, I casted Create Life to bring out a punching bag for
-the Beast and pumped the Beast with all the Cloud-type spells I had, the
-same ones as the ones used on the Fiend. After that, everyone who could
-hide went in waves of Attack/Hide whenever it seemed like the Beast was
-overdue for a coughing fit or was otherwise distracted by my summoned
-help, and refreshed the Cloud spells constantly. Eventually (after 4
-hours) he croaked
+\paragraph{Beast of 1000 Eyes} He's tough. Very tough. The way I beat him was
+with a level 50th so party on easy mode: Everyone casted beneficial spells
+the first turn (Especially Fire Shield and Missile Shield), then hid/turned
+invisible the next. If no one is visible, he won't attack (usually). Then, I
+casted Create Life to bring out a punching bag for the Beast and pumped the
+Beast with all the Cloud-type spells I had, the same ones as the ones used on
+the Fiend. After that, everyone who could hide went in waves of Attack/Hide
+whenever it seemed like the Beast was overdue for a coughing fit or was
+otherwise distracted by my summoned help, and refreshed the Cloud spells
+constantly. Eventually (after 4 hours) he croaked.
 
 Another suggestion I saw on the Software Specialties board is to equip
 someone who can't hide with the Necromantic Helm, Bat Necklace or another
 Light-resisting item like the Helazoid Pendant, and have him take all the
 Dazzling Lights hits; Dazzling Lights will go straight for the character if
-he's the only one visible, but with 100% so Light
-resistance + Magic Screen, you should be able to resist it and shrug it off.
-This is because if everyone is invisible and the Beast casts Dazzling Lights
-at you (because you had someone visible in the beginning of the round), it is
-more likely to hit everyone with the Lights.  Trying with an average level
-party of around 30th so level is extremely difficult; once you get your party
-to around (or over) 100th level however, the Beast stops becoming so
-invulnerable
+he's the only one visible, but with 100\% so Light resistance + Magic Screen,
+you should be able to resist it and shrug it off.  This is because if
+everyone is invisible and the Beast casts Dazzling Lights at you (because you
+had someone visible in the beginning of the round), it is more likely to hit
+everyone with the Lights.  Trying with an average level party of around 30th
+so level is extremely difficult; once you get your party to around (or over)
+100th level however, the Beast stops becoming so invulnerable.
 
 
-Hall of the Past
+\subsubsection{Hall of the Past}\label{hall-of-the-past}
 
 Monsters Encountered:
 
-Rexx Myxlmynx Wraiths Spirits Bloodwyrms Yreguoths Necromanis Fieros
-Phantasmagoras Kolidras Skeleton Lords
+Rexx
+Myxlmynx
+Wraiths
+Spirits
+Bloodwyrms
+Yreguoths
+Necromanis
+Fieros
+Phantasmagoras
+Kolidras
+Skeleton Lords
 
-Q: Um\ldots{}I need a map. Bad.
+\faqentry{Um\ldots{}I need a map. Bad.}
 
-A: Sorry, I don't have one for you. You're going to have to do it
-yourself, although having a 70+ Mapping skill here REALLY helps.
+Sorry, I don't have one for you. You're going to have to do it yourself,
+although having a 70+ Mapping skill here \textsc{really} helps.
 
-Q: Gee, thanks for the help.\{/sarcasm\}
+\faqentry{Gee, thanks for the help.\texttt{\{/sarcasm\}}}
 
-A: Heheh \^{}\^{};;;\ldots{}well, before you go in, you'll probably want
-Dispel Undead, Astral Gate, Fire Shield\ldots{}basically all the
-commonly used spells I listed waaay earlier. If you didn't use them
-before, you're definitely going to be using them here eventually. The
-only exception is probably Asphyxiation--most things in here aren't
-affected by it. Bring lots of Moser's Mojo Tea your first time through,
-as well as Heavy Heal/Stamina potions. Don't settle for the weaker stuff
-by this point
+Heheh \texttt{\^{}\^{};;;}\ldots{}well, before you go in, you'll probably
+want Dispel Undead, Astral Gate, Fire Shield\ldots{}basically all the
+commonly used spells I listed waaay earlier. If you didn't use them before,
+you're definitely going to be using them here eventually. The only exception
+is probably Asphyxiation--most things in here aren't affected by it. Bring
+lots of Moser's Mojo Tea your first time through, as well as Heavy
+Heal/Stamina potions. Don't settle for the weaker stuff by this point.
 
-Q: There's a fountain there that I keep getting teleported away from!
+\faqentry{There's a fountain there that I keep getting teleported away from!}
 
-A: You'll need to find the Key of Waters and open a gate elsewhere that
-opens into the same room. As long as you avoid the teleporter spot,
-you'll be able to drink from the fountain. It restores mana only
+You'll need to find the Key of Waters and open a gate elsewhere that opens
+into the same room. As long as you avoid the teleporter spot, you'll be able
+to drink from the fountain. It restores mana only.
 
-Q: What's with these crystals?
+\faqentry{What's with these crystals?}
 
-A: Read the ?CRYSTAL? map. It applies to here. You have to hit all eight
-crystals, and one of them won't figure into the descriptions on the map
-Just so you know: if you get it wrong, when you step in the pentagram it
-will open up a passageway to the left. When you're right it will open up
-a passage to the right instead.
+Read the \qmwordqm{CRYSTAL} map. It applies to here. You have to hit all
+eight crystals, and one of them won't figure into the descriptions on the map
+Just so you know: if you get it wrong, when you step in the pentagram it will
+open up a passageway to the left. When you're right it will open up a passage
+to the right instead.
 
-Q: Great, I've found the Star map. How exactly do I use it?
+\faqentry{Great, I've found the Star map. How exactly do I use it?}
 
-A: ``Look first at a man, and if thee looks rightly, then soon shall ye
-come full circle. Then look beneath him, and if thee looks rightly, then
-soon shall thee once again come full circle. Thus may thee divine the
-puzzle from the pieces, and from it derive thy solutions.'' That's the
-actual lines in the map that you're interesting in. If you've copied
-down the buttons from the 2nd test, great. If you haven't, they're
-Serpent, Gate, Wand, Pyramid, Star, Dragon, Cross, Skull, Map. Start at
-the side with a Man symbol, look for one of the buttons in that group of
-symbols (the Temple Map) and write it down. Move to the next face on the
-right side of the stone (in other words, circle the stone
-counterclockwise) repeating the same thing but using the top section
-only. Once you're back on the side with the Man, do the same thing for
-the bottom row. The buttons will fall into place
+\begin{quoting}
+  Look first at a man, and if thee looks rightly, then soon shall ye come
+  full circle. Then look beneath him, and if thee looks rightly, then soon
+  shall thee once again come full circle. Thus may thee divine the puzzle
+  from the pieces, and from it derive thy solutions.
+\end{quoting}
 
-Tomb of the Astral Dominae
+That's the actual lines in the map that you're interesting in. If you've
+copied down the buttons from the 2nd test, great. If you haven't, they're
+Serpent, Gate, Wand, Pyramid, Star, Dragon, Cross, Skull, Map. Start at the
+side with a Man symbol, look for one of the buttons in that group of symbols
+(the Temple Map) and write it down. Move to the next face on the right side
+of the stone (in other words, circle the stone counterclockwise) repeating
+the same thing but using the top section only. Once you're back on the side
+with the Man, do the same thing for the bottom row. The buttons will fall
+into place.
 
-Monsters Encountered: Dk. Savant (fixed) Savant Kui'sa-ka (fixed)
-Cosmo-Bots (fixed) Mega-Bots (fixed) Meta-Droids (fixed) Battle Droids
-(fixed) Mega-Bots Meta-Droids Battle Droids
+\subsubsection{Tomb of the Astral Dominae}\label{tomb-of-the-astral-dominae}
 
-Q: Any suggestions on surviving these robots?
+Monsters Encountered:
+Dk. Savant (fixed)
+Savant Kui'sa-ka (fixed)
+Cosmo-Bots (fixed)
+Mega-Bots (fixed)
+Meta-Droids (fixed)
+Battle Droids (fixed)
+Mega-Bots
+Meta-Droids
+Battle Droids
 
-A: Liberal use of Magic Screen, Fire Shield, and Ice Shield will dampen
-the damage from the cannons. Can't do squat about the lasers other than
-kill the darn things as fast as possible, although Missile Shield may
-deflect them. The Light Sword and Power Glove will do double damage to
-these guys though
+\faqentry{Any suggestions on surviving these robots?}
 
-Q: How do I open the tomb?
+Liberal use of Magic Screen, Fire Shield, and Ice Shield will dampen the
+damage from the cannons. Can't do squat about the lasers other than kill the
+darn things as fast as possible, although Missile Shield may deflect
+them. The Light Sword and Power Glove will do double damage to these guys
+though.
 
-A: Look for various places in the tomb that have something written on
+\faqentry{How do I open the tomb?}
+
+Look for various places in the tomb that have something written on
 the floor and step on them. This will take you all over the map. After
 you have stepped in all those marked spaces, the gate will automatically
 open.
 
-Q: Hey! Is the Astral Dominae gone?
+\faqentry{Hey! Is the Astral Dominae gone?}
 
-A: No. Just signal Vitalia to come on down and give her the Ring of the
-Globe and the Locket of the Tomb.
+No. Just signal Vitalia to come on down and give her the Ring of the Globe
+and the Locket of the Tomb.
 
-Q: Huh? Where did I get the Locket from?
+\faqentry{Huh? Where did I get the Locket from?}
 
-A: You \emph{did} remember to go back up to those 1x1 pillars after
-solving the ?CRYPT? map\ldots{}right?
+You \emph{did} remember to go back up to those 1$\times$1 pillars after
+solving the \qmwordqm{CRYPT} map\ldots{}right?
 
-Q: What about the Ring?
+\faqentry{What about the Ring?}
 
-A: Did you finish the Great Test in City of Sky and completely search
-the shuttle?
+Did you finish the Great Test in City of Sky and completely search the
+shuttle?
 
-Q: And while we're baffled, how the heck do we signal Vitalia?
+\faqentry{And while we're baffled, how the heck do we signal Vitalia?}
 
-A: You \emph{did} visit the Forbidden Zone in New City after getting
-that strange information from the Savant Berserker and the Observation
-Center in Nyctalinth and the Comm-Link Device\ldots{}didn't you?
+You \emph{did} visit the Forbidden Zone in New City after getting that
+strange information from the Savant Berserker and the Observation Center in
+Nyctalinth and the Comm-Link Device\ldots{}didn't you?
 
-Q: Why does the Dark Savant keep wiping the floor with my party?
+\faqentry{Why does the Dark Savant keep wiping the floor with my party?}
 
-A: You're just unlucky. :( Still, you can use the Elysiad in this fight,
-and this fight only. Personally, I didn't really need it. The Mystery
+You're just unlucky. \texttt{:(} Still, you can use the Elysiad in this
+fight, and this fight only. Personally, I didn't really need it. The Mystery
 Ray was helpful too, at least on the Kui'sa-ka. Hope you have 100 Mind
-Control by the way: they LOVE Psionics
+Control by the way: they LOVE Psionics.
 
-Q: Why does Vitalia ask me about a spaceship?
+\faqentry{Why does Vitalia ask me about a spaceship?}
 
-A: This decides what endings you can get. Yes means that you have to go
+This decides what endings you can get. Yes means that you have to go
 to Phoonzang's shuttle to grab an ending. No means you go back to the
 Forbidden Zone for the endings, although I didn't have problems getting
-an ending from Phoonzang's shuttle as well by saying no
+an ending from Phoonzang's shuttle as well by saying no.
 
 Various other possible questions:
 
-Q: What should I bring with me for the ending?
+\faqentry{What should I bring with me for the ending?}
 
-A: That is (sort of) covered in the very last part of the Spoilers
-section.
+That is (sort of) covered in the very last part of the Spoilers section.
 
 \section{Spoilers}\label{spoilers}
 
-This is a (minor) spoiler section If you don't like spoilers, ignore
-this last section. There's a reason why the spoiler section is
-LAST--although some of the questions above are semi-spoilish in nature,
-this section assumes that you know most of the things in the game
-Besides any spontaneous blurbs I may have, if you've got a question
-about the game that I feel is spoilish I will add it here
+This is a (minor) spoiler section If you don't like spoilers, ignore this
+last section. There's a reason why the spoiler section is
+\textsc{last}--although some of the questions above are semi-spoilish in
+nature, this section assumes that you know most of the things in the game
+Besides any spontaneous blurbs I may have, if you've got a question about the
+game that I feel is spoilish I will add it here.
 
 \subsection{Items}\label{items}
 
 As I'm a rather avid item collector, I thought it would be nice to spill
 some information just for the heck of it
 
-Q: Where are all the bard instruments? What do they do?
+\faqentry{Where are all the bard instruments? What do they do?}
 
-A: Here are all I know of:
+Here are all I know of:
 
 \begin{tabular}{@{}
   P{0.25\linewidth-\tabcolsep}
@@ -9425,7 +9562,7 @@ Chromatic Lyre & Itching Skin & Land of Dreams. \\[1.2ex]
 Lute of Sloth & Slow & Search the area where you summoned Maa-Gogg the Man'O'Grove for a chest. \\[1.2ex]
 Silent Lyre & Silence & Dionysceus, in the Book of Immortals chest. \\[1.2ex]
 Pipes of Doom & Terror & Buy/steal from Blienmeis at Ratskells in Rattkin Ruins when he is in Ratskells. \\[1.2ex]
-Cornu of Demonspawn & Astral Gate & Kill \emph{S P A W N} \\[1.2ex]
+Cornu of Demonspawn & Astral Gate & Kill \WviiSPAWN{} \\[1.2ex]
 Siren's Wail & Confuse & Dragon Mountains, in the pirate chest or a Gorrors chest. \\[1.2ex]
 Horn of Prometheus & Fireball & Gorrors chest or a certain Hall of Past chest. \\[1.2ex]
 Lyre of Cakes & Healthfull\footnotemark{} & A certain Hall of Past chest--you choose between this and the Horn of Prometheus. \\ \bottomrule
@@ -9438,41 +9575,42 @@ Lyre of Cakes & Healthfull\footnotemark{} & A certain Hall of Past chest--you ch
 \faqentry{Where are the items that give me personal skills?}{Everywhere. Not
   all skills require items by the way:}
 
-\begin{description}[align=left]
-\item [Firearms] Have a character practice on the firing range; can be given
-  to all, but each character must practice individually; you can't have
-  everyone learn the skill after one person uses it--only the characters
-  practicing will learn the skill.
-\item [Snakespeed] Get the 5 flowers as Xen Xheng asked and merge them
+\paragraph{Firearms} Have a character practice on the firing range; can be
+given to all, but each character must practice individually; you can't have
+everyone learn the skill after one person uses it--only the characters
+practicing will learn the skill.
+\paragraph{Snakespeed} Get the 5 flowers as Xen Xheng asked and merge them
   together Use a Holy Water to merge with the White Dahlia before merging the
   Dahlia with the other 4 merged flowers. Only one person can get this.
-\item [Reflextion] Ask Blienmeis about ``Reflextion'' when he is in
+
+\paragraph{Reflextion} Ask Blienmeis about ``Reflextion'' when he is in
   Ratskells. He will offer to sell you a Ring of Reflextion for 12000 gold.
   Use the Ring's special ability to give the character using it
   Reflextion. Only one character/game can get this.
-\item [Power Strike] Use the Gem of Power's special ability to give the
+
+\paragraph{Power Strike} Use the Gem of Power's special ability to give the
   character using it Power Strike. The Gem of Power is located in the secret
   room in Murkato's Inner Sanctum. Only one character/game can get this.
-\item [Eagle Eye] Rescue Jan-Ette from the T'Rang Assassins. Give the
+
+\paragraph{Eagle Eye} Rescue Jan-Ette from the T'Rang Assassins. Give the
   Helazoid Pennant she gives you to Dame Ke-Li at City of Sky for the
   Helazoid Pendant. Use the Pendant's special ability to give the character
   using it Eagle Eye. Only one character/game can get this.
-\item [Mind Control] Kill the Psi-Beast(s) on the Temple of Eternal Night
+
+\paragraph{Mind Control} Kill the Psi-Beast(s) on the Temple of Eternal Night
   level of Dionysceus and return to the room the Danes were in on the same
   level to meditate. Anyone who doesn't fall asleep gains a point in the
   skill.
-\end{description}
 
+\faqentry{Can I get the other items in the Hall of Preservation?}
 
-Q: Can I get the other items in the Hall of Preservation?
-
-A: As far as I know, the answer is no if you didn't import a party from
-Bane of the Cosmic Forge. The Diamond Ring you get in Bane of the Cosmic
-Forge can open up the doors as well, although like the Key of Light it
-goes away when you use it--which means you have to decide whether the
-item inside is worth losing a -5 AC accessory that females can use. In
-my opinion, the Cobaltine Power Glove, the Light Shield, and the Light
-Sword are all worth it, but not the Frontier Phasers.
+As far as I know, the answer is no if you didn't import a party from Bane of
+the Cosmic Forge. The Diamond Ring you get in Bane of the Cosmic Forge can
+open up the doors as well, although like the Key of Light it goes away when
+you use it--which means you have to decide whether the item inside is worth
+losing a -5 AC accessory that females can use. In my opinion, the Cobaltine
+Power Glove, the Light Shield, and the Light Sword are all worth it, but not
+the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}{This is from what I can remember,
   so there may be some mistakes:}
@@ -9484,21 +9622,21 @@ Sword are all worth it, but not the Frontier Phasers.
     \item Spear
     \item Awl Pike
     \item Spear+2 (rarely or only in the beginning of the game)
-    \item Quilt Tunic (sometimes) 
+    \item Quilt Tunic (sometimes)
     \item Quilt Leggings (sometimes)
-    \item Fur Leggings (sometimes) 
+    \item Fur Leggings (sometimes)
     \item Cuir Gauntlets (sometimes)
     \item Leather Cuirass (sometimes)
     \item Studded Hauberk (sometimes)
   \end{itemize}
-    
+
 \item Capt.~Boerigard
   \begin{itemize}
     \tightlist
     \item Spear+2
     \item Studded Hauberk
   \end{itemize}
-    
+
 \item Brother TShober
   \begin{itemize}
     \tightlist
@@ -9506,7 +9644,7 @@ Sword are all worth it, but not the Frontier Phasers.
     \item Random potion (sometimes)
     \item Random potion (rarely)
   \end{itemize}
-    
+
 \item Xen Xheng
   \begin{itemize}
     \tightlist
@@ -9514,7 +9652,7 @@ Sword are all worth it, but not the Frontier Phasers.
     \item Nunchukas (sometimes)
     \item Ninjato (sometimes)
     \item Shuriken (15)
-    \item Bushido Blade (higher levels) 
+    \item Bushido Blade (higher levels)
     \item Do-Maru (U)
     \item Do-Maru (L)
     \item Ninja Cowl \tikzmark{xen-xheng-topbrace}
@@ -9529,12 +9667,12 @@ Sword are all worth it, but not the Frontier Phasers.
         ({max(\x1,\x2)+2em}, {\y1+0.8em}) -- node[right=0.6em] {may not have all at once} ({max(\x1,\x2)+2em}, {\y2});
       \end{tikzpicture}
   \end{itemize}
-    
+
 \item Kymas Turan
   \begin{itemize}
     \tightlist
     \item Mitre
-    \item Brimstone Nuggets 
+    \item Brimstone Nuggets
     \item Ju-ju Stones (sometimes)
     \item Dragon's Teeth (sometimes)
     \item Random scroll
@@ -9551,20 +9689,20 @@ Sword are all worth it, but not the Frontier Phasers.
     \item Walriblade (sometimes)
     \item Flak Vest (sometimes)
   \end{itemize}
-    
+
 \item All T'Rang NPCs
   \begin{itemize}
     \tightlist
     \item ??? (I think nothing, but possibly Shock Rod)
   \end{itemize}
-    
+
 \item All Rattkin NPCs
   \begin{itemize}
     \tightlist
     \item Various keys
     \item (Don't remember what else--they die too fast)
   \end{itemize}
-    
+
 \item Jan-Ette
   \begin{itemize}
     \tightlist
@@ -9574,7 +9712,7 @@ Sword are all worth it, but not the Frontier Phasers.
 \end{itemize}
 
 Any maps the NPCs may have are always displayed first when you go to the
-``Buy'' screen
+``Buy'' screen.
 
 \faqentry{What are some good equipment that I can get?}{Depends on your point
   in the game. Here's some treasure troves where you can get items better
@@ -9602,37 +9740,34 @@ have some area effect spells like Fireball handy and lots of Water
 points for Stamina spells (or lots Stamina potions), look at the area
 this way.
 
-         You should be facing south, with a wall to your right, part of the
-         passageway to your left, and water in front of you and to the left
-         in front of the other part of the passageway.  The water should
-         have walls that are visible from this point.  Now, go left until
-         you're line up with the wall on the left side, so that if you took
-         two or three steps forward you'd be lined up with the wall.  Now
-         for the first annoying part:  Take two steps forward and into
-         the Glow Mothra fight.  Deal with them.  (Level 4 Asphyxiation
-         works wonders here.)
+You should be facing south, with a wall to your right, part of the passageway
+to your left, and water in front of you and to the left in front of the other
+part of the passageway.  The water should have walls that are visible from
+this point.  Now, go left until you're line up with the wall on the left
+side, so that if you took two or three steps forward you'd be lined up with
+the wall.  Now for the first annoying part: Take two steps forward and into
+the Glow Mothra fight.  Deal with them.  (Level 4 Asphyxiation works wonders
+here.)
 
-         Go back to shore and rest, then get ready to use some spells/items
-         and head back into the water facing south all the way until you get
-         to an opening on your left.  Go in that watery opening, but before
-         you go into the more open room after the opening, get some stamina
-         back and (if you want to, save) walk into the room to fight
-         Pirannha Sharks, which are tougher Red Pirannhas
+Go back to shore and rest, then get ready to use some spells/items and head
+back into the water facing south all the way until you get to an opening on
+your left.  Go in that watery opening, but before you go into the more open
+room after the opening, get some stamina back and (if you want to, save) walk
+into the room to fight Pirannha Sharks, which are tougher Red Pirannhas.
 
-         After you've (hopefully) successfully dealt with them, go forward
-         until you hit the wall (you should be facing east now), turn right,
-         take a step forward in the water, turn left (facing east again)
-         and you'll see a treasure chest.  Go in and get your Plate Mail +2
-         (both upper and lower) and some random loot.  Reload the loot until
-         you see some weapon you like--I like the Cat O' 9 Tails, but some
-         may like the Vulcan Hammer or Sword of Fire
+After you've (hopefully) successfully dealt with them, go forward until you
+hit the wall (you should be facing east now), turn right, take a step forward
+in the water, turn left (facing east again) and you'll see a treasure chest.
+Go in and get your Plate Mail +2 (both upper and lower) and some random loot.
+Reload the loot until you see some weapon you like--I like the Cat~O'~9
+Tails, but some may like the Vulcan Hammer or Sword of Fire.
 
-\paragraph{Nyctalinth} In the underground area, if you explore past the Western Gas
-Pocket Area, you will eventually find a path that leads to an encounter
-with Cave Thraxes, but starts with some text. After you fry those bugs,
-if you go to the northeast corner of the room and search, you'll find a
-Broadsword +1 and random loot. Reload until you get something you like,
-which may include a Dragon Kite.
+\paragraph{Nyctalinth} In the underground area, if you explore past the
+Western Gas Pocket Area, you will eventually find a path that leads to an
+encounter with Cave Thraxes, but starts with some text. After you fry those
+bugs, if you go to the northeast corner of the room and search, you'll find a
+Broadsword +1 and random loot. Reload until you get something you like, which
+may include a Dragon Kite.
 
 \paragraph{Rattkin Funhouse} After you do Barlone a favor, if Ratsputin is still
 alive you can run into him and he will demand that you pay dues that are
@@ -9675,60 +9810,69 @@ Hall of the Past. Encounters reset automatically.
 
 \subsection{Gameplay}\label{gameplay}
 
-\faqentry{What's the best party to get through the game?}{Almost anything
-  works, really. If you want to be able to use the most items in the game,
-  you will need an Elf fighter-type, a Faerie Ninja, (the following
-  non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop, and one of the
-  character profession changed from a (non-Faerie) bard.  You still can't use
-  the Medicine Bag, but you're not missing much from it. If you want to just
-  play for fun, anything can work. If you want to get through the first areas
-  quickly, you may opt for a simple party of two Fighters, a Mage, a Priest,
-  a Thief, and a Bard for relative speed through the initial parts. Heck,
-  even a party of all Ninjas can get through the game. If all else fails, use
-  the change profession button to get a class that you need at the moment
-  once you have the minimum stat requirements to change into the class.}
+\faqentry{What's the best party to get through the game?}
 
-\faqentry{Should I use missile weapons?}{You can if you want to. A lot of
-  them are pretty nice in damage and effects. However, the really nice
-  missiles are in limited quantities; unless you cheat, you may end up
-  finding yourself never using them. If you are the economic type, you will
-  hate any missile weapons, including the Musket and Blunderbuss, which must
-  be reloaded every other turn in order for you to use it effectively. Keep
-  in mind however that missile weapons are long range, and can target
-  monsters no matter where they are.}
+Almost anything works, really. If you want to be able to use the most items
+in the game, you will need an Elf fighter-type, a Faerie Ninja, (the
+following non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop, and one of
+the character profession changed from a (non-Faerie) bard.  You still can't
+use the Medicine Bag, but you're not missing much from it. If you want to
+just play for fun, anything can work. If you want to get through the first
+areas quickly, you may opt for a simple party of two Fighters, a Mage, a
+Priest, a Thief, and a Bard for relative speed through the initial
+parts. Heck, even a party of all Ninjas can get through the game. If all else
+fails, use the change profession button to get a class that you need at the
+moment once you have the minimum stat requirements to change into the class.
+
+\faqentry{Should I use missile weapons?}
+
+You can if you want to. A lot of them are pretty nice in damage and
+effects. However, the really nice missiles are in limited quantities; unless
+you cheat, you may end up finding yourself never using them. If you are the
+economic type, you will hate any missile weapons, including the Musket and
+Blunderbuss, which must be reloaded every other turn in order for you to use
+it effectively. Keep in mind however that missile weapons are long range, and
+can target monsters no matter where they are.
 
 \faqentry{Should I put the difficulty on easy? There are some places in the
   game where I just want to get past a fight to go on with the game, not
   spend extra time gaining levels, but if I do I feel like I'm
-  cheating\ldots{}}{If you're just trying to get through the game, there's
-  nothing wrong with it. Expert mode is there when you think that the game
-  has become too easy; I wrote this playing on Expert mode, and I can tell
-  you that some fights that seem easy on Easy are royal pains on Expert. The
-  Magna Dane fight is a good example.}
+  cheating\ldots{}}
 
-\faqentry{What are some battle strategies I can use?}{Well for starters, you
-  can try to keep Enchanted Blade, Armorplate, and Magic Screen on all the
-  time. Although they will be less effective than if you had just casted them
-  should you get into a nasty fight, at least you will be somewhat prepared
-  for it. In-battle spells you may wish to cast to beef up your characters
-  are Bless, Armor Shield, Haste, and Superman on someone who will be
-  attacking a lot. Most of the other helping spells should only be used if
-  the situation calls for it--for example, casting Ice Shield and Fire Shield
-  when you're up against enemies that can use the appropriate type of spells
-  or attacks. If you have a bard, take advantage of his or her instruments
-  and start hammering the enemy away with a status ailment (or just Blessing
-  everyone constantly with the Angel's Tongue).}
+If you're just trying to get through the game, there's nothing wrong with
+it. Expert mode is there when you think that the game has become too easy; I
+wrote this playing on Expert mode, and I can tell you that some fights that
+seem easy on Easy are royal pains on Expert. The Magna Dane fight is a good
+example.
 
-\faqentry{I keep missing the ?LEGEND? map. Is there any way I can get it
-  faster?}{Actually, yes. You can say the trigger ``Holy Sacrament'' to
-  Father Rulae at any point in the game, and he will let you in. Be
-  warned--do NOT say Holy Sacrament if you just sacrificed all your money, as
-  the Holy Sacrament pathway will open up, closing the path to the other
-  fountain he has \#\# Transferring to Wizardry 8.}
+\faqentry{What are some battle strategies I can use?}
 
-\faqentry{What items transfer?}{Quite a bit actually. Your starting equipment
-  and low level equipment for sure. As for other, more powerful things, it
-  depends on the type of item.}
+Well for starters, you can try to keep Enchanted Blade, Armorplate, and Magic
+Screen on all the time. Although they will be less effective than if you had
+just casted them should you get into a nasty fight, at least you will be
+somewhat prepared for it. In-battle spells you may wish to cast to beef up
+your characters are Bless, Armor Shield, Haste, and Superman on someone who
+will be attacking a lot. Most of the other helping spells should only be used
+if the situation calls for it--for example, casting Ice Shield and Fire
+Shield when you're up against enemies that can use the appropriate type of
+spells or attacks. If you have a bard, take advantage of his or her
+instruments and start hammering the enemy away with a status ailment (or just
+Blessing everyone constantly with the Angel's Tongue).
+
+\faqentry{I keep missing the \qmwordqm{LEGEND} map. Is there any way I can get it
+  faster?}
+
+Actually, yes. You can say the trigger ``Holy Sacrament'' to Father Rulae at
+any point in the game, and he will let you in. Be warned--do NOT say Holy
+Sacrament if you just sacrificed all your money, as the Holy Sacrament
+pathway will open up, closing the path to the other fountain he has.
+
+\subsection{Transferring to Wizardry~8}\label{transferring-to-wizardry-8}
+
+\faqentry{What items transfer?}
+
+Quite a bit actually. Your starting equipment and low level equipment for
+sure. As for other, more powerful things, it depends on the type of item.
 
 \paragraph{Armor} Anything you can buy in New City should transfer.  Also,
 Chamail and Chain Mail+1 will transfer.  Nothing else that you find in the
@@ -9745,45 +9889,50 @@ a transferring party, the Spear+2 should most likely transfer as well.  The
 Mystery Ray transfers and goes from a weapon that only hurts Savant Androids
 to a weapon that can hurt anything.  Strangely enough, Powder and Shots will
 transfer, but not Muskets or the Blunderbuss.  Any Shuriken will transfer, so
-if you have Death Stars, you keep them
+if you have Death Stars, you keep them.
 
 \paragraph{Miscellaneous} All reagents transfer.  The Book of Relics
 transfers The Valentine Necklace and Storage Key are supposed to transfer
-according to "myrddin" on the Software Specialties Wizardry 8 forum.  Bat
+according to "myrddin" on the Software Specialties Wizardry~8 forum.  Bat
 Necklaces transfer.  Scrolls, Wands, and Potions transfer (even Moser's Mojo
 Tea!).  Mana Stones transfer.  Cross of Protection apparantly transfers,
-according to Scronan of the Ironworks Wizardry 8 board.
+according to Scronan of the Ironworks Wizardry~8 board.
 
 \paragraph{Bardic Instruments} Poet's Lute, Angel's Tongue, Chromatic Lyre,
-Siren's Wail, Cornu of Demonspawn, and Lute of Sloth will transfer
+Siren's Wail, Cornu of Demonspawn, and Lute of Sloth will transfer.
 
 \paragraph{What definitely does not transfer} Any of the good Gorrors
 treasure.
 
-\faqentry{Do all items transfer automatically?}{Yes, they all transfer
-  automatically.}
+\faqentry{Do all items transfer automatically?}
 
-\faqentry{Will my skills transfer?}{Yes and no. Don't expect your personal
-  skills to, except Firearms. All your scores will be reduced to approximately
-  1/5 or less of what they were originally, so a 100 in Swords turns into a
-  20 in Swords. Also, skills that aren't supposed to be raised by the class
-  you transfer in are there, but unavailable. Your spells are stripped to 2
-  level 1 spells of your own class.}
+Yes, they all transfer automatically.
 
-\faqentry{Where do I end up starting in Wizardry 8?}{You start with who you
-  left with. \texttt{:)} Failing that, you start in a Monastery. I do not know what
-  you start with if you decide to take the Globe for an ending however.}
+\faqentry{Will my skills transfer?}
 
-\faqentry{I want to ask you something about Wizardry 8. Can I?}{That's not a
-  good idea, as I do not have a FAQ for Wizardry 8 specifically. This section
-  is here only because it also pertains to Wizardry 7.}
+Yes and no. Don't expect your personal skills to, except Firearms. All your
+scores will be reduced to approximately 1/5 or less of what they were
+originally, so a 100 in Swords turns into a 20 in Swords. Also, skills that
+aren't supposed to be raised by the class you transfer in are there, but
+unavailable. Your spells are stripped to 2 level 1 spells of your own class.
+
+\faqentry{Where do I end up starting in Wizardry~8?}
+
+You start with who you left with. \texttt{:)} Failing that, you start in a
+Monastery. I do not know what you start with if you decide to take the Globe
+for an ending however.
+
+\faqentry{I want to ask you something about Wizardry~8. Can I?}
+
+That's not a good idea, as I do not have a FAQ for Wizardry~8
+specifically. This section is here only because it also pertains to Wizardry~7.
 
 
 \section{Version Updates}\label{version-updates}
 
 v1.95a (11/17/01) Quick minor correction.
 
-v1.95 (11/16/01) Added a section about transferring to Wizardry 8 and made a
+v1.95 (11/16/01) Added a section about transferring to Wizardry~8 and made a
 few changes. Trimmed down the list of places where this FAQ is displayed due
 to various sites going down and changing over time
 
@@ -9834,7 +9983,7 @@ v1.0 (6/6/00) None.
 
 \begin{itemize}
 \tightlist
-\item Software Specialties Wizardry 7 board Crusaders of the Dark Savant Clue
+\item Software Specialties Wizardry~7 board Crusaders of the Dark Savant Clue
 Book (comes with Wizardry Gold, although it has some errors that you
 don't know about until you play through the game)
 \item My own playing experience
@@ -9857,9 +10006,9 @@ on the top to come anytime soon.
   it casts, and any special abilities. Don't expect this to occur before
   September of 2001, and if any other CRPGs come out within that time,
   don't expect it at all. Still, it will get done eventually, although
-  now I don't know if I'll finish it before Wizardry 8 comes out.
+  now I don't know if I'll finish it before Wizardry~8 comes out.
   However, Llevram has kindly put together a program that does all this
-  already in the meantime. :) You should be able to get it at
+  already in the meantime. \texttt{:)} You should be able to get it at
   www.softwarespecialties.com. Just scroll down the left menu and click
   on the last link there.
 \item
