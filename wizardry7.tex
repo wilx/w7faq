@@ -20,6 +20,7 @@
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 
+\usepackage{enumitem}
 \usepackage{longtable,booktabs}
 \usepackage{array}
 \usepackage{calc}
@@ -55,6 +56,11 @@ contents={%
 \title{A random Crusaders of the Dark Savant FAQ}
 \author{Written by: Ravashack}
 \date{v. 1.95a}
+
+\newcommand{\faqentry}[2]{\begin{description}[align=left,leftmargin=0cm]
+  \item [Q:] \textbf{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}
+  \item [A:] #2
+\end{description}}
 
 \begin{document}
 \maketitle
@@ -266,15 +272,14 @@ Valkyrie later.
 
 Basic Layout:
 
-Name of Race
-
-Race's Stats
-
-List of Perks
-
-List of Flaws
-
-A chart of how many points the race needs to achieve a class
+\begin{itemize}
+\tightlist
+\item Name of Race
+\item Race's Stats
+\item List of Perks
+\item List of Flaws
+\item A chart of how many points the race needs to achieve a class.
+\end{itemize}
 
 Sample Chart:
 
@@ -5940,126 +5945,123 @@ Profession changing suggestions:
 
 \subsubsection{Essential Skills}\label{essential-skills}
 
-Swimming: Everyone needs to have at least a 10 in swimming before
-attempting to enter the water to practice. There are three places to
-practice without wasting too much time: New City (using the fountain in
-the Starter Dungeon or the one at Father Rulae), the Ra-sep-re-tep pool
-in the Starter Dungeon (using the fountain in the same area) and
-Munkharama (at the Polar Munk Society\ldots{} bring healing
-though\ldots{}). Get your swimming to at least a 20 using these three
-places--the Lost Temple has a fountain that is in the water, but you
-need to have at least a 20 swimming to reach it. Once you do, you can
-practice until you have a 100 in it.
+\paragraph{Swimming} Everyone needs to have at least a 10 in swimming before
+attempting to enter the water to practice. There are three places to practice
+without wasting too much time: New City (using the fountain in the Starter
+Dungeon or the one at Father Rulae), the Ra-sep-re-tep pool in the Starter
+Dungeon (using the fountain in the same area) and Munkharama (at the Polar
+Munk Society\ldots{} bring healing though\ldots{}). Get your swimming to at
+least a 20 using these three places--the Lost Temple has a fountain that is
+in the water, but you need to have at least a 20 swimming to reach it. Once
+you do, you can practice until you have a 100 in it.
 
-Climbing: In the beginning of the game, you won't need this. However,
-once you get to the mountains in Guardia you're going to need at least a
-30 in climbing skill. Don't say I didn't warn you\ldots{}Levitate can
-temporarily boost your climbing skill when attempting to climb by the
+\paragraph{Climbing} In the beginning of the game, you won't need
+this. However, once you get to the mountains in Guardia you're going to need
+at least a 30 in climbing skill. Don't say I didn't warn you\ldots{}Levitate
+can temporarily boost your climbing skill when attempting to climb by the
 way.
 
-Scouting: If this is your first time through, you need scouting. Without
-it, you won't be able to pass several areas, as you won't know to search
-an area On second and subsequent times through the game however, it is
-safe to skip this if you remember where everything is.
+\paragraph{Scouting} If this is your first time through, you need
+scouting. Without it, you won't be able to pass several areas, as you won't
+know to search an area On second and subsequent times through the game
+however, it is safe to skip this if you remember where everything is.
 
-Skulduggery: When starting, don't settle for less than at least a 5 or 6
-in Skulduggery on a character that is going to be your lockpicker. At
-least, start with that amount before you try to disarm a chest. Chests
-are HARD to disarm. You will be Quit/No Save-Restoring very
-often--having an actual Thief in the party instead of a Bard, Ninja, or
-Ranger substitute can eliminate this problem after a couple level ups,
-as they gain a nice bonus to Skulduggery every level up to a certain
-point.
+\paragraph{Skulduggery} When starting, don't settle for less than at least a
+5 or 6 in Skulduggery on a character that is going to be your lockpicker. At
+least, start with that amount before you try to disarm a chest. Chests are
+HARD to disarm. You will be Quit/No Save-Restoring very often--having an
+actual Thief in the party instead of a Bard, Ninja, or Ranger substitute can
+eliminate this problem after a couple level ups, as they gain a nice bonus to
+Skulduggery every level up to a certain point.
 
-Mapping: You need a minimum of 10 in Mapping to map walls, a minimum of
-30 to map 1x1 rooms, and a minimum of 60 to map stairs and pits. Some
-teleporters aren't mapped, as far as I can tell; only the ones that use
-pits are. In some areas of the game, the inability to map will leave you
-stuck or moving at a snail's crawl if you do not know the area,
-especially in the darkened areas where the only thing you CAN map are
-the walls.
+\paragraph{Mapping} You need a minimum of 10 in Mapping to map walls, a
+minimum of 30 to map 1x1 rooms, and a minimum of 60 to map stairs and
+pits. Some teleporters aren't mapped, as far as I can tell; only the ones
+that use pits are. In some areas of the game, the inability to map will leave
+you stuck or moving at a snail's crawl if you do not know the area,
+especially in the darkened areas where the only thing you CAN map are the
+walls.
 
-Theosophy/Theology/Thaumaturgy/Alchemy: Essential for anyone that learns
+\paragraph{Theosophy/Theology/Thaumaturgy/Alchemy} Essential for anyone that learns
 them. Until it reaches 95-100, if you don't put points into this, you're
 potentially missing out on a spell that might help you in game
 
 \subsubsection{\texorpdfstring{``Nice to have''
 skills}{Nice to have skills}}\label{nice-to-have-skills}
 
-Artifacts: Having a high Artifacts skill lets you assay items to find
-out what they are without casting Identify. Don't worry about putting
+\paragraph{Artifacts} Having a high Artifacts skill lets you assay items to
+find out what they are without casting Identify. Don't worry about putting
 points into it however; you automatically gain points every time you
-successfully use (not equip and throw) a wand in battle as an item.
-This, however, doesn't eliminate the need for Identify unless you
-already know what an item does.
+successfully use (not equip and throw) a wand in battle as an item.  This,
+however, doesn't eliminate the need for Identify unless you already know what
+an item does.
 
-Ninjutsu: Monks and Ninjas gain an AC bonus from this, in addition to
-anything else that other Ninjutsu practitioners get. They should build
-this up all the time by practicing hiding instead of putting precious
-skill points into it. Anyone else with this simply gains a nice ability
-to hide and do a backstab or surprise attack.
+\paragraph{Ninjutsu} Monks and Ninjas gain an AC bonus from this, in addition
+to anything else that other Ninjutsu practitioners get. They should build
+this up all the time by practicing hiding instead of putting precious skill
+points into it. Anyone else with this simply gains a nice ability to hide and
+do a backstab or surprise attack.
 
-Legerdemain: The 5 Fingered Discount is a nice thing to have, but you
-won't pilfer much. The chance of getting caught is quite high as well,
-even with a level 100 Legerdemain, so save before trying. If the
-character's inventory slots are full only gold will be taken, which
-keeps this skill from being totally useless; most shopkeepers have
-horrible items in their inventory--you wouldn't want to steal them if
-your life depended on it. Legerdemain is best when the pickpocket using
-it is rather high level, is decent at it (has at least a 30 so in
-Legerdemain), and pickpocketing someone worthwhile like Belcanzor for
-his items or Dame Ke-Li for her Ankhs. Be especially careful
-pickpocketing wandering NPCs. Some like Capt.~Boerigard have very nice
-weapons and such, but they may attack you if they catch you
+\paragraph{Legerdemain} The 5 Fingered Discount is a nice thing to have, but
+you won't pilfer much. The chance of getting caught is quite high as well,
+even with a level 100 Legerdemain, so save before trying. If the character's
+inventory slots are full only gold will be taken, which keeps this skill from
+being totally useless; most shopkeepers have horrible items in their
+inventory--you wouldn't want to steal them if your life depended on
+it. Legerdemain is best when the pickpocket using it is rather high level, is
+decent at it (has at least a 30 so in Legerdemain), and pickpocketing someone
+worthwhile like Belcanzor for his items or Dame Ke-Li for her Ankhs. Be
+especially careful pickpocketing wandering NPCs. Some like Capt.~Boerigard
+have very nice weapons and such, but they may attack you if they catch you
 pickpocketing them, which is a bad thing.
 
-Kirijutsu: This skill gives you a chance to get a Critical Hit that
-instantly kills a monster. Very nice to have, but try not to get the
+\paragraph{Kirijutsu} This skill gives you a chance to get a Critical Hit
+that instantly kills a monster. Very nice to have, but try not to get the
 person with it confused!
 
-Mind Control: A personal skill that you can get in Dionysceus; it
-reduces the effectiveness of psionics and other mental spells. A minor
-side effect is that you will never fall asleep in the poppy field with
-even 1 point in this skill.
+\paragraph{Mind Control} A personal skill that you can get in Dionysceus; it
+reduces the effectiveness of psionics and other mental spells. A minor side
+effect is that you will never fall asleep in the poppy field with even 1
+point in this skill.
 
-Power Strike: I don't know about you, but I LIKE hitting for more
-damage. :)
+\paragraph{Power Strike} I don't know about you, but I \textsc{like} hitting
+for more damage. :)
 
-Diplomacy: Diplomacy is kind of a unused skill in the game--most of the
-time. However, when used it can be really useful, when an NPC is very
+\paragraph{Diplomacy} Diplomacy is kind of a unused skill in the game--most
+of the time. However, when used it can be really useful, when an NPC is very
 angry with you and you need to calm them down (and maybe get friendly
-again). The fact that characters with a Personality of 14 can
-automatically get it, AND the fact that anyone who successfully
-``pleases'' an NPC automatically gets a one point raise in the skill
-regardless of whether they have it or not however makes the skill kind
-of a ``I'll get it when I need it'' skill. Warning: Diplomacy is a
-useless skill in the Wizardry Gold version of Wizardry 7. No matter how
-pleased you make an NPC, they will never trade with you until you please
-the NPC by doing things for them (i.e.~doing Barlone a favor will please
-Mick the Pick and Ratsputin enough to trade with you)
+again). The fact that characters with a Personality of 14 can automatically
+get it, AND the fact that anyone who successfully ``pleases'' an NPC
+automatically gets a one point raise in the skill regardless of whether they
+have it or not however makes the skill kind of a ``I'll get it when I need
+it'' skill. Warning: Diplomacy is a useless skill in the Wizardry Gold
+version of Wizardry 7. No matter how pleased you make an NPC, they will never
+trade with you until you please the NPC by doing things for them (i.e.~doing
+Barlone a favor will please Mick the Pick and Ratsputin enough to trade with
+you).
 
 \subsubsection{\texorpdfstring{``Really depends on your playing style''
 skills}{Really depends on your playing style skills}}\label{really-depends-on-your-playing-style-skills}
 
-Mythology: This lets you successfully ID the monster you're fighting. In
-some cases it will be very useful, if you're conserving mana and don't
-want to mistake Night Rooks for Vampire Vultures. In most cases however,
-it is easy to figure out what the monster is after a round, or even
-based on where it is. Putting points into this is really up to your
-strategy, but it goes up naturally over time, albeit slowly.
+\paragraph{Mythology} This lets you successfully ID the monster you're
+fighting. In some cases it will be very useful, if you're conserving mana and
+don't want to mistake Night Rooks for Vampire Vultures. In most cases
+however, it is easy to figure out what the monster is after a round, or even
+based on where it is. Putting points into this is really up to your strategy,
+but it goes up naturally over time, albeit slowly.
 
-Scribe: If you like to save on mana, you may find a use for this skill
-Personally, I've gone through the game with only one point put into this
-skill for Knock-Knock scrolls to be slightly more effective--other than
+\paragraph{Scribe} If you like to save on mana, you may find a use for this
+skill Personally, I've gone through the game with only one point put into
+this skill for Knock-Knock scrolls to be slightly more effective--other than
 Magic Screen, Armorplate, Locate Person, and Enchanted Blade scrolls,
-Knock-Knock scrolls are the only other ones I actually use and all of
-them can (or are supposed to) be used outside of battle. Some nice
-spells are on scrolls, but chances are, you're going to sell them for
-the cash they give you--by the point you don't need cash anymore,
-scrolls are already quite useless
+Knock-Knock scrolls are the only other ones I actually use and all of them
+can (or are supposed to) be used outside of battle. Some nice spells are on
+scrolls, but chances are, you're going to sell them for the cash they give
+you--by the point you don't need cash anymore, scrolls are already quite
+useless
 
-Firearms: I personally don't like 2 of the 5 weapons that use this skill
-Still, you might as well get it. Raising it is up to you however
+\paragraph{Firearms} I personally don't like 2 of the 5 weapons that use this
+skill Still, you might as well get it. Raising it is up to you however
 
 \section{Choosing a Party}\label{choosing-a-party}
 
@@ -6384,13 +6386,12 @@ Sample Blender Party:
 \subsection{\texorpdfstring{The `Vanilla'
 Party}{The Vanilla Party}}\label{the-vanilla-party}
 
-Called the Vanilla Party for its simpleness, this party NEVER changes
-classes, so pick carefully. You'll need at least 1 healer, 1 offensive
-spellcaster, and 1 Skulduggery character unless you're looking for a
-challenge. After you're familiar with the game, try going through with
-only a single character! It \emph{can} be done. This party is usually
-done as a Quick and Easy party, but Super parties that don't class
-change are done too
+Called the Vanilla Party for its simpleness, this party \textsc{NEVER}
+changes classes, so pick carefully. You'll need at least 1 healer, 1
+offensive spellcaster, and 1 Skulduggery character unless you're looking for
+a challenge. After you're familiar with the game, try going through with only
+a single character! It \emph{can} be done. This party is usually done as a
+Quick and Easy party, but Super parties that don't class change are done too
 
 Sample Vanilla Party: (See Sample Quick and Easy Party or Sample Super
 Party)
@@ -7331,28 +7332,23 @@ Monsters encountered:
   Rattkin Bandits (fixed)
 \end{itemize}
 
-Q: What do I do? I'm in the middle of nowhere!
+\faqentry{What do I do? I'm in the middle of nowhere!}{Well first off, equip
+  your items. Then \textsc{save}. Get used to saving, as you will be doing it
+  constantly. Look around for a road and explore a bit.}
 
-A: Well first off, equip your items. Then SAVE. Get used to saving, as
-you will be doing it constantly. Look around for a road and explore a
-bit.
+\faqentry{What about the forest area? Can't I look there too?}{Of course you
+  can. In fact, you should. There's a Journey Map kit that will definitely
+  help you hiding in a chest in the forest if you are starting a new
+  game. However, you should put that off until after you have cleared out the
+  Starter Dungeon, which is what you are looking for on the road. This is
+  because the monsters \textsc{guarding} the path to the chest are very
+  tough, and in your new condition you will most likely get creamed. Instead,
+  find a path on the road leading to a ladder going into the ground. That's
+  the starter dungeon.}
 
-Q: What about the forest area? Can't I look there too?
-
-A: Of course you can. In fact, you should. There's a Journey Map kit
-that will definitely help you hiding in a chest in the forest if you are
-starting a new game. However, you should put that off until after you
-have cleared out the Starter Dungeon, which is what you are looking for
-on the road. This is because the monsters GUARDING the path to the chest
-are very tough, and in your new condition you will most likely get
-creamed. Instead, find a path on the road leading to a ladder going into
-the ground. That's the starter dungeon
-
-Q: I imported a saved game from Bane of the Cosmic Forge, but I'm not
-where you say I am!
-
-A: If you instead started out in a different area because you imported
-your game, I really can't help you too much
+\faqentry{I imported a saved game from Bane of the Cosmic Forge, but I'm not
+  where you say I am!}{If you instead started out in a different area because
+  you imported your game, I really can't help you too much.}
 
 If you started near Dionysceus skip directly to the Dionysceus section
 of this FAQ and see if you can get the ?CRYSTAL? map in the Temple of
@@ -7376,14 +7372,13 @@ proceed until you have to deliver a message to Rodan Lewarx. (This is
 the most profitable way to start, coincidentally.)
 
 Incomplete Bane of the Cosmic Forge games will start where a new party
-starts
+starts.
 
-Regardless of where you start, you need to get to New City
-eventually--the first quarter of the game is linear if you have not
-played the game before (and therefore know what the maps say) and unless
-you started in Dionysceus, the only map you've got a chance of getting
-is the ?TEMPLE? map in Orkogre Castle unless you know exactly what you
-are doing
+Regardless of where you start, you need to get to New City eventually--the
+first quarter of the game is linear if you have not played the game before
+(and therefore know what the maps say) and unless you started in Dionysceus,
+the only map you've got a chance of getting is the ?TEMPLE? map in Orkogre
+Castle unless you know exactly what you are doing.
 
 \subsubsection{Starter Dungeon}\label{starter-dungeon}
 
@@ -7746,17 +7741,16 @@ will always walk into the spot where the encounter is on your way back
 up. This must have been put there for people that got stuck here because
 they were low level
 
-You wanted to know how to beat it though:  You'll NEED the Air Pocket spell
-here.  Otherwise, when Asphyxiation pops up (and it will 90% of the time),
-you will see most or all of your party die unless you're high level
-Useful spells on the Shadow Guardian in addition to Air Pocket include
-Purify Air(because of Poison Gas spells it seems to love), Cure Poison,
-Haste, Magic Screen, Armorplate, and Enchanted Blade.  The last three
-spells (if you have any of them) should be casted out of battle before you
-engage the Shadow Guardian.  If you can summon help with
-Conjuration/Illusion/Create Life, call some up the first turn as well
-With those spells under your belt, the Shadow Guardian shouldn't be too
-much of a problem.
+You wanted to know how to beat it though: You'll \textsc{NEED} the Air Pocket
+spell here.  Otherwise, when Asphyxiation pops up (and it will 90\% of the
+time), you will see most or all of your party die unless you're high level
+Useful spells on the Shadow Guardian in addition to Air Pocket include Purify
+Air(because of Poison Gas spells it seems to love), Cure Poison, Haste, Magic
+Screen, Armorplate, and Enchanted Blade.  The last three spells (if you have
+any of them) should be casted out of battle before you engage the Shadow
+Guardian.  If you can summon help with Conjuration/Illusion/Create Life, call
+some up the first turn as well With those spells under your belt, the Shadow
+Guardian shouldn't be too much of a problem.
 
 Q: Aaack! All the sudden I'm silenced and 20-30 Spectral Ravens fight
 me! What do I do?
@@ -8139,7 +8133,7 @@ Q: Um\ldots{}why did I just fall down a pit?
 A: Uh oh\ldots{}I hope you didn't save. This area is annoying. However,
 it \emph{is} a good source of XP if you have Asphyxiation and Cure
 Disease, at least for your first time through. And you can get out
-eventually
+eventually.
 
 See, you're going to be fighting Frothing Munks and a Leper Giant (two
 if on Expert mode) here. The Leper Giant is annoying because he's a
@@ -9538,30 +9532,34 @@ Lyre of Cakes & Healthfull\footnotemark{} & A certain Hall of Past chest--you ch
   have theorized that it instead acts like a mass version Cure Lesser
   Condition.}
 
-Q: Where are the items that give me personal skills?
+\faqentry{Where are the items that give me personal skills?}{Everywhere. Not
+  all skills require items by the way:}
 
-A: Everywhere. Not all skills require items by the way:
+\begin{description}[align=left]
+\item [Firearms] Have a character practice on the firing range; can be given
+  to all, but each character must practice individually; you can't have
+  everyone learn the skill after one person uses it--only the characters
+  practicing will learn the skill.
+\item [Snakespeed] Get the 5 flowers as Xen Xheng asked and merge them
+  together Use a Holy Water to merge with the White Dahlia before merging the
+  Dahlia with the other 4 merged flowers. Only one person can get this.
+\item [Reflextion] Ask Blienmeis about ``Reflextion'' when he is in
+  Ratskells. He will offer to sell you a Ring of Reflextion for 12000 gold.
+  Use the Ring's special ability to give the character using it
+  Reflextion. Only one character/game can get this.
+\item [Power Strike] Use the Gem of Power's special ability to give the
+  character using it Power Strike. The Gem of Power is located in the secret
+  room in Murkato's Inner Sanctum. Only one character/game can get this.
+\item [Eagle Eye] Rescue Jan-Ette from the T'Rang Assassins. Give the
+  Helazoid Pennant she gives you to Dame Ke-Li at City of Sky for the
+  Helazoid Pendant. Use the Pendant's special ability to give the character
+  using it Eagle Eye. Only one character/game can get this.
+\item [Mind Control] Kill the Psi-Beast(s) on the Temple of Eternal Night
+  level of Dionysceus and return to the room the Danes were in on the same
+  level to meditate. Anyone who doesn't fall asleep gains a point in the
+  skill.
+\end{description}
 
-Firearms Have a character practice on the firing range; can be given to
-all, but each character must practice individually; you can't have
-everyone learn the skill after one person uses it--only the characters
-practicing will learn the skill. Snakespeed Get the 5 flowers as Xen
-Xheng asked and merge them together Use a Holy Water to merge with the
-White Dahlia before merging the Dahlia with the other 4 merged flowers.
-Only one person can get this. Reflextion Ask Blienmeis about
-``Reflextion'' when he is in Ratskells. He will offer to sell you a Ring
-of Reflextion for 12000 gold Use the Ring's special ability to give the
-character using it Reflextion. Only one character/game can get this.
-Power Strike Use the Gem of Power's special ability to give the
-character using it Power Strike. The Gem of Power is located in the
-secret room in Murkato's Inner Sanctum. Only one character/game can get
-this. Eagle Eye Rescue Jan-Ette from the T'Rang Assassins. Give the
-Helazoid Pennant she gives you to Dame Ke-Li at City of Sky for the
-Helazoid Pendant. Use the Pendant's special ability to give the
-character using it Eagle Eye. Only one character/game can get this. Mind
-Control Kill the Psi-Beast(s) on the Temple of Eternal Night level of
-Dionysceus and return to the room the Danes were in on the same level to
-meditate. Anyone who doesn't fall asleep gains a point in the skill.
 
 Q: Can I get the other items in the Hall of Preservation?
 
