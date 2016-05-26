@@ -9,6 +9,7 @@
 \usepackage{multicol}
 \usepackage[defaultlines=2,all]{nowidow}
 \usepackage{ragged2e}
+\usepackage{hhline}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 %\setmainfont[]{Charis SIL}
@@ -303,7 +304,7 @@ Basic Layout:
 
 Sample Chart:
 
-\begin{longtable}[]{@{}llllllllll@{}}
+\begin{longtable}[]{@{}|l|c|c|c|c|c|c|c|c|r|@{}}
 \toprule
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
 Class Name
@@ -334,7 +335,7 @@ F?
 \strut\end{minipage} &
 \begin{minipage}[t]{0.08\columnwidth}\raggedright\strut
 Total
-\strut\end{minipage}\tabularnewline
+\strut\end{minipage}\tabularnewline \hhline{|*{10}{=|}}
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
 Fighter
 \strut\end{minipage} &
