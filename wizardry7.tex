@@ -15,8 +15,8 @@
 %\setmainfont[]{Charis SIL}
 \setmainfont[]{TeX Gyre Pagella}
 
-\usepackage{bigfoot}
-\DeclareNewFootnote{default}
+%\usepackage{bigfoot}
+%\DeclareNewFootnote{default}
 
 \usepackage{bookmark}
 \hypersetup{unicode=true,
@@ -78,6 +78,9 @@ contents={%
 % \end{description}}
 \newcommand{\faqentry}[1]{%
   \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\par\nopagebreak[4]}
+
+\newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
+%\begin{multicols}{2}\raggedcolumns
 
 \newcommand{\qmwordqm}[1]{\mbox{?#1?}}
 \newcommand{\WviiSPOT}{\mbox{*S~P~O~T*}}
@@ -226,10 +229,11 @@ will appreciate it.
 What's the difference? Females, when they start out, get a -2 in
 Strength, +1 in Personality, and a +1 in Karma compared to the base
 statistics given in the manual. Males start out with the base statistics
-given in the manual
+given in the manual.
 
 \subsubsection{Males}\label{males}
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -237,28 +241,31 @@ Perks:
 \item
   Classes based on strength are easier to get for males.
 \item
-  Males can wear the Cameo Locket
+  Males can wear the Cameo Locket.
 \end{itemize}
+\columnbreak
 
 Flaws:
 
 \begin{itemize}
 \item
-  See benefits of Females
+  See benefits of Females.
 \item
   Cameo Locket is only attainable by importing a party from Bane of the
-  Cosmic Forge or saved game editing
+  Cosmic Forge or saved game editing.
 \end{itemize}
+\end{multicols}
 
 \subsubsection{Females}\label{females}
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
 \tightlist
 \item
   Classes based on Personality will require 1 less point to get for
-  females, unless it has a strength requirement as well
+  females, unless it has a strength requirement as well.
 \item
   Females can use certain items like Stud-Cuir Bras and Jazeraint
   Skirts. (Sorry, no cross-dressers in the game.) Some of these items
@@ -267,16 +274,18 @@ Perks:
   Females can become Valkyries, which are Lords with less experience
   point requirements and no guaranteed starting Diplomacy.
 \end{itemize}
+\columnbreak
 
 Flaws:
 
 \begin{itemize}
 \item
-  See benefits of Males
+  See benefits of Males.
 \item
   Diamond Ring, one of the better female-only items, must be imported
   from Bane or edited into the saved game.
 \end{itemize}
+\end{multicols}
 
 \subsubsection{Overall}\label{overall}
 
@@ -386,13 +395,13 @@ Explanations:
 \item
   Y -- Yes, it will lower the amount of points needed.
 \item
-  -- -- Doesn't matter
+  -- -- Doesn't matter.
 \item
   N -- No, it won't help you in the points.
 \end{itemize}
 
-(Note: Any class with Y will have point distribution altered to reflect
-stat changes for female characters)
+\subparagraph{Note:} Any class with Y will have point distribution altered to
+reflect stat changes for female characters.
 
 Total -- Total amount of points needed for the class.
 
@@ -411,6 +420,7 @@ Convenient Starting Professions
 
 Base Human stats: 9 8 8 9 9 8 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -418,6 +428,7 @@ Perks:
 \item
   No inherent weaknesses to an attack type.
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -428,8 +439,9 @@ Flaws:
 \item
   Too average.
 \item
-  Someone else can fit a class better than they do in most cases
+  Someone else can fit a class better than they do in most cases.
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Human:
 
@@ -858,6 +870,7 @@ Convenient Starting Professions
 
 Base Elf stats 7 10 10 7 9 9 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -869,6 +882,7 @@ Perks:
 \item
   Decent spell point recharge rate.
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -877,17 +891,18 @@ Flaws:
 \item
   Strength- and Vitality-based classes harder to get in the beginning.
 \item
-  Race has slightly lower hit points than normal
+  Race has slightly lower hit points than normal.
 \end{itemize}
+\end{multicols}
 
 Suggestions:
 
 \begin{itemize}
 \item
   When picking an Elf, pick female unless you fully intend to make it a
-  fighting character
+  fighting character.
 \item
-  Go for a spellcasting class
+  Go for a spellcasting class.
 \end{itemize}
 
 Points needed to meet Class Requirements for Elf:
@@ -1317,6 +1332,7 @@ Convenient Starting Professions
 
 Base Dwarf stats 11 6 10 12 7 7 7
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -1325,6 +1341,7 @@ Perks:
 \item
   Magic resistance (i.e.~to spells like Lifesteal or Make Wounds)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -1334,6 +1351,7 @@ Flaws:
   Slow. Don't expect them to go first anytime soon unless you sacrifice
   all your bonus points towards their Dexterity and Speed.
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Dwarf:
 
@@ -1763,6 +1781,7 @@ Convenient Starting Professions
 
 Base Gnome Stats 10 7 13 10 8 6 6
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -1770,6 +1789,7 @@ Perks:
 \item
   Magic resistance (i.e.~to spells like Lifesteal or Make Wounds)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -1779,6 +1799,7 @@ Flaws:
   Slow. Don't expect them to go first anytime soon unless you sacrifice
   all your bonus points towards their Speed
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Gnome:
 
@@ -2212,6 +2233,7 @@ Convenient Starting Professions
 
 Base Hobbit stats 8 7 6 9 10 7 13
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -2221,6 +2243,7 @@ Perks:
 \item
   Natural thieving characters
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -2230,6 +2253,7 @@ Flaws:
   Poor Intelligence and Piety makes them poor spellcasters. Don't rely
   on any spells they may use on coming back quickly.
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Hobbit:
 
@@ -2658,12 +2682,13 @@ Convenient Starting Professions
 
 Base Faerie Stats 5 11 6 6 10 14 12
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
 \item
   Character always start with Gossamer Gown (U), Gossamer Gown (L),
-  Faerie Stick, Faerie Dust(5), and Lt. Heal(3) regardless of class
+  Faerie Stick, Faerie Dust(5), and Lt. Heal(3) regardless of class.
 \item
   Lower AC than other races
 \item
@@ -2677,20 +2702,22 @@ Perks:
 \item
   Race \& class specific weapon (Cane of Corpus for the Faerie Ninja)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
 \begin{itemize}
 \item
-  Cannot use most weapons and armor
+  Cannot use most weapons and armor.
 \item
   Consistency of starting equipment prevents Faerie characters from
   using sometimes irreplaceable equipment such as the Poet's Lute.
 \item
   Low carrying capacity
 \item
-  Tends to have low amounts of hit points
+  Tends to have low amounts of hit points.
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Faerie:
 
@@ -3117,6 +3144,7 @@ Convenient Starting Professions
 
 Base Lizardman Stats 12 5 5 14 8 10 3
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -3127,6 +3155,7 @@ Perks:
 \item
   Greater than normal amount of hit points
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -3138,6 +3167,7 @@ Flaws:
 \item
   Intelligence and Piety go DOWN on level ups if too high.
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Lizardman:
 
@@ -3558,6 +3588,7 @@ Convenient Starting Professions
 
 Base Dracon Stats 10 7 6 12 10 8 6
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -3568,6 +3599,7 @@ Perks:
 \item
   Mental Resistance 
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -3578,6 +3610,7 @@ Flaws:
 \item
   Damage of Breath is based on amount of stamina used
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Dracon:
 
@@ -4007,14 +4040,23 @@ Convenient Starting Professions
 
 Base Rawulf stats: 8 6 12 10 8 8 10
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
 \item
-  Cold resistance Flaws:
+  Cold resistance
+\end{itemize}
+\columnbreak
+
+Flaws:
+
+\begin{itemize}
+
 \item
   None I know of
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Rawulf:
 
@@ -4445,6 +4487,7 @@ Convenient Starting Professions
 
 Base Felpurr Stats: 7 10 7 7 10 12 10
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -4453,6 +4496,7 @@ Perks:
 \item
   Dodge spells
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -4461,6 +4505,7 @@ Flaws:
 \item
   None that I can tell
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Felpurr:
 
@@ -4887,6 +4932,7 @@ Convenient Starting Professions
 
 Base Mook Stats: 10 10 6 10 7 7 9
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -4895,6 +4941,7 @@ Perks:
 \item
   Magic Resistance (i.e.~to spells like Lifesteal or Make Wounds)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -4903,6 +4950,7 @@ Flaws:
 \item
   None that I can see
 \end{itemize}
+\end{multicols}
 
 Points needed to meet Class Requirements for Mook:
 
@@ -5331,6 +5379,7 @@ Convenient Starting Professions
 
 requirements: 12 0 0 0 0 0 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5343,6 +5392,7 @@ Perks:
 \item
   Greater than normal amount of hit points
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5354,6 +5404,7 @@ Flaws:
 \item
   Lessened skill points for Academia
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5378,14 +5429,16 @@ Profession changing suggestions:
 
 requirements: 0 12 0 0 0 0 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
 \item
-  Learns the Thaumaturgic spells the quickest
+  Learns the Thaumaturgic spells the quickest.
 \item
   Increased skill points for Academia
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5399,6 +5452,7 @@ Flaws:
 \item
   Lessened skill points for Weapon
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5423,6 +5477,7 @@ Profession changing suggestions:
 
 requirements: 0 0 12 0 0 0 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5439,6 +5494,7 @@ Perks:
 \item
   Increased skill points for Academia
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5450,6 +5506,7 @@ Flaws:
 \item
   Lessened skill points for weapon
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5472,11 +5529,12 @@ Profession changing suggestions:
 
 requirements: 0 0 0 0 12 8 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
 \item
-  Gets a LARGE boost in Skulduggery every level for a good while
+  Gets a LARGE boost in Skulduggery every level for a good while.
 \item
   Class specific weapon (Thieves Dagger) that is cursed, allowing use as
   a secondary weapon for thieves that change professions.
@@ -5489,6 +5547,7 @@ Perks:
 \item
   Increased skill points to Physical
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5496,14 +5555,15 @@ Flaws:
 \item
   No spells
 \item
-  Class specific weapon is weak compared to other class specific weapons
+  Class specific weapon is weak compared to other class specific weapons.
 \item
-  Becomes outdated after mid-game as other classes get better kit
+  Becomes outdated after mid-game as other classes get better kit.
 \item
   Poor armor selection
 \item
   Limited weapon selection
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5526,6 +5586,7 @@ Profession changing suggestions:
 
 requirements: 10 8 8 11 10 8 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5546,6 +5607,7 @@ Perks:
 \item
   Limited Healing capabilities (Heal Wounds)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5559,6 +5621,7 @@ Flaws:
 \item
   Limited weapon selection
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5577,6 +5640,7 @@ Profession changing suggestions:
 
 requirements: 0 10 0 0 12 8 12
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5595,6 +5659,7 @@ Perks:
 \item
   Increased skill points to Physical
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5605,6 +5670,7 @@ Flaws:
 \item
   Limited weapon selection
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5621,6 +5687,7 @@ Profession changing suggestions:
 
 requirements: 10 14 0 14 0 0 10
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5635,6 +5702,7 @@ Perks:
 \item
   Increased skill points to Academia
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5646,6 +5714,7 @@ Flaws:
 \item
   Shadow Cloak useless if no Thief, Ninja, or Bard in party
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5662,6 +5731,7 @@ Profession changing suggestions:
 
 requirements: 0 13 0 0 13 0 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5678,6 +5748,7 @@ Perks:
 \item
   Limited Healing capabilities (Heal Wounds)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5687,6 +5758,7 @@ Flaws:
   Class specific accessory\ldots{}stinks and is only found near the end
   of the game.
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5705,6 +5777,7 @@ Profession changing suggestions:
 
 requirements: 10 0 11 11 10 11 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5723,6 +5796,7 @@ Perks:
 \item
   Valkyries require less experience to gain a level
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5732,6 +5806,7 @@ Flaws:
 \item
   Heavy armor weighs a LOT.
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5748,6 +5823,7 @@ Profession changing suggestions:
 
 requirements: 0 15 15 0 0 0 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5762,6 +5838,7 @@ Perks:
 \item
   Greatly increased skill points to Academia
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5770,6 +5847,7 @@ Flaws:
 \item
   Spell progression is SLOW as research must be divided in half.
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5780,10 +5858,12 @@ Profession changing suggestions:
   Alchemist
 \end{itemize}
 
+
 \subsubsection{Lord}\label{lord}
 
 requirements: 12 9 12 12 9 9 14
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5800,6 +5880,7 @@ Perks:
 \item
   Increased skill points to Weapon
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5815,6 +5896,7 @@ Flaws:
 \item
   Valkyries have smaller experience requirements.
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5837,6 +5919,7 @@ Profession changing suggestions:
 
 Requirements: 12 11 0 9 12 14 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5850,6 +5933,7 @@ Perks:
 \item
   Increased skill points to Weapon
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5859,6 +5943,7 @@ Flaws:
 \item
   Expensive class to attain and maintain
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5874,6 +5959,7 @@ Profession changing suggestions:
 
 Requirements: 13 8 13 0 10 13 8
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5890,6 +5976,7 @@ Perks:
 \item
   Limited Healing capabilities (Heal Wounds, Lifesteal)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5903,6 +5990,7 @@ Flaws:
 \item
   Armor restricted to robes
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -5916,6 +6004,7 @@ Profession changing suggestions:
 
 Requirements: 12 10 10 12 12 12 0
 
+\begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
 \begin{itemize}
@@ -5938,12 +6027,13 @@ Perks:
 \item
   Limited Healing capabilities (Heal Wounds)
 \item
-  Weapons Ninjas can use are useful
+  Weapons Ninjas can use are useful.
 \item
   Class specific weapons, armor, and accessory (Sai, Nunchuku, Ninjato,
   Ninja Cowl, Ninja Garb(U), Ninja Garb(L), Tabi Boots, Blackbelt of 5
   Flowers)
 \end{itemize}
+\columnbreak
 
 Flaws:
 
@@ -5955,13 +6045,14 @@ Flaws:
 \item
   Slightly decreased skill points to Academia
 \item
-  Usage as a `Jack of all Trades' creates difficulties mid-game
+  Usage as a `Jack of all Trades' creates difficulties mid-game.
 \item
   Semi-limited weapon selection
 \item
   May only equip Ninja Cowl, Ninja Garb(U) \& (L), Tabi Boots, and race
-  specific items for armor
+  specific items for armor.
 \end{itemize}
+\end{multicols}
 
 Profession changing suggestions:
 
@@ -6564,7 +6655,7 @@ or Cure Disease.
 
 \subsection{Spell-picking Choices}\label{spell-picking-choices}
 
-\paragraph{Note:} The required amount of skill points for a group of spells
+\subparagraph{Note:} The required amount of skill points for a group of spells
 may be off by one or two points.
 
 Thaumaturgy (Mage spellbook)
@@ -7010,8 +7101,10 @@ Level 3 spells: (36 Theosophy) Dazzling Lights The Psionic version of
 Prismic Missile, it dispenses status ailments or just sheer damage. For
 some odd reason, this spell in my experience tends to dispense status
 ailments more than just pure damage--however, the ``withers and dies''
-effect seems to pop up more often with this. Note: This spell will not
-work on enemies with 100\% or greater Light Resistance.
+effect seems to pop up more often with this.
+
+\subparagraph{Note:} This spell will not work on enemies with 100\% or
+greater Light Resistance.
 
 Blades Unlike the Priest, the Psionic already has decent damage dealing
 spells. Still, it's useful when you run out of spell points
