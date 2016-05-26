@@ -2,7 +2,7 @@
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
+%\usepackage{fixltx2e} % provides \textsubscript
 \usepackage{fontspec}
 \usepackage{microtype}
 \usepackage[font={slshape},leftmargin=0.5\leftmargin,rightmargin=0.5\rightmargin]{quoting}
@@ -10,10 +10,13 @@
 \usepackage[defaultlines=2,all]{nowidow}
 \usepackage{ragged2e}
 \usepackage{hhline}
+\usepackage{mdwlist}
+\usepackage{hyphenat}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 %\setmainfont[]{Charis SIL}
-\setmainfont[]{TeX Gyre Pagella}
+%\setmainfont[]{TeX Gyre Pagella}
+\setmainfont[]{Linux Libertine O}
 
 %\usepackage{bigfoot}
 %\DeclareNewFootnote{default}
@@ -66,7 +69,9 @@ contents={%
 
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing,calc}
-\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\makeatletter
+\newcommand{\tikzmark}[1]{\protect\tikz[overlay,remember picture] \node (#1) {};}
+\makeatother
 
 \title{A random Crusaders of the Dark Savant FAQ}
 \author{Written by: Ravashack\protect\footnote{\LaTeX{} conversion by Václav Haisman}}
@@ -77,7 +82,10 @@ contents={%
 %   \item [A:] #2
 % \end{description}}
 \newcommand{\faqentry}[1]{%
-  \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\par\nopagebreak[4]}
+  \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
+
+\newcommand{\spellentry}[1]{%
+  \subparagraph{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
 
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
 %\begin{multicols}{2}\raggedcolumns
@@ -3139,7 +3147,7 @@ Convenient Starting Professions
   Mage
 \item
   Priest -- Most extended weapons available for Faeries are
-  Priest/Bishop.
+  Priest\fshyp{}Bishop.
 \item
   Thief
 \item
@@ -3611,7 +3619,7 @@ Perks:
 \item
   Acid resistance
 \item
-  Mental Resistance 
+  Mental Resistance
 \end{itemize}
 \columnbreak
 
@@ -5534,11 +5542,11 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Fighter→Valkyrie (females only)/Lord
+  Fighter→Valkyrie (females only)\fshyp{}Lord
 \item
   Mage→Bishop
 \item
-  Bishop→Valkyrie(females only)/Lord/Psionic
+  Bishop→Valkyrie (females only)\fshyp{}Lord\fshyp{}Psionic
 \item
   Psionic→Monk
 \item
@@ -5950,8 +5958,8 @@ Perks:
 \item
   Learns Thaumaturgical spells
 \item
-  Class specific weapons and armor(Muramasa Blade, Do-Maru(U) and (L),
-  Tosei-Do (U) \& (L), Hi-Kane-Do (U) \& (L), Kabuto)
+  Class specific weapons and armor (Muramasa Blade, Do-Maru~(U) and (L),
+  Tosei-Do~(U) \& (L), Hi-Kane-Do~(U) \& (L), Kabuto)
 \item
   Increased skill points to Weapon
 \end{itemize}
@@ -6052,7 +6060,7 @@ Perks:
   Weapons Ninjas can use are useful.
 \item
   Class specific weapons, armor, and accessory (Sai, Nunchuku, Ninjato,
-  Ninja Cowl, Ninja Garb(U), Ninja Garb(L), Tabi Boots, Blackbelt of 5
+  Ninja Cowl, Ninja Garb~(U), Ninja Garb~(L), Tabi Boots, Blackbelt of 5
   Flowers)
 \end{itemize}
 \columnbreak
@@ -6071,7 +6079,7 @@ Flaws:
 \item
   Semi-limited weapon selection
 \item
-  May only equip Ninja Cowl, Ninja Garb(U) \& (L), Tabi Boots, and race
+  May only equip Ninja Cowl, Ninja Garb~(U) \& (L), Tabi Boots, and race
   specific items for armor.
 \end{itemize}
 \end{multicols}
@@ -6125,9 +6133,10 @@ you stuck or moving at a snail's crawl if you do not know the area,
 especially in the darkened areas where the only thing you CAN map are the
 walls.
 
-\paragraph{Theosophy/Theology/Thaumaturgy/Alchemy} Essential for anyone that learns
-them. Until it reaches 95-100, if you don't put points into this, you're
-potentially missing out on a spell that might help you in game
+\paragraph{Theosophy\fshyp{}Theology\fshyp{}Thaumaturgy\fshyp{}Alchemy}
+Essential for anyone that learns them. Until it reaches 95-100, if you don't
+put points into this, you're potentially missing out on a spell that might
+help you in game.
 
 \subsubsection{\texorpdfstring{``Nice to have''
 skills}{Nice to have skills}}\label{nice-to-have-skills}
@@ -6147,7 +6156,7 @@ do a backstab or surprise attack.
 
 \paragraph{Legerdemain} The 5 Fingered Discount is a nice thing to have, but
 you won't pilfer much. The chance of getting caught is quite high as well,
-even with a level 100 Legerdemain, so save before trying. If the character's
+even with a level~100 Legerdemain, so save before trying. If the character's
 inventory slots are full only gold will be taken, which keeps this skill from
 being totally useless; most shopkeepers have horrible items in their
 inventory--you wouldn't want to steal them if your life depended on
@@ -6194,44 +6203,43 @@ based on where it is. Putting points into this is really up to your strategy,
 but it goes up naturally over time, albeit slowly.
 
 \paragraph{Scribe} If you like to save on mana, you may find a use for this
-skill Personally, I've gone through the game with only one point put into
+skill. Personally, I've gone through the game with only one point put into
 this skill for Knock-Knock scrolls to be slightly more effective--other than
 Magic Screen, Armorplate, Locate Person, and Enchanted Blade scrolls,
 Knock-Knock scrolls are the only other ones I actually use and all of them
 can (or are supposed to) be used outside of battle. Some nice spells are on
 scrolls, but chances are, you're going to sell them for the cash they give
 you--by the point you don't need cash anymore, scrolls are already quite
-useless
+useless.
 
 \paragraph{Firearms} I personally don't like 2 of the 5 weapons that use this
-skill Still, you might as well get it. Raising it is up to you however
+skill. Still, you might as well get it. Raising it is up to you however.
 
 \section{Choosing a Party}\label{choosing-a-party}
 
 Depending on what difficulty you are playing, there are five types of
 parties that will be used throughout the game: the `Super' Party, the
 `Quick and Easy' Party, the `Dual Class' Party, the `Blender' Party, and
-the `Vanilla' Party
+the `Vanilla' Party.
 
 \subsection{\texorpdfstring{The `Super'
 Party}{The Super Party}}\label{the-super-party}
 
-The Super Party is what everyone wants to end up with at the end of the
-game, but it is very hard to use in the beginning. The reason is because
-the Super Party is a party with hard to get characters such as a Faerie
-Samurai/Monk/Ninja, Elf Lords, or other such hard to get/play classes
-for example. Because these guys are hard to get, you don't have a lot of
-excess points to distribute for other stats. To top it off, the class
+The Super Party is what everyone wants to end up with at the end of the game,
+but it is very hard to use in the beginning. The reason is because the Super
+Party is a party with hard to get characters such as a Faerie
+Samurai\fshyp{}Monk\fshyp{}Ninja, Elf Lords, or other such hard to get/play
+classes for example. Because these guys are hard to get, you don't have a lot
+of excess points to distribute for other stats. To top it off, the class
 usually has almost double the experience requirements of the
-easier-to-achieve classes such as the Fighter. With all these factors
-thrown together, this party is not recommended for a purist new to the
-game--various maps that hint at what to do are your only clues as to
-what should be done if you do not wish to consult outside sources, and
-with a Super party it will take too long to level them up; the NPCs will
-have snatched them away before you get to them, and the only ways to get
-your hands on them are buying it for 10,000 gold--which you won't have
-for a long time--or killing them, which is very difficult with this kind
-of party until much much later
+easier-to-achieve classes such as the Fighter. With all these factors thrown
+together, this party is not recommended for a purist new to the game--various
+maps that hint at what to do are your only clues as to what should be done if
+you do not wish to consult outside sources, and with a Super party it will
+take too long to level them up; the NPCs will have snatched them away before
+you get to them, and the only ways to get your hands on them are buying it
+for 10,000 gold--which you won't have for a long time--or killing them, which
+is very difficult with this kind of party until much much later.
 
 Sample Super Party:
 
@@ -6297,35 +6305,27 @@ requirements for a Ranger, and put any excess points where you want it
 from all the profession changing). The reasoning for this party is to
 mainly take advantage of the relatively low amount of experience needed
 in the first 5-10 levels to accumulate skills and spells quickly--a
-Faery Thief that I converted into a Ninja after hitting level 7 already
-had 100 Skulduggery at level 3!
+Faery Thief that I converted into a Ninja after hitting level~7 already
+had 100 Skulduggery at level~3!
 
 Sample Dual Class Party (Characters rolled with 15 points to distribute):
 
 \begin{itemize}
 \tightlist
 \item
-  Elf Fighter → Converts to Ranger at level 10
+  Elf Fighter → Converts to Ranger at level~10
 \item
-  Felpurr Fighter → Converts to Samurai at level 10.
+  Felpurr Fighter → Converts to Samurai at level~10.
 \item
   Faerie Thief → Converts to Ninja when stats meet minimum Ninja
   requirements and Skulduggery \textgreater{} 80.
 \item
-  Elf Priest (F) → Converts to Valkyrie when Theology \textgreater{} 80.
+  Elf Priest (F)\protect\footnote{(F) means female} → Converts to Valkyrie when Theology \textgreater{} 80.
 \item
   Elf Mage (F) → Converts to Bard when Thaumaturgy \textgreater{} 80.
 \item
   Elf Bard (F) → Converts to Bishop when Mage converts to Bard.
 \end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{(\Alph{enumi})}
-\setcounter{enumi}{5}
-\tightlist
-\item
-  means female.
-\end{enumerate}
 
 Assuming that each character gets 15 points to distribute, this is what
 would happen normally.
@@ -6333,20 +6333,23 @@ would happen normally.
 Stats are given in the order of: Strength, Intelligence, Piety,
 Vitality, Dexterity, Speed, Personality.
 
-Elf Fighter- Elf Base stats:
+\subsubsection{Elf Fighter}
+\label{sec:elf-fighter}
+
+Elf Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: 5 points added(meet Fighter requirements)
+  7: 5 points added (meet Fighter requirements)
 \item
   10:
 \item
   10:
 \item
-  7: 4 points added(meet Ranger requirements)
+  7: 4 points added (meet Ranger requirements)
 \item
-  9: 1 point added(meet Ranger requirements)
+  9: 1 point added (meet Ranger requirements)
 \item
   9:
 \item
@@ -6358,22 +6361,25 @@ distribute the excess to Vitality as all the ability scores will be
 reset down to the bare minimum after the profession change; might as
 well get some extra hit points and stamina out of it.
 
-Felpurr Fighter- Felpurr Base stats:
+\subsubsection{Felpurr Fighter}
+\label{sec:felpurr-fighter}
+
+Felpurr Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: 5 points added(meet Fighter requirements)
+  7: 5 points added (meet Fighter requirements)
 \item
-  10: 1 points added(meet Samurai requirements)
+  10: 1 points added (meet Samurai requirements)
 \item
   7:
 \item
-  7: 2 points added(meet Samurai requirements)
+  7: 2 points added (meet Samurai requirements)
 \item
-  10: 2 points added(meet Samurai requirements)
+  10: 2 points added (meet Samurai requirements)
 \item
-  12: 2 points added(meet Samurai requirements)
+  12: 2 points added (meet Samurai requirements)
 \item
   10:
 \end{itemize}
@@ -6381,20 +6387,23 @@ Felpurr Fighter- Felpurr Base stats:
 There are three points to distribute left as you wish. Again, I would
 put it into Vitality.
 
-Faerie Thief- Faerie Base stats:
+\subsubsection{Faerie Thief}
+\label{sec:faerie-thief}
+
+Faerie Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  5: 5 points added(almost meet Ninja requirements)
+  5: 5 points added (almost meet Ninja requirements)
 \item
   11:
 \item
-  6: 3 points added(almost meet Ninja requirements)
+  6: 3 points added (almost meet Ninja requirements)
 \item
-  6: 5 points added(almost meet Ninja requirements)
+  6: 5 points added (almost meet Ninja requirements)
 \item
-  10: 2 points added(meet Thief requirements)
+  10: 2 points added (meet Thief requirements)
 \item
   14:
 \item
@@ -6403,25 +6412,28 @@ Faerie Thief- Faerie Base stats:
 
 In this case, there are no excess points to use. You will be relying on
 level ups to give you the rest of the stat boost you need. This could
-easily be met by level 7 or 8--less if you reload your level ups to get
-the bonuses you want
+easily be met by level~7 or 8--less if you reload your level ups to get
+the bonuses you want.
 
-Elf Priest (F)- Elf Base stats:
+\subsubsection{Elf Priest (F)}
+\label{sec:elf-priest-f}
+
+Elf Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: -2 for being female, 5 points added(meet Valkyrie requirements)
+  7: -2 for being female, 5 points added (meet Valkyrie requirements)
 \item
   10:
 \item
-  10: 2 points added(meet Priest requirements)
+  10: 2 points added (meet Priest requirements)
 \item
-  7: 4 points added(meet Valkyrie requirements)
+  7: 4 points added (meet Valkyrie requirements)
 \item
-  9: 1 point added(meet Valkyrie requirements)
+  9: 1 point added (meet Valkyrie requirements)
 \item
-  9: 2 points added(meet Valkyrie requirements)
+  9: 2 points added (meet Valkyrie requirements)
 \item
   8: +1 for being female
 \end{itemize}
@@ -6430,32 +6442,38 @@ This leaves you with 1 extra point to distribute. Either Vitality or
 Intelligence is a good choice; getting more Academia points to speed up
 getting the higher level spells is nice, but so is more hit points.
 
-Elf Mage (F)- Elf Base stats:
+\subsubsection{Elf Mage (F)}
+\label{sec:elf-mage-f}
+
+Elf Base stats:
 
 \begin{itemize}
 \tightlist
 \item
   7: -2 for being female
 \item
-  10: 2 points added(meet Mage requirements)
+  10: 2 points added (meet Mage requirements)
 \item
   10:
 \item
   7:
 \item
-  9: 3 points added(meet Bard requirements)
+  9: 3 points added (meet Bard requirements)
 \item
   9:
 \item
-  8: +1 for being female, 3 points added(meet Bard requirements)
+  8: +1 for being female, 3 points added (meet Bard requirements)
 \end{itemize}
 
 You've got 7 points to redistribute. As Mages don't have a hope to gain
 a lot of hit points a level, dump them either in Intelligence for
 increased amount of Academia points or in Piety for better spell point
-gain/level and spell point recovery.
+gain\fshyp{}level and spell point recovery.
 
-Elf Bard (F)- Elf Base stats:
+\subsubsection{Elf Bard (F)}
+\label{sec:elf-bard-f}
+
+Elf Base stats:
 
 \begin{itemize}
 \tightlist
@@ -6468,17 +6486,17 @@ Elf Bard (F)- Elf Base stats:
 \item
   7:
 \item
-  9: 3 points added(meet Bard requirements)
+  9: 3 points added (meet Bard requirements)
 \item
   9:
 \item
-  8: +1 for being female, 3 points added(meet Bard requirements)
+  8: +1 for being female, 3 points added (meet Bard requirements)
 \end{itemize}
 
 Again, you have no points to redistribute after that, but like the
 Faerie Thief, level ups will take care of the rest of the stat
 requirements--only quicker in this case as you only need Piety to go up
-one
+one.
 
 I think you can see the pattern: If you can afford it, fill out the
 requirements of the 2nd class first before distributing the points to
@@ -6487,9 +6505,9 @@ that it only requires as few level gains as possible to get there. 15 is
 the number I use for a minimum when creating profession changing
 characters; you might use a lesser amount or a greater amount, depending
 on your patience. Whatever you do, if you want to take the greatest
-advantage out of changing professions do so by level 10. This is because
-it takes the same amount of experience to get from level 1 to level 10
-as it does to get from level 10 to level 11.
+advantage out of changing professions do so by level~10. This is because
+it takes the same amount of experience to get from level~1 to level~10
+as it does to get from level~10 to level~11.
 
 \subsection{\texorpdfstring{The `Blender'
 Party}{The Blender Party}}\label{the-blender-party}
@@ -6660,15 +6678,15 @@ or Cure Disease.
     what to ask the NPC sometimes; otherwise it gives you a bit of
     information you could have gotten with Lore or just gives Nothing.}
 \item
-  Fire Shield/Ice Shield
+  Fire Shield\fshyp{}Ice Shield
 \item
   Lifesteal
 \item
-  Poison Gas/Acid Bomb/Firestorm
+  Poison Gas\fshyp{}Acid Bomb\fshyp{}Firestorm
 \item
-  Conjuration/Illusion/Create Life
+  Conjuration\fshyp{}Illusion\fshyp{}Create Life
 \item
-  Nuclear Blast/Deadly Air/Word of Death/Mind Flay
+  Nuclear Blast\fshyp{}Deadly Air\fshyp{}Word of Death\fshyp{}Mind Flay
 \item
   Asphyxiation\protect\footnote{Expert mode only for crowd control and
     convenience.}
@@ -6680,657 +6698,713 @@ or Cure Disease.
 \subparagraph{Note:} The required amount of skill points for a group of spells
 may be off by one or two points.
 
-Thaumaturgy (Mage spellbook)
+\begin{multicols}{2}
+\subsubsection{Thaumaturgy (Mage spellbook)}
+\label{sec:thaumaturgy-mage-spellbook}
 
-Level 1 spells:
+\paragraph{Level 1 spells}
 
-Energy Blast Your (possible) first damaging spell. Nothing special.
-
-Chilling Touch Your other (possible) first damaging spell. Nothing
+\spellentry{Energy Blast} Your (possible) first damaging spell. Nothing
 special.
 
-Terror Give the opponent the ``Afraid'' ailment for a short time. I do
-not advise using this spell if you are looking for experience. This
-becomes useless mid-game if it wasn't useless before already.
+\spellentry{Chilling Touch} Your other (possible) first damaging
+spell. Nothing special.
 
-Sleep Gives the opponent the ``Asleep'' status for a short time. One of
-the most useful spells in the game, even if your party already has a
-Bard with the Poet's Lute. This becomes useless after mid-game however,
+\spellentry{Terror} Give the opponent the ``Afraid'' ailment for a short
+time. I do not advise using this spell if you are looking for
+experience. This becomes useless mid-game if it wasn't useless before
+already.
+
+\spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
+time. One of the most useful spells in the game, even if your party already
+has a Bard with the Poet's Lute. This becomes useless after mid-game however,
 as you'll have ways of dealing with multiple targets.
 
-Armor Shield Grants an Armor Class bonus to a character. Initially, the
-meager protection offered by the spell will not be too helpful. Later on
-however, it is a very useful spell to cast while hiding (or after you
-drank an invisibility potion) due to its cheap costs and noticeable drop
-in Armor Class when cast at level 7
+\spellentry{Armor Shield} Grants an Armor Class bonus to a
+character. Initially, the meager protection offered by the spell will not be
+too helpful. Later on however, it is a very useful spell to cast while hiding
+(or after you drank an invisibility potion) due to its cheap costs and
+noticeable drop in Armor Class when cast at level~7.
 
-Direction Shows the direction your party is facing. A useless spell
-after you get the Journey Map Kit, as you can easily check which way you
-are facing by using the map.
+\spellentry{Direction} Shows the direction your party is facing. A useless
+spell after you get the Journey Map Kit, as you can easily check which way
+you are facing by using the map.
 
-Level 2 spells: (18 Thaumaturgy) Magic Missile Damages a limited number
-of opponents. Useful when you need to deal medium amounts of damage to a
-group.
+\paragraph{Level 2 spells (18 Thaumaturgy)}
 
-Shrill Sound Damages an entire group, regardless of the size of the
-group. Very useful when you don't want to waste extra spell points to
-hit everything in a group.
+\spellentry{Magic Missile} Damages a limited number of opponents. Useful when
+you need to deal medium amounts of damage to a group.
 
-Missile Shield Deflects any attacks that are projectile attacks
+\spellentry{Shrill Sound} Damages an entire group, regardless of the size of
+the group. Very useful when you don't want to waste extra spell points to hit
+everything in a group.
+
+\spellentry{Missile Shield} Deflects any attacks that are projectile attacks
 (i.e.~uses ``Throw'' or ``Shoot'' as a form of attack). Chance of being
-deflected is related to how high of a spell level you use to cast the
-spell, with around a 99\% deflection rate for a level 7 Missile Shield
+deflected is related to how high of a spell level you use to cast the spell,
+with around a 99\% deflection rate for a level~7 Missile Shield.
 
-Knock-Knock Opens locked chests and doors. Success rate is related to
-the power of the spell and the complexity of the lock. Don't expect to
-use this spell successfully midgame and onwards.
+\spellentry{Knock-Knock} Opens locked chests and doors. Success rate is
+related to the power of the spell and the complexity of the lock. Don't
+expect to use this spell successfully midgame and onwards.
 
-Detect Secret Acts like you have a high amount of scouting skill. Very
-useful the first time through the game if you don't want to build up
-scouting. Very useless subsequent times. When you need to search, the
-eye will twinkle; however if you have a weak Detect Secret, the eye may
-not pick up on some things.
+\spellentry{Detect Secret} Acts like you have a high amount of scouting
+skill. Very useful the first time through the game if you don't want to build
+up scouting. Very useless subsequent times. When you need to search, the eye
+will twinkle; however if you have a weak Detect Secret, the eye may not pick
+up on some things.
 
-Watchbells Wakes up everyone who is asleep. The success rate of the
-spell depends on how tired the characters are and how long they've been
-sleeping. Not very useful after you get the Mind Control Personal
-skill--even before then, the spell doesn't really work too well if
-you're not already at full stamina.
+\spellentry{Watchbells} Wakes up everyone who is asleep. The success rate of
+the spell depends on how tired the characters are and how long they've been
+sleeping. Not very useful after you get the Mind Control Personal skill--even
+before then, the spell doesn't really work too well if you're not already at
+full stamina.
 
-Weaken Makes the opponent do less damage when they attack. Useful I
-suppose, but I prefer killing them as quickly as possible. Supposedly
-this spell also lowers resistances, which can be very useful, but
-there's no way to tell for certain.
+\spellentry{Weaken} Makes the opponent do less damage when they
+attack. Useful I suppose, but I prefer killing them as quickly as
+possible. Supposedly this spell also lowers resistances, which can be very
+useful, but there's no way to tell for certain.
 
-Level 3 spells: (37 Thaumaturgy) Fireball Once you get this, you'll be
-avoiding usage of Magic Missile except on Undead and fire-resistant
-monsters
+\paragraph{Level 3 spells (37 Thaumaturgy)}
 
-Fire Shield Reduces or eliminates the effectiveness of all Fire Realm
-spells and Fire based attacks. Don't expect it to eliminate spell damage
-to nothing when it is coming from something strong, although Fire Crow
+\spellentry{Fireball} Once you get this, you'll be avoiding usage of Magic
+Missile except on Undead and fire-resistant monsters.
+
+\spellentry{Fire Shield} Reduces or eliminates the effectiveness of all Fire
+Realm spells and Fire based attacks. Don't expect it to eliminate spell
+damage to nothing when it is coming from something strong, although Fire Crow
 breath will be much less painful.
 
-Ice Shield Reduces or eliminates the effectiveness of all Water Realm
-spells and Ice-based attacks. You'll be happy to have this up when
+\spellentry{Ice Shield} Reduces or eliminates the effectiveness of all Water
+Realm spells and Ice-based attacks. You'll be happy to have this up when
 something decides to cast Deep Freeze on you.
 
-Web Paralyzes one target. Yuck. There are better things out there to
-learn; the only monsters you would want to cast this on are incredibly
-resistant to it because they are NPCs or the monster equivalent of one
-If you can paralyze an NPC with this, you're WAAAY above the NPC's
-level.
+\spellentry{Web} Paralyzes one target. Yuck. There are better things out
+there to learn; the only monsters you would want to cast this on are
+incredibly resistant to it because they are NPCs or the monster equivalent of
+one If you can paralyze an NPC with this, you're WAAAY above the NPC's level.
 
-Whipping Rocks For a group hitting spell, this isn't that great. A lot
-of monsters have enough Earth resistance to make this spell relatively
-useless--however, when the damage gets through it is all right.
+\spellentry{Whipping Rocks} For a group hitting spell, this isn't that
+great. A lot of monsters have enough Earth resistance to make this spell
+relatively useless--however, when the damage gets through it is all right.
 
-Stink Bomb Not a very useful spell. It will hit from 1-3 targets only,
-which explains the relatively inexpensive casting cost. However, Shrill
-Sound and Magic Missile are better, AND you get them earlier. If you
-think the added chance of Nausea is worth it though, go right ahead and
-get it.
+\spellentry{Stink Bomb} Not a very useful spell. It will hit from 1-3 targets
+only, which explains the relatively inexpensive casting cost. However, Shrill
+Sound and Magic Missile are better, AND you get them earlier. If you think
+the added chance of Nausea is worth it though, go right ahead and get it.
 
-Air Pocket Deflects Asphyxiation spells and reduces the effectiveness of
-incoming Air-based spells that stick around as clouds. It also reduces
-the effectiveness of breath weapons like Dragonlizard breath. Don't
-expect this spell to have any effects on Whirlwind or Firestorm however.
+\spellentry{Air Pocket} Deflects Asphyxiation spells and reduces the
+effectiveness of incoming Air-based spells that stick around as clouds. It
+also reduces the effectiveness of breath weapons like Dragonlizard
+breath. Don't expect this spell to have any effects on Whirlwind or Firestorm
+however.
 
-Blink Randomly makes you invisible/uninvisible during the round. You
-will always become uninvisible to attack. Lasts quite a while too. Don't
-bother with this spell if the character knows Ninjitsu though.
+\spellentry{Blink} Randomly makes you invisible\fshyp{}uninvisible during the
+round. You will always become uninvisible to attack. Lasts quite a while
+too. Don't bother with this spell if the character knows Ninjitsu though.
 
-Level 4 spells: (54 Thaumaturgy) Iceball The Ice equivalent of Fireball,
-only more expensive. But then, it hurts more, so that's a fair trade
-off. With Fireball and Iceball in your belt, you're probably finished
-with mass-target spells for a long while through the game--at least for
-your mage.
+\paragraph{Level 4 spells (54 Thaumaturgy)}
 
-Magic Screen Reduces the effectiveness of all incoming spells and
-spell-like attacks. That includes breath weapons and fireball-like
-blasts, but not little laser beams like the ones the T'Rang Tecniks use
-to attack. Remember: this can be casted outside of battle.
+\spellentry{Iceball} The Ice equivalent of Fireball, only more expensive. But
+then, it hurts more, so that's a fair trade off. With Fireball and Iceball in
+your belt, you're probably finished with mass-target spells for a long while
+through the game--at least for your mage.
 
-Conjuration Summons a monster to help you. They range from the pathetic
-Vulture at a level 1 casting to perhaps Fieros and Myxlmynx at level 7
-(which are pretty darn useful). The best out of the three summoning
-spells if you want magical damage.
+\spellentry{Magic Screen} Reduces the effectiveness of all incoming spells
+and spell-like attacks. That includes breath weapons and fireball-like
+blasts, but not little laser beams like the ones the T'Rang Tecniks use to
+attack. Remember: this can be casted outside of battle.
 
-Armormelt Makes the opponent easier to hit. Think of it as the opposite
-of Armor Shield, except it targets everyone.
+\spellentry{Conjuration} Summons a monster to help you. They range from the
+pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
+7 (which are pretty darn useful). The best out of the three summoning spells
+if you want magical damage.
 
-Crush Does up to 200 damage to one target. Of course, it misses so much
-that it just isn't worth it. That's right, MISSES, not resisted.
+\spellentry{Armormelt} Makes the opponent easier to hit. Think of it as the
+opposite of Armor Shield, except it targets everyone.
 
-Wizard Eye Gives an overhead view of the area--just like you had a
-Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you,
-unless you've been skimping on your Mapping skill or don't know if there
-is a secret passage behind a wall.
+\spellentry{Crush} Does up to 200 damage to one target. Of course, it misses
+so much that it just isn't worth it. That's right, MISSES, not resisted.
 
-Spooks A Terror spell that affects all opponents. I don't recommend it.
+\spellentry{Wizard Eye} Gives an overhead view of the area--just like you had
+a Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you, unless
+you've been skimping on your Mapping skill or don't know if there is a secret
+passage behind a wall.
 
-Level 5 spells: (72 Thaumaturgy) Prismic Missile Causes random status
-ailments or damage. It is more likely to cause damage on weaker
-opponents and more likely to cause status ailments (which rarely
-includes ``withers and dies'') on more powerful ones. Keep in mind that
-this won't work on something with 100\% or greater Light Resistance,
-like Man O' Groves.
+\spellentry{Spooks} A Terror spell that affects all opponents. I don't
+recommend it.
 
-Anti-Magic Tries to prevent a group from casting spells successfully.
-Not too useful when you're fighting multiple groups of spellcasters as
-it is better to just off them all right off the bat, but insanely useful
-when fighting one group of spellcasters if you want to conserve on your
-mass-target spells.
+\paragraph{Level 5 spells (72 Thaumaturgy)}
 
-Levitate Prevents damage if you fall into a pit, and augments your
-Climbing skill when you climb. Levitate won't help you if you jump off a
+\spellentry{Prismic Missile} Causes random status ailments or damage. It is
+more likely to cause damage on weaker opponents and more likely to cause
+status ailments (which rarely includes ``withers and dies'') on more powerful
+ones. Keep in mind that this won't work on something with 100\% or greater
+Light Resistance, like Man~O'~Groves.
+
+\spellentry{Anti-Magic} Tries to prevent a group from casting spells
+successfully.  Not too useful when you're fighting multiple groups of
+spellcasters as it is better to just off them all right off the bat, but
+insanely useful when fighting one group of spellcasters if you want to
+conserve on your mass-target spells.
+
+\spellentry{Levitate} Prevents damage if you fall into a pit, and augments
+your Climbing skill when you climb. Levitate won't help you if you jump off a
 cliff however; you'll still die. The power level in this case is for
-duration, not damage prevented as a level 1 Levitate will protect you
-from falling into pits.
+duration, not damage prevented as a level~1 Levitate will protect you from
+falling into pits.
 
-Deep Freeze Learn to love this spell. It is the most consistently
-damaging spell in the game--which is why you need Ice Shield when
-monsters cast it on you!
+\spellentry{Deep Freeze} Learn to love this spell. It is the most
+consistently damaging spell in the game--which is why you need Ice Shield
+when monsters cast it on you!
 
-Level 6 spells: (90 Thaumaturgy) Firestorm Fun fun fun. Burns the enemy
-for a small amount for several turns. Very useful up to mid-game to kill
-things--after that it's useful to add a bit of damage here and there to
-cut battle time down.
+\paragraph{Level 6 spells (90 Thaumaturgy)}
 
-Astral Gate Instantly kills demons. Since it's specialized, getting this
-is up to you. You \emph{will} run into demons however.
+\spellentry{Firestorm} Fun fun fun. Burns the enemy for a small amount for
+several turns. Very useful up to mid-game to kill things--after that it's
+useful to add a bit of damage here and there to cut battle time down.
 
-Zap Undead Useless. Don't waste your time with this spell--anything
-undead you find is either going to be real easy or real resistant to
-this expensive spell.
+\spellentry{Astral Gate} Instantly kills demons. Since it's specialized,
+getting this is up to you. You \emph{will} run into demons however.
 
-Recharge Very useful when used on items that have the effect of
-Magicfood when used and can be used multiple times. Otherwise mildly
-useful to get back charges on items like the Amulet of Asphyxiation.
+\spellentry{Zap Undead} Useless. Don't waste your time with this
+spell--anything undead you find is either going to be real easy or real
+resistant to this expensive spell.
 
-Noxious Fumes Not very useful. Just a better version of Stink Bomb that
-hits a group. However, there is a much better chance of nausea than
+\spellentry{Recharge} Very useful when used on items that have the effect of
+Magicfood when used and can be used multiple times. Otherwise mildly useful
+to get back charges on items like the Amulet of Asphyxiation.
+
+\spellentry{Noxious Fumes} Not very useful. Just a better version of Stink
+Bomb that hits a group. However, there is a much better chance of nausea than
 Stink Bomb.
 
-Asphyxiation Wipes out lower level critters with ease. You can get this
-decently fast with a mage, so try to grab this spell as fast as possible
-if you're on hard mode and the 5 groups of critters that ambush you each
-fight start to get on your nerves. Becomes useless near the end of the
+\spellentry{Asphyxiation} Wipes out lower level critters with ease. You can
+get this decently fast with a mage, so try to grab this spell as fast as
+possible if you're on hard mode and the 5 groups of critters that ambush you
+each fight start to get on your nerves. Becomes useless near the end of the
 game though.
 
-Level 7 spells: (98 Thaumaturgy) Nuclear Blast Can't go wrong with this
-spell. Just watch your Fire spell points.
+\paragraph{Level 7 spells (98 Thaumaturgy)}
 
-Ressurection You can always quit-reload, and unlike Ressurection, you
-don't have to wait forever to get it. However, since it can be used in a
-fight, it isn't totally useless. However, if you're the perfectionist
-type you're probably going to skip this spell. If you ressurect a
-character, the character loses 1 point of Vitality and their life
-counter increases by 1.
+\spellentry{Nuclear Blast} Can't go wrong with this spell. Just watch your
+Fire spell points.
 
-Theology (Priest spellbook)
+\spellentry{Ressurection} You can always quit-reload, and unlike
+Ressurection, you don't have to wait forever to get it. However, since it can
+be used in a fight, it isn't totally useless. However, if you're the
+perfectionist type you're probably going to skip this spell. If you ressurect
+a character, the character loses 1 point of Vitality and their life counter
+increases by~1.
 
-Level 1 spells: Heal Wounds Get it if you like it, get it if you don't
+\subsubsection{Theology (Priest spellbook)}
+\label{sec:theology-priest-spellbook}
 
-Make Wounds An attacking spell which uses spell points better suited for
-healing? I sure don't like that. You might, but saving the spell points
-for healing will save you some nap time
+\paragraph{Level 1 spells}
 
-Stamina Get it if you like it, get it if you don't
+\spellentry{Heal} Wounds Get it if you like it, get it if you don't.
 
-Bless Grants you bonuses to hit. Hey, I'd take that any day. Even later
-in the game, this spell is useful.
+\spellentry{Make Wounds} An attacking spell which uses spell points better
+suited for healing? I sure don't like that. You might, but saving the spell
+points for healing will save you some nap time.
 
-Charm Paralyzes an opponent. Out of battle, it makes it easier to make
-friends with NPCs. If you have diplomatic problems, this may be useful.
-Otherwise, skip for a better spell unless you have no choice.
+\spellentry{Stamina} Get it if you like it, get it if you don't.
 
-Level 2 spells: (18 Theology) Enchanted Blade Helps with hitting and
-dealing damage, AND you can cast it out of battle. Love this spell
+\spellentry{Bless} Grants you bonuses to hit. Hey, I'd take that any
+day. Even later in the game, this spell is useful.
 
-Dispel Undead Only works on undead, but there's a lot of undead in the
-game. It works more often on the skeleton types of undead than the ghost
-types of undead. Keep in mind that any of the ``Spectral'' monsters like
-Spectral Ravens or Spectral Moths are considered undead as well. Don't
+\spellentry{Charm} Paralyzes an opponent. Out of battle, it makes it easier
+to make friends with NPCs. If you have diplomatic problems, this may be
+useful.  Otherwise, skip for a better spell unless you have no choice.
+
+\paragraph{Level 2 spells (18 Theology)}
+
+\spellentry{Enchanted Blade} Helps with hitting and dealing damage, AND you
+can cast it out of battle. Love this spell.
+
+\spellentry{Dispel Undead} Only works on undead, but there's a lot of undead
+in the game. It works more often on the skeleton types of undead than the
+ghost types of undead. Keep in mind that any of the ``Spectral'' monsters
+like Spectral Ravens or Spectral Moths are considered undead as well. Don't
 expect it to work too well on some unique undead monsters, with a very
 notable exception of the ones in Witch Mountains.
 
-Cure Lesser Condition Cures or reduces the duration of the
+\spellentry{Cure Lesser Condition} Cures or reduces the duration of the
 ``Irritation,'' ``Sleep,'' ``Afraid,'' ``Blind,'' and ``Nausea''
 ailments. This spell is very useful to cut down on the time you spend
-sleeping, and if you run out of Mental spell points it is no big deal,
-so there is no need to ration uses of this spell.
+sleeping, and if you run out of Mental spell points it is no big deal, so
+there is no need to ration uses of this spell.
 
-Divine Trap Helps to identify which trap a chest is booby trapped with.
-You will only need it if your Skulduggery character has a low amount of
-Skulduggery, or if you are unfamiliar with guessing the traps of the
-game.
+\spellentry{Divine Trap} Helps to identify which trap a chest is booby
+trapped with.  You will only need it if your Skulduggery character has a low
+amount of Skulduggery, or if you are unfamiliar with guessing the traps of
+the game.
 
-Identify Tells you how much damage (if applicable) the item does and
-what special effects it may have. If it has a special power, it won't
-tell you what it is, but it will mention the that it has one. Special
-powers are where when you equip the item, it asks you if you want to
-invoke its special power, and generally are very limited in usage. This
-is best used as a ``what does this item do'' check, where you cast and
-reload--however, for some things (like weapon damage for some weapons)
-it will give the wrong numbers
+\spellentry{Identify} Tells you how much damage (if applicable) the item does
+and what special effects it may have. If it has a special power, it won't
+tell you what it is, but it will mention the that it has one. Special powers
+are where when you equip the item, it asks you if you want to invoke its
+special power, and generally are very limited in usage. This is best used as
+a ``what does this item do'' check, where you cast and reload--however, for
+some things (like weapon damage for some weapons) it will give the wrong
+numbers.
 
-Slow Slows down an enemy group. Useful when fighting enemies stronger
-than you so that you can try to go first in subsequent rounds. Much more
-useful when combined with Haste to make sure you go first
+\spellentry{Slow} Slows down an enemy group. Useful when fighting enemies
+stronger than you so that you can try to go first in subsequent rounds. Much
+more useful when combined with Haste to make sure you go first.
 
-Level 3 spells: (37 Theology) Hold Monsters Attempts to paralyze a
-group. Unlike Web or Paralyze, the ``Paralyze'' ailment caused by this
-spell is easily removed by an attack.
+\paragraph{Level 3 spells (37 Theology)}
 
-Sane Mind Cures or reduces the duration of the ``Insanity'' ailment.
+\spellentry{Hold Monsters} Attempts to paralyze a group. Unlike Web or
+Paralyze, the ``Paralyze'' ailment caused by this spell is easily removed by
+an attack.
 
-Silence Silences a group of monsters. Don't try it on the Umpani, most
-Munks, Gorn Rangers, and other Alchemical spellcasters
+\spellentry{Sane Mind} Cures or reduces the duration of the ``Insanity''
+ailment.
 
-Armorplate Improves the armor class of each character (although you
-won't see any changes in the review screen). The bonus is that it can be
-casted outside of battle
+\spellentry{Silence} Silences a group of monsters. Don't try it on the
+Umpani, most Munks, Gorn Rangers, and other Alchemical spellcasters.
 
-Blades Does decent damage, especially considering that it's a damaging
+\spellentry{Armorplate} Improves the armor class of each character (although
+you won't see any changes in the review screen). The bonus is that it can be
+casted outside of battle.
+
+\spellentry{Blades} Does decent damage, especially considering that it's a damaging
 spell the Priest has access to. After multiple castings of Armorplate,
 you'll want to do \emph{something} with all the spare Earth spell points
 you have.
 
-Haste Speeds up your party. Very useful in fights against monsters
-faster than you (or higher level).
+\spellentry{Haste} Speeds up your party. Very useful in fights against
+monsters faster than you (or higher level).
 
-Cure Paralysis Cures or reduces the duration of the ``Paralyze''
+\spellentry{Cure Paralysis} Cures or reduces the duration of the ``Paralyze''
 ailment. Useful. Get it. \texttt{:)}
 
-Restfull Restores everyone's stamina. The amount restored is less than
-what you would get back if you casted Stamina on each character, but the
-convenience makes this spell useful. Still, if you can, there are better
-spells to get than this.
+\spellentry{Restfull} Restores everyone's stamina. The amount restored is
+less than what you would get back if you casted Stamina on each character,
+but the convenience makes this spell useful. Still, if you can, there are
+better spells to get than this.
 
-Level 4 spells: (54 Theology) Conjuration Summons a monster to help you.
-They range from the pathetic Vulture at a level 1 casting to perhaps
-Fieros and Myxlmynx at level 7 (which are pretty darn useful). The best
-out of the three summoning spells if you want magical damage.
+\paragraph{Level 4 spells (54 Theology)}
 
-Paralyze Paralyzes an enemy. Is about as useful as Web is for mages and
-Alchemists.
+\spellentry{Conjuration} Summons a monster to help you.  They range from the
+pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
+7 (which are pretty darn useful). The best out of the three summoning spells
+if you want magical damage.
 
-Superman VERY useful. It reduces the amount of stamina you use when you
-take a swing at a monster, or whatever form of attack you use.
+\spellentry{Paralyze} Paralyzes an enemy. Is about as useful as Web is for
+mages and Alchemists.
 
-Cure Poison Cures or reduces the ``Poison'' ailment, or reduces the
-``Badly Poisoned'' ailment to ``Poison''. Grab this quickly--you won't
+\spellentry{Superman} VERY useful. It reduces the amount of stamina you use
+when you take a swing at a monster, or whatever form of attack you use.
+
+\spellentry{Cure Poison} Cures or reduces the ``Poison'' ailment, or reduces
+the ``Badly Poisoned'' ailment to ``Poison''. Grab this quickly--you won't
 always have that Cure Poison potion handy.
 
-Whirlwind Another attacking spell for the Priest. Unfortunately, most
-monsters don't take a whole lot of damage from this, if they get hurt at
+\spellentry{Whirlwind} Another attacking spell for the Priest. Unfortunately,
+most monsters don't take a whole lot of damage from this, if they get hurt at
 all.
 
-Level 5 spells: (72 Theology) Lightning The only Fire spell for Priests,
-and it hits in a group to boot. Grab it as early as possible so that you
-can have as many spell points for it as possible unless you already have
-Fire spell points.
+\paragraph{Level 5 spells (72 Theology)}
 
-Death Instantly kills one target. Not too handy as it doesn't work
-often--the things it works on are easy to kill anyway in most cases
+\spellentry{Lightning} The only Fire spell for Priests, and it hits in a
+group to boot. Grab it as early as possible so that you can have as many
+spell points for it as possible unless you already have Fire spell points.
 
-Remove Curse Makes it possible to unequip a cursed item. Quite useful;
-however, a weak enough Remove Curse will only allow you to unequip some
-items and not others, so make sure you use a level 6 or 7 Remove Curse.
+\spellentry{Death} Instantly kills one target. Not too handy as it doesn't
+work often--the things it works on are easy to kill anyway in most cases.
 
-Healthfull Heals everyone for a small amount of hit points. This spell
-would be nicer if it actually healed more damage--a level 1 Healthfull
-seems to heal around 1-4 damage; you do the math. Still, it's group
-healing, and that's always nice.
+\spellentry{Remove Curse} Makes it possible to unequip a cursed item. Quite
+useful; however, a weak enough Remove Curse will only allow you to unequip
+some items and not others, so make sure you use a level~6 or 7 Remove Curse.
 
-Purify Air Eliminates or reduces the duration of any cloud spells casted
-on your party. Handy when you get pounded with Poison Gas or Firestorm.
+\spellentry{Healthfull} Heals everyone for a small amount of hit points. This
+spell would be nicer if it actually healed more damage--a level~1 Healthfull
+seems to heal around 1-4 damage; you do the math. Still, it's group healing,
+and that's always nice.
 
-Cure Disease Cures the ``Disease'' ailment. If it doesn't go away when
-you cast it, cast a stronger Cure Disease. The higher your vitality, the
-lower the spell level you will need to cure the disease.
+\spellentry{Purify Air} Eliminates or reduces the duration of any cloud
+spells casted on your party. Handy when you get pounded with Poison Gas or
+Firestorm.
 
-Level 6 spells: (90 Theology) Cure Stone Cures the ``Stone'' ailment. If
-it doesn't go away when you cast it, cast a stronger Cure Stone. The
-higher your vitality, the lower the spell level you will need to cure
-the petrification. When cured, the character who was stoned loses 1
-point in Vitality.
+\spellentry{Cure Disease} Cures the ``Disease'' ailment. If it doesn't go
+away when you cast it, cast a stronger Cure Disease. The higher your
+vitality, the lower the spell level you will need to cure the disease.
 
-Locate Object Acts like Wizard Eye, only it shows the locations of any
-chests in the area (not dropped items).
+\paragraph{Level 6 spells (90 Theology)}
 
-Lifesteal Attempts to do a large amount of damage to one enemy and heal
-you with that damage. Your spellcaster will never need to cast Heal
+\spellentry{Cure Stone} Cures the ``Stone'' ailment. If it doesn't go away
+when you cast it, cast a stronger Cure Stone. The higher your vitality, the
+lower the spell level you will need to cure the petrification. When cured,
+the character who was stoned loses 1 point in Vitality.
+
+\spellentry{Locate Object} Acts like Wizard Eye, only it shows the locations
+of any chests in the area (not dropped items).
+
+\spellentry{Lifesteal} Attempts to do a large amount of damage to one enemy
+and heal you with that damage. Your spellcaster will never need to cast Heal
 Wounds on him or herself again. It works on a \emph{lot} of enemies, but
 don't expect it to work on the real nasties like Rexx or Godzylli very
-often--even at level 7
+often--even at level~7.
 
-Astral Gate Instantly kills demons. Since it's specialized, getting this
-is up to you. You \emph{will} run into demons however.
+\spellentry{Astral Gate} Instantly kills demons. Since it's specialized,
+getting this is up to you. You \emph{will} run into demons however.
 
-Recharge Very useful when used on items that have the effect of
-Magicfood when used and can be used multiple times. Otherwise mildly
-useful to get back charges on items like the Amulet of Asphyxiation.
+\spellentry{Recharge} Very useful when used on items that have the effect of
+Magicfood when used and can be used multiple times. Otherwise mildly useful
+to get back charges on items like the Amulet of Asphyxiation.
 
-Level 7 spells: (98 Theology) Locate Person Attempts to find all the
-NPCs. Level 7 Locate Person tends to find all of them.
+\paragraph{Level 7 spells (98 Theology)}
 
-Word of Death The Priest equivalent of Nuclear Blast. Get it if you need
-another source of mass damage.
+\spellentry{Locate Person} Attempts to find all the NPCs. Level~7 Locate
+Person tends to find all of them.
 
-Ressurection You can always quit-reload, and unlike Ressurection you
-don't have to wait forever to get it. However, since it can be used in a
-fight, it isn't totally useless. However, if you're the perfectionist
-type you're probably going to skip this spell. If you ressurect a
-character, the character loses 1 point of Vitality and their life
-counter increases by 1.
+\spellentry{Word of Death} The Priest equivalent of Nuclear Blast. Get it if
+you need another source of mass damage.
 
-Death Wish Tries to instantly kill everything. Better than Death, but
-still horrible. Get it if you really like instant-death; otherwise don't
-bother with it if you have a choice, unless you really need another 20
+\spellentry{Ressurection} You can always quit-reload, and unlike Ressurection
+you don't have to wait forever to get it. However, since it can be used in a
+fight, it isn't totally useless. However, if you're the perfectionist type
+you're probably going to skip this spell. If you ressurect a character, the
+character loses 1 point of Vitality and their life counter increases by~1.
+
+\spellentry{Death Wish} Tries to instantly kill everything. Better than
+Death, but still horrible. Get it if you really like instant-death; otherwise
+don't bother with it if you have a choice, unless you really need another 20
 Divine spell points or you're getting this early in the game.
 
-Theosophy (Psionic spellbook)
+\subsubsection{Theosophy (Psionic spellbook)}
+\label{sec:theosophy-psionic-spellbook}
 
-Level 1 spells: Mental Attack Your typical level 1 damage spell. It has
-the bonus of a large possibility of inflicting ``Insanity'' but this
-bonus is rather useless after mid-game.
+\paragraph{Level 1 spells}
 
-Bless Grants you bonuses to hit. Hey, I'd take that any day. Even later
-in the game, this spell is useful.
+\spellentry{Mental Attack} Your typical level~1 damage spell. It has the
+bonus of a large possibility of inflicting ``Insanity'' but this bonus is
+rather useless after mid-game.
 
-Charm Paralyzes an opponent. Out of battle, it makes it easier to make
-friends with NPCs. If you have diplomatic problems, this may be useful.
-Otherwise, skip for a better spell unless you have no choice.
+\spellentry{Bless} Grants you bonuses to hit. Hey, I'd take that any
+day. Even later in the game, this spell is useful.
 
-Sleep Gives the opponent the ``Asleep'' status for a short time. One of
-the most useful spells in the game, even if your party already has a
-Bard with the Poet's Lute. This becomes useless after mid-game however.
+\spellentry{Charm} Paralyzes an opponent. Out of battle, it makes it easier
+to make friends with NPCs. If you have diplomatic problems, this may be
+useful.  Otherwise, skip for a better spell unless you have no choice.
 
-Heal Wounds There really shouldn't be a reason why you didn't pick this
-as your first spell. Any healing is nice.
+\spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
+time. One of the most useful spells in the game, even if your party already
+has a Bard with the Poet's Lute. This becomes useless after mid-game however.
 
-Stamina Unlike the Priest, get this at your leisure. Still, get it
-quick, as you'll need stamina recovery spells and items in the game.
+\spellentry{Heal} Wounds There really shouldn't be a reason why you didn't
+pick this as your first spell. Any healing is nice.
 
-Terror Attempts to give the ``Afraid'' ailment to a group. Not very
-helpful if you're trying to get experience
+\spellentry{Stamina} Unlike the Priest, get this at your leisure. Still, get
+it quick, as you'll need stamina recovery spells and items in the game.
 
-Level 2 spells: (18 Theosophy)
+\spellentry{Terror} Attempts to give the ``Afraid'' ailment to a group. Not
+very helpful if you're trying to get experience.
 
-Psionic Fires The Psionic equivalent of Fireball, only earlier. Quite
-useful at this point in the game.
+\paragraph{Level 2 spells (18 Theosophy)}
 
-Knock-Knock Opens locked chests and doors. Success rate is related to
-the power of the spell and the complexity of the lock. Don't expect to
-use this spell successfully midgame and onwards.
+\spellentry{Psionic Fires} The Psionic equivalent of Fireball, only
+earlier. Quite useful at this point in the game.
 
-Cure Lesser Condition Cures or reduces the duration of the ailments
-``Irritation,'' ``Sleep,'' ``Afraid,'' ``Blind,'' and ``Nausea.'' This
-spell is not that crucial for the Psionic--everything can be cured with
-a little rest or by the Priest if you have one in your party. In the
-case of ``Nausea,'' make \emph{sure} it is ``Nausea.'' ``Disease'' looks
-a lot like ``Nausea'' if you weren't paying attention whenyou got it.
-The reason why this spell isn't too useful for the Psionic is because
-the Psionic actually needs his/her Mental spell points for spells like
-Mental attack.
+\spellentry{Knock-Knock} Opens locked chests and doors. Success rate is
+related to the power of the spell and the complexity of the lock. Don't
+expect to use this spell successfully midgame and onwards.
 
-Divine Trap Helps to identify which trap a chest is booby trapped with.
-You will only need it if your Skulduggery character has a low amount of
-Skulduggery, or if you are unfamiliar with guessing the traps of the
-game.
+\spellentry{Cure Lesser Condition} Cures or reduces the duration of the
+ailments ``Irritation,'' ``Sleep,'' ``Afraid,'' ``Blind,'' and ``Nausea.''
+This spell is not that crucial for the Psionic--everything can be cured with
+a little rest or by the Priest if you have one in your party. In the case of
+``Nausea,'' make \emph{sure} it is ``Nausea.'' ``Disease'' looks a lot like
+``Nausea'' if you weren't paying attention whenyou got it.  The reason why
+this spell isn't too useful for the Psionic is because the Psionic actually
+needs his/her Mental spell points for spells like Mental attack.
 
-Detect Secret Acts like you have a high amount of scouting skill. Very
-useful the first time through the game if you don't want to build up
-scouting. Very useless subsequent times
+\spellentry{Divine Trap} Helps to identify which trap a chest is booby
+trapped with.  You will only need it if your Skulduggery character has a low
+amount of Skulduggery, or if you are unfamiliar with guessing the traps of
+the game.
 
-Identify Tells you how much damage (if applicable) the item does and
-what special effects it may have. If it has a special power, it won't
-tell you what it is, but it will mention the that it has one. Special
-powers are where when you equip the item, it asks you if you want to
-invoke its special power, and generally are very limited in usage. This
-is best used as a ``what does this item do'' check, where you cast and
-reload--however, for some things (like weapon damage for some weapons)
-it will give the wrong numbers
+\spellentry{Detect Secret} Acts like you have a high amount of scouting
+skill. Very useful the first time through the game if you don't want to build
+up scouting. Very useless subsequent times.
 
-Confusion Attempts to inflicts the ``Insanity'' ailment on an enemy
-group. Insanity is a nice ailment to have inflicted, but after a while
-most of the monsters you want to nail with this are pretty darn
-resistant to it.
+\spellentry{Identify} Tells you how much damage (if applicable) the item does
+and what special effects it may have. If it has a special power, it won't
+tell you what it is, but it will mention the that it has one. Special powers
+are where when you equip the item, it asks you if you want to invoke its
+special power, and generally are very limited in usage. This is best used as
+a ``what does this item do'' check, where you cast and reload--however, for
+some things (like weapon damage for some weapons) it will give the wrong
+numbers.
 
-Watchbells Wakes up everyone who is asleep. The success rate of the
-spell depends on how tired the characters are and how long they've been
-sleeping. Not very useful after you get the Mind Control Personal
-skill--even before then, the spell doesn't really work too well if
-you're not already at full stamina.
+\spellentry{Confusion} Attempts to inflicts the ``Insanity'' ailment on an
+enemy group. Insanity is a nice ailment to have inflicted, but after a while
+most of the monsters you want to nail with this are pretty darn resistant to
+it.
 
-Shrill Sound Hurts an entire enemy group, regardless of number. For the
-Psionic however, it takes a backseat for Psionic Fires in priority
-unless you have mass enemy group problems (i.e.~hordes of Rattkin
-Rogues/Bandits).
+\spellentry{Watchbells} Wakes up everyone who is asleep. The success rate of
+the spell depends on how tired the characters are and how long they've been
+sleeping. Not very useful after you get the Mind Control Personal skill--even
+before then, the spell doesn't really work too well if you're not already at
+full stamina.
 
-Weaken Makes the opponent do less damage when they attack. Useful I
-suppose, but I prefer killing them as quickly as possible. Supposedly
-this spell also lowers resistances, which can be very useful, but
-there's no way to really tell for certain.
+\spellentry{Shrill Sound} Hurts an entire enemy group, regardless of
+number. For the Psionic however, it takes a backseat for Psionic Fires in
+priority unless you have mass enemy group problems (i.e.~hordes of Rattkin
+Rogues\fshyp{}Bandits).
 
-Slow Slows down an enemy group. Useful when fighting enemies stronger
+\spellentry{Weaken} Makes the opponent do less damage when they
+attack. Useful I suppose, but I prefer killing them as quickly as
+possible. Supposedly this spell also lowers resistances, which can be very
+useful, but there's no way to really tell for certain.
+
+\spellentry{Slow} Slows down an enemy group. Useful when fighting enemies stronger
 than you so that you can try to go first in subsequent rounds. Much more
 useful when combined with Haste to make sure you go first.
 
-Level 3 spells: (36 Theosophy) Dazzling Lights The Psionic version of
-Prismic Missile, it dispenses status ailments or just sheer damage. For
-some odd reason, this spell in my experience tends to dispense status
-ailments more than just pure damage--however, the ``withers and dies''
-effect seems to pop up more often with this.
+\paragraph{Level 3 spells (36 Theosophy)}
+
+\spellentry{Dazzling Lights} The Psionic version of Prismic Missile, it
+dispenses status ailments or just sheer damage. For some odd reason, this
+spell in my experience tends to dispense status ailments more than just pure
+damage--however, the ``withers and dies'' effect seems to pop up more often
+with this.
 
 \subparagraph{Note:} This spell will not work on enemies with 100\% or
 greater Light Resistance.
 
-Blades Unlike the Priest, the Psionic already has decent damage dealing
-spells. Still, it's useful when you run out of spell points
+\spellentry{Blades} Unlike the Priest, the Psionic already has decent damage
+dealing spells. Still, it's useful when you run out of spell points.
 
-Hold Monsters Attempts to paralyze an enemy group. Unlike the other
-paralyzing spells, the paralyze effect from this is very likely to go
-away from getting attacked
+\spellentry{Hold Monsters} Attempts to paralyze an enemy group. Unlike the
+other paralyzing spells, the paralyze effect from this is very likely to go
+away from getting attacked.
 
-Mind Read Attempts to read an NPC's mind. You will either see a phrase
-that will trigger some tidbit of information from the NPC, something you
-could have found out by Loring with the NPC, or ``Nothing'' will flash
-on the text part of the screen. Pointless after the first time through
-the game.
+\spellentry{Mind Read} Attempts to read an NPC's mind. You will either see a
+phrase that will trigger some tidbit of information from the NPC, something
+you could have found out by Loring with the NPC, or ``Nothing'' will flash on
+the text part of the screen. Pointless after the first time through the game.
 
-Sane Mind Cures or reduces the duration of the ``Insanity'' ailment.
-Comes in handy at times, as unlike the monsters your characters seem to
-be subsceptible to insanity quite often.
+\spellentry{Sane Mind} Cures or reduces the duration of the ``Insanity''
+ailment.  Comes in handy at times, as unlike the monsters your characters
+seem to be subsceptible to insanity quite often.
 
-Blink Randomly makes the character invisible/visible throughout the
-round. Lasts for quite a while, but is not a suggested spell if you are
-using a Monk to get these spells.
+\spellentry{Blink} Randomly makes the character invisible\fshyp{}visible
+throughout the round. Lasts for quite a while, but is not a suggested spell
+if you are using a Monk to get these spells.
 
-Silence Attempts to silence a group of monsters. Try to avoid casting
-this on Alchemical-casting monsters.
+\spellentry{Silence} Attempts to silence a group of monsters. Try to avoid
+casting this on Alchemical-casting monsters.
 
-Haste Speeds up your party. Quite useful in trying to make everyone go
-first.
+\spellentry{Haste} Speeds up your party. Quite useful in trying to make
+everyone go first.
 
-Cure Paralysis Cures or reduces the duration of the ``Paralysis''
-ailment. Especially useful when the trap goes off in your face and
-leaves you paralyzed for days.
+\spellentry{Cure Paralysis} Cures or reduces the duration of the
+``Paralysis'' ailment. Especially useful when the trap goes off in your face
+and leaves you paralyzed for days.
 
-Level 4 spells: (54 Theosophy) Armormelt Makes it easier to hit and
-damage monsters. Think of it as the opposite of Armor Shield.
+\paragraph{Level 4 spells (54 Theosophy)}
 
-Psionic Blast A group version of Mental Attack, and just about as useful
+\spellentry{Armormelt} Makes it easier to hit and damage monsters. Think of
+it as the opposite of Armor Shield.
 
-Illusion Summons monsters to fight for you. Fantasmogoras are at the
-high end of things that are summoned by this. The best out of the three
+\spellentry{Psionic Blast} A group version of Mental Attack, and just about
+as useful.
+
+\spellentry{Illusion} Summons monsters to fight for you. Fantasmogoras are at
+the high end of things that are summoned by this. The best out of the three
 summon spells if you like instant death spellcasters.
 
-Wizard Eye Gives an overhead view of the area--just like you had a
-Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you,
-unless you've been skimping on your Mapping skill or don't know if there
-is a secret passage behind a wall.
+\spellentry{Wizard Eye} Gives an overhead view of the area--just like you had
+a Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you, unless
+you've been skimping on your Mapping skill or don't know if there is a secret
+passage behind a wall.
 
-Spooks The mass, hit-everything version of Terror. Yay. You're better
-off picking Psionic Blast than this.
+\spellentry{Spooks} The mass, hit-everything version of Terror. Yay. You're
+better off picking Psionic Blast than this.
 
-Paralyze Paralyzes one enemy. Same thing as Web. You're not going to be
-using this successfully when you want to.
+\spellentry{Paralyze} Paralyzes one enemy. Same thing as Web. You're not
+going to be using this successfully when you want to.
 
-Level 5 spells: (72 Theosophy) Death Useless, if it weren't for the fact
-that with the huge amount of Mental spell points the Psionic has, it
-actually might work on something after the umpteenth time. So near
-useless.
+\paragraph{Level 5 spells (72 Theosophy)}
 
-Level 6 spells: (90 Theosophy) Locate Object Is a Wizard Eye spell that
-also shows the locations of chests (but not dropped items)
+\spellentry{Death} Useless, if it weren't for the fact that with the huge
+amount of Mental spell points the Psionic has, it actually might work on
+something after the umpteenth time. So near useless.
 
-Lifesteal The \emph{only} true spell the Psionic will get at high levels
-of Theosophy that is actually quite useful. Take it as soon as you can
-learn it. The massive amounts of healing is really nice, and you kill
-something in the process (sometimes something nasty like a Vampire
-Vulture or a Dragorra)
+\paragraph{Level 6 spells (90 Theosophy)}
 
-Level 7 spells: (98 Theosophy) Mind Flay It's a mass target spell, and
-it's really nice. Unfortunately it is the worst out of all the mass
-target spells because a lot of monsters tend to resist the type of
-damage it deals, just like Psionic Blast and Mental Attack.
+\spellentry{Locate Object} Is a Wizard Eye spell that also shows the
+locations of chests (but not dropped items).
 
-Locate Person Tries to find all the NPCs in the world. A level 7 Locate
-Person tends to find all the NPCs.
+\spellentry{Lifesteal} The \emph{only} true spell the Psionic will get at
+high levels of Theosophy that is actually quite useful. Take it as soon as
+you can learn it. The massive amounts of healing is really nice, and you kill
+something in the process (sometimes something nasty like a Vampire Vulture or
+a Dragorra).
 
-Ressurection You can always quit-reload, and unlike Ressurection, you
-don't have to wait forever to get it. However, since it can be used in a
-fight, it isn't totally useless. However, if you're the perfectionist
-type you're probably going to skip this spell. If you ressurect a
-character, the character loses 1 point of Vitality and their life
-counter increases by 1 Alchemy (Alchemist spellbook)
+\paragraph{Level 7 spells (98 Theosophy)}
 
-Level 1 spells: Acid Splash Your basic level 1 damage spell. A couple
-groups of monsters (the vapors in particular) are pretty much immune to
-acid, but not a lot are
+\spellentry{Mind Flay} It's a mass target spell, and it's really
+nice. Unfortunately it is the worst out of all the mass target spells because
+a lot of monsters tend to resist the type of damage it deals, just like
+Psionic Blast and Mental Attack.
 
-Itching Skin Attempts to inflict the ``Irritated'' ailment on a group of
-monsters. Tends to work on a lot of them (even some boss-like monsters
-like \WviiSPOT{}).
+\spellentry{Locate Person} Tries to find all the NPCs in the world. A level~7
+Locate Person tends to find all the NPCs.
 
-Heal Wounds Heals one guy. There shouldn't be a reason why you aren't
-picking this spell first.
+\spellentry{Ressurection} You can always quit-reload, and unlike
+Ressurection, you don't have to wait forever to get it. However, since it can
+be used in a fight, it isn't totally useless. However, if you're the
+perfectionist type you're probably going to skip this spell. If you ressurect
+a character, the character loses 1 point of Vitality and their life counter
+increases by~1.
 
-Stamina Restores stamina. Very useful, so get it in the early stages of
-the game.
+\subsubsection{Alchemy (Alchemist spellbook)}
+\label{sec:alchemy-alchemists-spellbook}
 
-Sleep Gives the opponent the ``Asleep'' status for a short time. One of
-the most useful spells in the game, even if your party already has a
-Bard with the Poet's Lute. This becomes useless after mid-game however.
+\paragraph{Level 1 spells}
 
-Charm Paralyzes an opponent. Out of battle, it makes it easier to make
-friends with NPCs. If you have diplomatic problems, this may be useful.
-Otherwise, skip for a better spell unless you have no choice.
+\spellentry{Acid Splash} Your basic level~1 damage spell. A couple groups of
+monsters (the vapors in particular) are pretty much immune to acid, but not a
+lot are.
 
-Poison Deals damage and attempts to poison the damaged enemy. Much more
+\spellentry{Itching Skin} Attempts to inflict the ``Irritated'' ailment on a
+group of monsters. Tends to work on a lot of them (even some boss-like
+monsters like \WviiSPOT{}).
+
+\spellentry{Heal Wounds} Heals one guy. There shouldn't be a reason why you
+aren't picking this spell first.
+
+\spellentry{Stamina} Restores stamina. Very useful, so get it in the early
+stages of the game.
+
+\spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
+time. One of the most useful spells in the game, even if your party already
+has a Bard with the Poet's Lute. This becomes useless after mid-game however.
+
+\spellentry{Charm} Paralyzes an opponent. Out of battle, it makes it easier
+to make friends with NPCs. If you have diplomatic problems, this may be
+useful.  Otherwise, skip for a better spell unless you have no choice.
+
+\spellentry{Poison} Deals damage and attempts to poison the damaged enemy. Much more
 useful than Acid Splash in some cases, and less so in others
 
-Level 2 spells: (18 Alchemy) Blinding Flash Attempts to inflict the
-``Blind'' ailment on a group of monsters. Don't expect this to work on
-monsters with light resistance like Man' O' Groves. If Dazzling Lights
-or Prismic Missile don't work on that monster, this won't either
+\paragraph{Level 2 spells (18 Alchemy)}
 
-Cure Lesser Condition Extremely useful for the Alchemist to have--unlike
-the other spellcasters, Alchemists got a lot of ailment-happy spells;
-what do you think happens when they backfire on their spells? \texttt{:)}
+\spellentry{Blinding Flash} Attempts to inflict the ``Blind'' ailment on a
+group of monsters. Don't expect this to work on monsters with light
+resistance like Man' O' Groves. If Dazzling Lights or Prismic Missile don't
+work on that monster, this won't either.
 
-Confusion Yet another ailment spell--it attempts to inflict the
-``Insanity'' ailment on a group of monsters. You won't be using this too
-much after mid-game, as most monsters seem to shrug off this spell.
+\spellentry{Cure Lesser Condition} Extremely useful for the Alchemist to
+have--unlike the other spellcasters, Alchemists got a lot of ailment-happy
+spells; what do you think happens when they backfire on their spells?
+\texttt{:)}
 
-Level 3 spells: (36 Alchemy) Stink Bomb Yuck. You have better ways of
-making people sick. Still, you might like the spell. I don't
+\spellentry{Confusion} Yet another ailment spell--it attempts to inflict the
+``Insanity'' ailment on a group of monsters. You won't be using this too much
+after mid-game, as most monsters seem to shrug off this spell.
 
-Air Pocket Deflects Asphyxiation spells and reduces the effectiveness of
-incoming Air-based spells that stick around as clouds. It also reduces
-the effectiveness of breath weapons like Dragonlizard breath. Don't
-expect this spell to have any effects on Whirlwind or Firestorm however.
+\paragraph{Level 3 spells (36 Alchemy)}
 
-Web You really don't need this spell. What do you prefer, paralyzing one
-guy or Blinding the entire group?
+\spellentry{Stink Bomb} Yuck. You have better ways of making people
+sick. Still, you might like the spell. I don't.
 
-Whipping Rocks Your first group-target damage spell as an Alchemist. The
-fact that it doesn't seem to effectively hit most of the group at times
-can be overlooked in this case, as you have nothing better as a group
-damage spell at this point.
+\spellentry{Air Pocket} Deflects Asphyxiation spells and reduces the
+effectiveness of incoming Air-based spells that stick around as clouds. It
+also reduces the effectiveness of breath weapons like Dragonlizard
+breath. Don't expect this spell to have any effects on Whirlwind or Firestorm
+however.
 
-Cure Paralysis Cures or reduces the duration of the ``Paralyze''
-ailment. Keep it handy Level 4 spells: (54 Alchemy) Fire Bomb Once you
-get this, you can stop using Whipping Rocks if you got it. It's the
-Alchemist's equivalent of Fireball, and as a Fire spell it hits quite
-often. Still, you may pass this up for the Cloud-type spells you get in
-this batch of spells.
+\spellentry{Web} You really don't need this spell. What do you prefer,
+paralyzing one guy or Blinding the entire group?
 
-Acid Bomb A lasting cloud of Acid damage that lasts around 3-4 turns.
-Does decent damage, like Firestorm, only not as much.
+\spellentry{Whipping Rocks} Your first group-target damage spell as an
+Alchemist. The fact that it doesn't seem to effectively hit most of the group
+at times can be overlooked in this case, as you have nothing better as a
+group damage spell at this point.
 
-Crush Tries to do up to 200 points of damage to one enemy. I say
-``tries'' because it misses quite often. That's right, MISSES, not
-resisted.
+\spellentry{Cure Paralysis} Cures or reduces the duration of the ``Paralyze''
+ailment. Keep it handy.
 
-Poison Gas Like Acid Bomb, it is a lasting cloud that sticks around for
-around 3-4 turns. However, unlike Acid Bomb, it has a chance of
-poisoning anyone in the cloud, and if they are hit multiple times, the
-poison lasts longer. Enjoy.
+\paragraph{Level 4 spells (54 Alchemy)}
 
-Cure Poison Cures or reduces the duration of the ``Poison'' ailment. You
-will need this as you get hit with nasty things like Vorpal Swords and
-attacks that poison you on each hit.
+\spellentry{Fire Bomb} Once you get this, you can stop using Whipping Rocks
+if you got it. It's the Alchemist's equivalent of Fireball, and as a Fire
+spell it hits quite often. Still, you may pass this up for the Cloud-type
+spells you get in this batch of spells.
 
-Level 5 spells: (72 Alchemy) Draining Cloud Drains the stamina out of
-the group it is casted on, and lasts for a short while. Useful when
-you're trying to tire out the enemy--especially if they use breath
-attacks or spells.
+\spellentry{Acid Bomb} A lasting cloud of Acid damage that lasts around 3-4
+turns.  Does decent damage, like Firestorm, only not as much.
 
-Cure Disease Cures the ``Disease'' ailment. If it doesn't go away when
-you cast it, cast a stronger Cure Disease. The higher your vitality, the
-lower the spell level you will need to cure the disease.
+\spellentry{Crush} Tries to do up to 200 points of damage to one enemy. I say
+``tries'' because it misses quite often. That's right, MISSES, not resisted.
 
-Purify Air Eliminates or reduces the duration of any cloud spells casted
-on your party. Handy when you get pounded with Poison Gas or Firestorm.
+\spellentry{Poison Gas} Like Acid Bomb, it is a lasting cloud that sticks
+around for around 3-4 turns. However, unlike Acid Bomb, it has a chance of
+poisoning anyone in the cloud, and if they are hit multiple times, the poison
+lasts longer. Enjoy.
 
-Deadly Poison Attempts to make the opponent wither and die; failing
-that, it attempts to damage and inflict the ``Badly Poisoned'' status on
-the opponent. When this spell works, it REALLY works. You'll either love
+\spellentry{Cure Poison} Cures or reduces the duration of the ``Poison''
+ailment. You will need this as you get hit with nasty things like Vorpal
+Swords and attacks that poison you on each hit.
+
+\paragraph{Level 5 spells (72 Alchemy)}
+
+\spellentry{Draining Cloud} Drains the stamina out of the group it is casted
+on, and lasts for a short while. Useful when you're trying to tire out the
+enemy--especially if they use breath attacks or spells.
+
+\spellentry{Cure Disease} Cures the ``Disease'' ailment. If it doesn't go
+away when you cast it, cast a stronger Cure Disease. The higher your
+vitality, the lower the spell level you will need to cure the disease.
+
+\spellentry{Purify Air} Eliminates or reduces the duration of any cloud
+spells casted on your party. Handy when you get pounded with Poison Gas or
+Firestorm.
+
+\spellentry{Deadly Poison} Attempts to make the opponent wither and die;
+failing that, it attempts to damage and inflict the ``Badly Poisoned'' status
+on the opponent. When this spell works, it REALLY works. You'll either love
 this spell or hate it. Either way, it's much better than Death is.
 
-Create Life Creates monsters out of nothing. Monsters range from
-Spectral Moths to Godzylli and Bloodwyrms. The best summoning spell out
-of the three if you want sheer muscle; heck, it's the best period since
-the Godzylli can last much longer than the other summoned creatures.
+\spellentry{Create Life} Creates monsters out of nothing. Monsters range from
+Spectral Moths to Godzylli and Bloodwyrms. The best summoning spell out of
+the three if you want sheer muscle; heck, it's the best period since the
+Godzylli can last much longer than the other summoned creatures.
 
-Level 6 Spells: (90 Alchemy) Toxic Vapors The cloud version of Stink
-Bomb. Very useful, and makes sure that at least even powerful monsters
-can be incapacitated at times.
+\paragraph{Level 6 Spells (90 Alchemy)}
 
-Noxious Fumes Not very useful. Just a better version of Stink Bomb that
-hits a group. However, there is a much better chance of nausea than
+\spellentry{Toxic Vapors} The cloud version of Stink Bomb. Very useful, and
+makes sure that at least even powerful monsters can be incapacitated at
+times.
+
+\spellentry{Noxious Fumes} Not very useful. Just a better version of Stink
+Bomb that hits a group. However, there is a much better chance of nausea than
 Stink Bomb.
 
-Asphyxiation Wipes out lower level critters with ease. You can get this
-decently fast with a mage, so try to grab this spell as fast as possible
-if you're on hard mode and the 5 groups of critters that ambush you each
-fight start to get on your nerves. Becomes useless near the end of the
+\spellentry{Asphyxiation} Wipes out lower level critters with ease. You can
+get this decently fast with a mage, so try to grab this spell as fast as
+possible if you're on hard mode and the 5 groups of critters that ambush you
+each fight start to get on your nerves. Becomes useless near the end of the
 game though.
 
-Cure Stone Cures the ``Stone'' ailment. If it doesn't go away when you
-cast it, cast a stronger Cure Stone. The higher your vitality, the lower
-the spell level you will need to cure the petrification. When cured, the
-character who was stoned loses 1 point in Vitality.
+\spellentry{Cure Stone} Cures the ``Stone'' ailment. If it doesn't go away
+when you cast it, cast a stronger Cure Stone. The higher your vitality, the
+lower the spell level you will need to cure the petrification. When cured,
+the character who was stoned loses 1 point in Vitality.
 
-Level 7 Spells: (98 Alchemy) Deadly Air The Alchemist mass target spell.
-Quite useful. For an air spell, it isn't resisted very much at all
+\paragraph{Level 7 Spells (98 Alchemy)}
 
-Death Cloud The Alchemist instant-death spell. Not very great though,
-especially with that expensive amount of spell points needed
+\spellentry{Deadly Air} The Alchemist mass target spell.  Quite useful. For
+an air spell, it isn't resisted very much at all.
+
+\spellentry{Death} Cloud The Alchemist instant-death spell. Not very great
+though, especially with that expensive amount of spell points needed.
+\end{multicols}
 
 \section{Survival 101}\label{survival-101}
 
@@ -7338,33 +7412,34 @@ especially with that expensive amount of spell points needed
 
 Ailments and their cures:
 
-\paragraph{Sleep} Watchbells, Cure Lesser Condition, (automatic
+\begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{5em}\RaggedRight}
+\item[Sleep] Watchbells, Cure Lesser Condition, (automatic
 rousing)
 
-\paragraph{Afraid} Cure Lesser Condition, (resting--quick)
+\item[Afraid] Cure Lesser Condition, (resting--quick)
 
-\paragraph{Irritated} Cure Lesser Condition, (resting--quick)
+\item[Irritated] Cure Lesser Condition, (resting--quick)
 
-\paragraph{Blindness} Cure Lesser Condition, (resting--quick)
+\item[Blindness] Cure Lesser Condition, (resting--quick)
 
-\paragraph{Nausea} Cure Lesser Condition, (resting--medium)
+\item[Nausea] Cure Lesser Condition, (resting--medium)
 
-\paragraph{Insanity} Sane Mind, (resting--medium)
+\item[Insanity] Sane Mind, (resting--medium)
 
-\paragraph{Paralysis} Cure Paralysis, (resting--long), successful hit in
+\item[Paralysis] Cure Paralysis, (resting--long), successful hit in
 combat (small chance)
 
-\paragraph{Poison} Cure Poison, (resting--short to long and dangerous!)
+\item[Poison] Cure Poison, (resting--short to long and dangerous!)
 
-\paragraph{Badly Poisoned (getting hit with Deadly Poison)} Cure
+\item[Badly Poisoned (getting hit with Deadly Poison)] Cure
 Poison--reduces to Poison
 
-\paragraph{Disease Cure} Cure Disease
+\item[Disease] Cure Disease
 
-\paragraph{Stone Cure} Cure Stone
+\item[Stone] Cure Stone
 
-\paragraph{Death\protect\footnotemark{}} Ressurection
-\footnotetext{“Ailment”}
+\item[Death\protect\footnotemark{}] Ressurection\footnotetext{“Ailment”}
+\end{basedescript}
 
 For ailments that can be cured by resting, the appropriate spell reduces the
 duration of the ailment until it is down to 0 (i.e.~the ailment is
@@ -7457,8 +7532,7 @@ Potential Questions
 \subsubsection{Starting Area (Near New
 City)}\label{starting-area-near-new-city}
 
-Monsters encountered:
-
+Monsters Encountered:
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \tightlist
@@ -7539,9 +7613,8 @@ Castle unless you know exactly what you are doing.
 
 \subsubsection{Starter Dungeon}\label{starter-dungeon}
 
-Monsters encountered:
-
-\begin{multicols}{2}
+Monsters Encountered:
+\begin{multicols}{2}\WviiTwoColumnSetup
   \begin{itemize}
 \item Encountered everywhere
 \begin{itemize}
@@ -7606,9 +7679,9 @@ Dionysceus(via the poppy fields), and Munkharama is lethal.
 
 \subsubsection{New City}\label{new-city}
 
-Monsters encountered (varies by area of New City):
+Monsters Encountered (varies by area of New City):
 
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \tightlist
 \item
@@ -7750,9 +7823,9 @@ map before it switches hands.
 
 \subsubsection{Orkogre Castle}\label{orkogre-castle}
 
+\vbox{%
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item Encountered Everywhere (except below Prison):
 
@@ -7862,7 +7935,7 @@ Monsters Encountered:
   Spectral Ravens (fixed)
 \end{itemize}
 \end{itemize}
-\end{multicols}
+\end{multicols}}
 
 \faqentry{How the heck do I get into the Throne Room? I haven't found a key
   for the place!}
@@ -7914,9 +7987,10 @@ Useful spells on the Shadow Guardian in addition to Air Pocket include Purify
 Air(because of Poison Gas spells it seems to love), Cure Poison, Haste, Magic
 Screen, Armorplate, and Enchanted Blade.  The last three spells (if you have
 any of them) should be casted out of battle before you engage the Shadow
-Guardian.  If you can summon help with Conjuration/Illusion/Create Life, call
-some up the first turn as well With those spells under your belt, the Shadow
-Guardian shouldn't be too much of a problem.
+Guardian.  If you can summon help with
+Conjuration\fshyp{}Illusion\fshyp{}Create Life, call some up the first turn
+as well With those spells under your belt, the Shadow Guardian shouldn't be
+too much of a problem.
 
 \faqentry{Aaack! All the sudden I'm silenced and 20-30 Spectral Ravens fight
   me! What do I do?}
@@ -7943,8 +8017,7 @@ Ravens inflict on you.  Cure Paralysis potions are nice too.
 \subsubsection{Munkharama}\label{munkharama}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item Encountered Everywhere
 
@@ -8332,7 +8405,7 @@ Forest Munks that get a chance to cast stuff on you as well, leaving you
 blind, irritated (both literally and figuratively), and possibly insane,
 making it near impossible for you to beat the Lord of the Dark Forest.
 
-If you have Fireball/Iceball or Nuclear Blast by this point (Nuclear Blast
+If you have Fireball\fshyp{}Iceball or Nuclear Blast by this point (Nuclear Blast
 not very likely at this point unless you had a mage that changed profession
 to a Bishop), the others shouldn't be too much of a problem if you are
 faster. This is why you needed to find the exit first, so that you can come
@@ -8389,7 +8462,7 @@ Fireballs have a nasty effect on my party at this point.
     \item High Fathers (level 6 up)
     \end{itemize}
 
-  \item First level/Temple of the Initiate
+  \item First level\fshyp{}Temple of the Initiate
     \begin{itemize}
       \tightlist
     \item Cachre Sludges
@@ -8400,7 +8473,7 @@ Fireballs have a nasty effect on my party at this point.
     \item Night Rooks
     \end{itemize}
 
-  \item Second level/Temple of Divine Order
+  \item Second level\fshyp{}Temple of Divine Order
     \begin{itemize}
       \tightlist
     \item Night Rooks
@@ -8411,7 +8484,7 @@ Fireballs have a nasty effect on my party at this point.
     \item Stag Weevils
     \end{itemize}
 
-    \item Third level/Temple of Eternal Night
+    \item Third level\fshyp{}Temple of Eternal Night
       \begin{itemize}
         \tightlist
       \item Bantari
@@ -8425,7 +8498,7 @@ Fireballs have a nasty effect on my party at this point.
       \item Stag Weevils
       \end{itemize}
 
-    \item Fourth level/Temple of Aerial Whimsey
+    \item Fourth level\fshyp{}Temple of Aerial Whimsey
       \begin{itemize}
         \tightlist
       \item Bantari
@@ -8441,7 +8514,7 @@ Fireballs have a nasty effect on my party at this point.
       \item Stag Weevils
       \end{itemize}
 
-    \item Fifth level/Temple of Deadly Coffers
+    \item Fifth level\fshyp{}Temple of Deadly Coffers
       \begin{itemize}
         \tightlist
       \item Dragon Rooks
@@ -8454,7 +8527,7 @@ Fireballs have a nasty effect on my party at this point.
       \item Gelimaga
       \end{itemize}
 
-    \item Sixth level/Temple of Wanderers
+    \item Sixth level\fshyp{}Temple of Wanderers
       \begin{itemize}
         \tightlist
       \item Shadow Crusts
@@ -8496,7 +8569,7 @@ Fireballs have a nasty effect on my party at this point.
 
 \faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
 
-Do the Save/Restore method. Save each step \textsc{only} if at most 1 person
+Do the Save\fshyp{}Restore method. Save each step \textsc{only} if at most 1 person
 falls asleep. You only need to make it through the poppy field once doing
 this tedious method. Then turn left at the intersection you will come across
 after the field. Now if you started near Dionysceus, you don't have to go
@@ -8690,7 +8763,6 @@ Whatever you want. You need the Coil for later though.
 \subsubsection{Ukpyr}\label{ukpyr}
 
 Monsters Encountered:
-
 \begin{multicols}{2}\WviiTwoColumnSetup
   \begin{itemize}
     \tightlist
@@ -8762,7 +8834,7 @@ be able to go into the Spaceport Authority without problems.
   traitor! Why?}
 
 Don't put a space between the ‘+’ and the rest of the coordinates. The only
-space in there should be after the 2nd number and before the `D'
+space in there should be after the 2nd number and before the `D'.
 
 \faqentry{I can't get that promotion Lt.~Gromo said I'd get, even though I
   hit the practice target 3 times!}
@@ -8781,8 +8853,7 @@ If you want the items though, get them before meeting General Yamo.
 
 \subsubsection{Rattkin Ruins}\label{rattkin-ruins}
 
-Monsters encountered:
-
+Monsters Encountered:
 \begin{multicols}{2}\WviiTwoColumnSetup
   \begin{itemize}
   \item Encountered everywhere
@@ -8868,8 +8939,8 @@ tree wouldn't let you up.
 
 Steal from a blind rat NPC outside. Check your inventory before and after you
 meet him--you might get something stolen along the way! I've had key items
-stolen this way before, so remember to save/restore until either nothing is
-stolen or an item you don't care about gets stolen.
+stolen this way before, so remember to save\fshyp{}restore until either
+nothing is stolen or an item you don't care about gets stolen.
 
 \faqentry{How do I get in the Funhouse?}
 
@@ -8887,7 +8958,7 @@ Feather Weight potion (but on the main screen!) and set things off.
 
 \faqentry{What does Barlone want?}
 
-Give him a time of the next T'Rang ship to leave/come. You should find the
+Give him a time of the next T'Rang ship to leave\fshyp{}come. You should find the
 information in the Landing Port (in the form of the T'Rang Logbook) and the
 Observation Control Center (in the form of the TX-Coder) in Nyctalinth Use
 the Coder on the Logbook while you're in the full-screen view of your
@@ -8934,7 +9005,6 @@ The Witch Mountains. Have fun looking around. Watch out for Q'ua-tari.
 \subsubsection{Old City}\label{old-city}
 
 Monsters Encountered:
-
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
@@ -8967,8 +9037,7 @@ however, you can go in here as early as after Orkogre Castle.
 \subsubsection{Nyctalinth}\label{nyctalinth}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item Nyctalinth
   \begin{itemize}
@@ -9144,8 +9213,7 @@ Eye skill later and to be on friendly terms with the Helazoid.
 \subsubsection{Witch Mountains}\label{witch-mountains}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Bantari
@@ -9195,8 +9263,7 @@ Why go into the Witch Cave with what you learned of course!
 \subsubsection{Giant Cave}\label{giant-cave}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item \WviiSPOT{} (fixed)
@@ -9253,8 +9320,7 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 \subsubsection{Witch Grove}\label{witch-grove}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Bantari
@@ -9287,9 +9353,9 @@ Dahlia in this area.
 
 \subsubsection{Witch Cave}\label{witch-cave}
 
+\vbox{%
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
@@ -9310,7 +9376,8 @@ Monsters Encountered:
 \item Spectral Ravens
 \item Faerie Witches
 \end{itemize}
-\end{multicols}
+\end{multicols}}
+
 
 \faqentry{Do I HAVE to pay the witches 1000 gold?}
 
@@ -9340,8 +9407,7 @@ disappear no matter how long I take!
 \subsubsection{Ukpyr Mountains}\label{ukpyr-mountains}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Bantari
@@ -9390,9 +9456,9 @@ Monsters Encountered:
 
 Read that handy \qmwordqm{SPHINX} map you just got. The Rebus Egge that you
 got from attempting to get the Wand Majestik in New City is used here--you
-DID assay/identify it eventually to find out what it was to tell it apart
-from other stones right? It's the ``seed'' the map refers to. You're going to
-need to swim at most 3 to 4 spaces by the way.
+DID assay\fshyp{}identify it eventually to find out what it was to tell it
+apart from other stones right? It's the ``seed'' the map refers to. You're
+going to need to swim at most 3 to 4 spaces by the way.
 
 \faqentry{What do I do at the slugs in the floor?}
 
@@ -9400,9 +9466,9 @@ Isn't your Detect Secret going off right now?
 
 \subsubsection{Isle of Crypts \& Mandolian Isles}\label{isle-of-crypts-and-mandolian-isles}
 
+\vbox{%
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item Above ground
   \begin{itemize}
@@ -9440,7 +9506,7 @@ Monsters Encountered:
   \item Witch's Lights
   \end{itemize}
 \end{itemize}
-\end{multicols}
+\end{multicols}}
 
 \faqentry{Um\ldots{}which island do I go to?}
 
@@ -9493,8 +9559,7 @@ before doing so!
 \subsubsection{Dragon Mountains}\label{dragon-mountains}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Emerald Dragons (fixed)
@@ -9657,8 +9722,7 @@ then selling them to Paluke--or anyone other than Dame Ke-li.
 \subsubsection{Hall of Gorrors (in the Isle of Crypts)}\label{hall-of-gorrors-in-the-isle-of-crypts}
 
 Monsters Encountered:
-
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Ra-sep-re-tep (fixed)
@@ -9728,27 +9792,27 @@ companion(s) first though.
 \paragraph{The Spirit D'Arboleth} Watch out for Lifesteal. Otherwise treat
 him the same way as Horragoth, minus the Word of Death.
 
-\paragraph{The Fiend of 9 Worlds} Immediately Hide/Drink Invisibility Potion.
-Pummel him with as many different gas spells as possible, i.e.~Draining
-Cloud, Poison Gas, Toxic Vapors, Firestorm, Acid Bomb. Especially Toxic
-Vapors. Cast Create Life for a distraction. Send out either someone with
-Reflextion or with Armor Shield and other protective and hit-improving spells
-(who can hide again) to attack/hide once he gets nauseous from the Toxic
-Vapors and renew that spell and the non-air based gas spells with a
-vengeance. Casting Armormelt, Haste, (and Missile Shield if you're on expert
-mode) and casting Armor Shield on the attacker should help. Keep the Cure
-Poison and Heal Wounds prepared.
+\paragraph{The Fiend of 9 Worlds} Immediately Hide\fshyp{}Drink Invisibility
+Potion.  Pummel him with as many different gas spells as possible,
+i.e.~Draining Cloud, Poison Gas, Toxic Vapors, Firestorm, Acid
+Bomb. Especially Toxic Vapors. Cast Create Life for a distraction. Send out
+either someone with Reflextion or with Armor Shield and other protective and
+hit-improving spells (who can hide again) to attack\fshyp{}hide once he gets
+nauseous from the Toxic Vapors and renew that spell and the non-air based gas
+spells with a vengeance. Casting Armormelt, Haste, (and Missile Shield if
+you're on expert mode) and casting Armor Shield on the attacker should
+help. Keep the Cure Poison and Heal Wounds prepared.
 
 \paragraph{Beast of 1000 Eyes} He's tough. Very tough. The way I beat him was
 with a level 50th so party on easy mode: Everyone casted beneficial spells
-the first turn (Especially Fire Shield and Missile Shield), then hid/turned
-invisible the next. If no one is visible, he won't attack (usually). Then, I
-casted Create Life to bring out a punching bag for the Beast and pumped the
-Beast with all the Cloud-type spells I had, the same ones as the ones used on
-the Fiend. After that, everyone who could hide went in waves of Attack/Hide
-whenever it seemed like the Beast was overdue for a coughing fit or was
-otherwise distracted by my summoned help, and refreshed the Cloud spells
-constantly. Eventually (after 4 hours) he croaked.
+the first turn (Especially Fire Shield and Missile Shield), then
+hid\fshyp{}turned invisible the next. If no one is visible, he won't attack
+(usually). Then, I casted Create Life to bring out a punching bag for the
+Beast and pumped the Beast with all the Cloud-type spells I had, the same
+ones as the ones used on the Fiend. After that, everyone who could hide went
+in waves of Attack\fshyp{}Hide whenever it seemed like the Beast was overdue for a
+coughing fit or was otherwise distracted by my summoned help, and refreshed
+the Cloud spells constantly. Eventually (after 4 hours) he croaked.
 
 Another suggestion I saw on the Software Specialties board is to equip
 someone who can't hide with the Necromantic Helm, Bat Necklace or another
@@ -9766,7 +9830,7 @@ so level is extremely difficult; once you get your party to around (or over)
 \subsubsection{Hall of the Past}\label{hall-of-the-past}
 
 Monsters Encountered:
-\begin{multicols}{2}
+\begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
   \tightlist
 \item Rexx
@@ -9796,7 +9860,7 @@ commonly used spells I listed waaay earlier. If you didn't use them before,
 you're definitely going to be using them here eventually. The only exception
 is probably Asphyxiation--most things in here aren't affected by it. Bring
 lots of Moser's Mojo Tea your first time through, as well as Heavy
-Heal/Stamina potions. Don't settle for the weaker stuff by this point.
+Heal\fshyp{}Stamina potions. Don't settle for the weaker stuff by this point.
 
 \faqentry{There's a fountain there that I keep getting teleported away from!}
 
@@ -9833,16 +9897,23 @@ into place.
 
 \subsubsection{Tomb of the Astral Dominae}\label{tomb-of-the-astral-dominae}
 
+\vbox{%
 Monsters Encountered:
-Dk. Savant (fixed)
-Savant Kui'sa-ka (fixed)
-Cosmo-Bots (fixed)
-Mega-Bots (fixed)
-Meta-Droids (fixed)
-Battle Droids (fixed)
-Mega-Bots
-Meta-Droids
-Battle Droids
+\begin{multicols}{2}
+\begin{itemize}
+\tightlist
+\item Dk. Savant (fixed)
+\item Savant Kui'sa-ka (fixed)
+\item Cosmo-Bots (fixed)
+\item Mega-Bots (fixed)
+\item Meta-Droids (fixed)
+\item Battle Droids (fixed)
+\item Mega-Bots
+\item Meta-Droids
+\item Battle Droids
+\end{itemize}
+\end{multicols}}
+
 
 \faqentry{Any suggestions on surviving these robots?}
 
@@ -9927,7 +9998,7 @@ Angel's Tongue & Bless & Buy/steal from Brother T'Shober when you first meet him
 Chromatic Lyre & Itching Skin & Land of Dreams. \\[1.2ex]
 Lute of Sloth & Slow & Search the area where you summoned Maa-Gogg the Man'O'Grove for a chest. \\[1.2ex]
 Silent Lyre & Silence & Dionysceus, in the Book of Immortals chest. \\[1.2ex]
-Pipes of Doom & Terror & Buy/steal from Blienmeis at Ratskells in Rattkin Ruins when he is in Ratskells. \\[1.2ex]
+Pipes of Doom & Terror & Buy\fshyp{}steal from Blienmeis at Ratskells in Rattkin Ruins when he is in Ratskells. \\[1.2ex]
 Cornu of Demonspawn & Astral Gate & Kill \WviiSPAWN{} \\[1.2ex]
 Siren's Wail & Confuse & Dragon Mountains, in the pirate chest or a Gorrors chest. \\[1.2ex]
 Horn of Prometheus & Fireball & Gorrors chest or a certain Hall of Past chest. \\[1.2ex]
@@ -9952,16 +10023,16 @@ practicing will learn the skill.
 \paragraph{Reflextion} Ask Blienmeis about ``Reflextion'' when he is in
   Ratskells. He will offer to sell you a Ring of Reflextion for 12000 gold.
   Use the Ring's special ability to give the character using it
-  Reflextion. Only one character/game can get this.
+  Reflextion. Only one character\fshyp{}game can get this.
 
 \paragraph{Power Strike} Use the Gem of Power's special ability to give the
   character using it Power Strike. The Gem of Power is located in the secret
-  room in Murkato's Inner Sanctum. Only one character/game can get this.
+  room in Murkato's Inner Sanctum. Only one character\fshyp{}game can get this.
 
 \paragraph{Eagle Eye} Rescue Jan-Ette from the T'Rang Assassins. Give the
   Helazoid Pennant she gives you to Dame Ke-Li at City of Sky for the
   Helazoid Pendant. Use the Pendant's special ability to give the character
-  using it Eagle Eye. Only one character/game can get this.
+  using it Eagle Eye. Only one character\fshyp{}game can get this.
 
 \paragraph{Mind Control} Kill the Psi-Beast(s) on the Temple of Eternal Night
   level of Dionysceus and return to the room the Danes were in on the same
@@ -9978,8 +10049,9 @@ losing a -5 AC accessory that females can use. In my opinion, the Cobaltine
 Power Glove, the Light Shield, and the Light Sword are all worth it, but not
 the Frontier Phasers.
 
-\faqentry{What do the wandering NPCs sell?}{This is from what I can remember,
-  so there may be some mistakes:}
+\faqentry{What do the wandering NPCs sell?}
+
+This is from what I can remember, so there may be some mistakes:
 
 \begin{multicols}{2}
 \begin{itemize}\RaggedRight{}
@@ -10022,17 +10094,18 @@ the Frontier Phasers.
     \item Bushido Blade (higher levels)
     \item Do-Maru (U)
     \item Do-Maru (L)
-    \item Ninja Cowl \tikzmark{xen-xheng-topbrace}
+      \vbox{%
+    \item Ninja Cowl \protect\tikzmark{xen-xheng-topbrace}
     \item Ninja Garb (U)
     \item Ninja Garb (L)
     \item Tabi Boots \tikzmark{xen-xheng-bottombrace}
-    \item Tosei-do (U) (higher levels)
-    \item Tosei-do (L) (higher levels)
       \begin{tikzpicture}[overlay, remember picture]
         \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
         let \p1=(xen-xheng-topbrace), \p2=(xen-xheng-bottombrace) in
         ({max(\x1,\x2)+2em}, {\y1+0.8em}) -- node[right=0.6em] {\parbox{5em}{may not have all at once}} ({max(\x1,\x2)+2em}, {\y2});
-      \end{tikzpicture}
+      \end{tikzpicture}}
+    \item Tosei-do (U) (higher levels)
+    \item Tosei-do (L) (higher levels)
   \end{itemize}
 
 \item Kymas Turan
@@ -10090,23 +10163,22 @@ Any maps the NPCs may have are always displayed first when you go to the
 anyway.) Leather and Studded Hauberks may be helpful as well as the bows
 and the occasional naginata or halberd
 
-\paragraph{Eryn River} After meeting Brother TShober, take the first path you see
-on the left, and follow it to the first place with water that you see
-Save, and swim north--you'll need 30 swimming however. Follow the path
-to the end; the giant battle at the end is a doozy for a weak party.
-When you open the chest there though, you will get a Crusaders's 2H Axe
-+1, Bracers of Defense, Chain Mail +1 (U), Chain Mail +1 (L), and a
-Crusader Helm as well as gold
+\paragraph{Eryn River} After meeting Brother TShober, take the first path you
+see on the left, and follow it to the first place with water that you see
+Save, and swim north--you'll need 30 swimming however. Follow the path to the
+end; the giant battle at the end is a doozy for a weak party.  When you open
+the chest there though, you will get a Crusaders's 2H Axe +1, Bracers of
+Defense, Chain Mail +1 (U), Chain Mail +1 (L), and a Crusader Helm as well as
+gold
 
-\paragraph{Giant Cave} You can get here early by exploring the Eryn River map (The
-same map that you meet Brother TShober the first time) and locating the
-path that leads to the Witch Mountains area. You should max out your
-swimming however. When you enter, crack open the Journey Map Kit and as
-west and south as possible (you may have to explore the entire west
-area) until you both hit water and can't go west anymore. Now, if you
-have some area effect spells like Fireball handy and lots of Water
-points for Stamina spells (or lots Stamina potions), look at the area
-this way.
+\paragraph{Giant Cave} You can get here early by exploring the Eryn River map
+(The same map that you meet Brother TShober the first time) and locating the
+path that leads to the Witch Mountains area. You should max out your swimming
+however. When you enter, crack open the Journey Map Kit and as west and south
+as possible (you may have to explore the entire west area) until you both hit
+water and can't go west anymore. Now, if you have some area effect spells
+like Fireball handy and lots of Water points for Stamina spells (or lots
+Stamina potions), look at the area this way.
 
 You should be facing south, with a wall to your right, part of the passageway
 to your left, and water in front of you and to the left in front of the other
@@ -10117,11 +10189,11 @@ the wall.  Now for the first annoying part: Take two steps forward and into
 the Glow Mothra fight.  Deal with them.  (Level 4 Asphyxiation works wonders
 here.)
 
-Go back to shore and rest, then get ready to use some spells/items and head
-back into the water facing south all the way until you get to an opening on
-your left.  Go in that watery opening, but before you go into the more open
-room after the opening, get some stamina back and (if you want to, save) walk
-into the room to fight Pirannha Sharks, which are tougher Red Pirannhas.
+Go back to shore and rest, then get ready to use some spells\fshyp{}items and
+head back into the water facing south all the way until you get to an opening
+on your left.  Go in that watery opening, but before you go into the more
+open room after the opening, get some stamina back and (if you want to, save)
+walk into the room to fight Pirannha Sharks, which are tougher Red Pirannhas.
 
 After you've (hopefully) successfully dealt with them, go forward until you
 hit the wall (you should be facing east now), turn right, take a step forward
