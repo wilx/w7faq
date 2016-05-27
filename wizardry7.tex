@@ -91,6 +91,10 @@ contents={%
 \newcommand{\spell}[1]{#1\indexSpell{#1}}
 \newcommand{\indexPlace}[1]{\index{#1}}
 \newcommand{\place}[1]{#1\indexPlace{#1}}
+\newcommand{\indexRace}[1]{\index{#1}}
+\newcommand{\race}[1]{#1\indexRace{#1}}
+\newcommand{\indexClass}[1]{\index{#1}}
+\newcommand{\class}[1]{#1\indexClass{#1}}
 \makeatother
 
 \newcommand{\faqentry}[1]{%
@@ -292,7 +296,7 @@ Perks:
   Skirts. (Sorry, no cross-dressers in the game.) Some of these items
   are the best for the particular class the female may end up in.
 \item
-  Females can become Valkyries, which are Lords with less experience
+  Females can become \class{Valkyrie}s, which are \class{Lord}s with less experience
   point requirements and no guaranteed starting Diplomacy.
 \end{itemize}
 \columnbreak
@@ -311,13 +315,13 @@ Flaws:
 \subsubsection{Overall}\label{overall}
 
 Use Male characters only if you are importing a game from Bane of the
-Cosmic Forge, if you are rolling up a Fighter-type character or a
-Psionic, or you cheat
+Cosmic Forge, if you are rolling up a \class{Fighter}-type character or a
+\class{Psionic}, or you cheat
 
 Use Female characters whenever you are rolling up a spellcaster and all
 other situations that don't apply to male characters--you don't lose
 anything out of it, and it gives you the option to class change into a
-Valkyrie later.
+\class{Valkyrie} later.
 
 \subsection{Races}\label{races}
 
@@ -367,7 +371,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline \hhline{|*{10}{=|}}
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -432,14 +436,14 @@ Convenient Starting Professions
 \tightlist
 \item
   A profession(s) which the race excels at naturally OR A non-basic (not
-  Fighter, Mage, Priest, or Thief) profession that can be achieved with
-  a below average amount of points out of all the races OR A basic
-  profession achievable within 2 points or less.
+  \class{Fighter}, \class{Mage}, \class{Priest}, or \class{Thief}) profession
+  that can be achieved with a below average amount of points out of all the
+  races OR A basic profession achievable within 2 points or less.
 \end{itemize}
 
-\subsubsection{Human}\label{human}
+\subsubsection{\race{Human}}\label{human}
 
-Base Human stats: 9 8 8 9 9 8 8
+Base \race{Human} stats: 9 8 8 9 9 8 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -464,7 +468,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Human:
+Points needed to meet Class Requirements for \race{Human}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -499,7 +503,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -523,7 +527,7 @@ N
 3
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -549,7 +553,7 @@ Mage
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -575,7 +579,7 @@ Priest
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -601,7 +605,7 @@ Thief
 3
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -627,7 +631,7 @@ N
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -653,7 +657,7 @@ Y
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -680,7 +684,7 @@ N
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -707,7 +711,7 @@ Alchemist
 9
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -735,7 +739,7 @@ Y
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -762,7 +766,7 @@ Bishop
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -791,7 +795,7 @@ N
 18
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -818,7 +822,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -845,7 +849,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -881,17 +885,17 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Thief
+  \class{Thief}
 \item
-  Ranger (don't expect your spell points to come back quickly though)
+  \class{Ranger} (don't expect your spell points to come back quickly though)
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Elf}\label{elf}
+\subsubsection{\race{Elf}}\label{elf}
 
-Base Elf stats 7 10 10 7 9 9 8
+Base \race{Elf} stats 7 10 10 7 9 9 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -922,13 +926,13 @@ Suggestions:
 
 \begin{itemize}
 \item
-  When picking an Elf, pick female unless you fully intend to make it a
+  When picking an \race{Elf}, pick female unless you fully intend to make it a
   fighting character.
 \item
   Go for a spellcasting class.
 \end{itemize}
 
-Points needed to meet Class Requirements for Elf:
+Points needed to meet Class Requirements for \race{Elf}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -963,7 +967,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -987,7 +991,7 @@ N
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1013,7 +1017,7 @@ Mage
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1039,7 +1043,7 @@ Priest
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1065,7 +1069,7 @@ Thief
 3
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -1091,7 +1095,7 @@ N
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1116,7 +1120,7 @@ Y
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -1143,7 +1147,7 @@ N
 16
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1170,7 +1174,7 @@ Alchemist
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -1198,7 +1202,7 @@ Y
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1225,7 +1229,7 @@ Bishop
 10
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -1252,7 +1256,7 @@ N
 18
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -1280,7 +1284,7 @@ N
 16
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 6
@@ -1307,7 +1311,7 @@ N
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -1341,21 +1345,21 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Mage
+  \class{Mage}
 \item
-  Priest
+  \class{Priest}
 \item
-  Bard
+  \class{Bard}
 \item
-  Alchemist
+  \class{Alchemist}
 \item
-  Bishop
+  \class{Bishop}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Dwarf}\label{dwarf}
+\subsubsection{\race{Dwarf}}\label{dwarf}
 
-Base Dwarf stats 11 6 10 12 7 7 7
+Base \race{Dwarf} stats 11 6 10 12 7 7 7
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -1378,7 +1382,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Dwarf:
+Points needed to meet Class Requirements for \race{Dwarf}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -1413,7 +1417,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -1437,7 +1441,7 @@ N
 1
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1463,7 +1467,7 @@ Mage
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1489,7 +1493,7 @@ Priest
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1516,7 +1520,7 @@ Thief
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1543,7 +1547,7 @@ N
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1570,7 +1574,7 @@ Y
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1596,7 +1600,7 @@ N
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1623,7 +1627,7 @@ Alchemist
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1649,7 +1653,7 @@ Y
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1674,7 +1678,7 @@ Y
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -1703,7 +1707,7 @@ N
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -1731,7 +1735,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -1760,7 +1764,7 @@ N
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -1794,19 +1798,19 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Priest
+  \class{Priest}
 \item
-  Ranger
+  \class{Ranger}
 \item
-  Valkyrie
+  \class{Valkyrie}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Gnome}\label{gnome}
+\subsubsection{\race{Gnome}}\label{gnome}
 
-Base Gnome Stats 10 7 13 10 8 6 6
+Base \race{Gnome} Stats 10 7 13 10 8 6 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -1814,7 +1818,7 @@ Perks:
 \begin{itemize}
 \tightlist
 \item
-  Magic resistance (i.e.~to spells like Lifesteal or Make Wounds)
+  Magic resistance (i.e.~to spells like \spell{Lifesteal} or Make Wounds)
 \end{itemize}
 \columnbreak
 
@@ -1824,11 +1828,11 @@ Flaws:
 \tightlist
 \item
   Slow. Don't expect them to go first anytime soon unless you sacrifice
-  all your bonus points towards their Speed
+  all your bonus points towards their Speed.
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Gnome:
+Points needed to meet Class Requirements for \race{Gnome}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -1863,7 +1867,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -1887,7 +1891,7 @@ N
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1913,7 +1917,7 @@ Mage
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1938,7 +1942,7 @@ Priest
 0
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1965,7 +1969,7 @@ Thief
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -1993,7 +1997,7 @@ N
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2020,7 +2024,7 @@ Y
 16
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2046,7 +2050,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2073,7 +2077,7 @@ Alchemist
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2101,7 +2105,7 @@ Y
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2127,7 +2131,7 @@ Y
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2156,7 +2160,7 @@ N
 18
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2185,7 +2189,7 @@ N
 21
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -2213,7 +2217,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2248,19 +2252,19 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Priest
+  \class{Priest}
 \item
-  Ranger
+  \class{Ranger}
 \item
-  Valkyrie
+  \class{Valkyrie}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Hobbit}\label{hobbit}
+\subsubsection{\race{Hobbit}}\label{hobbit}
 
-Base Hobbit stats 8 7 6 9 10 7 13
+Base \race{Hobbit} stats 8 7 6 9 10 7 13
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -2284,7 +2288,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Hobbit:
+Points needed to meet Class Requirements for \race{Hobbit}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -2319,7 +2323,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -2343,7 +2347,7 @@ N
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2369,7 +2373,7 @@ Mage
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2395,7 +2399,7 @@ Priest
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2422,7 +2426,7 @@ Thief
 3
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2450,7 +2454,7 @@ N
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2476,7 +2480,7 @@ Y
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -2503,7 +2507,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2530,7 +2534,7 @@ Alchemist
 9
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -2557,7 +2561,7 @@ Y
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2584,7 +2588,7 @@ Bishop
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -2613,7 +2617,7 @@ N
 18
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -2640,7 +2644,7 @@ N
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -2667,7 +2671,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -2703,15 +2707,15 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Thief
+  \class{Thief}
 \item
-  Bard
+  \class{Bard}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Faerie}\label{faerie}
+\subsubsection{\race{Faerie}}\label{faerie}
 
-Base Faerie Stats 5 11 6 6 10 14 12
+Base \race{Faerie} Stats 5 11 6 6 10 14 12
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -2731,7 +2735,7 @@ Perks:
 \item
   Race specific helmet (Faerie Cap)
 \item
-  Race \& class specific weapon (Cane of Corpus for the Faerie Ninja)
+  Race \& class specific weapon (Cane of Corpus for the \race{Faerie} \class{Ninja})
 \end{itemize}
 \columnbreak
 
@@ -2741,7 +2745,7 @@ Flaws:
 \item
   Cannot use most weapons and armor.
 \item
-  Consistency of starting equipment prevents Faerie characters from
+  Consistency of starting equipment prevents \race{Faerie} characters from
   using sometimes irreplaceable equipment such as the Poet's Lute.
 \item
   Low carrying capacity
@@ -2750,7 +2754,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Faerie:
+Points needed to meet Class Requirements for \race{Faerie}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -2785,7 +2789,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 7
@@ -2809,7 +2813,7 @@ N
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2835,7 +2839,7 @@ Mage
 1
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2861,7 +2865,7 @@ Priest
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2887,7 +2891,7 @@ Thief
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -2913,7 +2917,7 @@ N
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2939,7 +2943,7 @@ Bard
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -2965,7 +2969,7 @@ N
 16
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -2992,7 +2996,7 @@ Alchemist
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 7
@@ -3018,7 +3022,7 @@ Y
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3045,7 +3049,7 @@ Bishop
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 7
@@ -3072,7 +3076,7 @@ N
 21
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 7
@@ -3098,7 +3102,7 @@ N
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 8
@@ -3123,7 +3127,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 7
@@ -3157,25 +3161,25 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Mage
+  \class{Mage}
 \item
-  Priest -- Most extended weapons available for Faeries are
-  Priest\fshyp{}Bishop.
+  \class{Priest} -- Most extended weapons available for \race{Faerie}s are
+  \class{Priest}\fshyp{}\class{Bishop}.
 \item
-  Thief
+  \class{Thief}
 \item
-  Alchemist
+  \class{Alchemist}
 \item
-  Bard -- A pointless choice after playing as you do not get the Poet's
+  \class{Bard} -- A pointless choice after playing as you do not get the Poet's
   Lute.
 \item
-  Samurai -- A semi-useless choice as you cannot wear most decent armor.
+  \class{Samurai} -- A semi-useless choice as you cannot wear most decent armor.
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Lizardman}\label{lizardman}
+\subsubsection{\race{Lizardman}}\label{lizardman}
 
-Base Lizardman Stats 12 5 5 14 8 10 3
+Base \race{Lizardman} Stats 12 5 5 14 8 10 3
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -3202,7 +3206,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Lizardman:
+Points needed to meet Class Requirements for \race{Lizardman}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -3237,7 +3241,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3260,7 +3264,7 @@ N
 0
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3286,7 +3290,7 @@ Mage
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3312,7 +3316,7 @@ Priest
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3338,7 +3342,7 @@ Thief
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3365,7 +3369,7 @@ Y
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3391,7 +3395,7 @@ Y
 17
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3416,7 +3420,7 @@ Y
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3443,7 +3447,7 @@ Alchemist
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3470,7 +3474,7 @@ Y
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3496,7 +3500,7 @@ Y
 24
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3523,7 +3527,7 @@ N
 21
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3550,7 +3554,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -3579,7 +3583,7 @@ N
 22
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3613,15 +3617,15 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Dracon}\label{dracon}
+\subsubsection{\race{Dracon}}\label{dracon}
 
-Base Dracon Stats 10 7 6 12 10 8 6
+Base \race{Dracon} Stats 10 7 6 12 10 8 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -3647,7 +3651,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Dracon:
+Points needed to meet Class Requirements for \race{Dracon}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -3682,7 +3686,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -3706,7 +3710,7 @@ N
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3732,7 +3736,7 @@ Mage
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3758,7 +3762,7 @@ Priest
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3784,7 +3788,7 @@ Thief
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 1
@@ -3810,7 +3814,7 @@ N
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3836,7 +3840,7 @@ Y
 10
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3862,7 +3866,7 @@ N
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3889,7 +3893,7 @@ Alchemist
 9
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -3916,7 +3920,7 @@ Y
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -3942,7 +3946,7 @@ Y
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -3970,7 +3974,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -3998,7 +4002,7 @@ N
 16
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -4026,7 +4030,7 @@ N
 18
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -4061,21 +4065,21 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Thief
+  \class{Thief}
 \item
-  Ranger
+  \class{Ranger}
 \item
-  Bishop
+  \class{Bishop}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Rawulf}\label{rawulf}
+\subsubsection{\race{Rawulf}}\label{rawulf}
 
-Base Rawulf stats: 8 6 12 10 8 8 10
+Base \race{Rawulf} stats: 8 6 12 10 8 8 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -4095,7 +4099,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Rawulf:
+Points needed to meet Class Requirements for \race{Rawulf}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -4130,7 +4134,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -4154,7 +4158,7 @@ N
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4180,7 +4184,7 @@ Mage
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4205,7 +4209,7 @@ Priest
 0
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4231,7 +4235,7 @@ Thief
 4
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -4258,7 +4262,7 @@ N
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4284,7 +4288,7 @@ Y
 9
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -4310,7 +4314,7 @@ N
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4337,7 +4341,7 @@ Alchemist
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -4364,7 +4368,7 @@ Y
 10
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4391,7 +4395,7 @@ Bishop
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -4420,7 +4424,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -4447,7 +4451,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4475,7 +4479,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 4
@@ -4510,21 +4514,21 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Priest
+  \class{Priest}
 \item
-  Bard
+  \class{Bard}
 \item
-  Valkyrie
+  \class{Valkyrie}
 \item
-  Lord
+  \class{Lord}
 \item
-  Monk
+  \class{Monk}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Felpurr}\label{felpurr}
+\subsubsection{\race{Felpurr}}\label{felpurr}
 
-Base Felpurr Stats: 7 10 7 7 10 12 10
+Base \race{Felpurr} Stats: 7 10 7 7 10 12 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -4546,7 +4550,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Felpurr:
+Points needed to meet Class Requirements for \race{Felpurr}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -4581,7 +4585,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4605,7 +4609,7 @@ N
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4631,7 +4635,7 @@ Mage
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4657,7 +4661,7 @@ Priest
 5
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4683,7 +4687,7 @@ Thief
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -4709,7 +4713,7 @@ N
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4734,7 +4738,7 @@ Y
 3
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -4760,7 +4764,7 @@ N
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4787,7 +4791,7 @@ Alchemist
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4813,7 +4817,7 @@ Y
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -4840,7 +4844,7 @@ Bishop
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4867,7 +4871,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4895,7 +4899,7 @@ N
 12
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 6
@@ -4921,7 +4925,7 @@ N
 13
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 5
@@ -4955,23 +4959,23 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Mage
+  \class{Mage}
 \item
-  Thief
+  \class{Thief}
 \item
-  Bard
+  \class{Bard}
 \item
-  Samurai
+  \class{Samurai}
 \item
-  Monk
+  \class{Monk}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Mook}\label{mook}
+\subsubsection{\race{Mook}}\label{mook}
 
-Base Mook Stats: 10 10 6 10 7 7 9
+Base \race{Mook} Stats: 10 10 6 10 7 7 9
 
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
@@ -4993,7 +4997,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Points needed to meet Class Requirements for Mook:
+Points needed to meet Class Requirements for \race{Mook}:
 
 \begin{longtable}[]{@{}llllllllll@{}}
 \toprule
@@ -5028,7 +5032,7 @@ F?
 Total
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Fighter
+\class{Fighter}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -5052,7 +5056,7 @@ N
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Mage
+\class{Mage}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5078,7 +5082,7 @@ Mage
 2
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Priest
+\class{Priest}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5104,7 +5108,7 @@ Priest
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Thief
+\class{Thief}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5131,7 +5135,7 @@ Thief
 6
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ranger
+\class{Ranger}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5158,7 +5162,7 @@ N
 7
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bard
+\class{Bard}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5184,7 +5188,7 @@ Y
 8
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Psionic
+\class{Psionic}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5210,7 +5214,7 @@ N
 10
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Alchemist
+\class{Alchemist}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5235,7 +5239,7 @@ N
 11
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Valkyrie
+\class{Valkyrie}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -5263,7 +5267,7 @@ Y
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Bishop
+\class{Bishop}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 \strut\end{minipage} &
@@ -5290,7 +5294,7 @@ Bishop
 14
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Lord
+\class{Lord}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -5319,7 +5323,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Samurai
+\class{Samurai}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -5346,7 +5350,7 @@ N
 15
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Monk
+\class{Monk}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 3
@@ -5373,7 +5377,7 @@ N
 19
 \strut\end{minipage}\tabularnewline
 \begin{minipage}[t]{0.13\columnwidth}\raggedright\strut
-Ninja
+\class{Ninja}
 \strut\end{minipage} &
 \begin{minipage}[t]{0.06\columnwidth}\raggedright\strut
 2
@@ -5408,17 +5412,17 @@ Convenient Starting Professions
 \begin{multicols}{2}\WviiTwoColumnSetup
 \begin{itemize}
 \item
-  Fighter
+  \class{Fighter}
 \item
-  Mage
+  \class{Mage}
 \item
-  Psionic
+  \class{Psionic}
 \end{itemize}
 \end{multicols}
 
 \subsection{Classes}\label{classes}
 
-\subsubsection{Fighter}\label{fighter}
+\subsubsection{\class{Fighter}}\label{fighter}
 
 requirements: 12 0 0 0 0 0 0
 
@@ -5453,22 +5457,22 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Priest→Valkyrie
+  \class{Priest}→\class{Valkyrie}
 \item
-  Mage→Samurai
+  \class{Mage}→\class{Samurai}
 \item
-  Thief→Alchemist→Ninja
+  \class{Thief}→\class{Alchemist}→\class{Ninja}
 \item
-  Ranger→Ninja
+  \class{Ranger}→\class{Ninja}
 \item
-  Valkyrie (females only)
+  \class{Valkyrie} (females only)
 \item
-  Lord
+  \class{Lord}
 \item
-  Samurai
+  \class{Samurai}
 \end{itemize}
 
-\subsubsection{Mage}\label{mage}
+\subsubsection{\class{Mage}}\label{mage}
 
 requirements: 0 12 0 0 0 0 0
 
@@ -5501,22 +5505,22 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Fighter→Samurai
+  \class{Fighter}→\class{Samurai}
 \item
-  Priest→Bishop
+  \class{Priest}→\class{Bishop}
 \item
-  Thief→Alchemist
+  \class{Thief}→\class{Alchemist}
 \item
-  Psionic→Monk
+  \class{Psionic}→\class{Monk}
 \item
-  Bishop→Psionic
+  \class{Bishop}→\class{Psionic}
 \item
-  Bard
+  \class{Bard}
 \item
-  Samurai
+  \class{Samurai}
 \end{itemize}
 
-\subsubsection{Priest}\label{priest}
+\subsubsection{\class{Priest}}\label{priest}
 
 requirements: 0 0 12 0 0 0 0
 
@@ -5531,7 +5535,7 @@ Perks:
 \item
   Starts with healing potions
 \item
-  Starts with a ranged weapon if not Faerie
+  Starts with a ranged weapon if not \race{Faerie}
 \item
   Automatically has the Diplomat skill
 \item
@@ -5555,20 +5559,20 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Fighter→Valkyrie (females only)\fshyp{}Lord
+  \class{Fighter}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}
 \item
-  Mage→Bishop
+  \class{Mage}→\class{Bishop}
 \item
-  Bishop→Valkyrie (females only)\fshyp{}Lord\fshyp{}Psionic
+  \class{Bishop}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}\fshyp{}\class{Psionic}
 \item
-  Psionic→Monk
+  \class{Psionic}→\class{Monk}
 \item
-  Valkyrie (females only)
+  \class{Valkyrie} (females only)
 \item
-  Lord
+  \class{Lord}
 \end{itemize}
 
-\subsubsection{Thief}\label{thief}
+\subsubsection{\class{Thief}}\label{thief}
 
 requirements: 0 0 0 0 12 8 0
 
@@ -5612,20 +5616,20 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Ranger→Ninja
+  \class{Ranger}→\class{Ninja}
 \item
-  Bard→Samurai
+  \class{Bard}→\class{Samurai}
 \item
-  Alchemist→Ninja
+  \class{Alchemist}→\class{Ninja}
 \item
-  Samurai
+  \class{Samurai}
 \item
-  Monk
+  \class{Monk}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Ranger}\label{ranger}
+\subsubsection{\class{Ranger}}\label{ranger}
 
 requirements: 10 8 8 11 10 8 8
 
@@ -5660,7 +5664,7 @@ Flaws:
 \item
   Bows run out of ammo
 \item
-  Scouting is better suited for Fighters
+  Scouting is better suited for \class{Fighter}s
 \item
   Limited weapon selection
 \end{itemize}
@@ -5670,16 +5674,16 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Bard→Samurai
+  \class{Bard}→\class{Samurai}
 \item
-  Alchemist→Ninja
+  \class{Alchemist}→\class{Ninja}
 \item
-  Psionic→Monk
+  \class{Psionic}→\class{Monk}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Bard}\label{bard}
+\subsubsection{\class{Bard}}\label{bard}
 
 requirements: 0 10 0 0 12 8 12
 
@@ -5698,7 +5702,7 @@ Perks:
 \item
   Learns Legerdemain
 \item
-  Starts with a Poet's Lute (unless character is a Faerie)
+  Starts with a Poet's Lute (unless character is a \race{Faerie})
 \item
   Increased skill points to Physical
 \end{itemize}
@@ -5719,14 +5723,14 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Mage
+  \class{Mage}
 \item
-  Thief
+  \class{Thief}
 \item
-  Samurai
+  \class{Samurai}
 \end{itemize}
 
-\subsubsection{Psionic}\label{psionic}
+\subsubsection{\class{Psionic}}\label{psionic}
 
 requirements: 10 14 0 14 0 0 10
 
@@ -5739,7 +5743,7 @@ Perks:
 \item
   Class-specific accessory (PK Crystal)
 \item
-  Starts with Shadow Cloak (unless character is a Faerie)
+  Starts with Shadow Cloak (unless character is a \race{Faerie})
 \item
   Limited Healing capabilities (\spell{Heal Wounds}, \spell{Lifesteal})
 \item
@@ -5753,9 +5757,9 @@ Flaws:
 \tightlist
 \item
   Many monsters resist Mental attacks more often than other attacks,
-  making most of the spells available to the Psionic useless.
+  making most of the spells available to the \class{Psionic} useless.
 \item
-  Shadow Cloak useless if no Thief, Ninja, or Bard in party
+  Shadow Cloak useless if no \class{Thief}, \class{Ninja}, or \class{Bard} in party
 \end{itemize}
 \end{multicols}
 
@@ -5763,14 +5767,14 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Valkyrie (females only)
+  \class{Valkyrie} (females only)
 \item
-  Bishop
+  \class{Bishop}
 \item
-  Lord
+  \class{Lord}
 \end{itemize}
 
-\subsubsection{Alchemist}\label{alchemist}
+\subsubsection{\class{Alchemist}}\label{alchemist}
 
 requirements: 0 13 0 0 13 0 0
 
@@ -5783,7 +5787,7 @@ Perks:
 \item
   Cannot be silenced
 \item
-  Starts with Cherry Bomb (unless starting character is a Faerie)
+  Starts with Cherry Bomb (unless starting character is a \race{Faerie})
 \item
   Class specific accessory (Medicine Bag)
 \item
@@ -5807,16 +5811,16 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Thief
+  \class{Thief}
 \item
-  Ranger→Ninja
+  \class{Ranger}→\class{Ninja}
 \item
-  Bard→Samurai
+  \class{Bard}→\class{Samurai}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Valkyrie}\label{valkyrie}
+\subsubsection{\class{Valkyrie}}\label{valkyrie}
 
 requirements: 10 0 11 11 10 11 8
 
@@ -5831,13 +5835,13 @@ Perks:
 \item
   May use a majority of weapons and the strongest armor available
 \item
-  Anything a Lord can do, a Valkyrie can do better
+  Anything a \class{Lord} can do, a \class{Valkyrie} can do better
 \item
   Healer
 \item
   Greater than normal amount of hit points
 \item
-  Valkyries require less experience to gain a level
+  \class{Valkyrie}s require less experience to gain a level
 \end{itemize}
 \columnbreak
 
@@ -5855,14 +5859,14 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Samurai
+  \class{Samurai}
 \item
-  Monk
+  \class{Monk}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Bishop}\label{bishop}
+\subsubsection{\class{Bishop}}\label{bishop}
 
 requirements: 0 15 15 0 0 0 8
 
@@ -5875,7 +5879,7 @@ Perks:
 \item
   Learns Diplomacy
 \item
-  Can wear better armor than the Priest
+  Can wear better armor than the \class{Priest}
 \item
   Healer
 \item
@@ -5896,13 +5900,13 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Psionic
+  \class{Psionic}
 \item
-  Alchemist
+  \class{Alchemist}
 \end{itemize}
 
 
-\subsubsection{Lord}\label{lord}
+\subsubsection{\class{Lord}}\label{lord}
 
 requirements: 12 9 12 12 9 9 14
 
@@ -5933,11 +5937,11 @@ Flaws:
 \item
   Very expensive experience requirements
 \item
-  Most things a Lord can do, a Valkyrie can do better
+  Most things a \class{Lord} can do, a \class{Valkyrie} can do better
 \item
   Heavy armor weighs a LOT.
 \item
-  Valkyries have smaller experience requirements.
+  \class{Valkyrie}s have smaller experience requirements.
 \end{itemize}
 \end{multicols}
 
@@ -5945,20 +5949,20 @@ Profession changing suggestions:
 
 \begin{itemize}
 \item
-  Priest
+  \class{Priest}
 \item
-  Ranger
+  \class{Ranger}
 \item
-  Bard
+  \class{Bard}
 \item
-  Samurai
+  \class{Samurai}
 \item
-  Monk
+  \class{Monk}
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Samurai}\label{samurai}
+\subsubsection{\class{Samurai}}\label{samurai}
 
 Requirements: 12 11 0 9 12 14 8
 
@@ -5993,12 +5997,12 @@ Profession changing suggestions:
 \begin{itemize}
 \tightlist
 \item
-  Valkyrie (female)
+  \class{Valkyrie} (female)
 \item
-  Monk
+  \class{Monk}
 \end{itemize}
 
-\subsubsection{Monk}\label{monk}
+\subsubsection{\class{Monk}}\label{monk}
 
 Requirements: 13 8 13 0 10 13 8
 
@@ -6040,10 +6044,10 @@ Profession changing suggestions:
 \begin{itemize}
 \tightlist
 \item
-  Ninja
+  \class{Ninja}
 \end{itemize}
 
-\subsubsection{Ninja}\label{ninja}
+\subsubsection{\class{Ninja}}\label{ninja}
 
 Requirements: 12 10 10 12 12 12 0
 
@@ -6070,7 +6074,7 @@ Perks:
 \item
   Limited Healing capabilities (\spell{Heal Wounds})
 \item
-  Weapons Ninjas can use are useful.
+  Weapons \class{Ninja}s can use are useful.
 \item
   Class specific weapons, armor, and accessory (Sai, Nunchuku, Ninjato,
   Ninja Cowl, Ninja Garb~(U), Ninja Garb~(L), Tabi Boots, Blackbelt of 5
@@ -6134,7 +6138,7 @@ however, it is safe to skip this if you remember where everything is.
 5 or 6 in Skulduggery on a character that is going to be your lockpicker. At
 least, start with that amount before you try to disarm a chest. Chests are
 HARD to disarm. You will be Quit/No Save-Restoring very often--having an
-actual Thief in the party instead of a Bard, Ninja, or Ranger substitute can
+actual \class{Thief} in the party instead of a \class{Bard}, \class{Ninja}, or \class{Ranger} substitute can
 eliminate this problem after a couple level ups, as they gain a nice bonus to
 Skulduggery every level up to a certain point.
 
@@ -6161,7 +6165,7 @@ successfully use (not equip and throw) a wand in battle as an item.  This,
 however, doesn't eliminate the need for \spell{Identify} unless you already
 know what an item does.
 
-\paragraph{Ninjutsu} Monks and Ninjas gain an AC bonus from this, in addition
+\paragraph{Ninjutsu} \class{Monk}s and \class{Ninja}s gain an AC bonus from this, in addition
 to anything else that other Ninjutsu practitioners get. They should build
 this up all the time by practicing hiding instead of putting precious skill
 points into it. Anyone else with this simply gains a nice ability to hide and
@@ -6240,51 +6244,52 @@ Party}{The Super Party}}\label{the-super-party}
 
 The Super Party is what everyone wants to end up with at the end of the game,
 but it is very hard to use in the beginning. The reason is because the Super
-Party is a party with hard to get characters such as a Faerie
-Samurai\fshyp{}Monk\fshyp{}Ninja, Elf Lords, or other such hard to get/play
-classes for example. Because these guys are hard to get, you don't have a lot
-of excess points to distribute for other stats. To top it off, the class
-usually has almost double the experience requirements of the
-easier-to-achieve classes such as the Fighter. With all these factors thrown
-together, this party is not recommended for a purist new to the game--various
-maps that hint at what to do are your only clues as to what should be done if
-you do not wish to consult outside sources, and with a Super party it will
-take too long to level them up; the NPCs will have snatched them away before
-you get to them, and the only ways to get your hands on them are buying it
-for 10,000 gold--which you won't have for a long time--or killing them, which
-is very difficult with this kind of party until much much later.
+Party is a party with hard to get characters such as a \race{Faerie}
+\class{Samurai}\fshyp{}\class{Monk}\fshyp{}\class{Ninja}, \race{Elf}
+\class{Lord}s, or other such hard to get/play classes for example. Because
+these guys are hard to get, you don't have a lot of excess points to
+distribute for other stats. To top it off, the class usually has almost
+double the experience requirements of the easier-to-achieve classes such as
+the \class{Fighter}. With all these factors thrown together, this party is
+not recommended for a purist new to the game--various maps that hint at what
+to do are your only clues as to what should be done if you do not wish to
+consult outside sources, and with a Super party it will take too long to
+level them up; the NPCs will have snatched them away before you get to them,
+and the only ways to get your hands on them are buying it for 10,000
+gold--which you won't have for a long time--or killing them, which is very
+difficult with this kind of party until much much later.
 
 Sample Super Party:
 
 \begin{itemize}
 \tightlist
 \item
-  Lizardman Samurai
+  \race{Lizardman} \class{Samurai}
 \item
-  Faerie Ninja
+  \race{Faerie} \class{Ninja}
 \item
-  Elf Lord
+  \race{Elf} \class{Lord}
 \item
-  Mook Monk
+  \race{Mook} \class{Monk}
 \item
-  Faerie Bishop
+  \race{Faerie} \class{Bishop}
 \item
-  Elf Valkyrie
+  \race{Elf} \class{Valkyrie}
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Quick and Easy'
 Party}{The Quick and Easy Party}}\label{the-quick-and-easy-party}
 
-The Quick and Easy Party is the exact opposite of the Super Party. This
-party is usually made up of characters quickly rolled up, and is usually
-something like 2 Fighters, an offensive spellcaster (Mage or a Psionic),
-a healing spellcaster like a Priest, a thief, and maybe a miscellaneous
-character thrown in for fun. Races are chosen by whether the race can
-get a class easier than other races, thereby giving you more points to
-distribute elsewhere. Sometimes, the party will be rolled up with higher
-scores so that you can distribute the excess points as you see fit. The
-game will be easy in the beginning, but after a while you will get the
-urge to change profession as experience requirements get higher and
+The Quick and Easy Party is the exact opposite of the Super Party. This party
+is usually made up of characters quickly rolled up, and is usually something
+like 2 \class{Fighter}s, an offensive spellcaster (\class{Mage} or a
+\class{Psionic}), a healing spellcaster like a \class{Priest}, a thief, and
+maybe a miscellaneous character thrown in for fun. Races are chosen by
+whether the race can get a class easier than other races, thereby giving you
+more points to distribute elsewhere. Sometimes, the party will be rolled up
+with higher scores so that you can distribute the excess points as you see
+fit. The game will be easy in the beginning, but after a while you will get
+the urge to change profession as experience requirements get higher and
 higher and your diversity in what you can do gets lower and lower. Which
 brings us to\ldots{}
 
@@ -6293,17 +6298,17 @@ Sample Quick and Easy Party:
 \begin{itemize}
 \tightlist
 \item
-  Lizardman Fighter
+  \race{Lizardman} \class{Fighter}
 \item
-  Human Ranger
+  \race{Human} \class{Ranger}
 \item
-  Faerie Thief
+  \race{Faerie} \class{Thief}
 \item
-  Rawulf Priest
+  \race{Rawulf} \class{Priest}
 \item
-  Faerie/Elf Mage
+  \race{Faerie}\fshyp{}\race{Elf} \class{Mage}
 \item
-  Mook Psionic
+  \race{Mook} \class{Psionic}
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Dual class'
@@ -6311,14 +6316,14 @@ Party}{The Dual class Party}}\label{the-dual-class-party}
 
 This party is similar to the Quick and Easy Party except for one major
 difference: The characters rolled up are customized to be able to switch
-professions at will. For example, say you have an Elf who can be a
-Ranger You choose Fighter instead, add points to meet the minimum
-requirements for a Ranger, and put any excess points where you want it
+professions at will. For example, say you have an \race{Elf} who can be a
+\class{Ranger} You choose \class{Fighter} instead, add points to meet the minimum
+requirements for a \class{Ranger}, and put any excess points where you want it
 (usually Vitality in this case, as you will be hurting for hit points
 from all the profession changing). The reasoning for this party is to
 mainly take advantage of the relatively low amount of experience needed
 in the first 5-10 levels to accumulate skills and spells quickly--a
-Faery Thief that I converted into a Ninja after hitting level~7 already
+Faery \class{Thief} that I converted into a \class{Ninja} after hitting level~7 already
 had 100 Skulduggery at level~3!
 
 Sample Dual Class Party (Characters rolled with 15 points to distribute):
@@ -6326,18 +6331,21 @@ Sample Dual Class Party (Characters rolled with 15 points to distribute):
 \begin{itemize}
 \tightlist
 \item
-  Elf Fighter → Converts to Ranger at level~10
+  \race{Elf} \class{Fighter} → Converts to \class{Ranger} at level~10
 \item
-  Felpurr Fighter → Converts to Samurai at level~10.
+  \race{Felpurr} \class{Fighter} → Converts to \class{Samurai} at level~10.
 \item
-  Faerie Thief → Converts to Ninja when stats meet minimum Ninja
-  requirements and Skulduggery \textgreater{} 80.
+  \race{Faerie} \class{Thief} → Converts to \class{Ninja} when stats meet
+  minimum \class{Ninja} requirements and Skulduggery \textgreater{} 80.
 \item
-  Elf Priest (F)\protect\footnote{(F) means female} → Converts to Valkyrie when Theology \textgreater{} 80.
+  \race{Elf} \class{Priest} (F)\protect\footnote{(F) means female} →
+  Converts to \class{Valkyrie} when Theology \textgreater{} 80.
 \item
-  Elf Mage (F) → Converts to Bard when Thaumaturgy \textgreater{} 80.
+  \race{Elf} \class{Mage} (F) → Converts to \class{Bard} when Thaumaturgy
+  \textgreater{} 80.
 \item
-  Elf Bard (F) → Converts to Bishop when Mage converts to Bard.
+  \race{Elf} \class{Bard} (F) → Converts to \class{Bishop} when
+  \class{Mage} converts to \class{Bard}.
 \end{itemize}
 
 Assuming that each character gets 15 points to distribute, this is what
@@ -6346,23 +6354,23 @@ would happen normally.
 Stats are given in the order of: Strength, Intelligence, Piety,
 Vitality, Dexterity, Speed, Personality.
 
-\subsubsection{Elf Fighter}
+\subsubsection{\race{Elf} \class{Fighter}}
 \label{sec:elf-fighter}
 
-Elf Base stats:
+\race{Elf} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: 5 points added (meet Fighter requirements)
+  7: 5 points added (meet \class{Fighter} requirements)
 \item
   10:
 \item
   10:
 \item
-  7: 4 points added (meet Ranger requirements)
+  7: 4 points added (meet \class{Ranger} requirements)
 \item
-  9: 1 point added (meet Ranger requirements)
+  9: 1 point added (meet \class{Ranger} requirements)
 \item
   9:
 \item
@@ -6374,25 +6382,25 @@ distribute the excess to Vitality as all the ability scores will be
 reset down to the bare minimum after the profession change; might as
 well get some extra hit points and stamina out of it.
 
-\subsubsection{Felpurr Fighter}
+\subsubsection{\race{Felpurr} \class{Fighter}}
 \label{sec:felpurr-fighter}
 
-Felpurr Base stats:
+\race{Felpurr} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: 5 points added (meet Fighter requirements)
+  7: 5 points added (meet \class{Fighter} requirements)
 \item
-  10: 1 points added (meet Samurai requirements)
+  10: 1 points added (meet \class{Samurai} requirements)
 \item
   7:
 \item
-  7: 2 points added (meet Samurai requirements)
+  7: 2 points added (meet \class{Samurai} requirements)
 \item
-  10: 2 points added (meet Samurai requirements)
+  10: 2 points added (meet \class{Samurai} requirements)
 \item
-  12: 2 points added (meet Samurai requirements)
+  12: 2 points added (meet \class{Samurai} requirements)
 \item
   10:
 \end{itemize}
@@ -6400,23 +6408,23 @@ Felpurr Base stats:
 There are three points to distribute left as you wish. Again, I would
 put it into Vitality.
 
-\subsubsection{Faerie Thief}
+\subsubsection{\race{Faerie} \class{Thief}}
 \label{sec:faerie-thief}
 
-Faerie Base stats:
+\race{Faerie} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  5: 5 points added (almost meet Ninja requirements)
+  5: 5 points added (almost meet \class{Ninja} requirements)
 \item
   11:
 \item
-  6: 3 points added (almost meet Ninja requirements)
+  6: 3 points added (almost meet \class{Ninja} requirements)
 \item
-  6: 5 points added (almost meet Ninja requirements)
+  6: 5 points added (almost meet \class{Ninja} requirements)
 \item
-  10: 2 points added (meet Thief requirements)
+  10: 2 points added (meet \class{Thief} requirements)
 \item
   14:
 \item
@@ -6428,25 +6436,25 @@ level ups to give you the rest of the stat boost you need. This could
 easily be met by level~7 or 8--less if you reload your level ups to get
 the bonuses you want.
 
-\subsubsection{Elf Priest (F)}
+\subsubsection{\race{Elf} \class{Priest} (F)}
 \label{sec:elf-priest-f}
 
-Elf Base stats:
+\race{Elf} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
-  7: -2 for being female, 5 points added (meet Valkyrie requirements)
+  7: -2 for being female, 5 points added (meet \class{Valkyrie} requirements)
 \item
   10:
 \item
-  10: 2 points added (meet Priest requirements)
+  10: 2 points added (meet \class{Priest} requirements)
 \item
-  7: 4 points added (meet Valkyrie requirements)
+  7: 4 points added (meet \class{Valkyrie} requirements)
 \item
-  9: 1 point added (meet Valkyrie requirements)
+  9: 1 point added (meet \class{Valkyrie} requirements)
 \item
-  9: 2 points added (meet Valkyrie requirements)
+  9: 2 points added (meet \class{Valkyrie} requirements)
 \item
   8: +1 for being female
 \end{itemize}
@@ -6455,59 +6463,59 @@ This leaves you with 1 extra point to distribute. Either Vitality or
 Intelligence is a good choice; getting more Academia points to speed up
 getting the higher level spells is nice, but so is more hit points.
 
-\subsubsection{Elf Mage (F)}
+\subsubsection{\race{Elf} \class{Mage} (F)}
 \label{sec:elf-mage-f}
 
-Elf Base stats:
+\race{Elf} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
   7: -2 for being female
 \item
-  10: 2 points added (meet Mage requirements)
+  10: 2 points added (meet \class{Mage} requirements)
 \item
   10:
 \item
   7:
 \item
-  9: 3 points added (meet Bard requirements)
+  9: 3 points added (meet \class{Bard} requirements)
 \item
   9:
 \item
-  8: +1 for being female, 3 points added (meet Bard requirements)
+  8: +1 for being female, 3 points added (meet \class{Bard} requirements)
 \end{itemize}
 
-You've got 7 points to redistribute. As Mages don't have a hope to gain
+You've got 7 points to redistribute. As \class{Mage}s don't have a hope to gain
 a lot of hit points a level, dump them either in Intelligence for
 increased amount of Academia points or in Piety for better spell point
 gain\fshyp{}level and spell point recovery.
 
-\subsubsection{Elf Bard (F)}
+\subsubsection{\race{Elf} \class{Bard} (F)}
 \label{sec:elf-bard-f}
 
-Elf Base stats:
+\race{Elf} Base stats:
 
 \begin{itemize}
 \tightlist
 \item
   7: -2 for being female
 \item
-  10: 5 points added (meet Bishop requirements)
+  10: 5 points added (meet \class{Bishop} requirements)
 \item
-  10: 4 points added (almost meet Bishop requirements)
+  10: 4 points added (almost meet \class{Bishop} requirements)
 \item
   7:
 \item
-  9: 3 points added (meet Bard requirements)
+  9: 3 points added (meet \class{Bard} requirements)
 \item
   9:
 \item
-  8: +1 for being female, 3 points added (meet Bard requirements)
+  8: +1 for being female, 3 points added (meet \class{Bard} requirements)
 \end{itemize}
 
 Again, you have no points to redistribute after that, but like the
-Faerie Thief, level ups will take care of the rest of the stat
+\race{Faerie} \class{Thief}, level ups will take care of the rest of the stat
 requirements--only quicker in this case as you only need Piety to go up
 one.
 
@@ -6542,29 +6550,31 @@ Sample Blender Party:
 \begin{itemize}
 \tightlist
 \item
-  Felpurr Samurai
+  \race{Felpurr} \class{Samurai}
 \item
-  Lizardman Ninja
+  \race{Lizardman} \class{Ninja}
 \item
-  Faerie Monk
+  \race{Faerie} \class{Monk}
 \item
-  Faerie Thief → Converts to Ninja when stats meet minimum Ninja
-  requirements and Skulduggery \textgreater{} 80.
+  \race{Faerie} \class{Thief} → Converts to \class{Ninja} when stats meet
+  minimum \class{Ninja} requirements and Skulduggery \textgreater{} 80.
 \item
-  Elf Priest (F) → Converts to Valkyrie when Theology \textgreater{} 80.
+  \race{Elf} \class{Priest} (F) → Converts to \class{Valkyrie} when
+  Theology \textgreater{} 80.
 \item
-  Hobbit Bard
+  \race{Hobbit} \class{Bard}
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Vanilla'
 Party}{The Vanilla Party}}\label{the-vanilla-party}
 
 Called the Vanilla Party for its simpleness, this party \textsc{never}
-changes classes, so pick carefully. You'll need at least 1 healer, 1
-offensive spellcaster, and 1 Skulduggery character unless you're looking for
-a challenge. After you're familiar with the game, try going through with only
-a single character! It \emph{can} be done. This party is usually done as a
-Quick and Easy party, but Super parties that don't class change are done too
+changes classes, so pick carefully. You'll need at least 1~healer,
+1~offensive spellcaster, and 1~Skulduggery character unless you're looking
+for a challenge. After you're familiar with the game, try going through with
+only a single character! It \emph{can} be done. This party is usually done as
+a Quick and Easy party, but Super parties that don't class change are done
+too
 
 Sample Vanilla Party: (See Sample Quick and Easy Party or Sample Super
 Party)
@@ -6648,8 +6658,8 @@ Be warned however; if you do not have a spell already of the same type
 as the one you wish to scribe in your book (for example, having \spell{Shrill
 Sound} when you scribe \spell{Missile Shield} in the case of a mage), you will
 NOT gain any spell points in that category until a spell from the same
-category is ``learned'' from a level up. For example, an Alchemist
-scribes \spell{Stamina} instead of learning it the normal way. The Alchemist
+category is ``learned'' from a level up. For example, an \class{Alchemist}
+scribes \spell{Stamina} instead of learning it the normal way. The \class{Alchemist}
 will NOT gain any water spell points until he or she learns another
 water spell by a level up--in this case \spell{Cure Paralysis}, \spell{Draining Cloud},
 or \spell{Cure Disease}.
@@ -6712,7 +6722,7 @@ or \spell{Cure Disease}.
 may be off by one or two points.
 
 \begin{multicols}{2}
-\subsubsection{Thaumaturgy (Mage spellbook)}
+\subsubsection{Thaumaturgy (\class{Mage} spellbook)}
 \label{sec:thaumaturgy-mage-spellbook}
 
 \paragraph{Level 1 spells}
@@ -6730,7 +6740,7 @@ already.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a Bard with the Poet's Lute. This becomes useless after mid-game however,
+has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game however,
 as you'll have ways of dealing with multiple targets.
 
 \spellentry{Armor Shield} Grants an Armor Class bonus to a
@@ -6912,7 +6922,7 @@ perfectionist type you're probably going to skip this spell. If you ressurect
 a character, the character loses 1 point of Vitality and their life counter
 increases by~1.
 
-\subsubsection{Theology (Priest spellbook)}
+\subsubsection{Theology (\class{Priest} spellbook)}
 \label{sec:theology-priest-spellbook}
 
 \paragraph{Level 1 spells}
@@ -6985,7 +6995,7 @@ you won't see any changes in the review screen). The bonus is that it can be
 casted outside of battle.
 
 \spellentry{Blades} Does decent damage, especially considering that it's a damaging
-spell the Priest has access to. After multiple castings of \spell{Armorplate},
+spell the \class{Priest} has access to. After multiple castings of \spell{Armorplate},
 you'll want to do \emph{something} with all the spare Earth spell points
 you have.
 
@@ -7008,7 +7018,7 @@ pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
 if you want magical damage.
 
 \spellentry{Paralyze} Paralyzes an enemy. Is about as useful as Web is for
-mages and Alchemists.
+mages and \class{Alchemist}s.
 
 \spellentry{Superman} VERY useful. It reduces the amount of stamina you use
 when you take a swing at a monster, or whatever form of attack you use.
@@ -7017,13 +7027,13 @@ when you take a swing at a monster, or whatever form of attack you use.
 the ``Badly Poisoned'' ailment to ``Poison''. Grab this quickly--you won't
 always have that \spell{Cure Poison} potion handy.
 
-\spellentry{Whirlwind} Another attacking spell for the Priest. Unfortunately,
+\spellentry{Whirlwind} Another attacking spell for the \class{Priest}. Unfortunately,
 most monsters don't take a whole lot of damage from this, if they get hurt at
 all.
 
 \paragraph{Level 5 spells (72 Theology)}
 
-\spellentry{Lightning} The only Fire spell for Priests, and it hits in a
+\spellentry{Lightning} The only Fire spell for \class{Priest}s, and it hits in a
 group to boot. Grab it as early as possible so that you can have as many
 spell points for it as possible unless you already have Fire spell points.
 
@@ -7077,7 +7087,7 @@ to get back charges on items like the Amulet of Asphyxiation.
 \spellentry{Locate Person} Attempts to find all the NPCs. Level~7 \spell{Locate
 Person} tends to find all of them.
 
-\spellentry{Word of Death} The Priest equivalent of \spell{Nuclear
+\spellentry{Word of Death} The \class{Priest} equivalent of \spell{Nuclear
   Blast}. Get it if you need another source of mass damage.
 
 \spellentry{Ressurection} You can always quit-reload, and unlike
@@ -7092,7 +7102,7 @@ increases by~1.
 otherwise don't bother with it if you have a choice, unless you really need
 another 20 Divine spell points or you're getting this early in the game.
 
-\subsubsection{Theosophy (Psionic spellbook)}
+\subsubsection{Theosophy (\class{Psionic} spellbook)}
 \label{sec:theosophy-psionic-spellbook}
 
 \paragraph{Level 1 spells}
@@ -7110,21 +7120,23 @@ useful.  Otherwise, skip for a better spell unless you have no choice.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a Bard with the Poet's Lute. This becomes useless after mid-game however.
+has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game
+however.
 
 \spellentry{Heal Wounds} There really shouldn't be a reason why you didn't
 pick this as your first spell. Any healing is nice.
 
-\spellentry{Stamina} Unlike the Priest, get this at your leisure. Still, get
-it quick, as you'll need stamina recovery spells and items in the game.
+\spellentry{Stamina} Unlike the \class{Priest}, get this at your
+leisure. Still, get it quick, as you'll need stamina recovery spells and
+items in the game.
 
 \spellentry{Terror} Attempts to give the ``Afraid'' ailment to a group. Not
 very helpful if you're trying to get experience.
 
 \paragraph{Level 2 spells (18 Theosophy)}
 
-\spellentry{Psionic Fires} The Psionic equivalent of \spell{Fireball}, only
-earlier. Quite useful at this point in the game.
+\spellentry{Psionic Fires} The \class{Psionic} equivalent of
+\spell{Fireball}, only earlier. Quite useful at this point in the game.
 
 \spellentry{Knock-Knock} Opens locked chests and doors. Success rate is
 related to the power of the spell and the complexity of the lock. Don't
@@ -7132,12 +7144,13 @@ expect to use this spell successfully midgame and onwards.
 
 \spellentry{Cure Lesser Condition} Cures or reduces the duration of the
 ailments ``Irritation,'' ``Sleep,'' ``Afraid,'' ``Blind,'' and ``Nausea.''
-This spell is not that crucial for the Psionic--everything can be cured with
-a little rest or by the Priest if you have one in your party. In the case of
-``Nausea,'' make \emph{sure} it is ``Nausea.'' ``Disease'' looks a lot like
-``Nausea'' if you weren't paying attention whenyou got it.  The reason why
-this spell isn't too useful for the Psionic is because the Psionic actually
-needs his/her Mental spell points for spells like Mental attack.
+This spell is not that crucial for the \class{Psionic}--everything can be
+cured with a little rest or by the \class{Priest} if you have one in your
+party. In the case of ``Nausea,'' make \emph{sure} it is ``Nausea.''
+``Disease'' looks a lot like ``Nausea'' if you weren't paying attention
+whenyou got it.  The reason why this spell isn't too useful for the
+\class{Psionic} is because the \class{Psionic} actually needs his/her Mental
+spell points for spells like Mental attack.
 
 \spellentry{Divine Trap} Helps to identify which trap a chest is booby
 trapped with.  You will only need it if your Skulduggery character has a low
@@ -7169,7 +7182,7 @@ before then, the spell doesn't really work too well if you're not already at
 full stamina.
 
 \spellentry{Shrill Sound} Hurts an entire enemy group, regardless of
-number. For the Psionic however, it takes a backseat for \spell{Psionic
+number. For the \class{Psionic} however, it takes a backseat for \spell{Psionic
   Fires} in priority unless you have mass enemy group problems (i.e.~hordes
 of Rattkin Rogues\fshyp{}Bandits).
 
@@ -7178,23 +7191,24 @@ attack. Useful I suppose, but I prefer killing them as quickly as
 possible. Supposedly this spell also lowers resistances, which can be very
 useful, but there's no way to really tell for certain.
 
-\spellentry{Slow} Slows down an enemy group. Useful when fighting enemies stronger
-than you so that you can try to go first in subsequent rounds. Much more
-useful when combined with \spell{Haste} to make sure you go first.
+\spellentry{Slow} Slows down an enemy group. Useful when fighting enemies
+stronger than you so that you can try to go first in subsequent rounds. Much
+more useful when combined with \spell{Haste} to make sure you go first.
 
 \paragraph{Level 3 spells (36 Theosophy)}
 
-\spellentry{Dazzling Lights} The Psionic version of \spell{Prismic Missile},
-it dispenses status ailments or just sheer damage. For some odd reason, this
-spell in my experience tends to dispense status ailments more than just pure
-damage--however, the ``withers and dies'' effect seems to pop up more often
-with this.
+\spellentry{Dazzling Lights} The \class{Psionic} version of \spell{Prismic
+  Missile}, it dispenses status ailments or just sheer damage. For some odd
+reason, this spell in my experience tends to dispense status ailments more
+than just pure damage--however, the ``withers and dies'' effect seems to pop
+up more often with this.
 
 \subparagraph{Note:} This spell will not work on enemies with 100\% or
 greater Light Resistance.
 
-\spellentry{Blades} Unlike the Priest, the Psionic already has decent damage
-dealing spells. Still, it's useful when you run out of spell points.
+\spellentry{Blades} Unlike the \class{Priest}, the \class{Psionic} already
+has decent damage dealing spells. Still, it's useful when you run out of
+spell points.
 
 \spellentry{Hold Monsters} Attempts to paralyze an enemy group. Unlike the
 other paralyzing spells, the paralyze effect from this is very likely to go
@@ -7211,7 +7225,7 @@ seem to be subsceptible to insanity quite often.
 
 \spellentry{Blink} Randomly makes the character invisible\fshyp{}visible
 throughout the round. Lasts for quite a while, but is not a suggested spell
-if you are using a Monk to get these spells.
+if you are using a \class{Monk} to get these spells.
 
 \spellentry{Silence} Attempts to silence a group of monsters. Try to avoid
 casting this on Alchemical-casting monsters.
@@ -7250,7 +7264,7 @@ not going to be using this successfully when you want to.
 \paragraph{Level 5 spells (72 Theosophy)}
 
 \spellentry{Death} Useless, if it weren't for the fact that with the huge
-amount of Mental spell points the Psionic has, it actually might work on
+amount of Mental spell points the \class{Psionic} has, it actually might work on
 something after the umpteenth time. So near useless.
 
 \paragraph{Level 6 spells (90 Theosophy)}
@@ -7258,7 +7272,7 @@ something after the umpteenth time. So near useless.
 \spellentry{Locate Object} Is a \spell{Wizard Eye} spell that also shows the
 locations of chests (but not dropped items).
 
-\spellentry{Lifesteal} The \emph{only} true spell the Psionic will get at
+\spellentry{Lifesteal} The \emph{only} true spell the \class{Psionic} will get at
 high levels of Theosophy that is actually quite useful. Take it as soon as
 you can learn it. The massive amounts of healing is really nice, and you kill
 something in the process (sometimes something nasty like a Vampire Vulture or
@@ -7281,7 +7295,7 @@ the perfectionist type you're probably going to skip this spell. If you
 ressurect a character, the character loses 1 point of Vitality and their life
 counter increases by~1.
 
-\subsubsection{Alchemy (Alchemist spellbook)}
+\subsubsection{Alchemy (\class{Alchemist} spellbook)}
 \label{sec:alchemy-alchemists-spellbook}
 
 \paragraph{Level 1 spells}
@@ -7302,7 +7316,8 @@ stages of the game.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a Bard with the Poet's Lute. This becomes useless after mid-game however.
+has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game
+however.
 
 \spellentry{Charm} Paralyzes an opponent. Out of battle, it makes it easier
 to make friends with NPCs. If you have diplomatic problems, this may be
@@ -7319,10 +7334,10 @@ group of monsters. Don't expect this to work on monsters with light
 resistance like Man'~O'~Groves. If \spell{Dazzling Lights} or \spell{Prismic
   Missile} don't work on that monster, this won't either.
 
-\spellentry{Cure Lesser Condition} Extremely useful for the Alchemist to
-have--unlike the other spellcasters, Alchemists got a lot of ailment-happy
-spells; what do you think happens when they backfire on their spells?
-\texttt{:)}
+\spellentry{Cure Lesser Condition} Extremely useful for the \class{Alchemist}
+to have--unlike the other spellcasters, \class{Alchemist}s got a lot of
+ailment-happy spells; what do you think happens when they backfire on their
+spells?  \texttt{:)}
 
 \spellentry{Confusion} Yet another ailment spell--it attempts to inflict the
 ``Insanity'' ailment on a group of monsters. You won't be using this too much
@@ -7343,7 +7358,7 @@ breath. Don't expect this spell to have any effects on \spell{Whirlwind} or
 paralyzing one guy or Blinding the entire group?
 
 \spellentry{Whipping Rocks} Your first group-target damage spell as an
-Alchemist. The fact that it doesn't seem to effectively hit most of the group
+\class{Alchemist}. The fact that it doesn't seem to effectively hit most of the group
 at times can be overlooked in this case, as you have nothing better as a
 group damage spell at this point.
 
@@ -7353,7 +7368,7 @@ ailment. Keep it handy.
 \paragraph{Level 4 spells (54 Alchemy)}
 
 \spellentry{Fire Bomb} Once you get this, you can stop using \spell{Whipping
-  Rocks} if you got it. It's the Alchemist's equivalent of \spell{Fireball},
+  Rocks} if you got it. It's the \class{Alchemist}'s equivalent of \spell{Fireball},
 and as a Fire spell it hits quite often. Still, you may pass this up for the
 Cloud-type spells you get in this batch of spells.
 
@@ -7420,10 +7435,10 @@ Vitality.
 
 \paragraph{Level 7 Spells (98 Alchemy)}
 
-\spellentry{Deadly Air} The Alchemist mass target spell.  Quite useful. For
+\spellentry{Deadly Air} The \class{Alchemist} mass target spell.  Quite useful. For
 an air spell, it isn't resisted very much at all.
 
-\spellentry{Death Cloud} The Alchemist instant-death spell. Not very great
+\spellentry{Death Cloud} The \class{Alchemist} instant-death spell. Not very great
 though, especially with that expensive amount of spell points needed.
 \end{multicols}
 
@@ -7689,7 +7704,7 @@ before drinking from any fountain.
 Build levels. Clean out the entire dungeon. And to get to know the game
 better of course. The most important tactic that you will learn over and over
 here is to save before entering unexplored rooms and areas. If you have
-someone with access to Priest spells, try to get \spell{Dispel Undead} if you
+someone with access to \class{Priest} spells, try to get \spell{Dispel Undead} if you
 can--you'll be happy to have it, I will guarantee that. If something seems
 confusing, read the manual!  It is quite descriptive in how to do things. If
 you're using a copied version of the game and didn't bother to get the
@@ -8036,7 +8051,7 @@ of losing the Gem; you may want to use the Gem as a protective item instead
 for a while however--it grants a -2 AC bonus to the wearer which is a lot
 right now.
 
-If you want to fight them now though, bring lots of Faerie Dust to put them
+If you want to fight them now though, bring lots of \race{Faerie} Dust to put them
 to sleep, and ready your \spell{Dispel Undead} and any bombs that you may
 have found or bought.  You may want some \spell{Cure Lesser Condition}
 potions in case a party member manages to run away from the fight because of
@@ -8411,12 +8426,12 @@ giant--they tend to squash you like a bug if they hit you. The annoying
 thing about the Frothing Munks though is that they throw up on you--and
 you get diseased!
 
-However, the Monks are at least weak against \spell{Asphyxiation} (or a mass
-target damage spell like \spell{Nuclear Blast}), so if you have that and Cure
-Disease, they'll be an easy source of XP for you. Keep in mind that they
-don't have a lot of hit points if you try using \spell{Nuclear Blast} or another
-similar spell. A level 2 or 3 one should kill them. The Leper Giant just
-takes a bit of perseverance (and lots of luck with status ailment
+However, the \class{Monk}s are at least weak against \spell{Asphyxiation} (or
+a mass target damage spell like \spell{Nuclear Blast}), so if you have that
+and Cure Disease, they'll be an easy source of XP for you. Keep in mind that
+they don't have a lot of hit points if you try using \spell{Nuclear Blast} or
+another similar spell. A level 2 or 3 one should kill them. The Leper Giant
+just takes a bit of perseverance (and lots of luck with status ailment
 spells).
 
 \faqentry{But I don't have those spells! (See previous question.) What can I
@@ -8430,21 +8445,22 @@ area.
 
 With persistence. If you are \textsc{very} lucky, you can silence him--he's a
 monk, unlike the rest of the Munks who are ninjas, so shutting him up is a
-very effective way of stopping the nastier spells like Lifesteal. Deal with
-anyone he has with him first though. He might be dangerous, but so is 6 Dark
-Forest Munks that get a chance to cast stuff on you as well, leaving you
-blind, irritated (both literally and figuratively), and possibly insane,
-making it near impossible for you to beat the Lord of the Dark Forest.
+very effective way of stopping the nastier spells like
+\spell{Lifesteal}. Deal with anyone he has with him first though. He might be
+dangerous, but so is 6 Dark Forest Munks that get a chance to cast stuff on
+you as well, leaving you blind, irritated (both literally and figuratively),
+and possibly insane, making it near impossible for you to beat the Lord of
+the Dark Forest.
 
 If you have \spell{Fireball}\fshyp{}\spell{Iceball} or \spell{Nuclear Blast}
 by this point (\spell{Nuclear Blast} not very likely at this point unless you
-had a mage that changed profession to a Bishop), the others shouldn't be too
-much of a problem if you are faster. This is why you needed to find the exit
-first, so that you can come here in better health. However, if you cannot
-defeat the Lord of the Dark Forest at this point, you have no hope of getting
-the \qmwordqm{CRYPT} map before someone else, as it means that you are too
-low level to effectively kill him--by the time you're not, the map will be
-gone.
+had a mage that changed profession to a \class{Bishop}), the others shouldn't
+be too much of a problem if you are faster. This is why you needed to find
+the exit first, so that you can come here in better health. However, if you
+cannot defeat the Lord of the Dark Forest at this point, you have no hope of
+getting the \qmwordqm{CRYPT} map before someone else, as it means that you
+are too low level to effectively kill him--by the time you're not, the map
+will be gone.
 
 \faqentry{What do I do with the Notched Shaft I found?}
 
@@ -8490,7 +8506,7 @@ from the Skeleton Lords without getting someone clobbered to death, even with
     \item Dane Initiates (level 1 up)
     \item Dane Disciples (level 2 up)
     \item Dane Canons (level 3 up)
-    \item Dane Priests (level 4 up)
+    \item Dane \class{Priest}s (level 4 up)
     \item Dane Apostles (level 5 up)
     \item High Fathers (level 6 up)
     \end{itemize}
@@ -8770,10 +8786,10 @@ booty. \emph{hint} \emph{hint}
 \faqentry{Ack! The Ring of Demons is killing me when I put it on!}
 
 \emph{Don't} put it on anyone that doesn't already have a Regen +1 or a Regen
-+2 item equipped. That being said, if you have a Faerie and got the Faerie
++2 item equipped. That being said, if you have a \race{Faerie} and got the \race{Faerie}
 Cap from the chest in the \place{Temple of Deadly Coffers}, or the one with
 the Chrome Key in the \place{Temple of Wanderers}, it is safe to put it on
-him or her--the Faerie will just lose the HP regen bonus because it cancels
+him or her--the \race{Faerie} will just lose the HP regen bonus because it cancels
 out. As a note about negative Regen items, the game appears to take the
 highest regeneration bonus out of all the items you have, and add the lowest
 negative regeneration penalty of the items you have to it, to get an end
@@ -8842,8 +8858,8 @@ One of the following might have happened:
 \faqentry{Should I join the Umpani?}
 
 Definitely--even if you hate them. You can betray them for the T'Rang by
-helping K'Borra and lying about his presence near \place{Ukpyr} to the Umpani if you
-hate the Umpani. Keep in mind that here is a great way to make
+helping K'Borra and lying about his presence near \place{Ukpyr} to the Umpani
+if you hate the Umpani. Keep in mind that here is a great way to make
 money--especially if you need it to pay off the Danes for going up in their
 tower. You need at least 8000 gold for an outfitting however or you won't get
 the returns on your investment.
@@ -8878,7 +8894,7 @@ space in there should be after the 2nd number and before the `D'.
 
 He said to get 3 BULL'S EYEs, not 3 hits. That being said, even
 though it is possible to get a BULL'S EYE at 0 Firearms skill (My
-Valkyrie once got BULL'S EYE HIT HIT at a Firearms skill of 0), chances
+\class{Valkyrie} once got BULL'S EYE HIT HIT at a Firearms skill of 0), chances
 are you won't get 3 BULL'S EYEs at a high enough rate until you have a
 skill of at least 40 in Firearms. After that it is very possible, but
 sometimes it takes a while. (Once I got 3 BULL'S EYEs at 43 Firearms
@@ -9135,14 +9151,14 @@ present to Shritis, or until he gets immensely ticked off at you and attacks
 you every time he sees you.
 
 If you really want to kill Rodan Lewarx however, he's not \emph{too} hard,
-for an NPC--use \spell{Missile Shield} to stop the bullets he shoots at you most of
-the time.  It's those irritating Alchemist-type spells he and his
-reinforcements may have that will get you.  Also, as a word of warning, they
-get an increased chance of a critical hit with \textsc{all} missile weapons,
-including Blunderbusses and Muskets.  Of course, if you say no to Shritis
-you're going to have to tread lightly every time you see him--he'll be cranky
-when he sees you again, but at least he won't be trying to hunt you down
-unless you kill T'Rang NPCs (including K'borra).
+for an NPC--use \spell{Missile Shield} to stop the bullets he shoots at you
+most of the time.  It's those irritating \class{Alchemist}-type spells he and
+his reinforcements may have that will get you.  Also, as a word of warning,
+they get an increased chance of a critical hit with \textsc{all} missile
+weapons, including Blunderbusses and Muskets.  Of course, if you say no to
+Shritis you're going to have to tread lightly every time you see him--he'll
+be cranky when he sees you again, but at least he won't be trying to hunt you
+down unless you kill T'Rang NPCs (including K'borra).
 
 \faqentry{Should I go back to \place{Nyctalinth} after talking to Shritis
   instead of going into \place{New City}?}
@@ -9593,12 +9609,12 @@ completely bad.
 
 Explore of course. There's at least 1 nice treasure chest in here that you
 can get no matter what keys you have. The best item you can get in said chest
-is a Dragon Kite--a shield for Valkyries, Fighters, and Lords that reduces
-their armor class by 4. That's if you have them and need one
-however. Otherwise, a Faery Cap if you missed it before (or Chamail items) is
-the 2nd best. Most of the other stuff is overshadowed by better loot
-elsewhere. Bt the way, search all the Gorn Noblemen you can find, but save
-before doing so!
+is a Dragon Kite--a shield for \class{Valkyrie}s, \class{Fighter}s, and
+\class{Lord}s that reduces their armor class by 4. That's if you have them
+and need one however. Otherwise, a Faery Cap if you missed it before (or
+Chamail items) is the 2nd best. Most of the other stuff is overshadowed by
+better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
+but save before doing so!
 
 \subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}
 
@@ -9739,7 +9755,7 @@ Five Fingered Discount. Just don't get caught.
 
 \faqentry{What exactly does that PK Crystal do?}
 
--4 AC bonus, Regen +1, Psionic Resistance +50\%, usable only by Psionics.
+-4 AC bonus, Regen +1, Psionic Resistance +50\%, usable only by \class{Psionic}s.
 
 \faqentry{What are the answers to the tests in the Hall of Crusaders?}
 
@@ -9830,16 +9846,16 @@ Ra-sep-re-tep: If you actually need help on him, that's not a good sign.
 \paragraph{Thing from Hell} Quick and Dirty Way--Silence him, then Deadly
 Poison him. He'll go down fast.
 
-Slow and Boring Way--Silence him and whack away. Use \spell{Armormelt} to speed
-things up.
+Slow and Boring Way--Silence him and whack away. Use \spell{Armormelt} to
+speed things up.
 
 \paragraph{The Demon Horragoth} Get high enough level that \spell{Death
   Cloud} and \place{Death Wish} have no effect on you. Then treat him as a
 monster that does nothing except a rare \spell{Word of Death} or two and
 start hacking away. Kill his companion(s) first though.
 
-\paragraph{The Spirit D'Arboleth} Watch out for Lifesteal. Otherwise treat
-him the same way as Horragoth, minus the \spell{Word of Death}.
+\paragraph{The Spirit D'Arboleth} Watch out for \spell{Lifesteal}. Otherwise
+treat him the same way as Horragoth, minus the \spell{Word of Death}.
 
 \paragraph{The Fiend of 9 Worlds} Immediately Hide\fshyp{}Drink Invisibility
 Potion.  Pummel him with as many different gas spells as possible,
@@ -10010,7 +10026,7 @@ Device\ldots{}didn't you?
 You're just unlucky. \texttt{:(} Still, you can use the Elysiad in this
 fight, and this fight only. Personally, I didn't really need it. The Mystery
 Ray was helpful too, at least on the Kui'sa-ka. Hope you have 100 Mind
-Control by the way: they LOVE Psionics.
+Control by the way: they LOVE \class{Psionic}s.
 
 \faqentry{Why does Vitalia ask me about a spaceship?}
 
@@ -10297,15 +10313,16 @@ Kill Blienmeis. Easier said than done of course.
 
 Several places:
 
-\paragraph{\place{New City}} In the Control Center, stick the Black Wafer instead of
-the Control Card in the slot to summon Savant Guards and Troopers.
+\paragraph{\place{New City}} In the Control Center, stick the Black Wafer
+instead of the Control Card in the slot to summon Savant Guards and Troopers.
 
-\paragraph{\place{Orkogre Castle}} In the area below the prison; you must step in the
-square you fall in to respawn.
+\paragraph{\place{Orkogre Castle}} In the area below the prison; you must
+step in the square you fall in to respawn.
 
-\paragraph{\place{Greater Wilds}} You will find an area that has a path circling a
-small area. Step in the middle of that area to set off an encounter. Step on
-the square you had to go through to get in this area to reset the encounter.
+\paragraph{\place{Greater Wilds}} You will find an area that has a path
+circling a small area. Step in the middle of that area to set off an
+encounter. Step on the square you had to go through to get in this area to
+reset the encounter.
 
 \paragraph{\place{Isle of Crypts}} The intersection in front of the fountain
 in the \place{Hall of the Past}. Encounters reset automatically.
@@ -10315,16 +10332,18 @@ in the \place{Hall of the Past}. Encounters reset automatically.
 \faqentry{What's the best party to get through the game?}
 
 Almost anything works, really. If you want to be able to use the most items
-in the game, you will need an Elf fighter-type, a Faerie Ninja, (the
-following non-Faerie) Samurai, Ranger, Valkyrie, Psionic, Bishop, and one of
-the character profession changed from a (non-Faerie) bard.  You still can't
-use the Medicine Bag, but you're not missing much from it. If you want to
-just play for fun, anything can work. If you want to get through the first
-areas quickly, you may opt for a simple party of two Fighters, a Mage, a
-Priest, a Thief, and a Bard for relative speed through the initial
-parts. Heck, even a party of all Ninjas can get through the game. If all else
-fails, use the change profession button to get a class that you need at the
-moment once you have the minimum stat requirements to change into the class.
+in the game, you will need an \race{Elf} fighter-type, a \race{Faerie}
+\class{Ninja}, (the following non-\race{Faerie}) \class{Samurai},
+\class{Ranger}, \class{Valkyrie}, \class{Psionic}, \class{Bishop}, and one of
+the character profession changed from a (non-\race{Faerie}) bard.  You still
+can't use the Medicine Bag, but you're not missing much from it. If you want
+to just play for fun, anything can work. If you want to get through the first
+areas quickly, you may opt for a simple party of two \class{Fighter}s, a
+\class{Mage}, a \class{Priest}, a \class{Thief}, and a \class{Bard} for
+relative speed through the initial parts. Heck, even a party of all
+\class{Ninja}s can get through the game. If all else fails, use the change
+profession button to get a class that you need at the moment once you have
+the minimum stat requirements to change into the class.
 
 \faqentry{Should I use missile weapons?}
 
@@ -10552,7 +10571,7 @@ answer questions however as well as update this FAQ if more questions get
 asked pertaining to the game (but not technical stuff)
 
 \clearpage
-\addcontentsline{toc}{chapter}{Index}
+\addcontentsline{toc}{section}{Index}
 \printindex
 
 \end{document}
