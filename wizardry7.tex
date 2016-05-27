@@ -18,9 +18,18 @@
 %\setmainfont[]{TeX Gyre Pagella}
 \setmainfont[]{Linux Libertine O}
 
+\newcommand{\fractionsOn}[1]{{\addfontfeature{Fractions=On}#1}}
+
 %\usepackage{bigfoot}
 %\DeclareNewFootnote{default}
 
+% This must be loaded before hyperref or bookmarks packages so that the
+% generated Index is clickable.
+\usepackage[xindy]{imakeidx}
+%\usepackage{showidx}
+%\usepackage{makeidx}
+
+% Bookmark package loads hyperref internally.
 \usepackage{bookmark}
 \hypersetup{unicode=true,
             pdftitle={A random Crusaders of the Dark Savant FAQ},
@@ -77,23 +86,27 @@ contents={%
 \author{Written by: Ravashack\protect\footnote{\LaTeX{} conversion by Václav Haisman}}
 \date{v. 1.95a}
 
-% \newcommand{\faqentry}[2]{\begin{description}[align=left,leftmargin=0cm]
-%   \item [Q:] \textbf{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}
-%   \item [A:] #2
-% \end{description}}
+\makeatletter
+\newcommand{\indexSpell}[1]{\index{#1}}
+\newcommand{\spell}[1]{#1\indexSpell{#1}}
+\newcommand{\indexPlace}[1]{\index{#1}}
+\newcommand{\place}[1]{#1\indexPlace{#1}}
+\makeatother
+
 \newcommand{\faqentry}[1]{%
   \paragraph{Q: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
 
 \newcommand{\spellentry}[1]{%
-  \subparagraph{#1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
+  \subparagraph{\spell{#1}}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak}
 
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
-%\begin{multicols}{2}\raggedcolumns
 
 \newcommand{\qmwordqm}[1]{\mbox{?#1?}}
 \newcommand{\WviiSPOT}{\mbox{*S~P~O~T*}}
 \newcommand{\WviiDOOM}{\mbox{*D~O~O~M*}}
 \newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
+
+\makeindex
 
 \begin{document}
 
@@ -1351,7 +1364,7 @@ Perks:
 \item
   Poison resistance
 \item
-  Magic resistance (i.e.~to spells like Lifesteal or Make Wounds)
+  Magic resistance (i.e.~to spells like \spell{Lifesteal} or \spell{Make Wounds})
 \end{itemize}
 \columnbreak
 
@@ -7529,8 +7542,8 @@ Potential Questions
 \subsection{Questionaire Walkthrough
 (Semi-Spoilers)}\label{questionaire-walkthrough-semi-spoilers}
 
-\subsubsection{Starting Area (Near New
-City)}\label{starting-area-near-new-city}
+\subsubsection{\place{Starting Area} (Near \place{New
+City})}\label{starting-area-near-new-city}
 
 Monsters Encountered:
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -7597,7 +7610,7 @@ and then exit into New City instead of going back into the Anthracax. Be
 warned that most NPCs don't like the T'Rang and will not trade with you,
 as you are considered to be their ally (and enemies of their enemies).
 
-If you started near Ukpyr: go in the city, join the Umpani I.U.F.,
+If you started near \place{Ukpyr}: go in the city, join the Umpani I.U.F.,
 decide whether or not you actually want to help K'borra T'Rang, and
 proceed until you have to deliver a message to Rodan Lewarx. (This is
 the most profitable way to start, coincidentally.)
@@ -8760,7 +8773,7 @@ right?
 
 Whatever you want. You need the Coil for later though.
 
-\subsubsection{Ukpyr}\label{ukpyr}
+\subsubsection{\place{Ukpyr}}\label{ukpyr}
 
 Monsters Encountered:
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -8785,8 +8798,8 @@ Monsters Encountered:
 \end{multicols}
 
 \faqentry{\texorpdfstring{Why do the Umpani immediately attack me when I
-    enter Ukpyr?\protect\footnotemark{}}{Why do the Umpani immediately attack
-    me when I enter Ukpyr?}}\footnotetext{From Bernice Carter.}
+    enter \place{Ukpyr}?\protect\footnotemark{}}{Why do the Umpani immediately attack
+    me when I enter \place{Ukpyr}?}}\footnotetext{From Bernice Carter.}
 
 One of the following might have happened:
 
@@ -8807,7 +8820,7 @@ One of the following might have happened:
 \faqentry{Should I join the Umpani?}
 
 Definitely--even if you hate them. You can betray them for the T'Rang by
-helping K'Borra and lying about his presence near Ukpyr to the Umpani if you
+helping K'Borra and lying about his presence near \place{Ukpyr} to the Umpani if you
 hate the Umpani. Keep in mind that here is a great way to make
 money--especially if you need it to pay off the Danes for going up in their
 tower. You need at least 8000 gold for an outfitting however or you won't get
@@ -9337,7 +9350,7 @@ Monsters Encountered:
 
 \faqentry{Huh? I've never heard of this place!}
 
-It's actually my name for the area of the Ukpyr Mountains you climb down into
+It's actually my name for the area of the \place{Ukpyr} Mountains you climb down into
 from the tall cliff.
 
 \faqentry{So what exactly is so special about this area that you gave it a
@@ -9429,7 +9442,7 @@ Monsters Encountered:
 Yep. Save before picking either of them. Don't forget to look for the
 entrance to the Sphinx Cave. You'll get here by the way from climbing down
 the vine on the tall cliff to the area where the spirits were partying, and
-then exploring further, or by exiting Ukpyr to the north and snooping around
+then exploring further, or by exiting \place{Ukpyr} to the north and snooping around
 all the sidepaths and the main path.
 
 \subsubsection{Sphinx Cave}\label{sphinx-cave}
@@ -10351,10 +10364,11 @@ Yes, they all transfer automatically.
 \faqentry{Will my skills transfer?}
 
 Yes and no. Don't expect your personal skills to, except Firearms. All your
-scores will be reduced to approximately 1/5 or less of what they were
-originally, so a 100 in Swords turns into a 20 in Swords. Also, skills that
-aren't supposed to be raised by the class you transfer in are there, but
-unavailable. Your spells are stripped to 2 level 1 spells of your own class.
+scores will be reduced to approximately \fractionsOn{1/5} or less of what
+they were originally, so a 100 in Swords turns into a 20 in Swords. Also,
+skills that aren't supposed to be raised by the class you transfer in are
+there, but unavailable. Your spells are stripped to 2 level 1 spells of your
+own class.
 
 \faqentry{Where do I end up starting in Wizardry~8?}
 
@@ -10396,7 +10410,7 @@ Minor editing. Expecting to update with a full Walkthrough next update,
 but don't hope too much.
 
 v1.8 (8/7/00) Trimmed down some areas and spaced out others as per
-Dallas' recommendations, and minor editing. Added a question in Ukpyr.
+Dallas' recommendations, and minor editing. Added a question in \place{Ukpyr}.
 
 v1.7 (7/9/00) Fixed some errors thanks to the people who volunteered on
 the Software Specialties board. Thanks guys
@@ -10487,5 +10501,8 @@ it is on hiatus for the moment while I get my life organized. I can still
 answer questions however as well as update this FAQ if more questions get
 asked pertaining to the game (but not technical stuff)
 
+\clearpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
 
 \end{document}
