@@ -112,6 +112,10 @@ contents={%
 \newcommand{\WviiDOOM}{\mbox{*D~O~O~M*}}
 \newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
 
+\SetEnumitemKey{WviiTwoColumn}{%
+  before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
+  after=\end{multicols}}
+
 \makeindex
 
 \begin{document}
@@ -341,9 +345,8 @@ anything out of it, and it gives you the option to class change into a
 
 \subsection{Races}\label{races}
 
-Basic Layout:
-
-\begin{itemize}
+Basic Layout:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item Name of Race
 \item Race's Stats
@@ -401,9 +404,8 @@ reflect stat changes for female characters.
 
 Total -- Total amount of points needed for the class.
 
-Convenient Starting Professions
-
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   A profession(s) which the race excels at naturally OR A non-basic (not
@@ -469,10 +471,8 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -480,7 +480,6 @@ Convenient Starting Professions
 \item
   \class{Ranger} (don't expect your spell points to come back quickly though)
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Elf}}\label{elf}
 
@@ -551,10 +550,8 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -566,7 +563,6 @@ Convenient Starting Professions
 \item
   \class{Bishop}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Dwarf}}\label{dwarf}
 
@@ -624,10 +620,8 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -637,7 +631,6 @@ Convenient Starting Professions
 \item
   \class{Valkyrie}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Gnome}}\label{gnome}
 
@@ -693,10 +686,8 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -706,7 +697,6 @@ Convenient Starting Professions
 \item
   \class{Valkyrie}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Hobbit}}\label{hobbit}
 
@@ -765,16 +755,13 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
 \item
   \class{Bard}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Faerie}}\label{faerie}
 
@@ -847,10 +834,8 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -866,7 +851,6 @@ Convenient Starting Professions
 \item
   \class{Samurai} -- A semi-useless choice as you cannot wear most decent armor.
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Lizardman}}\label{lizardman}
 
@@ -927,16 +911,13 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
   \class{Ninja}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Dracon}}\label{dracon}
 
@@ -996,10 +977,8 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -1011,7 +990,6 @@ Convenient Starting Professions
 \item
   \class{Ninja}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Rawulf}}\label{rawulf}
 
@@ -1065,10 +1043,8 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
 \item
@@ -1080,7 +1056,6 @@ Convenient Starting Professions
 \item
   \class{Monk}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Felpurr}}\label{felpurr}
 
@@ -1136,10 +1111,8 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -1153,7 +1126,6 @@ Convenient Starting Professions
 \item
   \class{Ninja}
 \end{itemize}
-\end{multicols}
 
 \subsubsection{\race{Mook}}\label{mook}
 
@@ -1209,10 +1181,8 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Convenient Starting Professions\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -1220,7 +1190,6 @@ Convenient Starting Professions
 \item
   \class{Psionic}
 \end{itemize}
-\end{multicols}
 
 \subsection{Classes}\label{classes}
 
@@ -1255,9 +1224,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}→\class{Valkyrie}
 \item
@@ -1303,9 +1271,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}→\class{Samurai}
 \item
@@ -1357,9 +1324,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}
 \item
@@ -1415,9 +1381,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Ranger}→\class{Ninja}
 \item
@@ -1473,9 +1438,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Bard}→\class{Samurai}
 \item
@@ -1522,9 +1486,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -1567,9 +1530,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Valkyrie} (females only)
 \item
@@ -1611,9 +1573,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
 \item
@@ -1623,6 +1584,7 @@ Profession changing suggestions:
 \item
   \class{Ninja}
 \end{itemize}
+
 
 \subsubsection{\class{Valkyrie}}\label{valkyrie}
 
@@ -1659,9 +1621,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Samurai}
 \item
@@ -1698,17 +1659,15 @@ Flaws:
 \item
   Spell progression is \textlcsc{SLOW} as research must be divided in half.
 \end{itemize}
-\end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Psionic}
 \item
   \class{Alchemist}
 \end{itemize}
-
+\end{multicols}
 
 \subsubsection{\class{Lord}}\label{lord}
 
@@ -1749,9 +1708,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
 \item
@@ -1796,9 +1754,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   \class{Valkyrie} (female)
@@ -1843,9 +1800,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   \class{Ninja}
@@ -1905,9 +1861,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:
-
-\begin{itemize}
+Profession changing suggestions:\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   None
@@ -2065,9 +2020,8 @@ and the only ways to get your hands on them are buying it for 10,000
 gold---which you won't have for a long time---or killing them, which is very
 difficult with this kind of party until much much later.
 
-Sample Super Party:
-
-\begin{itemize}
+Sample Super Party:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   \race{Lizardman} \class{Samurai}
@@ -2099,9 +2053,8 @@ the urge to change profession as experience requirements get higher and
 higher and your diversity in what you can do gets lower and lower. Which
 brings us to\ldots{}
 
-Sample Quick and Easy Party:
-
-\begin{itemize}
+Sample Quick and Easy Party:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   \race{Lizardman} \class{Fighter}
@@ -2163,9 +2116,8 @@ Vitality, Dexterity, Speed, Personality.
 \subsubsection{\race{Elf} \class{Fighter}}
 \label{sec:elf-fighter}
 
-\race{Elf} Base stats:
-
-\begin{itemize}
+\race{Elf} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   7: 5 points added (meet \class{Fighter} requirements)
@@ -2191,9 +2143,8 @@ well get some extra hit points and stamina out of it.
 \subsubsection{\race{Felpurr} \class{Fighter}}
 \label{sec:felpurr-fighter}
 
-\race{Felpurr} Base stats:
-
-\begin{itemize}
+\race{Felpurr} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   7: 5 points added (meet \class{Fighter} requirements)
@@ -2217,9 +2168,8 @@ put it into Vitality.
 \subsubsection{\race{Faerie} \class{Thief}}
 \label{sec:faerie-thief}
 
-\race{Faerie} Base stats:
-
-\begin{itemize}
+\race{Faerie} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   5: 5 points added (almost meet \class{Ninja} requirements)
@@ -2245,9 +2195,8 @@ the bonuses you want.
 \subsubsection{\race{Elf} \class{Priest} (F)}
 \label{sec:elf-priest-f}
 
-\race{Elf} Base stats:
-
-\begin{itemize}
+\race{Elf} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   7: -2 for being female, 5 points added (meet \class{Valkyrie} requirements)
@@ -2272,9 +2221,8 @@ getting the higher level spells is nice, but so is more hit points.
 \subsubsection{\race{Elf} \class{Mage} (F)}
 \label{sec:elf-mage-f}
 
-\race{Elf} Base stats:
-
-\begin{itemize}
+\race{Elf} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   7: -2 for being female
@@ -2300,9 +2248,8 @@ gain\fshyp{}level and spell point recovery.
 \subsubsection{\race{Elf} \class{Bard} (F)}
 \label{sec:elf-bard-f}
 
-\race{Elf} Base stats:
-
-\begin{itemize}
+\race{Elf} Base stats:\\*
+\begin{itemize}[topsep=0pt]
 \tightlist
 \item
   7: -2 for being female
@@ -2415,8 +2362,7 @@ books}\label{learning-spells-from-books}
 
 The following spells may be learned from books:
 
-\begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   \spell{Air Pocket}
@@ -2459,7 +2405,6 @@ The following spells may be learned from books:
 \item
   \spell{Watchbells}
 \end{itemize}
-\end{multicols}
 
 Be warned however; if you do not have a spell already of the same type as the
 one you wish to scribe in your book (for example, having \spell{Shrill Sound}
@@ -2473,8 +2418,7 @@ until he or she learns another water spell by a level up---in this case
 
 \subsection{Commonly used spells}\label{commonly-used-spells}
 
-\begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   \spell{Heal Wounds}
@@ -2521,7 +2465,6 @@ until he or she learns another water spell by a level up---in this case
   \spell{Asphyxiation}\protect\footnote{Expert mode only for crowd control and
     convenience.}
 \end{itemize}
-\end{multicols}
 
 \subsection{Spell-picking Choices}\label{spell-picking-choices}
 
@@ -3378,9 +3321,8 @@ Potential Questions
 \subsubsection{\place{Starting Area} (Near \place{New
 City})}\label{starting-area-near-new-city}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   Bambiphoots
@@ -3403,7 +3345,6 @@ Monsters Encountered:
 \item
   Rattkin Bandits (fixed)
 \end{itemize}
-\end{multicols}
 
 \faqentry{What do I do? I'm in the middle of nowhere!}
 
@@ -3462,9 +3403,8 @@ you are doing.
 
 \subsubsection{Starter Dungeon}\label{starter-dungeon}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-  \begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \item Encountered everywhere
 \begin{itemize}
 \tightlist
@@ -3496,7 +3436,7 @@ Monsters Encountered:
   Ra-sep-re-tep (fixed)
 \end{itemize}
 \end{itemize}
-\end{multicols}
+
 
 \faqentry{What's this fountain here?}
 
@@ -3530,10 +3470,8 @@ go after \place{New City}--anywhere but \place{Orkogre Castle},
 
 \subsubsection{\place{New City}}\label{new-city}
 
-Monsters Encountered (varies by area of \place{New City}):
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered (varies by area of \place{New City}):\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   Gorn Spearmen
@@ -3566,7 +3504,6 @@ Monsters Encountered (varies by area of \place{New City}):
 \item
   Umpani Renegade
 \end{itemize}
-\end{multicols}
 
 \faqentry{The Savant Trooper won't let me through! Why?}
 
@@ -3678,10 +3615,8 @@ map before it switches hands.
 
 \subsubsection{\place{Orkogre Castle}}\label{orkogre-castle}
 
-\vbox{%
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere (except below Prison):
 
 \begin{itemize}
@@ -3790,7 +3725,6 @@ Monsters Encountered:
   Spectral Ravens (fixed)
 \end{itemize}
 \end{itemize}
-\end{multicols}}
 
 \faqentry{How the heck do I get into the Throne Room? I haven't found a key
   for the place!}
@@ -3873,9 +3807,8 @@ potions are nice too.
 
 \subsubsection{\place{Munkharama}}\label{munkharama}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere
 
 \begin{itemize}
@@ -4012,7 +3945,6 @@ Monsters Encountered:
   Skeleton Lords (fixed)
 \end{itemize}
 \end{itemize}
-\end{multicols}
 
 \faqentry{What's the answer to the well's riddle?}
 
@@ -4312,8 +4244,7 @@ from the Skeleton Lords without getting someone clobbered to death, even with
 
 \subsubsection{\place{Dionysceus}}\label{dionysceus}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
-  \begin{itemize}
+\begin{itemize}[WviiTwoColumn]
   \item Encountered Everywhere
 
     \begin{itemize}
@@ -4429,7 +4360,6 @@ from the Skeleton Lords without getting someone clobbered to death, even with
       \item Wraiths Spirits
       \end{itemize}
 \end{itemize}
-\end{multicols}
 
 \faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
 
@@ -4629,9 +4559,8 @@ Whatever you want. You need the Coil for later though.
 
 \subsubsection{\place{Ukpyr}}\label{ukpyr}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-  \begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
     \tightlist
   \item Umpani Ruffians
   \item Umpani Renegades
@@ -4649,7 +4578,6 @@ Monsters Encountered:
   \item Rattkin Rogues
   \item T'Rang Wilders
   \end{itemize}
-\end{multicols}
 
 \faqentry{\texorpdfstring{Why do the Umpani immediately attack me when I
     enter \place{Ukpyr}?\texorpdfstring\protect\footnotemark{}}{Why do the Umpani immediately attack
@@ -4722,9 +4650,8 @@ If you want the items though, get them before meeting General Yamo.
 
 \subsubsection{\place{Rattkin Ruins}}\label{rattkin-ruins}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-  \begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \item Encountered everywhere
     \begin{itemize}
       \tightlist
@@ -4778,7 +4705,6 @@ Monsters Encountered:
         \end{itemize}
     \end{itemize}
   \end{itemize}
-\end{multicols}
 
 \faqentry{How do I get in? The entrance is blocked off!}
 
@@ -4875,9 +4801,8 @@ The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
 
 \subsubsection{\place{Old City}}\label{old-city}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Spirits
 \item Ghosts
@@ -4889,14 +4814,13 @@ Monsters Encountered:
 \item Minoskells
 \item Skeletons
 \end{itemize}
-\end{multicols}
 
 \faqentry{Why are there footprints in the dust?}
 
 Why? Because someone got here before you and nabbed the \qmwordqm{DRAGON} map!
 
-\faqentry{(continuation of previous question)} Does that mean I should turn back
-then?
+\faqentry{(continuation of previous question) Does that mean I should turn back
+then?}
 
 Not really. There's some useful random loot in here too---especially what is
 probably your first Ankh. Most Ankhs can raise either Strength, Vitality,
@@ -4907,9 +4831,8 @@ however, you can go in here as early as after \place{Orkogre Castle}.
 
 \subsubsection{\place{Nyctalinth}}\label{nyctalinth}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \item \place{Nyctalinth}
   \begin{itemize}
     \tightlist
@@ -4951,7 +4874,6 @@ Monsters Encountered:
   \item Venom Weevils
   \end{itemize}
 \end{itemize}
-\end{multicols}
 
 \faqentry{Where's H'Jenn-Ra?}
 
@@ -5088,9 +5010,8 @@ friendly terms with the Helazoid.
 
 \subsubsection{\place{Witch Mountains}}\label{witch-mountains}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -5106,7 +5027,6 @@ Monsters Encountered:
 \item Frost Giants
 \item Dinkle Wisps
 \end{itemize}
-\end{multicols}
 
 \faqentry{What do I do here?}
 
@@ -5139,9 +5059,8 @@ Why go into the \place{Witch Cave} with what you learned of course!
 
 \subsubsection{\place{Giant Cave}}\label{giant-cave}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \WviiSPOT{} (fixed)
 \item Gruengard (fixed)
@@ -5158,7 +5077,6 @@ Monsters Encountered:
 \item Dinkle Wisps
 \item Jelly Stingers
 \end{itemize}
-\end{multicols}
 
 \faqentry{These giants keep killing me! How can I kill them?}
 
@@ -5196,9 +5114,8 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 \subsubsection{\place{Witch Grove}}\label{witch-grove}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -5210,7 +5127,6 @@ Monsters Encountered:
 \item Wood Dryads
 \item Faerie Witches
 \end{itemize}
-\end{multicols}
 
 \faqentry{Huh? I've never heard of this place!}
 
@@ -5230,10 +5146,8 @@ Dahlia in this area.
 
 \subsubsection{\place{Witch Cave}}\label{witch-cave}
 
-\vbox{%
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
 \item \qmwordqm{Dk.Savant} (fixed)
@@ -5253,7 +5167,6 @@ Monsters Encountered:
 \item Spectral Ravens
 \item Faerie Witches
 \end{itemize}
-\end{multicols}}
 
 
 \faqentry{Do I \textlcsc{HAVE} to pay the witches 1000 gold?}
@@ -5283,9 +5196,8 @@ disappear no matter how long I take!
 
 \subsubsection{\place{Ukpyr Mountains}}\label{ukpyr-mountains}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -5299,7 +5211,6 @@ Monsters Encountered:
 \item Faerie Witches
 \item Mtn. Thraxes (fixed)
 \end{itemize}
-\end{multicols}
 
 \faqentry{I take it the other two flowers are here?}
 
@@ -5311,10 +5222,8 @@ all the sidepaths and the main path.
 
 \subsubsection{\place{Sphinx Cave}}\label{sphinx-cave}
 
-Monsters Encountered:
-
-\begin{multicols}{2}
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Red Pirannhas
 \item Vampire Vultures
@@ -5327,7 +5236,6 @@ Monsters Encountered:
 \item Water Nymphs
 \item Rock Lizards
 \end{itemize}
-\end{multicols}
 
 \faqentry{What do I do here?}
 
@@ -5343,10 +5251,8 @@ Isn't your \spell{Detect Secret} going off right now?
 
 \subsubsection{\place{Isle of Crypts} \& \place{Mandolian Isles}}\label{isle-of-crypts-and-mandolian-isles}
 
-\vbox{%
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \item Above ground
   \begin{itemize}
     \tightlist
@@ -5383,7 +5289,6 @@ Monsters Encountered:
   \item Witch's Lights
   \end{itemize}
 \end{itemize}
-\end{multicols}}
 
 \faqentry{Um\ldots{}which island do I go to?}
 
@@ -5437,9 +5342,8 @@ but save before doing so!
 
 \subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Emerald Dragons (fixed)
 \item Dragonessas
@@ -5455,7 +5359,6 @@ Monsters Encountered:
 \item Dinkle Wisps
 \item Jelly Stingers
 \end{itemize}
-\end{multicols}
 
 \faqentry{OK, how do I get here?}
 
@@ -5499,8 +5402,7 @@ Climb up and find out. It's (relatively) safe.
 
 \subsubsection{\place{City of Sky}}\label{city-of-sky}
 
-\begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Savant Kui'sa-ka
 \item Savant Controllers
@@ -5514,7 +5416,6 @@ Climb up and find out. It's (relatively) safe.
 \item Meta-Droid (fixed)
 \item Ravens
 \end{itemize}
-\end{multicols}
 
 \faqentry{Hey! What's with the invisible walls?}
 
@@ -5603,9 +5504,8 @@ then selling them to Paluke---or anyone other than Dame Ke-li.
 \subsubsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Ra-sep-re-tep (fixed)
 \item Thing from Hell (fixed)
@@ -5618,7 +5518,6 @@ Monsters Encountered:
 \item Kolidra Necromani
 \item Red Pirannhas
 \end{itemize}
-\end{multicols}
 
 \faqentry{Do I have to kill any of these Gorrors?}
 
@@ -5717,9 +5616,8 @@ the Beast stops becoming so invulnerable.
 
 \subsubsection{\place{Hall of the Past}}\label{hall-of-the-past}
 
-Monsters Encountered:
-\begin{multicols}{2}\WviiTwoColumnSetup
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Rexx
 \item Myxlmynx
@@ -5733,7 +5631,6 @@ Monsters Encountered:
 \item Kolidras
 \item Skeleton Lords
 \end{itemize}
-\end{multicols}
 
 \faqentry{Um\ldots{}I need a map. Bad.}
 
@@ -5786,10 +5683,8 @@ into place.
 
 \subsubsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}
 
-\vbox{%
-Monsters Encountered:
-\begin{multicols}{2}
-\begin{itemize}
+Monsters Encountered:\\*
+\begin{itemize}[WviiTwoColumn]
 \tightlist
 \item Dk. Savant (fixed)
 \item Savant Kui'sa-ka (fixed)
@@ -5801,7 +5696,6 @@ Monsters Encountered:
 \item Meta-Droids
 \item Battle Droids
 \end{itemize}
-\end{multicols}}
 
 
 \faqentry{Any suggestions on surviving these robots?}
@@ -5944,10 +5838,8 @@ the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}
 
-This is from what I can remember, so there may be some mistakes:
-
-\begin{multicols}{2}
-\begin{itemize}\RaggedRight{}
+This is from what I can remember, so there may be some mistakes:\\*
+\begin{itemize}[WviiTwoColumn]
 \item Lord Galiere and King Ulgar
   \begin{itemize}
     \tightlist
@@ -6043,7 +5935,6 @@ This is from what I can remember, so there may be some mistakes:
     \item Powerpak (sometimes)
   \end{itemize}
 \end{itemize}
-\end{multicols}
 
 Any maps the NPCs may have are always displayed first when you go to the
 ``Buy'' screen.
