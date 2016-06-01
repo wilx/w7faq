@@ -112,8 +112,9 @@ contents={%
 \newcommand{\WviiDOOM}{\mbox{*D~O~O~M*}}
 \newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
 
+%before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
 \SetEnumitemKey{WviiTwoColumn}{%
-  before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
+  before=\nopagebreak\begin{multicols}{2}\WviiTwoColumnSetup,
   after=\end{multicols}}
 
 \makeindex
@@ -373,39 +374,26 @@ Fighter & 3 & & & & & & & N & 3\tabularnewline
 
 Explanations:
 
-\begin{itemize}
+\begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{5em}\RaggedRight}
 \tightlist
-\item
-  STR -- Points towards Strength needed.
-\item
-  INT -- Points towards Intelligence needed.
-\item
-  PIE -- Points towards Piety needed.
-\item
-  VIT -- Points towards Vitality needed.
-\item
-  DEX -- Points towards Dexterity needed.
-\item
-  SPE -- Points towards Speed needed.
-\item
-  PER -- Points towards Personality needed.
-\item
-  F? -- Should I use a Female for the class?
-\item
-  Y -- Yes, it will lower the amount of points needed.
-\item
-  -- -- Doesn't matter.
-\item
-  N -- No, it won't help you in the points.
-\end{itemize}
+\item[STR] Points towards Strength needed.
+\item[INT] Points towards Intelligence needed.
+\item[PIE] Points towards Piety needed.
+\item[VIT] Points towards Vitality needed.
+\item[DEX] Points towards Dexterity needed.
+\item[SPE] Points towards Speed needed.
+\item[PER] Points towards Personality needed.
+\item[F?] Should I use a Female for the class?
+\item[Y] Yes, it will lower the amount of points needed.
+\item[--] Doesn't matter.
+\item[N] No, it won't help you in the points.
+\item[Total] Total amount of points needed for the class.
+\end{basedescript}
 
 \subparagraph{Note:} Any class with Y will have point distribution altered to
 reflect stat changes for female characters.
 
-Total -- Total amount of points needed for the class.
-
-Convenient Starting Professions\\*
-\begin{itemize}[topsep=0pt]
+Convenient Starting Professions\begin{itemize}
 \tightlist
 \item
   A profession(s) which the race excels at naturally OR A non-basic (not
@@ -471,8 +459,7 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -550,8 +537,7 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -620,8 +606,7 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -686,8 +671,7 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+\pagebreak[3]Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -755,8 +739,7 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
 \item
@@ -834,8 +817,7 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -911,8 +893,7 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -977,8 +958,7 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -1043,8 +1023,7 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
 \item
@@ -1111,8 +1090,7 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -1181,8 +1159,7 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\\*
-\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
