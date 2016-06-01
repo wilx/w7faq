@@ -114,7 +114,7 @@ contents={%
 
 %before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
 \SetEnumitemKey{WviiTwoColumn}{%
-  before=\nopagebreak\begin{multicols}{2}\WviiTwoColumnSetup,
+  before=\begin{multicols}{2}\WviiTwoColumnSetup,
   after=\end{multicols}}
 
 \makeindex
@@ -135,7 +135,7 @@ contents={%
 
 \section{Mandatory Copyright
 information}\label{mandatory-copyright-information}
-
+%
 This file is copyright 2000 by Ravashack, a.k.a. Leo Wang in the non-internet
 world. If you want to use any of the information here in any form, feel free
 to contact me at
@@ -152,7 +152,7 @@ content.
 \section{\texorpdfstring{A little ``getting to know you'' stuff and
 Contact
 Info}{A little getting to know you stuff and Contact Info}}\label{a-little-getting-to-know-you-stuff-and-contact-info}
-
+%
 This here is a FAQ for the game Crusaders of the Dark Savant. It can also be
 used for people playing Wizardry Gold, which is the same thing with more
 bugs. \verb|^_^| It is the first FAQ I have ever made, so feel free
@@ -269,16 +269,16 @@ will appreciate it.
 \end{multicols}
 
 \section{Character Creation}\label{character-creation}
-
+%
 \subsection{Male vs.~Female}\label{male-vs.female}
-
-What's the difference? Females, when they start out, get a -2 in
+%
+What's the difference? Females, when they start out, get a −2 in
 Strength, +1 in Personality, and a +1 in Karma compared to the base
 statistics given in the manual. Males start out with the base statistics
 given in the manual.
 
 \subsubsection{Males}\label{males}
-
+%
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
@@ -303,7 +303,7 @@ Flaws:
 \end{multicols}
 
 \subsubsection{Females}\label{females}
-
+%
 \begin{multicols}{2}\WviiTwoColumnSetup
 Perks:
 
@@ -334,7 +334,7 @@ Flaws:
 \end{multicols}
 
 \subsubsection{Overall}\label{overall}
-
+%
 Use Male characters only if you are importing a game from Bane of the
 Cosmic Forge, if you are rolling up a \class{Fighter}-type character or a
 \class{Psionic}, or you cheat
@@ -345,8 +345,8 @@ anything out of it, and it gives you the option to class change into a
 \class{Valkyrie} later.
 
 \subsection{Races}\label{races}
-
-Basic Layout:\\*
+%
+Basic Layout:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item Name of Race
@@ -403,7 +403,7 @@ Convenient Starting Professions\begin{itemize}
 \end{itemize}
 
 \subsubsection{\race{Human}}\label{human}
-
+%
 Base \race{Human} stats: 9 8 8 9 9 8 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -469,7 +469,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Elf}}\label{elf}
-
+%
 Base \race{Elf} stats 7 10 10 7 9 9 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -551,12 +551,11 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Dwarf}}\label{dwarf}
-
+%
 Base \race{Dwarf} stats 11 6 10 12 7 7 7
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+Perks:%
 \begin{itemize}
 \item
   Poison resistance
@@ -566,8 +565,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -618,7 +616,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Gnome}}\label{gnome}
-
+%
 Base \race{Gnome} Stats 10 7 13 10 8 6 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -683,7 +681,7 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \end{itemize}
 
 \subsubsection{\race{Hobbit}}\label{hobbit}
-
+%
 Base \race{Hobbit} stats 8 7 6 9 10 7 13
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -747,7 +745,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Faerie}}\label{faerie}
-
+%
 Base \race{Faerie} Stats 5 11 6 6 10 14 12
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -835,7 +833,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Lizardman}}\label{lizardman}
-
+%
 Base \race{Lizardman} Stats 12 5 5 14 8 10 3
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -901,7 +899,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Dracon}}\label{dracon}
-
+%
 Base \race{Dracon} Stats 10 7 6 12 10 8 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -958,7 +956,7 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+Convenient Starting Professions\nobreak\begin{itemize}[WviiTwoColumn]%
 \item
   \class{Fighter}
 \item
@@ -972,7 +970,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Rawulf}}\label{rawulf}
-
+%
 Base \race{Rawulf} stats: 8 6 12 10 8 8 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1037,7 +1035,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Felpurr}}\label{felpurr}
-
+%
 Base \race{Felpurr} Stats: 7 10 7 7 10 12 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1106,7 +1104,7 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsubsection{\race{Mook}}\label{mook}
-
+%
 Base \race{Mook} Stats: 10 10 6 10 7 7 9
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1169,9 +1167,9 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
 \end{itemize}
 
 \subsection{Classes}\label{classes}
-
+%
 \subsubsection{\class{Fighter}}\label{fighter}
-
+%
 requirements: 12 0 0 0 0 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1201,7 +1199,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}→\class{Valkyrie}
@@ -1220,7 +1218,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Mage}}\label{mage}
-
+%
 requirements: 0 12 0 0 0 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1248,7 +1246,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}→\class{Samurai}
@@ -1267,7 +1265,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Priest}}\label{priest}
-
+%
 requirements: 0 0 12 0 0 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1301,7 +1299,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}
@@ -1319,7 +1317,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Thief}}\label{thief}
-
+%
 requirements: 0 0 0 0 12 8 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1358,7 +1356,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Ranger}→\class{Ninja}
@@ -1375,7 +1373,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Ranger}}\label{ranger}
-
+%
 requirements: 10 8 8 11 10 8 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1415,7 +1413,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Bard}→\class{Samurai}
@@ -1428,7 +1426,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Bard}}\label{bard}
-
+%
 requirements: 0 10 0 0 12 8 12
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1463,7 +1461,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
@@ -1474,7 +1472,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Psionic}}\label{psionic}
-
+%
 requirements: 10 14 0 14 0 0 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1507,7 +1505,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Valkyrie} (females only)
@@ -1518,7 +1516,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Alchemist}}\label{alchemist}
-
+%
 requirements: 0 13 0 0 13 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1550,7 +1548,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
@@ -1564,7 +1562,7 @@ Profession changing suggestions:\\*
 
 
 \subsubsection{\class{Valkyrie}}\label{valkyrie}
-
+%
 requirements: 10 0 11 11 10 11 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1598,7 +1596,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Samurai}
@@ -1609,7 +1607,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Bishop}}\label{bishop}
-
+%
 requirements: 0 15 15 0 0 0 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1637,7 +1635,7 @@ Flaws:
   Spell progression is \textlcsc{SLOW} as research must be divided in half.
 \end{itemize}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Psionic}
@@ -1647,7 +1645,7 @@ Profession changing suggestions:\\*
 \end{multicols}
 
 \subsubsection{\class{Lord}}\label{lord}
-
+%
 requirements: 12 9 12 12 9 9 14
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1685,7 +1683,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
@@ -1702,7 +1700,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Samurai}}\label{samurai}
-
+%
 Requirements: 12 11 0 9 12 14 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1731,7 +1729,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -1741,7 +1739,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Monk}}\label{monk}
-
+%
 Requirements: 13 8 13 0 10 13 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1777,7 +1775,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -1785,7 +1783,7 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsubsection{\class{Ninja}}\label{ninja}
-
+%
 Requirements: 12 10 10 12 12 12 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
@@ -1838,7 +1836,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:\\*
+Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -1846,9 +1844,9 @@ Profession changing suggestions:\\*
 \end{itemize}
 
 \subsection{Skill selection}\label{skill-selection}
-
+%
 \subsubsection{Essential Skills}\label{essential-skills}
-
+%
 \paragraph{Swimming} Everyone needs to have at least a 10 in swimming before
 attempting to enter the water to practice. There are three places to practice
 without wasting too much time: \place{New City} (using the fountain in the
@@ -1949,7 +1947,7 @@ you).
 
 \subsubsection{\texorpdfstring{``Really depends on your playing style''
 skills}{Really depends on your playing style skills}}\label{really-depends-on-your-playing-style-skills}
-
+%
 \paragraph{Mythology} This lets you successfully ID the monster you're
 fighting. In some cases it will be very useful, if you're conserving mana and
 don't want to mistake Night Rooks for Vampire Vultures. In most cases
@@ -1971,7 +1969,7 @@ don't need cash anymore, scrolls are already quite useless.
 skill. Still, you might as well get it. Raising it is up to you however.
 
 \section{Choosing a Party}\label{choosing-a-party}
-
+%
 Depending on what difficulty you are playing, there are five types of
 parties that will be used throughout the game: the `Super' Party, the
 `Quick and Easy' Party, the `Dual Class' Party, the `Blender' Party, and
@@ -1979,7 +1977,7 @@ the `Vanilla' Party.
 
 \subsection{\texorpdfstring{The `Super'
 Party}{The Super Party}}\label{the-super-party}
-
+%
 The Super Party is what everyone wants to end up with at the end of the game,
 but it is very hard to use in the beginning. The reason is because the Super
 Party is a party with hard to get characters such as a \race{Faerie}
@@ -1997,7 +1995,7 @@ and the only ways to get your hands on them are buying it for 10,000
 gold---which you won't have for a long time---or killing them, which is very
 difficult with this kind of party until much much later.
 
-Sample Super Party:\\*
+Sample Super Party:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2016,7 +2014,7 @@ Sample Super Party:\\*
 
 \subsection{\texorpdfstring{The `Quick and Easy'
 Party}{The Quick and Easy Party}}\label{the-quick-and-easy-party}
-
+%
 The Quick and Easy Party is the exact opposite of the Super Party. This party
 is usually made up of characters quickly rolled up, and is usually something
 like 2 \class{Fighter}s, an offensive spellcaster (\class{Mage} or a
@@ -2030,7 +2028,7 @@ the urge to change profession as experience requirements get higher and
 higher and your diversity in what you can do gets lower and lower. Which
 brings us to\ldots{}
 
-Sample Quick and Easy Party:\\*
+Sample Quick and Easy Party:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2049,7 +2047,7 @@ Sample Quick and Easy Party:\\*
 
 \subsection{\texorpdfstring{The `Dual class'
 Party}{The Dual class Party}}\label{the-dual-class-party}
-
+%
 This party is similar to the Quick and Easy Party except for one major
 difference: The characters rolled up are customized to be able to switch
 professions at will. For example, say you have an \race{Elf} who can be a
@@ -2090,10 +2088,9 @@ would happen normally.
 Stats are given in the order of: Strength, Intelligence, Piety,
 Vitality, Dexterity, Speed, Personality.
 
-\subsubsection{\race{Elf} \class{Fighter}}
-\label{sec:elf-fighter}
-
-\race{Elf} Base stats:\\*
+\subsubsection{\race{Elf} \class{Fighter}}\label{sec:elf-fighter}
+%
+\race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2117,10 +2114,9 @@ distribute the excess to Vitality as all the ability scores will be
 reset down to the bare minimum after the profession change; might as
 well get some extra hit points and stamina out of it.
 
-\subsubsection{\race{Felpurr} \class{Fighter}}
-\label{sec:felpurr-fighter}
-
-\race{Felpurr} Base stats:\\*
+\subsubsection{\race{Felpurr} \class{Fighter}}\label{sec:felpurr-fighter}
+%
+\race{Felpurr} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2144,8 +2140,8 @@ put it into Vitality.
 
 \subsubsection{\race{Faerie} \class{Thief}}
 \label{sec:faerie-thief}
-
-\race{Faerie} Base stats:\\*
+%
+\race{Faerie} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2169,10 +2165,9 @@ level ups to give you the rest of the stat boost you need. This could
 easily be met by level~7 or 8--less if you reload your level ups to get
 the bonuses you want.
 
-\subsubsection{\race{Elf} \class{Priest} (F)}
-\label{sec:elf-priest-f}
-
-\race{Elf} Base stats:\\*
+\subsubsection{\race{Elf} \class{Priest} (F)}\label{sec:elf-priest-f}
+%
+\race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2195,10 +2190,9 @@ This leaves you with 1 extra point to distribute. Either Vitality or
 Intelligence is a good choice; getting more Academia points to speed up
 getting the higher level spells is nice, but so is more hit points.
 
-\subsubsection{\race{Elf} \class{Mage} (F)}
-\label{sec:elf-mage-f}
-
-\race{Elf} Base stats:\\*
+\subsubsection{\race{Elf} \class{Mage} (F)}\label{sec:elf-mage-f}
+%
+\race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2222,10 +2216,9 @@ a lot of hit points a level, dump them either in Intelligence for
 increased amount of Academia points or in Piety for better spell point
 gain\fshyp{}level and spell point recovery.
 
-\subsubsection{\race{Elf} \class{Bard} (F)}
-\label{sec:elf-bard-f}
-
-\race{Elf} Base stats:\\*
+\subsubsection{\race{Elf} \class{Bard} (F)}\label{sec:elf-bard-f}
+%
+\race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2262,7 +2255,7 @@ as it does to get from level~10 to level~11.
 
 \subsection{\texorpdfstring{The `Blender'
 Party}{The Blender Party}}\label{the-blender-party}
-
+%
 I call this the Blender party mainly because it takes a little bit of
 the Super Party and a little bit of the Quick and Easy Party and/or the
 Dual class party. Basically, there will be a couple characters that may
@@ -2297,7 +2290,7 @@ Sample Blender Party:
 
 \subsection{\texorpdfstring{The `Vanilla'
 Party}{The Vanilla Party}}\label{the-vanilla-party}
-
+%
 Called the Vanilla Party for its simpleness, this party \textlcsc{never}
 changes classes, so pick carefully. You'll need at least 1~healer,
 1~offensive spellcaster, and 1~Skulduggery character unless you're looking
@@ -2310,11 +2303,11 @@ Sample Vanilla Party: (See Sample Quick and Easy Party or Sample Super
 Party)
 
 \section{Picking Spells}\label{picking-spells}
-
+%
 Thank you Llevram for much of the information in this section.
 
 \subsection{General spellcasting}\label{general-spellcasting}
-
+%
 All spells that you can cast are cumulative. That means you can cast them
 over and over to make them last longer (if they have a duration), reduce the
 duration of all status ailments except disease, stoning and death (in the
@@ -2336,7 +2329,7 @@ game days ago to get you through certain tougher fights.
 
 \subsection{Learning spells from
 books}\label{learning-spells-from-books}
-
+%
 The following spells may be learned from books:
 
 \begin{itemize}[WviiTwoColumn]
@@ -2394,7 +2387,7 @@ until he or she learns another water spell by a level up---in this case
 \spell{Cure Paralysis}, \spell{Draining Cloud}, or \spell{Cure Disease}.
 
 \subsection{Commonly used spells}\label{commonly-used-spells}
-
+%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -2444,14 +2437,13 @@ until he or she learns another water spell by a level up---in this case
 \end{itemize}
 
 \subsection{Spell-picking Choices}\label{spell-picking-choices}
-
+%
 \subparagraph{Note:} The required amount of skill points for a group of spells
 may be off by one or two points.
 
 \begin{multicols}{2}
-\subsubsection{Thaumaturgy (\class{Mage} spellbook)}
-\label{sec:thaumaturgy-mage-spellbook}
-
+\subsubsection{Thaumaturgy (\class{Mage} spellbook)}\label{sec:thaumaturgy-mage-spellbook}
+%
 \paragraph{Level 1 spells}
 
 \spellentry{Energy Blast} Your (possible) first damaging spell. Nothing
@@ -2651,9 +2643,8 @@ perfectionist type you're probably going to skip this spell. If you ressurect
 a character, the character loses 1 point of Vitality and their life counter
 increases by~1.
 
-\subsubsection{Theology (\class{Priest} spellbook)}
-\label{sec:theology-priest-spellbook}
-
+\subsubsection{Theology (\class{Priest} spellbook)}\label{sec:theology-priest-spellbook}
+%
 \paragraph{Level 1 spells}
 
 \spellentry{Heal} Wounds Get it if you like it, get it if you don't.
@@ -2832,9 +2823,8 @@ increases by~1.
 otherwise don't bother with it if you have a choice, unless you really need
 another 20 Divine spell points or you're getting this early in the game.
 
-\subsubsection{Theosophy (\class{Psionic} spellbook)}
-\label{sec:theosophy-psionic-spellbook}
-
+\subsubsection{Theosophy (\class{Psionic} spellbook)}\label{sec:theosophy-psionic-spellbook}
+%
 \paragraph{Level 1 spells}
 
 \spellentry{Mental Attack} Your typical level~1 damage spell. It has the
@@ -3025,9 +3015,8 @@ the perfectionist type you're probably going to skip this spell. If you
 ressurect a character, the character loses 1 point of Vitality and their life
 counter increases by~1.
 
-\subsubsection{Alchemy (\class{Alchemist} spellbook)}
-\label{sec:alchemy-alchemists-spellbook}
-
+\subsubsection{Alchemy (\class{Alchemist} spellbook)}\label{sec:alchemy-alchemists-spellbook}
+%
 \paragraph{Level 1 spells}
 
 \spellentry{Acid Splash} Your basic level~1 damage spell. A couple groups of
@@ -3174,9 +3163,9 @@ though, especially with that expensive amount of spell points needed.
 \end{multicols}
 
 \section{Survival 101}\label{survival-101}
-
+%
 \subsection{Status Ailments}\label{status-ailments}
-
+%
 Ailments and their cures:
 
 \begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{5em}\RaggedRight}
@@ -3216,7 +3205,7 @@ will not go away. This level is based roughly on the subject's Vitality stat:
 the higher it is, the lower your casting level can be.
 
 \subsection{Killing NPCs}\label{killing-npcs}
-
+%
 Generally, it is a good idea not to kill NPCs unless you know you don't need
 them---and can deal with the consequences. For example, some people kill
 Father Rulae in \place{New City} and Brother TShober at \place{Eryn River}
@@ -3227,9 +3216,9 @@ attack you can become awkward at the worst times possible until your party is
 a killing machine, as most of the mobile NPCs tend to stalk you.
 
 \subsection{Inventory Management}\label{inventory-management}
-
+%
 Some pointers:
-
+%
 \begin{itemize}
 \tightlist
 \item
@@ -3278,13 +3267,13 @@ Some pointers:
 \end{itemize}
 
 \section{Playing the Game}\label{playing-the-game}
-
+%
 The order of the following locations are a recommended, but not required,
 order to get through the game for a brand new party starting just outside of
 \place{New City}, based on when maps disappear.
 
 \subsection{Basic Format}\label{basic-format}
-
+%
 Name of Area
 
 List of monsters encountered (fixed) -- can only be fought in a fixed
@@ -3294,11 +3283,11 @@ Potential Questions
 
 \subsection{Questionaire Walkthrough
 (Semi-Spoilers)}\label{questionaire-walkthrough-semi-spoilers}
-
+%
 \subsubsection{\place{Starting Area} (Near \place{New
 City})}\label{starting-area-near-new-city}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -3379,8 +3368,8 @@ in \place{Dionysceus}, the only map you've got a chance of getting is the
 you are doing.
 
 \subsubsection{Starter Dungeon}\label{starter-dungeon}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered everywhere
 \begin{itemize}
@@ -3446,8 +3435,8 @@ go after \place{New City}--anywhere but \place{Orkogre Castle},
 \place{Dionysceus} (via the poppy fields), and \place{Munkharama} is lethal.
 
 \subsubsection{\place{New City}}\label{new-city}
-
-Monsters Encountered (varies by area of \place{New City}):\\*
+%
+Monsters Encountered (varies by area of \place{New City}):%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -3591,8 +3580,8 @@ early, I'd say that he's the one that normally takes the \qmwordqm{LEGEND}
 map before it switches hands.
 
 \subsubsection{\place{Orkogre Castle}}\label{orkogre-castle}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere (except below Prison):
 
@@ -3783,8 +3772,8 @@ the “Terror” status the Ravens inflict on you.  \spell{Cure Paralysis}
 potions are nice too.
 
 \subsubsection{\place{Munkharama}}\label{munkharama}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere
 
@@ -4220,7 +4209,8 @@ from the Skeleton Lords without getting someone clobbered to death, even with
 \spell{Fireball}s have a nasty effect on my party at this point.
 
 \subsubsection{\place{Dionysceus}}\label{dionysceus}
-
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \item Encountered Everywhere
 
@@ -4535,8 +4525,8 @@ right?
 Whatever you want. You need the Coil for later though.
 
 \subsubsection{\place{Ukpyr}}\label{ukpyr}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
     \tightlist
   \item Umpani Ruffians
@@ -4626,8 +4616,8 @@ If you want the items though, get them before meeting General Yamo.
 
 
 \subsubsection{\place{Rattkin Ruins}}\label{rattkin-ruins}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \item Encountered everywhere
     \begin{itemize}
@@ -4777,8 +4767,8 @@ him already.
 The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
 
 \subsubsection{\place{Old City}}\label{old-city}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Spirits
@@ -4807,8 +4797,8 @@ will be the stat-raising kind. If you already knew what to do to get in
 however, you can go in here as early as after \place{Orkogre Castle}.
 
 \subsubsection{\place{Nyctalinth}}\label{nyctalinth}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item \place{Nyctalinth}
   \begin{itemize}
@@ -4986,8 +4976,8 @@ Jan-Ette. Help her if you want the Eagle Eye skill later and to be on
 friendly terms with the Helazoid.
 
 \subsubsection{\place{Witch Mountains}}\label{witch-mountains}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5035,8 +5025,8 @@ down into that area before going into the \place{Witch Cave}.
 Why go into the \place{Witch Cave} with what you learned of course!
 
 \subsubsection{\place{Giant Cave}}\label{giant-cave}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \WviiSPOT{} (fixed)
@@ -5090,8 +5080,8 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 
 \subsubsection{\place{Witch Grove}}\label{witch-grove}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5122,8 +5112,8 @@ Necromantic Helm is the ``witching glass''. You can also find the White
 Dahlia in this area.
 
 \subsubsection{\place{Witch Cave}}\label{witch-cave}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
@@ -5172,8 +5162,8 @@ to it. This is usually one of the last maps I get---because it never seems to
 disappear no matter how long I take!
 
 \subsubsection{\place{Ukpyr Mountains}}\label{ukpyr-mountains}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5198,8 +5188,8 @@ then exploring further, or by exiting \place{Ukpyr} to the north and snooping ar
 all the sidepaths and the main path.
 
 \subsubsection{\place{Sphinx Cave}}\label{sphinx-cave}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Red Pirannhas
@@ -5227,8 +5217,8 @@ refers to. You're going to need to swim at most 3 to 4 spaces by the way.
 Isn't your \spell{Detect Secret} going off right now?
 
 \subsubsection{\place{Isle of Crypts} \& \place{Mandolian Isles}}\label{isle-of-crypts-and-mandolian-isles}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Above ground
   \begin{itemize}
@@ -5240,7 +5230,6 @@ Monsters Encountered:\\*
   \item Luna Mothras
   \item Red Pirannhas
   \end{itemize}
-
 
 \item Below ground
 
@@ -5318,8 +5307,8 @@ better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
 but save before doing so!
 
 \subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Emerald Dragons (fixed)
@@ -5378,7 +5367,8 @@ Remember the gate with the black dragon on it in the \place{Isle of Crypts}?
 Climb up and find out. It's (relatively) safe.
 
 \subsubsection{\place{City of Sky}}\label{city-of-sky}
-
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Savant Kui'sa-ka
@@ -5480,8 +5470,8 @@ then selling them to Paluke---or anyone other than Dame Ke-li.
 
 \subsubsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Ra-sep-re-tep (fixed)
@@ -5592,8 +5582,8 @@ the Beast stops becoming so invulnerable.
 
 
 \subsubsection{\place{Hall of the Past}}\label{hall-of-the-past}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Rexx
@@ -5659,8 +5649,8 @@ with the Man, do the same thing for the bottom row. The buttons will fall
 into place.
 
 \subsubsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}
-
-Monsters Encountered:\\*
+%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item Dk. Savant (fixed)
@@ -5733,7 +5723,7 @@ Various other possible questions:
 That is (sort of) covered in the very last part of the Spoilers section.
 
 \section{Spoilers}\label{spoilers}
-
+%
 This is a (minor) spoiler section If you don't like spoilers, ignore this
 last section. There's a reason why the spoiler section is
 \textlcsc{last}--although some of the questions above are semi-spoilish in
@@ -5742,7 +5732,7 @@ Besides any spontaneous blurbs I may have, if you've got a question about the
 game that I feel is spoilish I will add it here.
 
 \subsection{Items}\label{items}
-
+%
 As I'm a rather avid item collector, I thought it would be nice to spill
 some information just for the heck of it
 
@@ -5815,7 +5805,7 @@ the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}
 
-This is from what I can remember, so there may be some mistakes:\\*
+This is from what I can remember, so there may be some mistakes:%
 \begin{itemize}[WviiTwoColumn]
 \item Lord Galiere and King Ulgar
   \begin{itemize}
@@ -6080,7 +6070,7 @@ Sacrament pathway will open up, closing the path to the other fountain he
 has.
 
 \subsection{Transferring to Wizardry~8}\label{transferring-to-wizardry-8}
-
+%
 \faqentry{What items transfer?}
 
 Quite a bit actually. Your starting equipment and low level equipment for
@@ -6143,7 +6133,7 @@ specifically. This section is here only because it also pertains to Wizardry~7.
 
 
 \section{Version Updates}\label{version-updates}
-
+%
 v1.95a (11/17/01) Quick minor correction.
 
 v1.95 (11/16/01) Added a section about transferring to Wizardry~8 and made a
@@ -6194,7 +6184,7 @@ where this FAQ is displayed.
 v1.0 (6/6/00) None.
 
 \subsection{Sources}\label{sources}
-
+%
 \begin{itemize}
 \tightlist
 \item Software Specialties Wizardry~7 board Crusaders of the Dark Savant Clue
@@ -6204,7 +6194,7 @@ don't know about until you play through the game)
 \end{itemize}
 
 \subsection{Future plans}\label{future-plans}
-
+%
 The bottom item is what will most likely come up next.  Don't expect anything
 on the top to come anytime soon.
 
@@ -6249,7 +6239,7 @@ on the top to come anytime soon.
 \end{itemize}
 
 \section{Afterword}\label{afterword}
-
+%
 Thanks for reading this guide. As I've said before, any comments and such
 non-spam and non-flame in nature are appreciated. If you have a question not
 answered here, I'll be happy to add it after you ask me.  Right now, I'm in
