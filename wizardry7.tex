@@ -10,7 +10,6 @@
 \usepackage[defaultlines=2,all]{nowidow}
 \usepackage{ragged2e}
 \usepackage{hhline}
-\usepackage{mdwlist}
 \usepackage{hyphenat}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
@@ -26,8 +25,6 @@
 % This must be loaded before hyperref or bookmarks packages so that the
 % generated Index is clickable.
 \usepackage[xindy]{imakeidx}
-%\usepackage{showidx}
-%\usepackage{makeidx}
 
 % Bookmark package loads hyperref internally.
 \usepackage{bookmark}
@@ -58,7 +55,7 @@
 % Redefines (sub)paragraphs to behave more like sections
 \ifx\paragraph\undefined\else
 \let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}\nopagebreak}
 \fi
 \ifx\subparagraph\undefined\else
 \let\oldsubparagraph\subparagraph
@@ -86,6 +83,13 @@ contents={%
 \author{Written by: Ravashack\protect\footnote{\LaTeX{} conversion by Václav Haisman}}
 \date{v.\ 1.95a}
 
+\usepackage{needspace}
+\makeatletter
+% The following macro makes sure there is enough space on page for following
+% text. It is used to glue text before lists to the lists.
+\newcommand{\WviiNeedSpace}{\Needspace*{4\baselineskip+\parskip}}
+\makeatother
+
 \makeatletter
 \newcommand{\indexSpell}[1]{\index{#1}}
 \newcommand{\spell}[1]{#1\indexSpell{#1}}
@@ -103,7 +107,7 @@ contents={%
   \paragraph{Q\@: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
 
 \newcommand{\spellentry}[1]{%
-  \subparagraph{\spell{#1}}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak}
+  \textbf{\spell{#1}\quad}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak}
 
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
 
@@ -134,7 +138,7 @@ contents={%
 \end{titlepage}
 
 \section{Mandatory Copyright
-information}\label{mandatory-copyright-information}
+information}\label{mandatory-copyright-information}%
 %
 This file is copyright 2000 by Ravashack, a.k.a. Leo Wang in the non-internet
 world. If you want to use any of the information here in any form, feel free
@@ -151,7 +155,7 @@ content.
 
 \section{\texorpdfstring{A little ``getting to know you'' stuff and
 Contact
-Info}{A little getting to know you stuff and Contact Info}}\label{a-little-getting-to-know-you-stuff-and-contact-info}
+Info}{A little getting to know you stuff and Contact Info}}\label{a-little-getting-to-know-you-stuff-and-contact-info}%
 %
 This here is a FAQ for the game Crusaders of the Dark Savant. It can also be
 used for people playing Wizardry Gold, which is the same thing with more
@@ -248,8 +252,7 @@ Baz, for reminding me about an oversight.
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-This FAQ is currently displayed at:
-
+\WviiNeedSpace{}This FAQ is currently displayed at:%
 \begin{itemize}
 \tightlist
 \item
@@ -268,22 +271,20 @@ will appreciate it.
 \tableofcontents
 \end{multicols}
 
-\section{Character Creation}\label{character-creation}
+\section{Character Creation}\label{character-creation}%
 %
-\subsection{Male vs.~Female}\label{male-vs.female}
+\subsection{Male vs.~Female}\label{male-vs.female}%
 %
 What's the difference? Females, when they start out, get a −2 in
 Strength, +1 in Personality, and a +1 in Karma compared to the base
 statistics given in the manual. Males start out with the base statistics
 given in the manual.
 
-\subsubsection{Males}\label{males}
+\subsubsection{Males}\label{males}%
 %
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
-\tightlist
 \item
   Classes based on strength are easier to get for males.
 \item
@@ -291,8 +292,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   See benefits of Females.
@@ -302,13 +302,11 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Females}\label{females}
+\subsubsection{Females}\label{females}%
 %
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
-\tightlist
 \item
   Classes based on Personality will require 1 less point to get for
   females, unless it has a strength requirement as well.
@@ -322,8 +320,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   See benefits of Males.
@@ -333,7 +330,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Overall}\label{overall}
+\subsubsection{Overall}\label{overall}%
 %
 Use Male characters only if you are importing a game from Bane of the
 Cosmic Forge, if you are rolling up a \class{Fighter}-type character or a
@@ -344,9 +341,9 @@ other situations that don't apply to male characters---you don't lose
 anything out of it, and it gives you the option to class change into a
 \class{Valkyrie} later.
 
-\subsection{Races}\label{races}
+\subsection{Races}\label{races}%
 %
-Basic Layout:%
+\WviiNeedSpace{}Basic Layout:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item Name of Race
@@ -372,9 +369,8 @@ Fighter & 3 & & & & & & & N & 3\tabularnewline
 \bottomrule
 \end{longtable}
 
-Explanations:
-
-\begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{5em}\RaggedRight}
+\WviiNeedSpace{}Explanations:%
+\begin{description}[style=nextline, labelwidth=4.5em, leftmargin=!, labelindent=0em]\RaggedRight
 \tightlist
 \item[STR] Points towards Strength needed.
 \item[INT] Points towards Intelligence needed.
@@ -388,12 +384,13 @@ Explanations:
 \item[--] Doesn't matter.
 \item[N] No, it won't help you in the points.
 \item[Total] Total amount of points needed for the class.
-\end{basedescript}
+\end{description}
 
 \subparagraph{Note:} Any class with Y will have point distribution altered to
 reflect stat changes for female characters.
 
-Convenient Starting Professions\begin{itemize}
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}
 \tightlist
 \item
   A profession(s) which the race excels at naturally OR A non-basic (not
@@ -402,13 +399,12 @@ Convenient Starting Professions\begin{itemize}
   races OR A basic profession achievable within 2 points or less.
 \end{itemize}
 
-\subsubsection{\race{Human}}\label{human}
+\subsubsection{\race{Human}}\label{human}%
 %
 Base \race{Human} stats: 9 8 8 9 9 8 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
 \item
@@ -416,8 +412,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -459,7 +454,8 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -468,13 +464,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Ranger} (don't expect your spell points to come back quickly though)
 \end{itemize}
 
-\subsubsection{\race{Elf}}\label{elf}
+\subsubsection{\race{Elf}}\label{elf}%
 %
 Base \race{Elf} stats 7 10 10 7 9 9 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
 \item
@@ -486,8 +481,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -497,8 +491,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Suggestions:
-
+\WviiNeedSpace{}Suggestions:
 \begin{itemize}
 \item
   When picking an \race{Elf}, pick female unless you fully intend to make it a
@@ -537,7 +530,8 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -550,12 +544,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Bishop}
 \end{itemize}
 
-\subsubsection{\race{Dwarf}}\label{dwarf}
+\subsubsection{\race{Dwarf}}\label{dwarf}%
 %
 Base \race{Dwarf} stats 11 6 10 12 7 7 7
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:%
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Poison resistance
@@ -565,7 +559,7 @@ Perks:%
 \end{itemize}
 \columnbreak
 
-Flaws:%
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -604,7 +598,8 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -615,13 +610,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Valkyrie}
 \end{itemize}
 
-\subsubsection{\race{Gnome}}\label{gnome}
+\subsubsection{\race{Gnome}}\label{gnome}%
 %
 Base \race{Gnome} Stats 10 7 13 10 8 6 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
 \item
@@ -629,8 +623,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -669,7 +662,8 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-\pagebreak[3]Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -680,13 +674,12 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
   \class{Valkyrie}
 \end{itemize}
 
-\subsubsection{\race{Hobbit}}\label{hobbit}
+\subsubsection{\race{Hobbit}}\label{hobbit}%
 %
 Base \race{Hobbit} stats 8 7 6 9 10 7 13
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
 \item
@@ -697,8 +690,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -737,20 +729,20 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
 \item
   \class{Bard}
 \end{itemize}
 
-\subsubsection{\race{Faerie}}\label{faerie}
+\subsubsection{\race{Faerie}}\label{faerie}%
 %
 Base \race{Faerie} Stats 5 11 6 6 10 14 12
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Character always start with Gossamer Gown (U), Gossamer Gown (L),
@@ -770,8 +762,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Cannot use most weapons and armor.
@@ -815,7 +806,8 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -832,13 +824,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Samurai} -- A semi-useless choice as you cannot wear most decent armor.
 \end{itemize}
 
-\subsubsection{\race{Lizardman}}\label{lizardman}
+\subsubsection{\race{Lizardman}}\label{lizardman}%
 %
 Base \race{Lizardman} Stats 12 5 5 14 8 10 3
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Mental Resistance
@@ -849,8 +840,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Very slow mana recharge rate
@@ -891,20 +881,20 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\race{Dracon}}\label{dracon}
+\subsubsection{\race{Dracon}}\label{dracon}%
 %
 Base \race{Dracon} Stats 10 7 6 12 10 8 6
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Breathe Acid
@@ -915,8 +905,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Breathing Acid takes out a large percentage of stamina, regardless of
@@ -956,7 +945,8 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\nobreak\begin{itemize}[WviiTwoColumn]%
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]%
 \item
   \class{Fighter}
 \item
@@ -969,21 +959,19 @@ Convenient Starting Professions\nobreak\begin{itemize}[WviiTwoColumn]%
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\race{Rawulf}}\label{rawulf}
+\subsubsection{\race{Rawulf}}\label{rawulf}%
 %
 Base \race{Rawulf} stats: 8 6 12 10 8 8 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Cold resistance
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 
 \item
@@ -1021,7 +1009,8 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
 \item
@@ -1034,13 +1023,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Monk}
 \end{itemize}
 
-\subsubsection{\race{Felpurr}}\label{felpurr}
+\subsubsection{\race{Felpurr}}\label{felpurr}%
 %
 Base \race{Felpurr} Stats: 7 10 7 7 10 12 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Dodge missile attacks
@@ -1049,8 +1037,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -1088,7 +1075,8 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
 \item
@@ -1103,13 +1091,12 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\race{Mook}}\label{mook}
+\subsubsection{\race{Mook}}\label{mook}%
 %
 Base \race{Mook} Stats: 10 10 6 10 7 7 9
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Cold Resistance
@@ -1118,8 +1105,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -1157,7 +1143,8 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
+\WviiNeedSpace{}Convenient Starting Professions%
+\begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}
 \item
@@ -1166,15 +1153,14 @@ Convenient Starting Professions\begin{itemize}[WviiTwoColumn]
   \class{Psionic}
 \end{itemize}
 
-\subsection{Classes}\label{classes}
+\subsection{Classes}\label{classes}%
 %
-\subsubsection{\class{Fighter}}\label{fighter}
+\subsubsection{\class{Fighter}}\label{fighter}%
 %
 requirements: 12 0 0 0 0 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Starting kit is very advanced compared to other characters
@@ -1187,8 +1173,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   No spells
@@ -1199,7 +1184,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}→\class{Valkyrie}
@@ -1217,13 +1202,13 @@ Profession changing suggestions:%
   \class{Samurai}
 \end{itemize}
 
-\subsubsection{\class{Mage}}\label{mage}
+\subsubsection{\class{Mage}}\label{mage}%
 %
 requirements: 0 12 0 0 0 0 0
 
+\WviiNeedSpace{}%
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns the Thaumaturgic spells the quickest.
@@ -1232,8 +1217,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Low hit points
@@ -1246,7 +1230,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Fighter}→\class{Samurai}
@@ -1264,13 +1248,12 @@ Profession changing suggestions:%
   \class{Samurai}
 \end{itemize}
 
-\subsubsection{\class{Priest}}\label{priest}
+\subsubsection{\class{Priest}}\label{priest}%
 %
 requirements: 0 0 12 0 0 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns the Theological spells the fastest
@@ -1287,8 +1270,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Few attacking spells
@@ -1299,8 +1281,8 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\Needspace*{5\baselineskip}Profession changing suggestions:%
+\begin{itemize}[WviiTwoColumn]%
 \item
   \class{Fighter}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}
 \item
@@ -1316,13 +1298,12 @@ Profession changing suggestions:%
   \class{Lord}
 \end{itemize}
 
-\subsubsection{\class{Thief}}\label{thief}
+\subsubsection{\class{Thief}}\label{thief}%
 %
 requirements: 0 0 0 0 12 8 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Gets a \textlcsc{LARGE} boost in Skulduggery every level for a good while.
@@ -1340,8 +1321,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   No spells
@@ -1356,7 +1336,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Ranger}→\class{Ninja}
@@ -1372,13 +1352,12 @@ Profession changing suggestions:%
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\class{Ranger}}\label{ranger}
+\subsubsection{\class{Ranger}}\label{ranger}%
 %
 requirements: 10 8 8 11 10 8 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Kirijutsu effect with missile weapons
@@ -1399,8 +1378,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Second rate protection
@@ -1413,7 +1391,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Bard}→\class{Samurai}
@@ -1425,13 +1403,12 @@ Profession changing suggestions:%
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\class{Bard}}\label{bard}
+\subsubsection{\class{Bard}}\label{bard}%
 %
 requirements: 0 10 0 0 12 8 12
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Thamaturgical spells
@@ -1450,8 +1427,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Must be a female character to use the best protection available to the
@@ -1461,7 +1437,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Mage}
@@ -1471,13 +1447,12 @@ Profession changing suggestions:%
   \class{Samurai}
 \end{itemize}
 
-\subsubsection{\class{Psionic}}\label{psionic}
+\subsubsection{\class{Psionic}}\label{psionic}%
 %
 requirements: 10 14 0 14 0 0 10
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Theosophical spells the fastest
@@ -1492,10 +1467,8 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
-\tightlist
 \item
   Many monsters resist Mental attacks more often than other attacks,
   making most of the spells available to the \class{Psionic} useless.
@@ -1505,7 +1478,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Valkyrie} (females only)
@@ -1515,13 +1488,12 @@ Profession changing suggestions:%
   \class{Lord}
 \end{itemize}
 
-\subsubsection{\class{Alchemist}}\label{alchemist}
+\subsubsection{\class{Alchemist}}\label{alchemist}%
 %
 requirements: 0 13 0 0 13 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Alchemical spells the fastest
@@ -1538,8 +1510,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
@@ -1548,7 +1519,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Thief}
@@ -1561,13 +1532,12 @@ Profession changing suggestions:%
 \end{itemize}
 
 
-\subsubsection{\class{Valkyrie}}\label{valkyrie}
+\subsubsection{\class{Valkyrie}}\label{valkyrie}%
 %
 requirements: 10 0 11 11 10 11 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Theological spells
@@ -1586,8 +1556,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Available to only female characters
@@ -1596,7 +1565,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Samurai}
@@ -1606,13 +1575,12 @@ Profession changing suggestions:%
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\class{Bishop}}\label{bishop}
+\subsubsection{\class{Bishop}}\label{bishop}%
 %
 requirements: 0 15 15 0 0 0 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns both Theological and Thaumaturgical spells
@@ -1627,30 +1595,28 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \tightlist
 \item
   Spell progression is \textlcsc{SLOW} as research must be divided in half.
 \end{itemize}
+\end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Psionic}
 \item
   \class{Alchemist}
 \end{itemize}
-\end{multicols}
 
-\subsubsection{\class{Lord}}\label{lord}
+\subsubsection{\class{Lord}}\label{lord}%
 %
 requirements: 12 9 12 12 9 9 14
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Theological spells
@@ -1667,8 +1633,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Very expensive class to attain
@@ -1683,7 +1648,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \item
   \class{Priest}
@@ -1699,13 +1664,12 @@ Profession changing suggestions:%
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\class{Samurai}}\label{samurai}
+\subsubsection{\class{Samurai}}\label{samurai}%
 %
 Requirements: 12 11 0 9 12 14 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Kirijutsu
@@ -1719,8 +1683,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Semi-limited selection of weapons and armor
@@ -1729,7 +1692,7 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -1738,13 +1701,12 @@ Profession changing suggestions:%
   \class{Monk}
 \end{itemize}
 
-\subsubsection{\class{Monk}}\label{monk}
+\subsubsection{\class{Monk}}\label{monk}%
 %
 Requirements: 13 8 13 0 10 13 8
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Kirijutsu
@@ -1761,8 +1723,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Theosophical spells resisted more often
@@ -1775,20 +1736,19 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   \class{Ninja}
 \end{itemize}
 
-\subsubsection{\class{Ninja}}\label{ninja}
+\subsubsection{\class{Ninja}}\label{ninja}%
 %
 Requirements: 12 10 10 12 12 12 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-Perks:
-
+\WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
   Learns Kirijutsu
@@ -1817,8 +1777,7 @@ Perks:
 \end{itemize}
 \columnbreak
 
-Flaws:
-
+\WviiNeedSpace{}Flaws:%
 \begin{itemize}
 \item
   Expensive class to attain
@@ -1836,16 +1795,16 @@ Flaws:
 \end{itemize}
 \end{multicols}
 
-Profession changing suggestions:%
+\WviiNeedSpace{}Profession changing suggestions:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
   None
 \end{itemize}
 
-\subsection{Skill selection}\label{skill-selection}
+\subsection{Skill selection}\label{skill-selection}%
 %
-\subsubsection{Essential Skills}\label{essential-skills}
+\subsubsection{Essential Skills}\label{essential-skills}%
 %
 \paragraph{Swimming} Everyone needs to have at least a 10 in swimming before
 attempting to enter the water to practice. There are three places to practice
@@ -1892,8 +1851,8 @@ put points into this, you're potentially missing out on a spell that might
 help you in game.
 
 \subsubsection{\texorpdfstring{``Nice to have''
-skills}{Nice to have skills}}\label{nice-to-have-skills}
-
+skills}{Nice to have skills}}\label{nice-to-have-skills}%
+%
 \paragraph{Artifacts} Having a high Artifacts skill lets you assay items to
 find out what they are without casting \spell{Identify}. Don't worry about
 putting points into it however; you automatically gain points every time you
@@ -1946,7 +1905,7 @@ Barlone a favor will please Mick the Pick and Ratsputin enough to trade with
 you).
 
 \subsubsection{\texorpdfstring{``Really depends on your playing style''
-skills}{Really depends on your playing style skills}}\label{really-depends-on-your-playing-style-skills}
+skills}{Really depends on your playing style skills}}\label{really-depends-on-your-playing-style-skills}%
 %
 \paragraph{Mythology} This lets you successfully ID the monster you're
 fighting. In some cases it will be very useful, if you're conserving mana and
@@ -1968,7 +1927,7 @@ don't need cash anymore, scrolls are already quite useless.
 \paragraph{Firearms} I personally don't like 2 of the 5 weapons that use this
 skill. Still, you might as well get it. Raising it is up to you however.
 
-\section{Choosing a Party}\label{choosing-a-party}
+\section{Choosing a Party}\label{choosing-a-party}%
 %
 Depending on what difficulty you are playing, there are five types of
 parties that will be used throughout the game: the `Super' Party, the
@@ -1976,7 +1935,7 @@ parties that will be used throughout the game: the `Super' Party, the
 the `Vanilla' Party.
 
 \subsection{\texorpdfstring{The `Super'
-Party}{The Super Party}}\label{the-super-party}
+Party}{The Super Party}}\label{the-super-party}%
 %
 The Super Party is what everyone wants to end up with at the end of the game,
 but it is very hard to use in the beginning. The reason is because the Super
@@ -1995,7 +1954,7 @@ and the only ways to get your hands on them are buying it for 10,000
 gold---which you won't have for a long time---or killing them, which is very
 difficult with this kind of party until much much later.
 
-Sample Super Party:%
+\WviiNeedSpace{}Sample Super Party:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2013,7 +1972,7 @@ Sample Super Party:%
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Quick and Easy'
-Party}{The Quick and Easy Party}}\label{the-quick-and-easy-party}
+Party}{The Quick and Easy Party}}\label{the-quick-and-easy-party}%
 %
 The Quick and Easy Party is the exact opposite of the Super Party. This party
 is usually made up of characters quickly rolled up, and is usually something
@@ -2028,7 +1987,7 @@ the urge to change profession as experience requirements get higher and
 higher and your diversity in what you can do gets lower and lower. Which
 brings us to\ldots{}
 
-Sample Quick and Easy Party:%
+\WviiNeedSpace{}Sample Quick and Easy Party:%
 \begin{itemize}[topsep=0pt]
 \tightlist
 \item
@@ -2046,7 +2005,7 @@ Sample Quick and Easy Party:%
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Dual class'
-Party}{The Dual class Party}}\label{the-dual-class-party}
+Party}{The Dual class Party}}\label{the-dual-class-party}%
 %
 This party is similar to the Quick and Easy Party except for one major
 difference: The characters rolled up are customized to be able to switch
@@ -2060,8 +2019,7 @@ the first 5--10 levels to accumulate skills and spells quickly---a Faery
 \class{Thief} that I converted into a \class{Ninja} after hitting level~7
 already had 100 Skulduggery at level~3!
 
-Sample Dual Class Party (Characters rolled with 15 points to distribute):
-
+\WviiNeedSpace{}Sample Dual Class Party (Characters rolled with 15 points to distribute):%
 \begin{itemize}
 \tightlist
 \item
@@ -2088,7 +2046,7 @@ would happen normally.
 Stats are given in the order of: Strength, Intelligence, Piety,
 Vitality, Dexterity, Speed, Personality.
 
-\subsubsection{\race{Elf} \class{Fighter}}\label{sec:elf-fighter}
+\subsubsection{\race{Elf} \class{Fighter}}\label{sec:elf-fighter}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2114,7 +2072,7 @@ distribute the excess to Vitality as all the ability scores will be
 reset down to the bare minimum after the profession change; might as
 well get some extra hit points and stamina out of it.
 
-\subsubsection{\race{Felpurr} \class{Fighter}}\label{sec:felpurr-fighter}
+\subsubsection{\race{Felpurr} \class{Fighter}}\label{sec:felpurr-fighter}%
 %
 \race{Felpurr} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2138,8 +2096,7 @@ well get some extra hit points and stamina out of it.
 There are three points to distribute left as you wish. Again, I would
 put it into Vitality.
 
-\subsubsection{\race{Faerie} \class{Thief}}
-\label{sec:faerie-thief}
+\subsubsection{\race{Faerie} \class{Thief}}\label{sec:faerie-thief}%
 %
 \race{Faerie} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2165,7 +2122,7 @@ level ups to give you the rest of the stat boost you need. This could
 easily be met by level~7 or 8--less if you reload your level ups to get
 the bonuses you want.
 
-\subsubsection{\race{Elf} \class{Priest} (F)}\label{sec:elf-priest-f}
+\subsubsection{\race{Elf} \class{Priest} (F)}\label{sec:elf-priest-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2190,7 +2147,7 @@ This leaves you with 1 extra point to distribute. Either Vitality or
 Intelligence is a good choice; getting more Academia points to speed up
 getting the higher level spells is nice, but so is more hit points.
 
-\subsubsection{\race{Elf} \class{Mage} (F)}\label{sec:elf-mage-f}
+\subsubsection{\race{Elf} \class{Mage} (F)}\label{sec:elf-mage-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2216,7 +2173,7 @@ a lot of hit points a level, dump them either in Intelligence for
 increased amount of Academia points or in Piety for better spell point
 gain\fshyp{}level and spell point recovery.
 
-\subsubsection{\race{Elf} \class{Bard} (F)}\label{sec:elf-bard-f}
+\subsubsection{\race{Elf} \class{Bard} (F)}\label{sec:elf-bard-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2254,7 +2211,7 @@ it takes the same amount of experience to get from level~1 to level~10
 as it does to get from level~10 to level~11.
 
 \subsection{\texorpdfstring{The `Blender'
-Party}{The Blender Party}}\label{the-blender-party}
+Party}{The Blender Party}}\label{the-blender-party}%
 %
 I call this the Blender party mainly because it takes a little bit of
 the Super Party and a little bit of the Quick and Easy Party and/or the
@@ -2268,8 +2225,7 @@ Personality, which are scores that cannot be improved by certain items
 that can be bought, or a 19 or 20 in Vitality, which cannot go over 18
 with items
 
-Sample Blender Party:
-
+\WviiNeedSpace{}Sample Blender Party:%
 \begin{itemize}
 \tightlist
 \item
@@ -2289,7 +2245,7 @@ Sample Blender Party:
 \end{itemize}
 
 \subsection{\texorpdfstring{The `Vanilla'
-Party}{The Vanilla Party}}\label{the-vanilla-party}
+Party}{The Vanilla Party}}\label{the-vanilla-party}%
 %
 Called the Vanilla Party for its simpleness, this party \textlcsc{never}
 changes classes, so pick carefully. You'll need at least 1~healer,
@@ -2302,11 +2258,11 @@ too
 Sample Vanilla Party: (See Sample Quick and Easy Party or Sample Super
 Party)
 
-\section{Picking Spells}\label{picking-spells}
+\section{Picking Spells}\label{picking-spells}%
 %
 Thank you Llevram for much of the information in this section.
 
-\subsection{General spellcasting}\label{general-spellcasting}
+\subsection{General spellcasting}\label{general-spellcasting}%
 %
 All spells that you can cast are cumulative. That means you can cast them
 over and over to make them last longer (if they have a duration), reduce the
@@ -2328,7 +2284,7 @@ been active, the weaker it gets, so don't rely on multiple castings casted 3
 game days ago to get you through certain tougher fights.
 
 \subsection{Learning spells from
-books}\label{learning-spells-from-books}
+books}\label{learning-spells-from-books}%
 %
 The following spells may be learned from books:
 
@@ -2386,7 +2342,7 @@ way. The \class{Alchemist} will \textlcsc{NOT} gain any water spell points
 until he or she learns another water spell by a level up---in this case
 \spell{Cure Paralysis}, \spell{Draining Cloud}, or \spell{Cure Disease}.
 
-\subsection{Commonly used spells}\label{commonly-used-spells}
+\subsection{Commonly used spells}\label{commonly-used-spells}%
 %
 \begin{itemize}[WviiTwoColumn]
 \tightlist
@@ -2436,15 +2392,16 @@ until he or she learns another water spell by a level up---in this case
     convenience.}
 \end{itemize}
 
-\subsection{Spell-picking Choices}\label{spell-picking-choices}
+\subsection{Spell-picking Choices}\label{spell-picking-choices}%
 %
 \subparagraph{Note:} The required amount of skill points for a group of spells
 may be off by one or two points.
 
 \begin{multicols}{2}
-\subsubsection{Thaumaturgy (\class{Mage} spellbook)}\label{sec:thaumaturgy-mage-spellbook}
+\subsubsection{Thaumaturgy (\class{Mage} spellbook)}\label{sec:thaumaturgy-mage-spellbook}%
 %
-\paragraph{Level 1 spells}
+\WviiNeedSpace{}%
+\paragraph{Level 1 spells}%
 
 \spellentry{Energy Blast} Your (possible) first damaging spell. Nothing
 special.
@@ -2472,7 +2429,8 @@ noticeable drop in Armor Class when cast at level~7.
 spell after you get the Journey Map Kit, as you can easily check which way
 you are facing by using the map.
 
-\paragraph{Level 2 spells (18 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 2 spells (18 Thaumaturgy)}%
 
 \spellentry{Magic Missile} Damages a limited number of opponents. Useful when
 you need to deal medium amounts of damage to a group.
@@ -2507,7 +2465,8 @@ attack. Useful I suppose, but I prefer killing them as quickly as
 possible. Supposedly this spell also lowers resistances, which can be very
 useful, but there's no way to tell for certain.
 
-\paragraph{Level 3 spells (37 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 3 spells (37 Thaumaturgy)}%
 
 \spellentry{Fireball} Once you get this, you'll be avoiding usage of Magic
 Missile except on Undead and fire-resistant monsters.
@@ -2547,7 +2506,8 @@ breath. Don't expect this spell to have any effects on \spell{Whirlwind} or
 round. You will always become uninvisible to attack. Lasts quite a while
 too. Don't bother with this spell if the character knows Ninjitsu though.
 
-\paragraph{Level 4 spells (54 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 4 spells (54 Thaumaturgy)}%
 
 \spellentry{Iceball} The Ice equivalent of \spell{Fireball}, only more
 expensive. But then, it hurts more, so that's a fair trade off. With
@@ -2580,7 +2540,8 @@ passage behind a wall.
 \spellentry{Spooks} A Terror spell that affects all opponents. I don't
 recommend it.
 
-\paragraph{Level 5 spells (72 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 5 spells (72 Thaumaturgy)}%
 
 \spellentry{Prismic Missile} Causes random status ailments or damage. It is
 more likely to cause damage on weaker opponents and more likely to cause
@@ -2604,7 +2565,8 @@ you from falling into pits.
 consistently damaging spell in the game---which is why you need \spell{Ice
   Shield} when monsters cast it on you!
 
-\paragraph{Level 6 spells (90 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 6 spells (90 Thaumaturgy)}%
 
 \spellentry{Firestorm} Fun fun fun. Burns the enemy for a small amount for
 several turns. Very useful up to mid-game to kill things---after that it's
@@ -2631,7 +2593,8 @@ possible if you're on hard mode and the 5 groups of critters that ambush you
 each fight start to get on your nerves. Becomes useless near the end of the
 game though.
 
-\paragraph{Level 7 spells (98 Thaumaturgy)}
+\WviiNeedSpace{}%
+\paragraph{Level 7 spells (98 Thaumaturgy)}%
 
 \spellentry{Nuclear Blast} Can't go wrong with this spell. Just watch your
 Fire spell points.
@@ -2643,9 +2606,10 @@ perfectionist type you're probably going to skip this spell. If you ressurect
 a character, the character loses 1 point of Vitality and their life counter
 increases by~1.
 
-\subsubsection{Theology (\class{Priest} spellbook)}\label{sec:theology-priest-spellbook}
+\subsubsection{Theology (\class{Priest} spellbook)}\label{sec:theology-priest-spellbook}%
 %
-\paragraph{Level 1 spells}
+\WviiNeedSpace{}%
+\paragraph{Level 1 spells}%
 
 \spellentry{Heal} Wounds Get it if you like it, get it if you don't.
 
@@ -2662,7 +2626,8 @@ day. Even later in the game, this spell is useful.
 to make friends with NPCs. If you have diplomatic problems, this may be
 useful.  Otherwise, skip for a better spell unless you have no choice.
 
-\paragraph{Level 2 spells (18 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 2 spells (18 Theology)}%
 
 \spellentry{Enchanted Blade} Helps with hitting and dealing damage,
 \textlcsc{AND} you can cast it out of battle. Love this spell.
@@ -2698,7 +2663,8 @@ numbers.
 stronger than you so that you can try to go first in subsequent rounds. Much
 more useful when combined with \spell{Haste} to make sure you go first.
 
-\paragraph{Level 3 spells (37 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 3 spells (37 Theology)}%
 
 \spellentry{Hold Monsters} Attempts to paralyze a group. Unlike \spell{Web}
 or \spell{Paralyze}, the ``Paralyze'' ailment caused by this spell is easily
@@ -2730,7 +2696,8 @@ less than what you would get back if you casted Stamina on each character,
 but the convenience makes this spell useful. Still, if you can, there are
 better spells to get than this.
 
-\paragraph{Level 4 spells (54 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 4 spells (54 Theology)}%
 
 \spellentry{Conjuration} Summons a monster to help you.  They range from the
 pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
@@ -2752,7 +2719,8 @@ always have that \spell{Cure Poison} potion handy.
 most monsters don't take a whole lot of damage from this, if they get hurt at
 all.
 
-\paragraph{Level 5 spells (72 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 5 spells (72 Theology)}%
 
 \spellentry{Lightning} The only Fire spell for \class{Priest}s, and it hits in a
 group to boot. Grab it as early as possible so that you can have as many
@@ -2779,7 +2747,8 @@ spells casted on your party. Handy when you get pounded with \spell{Poison
 away when you cast it, cast a stronger \spell{Cure Disease}. The higher your
 vitality, the lower the spell level you will need to cure the disease.
 
-\paragraph{Level 6 spells (90 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 6 spells (90 Theology)}%
 
 \spellentry{Cure Stone} Cures the ``Stone'' ailment. If it doesn't go away
 when you cast it, cast a stronger \spell{Cure Stone}. The higher your
@@ -2803,7 +2772,8 @@ getting this is up to you. You \emph{will} run into demons however.
 Magicfood when used and can be used multiple times. Otherwise mildly useful
 to get back charges on items like the Amulet of Asphyxiation.
 
-\paragraph{Level 7 spells (98 Theology)}
+\WviiNeedSpace{}%
+\paragraph{Level 7 spells (98 Theology)}%
 
 \spellentry{Locate Person} Attempts to find all the NPCs. Level~7 \spell{Locate
 Person} tends to find all of them.
@@ -2823,9 +2793,10 @@ increases by~1.
 otherwise don't bother with it if you have a choice, unless you really need
 another 20 Divine spell points or you're getting this early in the game.
 
-\subsubsection{Theosophy (\class{Psionic} spellbook)}\label{sec:theosophy-psionic-spellbook}
+\WviiNeedSpace{}%
+\subsubsection{Theosophy (\class{Psionic} spellbook)}\label{sec:theosophy-psionic-spellbook}%
 %
-\paragraph{Level 1 spells}
+\paragraph{Level 1 spells}%
 
 \spellentry{Mental Attack} Your typical level~1 damage spell. It has the
 bonus of a large possibility of inflicting ``Insanity'' but this bonus is
@@ -2853,7 +2824,8 @@ items in the game.
 \spellentry{Terror} Attempts to give the ``Afraid'' ailment to a group. Not
 very helpful if you're trying to get experience.
 
-\paragraph{Level 2 spells (18 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 2 spells (18 Theosophy)}%
 
 \spellentry{Psionic Fires} The \class{Psionic} equivalent of
 \spell{Fireball}, only earlier. Quite useful at this point in the game.
@@ -2915,16 +2887,15 @@ useful, but there's no way to really tell for certain.
 stronger than you so that you can try to go first in subsequent rounds. Much
 more useful when combined with \spell{Haste} to make sure you go first.
 
-\paragraph{Level 3 spells (36 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 3 spells (36 Theosophy)}%
 
 \spellentry{Dazzling Lights} The \class{Psionic} version of \spell{Prismic
   Missile}, it dispenses status ailments or just sheer damage. For some odd
 reason, this spell in my experience tends to dispense status ailments more
 than just pure damage---however, the ``withers and dies'' effect seems to pop
-up more often with this.
-
-\subparagraph{Note:} This spell will not work on enemies with 100\% or
-greater Light Resistance.
+up more often with this. Note: This spell will not work on enemies with 100\%
+or greater Light Resistance.
 
 \spellentry{Blades} Unlike the \class{Priest}, the \class{Psionic} already
 has decent damage dealing spells. Still, it's useful when you run out of
@@ -2957,7 +2928,8 @@ everyone go first.
 ``Paralysis'' ailment. Especially useful when the trap goes off in your face
 and leaves you paralyzed for days.
 
-\paragraph{Level 4 spells (54 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 4 spells (54 Theosophy)}%
 
 \spellentry{Armormelt} Makes it easier to hit and damage monsters. Think of
 it as the opposite of \spell{Armor Shield}.
@@ -2981,13 +2953,15 @@ this.
 \spellentry{Paralyze} Paralyzes one enemy. Same thing as \spell{Web}. You're
 not going to be using this successfully when you want to.
 
-\paragraph{Level 5 spells (72 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 5 spells (72 Theosophy)}%
 
 \spellentry{Death} Useless, if it weren't for the fact that with the huge
 amount of Mental spell points the \class{Psionic} has, it actually might work on
 something after the umpteenth time. So near useless.
 
-\paragraph{Level 6 spells (90 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 6 spells (90 Theosophy)}%
 
 \spellentry{Locate Object} Is a \spell{Wizard Eye} spell that also shows the
 locations of chests (but not dropped items).
@@ -2998,7 +2972,8 @@ you can learn it. The massive amounts of healing is really nice, and you kill
 something in the process (sometimes something nasty like a Vampire Vulture or
 a Dragorra).
 
-\paragraph{Level 7 spells (98 Theosophy)}
+\WviiNeedSpace{}%
+\paragraph{Level 7 spells (98 Theosophy)}%
 
 \spellentry{Mind Flay} It's a mass target spell, and it's really
 nice. Unfortunately it is the worst out of all the mass target spells because
@@ -3015,9 +2990,10 @@ the perfectionist type you're probably going to skip this spell. If you
 ressurect a character, the character loses 1 point of Vitality and their life
 counter increases by~1.
 
-\subsubsection{Alchemy (\class{Alchemist} spellbook)}\label{sec:alchemy-alchemists-spellbook}
+\subsubsection{Alchemy (\class{Alchemist} spellbook)}\label{sec:alchemy-alchemists-spellbook}%
 %
-\paragraph{Level 1 spells}
+\WviiNeedSpace{}%
+\paragraph{Level 1 spells}%
 
 \spellentry{Acid Splash} Your basic level~1 damage spell. A couple groups of
 monsters (the vapors in particular) are pretty much immune to acid, but not a
@@ -3046,7 +3022,8 @@ useful.  Otherwise, skip for a better spell unless you have no choice.
 enemy. Much more useful than \spell{Acid Splash} in some cases, and less so
 in others.
 
-\paragraph{Level 2 spells (18 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 2 spells (18 Alchemy)}%
 
 \spellentry{Blinding Flash} Attempts to inflict the ``Blind'' ailment on a
 group of monsters. Don't expect this to work on monsters with light
@@ -3062,7 +3039,8 @@ spells?  \verb|:)|
 ``Insanity'' ailment on a group of monsters. You won't be using this too much
 after mid-game, as most monsters seem to shrug off this spell.
 
-\paragraph{Level 3 spells (36 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 3 spells (36 Alchemy)}%
 
 \spellentry{Stink Bomb} Yuck. You have better ways of making people
 sick. Still, you might like the spell. I don't.
@@ -3084,7 +3062,8 @@ as a group damage spell at this point.
 \spellentry{Cure Paralysis} Cures or reduces the duration of the ``Paralyze''
 ailment. Keep it handy.
 
-\paragraph{Level 4 spells (54 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 4 spells (54 Alchemy)}%
 
 \spellentry{Fire Bomb} Once you get this, you can stop using \spell{Whipping
   Rocks} if you got it. It's the \class{Alchemist}'s equivalent of
@@ -3107,7 +3086,8 @@ times, the poison lasts longer. Enjoy.
 ailment. You will need this as you get hit with nasty things like Vorpal
 Swords and attacks that poison you on each hit.
 
-\paragraph{Level 5 spells (72 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 5 spells (72 Alchemy)}%
 
 \spellentry{Draining Cloud} Drains the stamina out of the group it is casted
 on, and lasts for a short while. Useful when you're trying to tire out the
@@ -3131,7 +3111,8 @@ Spectral Moths to Godzylli and Bloodwyrms. The best summoning spell out of
 the three if you want sheer muscle; heck, it's the best period since the
 Godzylli can last much longer than the other summoned creatures.
 
-\paragraph{Level 6 Spells (90 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 6 Spells (90 Alchemy)}%
 
 \spellentry{Toxic Vapors} The cloud version of \spell{Stink Bomb}. Very
 useful, and makes sure that at least even powerful monsters can be
@@ -3153,7 +3134,8 @@ vitality, the lower the spell level you will need to cure the
 petrification. When cured, the character who was stoned loses 1 point in
 Vitality.
 
-\paragraph{Level 7 Spells (98 Alchemy)}
+\WviiNeedSpace{}%
+\paragraph{Level 7 Spells (98 Alchemy)}%
 
 \spellentry{Deadly Air} The \class{Alchemist} mass target spell.  Quite useful. For
 an air spell, it isn't resisted very much at all.
@@ -3162,13 +3144,12 @@ an air spell, it isn't resisted very much at all.
 though, especially with that expensive amount of spell points needed.
 \end{multicols}
 
-\section{Survival 101}\label{survival-101}
+\section{Survival 101}\label{survival-101}%
 %
-\subsection{Status Ailments}\label{status-ailments}
+\subsection{Status Ailments}\label{status-ailments}%
 %
-Ailments and their cures:
-
-\begin{basedescript}{\desclabelstyle{\nextlinelabel}\desclabelwidth{5em}\RaggedRight}
+\WviiNeedSpace{}Ailments and their cures:%
+\begin{description}[style=nextline, labelwidth=4.5em, leftmargin=!, labelindent=0em]
 \item[Sleep] \spell{Watchbells}, \spell{Cure Lesser Condition}, (automatic
 rousing)
 
@@ -3195,7 +3176,7 @@ Poison}--reduces to Poison
 \item[Stone] \spell{Cure Stone}
 
 \item[Death\protect\footnotemark{}] \spell{Ressurection}\footnotetext{“Ailment”}
-\end{basedescript}
+\end{description}
 
 For ailments that can be cured by resting, the appropriate spell reduces the
 duration of the ailment until it is down to 0 (i.e.\ the ailment is
@@ -3204,7 +3185,7 @@ a set level of the curative spell to restore the character or the ailment
 will not go away. This level is based roughly on the subject's Vitality stat:
 the higher it is, the lower your casting level can be.
 
-\subsection{Killing NPCs}\label{killing-npcs}
+\subsection{Killing NPCs}\label{killing-npcs}%
 %
 Generally, it is a good idea not to kill NPCs unless you know you don't need
 them---and can deal with the consequences. For example, some people kill
@@ -3215,12 +3196,10 @@ no more mobile NPCs of the same race still alive. Making them angry enough to
 attack you can become awkward at the worst times possible until your party is
 a killing machine, as most of the mobile NPCs tend to stalk you.
 
-\subsection{Inventory Management}\label{inventory-management}
+\subsection{Inventory Management}\label{inventory-management}%
 %
-Some pointers:
-%
+\WviiNeedSpace{}Some pointers:%
 \begin{itemize}
-\tightlist
 \item
   Try to keep your inventories organized
 \item
@@ -3266,28 +3245,29 @@ Some pointers:
   stuff?
 \end{itemize}
 
-\section{Playing the Game}\label{playing-the-game}
+\section{Playing the Game}\label{playing-the-game}%
 %
 The order of the following locations are a recommended, but not required,
 order to get through the game for a brand new party starting just outside of
 \place{New City}, based on when maps disappear.
 
-\subsection{Basic Format}\label{basic-format}
+\subsection{Basic Format}\label{basic-format}%
 %
-Name of Area
-
-List of monsters encountered (fixed) -- can only be fought in a fixed
+\begin{itemize}
+\item Name of Area
+\item List of monsters encountered (fixed) -- can only be fought in a fixed
 encounter (you can't avoid it)
+\item Potential Questions
+\end{itemize}
 
-Potential Questions
 
 \subsection{Questionaire Walkthrough
-(Semi-Spoilers)}\label{questionaire-walkthrough-semi-spoilers}
+(Semi-Spoilers)}\label{questionaire-walkthrough-semi-spoilers}%
 %
 \subsubsection{\place{Starting Area} (Near \place{New
-City})}\label{starting-area-near-new-city}
+City})}\label{starting-area-near-new-city}%
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item
@@ -3367,9 +3347,9 @@ in \place{Dionysceus}, the only map you've got a chance of getting is the
 \qmwordqm{TEMPLE} map in \place{Orkogre Castle} unless you know exactly what
 you are doing.
 
-\subsubsection{Starter Dungeon}\label{starter-dungeon}
+\subsubsection{Starter Dungeon}\label{starter-dungeon}%
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered everywhere
 \begin{itemize}
@@ -3434,7 +3414,7 @@ game at the level you are at. You'll see what I mean after deciding where to
 go after \place{New City}--anywhere but \place{Orkogre Castle},
 \place{Dionysceus} (via the poppy fields), and \place{Munkharama} is lethal.
 
-\subsubsection{\place{New City}}\label{new-city}
+\subsubsection{\place{New City}}\label{new-city}%
 %
 Monsters Encountered (varies by area of \place{New City}):%
 \begin{itemize}[WviiTwoColumn]
@@ -3579,9 +3559,9 @@ instructions he gives you. Seeing as Ratsputin seems to come down here pretty
 early, I'd say that he's the one that normally takes the \qmwordqm{LEGEND}
 map before it switches hands.
 
-\subsubsection{\place{Orkogre Castle}}\label{orkogre-castle}
+\subsubsection{\place{Orkogre Castle}}\label{orkogre-castle}%
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere (except below Prison):
 
@@ -3771,9 +3751,9 @@ potions in case a party member manages to run away from the fight because of
 the “Terror” status the Ravens inflict on you.  \spell{Cure Paralysis}
 potions are nice too.
 
-\subsubsection{\place{Munkharama}}\label{munkharama}
+\subsubsection{\place{Munkharama}}\label{munkharama}%
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered Everywhere
 
@@ -4210,7 +4190,7 @@ from the Skeleton Lords without getting someone clobbered to death, even with
 
 \subsubsection{\place{Dionysceus}}\label{dionysceus}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \item Encountered Everywhere
 
@@ -4526,7 +4506,7 @@ Whatever you want. You need the Coil for later though.
 
 \subsubsection{\place{Ukpyr}}\label{ukpyr}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
     \tightlist
   \item Umpani Ruffians
@@ -4617,7 +4597,7 @@ If you want the items though, get them before meeting General Yamo.
 
 \subsubsection{\place{Rattkin Ruins}}\label{rattkin-ruins}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \item Encountered everywhere
     \begin{itemize}
@@ -4768,7 +4748,7 @@ The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
 
 \subsubsection{\place{Old City}}\label{old-city}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Spirits
@@ -4798,7 +4778,7 @@ however, you can go in here as early as after \place{Orkogre Castle}.
 
 \subsubsection{\place{Nyctalinth}}\label{nyctalinth}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item \place{Nyctalinth}
   \begin{itemize}
@@ -4977,7 +4957,7 @@ friendly terms with the Helazoid.
 
 \subsubsection{\place{Witch Mountains}}\label{witch-mountains}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5026,7 +5006,7 @@ Why go into the \place{Witch Cave} with what you learned of course!
 
 \subsubsection{\place{Giant Cave}}\label{giant-cave}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \WviiSPOT{} (fixed)
@@ -5081,7 +5061,7 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 \subsubsection{\place{Witch Grove}}\label{witch-grove}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5113,7 +5093,7 @@ Dahlia in this area.
 
 \subsubsection{\place{Witch Cave}}\label{witch-cave}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
@@ -5163,7 +5143,7 @@ disappear no matter how long I take!
 
 \subsubsection{\place{Ukpyr Mountains}}\label{ukpyr-mountains}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Bantari
@@ -5189,7 +5169,7 @@ all the sidepaths and the main path.
 
 \subsubsection{\place{Sphinx Cave}}\label{sphinx-cave}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Red Pirannhas
@@ -5218,7 +5198,7 @@ Isn't your \spell{Detect Secret} going off right now?
 
 \subsubsection{\place{Isle of Crypts} \& \place{Mandolian Isles}}\label{isle-of-crypts-and-mandolian-isles}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Above ground
   \begin{itemize}
@@ -5308,7 +5288,7 @@ but save before doing so!
 
 \subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Emerald Dragons (fixed)
@@ -5368,7 +5348,7 @@ Climb up and find out. It's (relatively) safe.
 
 \subsubsection{\place{City of Sky}}\label{city-of-sky}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Savant Kui'sa-ka
@@ -5471,7 +5451,7 @@ then selling them to Paluke---or anyone other than Dame Ke-li.
 \subsubsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Ra-sep-re-tep (fixed)
@@ -5583,7 +5563,7 @@ the Beast stops becoming so invulnerable.
 
 \subsubsection{\place{Hall of the Past}}\label{hall-of-the-past}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
   \tightlist
 \item Rexx
@@ -5650,7 +5630,7 @@ into place.
 
 \subsubsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}
 %
-Monsters Encountered:%
+\WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
 \tightlist
 \item Dk. Savant (fixed)
