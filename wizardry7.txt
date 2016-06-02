@@ -138,6 +138,7 @@ Table of Contents:
     *  General Spellcasting
     *  Learning spells from books
     *  Commonly used spells
+    *  Spell-picking choices
 4.  Survival 101
     *  Status Ailments  
     *  Killing NPCs
