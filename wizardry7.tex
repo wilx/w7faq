@@ -104,10 +104,10 @@ contents={%
 \newcommand\textlcsc[1]{\texorpdfstring{\textsc{\MakeLowercase{#1}}}{#1}}
 
 \newcommand{\faqentry}[1]{%
-  \paragraph{Q\@: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
+  \pagebreak[1]\paragraph{Q\@: #1}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak\par}
 
 \newcommand{\spellentry}[1]{%
-  \textbf{\spell{#1}\quad}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak}
+  \mbox{\textbf{\spell{#1}}\quad}\phantomsection\addcontentsline{toc}{subsubsection}{#1}\nopagebreak}
 
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
 
@@ -3729,7 +3729,7 @@ first turn as well With those spells under your belt, the Shadow Guardian
 shouldn't be too much of a problem.
 
 \faqentry{Aaack! All the sudden I'm silenced and 20--30 Spectral Ravens fight
-  me! What do I do?}
+  me! What do I do?}%
 
 This is an example where saving saves your butt. If you saved before entering
 this area, you'll immediately realize that you're too weak for this
@@ -3751,7 +3751,7 @@ potions in case a party member manages to run away from the fight because of
 the “Terror” status the Ravens inflict on you.  \spell{Cure Paralysis}
 potions are nice too.
 
-\subsubsection{\place{Munkharama}}\label{munkharama}%
+\subsubsection{\place{Munkharama}}\label{munkharama}\nopagebreak%
 %
 \WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
@@ -4500,13 +4500,15 @@ What did you chop off the last demon you killed?
 Try it from the Magna Dane's chamber. You \textlcsc{did} see that secret button
 right?
 
-\faqentry{What do I do with what's inside?}
+\faqentry{What do I do with what's inside?}%
 
-Whatever you want. You need the Coil for later though.
+Whatever you want. You need the Coil for later though.\goodbreak
 
-\subsubsection{\place{Ukpyr}}\label{ukpyr}
+
+\Needspace*{5\baselineskip}\subsubsection{\place{Ukpyr}}\label{ukpyr}\nopagebreak%
 %
-\WviiNeedSpace{}Monsters Encountered:%
+\WviiNeedSpace{}%
+Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
     \tightlist
   \item Umpani Ruffians
@@ -5243,8 +5245,6 @@ Which island has more than a 1$\times$1 pillar?
 \faqentry{What exactly is on the islands with
   \texorpdfstring{1$\times$1}{1x1} pillars?}
 
-What exactly is on the islands with 1$\times$1 pillars?
-
 You can walk through them to go somewhere special. But you're going to need
 something in the \place{Hall of Gorrors} before being able to do anything special
 with them\ldots{}and yes, you have to go in the pillars eventually.
@@ -5286,7 +5286,7 @@ Chamail items) is the 2nd best. Most of the other stuff is overshadowed by
 better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
 but save before doing so!
 
-\subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}
+\Needspace*{6\baselineskip}\subsubsection{\place{Dragon Mountains}}\label{dragon-mountains}\nopagebreak%
 %
 \WviiNeedSpace{}Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
@@ -5718,8 +5718,8 @@ some information just for the heck of it
 
 \faqentry{Where are all the bard instruments? What do they do?}
 
-Here are all I know of:
-
+\WviiNeedSpace{}%
+Here are all I know of:%
 \begin{longtable}{@{}
   P{0.25\linewidth-\tabcolsep}
   p{0.2\linewidth-\tabcolsep}
@@ -5785,6 +5785,7 @@ the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}
 
+\WviiNeedSpace{}%
 This is from what I can remember, so there may be some mistakes:%
 \begin{itemize}[WviiTwoColumn]
 \item Lord Galiere and King Ulgar
@@ -5986,8 +5987,8 @@ reset the encounter.
 \paragraph{\place{Isle of Crypts}} The intersection in front of the fountain
 in the \place{Hall of the Past}. Encounters reset automatically.
 
-\subsection{Gameplay}\label{gameplay}
-
+\subsection{Gameplay}\label{gameplay}%
+%
 \faqentry{What's the best party to get through the game?}
 
 Almost anything works, really. If you want to be able to use the most items
@@ -6049,7 +6050,7 @@ say Holy Sacrament if you just sacrificed all your money, as the Holy
 Sacrament pathway will open up, closing the path to the other fountain he
 has.
 
-\subsection{Transferring to Wizardry~8}\label{transferring-to-wizardry-8}
+\subsection{Transferring to Wizardry~8}\label{transferring-to-wizardry-8}%
 %
 \faqentry{What items transfer?}
 
@@ -6112,7 +6113,7 @@ That's not a good idea, as I do not have a FAQ for Wizardry~8
 specifically. This section is here only because it also pertains to Wizardry~7.
 
 
-\section{Version Updates}\label{version-updates}
+\section{Version Updates}\label{version-updates}%
 %
 v1.95a (11/17/01) Quick minor correction.
 
@@ -6163,23 +6164,21 @@ where this FAQ is displayed.
 
 v1.0 (6/6/00) None.
 
-\subsection{Sources}\label{sources}
+\subsection{Sources}\label{sources}%
 %
 \begin{itemize}
-\tightlist
 \item Software Specialties Wizardry~7 board Crusaders of the Dark Savant Clue
 Book (comes with Wizardry Gold, although it has some errors that you
 don't know about until you play through the game)
 \item My own playing experience
 \end{itemize}
 
-\subsection{Future plans}\label{future-plans}
+\subsection{Future plans}\label{future-plans}%
 %
 The bottom item is what will most likely come up next.  Don't expect anything
 on the top to come anytime soon.
 
 \begin{itemize}
-\tightlist
 \item
   HTML version of the Dark Savant clue book. I won't be copying it, but
   it will try to be in a similar format. It will also use the maps below
@@ -6232,7 +6231,7 @@ can still answer questions however as well as update this FAQ if more
 questions get asked pertaining to the game (but not technical stuff)
 
 \clearpage
-\phantomsection\addcontentsline{toc}{section}{Index}
+\phantomsection\addcontentsline{toc}{section}{Index}%
 \printindex
 
 \end{document}
