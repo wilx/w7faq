@@ -121,7 +121,22 @@ contents={%
   before=\begin{multicols}{2}\WviiTwoColumnSetup,
   after=\end{multicols}}
 
+\newenvironment{twocolumnitemize}[1]
+ {%
+  \begin{multicols}{2}[#1]
+  \raggedcolumns\RaggedRight
+  \begin{itemize}
+ }
+ {%
+  \end{itemize}
+  \end{multicols}
+ }
+
 \makeindex
+
+%%
+%% Document
+%%
 
 \begin{document}
 \begin{titlepage}
@@ -401,7 +416,7 @@ reflect stat changes for female characters.
   races OR A basic profession achievable within 2 points or less.
 \end{itemize}
 
-\subsection{\race{Human}}\label{human}%
+\pagebreak[1]\subsection{\race{Human}}\label{human}%
 %
 Base \race{Human} stats: 9 8 8 9 9 8 8
 
@@ -456,17 +471,16 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Fighter}
 \item
   \class{Thief}
 \item
   \class{Ranger} (don't expect your spell points to come back quickly though)
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Elf}}\label{elf}%
+\pagebreak[1]\subsection{\race{Elf}}\label{elf}%
 %
 Base \race{Elf} stats 7 10 10 7 9 9 8
 
@@ -532,8 +546,7 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Mage}
 \item
@@ -544,9 +557,9 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
   \class{Alchemist}
 \item
   \class{Bishop}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Dwarf}}\label{dwarf}%
+\pagebreak[1]\subsection{\race{Dwarf}}\label{dwarf}%
 %
 Base \race{Dwarf} stats 11 6 10 12 7 7 7
 
@@ -600,8 +613,7 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Fighter}
 \item
@@ -610,9 +622,9 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
   \class{Ranger}
 \item
   \class{Valkyrie}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Gnome}}\label{gnome}%
+\pagebreak[1]\subsection{\race{Gnome}}\label{gnome}%
 %
 Base \race{Gnome} Stats 10 7 13 10 8 6 6
 
@@ -664,8 +676,7 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Fighter}
 \item
@@ -674,9 +685,9 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
   \class{Ranger}
 \item
   \class{Valkyrie}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Hobbit}}\label{hobbit}%
+\pagebreak[1]\subsection{\race{Hobbit}}\label{hobbit}%
 %
 Base \race{Hobbit} stats 8 7 6 9 10 7 13
 
@@ -731,15 +742,14 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Thief}
 \item
   \class{Bard}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Faerie}}\label{faerie}%
+\pagebreak[1]\subsection{\race{Faerie}}\label{faerie}%
 %
 Base \race{Faerie} Stats 5 11 6 6 10 14 12
 
@@ -808,8 +818,7 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Mage}
 \item
@@ -824,9 +833,9 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
   Lute.
 \item
   \class{Samurai} -- A semi-useless choice as you cannot wear most decent armor.
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Lizardman}}\label{lizardman}%
+\pagebreak[1]\subsection{\race{Lizardman}}\label{lizardman}%
 %
 Base \race{Lizardman} Stats 12 5 5 14 8 10 3
 
@@ -883,15 +892,14 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Fighter}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Dracon}}\label{dracon}%
+\pagebreak[1]\subsection{\race{Dracon}}\label{dracon}%
 %
 Base \race{Dracon} Stats 10 7 6 12 10 8 6
 
@@ -947,8 +955,7 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]%
+\begin{twocolumnitemize}{Convenient Starting Professions}%
 \item
   \class{Fighter}
 \item
@@ -959,9 +966,9 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
   \class{Bishop}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Rawulf}}\label{rawulf}%
+\pagebreak[1]\subsection{\race{Rawulf}}\label{rawulf}%
 %
 Base \race{Rawulf} stats: 8 6 12 10 8 8 10
 
@@ -1011,8 +1018,7 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Priest}
 \item
@@ -1023,9 +1029,9 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
   \class{Lord}
 \item
   \class{Monk}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Felpurr}}\label{felpurr}%
+\pagebreak[1]\subsection{\race{Felpurr}}\label{felpurr}%
 %
 Base \race{Felpurr} Stats: 7 10 7 7 10 12 10
 
@@ -1077,8 +1083,7 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Mage}
 \item
@@ -1091,9 +1096,9 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
   \class{Monk}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\race{Mook}}\label{mook}%
+\pagebreak[1]\subsection{\race{Mook}}\label{mook}%
 %
 Base \race{Mook} Stats: 10 10 6 10 7 7 9
 
@@ -1145,19 +1150,18 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-\WviiNeedSpace{}Convenient Starting Professions%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Convenient Starting Professions}
 \item
   \class{Fighter}
 \item
   \class{Mage}
 \item
   \class{Psionic}
-\end{itemize}
+\end{twocolumnitemize}
 
 \section{Classes}\label{classes}%
 %
-\subsection{\class{Fighter}}\label{fighter}%
+\pagebreak[1]\subsection{\class{Fighter}}\label{fighter}%
 %
 requirements: 12 0 0 0 0 0 0
 
@@ -1186,8 +1190,7 @@ requirements: 12 0 0 0 0 0 0
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Priest}→\class{Valkyrie}
 \item
@@ -1202,9 +1205,9 @@ requirements: 12 0 0 0 0 0 0
   \class{Lord}
 \item
   \class{Samurai}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Mage}}\label{mage}%
+\pagebreak[1]\subsection{\class{Mage}}\label{mage}%
 %
 requirements: 0 12 0 0 0 0 0
 
@@ -1232,8 +1235,7 @@ requirements: 0 12 0 0 0 0 0
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Fighter}→\class{Samurai}
 \item
@@ -1248,9 +1250,9 @@ requirements: 0 12 0 0 0 0 0
   \class{Bard}
 \item
   \class{Samurai}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Priest}}\label{priest}%
+\pagebreak[1]\subsection{\class{Priest}}\label{priest}%
 %
 requirements: 0 0 12 0 0 0 0
 
@@ -1283,8 +1285,7 @@ requirements: 0 0 12 0 0 0 0
 \end{itemize}
 \end{multicols}
 
-\Needspace*{5\baselineskip}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]%
+\begin{twocolumnitemize}{Profession changing suggestions:}%
 \item
   \class{Fighter}→\class{Valkyrie} (females only)\fshyp{}\class{Lord}
 \item
@@ -1298,9 +1299,9 @@ requirements: 0 0 12 0 0 0 0
   \class{Valkyrie} (females only)
 \item
   \class{Lord}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Thief}}\label{thief}%
+\pagebreak[1]\subsection{\class{Thief}}\label{thief}%
 %
 requirements: 0 0 0 0 12 8 0
 
@@ -1338,8 +1339,7 @@ requirements: 0 0 0 0 12 8 0
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Ranger}→\class{Ninja}
 \item
@@ -1352,9 +1352,9 @@ requirements: 0 0 0 0 12 8 0
   \class{Monk}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Ranger}}\label{ranger}%
+\pagebreak[1]\subsection{\class{Ranger}}\label{ranger}%
 %
 requirements: 10 8 8 11 10 8 8
 
@@ -1393,8 +1393,7 @@ requirements: 10 8 8 11 10 8 8
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Bard}→\class{Samurai}
 \item
@@ -1403,9 +1402,9 @@ requirements: 10 8 8 11 10 8 8
   \class{Psionic}→\class{Monk}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Bard}}\label{bard}%
+\pagebreak[1]\subsection{\class{Bard}}\label{bard}%
 %
 requirements: 0 10 0 0 12 8 12
 
@@ -1439,17 +1438,16 @@ requirements: 0 10 0 0 12 8 12
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Mage}
 \item
   \class{Thief}
 \item
   \class{Samurai}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Psionic}}\label{psionic}%
+\pagebreak[1]\subsection{\class{Psionic}}\label{psionic}%
 %
 requirements: 10 14 0 14 0 0 10
 
@@ -1480,22 +1478,21 @@ requirements: 10 14 0 14 0 0 10
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Valkyrie} (females only)
 \item
   \class{Bishop}
 \item
   \class{Lord}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Alchemist}}\label{alchemist}%
+\pagebreak[1]\subsection{\class{Alchemist}}\label{alchemist}%
 %
 requirements: 0 13 0 0 13 0 0
 
 \begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+Perks:%
 \begin{itemize}
 \item
   Learns Alchemical spells the fastest
@@ -1521,8 +1518,7 @@ requirements: 0 13 0 0 13 0 0
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Thief}
 \item
@@ -1531,10 +1527,10 @@ requirements: 0 13 0 0 13 0 0
   \class{Bard}→\class{Samurai}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
 
-\subsection{\class{Valkyrie}}\label{valkyrie}%
+\pagebreak[1]\subsection{\class{Valkyrie}}\label{valkyrie}%
 %
 requirements: 10 0 11 11 10 11 8
 
@@ -1567,17 +1563,16 @@ requirements: 10 0 11 11 10 11 8
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Samurai}
 \item
   \class{Monk}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Bishop}}\label{bishop}%
+\pagebreak[1]\subsection{\class{Bishop}}\label{bishop}%
 %
 requirements: 0 15 15 0 0 0 8
 
@@ -1605,15 +1600,14 @@ requirements: 0 15 15 0 0 0 8
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Psionic}
 \item
   \class{Alchemist}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Lord}}\label{lord}%
+\pagebreak[1]\subsection{\class{Lord}}\label{lord}%
 %
 requirements: 12 9 12 12 9 9 14
 
@@ -1650,8 +1644,7 @@ requirements: 12 9 12 12 9 9 14
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Priest}
 \item
@@ -1664,9 +1657,9 @@ requirements: 12 9 12 12 9 9 14
   \class{Monk}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Samurai}}\label{samurai}%
+\pagebreak[1]\subsection{\class{Samurai}}\label{samurai}%
 %
 Requirements: 12 11 0 9 12 14 8
 
@@ -1694,16 +1687,14 @@ Requirements: 12 11 0 9 12 14 8
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
-\tightlist
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Valkyrie} (female)
 \item
   \class{Monk}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Monk}}\label{monk}%
+\pagebreak[1]\subsection{\class{Monk}}\label{monk}%
 %
 Requirements: 13 8 13 0 10 13 8
 
@@ -1738,14 +1729,12 @@ Requirements: 13 8 13 0 10 13 8
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
-\tightlist
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   \class{Ninja}
-\end{itemize}
+\end{twocolumnitemize}
 
-\subsection{\class{Ninja}}\label{ninja}%
+\pagebreak[1]\subsection{\class{Ninja}}\label{ninja}%
 %
 Requirements: 12 10 10 12 12 12 0
 
@@ -1797,12 +1786,10 @@ Requirements: 12 10 10 12 12 12 0
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Profession changing suggestions:%
-\begin{itemize}[WviiTwoColumn]
-\tightlist
+\begin{twocolumnitemize}{Profession changing suggestions:}
 \item
   None
-\end{itemize}
+\end{twocolumnitemize}
 
 \section{Skill selection}\label{skill-selection}%
 %
@@ -2048,7 +2035,7 @@ would happen normally.
 Stats are given in the order of: Strength, Intelligence, Piety,
 Vitality, Dexterity, Speed, Personality.
 
-\subsection{\race{Elf} \class{Fighter}}\label{sec:elf-fighter}%
+\pagebreak[1]\subsection{\race{Elf} \class{Fighter}}\label{sec:elf-fighter}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2074,7 +2061,7 @@ distribute the excess to Vitality as all the ability scores will be
 reset down to the bare minimum after the profession change; might as
 well get some extra hit points and stamina out of it.
 
-\subsection{\race{Felpurr} \class{Fighter}}\label{sec:felpurr-fighter}%
+\pagebreak[1]\subsection{\race{Felpurr} \class{Fighter}}\label{sec:felpurr-fighter}%
 %
 \race{Felpurr} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2098,7 +2085,7 @@ well get some extra hit points and stamina out of it.
 There are three points to distribute left as you wish. Again, I would
 put it into Vitality.
 
-\subsection{\race{Faerie} \class{Thief}}\label{sec:faerie-thief}%
+\pagebreak[1]\subsection{\race{Faerie} \class{Thief}}\label{sec:faerie-thief}%
 %
 \race{Faerie} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2124,7 +2111,7 @@ level ups to give you the rest of the stat boost you need. This could
 easily be met by level~7 or 8--less if you reload your level ups to get
 the bonuses you want.
 
-\subsection{\race{Elf} \class{Priest} (F)}\label{sec:elf-priest-f}%
+\pagebreak[1]\subsection{\race{Elf} \class{Priest} (F)}\label{sec:elf-priest-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2149,7 +2136,7 @@ This leaves you with 1 extra point to distribute. Either Vitality or
 Intelligence is a good choice; getting more Academia points to speed up
 getting the higher level spells is nice, but so is more hit points.
 
-\subsection{\race{Elf} \class{Mage} (F)}\label{sec:elf-mage-f}%
+\pagebreak[1]\subsection{\race{Elf} \class{Mage} (F)}\label{sec:elf-mage-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2175,7 +2162,7 @@ a lot of hit points a level, dump them either in Intelligence for
 increased amount of Academia points or in Piety for better spell point
 gain\fshyp{}level and spell point recovery.
 
-\subsection{\race{Elf} \class{Bard} (F)}\label{sec:elf-bard-f}%
+\pagebreak[1]\subsection{\race{Elf} \class{Bard} (F)}\label{sec:elf-bard-f}%
 %
 \race{Elf} Base stats:%
 \begin{itemize}[topsep=0pt]
@@ -2396,10 +2383,9 @@ until he or she learns another water spell by a level up---in this case
 
 \section{Spell-picking Choices}\label{spell-picking-choices}%
 %
-\subparagraph{Note:} The required amount of skill points for a group of spells
-may be off by one or two points.
-
-\begin{multicols}{2}
+\begin{multicols}{2}[\subparagraph{Note:} The required amount of skill points
+  for a group of spells may be off by one or two points.]
+%
 \subsection{Thaumaturgy (\class{Mage} spellbook)}\label{sec:thaumaturgy-mage-spellbook}%
 %
 \subsubsection{Level 1 spells}%
@@ -3242,8 +3228,7 @@ encounter (you can't avoid it)
 \subsection{\place{Starting Area} (Near \place{New
 City})}\label{starting-area-near-new-city}%
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \tightlist
 \item
   Bambiphoots
@@ -3265,7 +3250,7 @@ City})}\label{starting-area-near-new-city}%
   Rattkin Rogues (fixed)
 \item
   Rattkin Bandits (fixed)
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{What do I do? I'm in the middle of nowhere!}
 
@@ -3322,7 +3307,7 @@ in \place{Dionysceus}, the only map you've got a chance of getting is the
 \qmwordqm{TEMPLE} map in \place{Orkogre Castle} unless you know exactly what
 you are doing.
 
-\subsection{Starter Dungeon}\label{starter-dungeon}\nopagebreak%
+\pagebreak\subsection{Starter Dungeon}\label{starter-dungeon}\nopagebreak%
 %
 Monsters Encountered:%
 \begin{itemize}[WviiTwoColumn]
@@ -3389,10 +3374,9 @@ game at the level you are at. You'll see what I mean after deciding where to
 go after \place{New City}--anywhere but \place{Orkogre Castle},
 \place{Dionysceus} (via the poppy fields), and \place{Munkharama} is lethal.
 
-\subsection{\place{New City}}\label{new-city}%
+\pagebreak\subsection{\place{New City}}\label{new-city}\nopagebreak%
 %
-Monsters Encountered (varies by area of \place{New City}):%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters Encountered (varies by area of \place{New City}):}%
 \tightlist
 \item
   Gorn Spearmen
@@ -3424,7 +3408,7 @@ Monsters Encountered (varies by area of \place{New City}):%
   Umpani Ruffians
 \item
   Umpani Renegade
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{The Savant Trooper won't let me through! Why?}
 
@@ -3534,10 +3518,9 @@ instructions he gives you. Seeing as Ratsputin seems to come down here pretty
 early, I'd say that he's the one that normally takes the \qmwordqm{LEGEND}
 map before it switches hands.
 
-\subsection{\place{Orkogre Castle}}\label{orkogre-castle}%
+\pagebreak\subsection{\place{Orkogre Castle}}\label{orkogre-castle}\nopagebreak%
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \item Encountered Everywhere (except below Prison):
 
 \begin{itemize}
@@ -3645,7 +3628,7 @@ map before it switches hands.
 \item
   Spectral Ravens (fixed)
 \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{How the heck do I get into the Throne Room? I haven't found a key
   for the place!}
@@ -3726,10 +3709,9 @@ potions in case a party member manages to run away from the fight because of
 the “Terror” status the Ravens inflict on you.  \spell{Cure Paralysis}
 potions are nice too.
 
-\subsection{\place{Munkharama}}\label{munkharama}\nopagebreak%
+\pagebreak\subsection{\place{Munkharama}}\label{munkharama}\nopagebreak%
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \item Encountered Everywhere
 
 \begin{itemize}
@@ -3865,7 +3847,7 @@ potions are nice too.
 \item
   Skeleton Lords (fixed)
 \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{What's the answer to the well's riddle?}
 
@@ -4163,10 +4145,9 @@ from the Skeleton Lords without getting someone clobbered to death, even with
 \spell{Magic Screen} up. If you can, you're lucky---Death and 6
 \spell{Fireball}s have a nasty effect on my party at this point.
 
-\subsection{\place{Dionysceus}}\label{dionysceus}
+\pagebreak\subsection{\place{Dionysceus}}\label{dionysceus}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \item Encountered Everywhere
 
     \begin{itemize}
@@ -4281,7 +4262,7 @@ from the Skeleton Lords without getting someone clobbered to death, even with
       \item Vampire Vultures
       \item Wraiths Spirits
       \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
 
@@ -4479,8 +4460,7 @@ right?
 
 Whatever you want. You need the Coil for later though.\goodbreak
 
-
-\Needspace*{5\baselineskip}\subsection{\place{Ukpyr}}\label{ukpyr}\nopagebreak%
+\pagebreak\subsection{\place{Ukpyr}}\label{ukpyr}\nopagebreak%
 %
 \WviiNeedSpace{}%
 Monsters Encountered:%
@@ -4573,10 +4553,9 @@ for a Blunderbuss and Flak Jacket. No discounts on that unfortunately.
 If you want the items though, get them before meeting General Yamo.
 
 
-\subsection{\place{Rattkin Ruins}}\label{rattkin-ruins}
+\pagebreak\subsection{\place{Rattkin Ruins}}\label{rattkin-ruins}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \item Encountered everywhere
     \begin{itemize}
       \tightlist
@@ -4629,7 +4608,7 @@ If you want the items though, get them before meeting General Yamo.
         \item Fetid Corpses
         \end{itemize}
     \end{itemize}
-  \end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{How do I get in? The entrance is blocked off!}
 
@@ -4724,10 +4703,9 @@ him already.
 
 The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
 
-\subsection{\place{Old City}}\label{old-city}
+\pagebreak\subsection{\place{Old City}}\label{old-city}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Spirits
 \item Ghosts
@@ -4738,7 +4716,7 @@ The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
 \item Iguanadons
 \item Minoskells
 \item Skeletons
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Why are there footprints in the dust?}
 
@@ -4754,10 +4732,9 @@ other Ankhs that do other things, but most of the ones that you run across
 will be the stat-raising kind. If you already knew what to do to get in
 however, you can go in here as early as after \place{Orkogre Castle}.
 
-\subsection{\place{Nyctalinth}}\label{nyctalinth}
+\pagebreak\subsection{\place{Nyctalinth}}\label{nyctalinth}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \item \place{Nyctalinth}
   \begin{itemize}
     \tightlist
@@ -4798,7 +4775,7 @@ however, you can go in here as early as after \place{Orkogre Castle}.
   \item Boar Weevils
   \item Venom Weevils
   \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Where's H'Jenn-Ra?}
 
@@ -4933,10 +4910,9 @@ T'Rang. Good luck!
 Jan-Ette. Help her if you want the Eagle Eye skill later and to be on
 friendly terms with the Helazoid.
 
-\subsection{\place{Witch Mountains}}\label{witch-mountains}
+\pagebreak\subsection{\place{Witch Mountains}}\label{witch-mountains}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -4951,7 +4927,7 @@ friendly terms with the Helazoid.
 \item Boulder Giants
 \item Frost Giants
 \item Dinkle Wisps
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{What do I do here?}
 
@@ -4982,10 +4958,9 @@ down into that area before going into the \place{Witch Cave}.
 
 Why go into the \place{Witch Cave} with what you learned of course!
 
-\subsection{\place{Giant Cave}}\label{giant-cave}
+\pagebreak\subsection{\place{Giant Cave}}\label{giant-cave}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item \WviiSPOT{} (fixed)
 \item Gruengard (fixed)
@@ -5001,7 +4976,7 @@ Why go into the \place{Witch Cave} with what you learned of course!
 \item Rock Lizards
 \item Dinkle Wisps
 \item Jelly Stingers
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{These giants keep killing me! How can I kill them?}
 
@@ -5037,10 +5012,9 @@ There's also a chest in the extreme south area\ldots{}but you'll need either
 Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 
 
-\subsection{\place{Witch Grove}}\label{witch-grove}
+\pagebreak\subsection{\place{Witch Grove}}\label{witch-grove}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -5051,7 +5025,7 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 \item Vultures
 \item Wood Dryads
 \item Faerie Witches
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Huh? I've never heard of this place!}
 
@@ -5069,10 +5043,9 @@ the Necromantic Helm equipped. Too bad nothing seems to really hint that the
 Necromantic Helm is the ``witching glass''. You can also find the White
 Dahlia in this area.
 
-\subsection{\place{Witch Cave}}\label{witch-cave}
+\pagebreak\subsection{\place{Witch Cave}}\label{witch-cave}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
 \item \qmwordqm{Dk.Savant} (fixed)
@@ -5091,8 +5064,7 @@ Dahlia in this area.
 \item Glow Mothras
 \item Spectral Ravens
 \item Faerie Witches
-\end{itemize}
-
+\end{twocolumnitemize}
 
 \faqentry{Do I \textlcsc{HAVE} to pay the witches 1000 gold?}
 
@@ -5119,10 +5091,9 @@ I guess having it locked up means there's no way in hell someone can beat you
 to it. This is usually one of the last maps I get---because it never seems to
 disappear no matter how long I take!
 
-\subsection{\place{Ukpyr Mountains}}\label{ukpyr-mountains}
+\pagebreak\subsection{\place{Ukpyr Mountains}}\label{ukpyr-mountains}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Bantari
 \item Q'ua-tari
@@ -5135,7 +5106,7 @@ disappear no matter how long I take!
 \item Wood Dryads
 \item Faerie Witches
 \item Mtn. Thraxes (fixed)
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{I take it the other two flowers are here?}
 
@@ -5145,10 +5116,9 @@ the vine on the tall cliff to the area where the spirits were partying, and
 then exploring further, or by exiting \place{Ukpyr} to the north and snooping around
 all the sidepaths and the main path.
 
-\subsection{\place{Sphinx Cave}}\label{sphinx-cave}
+\pagebreak\subsection{\place{Sphinx Cave}}\label{sphinx-cave}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Red Pirannhas
 \item Vampire Vultures
@@ -5160,7 +5130,7 @@ all the sidepaths and the main path.
 \item Faerie Witches
 \item Water Nymphs
 \item Rock Lizards
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{What do I do here?}
 
@@ -5174,10 +5144,9 @@ refers to. You're going to need to swim at most 3 to 4 spaces by the way.
 
 Isn't your \spell{Detect Secret} going off right now?
 
-\subsection{\place{Isle of Crypts} \& \place{Mandolian Isles}}\label{isle-of-crypts-and-mandolian-isles}
+\pagebreak\subsection{\place{Isle of Crypts} \& \place{Mandolian Isles}}\label{isle-of-crypts-and-mandolian-isles}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \item Above ground
   \begin{itemize}
     \tightlist
@@ -5212,7 +5181,7 @@ Isn't your \spell{Detect Secret} going off right now?
   \item Fire Crows
   \item Witch's Lights
   \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Um\ldots{}which island do I go to?}
 
@@ -5262,10 +5231,9 @@ Chamail items) is the 2nd best. Most of the other stuff is overshadowed by
 better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
 but save before doing so!
 
-\Needspace*{6\baselineskip}\subsection{\place{Dragon Mountains}}\label{dragon-mountains}\nopagebreak%
+\pagebreak\subsection{\place{Dragon Mountains}}\label{dragon-mountains}\nopagebreak%
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Emerald Dragons (fixed)
 \item Dragonessas
@@ -5280,7 +5248,7 @@ but save before doing so!
 \item Dragonlizards
 \item Dinkle Wisps
 \item Jelly Stingers
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{OK, how do I get here?}
 
@@ -5322,10 +5290,9 @@ Remember the gate with the black dragon on it in the \place{Isle of Crypts}?
 
 Climb up and find out. It's (relatively) safe.
 
-\subsection{\place{City of Sky}}\label{city-of-sky}
+\pagebreak\subsection{\place{City of Sky}}\label{city-of-sky}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Savant Kui'sa-ka
 \item Savant Controllers
@@ -5338,7 +5305,7 @@ Climb up and find out. It's (relatively) safe.
 \item T'Rang Watchers
 \item Meta-Droid (fixed)
 \item Ravens
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Hey! What's with the invisible walls?}
 
@@ -5424,11 +5391,10 @@ Storage Facility---the machine gives out Powerpaks for Credits. If you really
 have to make money at this point, you \emph{can} keep getting Powerpaks and
 then selling them to Paluke---or anyone other than Dame Ke-li.
 
-\subsection{\place{Hall of Gorrors} (in the \place{Isle of
-    Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}
+\pagebreak\subsection{\place{Hall of Gorrors} (in the \place{Isle of
+    Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Ra-sep-re-tep (fixed)
 \item Thing from Hell (fixed)
@@ -5440,7 +5406,7 @@ then selling them to Paluke---or anyone other than Dame Ke-li.
 \item Beast of 1000 Eyes (fixed)
 \item Kolidra Necromani
 \item Red Pirannhas
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Do I have to kill any of these Gorrors?}
 
@@ -5537,10 +5503,9 @@ difficult; once you get your party to around (or over) 100th level however,
 the Beast stops becoming so invulnerable.
 
 
-\subsection{\place{Hall of the Past}}\label{hall-of-the-past}
+\pagebreak\subsection{\place{Hall of the Past}}\label{hall-of-the-past}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item Rexx
 \item Myxlmynx
@@ -5553,7 +5518,7 @@ the Beast stops becoming so invulnerable.
 \item Phantasmagoras
 \item Kolidras
 \item Skeleton Lords
-\end{itemize}
+\end{twocolumnitemize}
 
 \faqentry{Um\ldots{}I need a map. Bad.}
 
@@ -5604,10 +5569,9 @@ the same thing but using the top section only. Once you're back on the side
 with the Man, do the same thing for the bottom row. The buttons will fall
 into place.
 
-\subsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}
+\pagebreak\subsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}\nopagebreak
 %
-\WviiNeedSpace{}Monsters Encountered:%
-\begin{itemize}[WviiTwoColumn]
+\begin{twocolumnitemize}{Monsters encountered:}
 \tightlist
 \item Dk. Savant (fixed)
 \item Savant Kui'sa-ka (fixed)
@@ -5618,7 +5582,7 @@ into place.
 \item Mega-Bots
 \item Meta-Droids
 \item Battle Droids
-\end{itemize}
+\end{twocolumnitemize}
 
 
 \faqentry{Any suggestions on surviving these robots?}
@@ -5678,7 +5642,7 @@ Various other possible questions:
 
 That is (sort of) covered in the very last part of the Spoilers section.
 
-\chapter{Spoilers}\label{spoilers}
+\section{Spoilers}\label{spoilers}
 %
 This is a (minor) spoiler section If you don't like spoilers, ignore this
 last section. There's a reason why the spoiler section is
@@ -5687,7 +5651,7 @@ nature, this section assumes that you know most of the things in the game
 Besides any spontaneous blurbs I may have, if you've got a question about the
 game that I feel is spoilish I will add it here.
 
-\section{Items}\label{items}
+\subsection{Items}\label{items}
 %
 As I'm a rather avid item collector, I thought it would be nice to spill
 some information just for the heck of it
@@ -5761,9 +5725,9 @@ the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}
 
-\WviiNeedSpace{}%
-This is from what I can remember, so there may be some mistakes:%
-\begin{itemize}[WviiTwoColumn]
+
+
+\begin{twocolumnitemize}{This is from what I can remember, so there may be some mistakes:}
 \item Lord Galiere and King Ulgar
   \begin{itemize}
     \tightlist
@@ -5858,7 +5822,7 @@ This is from what I can remember, so there may be some mistakes:%
     \item Credit Card (most of the time)
     \item Powerpak (sometimes)
   \end{itemize}
-\end{itemize}
+\end{twocolumnitemize}
 
 Any maps the NPCs may have are always displayed first when you go to the
 ``Buy'' screen.
@@ -5963,7 +5927,7 @@ reset the encounter.
 \paragraph{\place{Isle of Crypts}} The intersection in front of the fountain
 in the \place{Hall of the Past}. Encounters reset automatically.
 
-\section{Gameplay}\label{gameplay}%
+\subsection{Gameplay}\label{gameplay}%
 %
 \faqentry{What's the best party to get through the game?}
 
