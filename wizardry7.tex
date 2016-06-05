@@ -75,6 +75,7 @@ contents={%
 
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing,calc}
+\usetikzlibrary{matrix}
 \makeatletter
 \newcommand{\tikzmark}[1]{\protect\tikz[overlay,remember picture] \node (#1) {};}
 \makeatother
@@ -406,7 +407,7 @@ Fighter & 3 & & & & & & & N & 3\tabularnewline
 \subparagraph{Note:} Any class with Y will have point distribution altered to
 reflect stat changes for female characters.
 
-\WviiNeedSpace{}Convenient Starting Professions%
+\WviiNeedSpace{}Convenient starting professions:%
 \begin{itemize}
 \tightlist
 \item
@@ -471,7 +472,7 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Fighter}
 \item
@@ -546,7 +547,7 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Mage}
 \item
@@ -613,7 +614,7 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Fighter}
 \item
@@ -676,7 +677,7 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Fighter}
 \item
@@ -742,7 +743,7 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Thief}
 \item
@@ -818,7 +819,7 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Mage}
 \item
@@ -892,7 +893,7 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Fighter}
 \item
@@ -955,7 +956,7 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}%
+\begin{twocolumnitemize}{Convenient starting professions:}%
 \item
   \class{Fighter}
 \item
@@ -1018,7 +1019,7 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Priest}
 \item
@@ -1083,7 +1084,7 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Mage}
 \item
@@ -1150,7 +1151,7 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{twocolumnitemize}{Convenient Starting Professions}
+\begin{twocolumnitemize}{Convenient starting professions:}
 \item
   \class{Fighter}
 \item
@@ -3309,7 +3310,7 @@ you are doing.
 
 \pagebreak\subsection{Starter Dungeon}\label{starter-dungeon}\nopagebreak%
 %
-Monsters Encountered:%
+Monsters encountered:%
 \begin{itemize}[WviiTwoColumn]
 \item Encountered everywhere
 \begin{itemize}
@@ -3376,7 +3377,7 @@ go after \place{New City}--anywhere but \place{Orkogre Castle},
 
 \pagebreak\subsection{\place{New City}}\label{new-city}\nopagebreak%
 %
-\begin{twocolumnitemize}{Monsters Encountered (varies by area of \place{New City}):}%
+\begin{twocolumnitemize}{Monsters encountered (varies by area of \place{New City}):}%
 \tightlist
 \item
   Gorn Spearmen
@@ -3865,13 +3866,37 @@ beans. Meaning it's random. \verb|:)| The listed colors on the roulette
 only reflect how many beans you got right, and not which rooms they are
 in. (Sorry about that.)  Try doing this as a process of elimination:
 
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
 \def\labelenumi{\arabic{enumi}.}
 \item
   Grab all the beans. Try to have some system where you know which
   corner you found a bean. The easiest way is I can think of is to make
   a chart on paper with four boxes making up a larger square, kind of
   like this:
+%
+\begin{center}
+\begin{tikzpicture}
+    \matrix (m) [
+  matrix of nodes,
+  nodes in empty cells,
+  every node/.style={anchor=base,text depth=.5ex,text height=2ex,text width=1em},
+  nodes={outer sep=0pt}]
+  {
+ &  &  &  &  &  \\
+ &  &  &  &  &  \\
+ &  &  &  &  &  \\
+ &  &  &  &  &  \\
+  };
+  % Horizontal lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-1-6.north east);
+  \draw[very thick, line cap=round] (m-3-1.north west) -- (m-3-6.north east);
+  \draw[very thick, line cap=round] (m-4-1.south west) -- (m-4-6.south east);
+  % Vertical lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-4-1.south west);
+  \draw[very thick, line cap=round] (m-1-3.north east) -- (m-4-3.south east);
+  \draw[very thick, line cap=round] (m-1-6.north east) -- (m-4-6.south east);
+\end{tikzpicture}
+\end{center}
 
 \item
   Clear out all the receptacle rooms if you haven't already.
@@ -3884,33 +3909,30 @@ in. (Sorry about that.)  Try doing this as a process of elimination:
   appropriate corner.
 \item
   Now try this to eliminate:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    nw → NW
-  \item
-    sw → SW
-  \item
-    ne → NE
-  \item
-    se → SE
-  \end{itemize}
 \end{enumerate}
+%
+\begin{itemize}
+  \tightlist
+\item
+  nw → NW
+\item
+  sw → SW
+\item
+  ne → NE
+\item
+  se → SE
+\end{itemize}
 
 This places the beans in the receptacle closest to them. After you spin
-the roulette, you will have several options
+the roulette, you will have several options:
 
-Option 0: One White
+\paragraph{Option 0: One White.} This will never show up. Don't even try to
+tell me that you can get this!
 
-This will never show up. Don't even try to tell me that you can get
-this!
-
-Option 1: Two whites.
-
-Pick two of the beans and switch them the next time you try. For
-example, if the roulette came out Black Black White White, try
-
+\paragraph{Option 1: Two whites.} Pick two of the beans and switch them the
+next time you try. For example, if the roulette came out Black Black White
+White, try:%
+%
 \begin{itemize}
 \tightlist
 \item
@@ -3928,42 +3950,46 @@ If this worsens things to four whites, then you know the two that you did
 switching them. If this worsens to three whites, then you know that one of
 the beans you switched was right, and you'll have to go back to the order you
 had before and pick one of the same beans you switched the previous time and
-a bean you didn't switch and see what happens In my case, you would put that
-the NW and SW don't belong in the NW and SW receptacles, respectively. If it
-turns out better, then you've solved the puzzle. Whichever it is, it can't
-stay the same
+a bean you didn't switch and see what happens.
 
-Option 2: Three whites.
+In my case, you would put that the NW and SW don't belong in the NW and SW
+receptacles, respectively. If it turns out better, then you've solved the
+puzzle. Whichever it is, it can't stay the same.
 
-Pick one of the white spots and try out the other beans in there until
-you come up with that spot as black as well. Then treat it like it was
-two white two black, only you'll know exactly which two beans need to be
-switched
+\paragraph{Option 2: Three whites.} Pick one of the white spots and try out
+the other beans in there until you come up with that spot as black as
+well. Then treat it like it was two white two black, only you'll know exactly
+which two beans need to be switched
 
-Option 3: Four whites.
+\paragraph{Option 3: Four whites.} Since you've now eliminated four places
+where beans should be, your grid is probably marked like this:
+%
+\begin{center}
+\begin{tikzpicture}
+    \matrix (m) [
+  matrix of nodes,
+  nodes in empty cells,
+  every node/.style={anchor=base,text depth=.5ex,text height=2ex,text width=1em},
+  nodes={outer sep=0pt}]
+  {
+$\mathbf{\times}$ &  & & &  & $\mathbf{\times}$ \\
+ &  &  &  &  &  \\
+ &  &  &  &  &  \\
+$\mathbf{\times}$ &  & & &  & $\mathbf{\times}$ \\
+  };
+  % Horizontal lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-1-6.north east);
+  \draw[very thick, line cap=round] (m-3-1.north west) -- (m-3-6.north east);
+  \draw[very thick, line cap=round] (m-4-1.south west) -- (m-4-6.south east);
+  % Vertical lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-4-1.south west);
+  \draw[very thick, line cap=round] (m-1-3.north east) -- (m-4-3.south east);
+  \draw[very thick, line cap=round] (m-1-6.north east) -- (m-4-6.south east);
+\end{tikzpicture}
+\end{center}
 
-Since you've now eliminated four places where beans should be, your grid
-is probably marked like this:
-
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x
-\strut\end{minipage} &
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x
-\strut\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x
-\strut\end{minipage} &
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x
-\strut\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-Try:
-
+Try:%
+%
 \begin{itemize}
 \tightlist
 \item
@@ -3977,27 +4003,33 @@ Try:
 \end{itemize}
 
 If that comes out all white, then you now have more places eliminated,
-and your grid probably looks like this:
+and your grid probably looks like this:%
+\begin{center}
+\begin{tikzpicture}
+    \matrix (m) [
+  matrix of nodes,
+  nodes in empty cells,
+  every node/.style={anchor=base,text depth=.5ex,text height=2ex,text width=1em},
+  nodes={outer sep=0pt}]
+  {
+$\mathbf{\times}$ &  & $\mathbf{\times}$ & $\mathbf{\times}$ &  & $\mathbf{\times}$ \\
+ &  &  &  &  &  \\
+ &  &  &  &  &  \\
+$\mathbf{\times}$ &  & $\mathbf{\times}$ & $\mathbf{\times}$ &  & $\mathbf{\times}$ \\
+  };
+  % Horizontal lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-1-6.north east);
+  \draw[very thick, line cap=round] (m-3-1.north west) -- (m-3-6.north east);
+  \draw[very thick, line cap=round] (m-4-1.south west) -- (m-4-6.south east);
+  % Vertical lines.
+  \draw[very thick, line cap=round] (m-1-1.north west) -- (m-4-1.south west);
+  \draw[very thick, line cap=round] (m-1-3.north east) -- (m-4-3.south east);
+  \draw[very thick, line cap=round] (m-1-6.north east) -- (m-4-6.south east);
+\end{tikzpicture}
+\end{center}
 
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x x
-\strut\end{minipage} &
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x x
-\strut\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x x
-\strut\end{minipage} &
-\begin{minipage}[t]{0.05\columnwidth}\raggedright\strut
-x x
-\strut\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-So try:
-
+So try:%
+%
 \begin{itemize}
 \tightlist
 \item
@@ -4013,10 +4045,12 @@ So try:
 and use the process of elimination to figure out where the beans go If you
 still can't solve it there's nothing I can say that will help you.  It's hard
 to keep track of the beans though, and you may have switched one pair
-accidentally. I have only managed to get \textlcsc{BLACK} \textlcsc{BLACK}
-\textlcsc{BLACK} \textlcsc{BLACK} on the first try \textlcsc{ONCE} Usually I
-end up getting it right by the 3rd or 4th try. As a reward however you get
-free cash, experience, and a secret door opens up in the SE room.
+accidentally.
+
+I have only managed to get \textlcsc{BLACK} \textlcsc{BLACK} \textlcsc{BLACK}
+\textlcsc{BLACK} on the first try \textlcsc{ONCE}. Usually I end up getting it
+right by the 3rd or 4th try. As a reward however you get free cash,
+experience, and a secret door opens up in the SE room.
 
 \faqentry{What do I do at the \place{Land of Dreams}? The Palace Munk doesn't
   like my answers!}
@@ -4463,7 +4497,7 @@ Whatever you want. You need the Coil for later though.\goodbreak
 \pagebreak\subsection{\place{Ukpyr}}\label{ukpyr}\nopagebreak%
 %
 \WviiNeedSpace{}%
-Monsters Encountered:%
+Monsters encountered:%
 \begin{itemize}[WviiTwoColumn]
     \tightlist
   \item Umpani Ruffians
@@ -5725,8 +5759,6 @@ the Frontier Phasers.
 
 \faqentry{What do the wandering NPCs sell?}
 
-
-
 \begin{twocolumnitemize}{This is from what I can remember, so there may be some mistakes:}
 \item Lord Galiere and King Ulgar
   \begin{itemize}
@@ -6057,11 +6089,13 @@ specifically. This section is here only because it also pertains to Wizardry~7.
 \section{Version Updates}\label{version-updates}%
 %
 \begin{description}[style=nextline, labelwidth=4.5em, leftmargin=!, labelindent=0em]
+\item[v1.95b (06/05/16)] \LaTeX{} conversion for this PDF.
+
 \item[v1.95a (11/17/01)] Quick minor correction.
 
-\item[v1.95 (11/16/01)] Added a section about transferring to Wizardry~8 and made a
-few changes. Trimmed down the list of places where this FAQ is displayed due
-to various sites going down and changing over time.
+\item[v1.95 (11/16/01)] Added a section about transferring to Wizardry~8 and
+  made a few changes. Trimmed down the list of places where this FAQ is
+  displayed due to various sites going down and changing over time.
 
 \item[v1.94 (3/3/01)] Made a few changes to some areas of the FAQ and credited
 Bernice Carter.

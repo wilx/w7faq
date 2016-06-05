@@ -3211,7 +3211,7 @@ A:  Well, you can avoid it by swimming past it to the Rubber Bear chest; you'll
     This places the beans in the receptacle closest to them.  After you spin
     the roulette, you will have several options.  
 
-Option 0:  One White
+Option 0:  One white.
          This will never show up.  Don't even try to tell me that you can get 
          this!
 
