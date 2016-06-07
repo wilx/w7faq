@@ -1,5 +1,5 @@
-\documentclass[10pt]{report}
-\usepackage[a4paper]{geometry}
+\documentclass[10pt,twoside,openright]{report}
+\usepackage[a4paper,outer=1.5cm,outer=1.5cm,bindingoffset=0.75cm,twoside]{geometry}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 %\usepackage{fixltx2e} % provides \textsubscript
@@ -135,6 +135,8 @@ contents={%
 
 \makeindex
 
+\raggedbottom
+
 %%
 %% Document
 %%
@@ -157,7 +159,7 @@ See also GitHub repository \href{https://github.com/wilx/w7faq}{\texttt{wilx/w7f
 \thispagestyle{empty}
 \newpage
 
-\chapter{Introductions}%
+\chapter*{Introductions}%
 %
 \section{Mandatory Copyright
 information}\label{mandatory-copyright-information}%
@@ -289,8 +291,12 @@ someone who may be ripping off my FAQ, feel free to drop me a line---I
 will appreciate it.
 
 \clearpage
+\chapter*{Contents}
 \begin{multicols}{2}\RaggedRight
-\tableofcontents
+%\tableofcontents
+\makeatletter
+\@starttoc{toc}
+\makeatother
 \end{multicols}
 
 \chapter{Character Creation}\label{character-creation}%
@@ -6210,7 +6216,7 @@ can still answer questions however as well as update this FAQ if more
 questions get asked pertaining to the game (but not technical stuff)
 
 \clearpage
-\phantomsection\addcontentsline{toc}{section}{Index}%
+\phantomsection\addcontentsline{toc}{chapter}{Index}%
 \printindex
 
 \end{document}
