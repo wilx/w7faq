@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[10pt]{report}
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -153,6 +153,9 @@ See also GitHub repository \href{https://github.com/wilx/w7faq}{\texttt{wilx/w7f
   % Bottom of the page
 
 \end{titlepage}
+\mbox{}
+\thispagestyle{empty}
+\newpage
 
 \chapter{Introductions}%
 %
@@ -1161,9 +1164,9 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
   \class{Psionic}
 \end{twocolumnitemize}
 
-\section{Classes}\label{classes}%
+\pagebreak[1]\section{Classes}\label{classes}%
 %
-\pagebreak[1]\subsection{\class{Fighter}}\label{fighter}%
+\nopagebreak\subsection{\class{Fighter}}\label{fighter}%
 %
 requirements: 12 0 0 0 0 0 0
 
