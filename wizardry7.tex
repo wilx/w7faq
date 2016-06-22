@@ -91,10 +91,15 @@ contents={%
 \newcommand{\WviiNeedSpace}{\Needspace*{4\baselineskip+\parskip}}
 \makeatother
 
+\makeindex[name=monsters,title=Monsters index]
+\makeindex[name=npcs,title=NPCs index]
+\makeindex[name=spells,title=Spells index]
+\makeindex[name=places,title=Places index]
+
 \makeatletter
-\DeclareRobustCommand{\indexSpell}[1]{\index{#1}}
+\DeclareRobustCommand{\indexSpell}[1]{\index[spells]{#1}}
 \DeclareRobustCommand{\spell}[1]{#1\indexSpell{#1}}
-\DeclareRobustCommand{\indexPlace}[1]{\index{#1}}
+\DeclareRobustCommand{\indexPlace}[1]{\index[places]{#1}}
 \DeclareRobustCommand{\place}[1]{#1\indexPlace{#1}}
 \DeclareRobustCommand{\indexRace}[1]{\index{#1}}
 \DeclareRobustCommand{\race}[1]{#1\indexRace{#1}}
@@ -102,11 +107,11 @@ contents={%
 \DeclareRobustCommand{\class}[1]{#1\indexClass{#1}}
 \DeclareRobustCommand{\indexMonster}[1]{%
   \IfEndWith{#1}{s}{\StrGobbleRight{#1}{1}[\WviiResult]%
-  \index{\WviiResult}}{%
-  \index{#1}}}
+  \index[monsters]{\WviiResult}}{%
+  \index[monsters]{#1}}}
 \DeclareRobustCommand{\monster}[1]{#1\indexMonster{#1}}
 \DeclareRobustCommand{\monsterB}[2]{#1\indexMonster{#2}}
-\DeclareRobustCommand{\indexNpc}[1]{\index{#1}}
+\DeclareRobustCommand{\indexNpc}[1]{\index[npcs]{#1}}
 \DeclareRobustCommand{\npc}[1]{#1\indexNpc{#1}}
 \makeatother
 
@@ -6232,5 +6237,17 @@ questions get asked pertaining to the game (but not technical stuff)
 \clearpage
 \phantomsection\addcontentsline{toc}{chapter}{Index}%
 \printindex
+
+\phantomsection\addcontentsline{toc}{chapter}{Monsters index}%
+\printindex[monsters]
+
+\phantomsection\addcontentsline{toc}{chapter}{NPCs index}%
+\printindex[npcs]
+
+\phantomsection\addcontentsline{toc}{chapter}{Places index}%
+\printindex[places]
+
+\phantomsection\addcontentsline{toc}{chapter}{Spells index}%
+\printindex[spells]
 
 \end{document}
