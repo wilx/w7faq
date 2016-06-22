@@ -1,7 +1,6 @@
 \documentclass[10pt,twoside,openright]{report}
 \usepackage[a4paper,outer=1.5cm,outer=1.5cm,bindingoffset=0.75cm,twoside]{geometry}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
+\usepackage{amssymb,amsmath} \usepackage{ifxetex,ifluatex}
 %\usepackage{fixltx2e} % provides \textsubscript
 \usepackage{fontspec}
 \usepackage{microtype}
@@ -9,13 +8,14 @@
 \usepackage{multicol}
 \usepackage[defaultlines=2,all]{nowidow}
 \usepackage{ragged2e}
-\usepackage{hhline}
 \usepackage{hyphenat}
+\usepackage{xstring}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 %\setmainfont[]{Charis SIL}
 %\setmainfont[]{TeX Gyre Pagella}
 \setmainfont[]{Linux Libertine O}
+%\setmainfont[]{Noto Serif}
 
 \newcommand{\fractionsOn}[1]{{\addfontfeature{Fractions=On}#1}}
 
@@ -92,14 +92,22 @@ contents={%
 \makeatother
 
 \makeatletter
-\newcommand{\indexSpell}[1]{\index{#1}}
-\newcommand{\spell}[1]{#1\indexSpell{#1}}
-\newcommand{\indexPlace}[1]{\index{#1}}
-\newcommand{\place}[1]{#1\indexPlace{#1}}
-\newcommand{\indexRace}[1]{\index{#1}}
-\newcommand{\race}[1]{#1\indexRace{#1}}
-\newcommand{\indexClass}[1]{\index{#1}}
-\newcommand{\class}[1]{#1\indexClass{#1}}
+\DeclareRobustCommand{\indexSpell}[1]{\index{#1}}
+\DeclareRobustCommand{\spell}[1]{#1\indexSpell{#1}}
+\DeclareRobustCommand{\indexPlace}[1]{\index{#1}}
+\DeclareRobustCommand{\place}[1]{#1\indexPlace{#1}}
+\DeclareRobustCommand{\indexRace}[1]{\index{#1}}
+\DeclareRobustCommand{\race}[1]{#1\indexRace{#1}}
+\DeclareRobustCommand{\indexClass}[1]{\index{#1}}
+\DeclareRobustCommand{\class}[1]{#1\indexClass{#1}}
+\DeclareRobustCommand{\indexMonster}[1]{%
+  \IfEndWith{#1}{s}{\StrGobbleRight{#1}{1}[\WviiResult]%
+  \index{\WviiResult}}{%
+  \index{#1}}}
+\DeclareRobustCommand{\monster}[1]{#1\indexMonster{#1}}
+\DeclareRobustCommand{\monsterB}[2]{#1\indexMonster{#2}}
+\DeclareRobustCommand{\indexNpc}[1]{\index{#1}}
+\DeclareRobustCommand{\npc}[1]{#1\indexNpc{#1}}
 \makeatother
 
 \newcommand\textlcsc[1]{\texorpdfstring{\textsc{\MakeLowercase{#1}}}{#1}}
@@ -113,9 +121,9 @@ contents={%
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
 
 \newcommand{\qmwordqm}[1]{\mbox{?#1?}}
-\newcommand{\WviiSPOT}{\mbox{*S~P~O~T*}}
-\newcommand{\WviiDOOM}{\mbox{*D~O~O~M*}}
-\newcommand{\WviiSPAWN}{\mbox{*S~P~A~W~N*}}
+\DeclareRobustCommand{\WviiSPOT}{\mbox{\monster{*S~P~O~T*}}}
+\DeclareRobustCommand{\WviiDOOM}{\mbox{\monster{*D~O~O~M*}}}
+\DeclareRobustCommand{\WviiSPAWN}{\mbox{\monster{*S~P~A~W~N*}}}
 
 %before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
 \SetEnumitemKey{WviiTwoColumn}{%
@@ -1809,7 +1817,7 @@ Requirements: 12 10 10 12 12 12 0
 \paragraph{Swimming} Everyone needs to have at least a 10 in swimming before
 attempting to enter the water to practice. There are three places to practice
 without wasting too much time: \place{New City} (using the fountain in the
-\place{Starter Dungeon} or the one at Father Rulae), the Ra-sep-re-tep pool
+\place{Starter Dungeon} or the one at Father Rulae), the \monster{Ra-sep-re-tep} pool
 in the \place{Starter Dungeon} (using the fountain in the same area) and
 \place{Munkharama} (at the Polar Munk Society\ldots{} bring healing
 though\ldots{}). Get your swimming to at least a 20 using these three
@@ -1875,7 +1883,7 @@ inventory---you wouldn't want to steal them if your life depended on
 it. Legerdemain is best when the pickpocket using it is rather high level, is
 decent at it (has at least a 30 so in Legerdemain), and pickpocketing someone
 worthwhile like Belcanzor for his items or Dame Ke-Li for her Ankhs. Be
-especially careful pickpocketing wandering NPCs. Some like Capt.~Boerigard
+especially careful pickpocketing wandering NPCs. Some like \npc{Capt.~Boerigard}
 have very nice weapons and such, but they may attack you if they catch you
 pickpocketing them, which is a bad thing.
 
@@ -1909,7 +1917,7 @@ skills}{Really depends on your playing style skills}}\label{really-depends-on-yo
 %
 \paragraph{Mythology} This lets you successfully ID the monster you're
 fighting. In some cases it will be very useful, if you're conserving mana and
-don't want to mistake Night Rooks for Vampire Vultures. In most cases
+don't want to mistake \monster{Night Rooks} for \monster{Vampire Vultures}. In most cases
 however, it is easy to figure out what the monster is after a round, or even
 based on where it is. Putting points into this is really up to your strategy,
 but it goes up naturally over time, albeit slowly.
@@ -2512,13 +2520,13 @@ mage.
 
 \spellentry{Magic Screen} Reduces the effectiveness of all incoming spells
 and spell-like attacks. That includes breath weapons and fireball-like
-blasts, but not little laser beams like the ones the T'Rang Tecniks use to
+blasts, but not little laser beams like the ones the \monster{T'Rang Tecniks} use to
 attack. Remember: this can be casted outside of battle.
 
 \spellentry{Conjuration} Summons a monster to help you. They range from the
-pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
-7 (which are pretty darn useful). The best out of the three summoning spells
-if you want magical damage.
+pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and
+\monster{Myxlmynx} at level 7 (which are pretty darn useful). The best out of the three
+summoning spells if you want magical damage.
 
 \spellentry{Armormelt} Makes the opponent easier to hit. Think of it as the
 opposite of \spell{Armor Shield}, except it targets everyone.
@@ -2625,7 +2633,7 @@ useful.  Otherwise, skip for a better spell unless you have no choice.
 \spellentry{Dispel Undead} Only works on undead, but there's a lot of undead
 in the game. It works more often on the skeleton types of undead than the
 ghost types of undead. Keep in mind that any of the ``Spectral'' monsters
-like Spectral Ravens or Spectral Moths are considered undead as well. Don't
+like Spectral Ravens or \monster{Spectral Moths} are considered undead as well. Don't
 expect it to work too well on some unique undead monsters, with a very
 notable exception of the ones in \place{Witch Mountains}.
 
@@ -2663,7 +2671,7 @@ removed by an attack.
 ailment.
 
 \spellentry{Silence} Silences a group of monsters. Don't try it on the
-Umpani, most Munks, Gorn Rangers, and other Alchemical spellcasters.
+Umpani, most Munks, \monster{Gorn Rangers}, and other Alchemical spellcasters.
 
 \spellentry{Armorplate} Improves the armor class of each character (although
 you won't see any changes in the review screen). The bonus is that it can be
@@ -2688,7 +2696,7 @@ better spells to get than this.
 \subsubsection{Level 4 spells (54 Theology)}%
 
 \spellentry{Conjuration} Summons a monster to help you.  They range from the
-pathetic Vulture at a level~1 casting to perhaps Fieros and Myxlmynx at level
+pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and \monster{Myxlmynx} at level
 7 (which are pretty darn useful). The best out of the three summoning spells
 if you want magical damage.
 
@@ -2748,7 +2756,7 @@ locations of any chests in the area (not dropped items).
 \spellentry{Lifesteal} Attempts to do a large amount of damage to one enemy
 and heal you with that damage. Your spellcaster will never need to cast Heal
 Wounds on him or herself again. It works on a \emph{lot} of enemies, but
-don't expect it to work on the real nasties like Rexx or Godzylli very
+don't expect it to work on the real nasties like \monster{Rexx} or Godzylli very
 often---even at level~7.
 
 \spellentry{Astral Gate} Instantly kills demons. Since it's specialized,
@@ -2860,7 +2868,7 @@ full stamina.
 \spellentry{Shrill Sound} Hurts an entire enemy group, regardless of
 number. For the \class{Psionic} however, it takes a backseat for \spell{Psionic
   Fires} in priority unless you have mass enemy group problems (i.e.\ hordes
-of Rattkin Rogues\fshyp{}Bandits).
+of \monster{Rattkin Rogues}\fshyp{}Bandits).
 
 \spellentry{Weaken} Makes the opponent do less damage when they
 attack. Useful I suppose, but I prefer killing them as quickly as
@@ -3081,7 +3089,7 @@ on the opponent. When this spell works, it \textlcsc{REALLY} works. You'll eithe
 this spell or hate it. Either way, it's much better than \spell{Death} is.
 
 \spellentry{Create Life} Creates monsters out of nothing. Monsters range from
-Spectral Moths to Godzylli and Bloodwyrms. The best summoning spell out of
+\monster{Spectral Moths} to Godzylli and \monster{Bloodwyrms}. The best summoning spell out of
 the three if you want sheer muscle; heck, it's the best period since the
 Godzylli can last much longer than the other summoned creatures.
 
@@ -3161,9 +3169,9 @@ the higher it is, the lower your casting level can be.
 %
 Generally, it is a good idea not to kill NPCs unless you know you don't need
 them---and can deal with the consequences. For example, some people kill
-Father Rulae in \place{New City} and Brother TShober at \place{Eryn River}
+Father Rulae in \place{New City} and \npc{Brother TShober} at \place{Eryn River}
 for experience, which is fine (although pointless)\ldots{}until they run into
-Xen Xheng and get slaughtered. If you want to kill NPCs, make sure there are
+\npc{Xen Xheng} and get slaughtered. If you want to kill NPCs, make sure there are
 no more mobile NPCs of the same race still alive. Making them angry enough to
 attack you can become awkward at the worst times possible until your party is
 a killing machine, as most of the mobile NPCs tend to stalk you.
@@ -3241,25 +3249,25 @@ City})}\label{starting-area-near-new-city}%
 \begin{twocolumnitemize}{Monsters encountered:}
 \tightlist
 \item
-  Bambiphoots
+  \monster{Bambiphoots}
 \item
-  Dandiphoots
+  \monster{Dandiphoots}
 \item
-  Bitterbugs
+  \monster{Bitterbugs}
 \item
-  Stag Weevils
+  \monster{Stag Weevils}
 \item
-  Ravens
+  \monster{Ravens}
 \item
-  Glow Moths
+  \monster{Glow Moths}
 \item
-  Dane Initiates
+  \monster{Dane Initiates}
 \item
-  Alliphoots (fixed)
+  \monster{Alliphoots} (fixed)
 \item
-  Rattkin Rogues (fixed)
+  \monster{Rattkin Rogues} (fixed)
 \item
-  Rattkin Bandits (fixed)
+  \monster{Rattkin Bandits} (fixed)
 \end{twocolumnitemize}
 
 \faqentry{What do I do? I'm in the middle of nowhere!}
@@ -3295,7 +3303,7 @@ on the same map as a newly created party, but on the other side of the poppy
 fields.
 
 If you started near \place{Nyctalinth}: go into the city, talk with
-H'Jenn-Ra, meet Shritis (who you can say no to if you like the Umpani more,
+\monster{H'Jenn-Ra}, meet Shritis (who you can say no to if you like the Umpani more,
 but don't kill any T'rang NPCs until you can take on Shritis if you do!), and
 then exit into \place{New City} instead of going back into the
 \place{Anthracax}. Be warned that most NPCs don't like the T'Rang and will
@@ -3325,11 +3333,11 @@ Monsters encountered:%
 \begin{itemize}
 \tightlist
 \item
-  Mottle Cruds
+  \monster{Mottle Cruds}
 \item
-  Bitterbugs
+  \monster{Bitterbugs}
 \item
-  Ravens
+  \monster{Ravens}
 \end{itemize}
 
 {\nobreaklist{}\item Level 1
@@ -3343,13 +3351,13 @@ Monsters encountered:%
 \begin{itemize}
 \tightlist
 \item
-  Stag Weevils
+  \monster{Stag Weevils}
 \item
-  Boring Beetles
+  \monster{Boring Beetles}
 \item
-  Night Rooks (fixed)
+  \monster{Night Rooks} (fixed)
 \item
-  Ra-sep-re-tep (fixed)
+  \monster{Ra-sep-re-tep} (fixed)
 \end{itemize}
 \end{itemize}
 
@@ -3389,35 +3397,35 @@ go after \place{New City}--anywhere but \place{Orkogre Castle},
 \begin{twocolumnitemize}{Monsters encountered (varies by area of \place{New City}):}%
 \tightlist
 \item
-  Gorn Spearmen
+  \monsterB{Gorn Spearmen}{Gorn Spearman}
 \item
-  Gorn Rangers
+  \monster{Gorn Rangers}
 \item
-  Demented Munks
+  \monster{Demented Munks}
 \item
-  Dark Forest Munks
+  \monster{Dark Forest Munks}
 \item
-  Rattkin Rogues
+  \monster{Rattkin Rogues}
 \item
-  Rattkin Bandits
+  \monster{Rattkin Bandits}
 \item
-  Dane Initiates
+  \monster{Dane Initiates}
 \item
-  Dane Disciples
+  \monster{Dane Disciples}
 \item
-  Savant Guards
+  \monster{Savant Guards}
 \item
-  Savant Troopers (fixed)
+  \monster{Savant Troopers} (fixed)
 \item
-  Savant Controllers (fixed)
+  \monster{Savant Controllers} (fixed)
 \item
-  T'Rang Youngers
+  \monster{T'Rang Youngers}
 \item
-  T'Rang Wilders
+  \monster{T'Rang Wilders}
 \item
-  Umpani Ruffians
+  \monster{Umpani Ruffians}
 \item
-  Umpani Renegade
+  \monster{Umpani Renegade}
 \end{twocolumnitemize}
 
 \faqentry{The Savant Trooper won't let me through! Why?}
@@ -3491,7 +3499,7 @@ useful info.
 
 It's for the Constabulary. Think of ETX as Entrance. Don't use it in the
 \place{Forbidden Zone} however, unless you \textlcsc{want} to fight Savant
-Troopers and Savant Guards.
+Troopers and \monster{Savant Guards}.
 
 \faqentry{How \emph{do} I get in the \place{Forbidden Zone}?}
 
@@ -3520,9 +3528,9 @@ use it now.
   City?!?}
 
 It tends to disappear \textlcsc{VERY} fast for some odd reason. Consequently,
-return the Holy Work to Xen Xheng as soon as possible and go looking for Xen
+return the Holy Work to \npc{Xen Xheng} as soon as possible and go looking for Xen
 Xheng after he leaves the dojo. (Locate Person scrolls \textlcsc{will} help).
-Ask Xen Xheng about ``5 Flowers'' and see what he says. Try to get the
+Ask \npc{Xen Xheng} about ``5 Flowers'' and see what he says. Try to get the
 \qmwordqm{LEGEND} map now while it is early in the game after following the
 instructions he gives you. Seeing as Ratsputin seems to come down here pretty
 early, I'd say that he's the one that normally takes the \qmwordqm{LEGEND}
@@ -3536,27 +3544,27 @@ map before it switches hands.
 \begin{itemize}
 \tightlist
 \item
-  Gorn Spearmen
+  \monsterB{Gorn Spearmen}{Gorn Spearman}
 \item
-  Gorn Rangers
+  \monster{Gorn Rangers}
 \item
-  Gorn Lancers
+  \monster{Gorn Lancers}
 \item
-  Gorn Shamans
+  \monster{Gorn Shamans}
 \item
-  Gorn Leaders
+  \monster{Gorn Leaders}
 \item
-  Gorn Lords
+  \monster{Gorn Lords}
 \item
-  Gorn Ashigaru
+  \monster{Gorn Ashigaru}
 \item
-  Demented Munks
+  \monster{Demented Munks}
 \item
-  Dark Forest Munks
+  \monster{Dark Forest Munks}
 \item
-  Mad Warders
+  \monster{Mad Warders}
 \item
-  Munk Ninjas
+  \monster{Munk Ninjas}
 \end{itemize}
 
 \item Level 1
@@ -3564,11 +3572,11 @@ map before it switches hands.
 \begin{itemize}
 \tightlist
 \item
-  Rattkin Thieves
+  \monsterB{Rattkin Thieves}{Rattkin Thief}
 \item
-  Rattkin Hunters
+  \monster{Rattkin Hunters}
 \item
-  Savant Guards
+  \monster{Savant Guards}
 \end{itemize}
 
 \item Level 2
@@ -3580,35 +3588,35 @@ map before it switches hands.
 \begin{itemize}
 \tightlist
 \item
-  Dragonlizards (fixed)
+  \monster{Dragonlizards} (fixed)
 \item
-  Fungus Oozes (fixed)
+  \monster{Fungus Oozes} (fixed)
 \item
-  Crawling Wastes (fixed)
+  \monster{Crawling Wastes} (fixed)
 \item
-  T'Rang Watchers (fixed)
+  \monster{T'Rang Watchers} (fixed)
 \item
-  T'Rang Wilders (fixed)
+  \monster{T'Rang Wilders} (fixed)
 \item
-  T'Rang Guarders (fixed)
+  \monster{T'Rang Guarders} (fixed)
 \item
-  Rattkin Hunters (fixed)
+  \monster{Rattkin Hunters} (fixed)
 \item
-  Rattkin Thieves (fixed)
+  \monsterB{Rattkin Thieves}{Rattkin Thief} (fixed)
 \item
-  Rattkin Bandits (fixed)
+  \monster{Rattkin Bandits} (fixed)
 \item
-  Dane Initiates (fixed)
+  \monster{Dane Initiates} (fixed)
 \item
-  Dane Disciples (fixed)
+  \monster{Dane Disciples} (fixed)
 \item
-  Boar Weevils (fixed)
+  \monster{Boar Weevils} (fixed)
 \item
-  Venom Weevils (fixed)
+  \monster{Venom Weevils} (fixed)
 \item
-  Rattkin Thieves
+  \monsterB{Rattkin Thieves}{Rattkin Thief}
 \item
-  Rattkin Hunters
+  \monster{Rattkin Hunters}
 \end{itemize}
 
 \item Below Prison
@@ -3616,17 +3624,17 @@ map before it switches hands.
 \begin{itemize}
 \tightlist
 \item
-  Iguanadons
+  \monster{Iguanadons}
 \item
-  Glow Mothras
+  \monster{Glow Mothras}
 \item
-  Spectral Moths
+  \monster{Spectral Moths}
 \item
-  Fungus Oozes
+  \monster{Fungus Oozes}
 \item
-  Venom Weevils
+  \monster{Venom Weevils}
 \item
-  Stag Weevils
+  \monster{Stag Weevils}
 \end{itemize}
 
 \item Murkatos' \place{Inner Sanctum}
@@ -3634,9 +3642,9 @@ map before it switches hands.
 \begin{itemize}
 \tightlist
 \item
-  Shadow Guardian (fixed)
+  \monster{Shadow Guardian} (fixed)
 \item
-  Spectral Ravens (fixed)
+  \monster{Spectral Ravens} (fixed)
 \end{itemize}
 \end{twocolumnitemize}
 
@@ -3668,14 +3676,14 @@ exact. Look for a hideous Gorn woman there.
 It looks like someone beat you to the map that was here. Whenever you come
 across an empty chest or a chest that had waxy wrappings in it, that is where
 a map was located. If the chest is empty, an NPC beat you to the map because
-you were too slow. At this point in the game however, only Brother TShober
+you were too slow. At this point in the game however, only \npc{Brother TShober}
 can beat you to this chest at your top speed---so don't talk to Brother
 TShober before coming here! This map was the \qmwordqm{TEMPLE} map. Be very
 careful when you run into NPCs in an area that has a map---when you see them
 around, you're probably too late to get the map! Of course, if you take your
 time coming here almost anyone could have the map\ldots{}
 
-\faqentry{That Shadow Guardian is too hard! How do I beat it?}
+\faqentry{That \monster{Shadow Guardian} is too hard! How do I beat it?}
 
 Looks like you went way too fast. However, in the area below that you came
 from, if you go back to where you fell down a fixed encounter (where you have
@@ -3683,21 +3691,21 @@ to fight some monsters) at a certain spot respawns---you will always walk into
 the spot where the encounter is on your way back up. This must have been put
 there for people that got stuck here because they were low level.
 
-You wanted to know how to beat it though: You'll \textlcsc{need} the \spell{Air
-  Pocket} spell here.  Otherwise, when \spell{Asphyxiation} pops up (and it
-will 90\% of the time), you will see most or all of your party die unless
-you're high level Useful spells on the Shadow Guardian in addition to
-\spell{Air Pocket} include \spell{Purify Air} (because of \spell{Poison Gas}
-spells it seems to love), \spell{Cure Poison}, \spell{Haste}, \spell{Magic
-  Screen}, \spell{Armorplate}, and \spell{Enchanted Blade}.  The last three
-spells (if you have any of them) should be casted out of battle before you
-engage the Shadow Guardian.  If you can summon help with
-Conjuration\fshyp{}Illusion\fshyp{}\spell{Create Life}, call some up the
-first turn as well With those spells under your belt, the Shadow Guardian
-shouldn't be too much of a problem.
+You wanted to know how to beat it though: You'll \textlcsc{need} the
+\spell{Air Pocket} spell here.  Otherwise, when \spell{Asphyxiation} pops up
+(and it will 90\% of the time), you will see most or all of your party die
+unless you're high level Useful spells on the \monster{Shadow Guardian} in
+addition to \spell{Air Pocket} include \spell{Purify Air} (because of
+\spell{Poison Gas} spells it seems to love), \spell{Cure Poison},
+\spell{Haste}, \spell{Magic Screen}, \spell{Armorplate}, and \spell{Enchanted
+  Blade}.  The last three spells (if you have any of them) should be casted
+out of battle before you engage the \monster{Shadow Guardian}.  If you can
+summon help with Conjuration\fshyp{}Illusion\fshyp{}\spell{Create Life}, call
+some up the first turn as well With those spells under your belt, the
+\monster{Shadow Guardian} shouldn't be too much of a problem.
 
-\faqentry{Aaack! All the sudden I'm silenced and 20--30 Spectral Ravens fight
-  me! What do I do?}%
+\faqentry{Aaack! All the sudden I'm silenced and 20--30 \monster{Spectral
+    Ravens} fight me! What do I do?}%
 
 This is an example where saving saves your butt. If you saved before entering
 this area, you'll immediately realize that you're too weak for this
@@ -3716,7 +3724,7 @@ If you want to fight them now though, bring lots of \race{Faerie} Dust to put th
 to sleep, and ready your \spell{Dispel Undead} and any bombs that you may
 have found or bought.  You may want some \spell{Cure Lesser Condition}
 potions in case a party member manages to run away from the fight because of
-the “Terror” status the Ravens inflict on you.  \spell{Cure Paralysis}
+the “Terror” status the \monster{Ravens} inflict on you.  \spell{Cure Paralysis}
 potions are nice too.
 
 \pagebreak\subsection{\place{Munkharama}}\label{munkharama}\nopagebreak%
@@ -3727,13 +3735,13 @@ potions are nice too.
 \begin{itemize}
 \tightlist
 \item
-  Demented Munks
+  \monster{Demented Munks}
 \item
-  Dark Forest Munks
+  \monster{Dark Forest Munks}
 \item
-  Mad Warders
+  \monster{Mad Warders}
 \item
-  Munk Ninjas
+  \monster{Munk Ninjas}
 \end{itemize}
 
 \item {\RaggedRight\ \place{Munkharama} and \place{Land of
@@ -3743,43 +3751,43 @@ potions are nice too.
 \begin{itemize}
 \tightlist
 \item
-  Gorn Spearmen
+  \monsterB{Gorn Spearmen}{Gorn Spearman}
 \item
-  Gorn Rangers
+  \monster{Gorn Rangers}
 \item
-  Gorn Lancers
+  \monster{Gorn Lancers}
 \item
-  Gorn Ashigaru
+  \monster{Gorn Ashigaru}
 \item
-  Umpani Ruffians
+  \monster{Umpani Ruffians}
 \item
-  Umpani Renegade
+  \monster{Umpani Renegade}
 \item
-  Spectral Ravens
+  \monster{Spectral Ravens}
 \item
-  Vampire Rooks
+  \monster{Vampire Rooks}
 \item
-  Night Rooks
+  \monster{Night Rooks}
 \item
-  Glow Mothras
+  \monster{Glow Mothras}
 \item
-  Rattkin Leaders
+  \monster{Rattkin Leaders}
 \item
-  Rattkin Thieves
+  \monsterB{Rattkin Thieves}{Rattkin Thief}
 \item
-  Rattkin Hunters
+  \monster{Rattkin Hunters}
 \item
-  T'Rang Wilders
+  \monster{T'Rang Wilders}
 \item
-  Nightmares L
+  \monster{Nightmares} L
 \item
-  Dream Weavers L
+  \monster{Dream Weavers} L
 \item
-  Nightmares (fixed) L
+  \monster{Nightmares} (fixed) L
 \item
-  Dream Weavers (fixed) L
+  \monster{Dream Weavers} (fixed) L
 \item
-  Furies (fixed) L
+  \monsterB{Furies}{Fury} (fixed) L
 \end{itemize}
 
 \item \place{Lost Temple} Level 1
@@ -3787,31 +3795,31 @@ potions are nice too.
 \begin{itemize}
 \tightlist
 \item
-  Gorn Rangers
+  \monster{Gorn Rangers}
 \item
-  Gorn Ashigaru
+  \monster{Gorn Ashigaru}
 \item
-  Umpani Ruffians
+  \monster{Umpani Ruffians}
 \item
-  Umpani Renegade
+  \monster{Umpani Renegade}
 \item
-  Dragonlizards
+  \monster{Dragonlizards}
 \item
-  Komodo Dragons
+  \monster{Komodo Dragons}
 \item
-  Skeletons
+  \monster{Skeletons}
 \item
-  Minoskell
+  \monster{Minoskell}
 \item
-  Vampire Rooks
+  \monster{Vampire Rooks}
 \item
-  Spectral Ravens
+  \monster{Spectral Ravens}
 \item
-  Dragonlizards
+  \monster{Dragonlizards}
 \item
-  Fungus Oozes
+  \monster{Fungus Oozes}
 \item
-  Puxic Oozes
+  \monster{Puxic Oozes}
 \end{itemize}
 
 \item \place{Lost Temple} Level 2
@@ -3819,35 +3827,35 @@ potions are nice too.
 \begin{itemize}
 \tightlist
 \item
-  Gorn Rangers
+  \monster{Gorn Rangers}
 \item
-  Gorn Ashigaru
+  \monster{Gorn Ashigaru}
 \item
-  Umpani Ruffians
+  \monster{Umpani Ruffians}
 \item
-  Umpani Renegade
+  \monster{Umpani Renegade}
 \item
-  Umpani Scouts
+  \monster{Umpani Scouts}
 \item
-  Spectral Ravens
+  \monster{Spectral Ravens}
 \item
-  Spirits
+  \monster{Spirits}
 \item
-  Ghosts
+  \monster{Ghosts}
 \item
-  Skeletons
+  \monster{Skeletons}
 \item
-  Minoskell
+  \monster{Minoskell}
 \item
-  Water Nymphs
+  \monster{Water Nymphs}
 \item
-  Jelly Stingers
+  \monster{Jelly Stingers}
 \item
-  Frothing Munks (fixed)
+  \monster{Frothing Munks} (fixed)
 \item
-  Leper Giants (fixed)
+  \monster{Leper Giants} (fixed)
 \item
-  Lord of Dark Forest (fixed)
+  \monster{Lord of Dark Forest} (fixed)
 \end{itemize}
 
 \item Crypt
@@ -3855,7 +3863,7 @@ potions are nice too.
 \begin{itemize}
 \tightlist
 \item
-  Skeleton Lords (fixed)
+  \monster{Skeleton Lords} (fixed)
 \end{itemize}
 \end{twocolumnitemize}
 
@@ -4082,11 +4090,11 @@ in the game) and the protective items, although cursed, grant a regeneration
 bonus on the wearer (at least two of them do) and \textlcsc{really} good
 protection.
 
-\faqentry{What the heck is Xen Xheng saying?}
+\faqentry{What the heck is \npc{Xen Xheng} saying?}
 
 You should have talked to Father Rulae way back in \place{New City} and said you
 wanted guidance, and followed his directions and the subsequent directions
-from Brother TShober. Otherwise, this is a dead end for you.
+from \npc{Brother TShober}. Otherwise, this is a dead end for you.
 
 \faqentry{Is there something special about that middle area in
   \place{Munkharama} with Phoonzang's statue?}
@@ -4113,10 +4121,10 @@ Uh oh\ldots{}I hope you didn't save. This area is annoying. However, it
 \spell{Cure Disease}, at least for your first time through. And you can get
 out eventually.
 
-See, you're going to be fighting Frothing Munks and a Leper Giant (two
+See, you're going to be fighting \monster{Frothing Munks} and a Leper Giant (two
 if on Expert mode) here. The Leper Giant is annoying because he's a
 giant---they tend to squash you like a bug if they hit you. The annoying
-thing about the Frothing Munks though is that they throw up on you---and
+thing about the \monster{Frothing Munks} though is that they throw up on you---and
 you get diseased!
 
 However, the \class{Monk}s are at least weak against \spell{Asphyxiation} (or
@@ -4142,7 +4150,7 @@ With persistence. If you are \textlcsc{very} lucky, you can silence
 him---he's a monk, unlike the rest of the Munks who are ninjas, so shutting
 him up is a very effective way of stopping the nastier spells like
 \spell{Lifesteal}. Deal with anyone he has with him first though. He might be
-dangerous, but so is 6 Dark Forest Munks that get a chance to cast stuff on
+dangerous, but so is 6 \monster{Dark Forest Munks} that get a chance to cast stuff on
 you as well, leaving you blind, irritated (both literally and figuratively),
 and possibly insane, making it near impossible for you to beat the Lord of
 the Dark Forest.
@@ -4160,22 +4168,22 @@ will be gone.
 \faqentry{What do I do with the Notched Shaft I found?}
 
 Look for what looks to be like a pressed button and use it there while facing
-it. It closes that pit that dropped you into the Frothing Munks and Leper
+it. It closes that pit that dropped you into the \monster{Frothing Munks} and Leper
 Giant. Keep in mind that the pressed button is located in the same region
 (although not the same passageway) as the pit and ladder.
 
 \faqentry{I can't find the Holy Work!}
 
-Remember what Brother TShober said about the ``golden face.''
+Remember what \npc{Brother TShober} said about the ``golden face.''
 
 \faqentry{What is with these waxy wrappings with the Holy Work?}
 
 The chest also contained the \qmwordqm{CRYPT} map. Looks like someone beat
-you to it. Try hunting down some Gorn NPCs or Brother TShober (strangely
+you to it. Try hunting down some Gorn NPCs or \npc{Brother TShober} (strangely
 enough). They seem to be the first ones with it if you don't get it in all
 the games I've played.
 
-\faqentry{Aaah! Those Skeleton Lords are creaming me!! And why am I paralyzed?}
+\faqentry{Aaah! Those \monster{Skeleton Lords} are creaming me!! And why am I paralyzed?}
 
 Oh dear. Yet another example of ``Come back later.'' If you're playing on
 expert mode you will \textlcsc{need} either \spell{Word of Death} on two
@@ -4186,7 +4194,7 @@ characters high level enough to shrug off Death and \spell{Fireball} spells.
 Then you have to hope that the characters with Silence don't get
 paralyzed. \spell{Nuclear Blast} tends to not work as well as \spell{Word of
   Death} on undead. There's no way you can take more than 2 turns of spells
-from the Skeleton Lords without getting someone clobbered to death, even with
+from the \monster{Skeleton Lords} without getting someone clobbered to death, even with
 \spell{Magic Screen} up. If you can, you're lucky---Death and 6
 \spell{Fireball}s have a nasty effect on my party at this point.
 
@@ -4197,100 +4205,100 @@ from the Skeleton Lords without getting someone clobbered to death, even with
 
     \begin{itemize}
       \tightlist
-    \item Dane Initiates (level 1 up)
-    \item Dane Disciples (level 2 up)
-    \item Dane Canons (level 3 up)
-    \item Dane \class{Priest}s (level 4 up)
-    \item Dane Apostles (level 5 up)
-    \item High Fathers (level 6 up)
+    \item \monster{Dane Initiates} (level 1 up)
+    \item \monster{Dane Disciples} (level 2 up)
+    \item \monster{Dane Canons} (level 3 up)
+    \item \monster{Dane Priests} (level 4 up)
+    \item \monster{Dane Apostles} (level 5 up)
+    \item \monster{High Fathers} (level 6 up)
     \end{itemize}
 
   \item First level\fshyp{}\place{Temple of the Initiate}
     \begin{itemize}
       \tightlist
-    \item Cachre Sludges
-    \item Glow Moths
-    \item Spectral Moths
-    \item Bitterbugs
-    \item Stag Weevils
-    \item Night Rooks
+    \item \monster{Cachre Sludges}
+    \item \monster{Glow Moths}
+    \item \monster{Spectral Moths}
+    \item \monster{Bitterbugs}
+    \item \monster{Stag Weevils}
+    \item \monster{Night Rooks}
     \end{itemize}
 
   \item Second level\fshyp{}\place{Temple of Divine Order}
     \begin{itemize}
       \tightlist
-    \item Night Rooks
-    \item Vampire Rooks
-    \item Iguanadons
-    \item Skeletons
-    \item Venom Weevils
-    \item Stag Weevils
+    \item \monster{Night Rooks}
+    \item \monster{Vampire Rooks}
+    \item \monster{Iguanadons}
+    \item \monster{Skeletons}
+    \item \monster{Venom Weevils}
+    \item \monster{Stag Weevils}
     \end{itemize}
 
     \item Third level\fshyp{}\place{Temple of Eternal Night}
       \begin{itemize}
         \tightlist
-      \item Bantari
-      \item Vampire Rooks
-      \item Dragonlizards
-      \item Fungus Oozes
-      \item Minoskells
-      \item The Beast (fixed)
-      \item Boar Weevils
-      \item Venom Weevils
-      \item Stag Weevils
+      \item \monster{Bantari}
+      \item \monster{Vampire Rooks}
+      \item \monster{Dragonlizards}
+      \item \monster{Fungus Oozes}
+      \item \monster{Minoskells}
+      \item \monster{The Beast} (fixed)
+      \item \monster{Boar Weevils}
+      \item \monster{Venom Weevils}
+      \item \monster{Stag Weevils}
       \end{itemize}
 
     \item Fourth level\fshyp{}\place{Temple of Aerial Whimsey}
       \begin{itemize}
         \tightlist
-      \item Bantari
-      \item Vampire Rooks
-      \item Spectral Ravens
-      \item Fire Crows
-      \item Dragonlizards
-      \item Fungus Oozes
-      \item Minoskells
-      \item Bear Weevils
-      \item Boar Weevils
-      \item Venom Weevils
-      \item Stag Weevils
+      \item \monster{Bantari}
+      \item \monster{Vampire Rooks}
+      \item \monster{Spectral Ravens}
+      \item \monster{Fire Crows}
+      \item \monster{Dragonlizards}
+      \item \monster{Fungus Oozes}
+      \item \monster{Minoskells}
+      \item \monster{Bear Weevils}
+      \item \monster{Boar Weevils}
+      \item \monster{Venom Weevils}
+      \item \monster{Stag Weevils}
       \end{itemize}
 
     \item Fifth level\fshyp{}\place{Temple of Deadly Coffers}
       \begin{itemize}
         \tightlist
-      \item Dragon Rooks
-      \item Fire Crows
-      \item Hog Beetles
-      \item Wraiths Spirits
-      \item Ghosts
-      \item Water Nymphs
-      \item Jelly Stingers
-      \item Gelimaga
+      \item \monster{Dragon Rooks}
+      \item \monster{Fire Crows}
+      \item \monster{Hog Beetles}
+      \item \monster{Wraiths Spirits}
+      \item \monster{Ghosts}
+      \item \monster{Water Nymphs}
+      \item \monster{Jelly Stingers}
+      \item \monster{Gelimaga}
       \end{itemize}
 
     \item Sixth level\fshyp{}\place{Temple of Wanderers}
       \begin{itemize}
         \tightlist
-      \item Shadow Crusts
-        \item Puxic Oozes
-        \item Fungus Oozes
-        \item Skeleton Lords
-        \item Fetid Corpses
-        \item Zombie Skells
-        \item Savant Troopers
-        \item Savant Guards
-        \item Fire Crows
-        \item Dragon Rooks
-        \item Vampire Vultures
-        \item Komodo Dragons
-        \item Bear Weevils
-        \item Boar Weevils
-        \item Venom Weevils
-        \item Magna Dane (fixed)
+      \item \monster{Shadow Crusts}
+      \item \monster{Puxic Oozes}
+      \item \monster{Fungus Oozes}
+      \item \monster{Skeleton Lords}
+      \item \monster{Fetid Corpses}
+      \item \monster{Zombie Skells}
+      \item \monster{Savant Troopers}
+      \item \monster{Savant Guards}
+      \item \monster{Fire Crows}
+      \item \monster{Dragon Rooks}
+      \item \monster{Vampire Vultures}
+      \item \monster{Komodo Dragons}
+      \item \monster{Bear Weevils}
+      \item \monster{Boar Weevils}
+      \item \monster{Venom Weevils}
+      \item \monster{Magna Dane} (fixed)
       \end{itemize}
-
+      
     \item \place{Tower Pit Exit}
       \begin{itemize}
         \tightlist
@@ -4301,11 +4309,11 @@ from the Skeleton Lords without getting someone clobbered to death, even with
     \item \place{Tower's Top}
       \begin{itemize}
         \tightlist
-      \item Luna Mothras
-      \item Glow Mothras
+      \item \monster{Luna Mothras}
+      \item \monster{Glow Mothras}
       \item \WviiSPAWN{} (fixed)
-      \item Vampire Vultures
-      \item Wraiths Spirits
+      \item \monster{Vampire Vultures}
+      \item \monster{Wraiths Spirits}
       \end{itemize}
 \end{twocolumnitemize}
 
@@ -4401,8 +4409,8 @@ not.
 
 \faqentry{Who's the girl in the vision?}
 
-That's Vi Domina. Remember the girl from the introduction? (assuming you
-watched it) Maybe you should find more about her when you can.
+That's \npc{Vi Domina}. Remember the girl from the introduction? (assuming
+you watched it) Maybe you should find more about her when you can.
 
 \faqentry{Aack! Treasure Chests are exploding!}
 
@@ -4418,7 +4426,7 @@ What's in the chest behind it?}
 You need a key from the first area of the \place{Temple of Deadly Coffers}
 where the urn in the middle is. The chest behind it contains the
 \qmwordqm{CRYSTAL} map, but if you're playing on Expert mode, it's long gone
-by now unless you started in the area---Kymas Turan or Ratsputin probably
+by now unless you started in the area---\npc{Kymas Turan} or Ratsputin probably
 took it first.
 
 \faqentry{Where is everything in the \place{Temple of Wanderers}? It just
@@ -4444,18 +4452,17 @@ on the wall.
 
 \faqentry{What the\ldots{}I'm getting hit with fireballs! What's going on?}
 
-You're in a nasty area of the Tower. The area behind the grates to
-your east (where the fireballs are coming from) is the Temple of the
-Magna Dane, which you will be able to get to after passing the Temple of
-Wanderers and paying for your membership as a Lord of Dane. Be warned
-that going down this corridor means you will be taking heavy
-unpreventable (except by luck and your fire resistances) fire damage and
-get into a fight with High Fathers and other Danes after the gate at the
-very end. The fire damage goes away after you kill \WviiSPAWN{} or
-talk (and take the Pit challenge) with the Magna Dane though, as the
-Magna Dane will have left his Temple. I've gotten stuck here before
-though, as the Pit exits here after a bit of winding and my party just
-can't take 80--100+ HP fireballs at this point.
+You're in a nasty area of the Tower. The area behind the grates to your east
+(where the fireballs are coming from) is the Temple of the \monster{Magna Dane}, which
+you will be able to get to after passing the Temple of Wanderers and paying
+for your membership as a Lord of Dane. Be warned that going down this
+corridor means you will be taking heavy unpreventable (except by luck and
+your fire resistances) fire damage and get into a fight with \monster{High
+  Fathers} and other Danes after the gate at the very end. The fire damage
+goes away after you kill \WviiSPAWN{} or talk (and take the Pit challenge)
+with the \monster{Magna Dane} though, as the \monster{Magna Dane} will have left his Temple. I've
+gotten stuck here before though, as the Pit exits here after a bit of winding
+and my party just can't take 80--100+ HP fireballs at this point.
 
 \faqentry{What is with this lever? I pull it and it resets?}
 
@@ -4467,10 +4474,10 @@ to reopen it again.
 
 \faqentry{What do I do at the Pit?}
 
-Talk to Magna Dane to find out. You get to him by taking the stairs down
+Talk to \monster{Magna Dane} to find out. You get to him by taking the stairs down
 after going to the top of the tower, not by yanking a lever.
 
-\faqentry{Magna Dane is \textlcsc{hard}. Every time I start the fight, half my
+\faqentry{\monster{Magna Dane} is \textlcsc{hard}. Every time I start the fight, half my
   party is dead before I can do anything!}
 
 Come back later. It is easier when everyone has at least a Dexterity of 16
@@ -4499,7 +4506,7 @@ What did you chop off the last demon you killed?
 \faqentry{\texorpdfstring{But it didn't work!\protect\footnotemark{}}{But it
     didn't work!}}\footnotetext{See previous question.}
 
-Try it from the Magna Dane's chamber. You \textlcsc{did} see that secret button
+Try it from the \monster{Magna Dane}'s chamber. You \textlcsc{did} see that secret button
 right?
 
 \faqentry{What do I do with what's inside?}%
@@ -4512,21 +4519,21 @@ Whatever you want. You need the Coil for later though.\goodbreak
 Monsters encountered:%
 \begin{itemize}[WviiTwoColumn]
     \tightlist
-  \item Umpani Ruffians
-  \item Umpani Renegades
-  \item Umpani Scouts
-  \item Umpani Armsmen
-  \item Umpani Troopers
-  \item General Yamo (fixed)
-  \item Sgt.~Balbrak (fixed)
-  \item Lt.~Gromo (fixed)
-  \item Spirits
-  \item Rattkin Leaders
-  \item Rattkin Hunters
-  \item Rattkin Thieves
-  \item Rattkin Bandits
-  \item Rattkin Rogues
-  \item T'Rang Wilders
+  \item \monster{Umpani Ruffians}
+  \item \monster{Umpani Renegades}
+  \item \monster{Umpani Scouts}
+  \item \monsterB{Umpani Armsmen}{Umpani Armsman}
+  \item \monster{Umpani Troopers}
+  \item \npc{General Yamo} (fixed)
+  \item \npc{Sgt.~Balbrak} (fixed)
+  \item \npc{Lt.~Gromo} (fixed)
+  \item \monster{Spirits}
+  \item \monster{Rattkin Leaders}
+  \item \monster{Rattkin Hunters}
+  \item \monsterB{Rattkin Thieves}{Rattkin Thief}
+  \item \monster{Rattkin Bandits}
+  \item \monster{Rattkin Rogues}
+  \item \monster{T'Rang Wilders}
 \end{itemize}
 
 \faqentry{\texorpdfstring{Why do the Umpani immediately attack me when I
@@ -4574,9 +4581,9 @@ again. Supposedly though, you need to talk to Shritis to get your reward.
 \faqentry{Where exactly is information K'borra wants?}
 
 It's in the \place{Spaceport Authority}. If you're going to help K'borra,
-don't tell Sgt.~Balbrak that you found T'Rangs! After you talk to General
-Yamo, you'll be able to go into the \place{Spaceport Authority} without
-problems.
+don't tell \npc{Sgt.~Balbrak} that you found T'Rangs! After you talk to
+General Yamo, you'll be able to go into the \place{Spaceport Authority}
+without problems.
 
 \faqentry{I'm giving K'borra the information he wants, but he's calling me a
   traitor! Why?}
@@ -4584,19 +4591,19 @@ problems.
 Don't put a space between the ‘+’ and the rest of the coordinates. The only
 space in there should be after the 2nd number and before the `D'.
 
-\faqentry{I can't get that promotion Lt.~Gromo said I'd get, even though I
-  hit the practice target 3 times!}
+\faqentry{I can't get that promotion \npc{Lt.~Gromo} said I'd get, even
+  though I hit the practice target 3 times!}
 
-He said to get 3 BULL'S EYEs, not 3 hits. That being said, even
-though it is possible to get a BULL'S EYE at 0 Firearms skill (My
-\class{Valkyrie} once got BULL'S EYE HIT HIT at a Firearms skill of 0), chances
-are you won't get 3 BULL'S EYEs at a high enough rate until you have a
-skill of at least 40 in Firearms. After that it is very possible, but
-sometimes it takes a while. (Once I got 3 BULL'S EYEs at 43 Firearms
-skill, another time it was at 64, and yet another at 53.) You will get a
-IUFSTFTUFS badge to bring to the Supply Depot, and then be offered 14250
-for a Blunderbuss and Flak Jacket. No discounts on that unfortunately.
-If you want the items though, get them before meeting General Yamo.
+He said to get 3 BULL'S EYEs, not 3 hits. That being said, even though it is
+possible to get a BULL'S EYE at 0 Firearms skill (My \class{Valkyrie} once
+got BULL'S EYE HIT HIT at a Firearms skill of 0), chances are you won't get 3
+BULL'S EYEs at a high enough rate until you have a skill of at least 40 in
+Firearms. After that it is very possible, but sometimes it takes a
+while. (Once I got 3 BULL'S EYEs at 43 Firearms skill, another time it was at
+64, and yet another at 53.) You will get a IUFSTFTUFS badge to bring to the
+Supply Depot, and then be offered 14250 for a Blunderbuss and Flak Jacket. No
+discounts on that unfortunately.  If you want the items though, get them
+before meeting \npc{General Yamo}.
 
 
 \pagebreak\subsection{\place{Rattkin Ruins}}\label{rattkin-ruins}\nopagebreak
@@ -4605,35 +4612,35 @@ If you want the items though, get them before meeting General Yamo.
   \item Encountered everywhere
     \begin{itemize}
       \tightlist
-    \item Rattkin Ronin
-    \item Rattkin Leaders
-    \item Rattkin Hunters
-    \item Rattkin Thieves
-    \item Rattkin Bandits
-    \item Rattkin Rogues
-    \item T'Rang Wisers
-    \item T'Rang Watchers
-    \item T'Rang Tecniks
-    \item T'Rang Keepers
-    \item T'Rang Guarders
-    \item T'Rang Youngers
-    \item Dane Canons
-    \item Dane Disciples
-    \item Dane Initiates
-    \item Puxic Oozes
-    \item Fungus Oozes
-    \item Crawling Wastes
-    \item Fire Crows
+    \item \monster{Rattkin Ronin}
+    \item \monster{Rattkin Leaders}
+    \item \monster{Rattkin Hunters}
+    \item \monsterB{Rattkin Thieves}{Rattkin Thief}
+    \item \monster{Rattkin Bandits}
+    \item \monster{Rattkin Rogues}
+    \item \monster{T'Rang Wisers}
+    \item \monster{T'Rang Watchers}
+    \item \monster{T'Rang Tecniks}
+    \item \monster{T'Rang Keepers}
+    \item \monster{T'Rang Guarders}
+    \item \monster{T'Rang Youngers}
+    \item \monster{Dane Canons}
+    \item \monster{Dane Disciples}
+    \item \monster{Dane Initiates}
+    \item \monster{Puxic Oozes}
+    \item \monster{Fungus Oozes}
+    \item \monster{Crawling Wastes}
+    \item \monster{Fire Crows}
     \end{itemize}
 
   \item \place{Rattkin Ruins}
     \begin{itemize}
       \tightlist
-    \item Grimal (fixed)
-    \item Rattkin Razuka (fixed)
-    \item Savant Controllers
-    \item Savant Troopers
-    \item Savant Guards
+    \item \monster{Grimal} (fixed)
+    \item \monster{Rattkin Razuka} (fixed)
+    \item \monster{Savant Controllers}
+    \item \monster{Savant Troopers}
+    \item \monster{Savant Guards}
     \end{itemize}
 
   \item \place {Rattkin Funhouse}
@@ -4642,16 +4649,16 @@ If you want the items though, get them before meeting General Yamo.
     \item Upstairs
       \begin{itemize}
         \tightlist
-      \item Zombie Skells
+      \item \monster{Zombie Skells}
       \end{itemize}
 
       \item Underground
         \begin{itemize}
           \tightlist
-        \item Gelimagas
-        \item Jelly Stingers
-        \item Zombie Skells
-        \item Fetid Corpses
+        \item \monster{Gelimaga}s
+        \item \monster{Jelly Stingers}
+        \item \monster{Zombie Skells}
+        \item \monster{Fetid Corpses}
         \end{itemize}
     \end{itemize}
 \end{twocolumnitemize}
@@ -4741,27 +4748,27 @@ troughs'' as the game calls it and jump in to find said ball.
 
 \faqentry{What's with this rack of spears?}
 
-It guards the \qmwordqm{BOAT} Map. Talk to H'Jenn-Ra T'Rang in
+It guards the \qmwordqm{BOAT} Map. Talk to \monster{H'Jenn-Ra} T'Rang in
 \place{Nyctalinth} to figure out the combination, if you haven't talked to
 him already.
 
 \faqentry{I'm in wilderness after climbing out! Where am I?}
 
-The \place{Witch Mountains}. Have fun looking around. Watch out for Q'ua-tari.
+The \place{Witch Mountains}. Have fun looking around. Watch out for \monster{Q'ua-tari}.
 
 \pagebreak\subsection{\place{Old City}}\label{old-city}\nopagebreak
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Spirits
-\item Ghosts
-\item Puxic Oozes (fixed)
-\item Fungus Oozes
-\item Water Nymphs
-\item Dragonlizards
-\item Iguanadons
-\item Minoskells
-\item Skeletons
+\item \monster{Spirits}
+\item \monster{Ghosts}
+\item \monster{Puxic Oozes} (fixed)
+\item \monster{Fungus Oozes}
+\item \monster{Water Nymphs}
+\item \monster{Dragonlizards}
+\item \monster{Iguanadons}
+\item \monster{Minoskells}
+\item \monster{Skeletons}
 \end{twocolumnitemize}
 
 \faqentry{Why are there footprints in the dust?}
@@ -4785,46 +4792,46 @@ however, you can go in here as early as after \place{Orkogre Castle}.
 \item \place{Nyctalinth}
   \begin{itemize}
     \tightlist
-  \item T'Rang Youngers
-  \item T'Rang Guarders
-  \item T'Rang Wilders
-  \item T'Rang Keepers
-  \item T'Rang Watchers
-  \item T'Rang Assassins
-  \item T'Rang Wisers
-  \item T'Rang Elders
-  \item H'Jenn-Ra (fixed)
-  \item Rattkin Leaders
-  \item Rattkin Hunters
-  \item Rattkin Thieves
-  \item Savant Controllers
-  \item Savant Troopers
-  \item Savant Guards
-  \item Spirits
-  \item Fetid Corpses
-  \item Zombie Skells
-  \item Ymmu (fixed)
-  \item Vilet Kanebe (fixed)
-  \item Dragon Rooks
-  \item Hog Beetles
+  \item \monster{T'Rang Youngers}
+  \item \monster{T'Rang Guarders}
+  \item \monster{T'Rang Wilders}
+  \item \monster{T'Rang Keepers}
+  \item \monster{T'Rang Watchers}
+  \item \monster{T'Rang Assassins}
+  \item \monster{T'Rang Wisers}
+  \item \monster{T'Rang Elders}
+  \item \monster{H'Jenn-Ra} (fixed)
+  \item \monster{Rattkin Leaders}
+  \item \monster{Rattkin Hunters}
+  \item \monsterB{Rattkin Thieves}{Rattkin Thief}
+  \item \monster{Savant Controllers}
+  \item \monster{Savant Troopers}
+  \item \monster{Savant Guards}
+  \item \monster{Spirits}
+  \item \monster{Fetid Corpses}
+  \item \monster{Zombie Skells}
+  \item \monster{Ymmu} (fixed)
+  \item \monster{Vilet Kanebe} (fixed)
+  \item \monster{Dragon Rooks}
+  \item \monster{Hog Beetles}
   \end{itemize}
 
 \item Underground area
   \begin{itemize}
     \tightlist
-  \item Cave Thraxes
-  \item Crust Thraxes
-  \item Cave Slimes
-  \item Rock Lizards
-  \item Puxic Oozes
-  \item Fungus Oozes
-  \item Bear Weevils
-  \item Boar Weevils
-  \item Venom Weevils
+  \item \monsterB{Cave Thraxes}{Cave Thraxe}
+  \item \monsterB{Crust Thraxes}{Crust Thraxe}
+  \item \monster{Cave Slimes}
+  \item \monster{Rock Lizards}
+  \item \monster{Puxic Oozes}
+  \item \monster{Fungus Oozes}
+  \item \monster{Bear Weevils}
+  \item \monster{Boar Weevils}
+  \item \monster{Venom Weevils}
   \end{itemize}
 \end{twocolumnitemize}
 
-\faqentry{Where's H'Jenn-Ra?}
+\faqentry{Where's \monster{H'Jenn-Ra}?}
 
 Come on, it's not \textlcsc{that} hard to walk around and explore! He's in the
 Northwest area in the \place{High Chamber} though, since you asked.
@@ -4867,7 +4874,7 @@ You will use it on any Savant Androids you may find---especially the sleeping
 ones in the T'Rang larder in the \place{High Chamber}. Use it as an item when
 it prompts you with the Use, Talk, and Leave buttons. You can \emph{also} use
 the Mystery Ray to hurt \emph{any} Savant Androids you run across---including
-those nasty Savant Kui'sa-ka near the end of the game and those Savant
+those nasty \monster{Savant Kui'sa-ka} near the end of the game and those Savant
 Berserkers you wake up.
 
 \faqentry{Is the information that the Savant Berserker spoke and the stuff
@@ -4938,47 +4945,47 @@ your time on expert mode---it's not as irritating to get as the
 \qmwordqm{CRYPT} map or the \qmwordqm{CRYSTAL} map. Since I can usually get
 it however, I can't take a guess as to who took it first.
 
-\faqentry{H'Jenn-Ra is killing my party! How do I deal with him?}
+\faqentry{\monster{H'Jenn-Ra} is killing my party! How do I deal with him?}
 
 I guess you had a Pineapple after all. I won't lie to you---if your party is
-not faster than H'Jenn-Ra's party, you're screwed unless you're on easy mode,
-where there's a chance she'll appear by herself, or you're much higher level,
-where most of their stuff has a reduced chance of working on you. You will
-need the full gamut of protective and enhancement spells to kill her
-otherwise, including \spell{Air Pocket} but not Fire or \spell{Ice Shield}
-unless she has company. On Expert mode, you need at least 2 characters that
-can cast mass target spells like \spell{Nuclear Blast} or \spell{Word of
-  Death} to kill off all the reinforcement T'Rang or the Assassins and Elders
-will lay waste to you. Fire spells tend to be more effective on the
-T'Rang. Good luck!
+not faster than \monster{H'Jenn-Ra}'s party, you're screwed unless you're on
+easy mode, where there's a chance she'll appear by herself, or you're much
+higher level, where most of their stuff has a reduced chance of working on
+you. You will need the full gamut of protective and enhancement spells to
+kill her otherwise, including \spell{Air Pocket} but not Fire or \spell{Ice
+  Shield} unless she has company. On Expert mode, you need at least 2
+characters that can cast mass target spells like \spell{Nuclear Blast} or
+\spell{Word of Death} to kill off all the reinforcement T'Rang or the
+Assassins and Elders will lay waste to you. Fire spells tend to be more
+effective on the T'Rang. Good luck!
 
 \paragraph{Note:} If you travel from \place{Nyctalinth} to
 \place{Dionysceus}, you will run into T'Rangs ambushing the Helazoid
-Jan-Ette. Help her if you want the Eagle Eye skill later and to be on
+\npc{Jan-Ette}. Help her if you want the Eagle Eye skill later and to be on
 friendly terms with the Helazoid.
 
 \pagebreak\subsection{\place{Witch Mountains}}\label{witch-mountains}\nopagebreak
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Bantari
-\item Q'ua-tari
-\item Vampire Vultures
-\item Fire Crows
-\item Dragon Rooks
-\item Vampire Rooks
-\item Vultures
-\item Wood Dryads
-\item Faerie Witches
-\item Forest Giants
-\item Boulder Giants
-\item Frost Giants
-\item Dinkle Wisps
+\item \monster{Bantari}
+\item \monster{Q'ua-tari}
+\item \monster{Vampire Vultures}
+\item \monster{Fire Crows}
+\item \monster{Dragon Rooks}
+\item \monster{Vampire Rooks}
+\item \monster{Vultures}
+\item \monster{Wood Dryads}
+\item \monsterB{Faerie Witches}{Faerie Witch}
+\item \monster{Forest Giants}
+\item \monster{Boulder Giants}
+\item \monster{Frost Giants}
+\item \monster{Dinkle Wisps}
 \end{twocolumnitemize}
 
 \faqentry{What do I do here?}
 
-Well, if you've returned the Holy Work to Xen Xheng and joined his school of
+Well, if you've returned the Holy Work to \npc{Xen Xheng} and joined his school of
 5 Flowers, you can start collecting the flowers for one. If you haven't read
 the Book of Fables from \place{New City} yet, take it out and read it now,
 and remind yourself about when the witches meet. This next part doesn't seem
@@ -5010,19 +5017,19 @@ Why go into the \place{Witch Cave} with what you learned of course!
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item \WviiSPOT{} (fixed)
-\item Gruengard (fixed)
-\item Bonehead (fixed)
-\item Brunatz (fixed)
-\item Munstachio (fixed)
-\item Boulder Giants
-\item Forest Giants
-\item Frost Giants
-\item Water Nymphs
-\item Red Pirannhas
-\item Glow Mothras
-\item Rock Lizards
-\item Dinkle Wisps
-\item Jelly Stingers
+\item \monster{Gruengard} (fixed)
+\item \monster{Bonehead} (fixed)
+\item \monster{Brunatz} (fixed)
+\item \monster{Munstachio} (fixed)
+\item \monster{Boulder Giants}
+\item \monster{Forest Giants}
+\item \monster{Frost Giants}
+\item \monster{Water Nymphs}
+\item \monster{Red Pirannhas}
+\item \monster{Glow Mothras}
+\item \monster{Rock Lizards}
+\item \monster{Dinkle Wisps}
+\item \monster{Jelly Stingers}
 \end{twocolumnitemize}
 
 \faqentry{These giants keep killing me! How can I kill them?}
@@ -5038,7 +5045,7 @@ killing. Consequently, anyone that can't dish out (and take) damage should be
 hidden away via hide or invisibility potions bombing \WviiSPOT{} with
 cloud-type spells and boosting spells on your party. \spell{Create Life} is a
 \textlcsc{great} help here, but not the other two summon spells--\WviiSPOT{}
-can flatten those silly demons quickly, but the Myxlmynx might be able to
+can flatten those silly demons quickly, but the \monster{Myxlmynx} might be able to
 take a couple more hits.
 
 \faqentry{Anything special here?}
@@ -5063,15 +5070,15 @@ Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Bantari
-\item Q'ua-tari
-\item Vampire Vultures
-\item Fire Crows
-\item Dragon Rooks
-\item Vampire Rooks
-\item Vultures
-\item Wood Dryads
-\item Faerie Witches
+\item \monster{Bantari}
+\item \monster{Q'ua-tari}
+\item \monster{Vampire Vultures}
+\item \monster{Fire Crows}
+\item \monster{Dragon Rooks}
+\item \monster{Vampire Rooks}
+\item \monster{Vultures}
+\item \monster{Wood Dryads}
+\item \monsterB{Faerie Witches}{Faerie Witch}
 \end{twocolumnitemize}
 
 \faqentry{Huh? I've never heard of this place!}
@@ -5095,22 +5102,22 @@ Dahlia in this area.
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
 \item \qmwordqm{Alethedies} (fixed)
-\item \qmwordqm{Dk.Savant} (fixed)
+\item \qmwordqm{Dk.~Savant} (fixed)
 \item \qmwordqm{Vi~Domina} (fixed)
 \item \qmwordqm{Statue} (fixed)
-\item Witches' Lights (fixed)
-\item Spirits
-\item Ghosts
-\item Nightmares
-\item Dream Weavers
-\item Minoskells
-\item Puxic Oozes
-\item Cave Slimes
-\item Rock Lizards
-\item Luna Mothras
-\item Glow Mothras
-\item Spectral Ravens
-\item Faerie Witches
+\item \monster{Witch's Lights} (fixed)
+\item \monster{Spirits}
+\item \monster{Ghosts}
+\item \monster{Nightmares}
+\item \monster{Dream Weavers}
+\item \monster{Minoskells}
+\item \monster{Puxic Oozes}
+\item \monster{Cave Slimes}
+\item \monster{Rock Lizards}
+\item \monster{Luna Mothras}
+\item \monster{Glow Mothras}
+\item \monster{Spectral Ravens}
+\item \monsterB{Faerie Witches}{Faerie Witch}
 \end{twocolumnitemize}
 
 \faqentry{Do I \textlcsc{HAVE} to pay the witches 1000 gold?}
@@ -5142,17 +5149,17 @@ disappear no matter how long I take!
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Bantari
-\item Q'ua-tari
-\item Rock Lizards
-\item Vampire Vultures
-\item Fire Crows
-\item Dragon Rooks
-\item Vampire Rooks
-\item Vultures
-\item Wood Dryads
-\item Faerie Witches
-\item Mtn. Thraxes (fixed)
+\item \monster{Bantari}
+\item \monster{Q'ua-tari}
+\item \monster{Rock Lizards}
+\item \monster{Vampire Vultures}
+\item \monster{Fire Crows}
+\item \monster{Dragon Rooks}
+\item \monster{Vampire Rooks}
+\item \monster{Vultures}
+\item \monster{Wood Dryads}
+\item \monsterB{Faerie Witches}{Faerie Witch}
+\item \monsterB{Mtn. Thraxes}{Mtn. Thraxe} (fixed)
 \end{twocolumnitemize}
 
 \faqentry{I take it the other two flowers are here?}
@@ -5167,16 +5174,16 @@ all the sidepaths and the main path.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Red Pirannhas
-\item Vampire Vultures
-\item Fire Crows
-\item Dragon Rooks
-\item Vampire Rooks
-\item Vultures
-\item Wood Dryads
-\item Faerie Witches
-\item Water Nymphs
-\item Rock Lizards
+\item \monster{Red Pirannhas}
+\item \monster{Vampire Vultures}
+\item \monster{Fire Crows}
+\item \monster{Dragon Rooks}
+\item \monster{Vampire Rooks}
+\item \monster{Vultures}
+\item \monster{Wood Dryads}
+\item \monsterB{Faerie Witches}{Faerie Witch}
+\item \monster{Water Nymphs}
+\item \monster{Rock Lizards}
 \end{twocolumnitemize}
 
 \faqentry{What do I do here?}
@@ -5197,36 +5204,36 @@ Isn't your \spell{Detect Secret} going off right now?
 \item Above ground
   \begin{itemize}
     \tightlist
-  \item Night Rooks
-  \item Dragon Rooks
-  \item Vampire Vultures
-  \item Glow Mothras
-  \item Luna Mothras
-  \item Red Pirannhas
+  \item \monster{Night Rooks}
+  \item \monster{Dragon Rooks}
+  \item \monster{Vampire Vultures}
+  \item \monster{Glow Mothras}
+  \item \monster{Luna Mothras}
+  \item \monster{Red Pirannhas}
   \end{itemize}
 
 \item Below ground
 
   \begin{itemize}
     \tightlist
-  \item Ghosts of Gorn (fixed)
-  \item Ungorn Daimyo (fixed)
+  \item \monsterB{Ghosts of Gorn}{Ghost of Gorn} (fixed)
+  \item \monster{Ungorn Daimyo} (fixed)
   \item \WviiDOOM{} (fixed)
-  \item Wraiths
-  \item Spirits
-  \item Kolidras
-  \item Necromani
-  \item Fieros
-  \item Phantasmagoras
-  \item Skeletons
-  \item Zombie Skells
-  \item Fetid Corpses
-  \item Skeleton Lords
-  \item Q'ua-tari
-  \item Bantari
-  \item Dragon Rooks
-  \item Fire Crows
-  \item Witch's Lights
+  \item \monster{Wraiths}
+  \item \monster{Spirits}
+  \item \monster{Kolidras}
+  \item \monster{Necromani}
+  \item \monster{Fieros}
+  \item \monster{Phantasmagoras}
+  \item \monster{Skeletons}
+  \item \monster{Zombie Skells}
+  \item \monster{Fetid Corpses}
+  \item \monster{Skeleton Lords}
+  \item \monster{Q'ua-tari}
+  \item \monster{Bantari}
+  \item \monster{Dragon Rooks}
+  \item \monster{Fire Crows}
+  \item \monster{Witch's Lights}
   \end{itemize}
 \end{twocolumnitemize}
 
@@ -5282,19 +5289,19 @@ but save before doing so!
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Emerald Dragons (fixed)
-\item Dragonessas
-\item Dragorras
-\item Dragon Pups
-\item Fetid Corpses
-\item Vampire Vultures
-\item Dragon Rooks
-\item Fire Crows
-\item Komodo Dragons
-\item Rock Lizards
-\item Dragonlizards
-\item Dinkle Wisps
-\item Jelly Stingers
+\item \monster{Emerald Dragons} (fixed)
+\item \monster{Dragonessas}
+\item \monster{Dragorras}
+\item \monster{Dragon Pups}
+\item \monster{Fetid Corpses}
+\item \monster{Vampire Vultures}
+\item \monster{Dragon Rooks}
+\item \monster{Fire Crows}
+\item \monster{Komodo Dragons}
+\item \monster{Rock Lizards}
+\item \monster{Dragonlizards}
+\item \monster{Dinkle Wisps}
+\item \monster{Jelly Stingers}
 \end{twocolumnitemize}
 
 \faqentry{OK, how do I get here?}
@@ -5341,17 +5348,17 @@ Climb up and find out. It's (relatively) safe.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Savant Kui'sa-ka
-\item Savant Controllers
-\item Savant Guards
-\item Helazoid Aces (fixed)
-\item Xenozoid Runners
-\item Xenozoid Flyers
-\item T'Rang Elders
-\item T'Rang Assassins
-\item T'Rang Watchers
-\item Meta-Droid (fixed)
-\item Ravens
+\item \monster{Savant Kui'sa-ka}
+\item \monster{Savant Controllers}
+\item \monster{Savant Guards}
+\item \monster{Helazoid Aces} (fixed)
+\item \monster{Xenozoid Runners}
+\item \monster{Xenozoid Flyers}
+\item \monster{T'Rang Elders}
+\item \monster{T'Rang Assassins}
+\item \monster{T'Rang Watchers}
+\item \monster{Meta-Droid} (fixed)
+\item \monster{Ravens}
 \end{twocolumnitemize}
 
 \faqentry{Hey! What's with the invisible walls?}
@@ -5406,8 +5413,8 @@ Ring gets sacrificed for the item.
 \faqentry{Anything special I should do with Dame Ke-Li?}
 
 You mean besides buy all those nice, wonderful things she's selling?
-Yeah---give her the Helazoid Pennant you got from Jan-Ette if you helped
-Jan-Ette. Other than that, she's the perfect person to have fun using the
+Yeah---give her the Helazoid Pennant you got from \npc{Jan-Ette} if you helped
+\npc{Jan-Ette}. Other than that, she's the perfect person to have fun using the
 Five Fingered Discount. Just don't get caught.
 
 \faqentry{What exactly does that PK Crystal do?}
@@ -5443,22 +5450,22 @@ then selling them to Paluke---or anyone other than Dame Ke-li.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Ra-sep-re-tep (fixed)
+\item \monster{Ra-sep-re-tep} (fixed)
 \item Thing from Hell (fixed)
 \item Horragoth (fixed)
-\item Myxlmynx (fixed) / Fieros (fixed)
+\item \monster{Myxlmynx} (fixed) / \monster{Fieros} (fixed)
 \item D'Arboleth (fixed)
-\item Wraiths (fixed)
+\item \monster{Wraiths} (fixed)
 \item Fiend of 9 Worlds (fixed)
 \item Beast of 1000 Eyes (fixed)
 \item Kolidra Necromani
-\item Red Pirannhas
+\item \monster{Red Pirannhas}
 \end{twocolumnitemize}
 
 \faqentry{Do I have to kill any of these Gorrors?}
 
 Not really. They're supposed to be challenges, with the exception of the
-lonely little Ra-sep-re-tep in the SE area.
+lonely little \monster{Ra-sep-re-tep} in the SE area.
 
 \faqentry{You said I needed something in here?}
 
@@ -5493,10 +5500,10 @@ at it, visit \url{http://www.softwarespecialties.com/} and thank the guy
 
 Well, let's see\ldots{}besides always cast \spell{Enchanted Blade},
 \spell{Armorplate}, and \spell{Magic Screen} before the fight (except for
-Ra-sep-re-tep)\ldots{}
+\monster{Ra-sep-re-tep})\ldots{}
 
-Ra-sep-re-tep: If you actually need help on him, that's not a good sign.
-\verb|:)|
+\monster{Ra-sep-re-tep}: If you actually need help on him, that's not a good
+sign.  \verb|:)|
 
 \paragraph{Thing from Hell} Quick and Dirty Way---Silence him, then Deadly
 Poison him. He'll go down fast.
@@ -5554,17 +5561,17 @@ the Beast stops becoming so invulnerable.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
   \tightlist
-\item Rexx
-\item Myxlmynx
-\item Wraiths
-\item Spirits
-\item Bloodwyrms
-\item Yreguoths
-\item Necromanis
-\item Fieros
-\item Phantasmagoras
-\item Kolidras
-\item Skeleton Lords
+\item \monster{Rexx}
+\item \monster{Myxlmynx}
+\item \monster{Wraiths}
+\item \monster{Spirits}
+\item \monster{Bloodwyrms}
+\item \monster{Yreguoths}
+\item \monster{Necromanis}
+\item \monster{Fieros}
+\item \monster{Phantasmagoras}
+\item \monster{Kolidras}
+\item \monster{Skeleton Lords}
 \end{twocolumnitemize}
 
 \faqentry{Um\ldots{}I need a map. Bad.}
@@ -5620,15 +5627,15 @@ into place.
 %
 \begin{twocolumnitemize}{Monsters encountered:}
 \tightlist
-\item Dk. Savant (fixed)
-\item Savant Kui'sa-ka (fixed)
-\item Cosmo-Bots (fixed)
-\item Mega-Bots (fixed)
-\item Meta-Droids (fixed)
-\item Battle Droids (fixed)
-\item Mega-Bots
-\item Meta-Droids
-\item Battle Droids
+\item \npc{Dk.~Savant} (fixed)
+\item \monster{Savant Kui'sa-ka} (fixed)
+\item \monster{Cosmo-Bots} (fixed)
+\item \monster{Mega-Bots} (fixed)
+\item \monster{Meta-Droids} (fixed)
+\item \monster{Battle Droids} (fixed)
+\item \monster{Mega-Bots}
+\item \monster{Meta-Droids}
+\item \monster{Battle Droids}
 \end{twocolumnitemize}
 
 
@@ -5736,7 +5743,7 @@ given to all, but each character must practice individually; you can't have
 everyone learn the skill after one person uses it---only the characters
 practicing will learn the skill.
 
-\paragraph{Snakespeed} Get the 5 flowers as Xen Xheng asked and merge them
+\paragraph{Snakespeed} Get the 5 flowers as \npc{Xen Xheng} asked and merge them
 together Use a Holy Water to merge with the White Dahlia before merging the
 Dahlia with the other 4 merged flowers. Only one person can get this.
 
@@ -5750,10 +5757,11 @@ character using it Power Strike. The Gem of Power is located in the secret
 room in Murkato's \place{Inner Sanctum}. Only one character\fshyp{}game can
 get this.
 
-\paragraph{Eagle Eye} Rescue Jan-Ette from the T'Rang Assassins. Give the
-Helazoid Pennant she gives you to Dame Ke-Li at \place{City of Sky} for the
-Helazoid Pendant. Use the Pendant's special ability to give the character
-using it Eagle Eye. Only one character\fshyp{}game can get this.
+\paragraph{Eagle Eye} Rescue \npc{Jan-Ette} from the \monster{T'Rang
+  Assassins}. Give the Helazoid Pennant she gives you to Dame Ke-Li at
+\place{City of Sky} for the Helazoid Pendant. Use the Pendant's special
+ability to give the character using it Eagle Eye. Only one
+character\fshyp{}game can get this.
 
 \paragraph{Mind Control} Kill the Psi-Beast(s) on the \place{Temple of
   Eternal Night} level of \place{Dionysceus} and return to the room the Danes
@@ -5773,7 +5781,7 @@ the Frontier Phasers.
 \faqentry{What do the wandering NPCs sell?}
 
 \begin{twocolumnitemize}{This is from what I can remember, so there may be some mistakes:}
-\item Lord Galiere and King Ulgar
+\item \npc{Lord Galiere} and \npc{King Ulgar}
   \begin{itemize}
     \tightlist
     \item Spear
@@ -5787,14 +5795,14 @@ the Frontier Phasers.
     \item Studded Hauberk (sometimes)
   \end{itemize}
 
-\item Capt.~Boerigard
+\item \npc{Capt.~Boerigard}
   \begin{itemize}
     \tightlist
     \item Spear+2
     \item Studded Hauberk
   \end{itemize}
 
-\item Brother TShober
+\item \npc{Brother TShober}
   \begin{itemize}
     \tightlist
     \item Random potion (most of the times)
@@ -5802,7 +5810,7 @@ the Frontier Phasers.
     \item Random potion (rarely)
   \end{itemize}
 
-\item Xen Xheng
+\item \npc{Xen Xheng}
   \begin{itemize}
     \tightlist
     \item Sai (sometimes)
@@ -5825,7 +5833,7 @@ the Frontier Phasers.
       \end{tikzpicture}
   \end{itemize}
 
-\item Kymas Turan
+\item \npc{Kymas Turan}
   \begin{itemize}
     \tightlist
     \item Mitre
@@ -5860,7 +5868,7 @@ the Frontier Phasers.
     \item (Don't remember what else---they die too fast)
   \end{itemize}
 
-\item Jan-Ette
+\item \npc{Jan-Ette}
   \begin{itemize}
     \tightlist
     \item Credit Card (most of the time)
@@ -5881,17 +5889,17 @@ get items better than what you should normally be getting if you go
 have to get in anyway.) Leather and Studded Hauberks may be helpful as well
 as the bows and the occasional naginata or halberd.
 
-\paragraph{\place{Eryn River}} After meeting Brother TShober, take the first
-path you see on the left, and follow it to the first place with water that
-you see Save, and swim north---you'll need 30 swimming however. Follow the
-path to the end; the giant battle at the end is a doozy for a weak party.
+\paragraph{\place{Eryn River}} After meeting \npc{Brother TShober}, take the
+first path you see on the left, and follow it to the first place with water
+that you see Save, and swim north---you'll need 30 swimming however. Follow
+the path to the end; the giant battle at the end is a doozy for a weak party.
 When you open the chest there though, you will get a Crusaders's 2H Axe~+1,
 Bracers of Defense, Chain Mail~+1 (U), Chain Mail~+1 (L), and a Crusader Helm
 as well as gold.
 
 \paragraph{\place{Giant Cave}} You can get here early by exploring the
-\place{Eryn River} map (The same map that you meet Brother TShober the first
-time) and locating the path that leads to the \place{Witch Mountains}
+\place{Eryn River} map (The same map that you meet \npc{Brother TShober} the
+first time) and locating the path that leads to the \place{Witch Mountains}
 area. You should max out your swimming however. When you enter, crack open
 the Journey Map Kit and as west and south as possible (you may have to
 explore the entire west area) until you both hit water and can't go west
@@ -5912,7 +5920,8 @@ Go back to shore and rest, then get ready to use some spells\fshyp{}items and
 head back into the water facing south all the way until you get to an opening
 on your left.  Go in that watery opening, but before you go into the more
 open room after the opening, get some stamina back and (if you want to, save)
-walk into the room to fight Pirannha Sharks, which are tougher Red Pirannhas.
+walk into the room to fight Pirannha Sharks, which are tougher \monster{Red
+  Pirannhas}.
 
 After you've (hopefully) successfully dealt with them, go forward until you
 hit the wall (you should be facing east now), turn right, take a step forward
@@ -5921,12 +5930,12 @@ Go in and get your Plate Mail~+2 (both upper and lower) and some random loot.
 Reload the loot until you see some weapon you like---I like the Cat~O'~9
 Tails, but some may like the Vulcan Hammer or Sword of Fire.
 
-\paragraph{\place{Nyctalinth}} In the underground area, if you explore past the
-Western Gas Pocket Area, you will eventually find a path that leads to an
-encounter with Cave Thraxes, but starts with some text. After you fry those
-bugs, if you go to the northeast corner of the room and search, you'll find a
-Broadsword~+1 and random loot. Reload until you get something you like, which
-may include a Dragon Kite.
+\paragraph{\place{Nyctalinth}} In the underground area, if you explore past
+the Western Gas Pocket Area, you will eventually find a path that leads to an
+encounter with \monsterB{Cave Thraxes}{Cave Thraxe}, but starts with some
+text. After you fry those bugs, if you go to the northeast corner of the room
+and search, you'll find a Broadsword~+1 and random loot. Reload until you get
+something you like, which may include a Dragon Kite.
 
 \paragraph{\place{Rattkin Funhouse}} After you do Barlone a favor, if
 Ratsputin is still alive you can run into him and he will demand that you pay
@@ -5945,9 +5954,9 @@ Cave).
 Or, if you feel you are strong enough, go to the extreme southwest area of
 the map (where the Ugly Gorn Woman corpse is buried) and enter the alcove
 with the Gorn Nobleman that is directly west of her.  Save, cast preparatory
-spells, then search to fight Ungorn Daimyo and possibly a bunch of Skeleton
-Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a Bushido Blade,
-and a Wakizashi~+1
+spells, then search to fight \monster{Ungorn Daimyo} and possibly a bunch of
+Skeleton Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a
+Bushido Blade, and a Wakizashi~+1
 
 \faqentry{Where can I get the Cane of Corpus?}
 
@@ -5958,7 +5967,8 @@ Kill Blienmeis. Easier said than done of course.
 Several places:
 
 \paragraph{\place{New City}} In the Control Center, stick the Black Wafer
-instead of the Control Card in the slot to summon Savant Guards and Troopers.
+instead of the Control Card in the slot to summon \monster{Savant Guards} and
+Troopers.
 
 \paragraph{\place{Orkogre Castle}} In the area below the prison; you must
 step in the square you fall in to respawn.
@@ -6007,8 +6017,8 @@ can target monsters no matter where they are.
 If you're just trying to get through the game, there's nothing wrong with
 it. Expert mode is there when you think that the game has become too easy; I
 wrote this playing on Expert mode, and I can tell you that some fights that
-seem easy on Easy are royal pains on Expert. The Magna Dane fight is a good
-example.
+seem easy on Easy are royal pains on Expert. The \monster{Magna Dane} fight
+is a good example.
 
 \faqentry{What are some battle strategies I can use?}
 
