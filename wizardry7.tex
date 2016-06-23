@@ -10,6 +10,7 @@
 \usepackage{ragged2e}
 \usepackage{hyphenat}
 \usepackage{xstring}
+\usepackage[super]{nth}
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 %\setmainfont[]{Charis SIL}
@@ -203,14 +204,14 @@ in here to me at asianfro@hotmail.com. This email address will
 closed this email. I have problems answering email when it is not a normal
 working weekday however. (You do the math\ldots{})
 
-If you wish to chat with me, I'm on ICQ as Orlandu. Of course, I'm not
-just going to \emph{give} out my UIN just like that---I want to know who
-you are before I let you add me, which means I'll want an email or two
-from you to check that you aren't the malicious type; I'm getting too
-much spam to be trusting anymore. If you wish to avoid that hassle, I am
-also (occasionally) on the Galaxynet IRC server as ``Rava'' or
-``Ravashack'' on weekdays---just login to www.galaxynet.org with a
-browser or use mIRC to connect to a Galaxynet server.
+If you wish to chat with me, I'm on ICQ as Orlandu. Of course, I'm not just
+going to \emph{give} out my UIN just like that---I want to know who you are
+before I let you add me, which means I'll want an email or two from you to
+check that you aren't the malicious type; I'm getting too much spam to be
+trusting anymore. If you wish to avoid that hassle, I am also (occasionally)
+on the Galaxynet IRC server as ``Rava'' or ``Ravashack'' on weekdays---just
+login to \url{http://www.galaxynet.org} with a browser or use mIRC to connect
+to a Galaxynet server.
 
 Minor updates such as spelling errors, typos, site additions, etc.\ will
 be habitually done at \url{http://www.gamefaqs.com}. Major updates (such
@@ -1822,13 +1823,13 @@ Requirements: 12 10 10 12 12 12 0
 \paragraph{Swimming} Everyone needs to have at least a 10 in swimming before
 attempting to enter the water to practice. There are three places to practice
 without wasting too much time: \place{New City} (using the fountain in the
-\place{Starter Dungeon} or the one at \npc{Father Rulae}), the \monster{Ra-sep-re-tep} pool
-in the \place{Starter Dungeon} (using the fountain in the same area) and
-\place{Munkharama} (at the Polar Munk Society\ldots{} bring healing
-though\ldots{}). Get your swimming to at least a 20 using these three
-places---the \place{Lost Temple} has a fountain that is in the water, but you
-need to have at least a 20 swimming to reach it. Once you do, you can
-practice until you have a 100 in it.
+\place{Starter Dungeon} or the one at \npc{Father Rulae}), the
+\monster{Ra-sep-re-tep} pool in the \place{Starter Dungeon} (using the
+fountain in the same area) and \place{Munkharama} (at the Polar Munk
+Society\ldots{} bring healing though\ldots{}). Get your swimming to at least
+a 20 using these three places---the \place{Lost Temple} has a fountain that
+is in the water, but you need to have at least a 20 swimming to reach
+it. Once you do, you can practice until you have a 100 in it.
 
 \paragraph{Climbing} In the beginning of the game, you won't need
 this. However, once you get to the mountains in Guardia you're going to need
@@ -1887,7 +1888,7 @@ being totally useless; most shopkeepers have horrible items in their
 inventory---you wouldn't want to steal them if your life depended on
 it. Legerdemain is best when the pickpocket using it is rather high level, is
 decent at it (has at least a 30 so in Legerdemain), and pickpocketing someone
-worthwhile like Belcanzor for his items or Dame Ke-Li for her Ankhs. Be
+worthwhile like \npc{Belcanzor} for his items or \npc{Dame Ke-Li} for her Ankhs. Be
 especially careful pickpocketing wandering NPCs. Some like \npc{Capt.~Boerigard}
 have very nice weapons and such, but they may attack you if they catch you
 pickpocketing them, which is a bad thing.
@@ -1922,10 +1923,11 @@ skills}{Really depends on your playing style skills}}\label{really-depends-on-yo
 %
 \paragraph{Mythology} This lets you successfully ID the monster you're
 fighting. In some cases it will be very useful, if you're conserving mana and
-don't want to mistake \monster{Night Rooks} for \monster{Vampire Vultures}. In most cases
-however, it is easy to figure out what the monster is after a round, or even
-based on where it is. Putting points into this is really up to your strategy,
-but it goes up naturally over time, albeit slowly.
+don't want to mistake \monster{Night Rooks} for \monster{Vampire
+  Vultures}. In most cases however, it is easy to figure out what the monster
+is after a round, or even based on where it is. Putting points into this is
+really up to your strategy, but it goes up naturally over time, albeit
+slowly.
 
 \paragraph{Scribe} If you like to save on mana, you may find a use for this
 skill. Personally, I've gone through the game with only one point put into
@@ -2213,7 +2215,7 @@ requirements---only quicker in this case as you only need Piety to go up
 one.
 
 I think you can see the pattern: If you can afford it, fill out the
-requirements of the 2nd class first before distributing the points to
+requirements of the \nth{2} class first before distributing the points to
 other statistics. If you can't, spread out the requirements somewhat so
 that it only requires as few level gains as possible to get there. 15 is
 the number I use for a minimum when creating profession changing
@@ -2236,7 +2238,7 @@ they have a prize character that they do not wish to change profession
 with---especially when the character gets a 19 or 20 in Intelligence or
 Personality, which are scores that cannot be improved by certain items
 that can be bought, or a 19 or 20 in Vitality, which cannot go over 18
-with items
+with items.
 
 \WviiNeedSpace{}Sample Blender Party:%
 \begin{itemize}
@@ -2266,7 +2268,7 @@ changes classes, so pick carefully. You'll need at least 1~healer,
 for a challenge. After you're familiar with the game, try going through with
 only a single character! It \emph{can} be done. This party is usually done as
 a Quick and Easy party, but Super parties that don't class change are done
-too
+too.
 
 Sample Vanilla Party: (See Sample Quick and Easy Party or Sample Super
 Party)
@@ -2525,13 +2527,13 @@ mage.
 
 \spellentry{Magic Screen} Reduces the effectiveness of all incoming spells
 and spell-like attacks. That includes breath weapons and fireball-like
-blasts, but not little laser beams like the ones the \monster{T'Rang Tecniks} use to
-attack. Remember: this can be casted outside of battle.
+blasts, but not little laser beams like the ones the \monster{T'Rang Tecniks}
+use to attack. Remember: this can be casted outside of battle.
 
 \spellentry{Conjuration} Summons a monster to help you. They range from the
 pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and
-\monster{Myxlmynx} at level 7 (which are pretty darn useful). The best out of the three
-summoning spells if you want magical damage.
+\monster{Myxlmynx} at level 7 (which are pretty darn useful). The best out of
+the three summoning spells if you want magical damage.
 
 \spellentry{Armormelt} Makes the opponent easier to hit. Think of it as the
 opposite of \spell{Armor Shield}, except it targets everyone.
@@ -2554,7 +2556,7 @@ recommend it.
 more likely to cause damage on weaker opponents and more likely to cause
 status ailments (which rarely includes ``withers and dies'') on more powerful
 ones. Keep in mind that this won't work on something with 100\% or greater
-Light Resistance, like Man~O'~Groves.
+Light Resistance, like \monster{Man~O'~Groves}.
 
 \spellentry{Anti-Magic} Tries to prevent a group from casting spells
 successfully.  Not too useful when you're fighting multiple groups of
@@ -3017,8 +3019,8 @@ in others.
 
 \spellentry{Blinding Flash} Attempts to inflict the ``Blind'' ailment on a
 group of monsters. Don't expect this to work on monsters with light
-resistance like Man'~O'~Groves. If \spell{Dazzling Lights} or \spell{Prismic
-  Missile} don't work on that monster, this won't either.
+resistance like \monster{Man~O'~Groves}. If \spell{Dazzling Lights} or
+\spell{Prismic Missile} don't work on that monster, this won't either.
 
 \spellentry{Cure Lesser Condition} Extremely useful for the \class{Alchemist}
 to have---unlike the other spellcasters, \class{Alchemist}s got a lot of
@@ -3308,7 +3310,7 @@ on the same map as a newly created party, but on the other side of the poppy
 fields.
 
 If you started near \place{Nyctalinth}: go into the city, talk with
-\monster{H'Jenn-Ra}, meet \npc{Shritis} (who you can say no to if you like
+\npc{H'Jenn-Ra}, meet \npc{Shritis} (who you can say no to if you like
 the Umpani more, but don't kill any T'rang NPCs until you can take on
 \npc{Shritis} if you do!), and then exit into \place{New City} instead of
 going back into the \place{Anthracax}. Be warned that most NPCs don't like
@@ -3437,14 +3439,14 @@ go after \place{New City}--anywhere but \place{Orkogre Castle},
 
 You probably didn't state a place in \place{New City} for it to confirm.
 Maybe there's an ad for a store in the \place{Starter Dungeon}
-somewhere\ldots{} you must have found \textlcsc{something} resembling paper in
-there.
+somewhere\ldots{} you must have found \textlcsc{something} resembling paper
+in there.
 
 \faqentry{What should I do here?}
 
-Think of \place{New City} as a bigger version of the Starter Dungeon, except with
-stores and healing that you have to pay for, for now. Definitely save before
-entering a place, as there are a couple doors that hide very nasty
+Think of \place{New City} as a bigger version of the Starter Dungeon, except
+with stores and healing that you have to pay for, for now. Definitely save
+before entering a place, as there are a couple doors that hide very nasty
 encounters.
 
 \faqentry{Hey! I can't pick or force some of these doors! How do I get
@@ -3453,14 +3455,14 @@ encounters.
 If you're referring to the \place{Umpani Detache} and the \place{T'Rshieches
   House}, you'll get in\ldots{}but from a different place. If you are
 referring to a certain always-jammed door near the Marina, buy a Knock-Knock
-scroll from Belcanzor and have someone with at least 1 point in scribe use it
-on the door\ldots{}but save first. Either that or use a level 6 Knock-Knock
-spell to open the door. Very useful treasure in the chest behind it,
-considering how early in the game it is.
+scroll from \npc{Belcanzor} and have someone with at least 1 point in scribe
+use it on the door\ldots{}but save first. Either that or use a level 6
+Knock-Knock spell to open the door. Very useful treasure in the chest behind
+it, considering how early in the game it is.
 
-\faqentry{What's with the Wand Majestik in the Curio Museum? I stick my hand
-  in but I can't grab it! All I get is this weird stone when I leave my hand
-  in there and my leader gets diseased!}
+\faqentry{What's with the Wand Majestik in the \place{Curio Museum}? I stick
+  my hand in but I can't grab it! All I get is this weird stone when I leave
+  my hand in there and my leader gets diseased!}
 
 \emph{Don't} stick your hand in there unless you have a way to cure your
 first character of disease. You can use \npc{Father Rulae} in the Abbey in the
@@ -3469,21 +3471,21 @@ to wait until later when you can buy \spell{Cure Disease} potions in
 \place{Munkharama} or learn the spell yourself, as the Wand isn't going
 anywhere anyway.
 
-\faqentry{Can I use the boat Sogheim has in the Marina?}
+\faqentry{Can I use the boat \npc{Sogheim} has in the Marina?}
 
 No, but you'll find a better one.
 
-\faqentry{What the heck do I do at these Devil Faces in the Curio
-  Museum?}
+\faqentry{What the heck do I do at these Devil Faces in the \place{Curio
+    Museum}?}
 
 Read the \qmwordqm{BOAT} Map. Funny, some of those words match the
 devils\ldots{}
 
-\faqentry{What is that sign in the Condemned Area?}
+\faqentry{What is that sign in the \place{Condemned Area}?}
 
 It's a way into \place{Old City}. You'll figure out how to get in after you
 help \npc{Barlone} in the \place{Rattkin Ruins}' Funhouse with a favor. Maybe
-Professor Wunderland was the friend he was speaking of---after all, he
+\npc{Professor Wunderland} was the friend he was speaking of---after all, he
 \textlcsc{IS} a Rattkin, and he \textlcsc{IS} interested in \place{Old
   City}. Perhaps mentioning the place \npc{Barlone} mentioned will help jog his
 memory.
@@ -3494,7 +3496,7 @@ memory.
 It is for figuring out the witches names. Read it when you're in the
 \place{Witch Mountains}, and especially pay attention to the last parts.
 
-\faqentry{Who's the Gorn Officer that Palukes mentioned?}
+\faqentry{Who's the Gorn Officer that \npc{Paluke}s mentioned?}
 
 You'll find out. Keep in mind when NPCs mention nouns like Officer or even a
 place, there is a possibility that saying those words can open a flood of
@@ -3502,15 +3504,15 @@ useful info.
 
 \faqentry{I found a Black Wafer. What does it do?}
 
-It's for the Constabulary. Think of ETX as Entrance. Don't use it in the
-\place{Forbidden Zone} however, unless you \textlcsc{want} to fight Savant
-Troopers and \monster{Savant Guards}.
+It's for the \place{Constabulary}. Think of ETX as Entrance. Don't use it in
+the \place{Forbidden Zone} however, unless you \textlcsc{want} to fight
+\monster{Savant Troopers} and \monster{Savant Guards}.
 
 \faqentry{How \emph{do} I get in the \place{Forbidden Zone}?}
 
 You walk in. \verb|:)| You mean inside the inside area? Get the Control
 Card from the \place{T'Rshieches House}\ldots{}but you'll need to have a chat
-with Shiritis before you can get a chance at the chest.
+with \npc{Shritis} before you can get a chance at the chest.
 
 \faqentry{How do I turn on the computers in the \place{Forbidden Zone}?}
 
@@ -4071,15 +4073,15 @@ accidentally.
 
 I have only managed to get \textlcsc{BLACK} \textlcsc{BLACK} \textlcsc{BLACK}
 \textlcsc{BLACK} on the first try \textlcsc{ONCE}. Usually I end up getting it
-right by the 3rd or 4th try. As a reward however you get free cash,
+right by the \nth{3} or \nth{4} try. As a reward however you get free cash,
 experience, and a secret door opens up in the SE room.
 
 \faqentry{What do I do at the \place{Land of Dreams}? The Palace Munk doesn't
   like my answers!}
 
-I hope you remembered to ask Brother Moser about rumors if you've met him
-already. Ask him about the other name you saw with ``\place{Land of Dreams}''
-on the front door for answers the Munk will like.
+I hope you remembered to ask \npc{Brother Moser} about rumors if you've met
+him already. Ask him about the other name you saw with ``\place{Land of
+  Dreams}'' on the front door for answers the Munk will like.
 
 \faqentry{OK, I'm in the \place{Land of Dreams}, I stepped through the black
   door, but now I can't get out. What do I do?}
@@ -4149,16 +4151,17 @@ Not much. Don't go there is the only advice I can give---getting diseased at
 this point in the game is \emph{very} nasty, and it's not really a necessary
 area.
 
-\faqentry{Yikes! That Lord of the Dark Forest is hard! How do I kill him?}
+\faqentry{Yikes! That \monster{Lord of the Dark Forest} is hard! How do I
+  kill him?}
 
 With persistence. If you are \textlcsc{very} lucky, you can silence
 him---he's a monk, unlike the rest of the Munks who are ninjas, so shutting
 him up is a very effective way of stopping the nastier spells like
 \spell{Lifesteal}. Deal with anyone he has with him first though. He might be
-dangerous, but so is 6 \monster{Dark Forest Munks} that get a chance to cast stuff on
-you as well, leaving you blind, irritated (both literally and figuratively),
-and possibly insane, making it near impossible for you to beat the Lord of
-the Dark Forest.
+dangerous, but so is 6 \monster{Dark Forest Munks} that get a chance to cast
+stuff on you as well, leaving you blind, irritated (both literally and
+figuratively), and possibly insane, making it near impossible for you to beat
+the \monster{Lord of the Dark Forest}.
 
 If you have \spell{Fireball}\fshyp{}\spell{Iceball} or \spell{Nuclear Blast}
 by this point (\spell{Nuclear Blast} not very likely at this point unless you
@@ -4458,17 +4461,17 @@ on the wall.
 \faqentry{What the\ldots{}I'm getting hit with fireballs! What's going on?}
 
 You're in a nasty area of the Tower. The area behind the grates to your east
-(where the fireballs are coming from) is the Temple of the \npc{Magna Dane},
-which you will be able to get to after passing the Temple of Wanderers and
-paying for your membership as a Lord of Dane. Be warned that going down this
-corridor means you will be taking heavy unpreventable (except by luck and
-your fire resistances) fire damage and get into a fight with \monster{High
-  Fathers} and other Danes after the gate at the very end. The fire damage
-goes away after you kill \WviiSPAWN{} or talk (and take the Pit challenge)
-with the \npc{Magna Dane} though, as the \npc{Magna Dane} will have left his
-Temple. I've gotten stuck here before though, as the Pit exits here after a
-bit of winding and my party just can't take 80--100+ HP fireballs at this
-point.
+(where the fireballs are coming from) is the \place{Temple of the \npc{Magna
+    Dane}}, which you will be able to get to after passing the \place{Temple
+  of Wanderers} and paying for your membership as a Lord of Dane. Be warned
+that going down this corridor means you will be taking heavy unpreventable
+(except by luck and your fire resistances) fire damage and get into a fight
+with \monster{High Fathers} and other Danes after the gate at the very
+end. The fire damage goes away after you kill \WviiSPAWN{} or talk (and take
+the Pit challenge) with the \npc{Magna Dane} though, as the \npc{Magna Dane}
+will have left his Temple. I've gotten stuck here before though, as the Pit
+exits here after a bit of winding and my party just can't take 80--100+ HP
+fireballs at this point.
 
 \faqentry{What is with this lever? I pull it and it resets?}
 
@@ -4483,8 +4486,8 @@ to reopen it again.
 Talk to \npc{Magna Dane} to find out. You get to him by taking the stairs
 down after going to the top of the tower, not by yanking a lever.
 
-\faqentry{\npc{Magna Dane} is \textlcsc{hard}. Every time I start the fight, half my
-  party is dead before I can do anything!}
+\faqentry{\npc{Magna Dane} is \textlcsc{hard}. Every time I start the fight,
+  half my party is dead before I can do anything!}
 
 Come back later. It is easier when everyone has at least a Dexterity of 16
 After the fight, don't forget to search the area for any extra
@@ -4512,8 +4515,8 @@ What did you chop off the last demon you killed?
 \faqentry{\texorpdfstring{But it didn't work!\protect\footnotemark{}}{But it
     didn't work!}}\footnotetext{See previous question.}
 
-Try it from the \npc{Magna Dane}'s chamber. You \textlcsc{did} see that secret button
-right?
+Try it from the \npc{Magna Dane}'s chamber. You \textlcsc{did} see that
+secret button right?
 
 \faqentry{What do I do with what's inside?}%
 
@@ -4597,7 +4600,7 @@ without problems.
   traitor! Why?}
 
 Don't put a space between the ‘+’ and the rest of the coordinates. The only
-space in there should be after the 2nd number and before the `D'.
+space in there should be after the \nth{2} number and before the `D'.
 
 \faqentry{I can't get that promotion \npc{Lt.~Gromo} said I'd get, even
   though I hit the practice target 3 times!}
@@ -4678,7 +4681,7 @@ Go back to where the path split into East (to the Ruins) and West (to
 (not to mention the fights). This is an example of why it pays to explore
 around no matter where you go.
 
-\faqentry{What do I do after all the Man' O' Grove fights?}
+\faqentry{What do I do after all the \monster{Man~O'~Grove} fights?}
 
 You see that little square that isn't grass in the middle of all the
 1$\times$1 pillars? Use the Bonsai Tree you got from Murkatos' \place{Inner
@@ -4723,12 +4726,12 @@ the information in the \place{Landing Port} (in the form of the T'Rang
 Logbook) and the \place{Observation Control Center} (in the form of the
 TX-Coder) in \place{Nyctalinth} Use the Coder on the Logbook while you're in
 the full-screen view of your inventory to read it. You're advised to go to
-\place{Nyctalinth} at this point---the information \npc{Barlone} gives you will give
-you access to the \qmwordqm{DRAGON} map in \place{Old City}, but the
-\qmwordqm{DRAGON} map is one of the maps that tends to get taken away real
-fast---hence the need for haste. The \qmwordqm{BOAT} map in the Funhouse
+\place{Nyctalinth} at this point---the information \npc{Barlone} gives you
+will give you access to the \qmwordqm{DRAGON} map in \place{Old City}, but
+the \qmwordqm{DRAGON} map is one of the maps that tends to get taken away
+real fast---hence the need for haste. The \qmwordqm{BOAT} map in the Funhouse
 however doesn't go away for a while in comparison to the \qmwordqm{DRAGON}
-map but it DOES go away if you dawdle too long.
+map but it \textlcsc{DOES} go away if you dawdle too long.
 
 \faqentry{What's the ``another favor'' \npc{Barlone} mentions?}
 
@@ -4756,7 +4759,7 @@ troughs'' as the game calls it and jump in to find said ball.
 
 \faqentry{What's with this rack of spears?}
 
-It guards the \qmwordqm{BOAT} Map. Talk to \monster{H'Jenn-Ra} T'Rang in
+It guards the \qmwordqm{BOAT} Map. Talk to \npc{H'Jenn-Ra} T'Rang in
 \place{Nyctalinth} to figure out the combination, if you haven't talked to
 him already.
 
@@ -4809,7 +4812,7 @@ however, you can go in here as early as after \place{Orkogre Castle}.
   \item \monster{T'Rang Assassins}
   \item \monster{T'Rang Wisers}
   \item \monster{T'Rang Elders}
-  \item \monster{H'Jenn-Ra} (fixed)
+  \item \npc{H'Jenn-Ra} (fixed)
   \item \monster{Rattkin Leaders}
   \item \monster{Rattkin Hunters}
   \item \monsterB{Rattkin Thieves}{Rattkin Thief}
@@ -4840,7 +4843,7 @@ however, you can go in here as early as after \place{Orkogre Castle}.
   \end{itemize}
 \end{twocolumnitemize}
 
-\faqentry{Where's \monster{H'Jenn-Ra}?}
+\faqentry{Where's \npc{H'Jenn-Ra}?}
 
 Come on, it's not \textlcsc{that} hard to walk around and explore! He's in
 the Northwest area in the \place{High Chamber} though, since you asked.
@@ -4954,10 +4957,10 @@ your time on expert mode---it's not as irritating to get as the
 \qmwordqm{CRYPT} map or the \qmwordqm{CRYSTAL} map. Since I can usually get
 it however, I can't take a guess as to who took it first.
 
-\faqentry{\monster{H'Jenn-Ra} is killing my party! How do I deal with him?}
+\faqentry{\npc{H'Jenn-Ra} is killing my party! How do I deal with him?}
 
 I guess you had a Pineapple after all. I won't lie to you---if your party is
-not faster than \monster{H'Jenn-Ra}'s party, you're screwed unless you're on
+not faster than \npc{H'Jenn-Ra}'s party, you're screwed unless you're on
 easy mode, where there's a chance she'll appear by herself, or you're much
 higher level, where most of their stuff has a reduced chance of working on
 you. You will need the full gamut of protective and enhancement spells to
@@ -5054,8 +5057,8 @@ killing. Consequently, anyone that can't dish out (and take) damage should be
 hidden away via hide or invisibility potions bombing \WviiSPOT{} with
 cloud-type spells and boosting spells on your party. \spell{Create Life} is a
 \textlcsc{great} help here, but not the other two summon spells--\WviiSPOT{}
-can flatten those silly demons quickly, but the \monster{Myxlmynx} might be able to
-take a couple more hits.
+can flatten those silly demons quickly, but the \monster{Myxlmynx} might be
+able to take a couple more hits.
 
 \faqentry{Anything special here?}
 
@@ -5174,10 +5177,10 @@ disappear no matter how long I take!
 \faqentry{I take it the other two flowers are here?}
 
 Yep. Save before picking either of them. Don't forget to look for the
-entrance to the \place{Sphinx Cave}. You'll get here by the way from climbing down
-the vine on the tall cliff to the area where the spirits were partying, and
-then exploring further, or by exiting \place{Ukpyr} to the north and snooping around
-all the sidepaths and the main path.
+entrance to the \place{Sphinx Cave}. You'll get here by the way from climbing
+down the vine on the tall cliff to the area where the spirits were partying,
+and then exploring further, or by exiting \place{Ukpyr} to the north and
+snooping around all the sidepaths and the main path.
 
 \pagebreak\subsection{\place{Sphinx Cave}}\label{sphinx-cave}\nopagebreak
 %
@@ -5254,8 +5257,8 @@ Which island has more than a 1$\times$1 pillar?
   \texorpdfstring{1$\times$1}{1x1} pillars?}
 
 You can walk through them to go somewhere special. But you're going to need
-something in the \place{Hall of Gorrors} before being able to do anything special
-with them\ldots{}and yes, you have to go in the pillars eventually.
+something in the \place{Hall of Gorrors} before being able to do anything
+special with them\ldots{}and yes, you have to go in the pillars eventually.
 
 \faqentry{I found this picture of the Sphinx on one of the walls. Anything
   special?}
@@ -5290,7 +5293,7 @@ can get no matter what keys you have. The best item you can get in said chest
 is a Dragon Kite---a shield for \class{Valkyrie}s, \class{Fighter}s, and
 \class{Lord}s that reduces their armor class by 4. That's if you have them
 and need one however. Otherwise, a Faery Cap if you missed it before (or
-Chamail items) is the 2nd best. Most of the other stuff is overshadowed by
+Chamail items) is the \nth{2} best. Most of the other stuff is overshadowed by
 better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
 but save before doing so!
 
@@ -5383,19 +5386,21 @@ important in this game as it affects many things, including your resistances
 and whether enemy monsters will resist your attacks or not.
 
 If you're too lazy though, look at John Needham's FAQ at GameFAQs (if the
-site you're using for FAQs lacks it) for directions on how to get to Dame
-Ke-Li---if you don't have a Credit Card you have to go there first---and then
-you probably want to buy some of her fun supply of items as well.
+site you're using for FAQs lacks it) for directions on how to get to
+\npc{Dame Ke-Li}---if you don't have a Credit Card you have to go there
+first---and then you probably want to buy some of her fun supply of items as
+well.
 
 \faqentry{Insert one credit? Where do I get a credit?}
 
 It's referring to credit cards. Surely the Helazoids you've bumped
-into dropped one or two? If not, look around for Dame Ke-Li here---she
+into dropped one or two? If not, look around for \npc{Dame Ke-Li} here---she
 sells Credit Cards for 100 gold.
 
 \faqentry{How do I get into the Storage Facility?}
 
-The Storage Key for the Storage Facility is in the Hall of Preservation.
+The Storage Key for the Storage Facility is in the \place{Hall of
+  Preservation}.
 
 \faqentry{What about that gazebo with the glowing key? There are invisible
   walls around it.}
@@ -5406,8 +5411,8 @@ Facility).
 
 \faqentry{What is the Key of Light used for?}
 
-Remember those \textlcsc{really} nice looking weapons in the Hall of
-Preservation?
+Remember those \textlcsc{really} nice looking weapons in the \place{Hall of
+  Preservation}?
 
 \faqentry{So which one should I pick then?}
 
@@ -5419,7 +5424,7 @@ fighting against robots like the Battle Droid (but not against Savant
 Androids). Be warned that when you use the Diamond Ring to grab an item, the
 Ring gets sacrificed for the item.
 
-\faqentry{Anything special I should do with Dame Ke-Li?}
+\faqentry{Anything special I should do with \npc{Dame Ke-Li}?}
 
 You mean besides buy all those nice, wonderful things she's selling?
 Yeah---give her the Helazoid Pennant you got from \npc{Jan-Ette} if you helped
@@ -5449,10 +5454,10 @@ searching until the game keeps you from searching!
 
 \faqentry{Where can I get more Powerpaks, other than killing lots of Helazoids?}
 
-Buy those Credit Cards from Dame Ke-Li and use them in a machine in the
+Buy those Credit Cards from \npc{Dame Ke-Li} and use them in a machine in the
 Storage Facility---the machine gives out Powerpaks for Credits. If you really
 have to make money at this point, you \emph{can} keep getting Powerpaks and
-then selling them to Paluke---or anyone other than Dame Ke-li.
+then selling them to \npc{Paluke}---or anyone other than \npc{Dame Ke-Li}.
 
 \pagebreak\subsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}\nopagebreak
@@ -5625,7 +5630,7 @@ to the right instead.
 \end{quoting}
 
 That's the actual lines in the map that you're interesting in. If you've
-copied down the buttons from the 2nd test, great. If you haven't, they're
+copied down the buttons from the \nth{2} test, great. If you haven't, they're
 Serpent, Gate, Wand, Pyramid, Star, Dragon, Cross, Skull, Map. Start at the
 side with a Man symbol, look for one of the buttons in that group of symbols
 (the Temple Map) and write it down. Move to the next face on the right side
@@ -5730,15 +5735,15 @@ Here are all I know of:%
   p{0.2\linewidth-\tabcolsep}
   P{0.55\linewidth-\tabcolsep}@{}} \toprule
 Poet's Lute & Sleep & Most bards start with it. \\[1.2ex]
-Angel's Tongue & \spell{Bless} & Buy/steal from Brother T'Shober when you first meet him. \\[1.2ex]
+Angel's Tongue & \spell{Bless} & Buy/steal from \npc{Brother TShober} when you first meet him. \\[1.2ex]
 Chromatic Lyre & Itching Skin & \place{Land of Dreams}. \\[1.2ex]
-Lute of Sloth & Slow & Search the area where you summoned Maa-Gogg the Man'O'Grove for a chest. \\[1.2ex]
+Lute of Sloth & Slow & Search the area where you summoned Maa-Gogg the \monster{Man~O'~Grove} for a chest. \\[1.2ex]
 Silent Lyre & Silence & \place{Dionysceus}, in the Book of Immortals chest. \\[1.2ex]
 Pipes of Doom & Terror & Buy\fshyp{}steal from \npc{Blienmeis} at Ratskells in \place{Rattkin Ruins} when he is in Ratskells. \\[1.2ex]
 Cornu of Demonspawn & \spell{Astral Gate} & Kill \WviiSPAWN{} \\[1.2ex]
 Siren's Wail & Confuse & \place{Dragon Mountains}, in the pirate chest or a Gorrors chest. \\[1.2ex]
-Horn of Prometheus & \spell{Fireball} & Gorrors chest or a certain Hall of Past chest. \\[1.2ex]
-Lyre of Cakes & Healthfull\footnotemark{} & A certain Hall of Past chest---you choose between this and the Horn of Prometheus. \\ \bottomrule
+Horn of Prometheus & \spell{Fireball} & Gorrors chest or a certain \place{Hall of Past} chest. \\[1.2ex]
+Lyre of Cakes & Healthfull\footnotemark{} & A certain \place{Hall of Past} chest---you choose between this and the Horn of Prometheus. \\ \bottomrule
 \end{longtable}
 
 \footnotetext{Lyre of Cakes has been proven to not give back your health. People
@@ -5769,7 +5774,7 @@ room in Murkato's \place{Inner Sanctum}. Only one character\fshyp{}game can
 get this.
 
 \paragraph{Eagle Eye} Rescue \npc{Jan-Ette} from the \monster{T'Rang
-  Assassins}. Give the Helazoid Pennant she gives you to Dame Ke-Li at
+  Assassins}. Give the Helazoid Pennant she gives you to \npc{Dame Ke-Li} at
 \place{City of Sky} for the Helazoid Pendant. Use the Pendant's special
 ability to give the character using it Eagle Eye. Only one
 character\fshyp{}game can get this.
@@ -5896,9 +5901,9 @@ Depends on your point in the game. Here's some treasure troves where you can
 get items better than what you should normally be getting if you go
 \textlcsc{ASAP}:
 
-\paragraph{\place{Orkogre Castle}} Try to get into the Armory early. (You
-have to get in anyway.) Leather and Studded Hauberks may be helpful as well
-as the bows and the occasional naginata or halberd.
+\paragraph{\place{Orkogre Castle}} Try to get into the \place{Armory}
+early. (You have to get in anyway.) Leather and Studded Hauberks may be
+helpful as well as the bows and the occasional naginata or halberd.
 
 \paragraph{\place{Eryn River}} After meeting \npc{Brother TShober}, take the
 first path you see on the left, and follow it to the first place with water
@@ -5924,8 +5929,8 @@ part of the passageway.  The water should have walls that are visible from
 this point.  Now, go left until you're line up with the wall on the left
 side, so that if you took two or three steps forward you'd be lined up with
 the wall.  Now for the first annoying part: Take two steps forward and into
-the Glow Mothra fight.  Deal with them.  (Level 4 \spell{Asphyxiation} works
-wonders here.)
+the \monster{Glow Mothra} fight.  Deal with them.  (Level 4
+\spell{Asphyxiation} works wonders here.)
 
 Go back to shore and rest, then get ready to use some spells\fshyp{}items and
 head back into the water facing south all the way until you get to an opening
@@ -5959,15 +5964,15 @@ gold. The loot is decent and can include a Dragon Kite (again).
 fountains contains a secret button in one of the alcoves. Press it, go in the
 passage, deal with the demon fight, and pick the chest open for a last chance
 at Chamail items, a Faerie Cap, or a Dragon Kite without wasting a spot in a
-Gorrors chest (although you might get the Dragon Kite again in the Dragon
-Cave).
+Gorrors chest (although you might get the Dragon Kite again in the
+\place{Dragon Cave}).
 
 Or, if you feel you are strong enough, go to the extreme southwest area of
 the map (where the Ugly Gorn Woman corpse is buried) and enter the alcove
 with the Gorn Nobleman that is directly west of her.  Save, cast preparatory
 spells, then search to fight \monster{Ungorn Daimyo} and possibly a bunch of
-Skeleton Lords.  Defeat them for the Hi-Kane-Do (U and L), a Kabuto, a
-Bushido Blade, and a Wakizashi~+1
+\monster{Skeleton Lords}.  Defeat them for the Hi-Kane-Do (U and L), a
+Kabuto, a Bushido Blade, and a Wakizashi~+1
 
 \faqentry{Where can I get the Cane of Corpus?}
 
