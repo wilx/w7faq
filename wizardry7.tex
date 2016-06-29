@@ -99,21 +99,21 @@ contents={%
 
 \makeatletter
 \DeclareRobustCommand{\indexSpell}[1]{\index[spells]{#1}}
-\DeclareRobustCommand{\spell}[1]{#1\indexSpell{#1}}
+\DeclareRobustCommand{\spell}[1]{\texorpdfstring{#1\indexSpell{#1}}{#1}}
 \DeclareRobustCommand{\indexPlace}[1]{\index[places]{#1}}
-\DeclareRobustCommand{\place}[1]{#1\indexPlace{#1}}
+\DeclareRobustCommand{\place}[1]{\texorpdfstring{#1\indexPlace{#1}}{#1}}
 \DeclareRobustCommand{\indexRace}[1]{\index{#1}}
-\DeclareRobustCommand{\race}[1]{#1\indexRace{#1}}
+\DeclareRobustCommand{\race}[1]{\texorpdfstring{#1\indexRace{#1}}{#1}}
 \DeclareRobustCommand{\indexClass}[1]{\index{#1}}
-\DeclareRobustCommand{\class}[1]{#1\indexClass{#1}}
+\DeclareRobustCommand{\class}[1]{\texorpdfstring{#1\indexClass{#1}}{#1}}
 \DeclareRobustCommand{\indexMonster}[1]{%
   \IfEndWith{#1}{s}{\StrGobbleRight{#1}{1}[\WviiResult]%
   \index[monsters]{\WviiResult}}{%
   \index[monsters]{#1}}}
-\DeclareRobustCommand{\monster}[1]{#1\indexMonster{#1}}
-\DeclareRobustCommand{\monsterB}[2]{#1\indexMonster{#2}}
+\DeclareRobustCommand{\monster}[1]{\texorpdfstring{#1\indexMonster{#1}}{#1}}
+\DeclareRobustCommand{\monsterB}[2]{\texorpdfstring{#1\indexMonster{#2}}{#1}}
 \DeclareRobustCommand{\indexNpc}[1]{\index[npcs]{#1}}
-\DeclareRobustCommand{\npc}[1]{#1\indexNpc{#1}}
+\DeclareRobustCommand{\npc}[1]{\texorpdfstring{#1\indexNpc{#1}}{#1}}
 \makeatother
 
 \newcommand\textlcsc[1]{\texorpdfstring{\textsc{\MakeLowercase{#1}}}{#1}}
