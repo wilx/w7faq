@@ -95,7 +95,9 @@ contents={%
 \makeatletter
 % The following macro makes sure there is enough space on page for following
 % text. It is used to glue text before lists to the lists.
-\newcommand{\WviiNeedSpace}{\Needspace*{4\baselineskip+\parskip}}
+\newcommand{\WviiNeedSpace}{%
+%\Needspace*{4\baselineskip+\parskip}%
+}
 \makeatother
 
 \makeindex[name=monsters,title=Monsters index]
@@ -161,13 +163,13 @@ contents={%
 
 \newenvironment{twocolumnitemize}[1]
  {%
-  \begin{multicols}{2}[#1]
-  \raggedcolumns\RaggedRight
-  \begin{itemize}
+  \begin{multicols}{2}[#1]%
+  \raggedcolumns\RaggedRight%
+  \begin{itemize}%
  }
  {%
-  \end{itemize}
-  \end{multicols}
+  \end{itemize}%
+  \end{multicols}%
  }
 
 \makeindex
@@ -347,7 +349,7 @@ given in the manual.
 
 \subsection{Males}\label{males}%
 %
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -369,7 +371,7 @@ given in the manual.
 
 \subsection{Females}\label{females}%
 %
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -468,7 +470,7 @@ reflect stat changes for female characters.
 %
 Base \race{Human} stats: \stats{9}{8}{8}{9}{9}{8}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
@@ -532,7 +534,7 @@ Ninja & 3 & 2 & 2 & 3 & 3 & 4 & & N & 17\tabularnewline
 %
 Base \race{Elf} stats: \stats{7}{10}{10}{7}{9}{9}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
@@ -611,7 +613,7 @@ Ninja & 5 & & & 5 & 3 & 3 & & N & 16\tabularnewline
 %
 Base \race{Dwarf} stats: \stats{11}{6}{10}{12}{7}{7}{7}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -676,7 +678,7 @@ Ninja & 1 & 4 & & & 5 & 5 & & N & 15\tabularnewline
 %
 Base \race{Gnome} stats: \stats{10}{7}{13}{10}{8}{6}{6}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
@@ -739,7 +741,7 @@ Ninja & 2 & 3 & & 2 & 4 & 6 & & N & 17\tabularnewline
 %
 Base \race{Hobbit} stats: \stats{8}{7}{6}{9}{10}{7}{13}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \tightlist
@@ -801,7 +803,7 @@ Ninja & 4 & 3 & 4 & 3 & 2 & 5 & & N & 21\tabularnewline
 %
 Base \race{Faerie} stats: \stats{5}{11}{6}{6}{10}{14}{12}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -887,7 +889,7 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 %
 Base \race{Lizardman} stats: \stats{12}{5}{5}{14}{8}{10}{3}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -951,7 +953,7 @@ Ninja & & 5 & 5 & & 4 & 2 & & N & 16\tabularnewline
 %
 Base \race{Dracon} stats: \stats{10}{7}{6}{12}{10}{8}{6}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1020,7 +1022,7 @@ Ninja & 2 & 3 & 4 & 2 & & 4 & & N & 15\tabularnewline
 %
 Base \race{Rawulf} stats: \stats{8}{6}{12}{10}{8}{8}{10}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1083,7 +1085,7 @@ Ninja & 4 & 4 & & 2 & 4 & 4 & & N & 18\tabularnewline
 %
 Base \race{Felpurr} stats: \stats{7}{10}{7}{7}{10}{12}{10}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1150,7 +1152,7 @@ Ninja & 5 & & 3 & 5 & 2 & & & N & 15\tabularnewline
 %
 Base \race{Mook} stats: \stats{10}{10}{6}{10}{7}{7}{9}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1207,14 +1209,14 @@ Ninja & 2 & & 4 & 2 & 5 & 5 & & N & 18\tabularnewline
   \class{Psionic}
 \end{twocolumnitemize}
 
-\pagebreak[1]\section{Classes}\label{classes}%
-%
-\nopagebreak\subsection{\class{Fighter}}\label{fighter}%
+%\pagebreak[1]
+\section{Classes}\label{classes}%
+\subsection{\class{Fighter}}\label{fighter}%
 %
 Requirements: \stats{12}{0}{0}{0}{0}{0}{0}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+\begin{multicols}{2}\WviiTwoColumnSetup%
+Perks:%
 \begin{itemize}
 \item
   Starting kit is very advanced compared to other characters
@@ -1227,7 +1229,7 @@ Requirements: \stats{12}{0}{0}{0}{0}{0}{0}
 \end{itemize}
 \columnbreak
 
-\WviiNeedSpace{}Flaws:%
+Flaws:%
 \begin{itemize}
 \item
   No spells
@@ -1259,9 +1261,9 @@ Requirements: \stats{12}{0}{0}{0}{0}{0}{0}
 %
 Requirements: \stats{0}{12}{0}{0}{0}{0}{0}
 
-\WviiNeedSpace{}%
-\begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+%
+\begin{multicols}{2}\WviiTwoColumnSetup%
+Perks:%
 \begin{itemize}
 \item
   Learns the Thaumaturgic spells the quickest.
@@ -1270,7 +1272,7 @@ Requirements: \stats{0}{12}{0}{0}{0}{0}{0}
 \end{itemize}
 \columnbreak
 
-\WviiNeedSpace{}Flaws:%
+Flaws:%
 \begin{itemize}
 \item
   Low hit points
@@ -1300,12 +1302,12 @@ Requirements: \stats{0}{12}{0}{0}{0}{0}{0}
   \class{Samurai}
 \end{twocolumnitemize}
 
-\pagebreak[1]\subsection{\class{Priest}}\label{priest}%
+\subsection{\class{Priest}}\label{priest}%
 %
-Requirements: \stats{0}{0}{12}{0}{0}{0}{0}
-
-\begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+Requirements: \stats{0}{0}{12}{0}{0}{0}{0}%
+%
+\begin{multicols}{2}\WviiTwoColumnSetup%
+Perks:
 \begin{itemize}
 \item
   Learns the Theological spells the fastest
@@ -1322,7 +1324,7 @@ Requirements: \stats{0}{0}{12}{0}{0}{0}{0}
 \end{itemize}
 \columnbreak
 
-\WviiNeedSpace{}Flaws:%
+Flaws:%
 \begin{itemize}
 \item
   Few attacking spells
@@ -1353,8 +1355,9 @@ Requirements: \stats{0}{0}{12}{0}{0}{0}{0}
 %
 Requirements: \stats{0}{0}{0}{0}{12}{8}{0}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+\begin{multicols}{2}\WviiTwoColumnSetup%
+%\WviiNeedSpace{}
+Perks:%
 \begin{itemize}
 \item
   Gets a \textlcsc{LARGE} boost in Skulduggery every level for a good while.
@@ -1372,7 +1375,8 @@ Requirements: \stats{0}{0}{0}{0}{12}{8}{0}
 \end{itemize}
 \columnbreak
 
-\WviiNeedSpace{}Flaws:%
+%\WviiNeedSpace{}
+Flaws:%
 \begin{itemize}
 \item
   No spells
@@ -1406,8 +1410,9 @@ Requirements: \stats{0}{0}{0}{0}{12}{8}{0}
 %
 Requirements: \stats{10}{8}{8}{11}{10}{8}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
-\WviiNeedSpace{}Perks:%
+\begin{multicols}{2}\WviiTwoColumnSetup%
+%\WviiNeedSpace{}
+Perks:%
 \begin{itemize}
 \item
   Kirijutsu effect with missile weapons
@@ -1428,7 +1433,8 @@ Requirements: \stats{10}{8}{8}{11}{10}{8}{8}
 \end{itemize}
 \columnbreak
 
-\WviiNeedSpace{}Flaws:%
+%\WviiNeedSpace{}
+Flaws:%
 \begin{itemize}
 \item
   Second rate protection
@@ -1456,7 +1462,7 @@ Requirements: \stats{10}{8}{8}{11}{10}{8}{8}
 %
 Requirements: \stats{0}{10}{0}{0}{12}{8}{12}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1499,7 +1505,7 @@ Requirements: \stats{0}{10}{0}{0}{12}{8}{12}
 %
 Requirements: \stats{10}{14}{0}{14}{0}{0}{10}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1539,7 +1545,7 @@ Requirements: \stats{10}{14}{0}{14}{0}{0}{10}
 %
 Requirements: \stats{0}{13}{0}{0}{13}{0}{0}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 Perks:%
 \begin{itemize}
 \item
@@ -1582,7 +1588,7 @@ Perks:%
 %
 Requirements: \stats{10}{0}{11}{11}{10}{11}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1624,7 +1630,7 @@ Requirements: \stats{10}{0}{11}{11}{10}{11}{8}
 %
 Requirements: \stats{0}{15}{15}{0}{0}{0}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1659,7 +1665,7 @@ Requirements: \stats{0}{15}{15}{0}{0}{0}{8}
 %
 Requirements: \stats{12}{9}{12}{12}{9}{9}{14}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1711,7 +1717,7 @@ Requirements: \stats{12}{9}{12}{12}{9}{9}{14}
 %
 Requirements: \stats{12}{11}{0}{9}{12}{14}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1746,7 +1752,7 @@ Requirements: \stats{12}{11}{0}{9}{12}{14}{8}
 %
 Requirements: \stats{13}{8}{13}{0}{10}{13}{8}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -1786,7 +1792,7 @@ Requirements: \stats{13}{8}{13}{0}{10}{13}{8}
 %
 Requirements: \stats{12}{10}{10}{12}{12}{12}{0}
 
-\begin{multicols}{2}\WviiTwoColumnSetup
+\begin{multicols}{2}\WviiTwoColumnSetup%
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
@@ -4708,7 +4714,7 @@ around no matter where you go.
 
 You see that little square that isn't grass in the middle of all the
 1$\times$1 pillars? Use the Bonsai Tree you got from Murkatos' \place{Inner
-  Sanctum} on it It doesn't matter what you answer when you get asked a
+  Sanctum} on it. It doesn't matter what you answer when you get asked a
 question by the tree.
 
 \faqentry{How exactly did that help me get in?}
@@ -5735,7 +5741,7 @@ Various other possible questions:
 
 That is (sort of) covered in the very last part of the Spoilers section.
 
-\section{Spoilers}\label{spoilers}
+\pagebreak\section{Spoilers}\label{spoilers}
 %
 This is a (minor) spoiler section If you don't like spoilers, ignore this
 last section. There's a reason why the spoiler section is
