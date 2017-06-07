@@ -16,6 +16,7 @@
 \usepackage{hyphenat}
 \usepackage{xstring}
 \usepackage[super]{nth}
+\usepackage{uspace}
 
 \defaultfontfeatures{Ligatures={TeX,Common,Discretionary},Scale=MatchLowercase}
 %\setmainfont[]{Charis SIL}
@@ -152,9 +153,9 @@ contents={%
 \newcommand{\WviiTwoColumnSetup}{\raggedcolumns\RaggedRight}
 
 \newcommand{\qmwordqm}[1]{\mbox{?#1?}}
-\DeclareRobustCommand{\WviiSPOT}{\mbox{\monster{*S~P~O~T*}}}
-\DeclareRobustCommand{\WviiDOOM}{\mbox{\monster{*D~O~O~M*}}}
-\DeclareRobustCommand{\WviiSPAWN}{\mbox{\monster{*S~P~A~W~N*}}}
+\DeclareRobustCommand{\WviiSPOT}{\mbox{\monster{\textasteriskcentered\,S\,P\,O\,T\,\textasteriskcentered{}}}}
+\DeclareRobustCommand{\WviiDOOM}{\mbox{\monster{\textasteriskcentered\,D\,O\,O\,M\,\textasteriskcentered{}}}}
+\DeclareRobustCommand{\WviiSPAWN}{\mbox{\monster{\textasteriskcentered\,S\,P A W\,N\,\textasteriskcentered{}}}}
 
 %before=\nopagebreak\setlength{\multicolsep}{\topsep}\begin{multicols}{2}\WviiTwoColumnSetup,
 \SetEnumitemKey{WviiTwoColumn}{%
@@ -5085,7 +5086,7 @@ Treat him as a more\ldots{}dangerous version of the giants you've been
 killing. Consequently, anyone that can't dish out (and take) damage should be
 hidden away via hide or invisibility potions bombing \WviiSPOT{} with
 cloud-type spells and boosting spells on your party. \spell{Create Life} is a
-\textlcsc{great} help here, but not the other two summon spells--\WviiSPOT{}
+\textlcsc{great} help here, but not the other two summon spells---\WviiSPOT{}
 can flatten those silly demons quickly, but the \monster{Myxlmynx} might be
 able to take a couple more hits.
 
