@@ -36,6 +36,7 @@
 % This must be loaded before hyperref or bookmarks packages so that the
 % generated Index is clickable.
 \usepackage[xindy]{imakeidx}
+%\usepackage[xindy]{indextools}
 
 % Bookmark package loads hyperref internally.
 \usepackage{bookmark}
@@ -106,12 +107,12 @@ contents={%
 }
 \makeatother
 
-\makeindex[name=monsters,title=Monsters index]
-\makeindex[name=npcs,title=NPCs index]
-\makeindex[name=spells,title=Spells index]
-\makeindex[name=places,title=Places index]
+\makeindex[name=monsters,title=Monsters index,intoc]
+\makeindex[name=npcs,title=NPCs index,intoc]
+\makeindex[name=spells,title=Spells index,intoc]
+\makeindex[name=places,title=Places index,intoc]
 
-\makeatletter
+%\makeatletter
 \DeclareRobustCommand{\indexSpell}[1]{\index[spells]{#1}}
 \DeclareRobustCommand{\spell}[1]{\texorpdfstring{#1\indexSpell{#1}}{#1}}
 \DeclareRobustCommand{\indexPlace}[1]{\index[places]{#1}}
@@ -128,7 +129,7 @@ contents={%
 \DeclareRobustCommand{\monsterB}[2]{\texorpdfstring{#1\indexMonster{#2}}{#1}}
 \DeclareRobustCommand{\indexNpc}[1]{\index[npcs]{#1}}
 \DeclareRobustCommand{\npc}[1]{\texorpdfstring{#1\indexNpc{#1}}{#1}}
-\makeatother
+%\makeatother
 
 \usepackage{stackengine}
 \newcommand\stats[7]{%
@@ -2591,7 +2592,7 @@ recommend it.
 more likely to cause damage on weaker opponents and more likely to cause
 status ailments (which rarely includes ``withers and dies'') on more powerful
 ones. Keep in mind that this won't work on something with 100\% or greater
-Light Resistance, like \monster{Man~O'~Groves}.
+Light Resistance, like \monsterB{Man~O'~Groves}{Man O' Groves}.
 
 \spellentry{Anti-Magic} Tries to prevent a group from casting spells
 successfully.  Not too useful when you're fighting multiple groups of
@@ -3054,7 +3055,7 @@ in others.
 
 \spellentry{Blinding Flash} Attempts to inflict the ``Blind'' ailment on a
 group of monsters. Don't expect this to work on monsters with light
-resistance like \monster{Man~O'~Groves}. If \spell{Dazzling Lights} or
+resistance like \monsterB{Man~O'~Groves}{Man O' Groves}. If \spell{Dazzling Lights} or
 \spell{Prismic Missile} don't work on that monster, this won't either.
 
 \spellentry{Cure Lesser Condition} Extremely useful for the \class{Alchemist}
@@ -4716,7 +4717,7 @@ Go back to where the path split into East (to the Ruins) and West (to
 (not to mention the fights). This is an example of why it pays to explore
 around no matter where you go.
 
-\faqentry{What do I do after all the \monster{Man~O'~Grove} fights?}
+\faqentry{What do I do after all the \monsterB{Man~O'~Grove}{Man O' Grove} fights?}
 
 You see that little square that isn't grass in the middle of all the
 1$\times$1 pillars? Use the Bonsai Tree you got from Murkatos' \place{Inner
@@ -5772,7 +5773,7 @@ Here are all I know of:%
 Poet's Lute & Sleep & Most bards start with it. \\[1.2ex]
 Angel's Tongue & \spell{Bless} & Buy/steal from \npc{Brother TShober} when you first meet him. \\[1.2ex]
 Chromatic Lyre & Itching Skin & \place{Land of Dreams}. \\[1.2ex]
-Lute of Sloth & Slow & Search the area where you summoned Maa-Gogg the \monster{Man~O'~Grove} for a chest. \\[1.2ex]
+Lute of Sloth & Slow & Search the area where you summoned \monster{Maa-Gogg} the \monsterB{Man~O'~Grove}{Man O' Grove} for a chest. \\[1.2ex]
 Silent Lyre & Silence & \place{Dionysceus}, in the Book of Immortals chest. \\[1.2ex]
 Pipes of Doom & Terror & Buy\fshyp{}steal from \npc{Blienmeis} at Ratskells in \place{Rattkin Ruins} when he is in Ratskells. \\[1.2ex]
 Cornu of Demonspawn & \spell{Astral Gate} & Kill \WviiSPAWN{} \\[1.2ex]
@@ -6281,19 +6282,14 @@ can still answer questions however as well as update this FAQ if more
 questions get asked pertaining to the game (but not technical stuff)
 
 \clearpage
-\phantomsection\addcontentsline{toc}{chapter}{Index}%
 \printindex
 
-\phantomsection\addcontentsline{toc}{chapter}{Monsters index}%
 \printindex[monsters]
 
-\phantomsection\addcontentsline{toc}{chapter}{NPCs index}%
 \printindex[npcs]
 
-\phantomsection\addcontentsline{toc}{chapter}{Places index}%
 \printindex[places]
 
-\phantomsection\addcontentsline{toc}{chapter}{Spells index}%
 \printindex[spells]
 
 \end{document}
