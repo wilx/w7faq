@@ -112,6 +112,7 @@ contents={%
 \makeindex[name=npcs,title=NPCs index,intoc]
 \makeindex[name=spells,title=Spells index,intoc]
 \makeindex[name=places,title=Places index,intoc]
+\makeindex[name=items,title=Game items index,intoc]
 
 %\makeatletter
 \DeclareRobustCommand{\indexSpell}[1]{\index[spells]{#1}}
@@ -130,6 +131,9 @@ contents={%
 \DeclareRobustCommand{\monsterB}[2]{\texorpdfstring{#1\indexMonster{#2}}{#1}}
 \DeclareRobustCommand{\indexNpc}[1]{\index[npcs]{#1}}
 \DeclareRobustCommand{\npc}[1]{\texorpdfstring{#1\indexNpc{#1}}{#1}}
+\DeclareRobustCommand{\indexGameItem}[1]{\index[items]{#1}}
+\DeclareRobustCommand{\gameItem}[1]{\texorpdfstring{#1\indexGameItem{#1}}{#1}}
+
 %\makeatother
 
 \usepackage{stackengine}
@@ -363,7 +367,7 @@ given in the manual.
 \item
   Classes based on strength are easier to get for males.
 \item
-  Males can wear the Cameo Locket.
+  Males can wear the \gameItem{Cameo Locket}.
 \end{itemize}
 \columnbreak
 
@@ -372,7 +376,7 @@ given in the manual.
 \item
   See benefits of Females.
 \item
-  Cameo Locket is only attainable by importing a party from Bane of the
+  \gameItem{Cameo Locket} is only attainable by importing a party from Bane of the
   Cosmic Forge or saved game editing.
 \end{itemize}
 \end{multicols}
@@ -386,8 +390,8 @@ given in the manual.
   Classes based on Personality will require 1 less point to get for
   females, unless it has a strength requirement as well.
 \item
-  Females can use certain items like Stud-Cuir Bras and Jazeraint
-  Skirts. (Sorry, no cross-dressers in the game.) Some of these items
+  Females can use certain items like \gameItem{Stud-Cuir Bras} and
+  \gameItem{Jazeraint Skirts}. (Sorry, no cross-dressers in the game.) Some of these items
   are the best for the particular class the female may end up in.
 \item
   Females can become \class{Valkyrie}s, which are \class{Lord}s with less
@@ -400,7 +404,7 @@ given in the manual.
 \item
   See benefits of Males.
 \item
-  Diamond Ring, one of the better female-only items, must be imported
+  \gameItem{Diamond Ring}, one of the better female-only items, must be imported
   from Bane or edited into the saved game.
 \end{itemize}
 \end{multicols}
@@ -409,7 +413,7 @@ given in the manual.
 %
 Use Male characters only if you are importing a game from Bane of the
 Cosmic Forge, if you are rolling up a \class{Fighter}-type character or a
-\class{Psionic}, or you cheat
+\class{Psionic}, or you cheat.
 
 Use Female characters whenever you are rolling up a spellcaster and all
 other situations that don't apply to male characters---you don't lose
@@ -549,7 +553,7 @@ Base \race{Elf} stats: \stats{7}{10}{10}{7}{9}{9}{8}
 \item
   Higher resistance to sleep spells.
 \item
-  Combat-types can take advantage of a Race-specific weapon (Elven Bow).
+  Combat-types can take advantage of a Race-specific weapon (\gameItem{Elven Bow}).
 \item
   Decent spell point recharge rate.
 \end{itemize}
@@ -565,7 +569,7 @@ Base \race{Elf} stats: \stats{7}{10}{10}{7}{9}{9}{8}
 \end{itemize}
 \end{multicols}
 
-\WviiNeedSpace{}Suggestions:
+\WviiNeedSpace{}Suggestions:%
 \begin{itemize}
 \item
   When picking an \race{Elf}, pick female unless you fully intend to make it a
@@ -691,7 +695,7 @@ Base \race{Gnome} stats: \stats{10}{7}{13}{10}{8}{6}{6}
 \begin{itemize}
 \tightlist
 \item
-  Magic resistance (i.e.~to spells like \spell{Lifesteal} or Make Wounds)
+  Magic resistance (i.e.~to spells like \spell{Lifesteal} or \spell{Make Wounds})
 \end{itemize}
 \columnbreak
 
@@ -815,8 +819,8 @@ Base \race{Faerie} stats: \stats{5}{11}{6}{6}{10}{14}{12}
 \WviiNeedSpace{}Perks:%
 \begin{itemize}
 \item
-  Character always start with Gossamer Gown (U), Gossamer Gown (L),
-  Faerie Stick, Faerie Dust(5), and Lt. Heal(3) regardless of class.
+  Character always start with \gameItem{Gossamer Gown (U)}, \gameItem{Gossamer Gown (L)},
+  \gameItem{Faerie Stick}, \gameItem{Faerie Dust}(5), and \gameItem{Lt.\ Heal}(3) regardless of class.
 \item
   Lower AC than other races
 \item
@@ -826,9 +830,9 @@ Base \race{Faerie} stats: \stats{5}{11}{6}{6}{10}{14}{12}
 \item
   Natural spellcaster
 \item
-  Race specific helmet (Faerie Cap)
+  Race specific helmet (\gameItem{Faerie Cap})
 \item
-  Race \& class specific weapon (Cane of Corpus for the \race{Faerie} \class{Ninja})
+  Race \& class specific weapon (\gameItem{Cane of Corpus} for the \race{Faerie} \class{Ninja})
 \end{itemize}
 \columnbreak
 
@@ -838,7 +842,7 @@ Base \race{Faerie} stats: \stats{5}{11}{6}{6}{10}{14}{12}
   Cannot use most weapons and armor.
 \item
   Consistency of starting equipment prevents \race{Faerie} characters from
-  using sometimes irreplaceable equipment such as the Poet's Lute.
+  using sometimes irreplaceable equipment such as the \gameItem{Poet's Lute}.
 \item
   Low carrying capacity
 \item
@@ -887,8 +891,8 @@ Ninja & 7 & & 4 & 6 & 2 & & & N & 19\tabularnewline
 \item
   \class{Alchemist}
 \item
-  \class{Bard} -- A pointless choice after playing as you do not get the Poet's
-  Lute.
+  \class{Bard} -- A pointless choice after playing as you do not get the \gameItem{Poet's
+  Lute}.
 \item
   \class{Samurai} -- A semi-useless choice as you cannot wear most decent armor.
 \end{twocolumnitemize}
@@ -1370,7 +1374,7 @@ Perks:%
 \item
   Gets a \textlcsc{LARGE} boost in Skulduggery every level for a good while.
 \item
-  Class specific weapon (Thieves Dagger) that is cursed, allowing use as
+  Class specific weapon (\gameItem{Thieves Dagger}) that is cursed, allowing use as
   a secondary weapon for thieves that change professions.
 \item
   Learns Ninjutsu
@@ -1425,7 +1429,7 @@ Perks:%
 \item
   Kirijutsu effect with missile weapons
 \item
-  Class specific weapon and accessory (Estoc de~Olivia, Forest Cape)
+  Class specific weapon and accessory (\gameItem{Estoc de~Olivia}, \gameItem{Forest Cape})
 \item
   Learns Alchemical spells
 \item
@@ -1484,7 +1488,7 @@ Requirements: \stats{0}{10}{0}{0}{12}{8}{12}
 \item
   Learns Legerdemain
 \item
-  Starts with a Poet's Lute (unless character is a \race{Faerie})
+  Starts with a \gameItem{Poet's Lute} (unless character is a \race{Faerie})
 \item
   Increased skill points to Physical
 \end{itemize}
@@ -1519,7 +1523,7 @@ Requirements: \stats{10}{14}{0}{14}{0}{0}{10}
 \item
   Learns Theosophical spells the fastest
 \item
-  Class-specific accessory (PK Crystal)
+  Class-specific accessory (\gameItem{PK Crystal})
 \item
   Starts with Shadow Cloak (unless character is a \race{Faerie})
 \item
@@ -1561,9 +1565,9 @@ Perks:%
 \item
   Cannot be silenced
 \item
-  Starts with Cherry Bomb (unless starting character is a \race{Faerie})
+  Starts with \gameItem{Cherry Bomb} (unless starting character is a \race{Faerie})
 \item
-  Class specific accessory (Medicine Bag)
+  Class specific accessory (\gameItem{Medicine Bag})
 \item
   Increased skill points to Academia
 \item
@@ -1602,7 +1606,7 @@ Requirements: \stats{10}{0}{11}{11}{10}{11}{8}
 \item
   Learns Theological spells
 \item
-  Class-specific weapon (Maenad's Lance)
+  Class-specific weapon (\gameItem{Maenad's Lance})
 \item
   May use a majority of weapons and the strongest armor available
 \item
@@ -1733,8 +1737,8 @@ Requirements: \stats{12}{11}{0}{9}{12}{14}{8}
 \item
   Learns Thaumaturgical spells
 \item
-  Class specific weapons and armor (Muramasa Blade, Do-Maru~(U) and (L),
-  Tosei-Do~(U) \& (L), Hi-Kane-Do~(U) \& (L), Kabuto)
+  Class specific weapons and armor (\gameItem{Muramasa Blade}, \gameItem{Do-Maru~(U)} and (L),
+  \gameItem{Tosei-Do~(U)} \& (L), \gameItem{Hi-Kane-Do~(U)} \& (L), \gameItem{Kabuto})
 \item
   Increased skill points to Weapon
 \end{itemize}
@@ -1824,9 +1828,9 @@ Requirements: \stats{12}{10}{10}{12}{12}{12}{0}
 \item
   Weapons \class{Ninja}s can use are useful.
 \item
-  Class specific weapons, armor, and accessory (Sai, Nunchuku, Ninjato,
-  Ninja Cowl, Ninja Garb~(U), Ninja Garb~(L), Tabi Boots, Blackbelt of 5
-  Flowers)
+  Class specific weapons, armor, and accessory (\gameItem{Sai}, \gameItem{Nunchuku}, \gameItem{Ninjato},
+  \gameItem{Ninja Cowl}, \gameItem{Ninja Garb~(U)}, \gameItem{Ninja Garb~(L)}, \gameItem{Tabi Boots}, \gameItem{Blackbelt of 5
+  Flowers})
 \end{itemize}
 \columnbreak
 
@@ -1843,7 +1847,7 @@ Requirements: \stats{12}{10}{10}{12}{12}{12}{0}
 \item
   Semi-limited weapon selection
 \item
-  May only equip Ninja Cowl, Ninja Garb~(U) \& (L), Tabi Boots, and race
+  May only equip \gameItem{Ninja Cowl}, \gameItem{Ninja Garb~(U)} \& (L), \gameItem{Tabi Boots}, and race
   specific items for armor.
 \end{itemize}
 \end{multicols}
@@ -1862,8 +1866,8 @@ attempting to enter the water to practice. There are three places to practice
 without wasting too much time: \place{New City} (using the fountain in the
 \place{Starter Dungeon} or the one at \npc{Father Rulae}), the
 \monster{Ra-sep-re-tep} pool in the \place{Starter Dungeon} (using the
-fountain in the same area) and \place{Munkharama} (at the Polar Munk
-Society\ldots{} bring healing though\ldots{}). Get your swimming to at least
+fountain in the same area) and \place{Munkharama} (at the \place{Polar Munk
+Society}\ldots{} bring healing though\ldots{}). Get your swimming to at least
 a 20 using these three places---the \place{Lost Temple} has a fountain that
 is in the water, but you need to have at least a 20 swimming to reach
 it. Once you do, you can practice until you have a 100 in it.
@@ -1876,7 +1880,7 @@ attempting to climb by the way.
 
 \paragraph{Scouting} If this is your first time through, you need
 scouting. Without it, you won't be able to pass several areas, as you won't
-know to search an area On second and subsequent times through the game
+know to search an area. On second and subsequent times through the game
 however, it is safe to skip this if you remember where everything is.
 
 \paragraph{Skulduggery} When starting, don't settle for less than at least a
@@ -1925,7 +1929,7 @@ being totally useless; most shopkeepers have horrible items in their
 inventory---you wouldn't want to steal them if your life depended on
 it. Legerdemain is best when the pickpocket using it is rather high level, is
 decent at it (has at least a 30 so in Legerdemain), and pickpocketing someone
-worthwhile like \npc{Belcanzor} for his items or \npc{Dame Ke-Li} for her Ankhs. Be
+worthwhile like \npc{Belcanzor} for his items or \npc{Dame Ke-Li} for her \gameItem{Ankh}s. Be
 especially careful pickpocketing wandering NPCs. Some like \npc{Capt.~Boerigard}
 have very nice weapons and such, but they may attack you if they catch you
 pickpocketing them, which is a bad thing.
@@ -1960,17 +1964,16 @@ skills}{Really depends on your playing style skills}}\label{really-depends-on-yo
 %
 \paragraph{Mythology} This lets you successfully ID the monster you're
 fighting. In some cases it will be very useful, if you're conserving mana and
-don't want to mistake \monster{Night Rooks} for \monster{Vampire
-  Vultures}. In most cases however, it is easy to figure out what the monster
-is after a round, or even based on where it is. Putting points into this is
-really up to your strategy, but it goes up naturally over time, albeit
-slowly.
+don't want to mistake \monster{Night Rooks} for \monster{Vampire Vultures}.
+In most cases however, it is easy to figure out what the monster is after a
+round, or even based on where it is. Putting points into this is really up to
+your strategy, but it goes up naturally over time, albeit slowly.
 
 \paragraph{Scribe} If you like to save on mana, you may find a use for this
 skill. Personally, I've gone through the game with only one point put into
 this skill for \spell{Knock-Knock} scrolls to be slightly more
-effective---other than \spell{Magic Screen}, \spell{Armorplate}, \spell{Locate
-  Person}, and \spell{Enchanted Blade} scrolls, \spell{Knock-Knock} scrolls
+effective---other than \spell{Magic Screen}, \spell{Armorplate},
+\spell{Locate Person}, and \spell{Enchanted Blade} scrolls, \spell{Knock-Knock} scrolls
 are the only other ones I actually use and all of them can (or are supposed
 to) be used outside of battle. Some nice spells are on scrolls, but chances
 are, you're going to sell them for the cash they give you---by the point you
@@ -2466,8 +2469,8 @@ already.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game
-however, as you'll have ways of dealing with multiple targets.
+has a \class{Bard} with the \gameItem{Poet's Lute}. This becomes useless
+after mid-game however, as you'll have ways of dealing with multiple targets.
 
 \spellentry{Armor Shield} Grants an Armor Class bonus to a
 character. Initially, the meager protection offered by the spell will not be
@@ -2476,8 +2479,8 @@ too helpful. Later on however, it is a very useful spell to cast while hiding
 noticeable drop in Armor Class when cast at level~7.
 
 \spellentry{Direction} Shows the direction your party is facing. A useless
-spell after you get the Journey Map Kit, as you can easily check which way
-you are facing by using the map.
+spell after you get the \gameItem{Journey Map Kit}, as you can easily check
+which way you are facing by using the map.
 
 \subsubsection{Level 2 spells (18 Thaumaturgy)}%
 
@@ -2516,13 +2519,13 @@ useful, but there's no way to tell for certain.
 
 \subsubsection{Level 3 spells (37 Thaumaturgy)}%
 
-\spellentry{Fireball} Once you get this, you'll be avoiding usage of Magic
-Missile except on Undead and fire-resistant monsters.
+\spellentry{Fireball} Once you get this, you'll be avoiding usage of
+\spell{Magic Missile} except on Undead and fire-resistant monsters.
 
 \spellentry{Fire Shield} Reduces or eliminates the effectiveness of all Fire
 Realm spells and Fire based attacks. Don't expect it to eliminate spell
-damage to nothing when it is coming from something strong, although Fire Crow
-breath will be much less painful.
+damage to nothing when it is coming from something strong, although
+\monster{Fire Crow} breath will be much less painful.
 
 \spellentry{Ice Shield} Reduces or eliminates the effectiveness of all Water
 Realm spells and Ice-based attacks. You'll be happy to have this up when
@@ -2568,9 +2571,9 @@ blasts, but not little laser beams like the ones the \monster{T'Rang Tecniks}
 use to attack. Remember: this can be casted outside of battle.
 
 \spellentry{Conjuration} Summons a monster to help you. They range from the
-pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and
-\monster{Myxlmynx} at level 7 (which are pretty darn useful). The best out of
-the three summoning spells if you want magical damage.
+pathetic \monster{Vulture} at a level~1 casting to perhaps \monster{Fieros}
+and \monster{Myxlmynx} at level 7 (which are pretty darn useful). The best
+out of the three summoning spells if you want magical damage.
 
 \spellentry{Armormelt} Makes the opponent easier to hit. Think of it as the
 opposite of \spell{Armor Shield}, except it targets everyone.
@@ -2579,10 +2582,10 @@ opposite of \spell{Armor Shield}, except it targets everyone.
 so much that it just isn't worth it. That's right, \textlcsc{MISSES}, not
 resisted.
 
-\spellentry{Wizard Eye} Gives an overhead view of the area---just like you had
-a Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you, unless
-you've been skimping on your Mapping skill or don't know if there is a secret
-passage behind a wall.
+\spellentry{Wizard Eye} Gives an overhead view of the area---just like you
+had a \gameItem{Journey Map Kit}. (Surprise\ldots{}) Skip this spell if I
+were you, unless you've been skimping on your Mapping skill or don't know if
+there is a secret passage behind a wall.
 
 \spellentry{Spooks} A Terror spell that affects all opponents. I don't
 recommend it.
@@ -2626,7 +2629,7 @@ resistant to this expensive spell.
 
 \spellentry{Recharge} Very useful when used on items that have the effect of
 Magicfood when used and can be used multiple times. Otherwise mildly useful
-to get back charges on items like the Amulet of Asphyxiation.
+to get back charges on items like the \gameItem{Amulet of Asphyxiation}.
 
 \spellentry{Noxious Fumes} Not very useful. Just a better version of
 \spell{Stink Bomb} that hits a group. However, there is a much better chance
@@ -2677,9 +2680,10 @@ useful.  Otherwise, skip for a better spell unless you have no choice.
 \spellentry{Dispel Undead} Only works on undead, but there's a lot of undead
 in the game. It works more often on the skeleton types of undead than the
 ghost types of undead. Keep in mind that any of the ``Spectral'' monsters
-like Spectral Ravens or \monster{Spectral Moths} are considered undead as well. Don't
-expect it to work too well on some unique undead monsters, with a very
-notable exception of the ones in \place{Witch Mountains}.
+like \monster{Spectral Ravens} or \monster{Spectral Moths} are considered
+undead as well. Don't expect it to work too well on some unique undead
+monsters, with a very notable exception of the ones in \place{Witch
+  Mountains}.
 
 \spellentry{Cure Lesser Condition} Cures or reduces the duration of the
 ``Irritation,'' ``Sleep,'' ``Afraid,'' ``Blind,'' and ``Nausea''
@@ -2715,7 +2719,8 @@ removed by an attack.
 ailment.
 
 \spellentry{Silence} Silences a group of monsters. Don't try it on the
-Umpani, most Munks, \monster{Gorn Rangers}, and other Alchemical spellcasters.
+\monster{Umpani}, most \monster{Munks}, \monster{Gorn Rangers}, and other
+Alchemical spellcasters.
 
 \spellentry{Armorplate} Improves the armor class of each character (although
 you won't see any changes in the review screen). The bonus is that it can be
@@ -2740,9 +2745,9 @@ better spells to get than this.
 \subsubsection{Level 4 spells (54 Theology)}%
 
 \spellentry{Conjuration} Summons a monster to help you.  They range from the
-pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and \monster{Myxlmynx} at level
-7 (which are pretty darn useful). The best out of the three summoning spells
-if you want magical damage.
+pathetic Vulture at a level~1 casting to perhaps \monster{Fieros} and
+\monster{Myxlmynx} at level~7 (which are pretty darn useful). The best out of
+the three summoning spells if you want magical damage.
 
 \spellentry{Paralyze} Paralyzes an enemy. Is about as useful as Web is for
 mages and \class{Alchemist}s.
@@ -2774,9 +2779,9 @@ unequip some items and not others, so make sure you use a level~6 or 7
 \spell{Remove Curse}.
 
 \spellentry{Healthfull} Heals everyone for a small amount of hit points. This
-spell would be nicer if it actually healed more damage---a level~1 Healthfull
-seems to heal around 1--4 damage; you do the math. Still, it's group healing,
-and that's always nice.
+spell would be nicer if it actually healed more damage---a level~1
+\spell{Healthfull} seems to heal around 1--4 damage; you do the math. Still,
+it's group healing, and that's always nice.
 
 \spellentry{Purify Air} Eliminates or reduces the duration of any cloud
 spells casted on your party. Handy when you get pounded with \spell{Poison
@@ -2798,17 +2803,17 @@ Vitality.
 locations of any chests in the area (not dropped items).
 
 \spellentry{Lifesteal} Attempts to do a large amount of damage to one enemy
-and heal you with that damage. Your spellcaster will never need to cast Heal
-Wounds on him or herself again. It works on a \emph{lot} of enemies, but
-don't expect it to work on the real nasties like \monster{Rexx} or Godzylli very
-often---even at level~7.
+and heal you with that damage. Your spellcaster will never need to cast
+\spell{Heal Wounds} on him or herself again. It works on a \emph{lot} of
+enemies, but don't expect it to work on the real nasties like \monster{Rexx}
+or \monster{Godzylli} very often---even at level~7.
 
 \spellentry{Astral Gate} Instantly kills demons. Since it's specialized,
 getting this is up to you. You \emph{will} run into demons however.
 
 \spellentry{Recharge} Very useful when used on items that have the effect of
 Magicfood when used and can be used multiple times. Otherwise mildly useful
-to get back charges on items like the Amulet of Asphyxiation.
+to get back charges on items like the \gameItem{Amulet of Asphyxiation}.
 
 \subsubsection{Level 7 spells (98 Theology)}%
 
@@ -2848,8 +2853,8 @@ useful.  Otherwise, skip for a better spell unless you have no choice.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game
-however.
+has a \class{Bard} with the \gameItem{Poet's Lute}. This becomes useless
+after mid-game however.
 
 \spellentry{Heal Wounds} There really shouldn't be a reason why you didn't
 pick this as your first spell. Any healing is nice.
@@ -2912,7 +2917,7 @@ full stamina.
 \spellentry{Shrill Sound} Hurts an entire enemy group, regardless of
 number. For the \class{Psionic} however, it takes a backseat for \spell{Psionic
   Fires} in priority unless you have mass enemy group problems (i.e.\ hordes
-of \monster{Rattkin Rogues}\fshyp{}Bandits).
+of \monster{Rattkin Rogues}\fshyp{}\monsterB{Bandits}{Rattkin Bandits}).
 
 \spellentry{Weaken} Makes the opponent do less damage when they
 attack. Useful I suppose, but I prefer killing them as quickly as
@@ -2971,12 +2976,13 @@ it as the opposite of \spell{Armor Shield}.
 \spellentry{Psionic Blast} A group version of \spell{Mental Attack}, and just about
 as useful.
 
-\spellentry{Illusion} Summons monsters to fight for you. Fantasmogoras are at
-the high end of things that are summoned by this. The best out of the three
-summon spells if you like instant death spellcasters.
+\spellentry{Illusion} Summons monsters to fight for
+you. \monster{Fantasmogoras} are at the high end of things
+that are summoned by this. The best out of the three summon spells if you
+like instant death spellcasters.
 
 \spellentry{Wizard Eye} Gives an overhead view of the area---just like you had
-a Journey Map kit. (Surprise\ldots{}) Skip this spell if I were you, unless
+a \gameItem{Journey Map Kit}. (Surprise\ldots{}) Skip this spell if I were you, unless
 you've been skimping on your Mapping skill or don't know if there is a secret
 passage behind a wall.
 
@@ -3001,8 +3007,8 @@ locations of chests (but not dropped items).
 \spellentry{Lifesteal} The \emph{only} true spell the \class{Psionic} will get at
 high levels of Theosophy that is actually quite useful. Take it as soon as
 you can learn it. The massive amounts of healing is really nice, and you kill
-something in the process (sometimes something nasty like a Vampire Vulture or
-a Dragorra).
+something in the process (sometimes something nasty like a \monster{Vampire Vulture} or
+a \monster{Dragorra}).
 
 \subsubsection{Level 7 spells (98 Theosophy)}%
 
@@ -3041,8 +3047,8 @@ stages of the game.
 
 \spellentry{Sleep} Gives the opponent the ``Asleep'' status for a short
 time. One of the most useful spells in the game, even if your party already
-has a \class{Bard} with the Poet's Lute. This becomes useless after mid-game
-however.
+has a \class{Bard} with the \gameItem{Poet's Lute}. This becomes useless
+after mid-game however.
 
 \spellentry{Charm} Paralyzes an opponent. Out of battle, it makes it easier
 to make friends with NPCs. If you have diplomatic problems, this may be
@@ -3133,9 +3139,10 @@ on the opponent. When this spell works, it \textlcsc{REALLY} works. You'll eithe
 this spell or hate it. Either way, it's much better than \spell{Death} is.
 
 \spellentry{Create Life} Creates monsters out of nothing. Monsters range from
-\monster{Spectral Moths} to Godzylli and \monster{Bloodwyrms}. The best summoning spell out of
-the three if you want sheer muscle; heck, it's the best period since the
-Godzylli can last much longer than the other summoned creatures.
+\monster{Spectral Moths} to \monster{Godzylli} and \monster{Bloodwyrms}. The
+best summoning spell out of the three if you want sheer muscle; heck, it's
+the best period since the \monster{Godzylli} can last much longer than the other
+summoned creatures.
 
 \subsubsection{Level 6 Spells (90 Alchemy)}%
 
@@ -3355,7 +3362,7 @@ the T'Rang and will not trade with you, as you are considered to be their
 ally (and enemies of their enemies).
 
 If you started near \place{Ukpyr}: go in the city, join the Umpani I.U.F.,
-decide whether or not you actually want to help K'borra T'Rang, and
+decide whether or not you actually want to help \npc{K'borra} T'Rang, and
 proceed until you have to deliver a message to \npc{Rodan Lewarx}. (This is
 the most profitable way to start, coincidentally.)
 
@@ -3481,34 +3488,34 @@ in there.
 
 \faqentry{What should I do here?}
 
-Think of \place{New City} as a bigger version of the Starter Dungeon, except
-with stores and healing that you have to pay for, for now. Definitely save
-before entering a place, as there are a couple doors that hide very nasty
-encounters.
+Think of \place{New City} as a bigger version of the \place{Starter Dungeon},
+except with stores and healing that you have to pay for, for now. Definitely
+save before entering a place, as there are a couple doors that hide very
+nasty encounters.
 
 \faqentry{Hey! I can't pick or force some of these doors! How do I get
   in?}
 
 If you're referring to the \place{Umpani Detache} and the \place{T'Rshieches
   House}, you'll get in\ldots{}but from a different place. If you are
-referring to a certain always-jammed door near the Marina, buy a Knock-Knock
-scroll from \npc{Belcanzor} and have someone with at least 1 point in scribe
-use it on the door\ldots{}but save first. Either that or use a level 6
-Knock-Knock spell to open the door. Very useful treasure in the chest behind
-it, considering how early in the game it is.
+referring to a certain always-jammed door near the \place{Marina}, buy a
+\gameItem{Knock-Knock} scroll from \npc{Belcanzor} and have someone with at
+least 1 point in scribe use it on the door\ldots{}but save first. Either that
+or use a level 6 \spell{Knock-Knock} spell to open the door. Very useful treasure in
+the chest behind it, considering how early in the game it is.
 
-\faqentry{What's with the Wand Majestik in the \place{Curio Museum}? I stick
-  my hand in but I can't grab it! All I get is this weird stone when I leave
-  my hand in there and my leader gets diseased!}
+\faqentry{What's with the \gameItem{Wand Majestik} in the \place{Curio
+    Museum}? I stick my hand in but I can't grab it! All I get is this weird
+  stone when I leave my hand in there and my leader gets diseased!}
 
 \emph{Don't} stick your hand in there unless you have a way to cure your
-first character of disease. You can use \npc{Father Rulae} in the Abbey in the
-middle of \place{New City}, but you have to ``donate'' all your gold.  Better
-to wait until later when you can buy \spell{Cure Disease} potions in
-\place{Munkharama} or learn the spell yourself, as the Wand isn't going
-anywhere anyway.
+first character of disease. You can use \npc{Father Rulae} in the
+\place{Abbey} in the middle of \place{New City}, but you have to ``donate''
+all your gold.  Better to wait until later when you can buy \spell{Cure
+  Disease} potions in \place{Munkharama} or learn the spell yourself, as the
+Wand isn't going anywhere anyway.
 
-\faqentry{Can I use the boat \npc{Sogheim} has in the Marina?}
+\faqentry{Can I use the boat \npc{Sogheim} has in the \place{Marina}?}
 
 No, but you'll find a better one.
 
@@ -3527,8 +3534,8 @@ help \npc{Barlone} in the \place{Rattkin Ruins}' Funhouse with a favor. Maybe
   City}. Perhaps mentioning the place \npc{Barlone} mentioned will help jog his
 memory.
 
-\faqentry{What's the Book of Fables for? I managed to sneak past the Savant
-  Android guarding it with my fastest character.}
+\faqentry{What's the \gameItem{Book of Fables} for? I managed to sneak past
+  the \monster{Savant Android} guarding it with my fastest character.}
 
 It is for figuring out the witches names. Read it when you're in the
 \place{Witch Mountains}, and especially pay attention to the last parts.
@@ -3539,7 +3546,7 @@ You'll find out. Keep in mind when NPCs mention nouns like Officer or even a
 place, there is a possibility that saying those words can open a flood of
 useful info.
 
-\faqentry{I found a Black Wafer. What does it do?}
+\faqentry{I found a \gameItem{Black Wafer}. What does it do?}
 
 It's for the \place{Constabulary}. Think of ETX as Entrance. Don't use it in
 the \place{Forbidden Zone} however, unless you \textlcsc{want} to fight
@@ -3547,33 +3554,33 @@ the \place{Forbidden Zone} however, unless you \textlcsc{want} to fight
 
 \faqentry{How \emph{do} I get in the \place{Forbidden Zone}?}
 
-You walk in. \verb|:)| You mean inside the inside area? Get the Control
-Card from the \place{T'Rshieches House}\ldots{}but you'll need to have a chat
+You walk in. \verb|:)| You mean inside the inside area? Get the \gameItem{Control
+Card} from the \place{T'Rshieches House}\ldots{}but you'll need to have a chat
 with \npc{Shritis} before you can get a chance at the chest.
 
 \faqentry{How do I turn on the computers in the \place{Forbidden Zone}?}
 
-Use the Comm-Link Device from the \place{Umpani Detache}.
+Use the \gameItem{Comm-Link Device} from the \place{Umpani Detache}.
 
 \faqentry{What can I do with the computer? It wants me to login to some
   server.}
 
-Nose around \place{Nyctalinth} and wake up a few Savant Androids lying around
-Don't forget to nose around the \place{Observation Center} there for some
-other answers. This is where the information you got in those two places is
-used.
+Nose around \place{Nyctalinth} and wake up a few \monster{Savant Androids}
+lying around Don't forget to nose around the \place{Observation Center} there
+for some other answers. This is where the information you got in those two
+places is used.
 
-\faqentry{How do I open the Security Cell?}
+\faqentry{How do I open the \place{Security Cell}?}
 
 Whichever server you didn't use (or used but it didn't work) the first time,
 use it now.
 
-\faqentry{Nooo! This isn't fair!!! Why isn't the \qmwordqm{LEGEND} map in New
-  City?!?}
+\faqentry{Nooo! This isn't fair!!! Why isn't the \qmwordqm{LEGEND} map in \place{New
+  City}?!?}
 
 It tends to disappear \textlcsc{VERY} fast for some odd reason. Consequently,
-return the Holy Work to \npc{Xen Xheng} as soon as possible and go looking
-for \npc{Xen Xheng} after he leaves the dojo. (Locate Person scrolls
+return the \gameItem{Holy Work} to \npc{Xen Xheng} as soon as possible and go
+looking for \npc{Xen Xheng} after he leaves the dojo. (Locate Person scrolls
 \textlcsc{will} help).  Ask \npc{Xen Xheng} about ``5 Flowers'' and see what
 he says. Try to get the \qmwordqm{LEGEND} map now while it is early in the
 game after following the instructions he gives you. Seeing as \npc{Ratsputin}
@@ -3692,8 +3699,8 @@ takes the \qmwordqm{LEGEND} map before it switches hands.
 \end{itemize}
 \end{twocolumnitemize}
 
-\faqentry{How the heck do I get into the Throne Room? I haven't found a key
-  for the place!}
+\faqentry{How the heck do I get into the \place{Throne Room}? I haven't found
+  a key for the place!}
 
 You'll have to get into the Ape's room first and flip a switch. I hear apes
 like bananas\ldots{}but if you didn't bring one with you there are some in
@@ -3702,20 +3709,21 @@ the prison.
 \faqentry{How do I open the doors in the Prison then? Is there a switch
   somewhere to throw?}
 
-No, you have to get the Prison Keys from Murkatos' \place{Outer Sanctum}.
+No, you have to get the \gameItem{Prison Keys} from Murkatos' \place{Outer Sanctum}.
 
 \faqentry{\emph{Glares} OK, and how do I get in the \place{Outer Sanctum}?}
 
-You'll need a Polished Steelplate from below to reflect a beam of light into
-the gate. Funny, why does my \spell{Detect Secret} eye glow when I pass by
-that splot of blood in front?
+You'll need a \gameItem{Polished Steelplate} from below to reflect a beam of
+light into the gate. Funny, why does my \spell{Detect Secret} eye glow when I
+pass by that splot of blood in front?
 
-\faqentry{I found these Boney Combs and Brushes. When is it used?}
+\faqentry{I found these \gameItem{Boney Combs and Brushes}. When is it used?}
 
 Much, \textlcsc{much} later in the game. \place{Isle of Crypts} to be
 exact. Look for a hideous Gorn woman there.
 
-\faqentry{Hey! The chest in the Gorn King's room is empty! What gives?}
+\faqentry{Hey! The chest in the \place{Gorn King's room} is empty! What
+  gives?}
 
 It looks like someone beat you to the map that was here. Whenever you come
 across an empty chest or a chest that had waxy wrappings in it, that is where
@@ -3744,8 +3752,9 @@ addition to \spell{Air Pocket} include \spell{Purify Air} (because of
 \spell{Haste}, \spell{Magic Screen}, \spell{Armorplate}, and \spell{Enchanted
   Blade}.  The last three spells (if you have any of them) should be casted
 out of battle before you engage the \monster{Shadow Guardian}.  If you can
-summon help with Conjuration\fshyp{}Illusion\fshyp{}\spell{Create Life}, call
-some up the first turn as well With those spells under your belt, the
+summon help with
+\spell{Conjuration}\fshyp{}\spell{Illusion}\fshyp{}\spell{Create Life}, call
+some up the first turn as well. With those spells under your belt, the
 \monster{Shadow Guardian} shouldn't be too much of a problem.
 
 \faqentry{Aaack! All the sudden I'm silenced and 20--30 \monster{Spectral
@@ -3756,13 +3765,13 @@ this area, you'll immediately realize that you're too weak for this
 section. Come back later when your party can deal with all those blinking
 birds without spells, and you'll have a better chance.
 
-You will want to come back anyway---there's a key in the chest there that will
-unlock the gate to a Magic-restoring only fountain here; other contents of
-the chest includes the nifty Gem of Power, which can, when invoking it's
-special power, give a character the Power Strike Personal Skill at the cost
-of losing the Gem; you may want to use the Gem as a protective item instead
-for a while however---it grants a −2~AC bonus to the wearer which is a lot
-right now.
+You will want to come back anyway---there's a key in the chest there that
+will unlock the gate to a Magic-restoring only fountain here; other contents
+of the chest includes the nifty \gameItem{Gem of Power}, which can, when
+invoking it's special power, give a character the Power Strike Personal Skill
+at the cost of losing the Gem; you may want to use the Gem as a protective
+item instead for a while however---it grants a −2~AC bonus to the wearer
+which is a lot right now.
 
 If you want to fight them now though, bring lots of \race{Faerie} Dust to put them
 to sleep, and ready your \spell{Dispel Undead} and any bombs that you may
@@ -4113,7 +4122,7 @@ I have only managed to get \textlcsc{BLACK} \textlcsc{BLACK} \textlcsc{BLACK}
 right by the \nth{3} or \nth{4} try. As a reward however you get free cash,
 experience, and a secret door opens up in the SE room.
 
-\faqentry{What do I do at the \place{Land of Dreams}? The Palace Munk doesn't
+\faqentry{What do I do at the \place{Land of Dreams}? The \npc{Palace Munk} doesn't
   like my answers!}
 
 I hope you remembered to ask \npc{Brother Moser} about rumors if you've met
@@ -4154,7 +4163,7 @@ Locate an exit first. A\textlcsc{lways} locate an exit if you get dumped into
 the middle of nowhere---that way when you're half-dead you have a way out When
 you come out of the place, \textlcsc{save}, and clear a way back to
 \place{Munkharama}--\place{Munkharama} is going west on the path you will end
-up on After you have a way out that is cleared of fixed encounters (i.e.\
+up on. After you have a way out that is cleared of fixed encounters (i.e.\
 encounters that aren't random), go in back in and explore\ldots{}after you
 get healed.
 
@@ -4210,14 +4219,14 @@ no hope of getting the \qmwordqm{CRYPT} map before someone else, as it means
 that you are too low level to effectively kill him---by the time you're not,
 the map will be gone.
 
-\faqentry{What do I do with the Notched Shaft I found?}
+\faqentry{What do I do with the \gameItem{Notched Shaft} I found?}
 
 Look for what looks to be like a pressed button and use it there while facing
 it. It closes that pit that dropped you into the \monster{Frothing Munks} and
 \monster{Leper Giant}. Keep in mind that the pressed button is located in the
 same region (although not the same passageway) as the pit and ladder.
 
-\faqentry{I can't find the Holy Work!}
+\faqentry{I can't find the \gameItem{Holy Work}!}
 
 Remember what \npc{Brother TShober} said about the ``golden face.''
 
@@ -4234,14 +4243,15 @@ Oh dear. Yet another example of ``Come back later.'' If you're playing on
 expert mode you will \textlcsc{need} either \spell{Word of Death} on two
 characters (because 1 level 7 \spell{Word of Death} OR \spell{Nuclear Blast}
 won't send them back to the grave most of the time) or at least 3 characters
-with access to Silence or the Silent Lyre, or (for the power hungry)
-characters high level enough to shrug off Death and \spell{Fireball} spells.
-Then you have to hope that the characters with Silence don't get
-paralyzed. \spell{Nuclear Blast} tends to not work as well as \spell{Word of
-  Death} on undead. There's no way you can take more than 2 turns of spells
-from the \monster{Skeleton Lords} without getting someone clobbered to death,
-even with \spell{Magic Screen} up. If you can, you're lucky---Death and 6
-\spell{Fireball}s have a nasty effect on my party at this point.
+with access to \spell{Silence} or the \gameItem{Silent Lyre}, or (for the
+power hungry) characters high level enough to shrug off \spell{Death} and
+\spell{Fireball} spells.  Then you have to hope that the characters with
+\spell{Silence} don't get paralyzed. \spell{Nuclear Blast} tends to not work
+as well as \spell{Word of Death} on undead. There's no way you can take more
+than 2 turns of spells from the \monster{Skeleton Lords} without getting
+someone clobbered to death, even with \spell{Magic Screen} up. If you can,
+you're lucky---\spell{Death} and 6 \spell{Fireball}s have a nasty effect on
+my party at this point.
 
 \pagebreak\subsection{\place{Dionysceus}}\label{dionysceus}\nopagebreak
 %
@@ -4362,7 +4372,7 @@ even with \spell{Magic Screen} up. If you can, you're lucky---Death and 6
       \end{itemize}
 \end{twocolumnitemize}
 
-\faqentry{I can't make it through the Poppy Field to get here! Are you nuts?}
+\faqentry{I can't make it through the \place{Poppy Field} to get here! Are you nuts?}
 
 Do the Save\fshyp{}Restore method. Save each step \textlcsc{only} if at most
 1 person falls asleep. You only need to make it through the poppy field once
@@ -4370,9 +4380,9 @@ doing this tedious method. Then turn left at the intersection you will come
 across after the field. Now if you started near \place{Dionysceus}, you don't
 have to go through this. Don't forget to bring \spell{Watchbells},
 \spell{Cure Lesser Condition} spells and \spell{Cure Lesser Condition}
-potions to stay awake if necessary, and if you have the Deadman's Hair, equip
-it on someone (an elf character preferably, as elves already have hypnosis
-resistance and this will boost it).
+potions to stay awake if necessary, and if you have the \gameItem{Deadman's
+  Hair}, equip it on someone (an elf character preferably, as elves already
+have hypnosis resistance and this will boost it).
 
 Alternately, you can spin your party until they wake up.  Spinning counts as
 taking a step without actually taking a step, so you can move, spin the party
@@ -4384,24 +4394,25 @@ These guys are greedy little misers. What do misers love most?
 
 \faqentry{Aaack! I'm getting clobbered by traps!}
 
-Buy some Jonga Powder from \npc{Almagorte} if you can't take the traps. (I
-can't unless \place{Dionysceus} is the last area for me to tackle before
-trying to go to the \place{Dragon Mountains}.) On most of the levels there
-will be an urn like the one in that little 1$\times$1 arched area you saw
-right after entering the Temple of the Initiate. Use some Jonga Powder
-there. You'll need to buy Jonga Powder twice from \npc{Almagorte}. Save a use
-of Jonga Powder for after this Tower by the way. You'll need it.
+Buy some \gameItem{Jonga Powder} from \npc{Almagorte} if you can't take the
+traps. (I can't unless \place{Dionysceus} is the last area for me to tackle
+before trying to go to the \place{Dragon Mountains}.) On most of the levels
+there will be an urn like the one in that little 1$\times$1 arched area you
+saw right after entering the Temple of the Initiate. Use some \gameItem{Jonga
+  Powder} there. You'll need to buy \gameItem{Jonga Powder} twice from
+\npc{Almagorte}. Save a use of \gameItem{Jonga Powder} for after this Tower
+by the way. You'll need it.
 
-\faqentry{What are these little Golden Idols for?}
+\faqentry{What are these little \gameItem{Golden Idols} for?}
 
 For opening the gate to the next level of course. Each level has one, and you
 have to find the altar for it. Have fun looking.
 
-\faqentry{(Pick a level) of the Dane Tower is too hard!}
+\faqentry{(Pick a level) of the \place{Dane Tower} is too hard!}
 
 Then come back later when you're stronger. However, it is possible on expert
-mode for a party created from level one characters to get to the Temple of
-Wanderers after clearing out the Starter Dungeon and \place{New City}, so
+mode for a party created from level one characters to get to the \place{Temple of
+Wanderers} after clearing out the \place{Starter Dungeon} and \place{New City}, so
 don't worry \textlcsc{too} much if a fight seems too hard.
 
 \faqentry{What do I do on the \place{Temple of Divine Order}?}
@@ -4438,19 +4449,19 @@ get better resistance to mental stuff.
 
 \faqentry{Where is my money going? It seems to be disappearing!}
 
-Just so you know, when Tollen Dane comes out to congratulate your rank,
+Just so you know, when \npc{Tollen Dane} comes out to congratulate your rank,
 you're also paying fees. The most expensive up at the top is 10,000 gold!
 Meaning, if you can't pay up, come back later when you can.
 
 \faqentry{What is with the \place{Temple of Aerial Whimsey}?}
 
-It's a teleporter maze. Happy mapping---those teleporters aren't going to show
-up. After a while the places you get sent to will look familiar Also, turn on
-the \spell{Direction} spell (or look at your Journey Map Kit) as there is a
-spinner teleporter as well. There are also two teleporters here that will
-send you back to the \place{Temple of Eternal Night}, which can be a blessing
-or a pain depending on whether you need a couple of drinks at the fountain or
-not.
+It's a teleporter maze. Happy mapping---those teleporters aren't going to
+show up. After a while the places you get sent to will look familiar Also,
+turn on the \spell{Direction} spell (or look at your \gameItem{Journey Map
+  Kit}) as there is a spinner teleporter as well. There are also two
+teleporters here that will send you back to the \place{Temple of Eternal
+  Night}, which can be a blessing or a pain depending on whether you need a
+couple of drinks at the fountain or not.
 
 \faqentry{Who's the girl in the vision?}
 
@@ -4479,9 +4490,10 @@ probably took it first.
 
 In this area, you have to see what new areas open up when you step in an
 alcove. That means you're going to have to step in \emph{every} alcove and
-check your Journey Map Kit to see if new areas opened up, and if your mapping
-skill is below 30 here, you're going to be in big trouble. Keep in mind that
-when I say alcove, I mean a 1$\times$1 room that only has one way in and out.
+check your \gameItem{Journey Map Kit} to see if new areas opened up, and if
+your mapping skill is below 30 here, you're going to be in big trouble. Keep
+in mind that when I say alcove, I mean a 1$\times$1 room that only has one
+way in and out.
 
 \faqentry{What's the buzzing sensation I'm getting?}
 
@@ -4530,20 +4542,21 @@ Come back later. It is easier when everyone has at least a Dexterity of 16
 After the fight, don't forget to search the area for any extra
 booty. \emph{hint} \emph{hint}
 
-\faqentry{Ack! The Ring of Demons is killing me when I put it on!}
+\faqentry{Ack! The \gameItem{Ring of Demons} is killing me when I put it on!}
 
 \emph{Don't} put it on anyone that doesn't already have a Regen~+1 or a
 Regen~+2 item equipped. That being said, if you have a \race{Faerie} and got
-the \race{Faerie} Cap from the chest in the \place{Temple of Deadly Coffers},
-or the one with the Chrome Key in the \place{Temple of Wanderers}, it is safe
-to put it on him or her---the \race{Faerie} will just lose the HP regen bonus
-because it cancels out. As a note about negative Regen items, the game
-appears to take the highest regeneration bonus out of all the items you have,
-and add the lowest negative regeneration penalty of the items you have to it,
-to get an end result. That means that if you have a Ring of Demons and both
-Gowns of Divine Mail on the same character, that character ends up with no
-regeneration bonus, \textlcsc{NOT} a Regen~+2 bonus. So that Regen~+1 item
-allows you to have as many −1 regen items equipped as you want.
+the \gameItem{Faerie Cap} from the chest in the \place{Temple of Deadly
+  Coffers}, or the one with the \gameItem{Chrome Key} in the \place{Temple of
+  Wanderers}, it is safe to put it on him or her---the \race{Faerie} will
+just lose the HP regen bonus because it cancels out. As a note about negative
+Regen items, the game appears to take the highest regeneration bonus out of
+all the items you have, and add the lowest negative regeneration penalty of
+the items you have to it, to get an end result. That means that if you have a
+\gameItem{Ring of Demons} and both \gameItem{Gowns of Divine Mail} on the
+same character, that character ends up with no regeneration bonus,
+\textlcsc{NOT} a Regen~+2 bonus. So that Regen~+1 item allows you to have as
+many −1 regen items equipped as you want.
 
 \faqentry{How do I open the demon-head gate?}
 
@@ -4557,7 +4570,7 @@ secret button right?
 
 \faqentry{What do I do with what's inside?}%
 
-Whatever you want. You need the Coil for later though.\goodbreak
+Whatever you want. You need the \gameItem{Coil} for later though.\goodbreak
 
 \pagebreak\subsection{\place{Ukpyr}}\label{ukpyr}\nopagebreak%
 %
@@ -4598,16 +4611,16 @@ One of the following might have happened:
   situation by Trucing with other Umpani NPCs and making them happy.
 \end{itemize}
 
-Either way, find an Umpani NPC (\npc{Rossarian} in the Arms of Argus at
-\place{New City} is ideal) and Truce until the NPC is willing to trade with
-you.  If you're using Wizardry Gold however, you're out of luck due to the
-bug with diplomacy (bug being that it just simply doesn't work\ldots{}at
+Either way, find an Umpani NPC (\npc{Rossarian} in the \place{Arms of Argus}
+at \place{New City} is ideal) and Truce until the NPC is willing to trade
+with you.  If you're using Wizardry Gold however, you're out of luck due to
+the bug with diplomacy (bug being that it just simply doesn't work\ldots{}at
 all).
 
 \faqentry{Should I join the Umpani?}
 
 Definitely---even if you hate them. You can betray them for the T'Rang by
-helping K'Borra and lying about his presence near \place{Ukpyr} to the Umpani
+helping \npc{K'borra} and lying about his presence near \place{Ukpyr} to the Umpani
 if you hate the Umpani. Keep in mind that here is a great way to make
 money---especially if you need it to pay off the Danes for going up in their
 tower. You need at least 8000 gold for an outfitting however or you won't get
@@ -4619,21 +4632,21 @@ It's a teleportation device. It will transport you to the \place{Umpani
   Detache} in \place{New City} and is used for your (more profitable)
 mission.
 
-\faqentry{Should I help K'borra and the T'Rangs?}
+\faqentry{Should I help \npc{K'borra} and the T'Rangs?}
 
 Again, it is totally up to you. You may want to know that I've yet to get any
-compensation from K'borra, although it may involve me finding him
+compensation from \npc{K'borra}, although it may involve me finding him
 again. Supposedly though, you need to talk to \npc{Shritis} to get your
 reward.
 
-\faqentry{Where exactly is information K'borra wants?}
+\faqentry{Where exactly is information \npc{K'borra} wants?}
 
-It's in the \place{Spaceport Authority}. If you're going to help K'borra,
+It's in the \place{Spaceport Authority}. If you're going to help \npc{K'borra},
 don't tell \npc{Sgt.~Balbrak} that you found T'Rangs! After you talk to
 \npc{General Yamo}, you'll be able to go into the \place{Spaceport Authority}
 without problems.
 
-\faqentry{I'm giving K'borra the information he wants, but he's calling me a
+\faqentry{I'm giving \npc{K'borra} the information he wants, but he's calling me a
   traitor! Why?}
 
 Don't put a space between the ‘+’ and the rest of the coordinates. The only
@@ -4721,9 +4734,9 @@ around no matter where you go.
 \faqentry{What do I do after all the \monsterB{Man~O'~Grove}{Man O' Grove} fights?}
 
 You see that little square that isn't grass in the middle of all the
-1$\times$1 pillars? Use the Bonsai Tree you got from Murkatos' \place{Inner
-  Sanctum} on it. It doesn't matter what you answer when you get asked a
-question by the tree.
+1$\times$1 pillars? Use the \gameItem{Bonsai Tree} you got from Murkatos'
+\place{Inner Sanctum} on it. It doesn't matter what you answer when you get
+asked a question by the tree.
 
 \faqentry{How exactly did that help me get in?}
 
@@ -4732,10 +4745,10 @@ should be in an area next to city walls.
 
 \faqentry{Why couldn't I have gone here in the first place?}
 
-Because if you did go here before using the Bonsai Tree in that Grove, the
-tree wouldn't let you up.
+Because if you did go here before using the \gameItem{Bonsai Tree} in that
+Grove, the tree wouldn't let you up.
 
-\faqentry{I can't get in Ratskells!}
+\faqentry{I can't get in \place{Ratskells}!}
 
 Steal from a blind rat NPC outside. Check your inventory before and after you
 meet him---you might get something stolen along the way! I've had key items
@@ -4748,27 +4761,29 @@ Ask \npc{Blienmeis} about ``Funhouse''. Oh, and have 1000 gold before you do.
 
 \faqentry{What do I do in the Funhouse?}
 
-You're going to be setting up a lot of things. You \textlcsc{need} a Detect
-Secret or a good amount of scouting skill in here---especially after going
-downstairs---or you won't be able to find the necessary items needed to set up
-the place. You need various items found throughout the Funhouse and a Feather
-Weight potion from Birdie's store. Don't forget the Black Pyramid and the
-Wooden Dowel from upstairs! After you've set everything up, save, use the
-Feather Weight potion (but on the main screen!) and set things off.
+You're going to be setting up a lot of things. You \textlcsc{need} a
+\spell{Detect Secret} or a good amount of scouting skill in here---especially
+after going downstairs---or you won't be able to find the necessary items
+needed to set up the place. You need various items found throughout the
+Funhouse and a \gameItem{Feather Weight} potion from Birdie's store. Don't
+forget the \gameItem{Black Pyramid} and the \gameItem{Wooden Dowel} from
+upstairs! After you've set everything up, save, use the \gameItem{Feather
+  Weight} potion (but on the main screen!) and set things off.
 
 \faqentry{What does \npc{Barlone} want?}
 
 Give him a time of the next T'Rang ship to leave\fshyp{}come. You should find
-the information in the \place{Landing Port} (in the form of the T'Rang
-Logbook) and the \place{Observation Control Center} (in the form of the
-TX-Coder) in \place{Nyctalinth} Use the Coder on the Logbook while you're in
-the full-screen view of your inventory to read it. You're advised to go to
-\place{Nyctalinth} at this point---the information \npc{Barlone} gives you
-will give you access to the \qmwordqm{DRAGON} map in \place{Old City}, but
-the \qmwordqm{DRAGON} map is one of the maps that tends to get taken away
-real fast---hence the need for haste. The \qmwordqm{BOAT} map in the Funhouse
-however doesn't go away for a while in comparison to the \qmwordqm{DRAGON}
-map but it \textlcsc{DOES} go away if you dawdle too long.
+the information in the \place{Landing Port} (in the form of the
+\gameItem{T'Rang Logbook}) and the \place{Observation Control Center} (in the
+form of the \gameItem{TX-Coder}) in \place{Nyctalinth} Use the Coder on the
+Logbook while you're in the full-screen view of your inventory to read
+it. You're advised to go to \place{Nyctalinth} at this point---the
+information \npc{Barlone} gives you will give you access to the
+\qmwordqm{DRAGON} map in \place{Old City}, but the \qmwordqm{DRAGON} map is
+one of the maps that tends to get taken away real fast---hence the need for
+haste. The \qmwordqm{BOAT} map in the Funhouse however doesn't go away for a
+while in comparison to the \qmwordqm{DRAGON} map but it \textlcsc{DOES} go
+away if you dawdle too long.
 
 \faqentry{What's the ``another favor'' \npc{Barlone} mentions?}
 
@@ -4791,8 +4806,8 @@ everything you need. Hope you have \spell{Levitate} handy.
 
 \faqentry{What do I do at the target?}
 
-Throw the Speckled White Ball at it of course. Look for some ``cascading
-troughs'' as the game calls it and jump in to find said ball.
+Throw the \gameItem{Speckled White Ball} at it of course. Look for some
+``cascading troughs'' as the game calls it and jump in to find said ball.
 
 \faqentry{What's with this rack of spears?}
 
@@ -4829,11 +4844,11 @@ Why? Because someone got here before you and nabbed the \qmwordqm{DRAGON} map!
     then?}}\footnotetext{Continuation of previous question.}
 
 Not really. There's some useful random loot in here too---especially what is
-probably your first Ankh. Most Ankhs can raise either Strength, Vitality,
-Dexterity, Piety, or Speed, depending on what type of Ankh it is. There are
-other Ankhs that do other things, but most of the ones that you run across
-will be the stat-raising kind. If you already knew what to do to get in
-however, you can go in here as early as after \place{Orkogre Castle}.
+probably your first \gameItem{Ankh}. Most Ankhs can raise either Strength,
+Vitality, Dexterity, Piety, or Speed, depending on what type of Ankh it
+is. There are other Ankhs that do other things, but most of the ones that you
+run across will be the stat-raising kind. If you already knew what to do to
+get in however, you can go in here as early as after \place{Orkogre Castle}.
 
 \pagebreak\subsection{\place{Nyctalinth}}\label{nyctalinth}\nopagebreak
 %
@@ -4889,19 +4904,20 @@ the Northwest area in the \place{High Chamber} though, since you asked.
 
 It depends on if you hate the Umpani or not. Be warned that if you say yes,
 \npc{Shritis} will constantly ask you (not to mention hunt you down) if
-you've killed Rodan or not until you kill Rodan and keep his Golden Medallion
-to present to \npc{Shritis}, or until he gets immensely ticked off at you and
-attacks you every time he sees you.
+you've killed \npc{Rodan} or not until you kill \npc{Rodan} and keep his
+\gameItem{Golden Medallion} to present to \npc{Shritis}, or until he gets
+immensely ticked off at you and attacks you every time he sees you.
 
 If you really want to kill \npc{Rodan Lewarx} however, he's not \emph{too}
 hard, for an NPC---use \spell{Missile Shield} to stop the bullets he shoots
 at you most of the time.  It's those irritating \class{Alchemist}-type spells
 he and his reinforcements may have that will get you.  Also, as a word of
 warning, they get an increased chance of a critical hit with \textlcsc{all}
-missile weapons, including Blunderbusses and Muskets.  Of course, if you say
-no to \npc{Shritis} you're going to have to tread lightly every time you see
-him---he'll be cranky when he sees you again, but at least he won't be trying
-to hunt you down unless you kill T'Rang NPCs (including K'borra).
+missile weapons, including \gameItem{Blunderbusses} and \gameItem{Muskets}.
+Of course, if you say no to \npc{Shritis} you're going to have to tread
+lightly every time you see him---he'll be cranky when he sees you again, but
+at least he won't be trying to hunt you down unless you kill T'Rang NPCs
+(including \npc{K'borra}).
 
 \faqentry{Should I go back to \place{Nyctalinth} after talking to
   \npc{Shritis} instead of going into \place{New City}?}
@@ -4910,50 +4926,51 @@ Yes, unless you got the information from \npc{Barlone} already---if you did you
 should head for Professor Wunderland and the entrance to \place{Old City} to
 get the \qmwordqm{DRAGON} map quickly before someone steals it.
 
-\faqentry{Why don't these Finger Rods work on the \place{Breeding Grounds}
-  door?}
+\faqentry{Why don't these \gameItem{Finger Rods} work on the \place{Breeding
+    Grounds} door?}
 
-Because they're for the Tactical Depot. The one for the \place{Breeding
+Because they're for the \place{Tactical Depot}. The one for the \place{Breeding
   Grounds} can be found in the \place{High Chamber} on a T'Rang who is
 cooking gruel.
 
-\faqentry{What is the Mystery Ray for?}
+\faqentry{What is the \gameItem{Mystery Ray} for?}
 
-You will use it on any Savant Androids you may find---especially the sleeping
-ones in the T'Rang larder in the \place{High Chamber}. Use it as an item when
-it prompts you with the Use, Talk, and Leave buttons. You can \emph{also} use
-the Mystery Ray to hurt \emph{any} Savant Androids you run across---including
-those nasty \monster{Savant Kui'sa-ka} near the end of the game and those Savant
-Berserkers you wake up.
+You will use it on any \monster{Savant Androids} you may find---especially
+the sleeping ones in the T'Rang larder in the \place{High Chamber}. Use it as
+an item when it prompts you with the Use, Talk, and Leave buttons. You can
+\emph{also} use the \gameItem{Mystery Ray} to hurt \emph{any} \monster{Savant
+  Androids} you run across---including those nasty \monster{Savant Kui'sa-ka}
+near the end of the game and those \monster{Savant Berserkers} you wake up.
 
-\faqentry{Is the information that the Savant Berserker spoke and the stuff
-  that flashed on the computer screen in the \place{Observation Center}
-  important?}
+\faqentry{Is the information that the \monster{Savant Berserker} spoke and
+  the stuff that flashed on the computer screen in the \place{Observation
+    Center} important?}
 
 You betcha. Take a walk into the \place{Forbidden Zone} after you're bored of
-\place{Nyctalinth}. Make sure you have the Comm-Link Device from the Umpani
-Detache first though. BTW, if you helping \npc{Barlone}, I hope you remembered to
-look for the TX-Coder in the \place{Observation Center}. Otherwise you won't be able
-to read the logbook. Told you to build up scouting!
+\place{Nyctalinth}. Make sure you have the \gameItem{Comm-Link Device} from
+the Umpani Detache first though. BTW, if you helping \npc{Barlone}, I hope
+you remembered to look for the \gameItem{TX-Coder} in the \place{Observation
+  Center}. Otherwise you won't be able to read the logbook. Told you to build
+up scouting!
 
-\faqentry{What do I do in the Graveyard? All I see are lots of graves, a
-  building, and two alcoves with a psycho ghost who steals a jeweled staff
-  before I can grab it.}
+\faqentry{What do I do in the \place{Graveyard}? All I see are lots of
+  graves, a building, and two alcoves with a psycho ghost who steals a
+  jeweled staff before I can grab it.}
 
-Well, you \textlcsc{have} to do three things: You have to grab the Longstem
-Spade in the chest in the building here---it's going to be your shovel and
-you're going grave robbing! \verb|:)| You also have to dig out the grave of
-Notera Furmi (Not Firm) to get out of here. Lastly, you have to get the
-\qmwordqm{SERPENT} map from the Tomb of Vilet Kanebe behind the energy
-barrier, and that means getting that Crux of Crossing away from the crazy
-ghost and equipping the cursed (literally) staff on someone while going
-through the barrier---both in and out. That also means that you're going to be
-in the graveyard at least twice---you need a little idol called the ``Tydnab
-Emyt''\footnote{Time Bandit backwards with y's for i's} which can only be
-found in the middle area of \place{Nyctalinth}--if you took out your Journey
-Map kit and looked at that big black spot in the middle of the map, you'd
-find it somewhere in the middle of that. Unfortunately you have to go through
-the graveyard to get there.
+Well, you \textlcsc{have} to do three things: You have to grab the
+\gameItem{Longstem Spade} in the chest in the building here---it's going to
+be your shovel and you're going grave robbing! \verb|:)| You also have to dig
+out the grave of Notera Furmi (Not Firm) to get out of here. Lastly, you have
+to get the \qmwordqm{SERPENT} map from the Tomb of Vilet Kanebe behind the
+energy barrier, and that means getting that \gameItem{Crux of Crossing} away
+from the crazy ghost and equipping the cursed (literally) staff on someone
+while going through the barrier---both in and out. That also means that
+you're going to be in the graveyard at least twice---you need a little idol
+called the ``\gameItem{Tydnab Emyt}''\footnote{Time Bandit backwards with y's for i's}
+which can only be found in the middle area of \place{Nyctalinth}--if you took
+out your Journey Map kit and looked at that big black spot in the middle of
+the map, you'd find it somewhere in the middle of that. Unfortunately you
+have to go through the graveyard to get there.
 
 \faqentry{Help! I've fallen and can't get up!}
 
@@ -4968,22 +4985,22 @@ you feel like; you stepped in every square so that you don't have to
 The Gas Pocket Rooms also signify one of the two ways out---the Eastern Gas
 Pocket room has a path that leads directly to the middle area of
 \place{Nyctalinth}, and the Western Gas Pocket room leads to another exit
-that is blocked by T'Rang eggs---you need a Thermal Pineapple to get out this
-way, and if you have that you should know that one heck of a fight is on your
-way out if you choose to go out that way\ldots{}and you can't avoid it if you
-insist on using this route as the way out.
+that is blocked by T'Rang eggs---you need a \gameItem{Thermal Pineapple} to
+get out this way, and if you have that you should know that one heck of a
+fight is on your way out if you choose to go out that way\ldots{}and you
+can't avoid it if you insist on using this route as the way out.
 
 \faqentry{I'm in the middle area now. So where exactly is the Tydnab Emyt?}
 
-It's beneath a statue of Phoonzang. (What a surprise\ldots{}) Use the Spade
-to dig it up after you deal with the undead waiting in ambush where the
-statue is.
+It's beneath a statue of Phoonzang. (What a surprise\ldots{}) Use the
+\gameItem{Spade} to dig it up after you deal with the undead waiting in
+ambush where the statue is.
 
-\faqentry{So how exactly do I get the Crux of Crossing?}
+\faqentry{So how exactly do I get the \gameItem{Crux of Crossing}?}
 
 Go into either alcove. It doesn't matter if the staff is in it or
 not, or even if you already saw the ghost take it. Then just use the
-Tydnab Emyt and watch.
+\gameItem{Tydnab Emyt} and watch.
 
 \faqentry{Hey! I thought you said the \qmwordqm{SERPENT} map is here! I'm
   just getting waxy wrappings again!}
@@ -4996,14 +5013,14 @@ it however, I can't take a guess as to who took it first.
 
 \faqentry{\npc{H'Jenn-Ra} is killing my party! How do I deal with him?}
 
-I guess you had a Pineapple after all. I won't lie to you---if your party is
-not faster than \npc{H'Jenn-Ra}'s party, you're screwed unless you're on
-easy mode, where there's a chance she'll appear by herself, or you're much
-higher level, where most of their stuff has a reduced chance of working on
-you. You will need the full gamut of protective and enhancement spells to
-kill her otherwise, including \spell{Air Pocket} but not Fire or \spell{Ice
-  Shield} unless she has company. On Expert mode, you need at least 2
-characters that can cast mass target spells like \spell{Nuclear Blast} or
+I guess you had a \gameItem{Pineapple} after all. I won't lie to you---if
+your party is not faster than \npc{H'Jenn-Ra}'s party, you're screwed unless
+you're on easy mode, where there's a chance she'll appear by herself, or
+you're much higher level, where most of their stuff has a reduced chance of
+working on you. You will need the full gamut of protective and enhancement
+spells to kill her otherwise, including \spell{Air Pocket} but not Fire or
+\spell{Ice Shield} unless she has company. On Expert mode, you need at least
+2 characters that can cast mass target spells like \spell{Nuclear Blast} or
 \spell{Word of Death} to kill off all the reinforcement T'Rang or the
 Assassins and Elders will lay waste to you. Fire spells tend to be more
 effective on the T'Rang. Good luck!
@@ -5034,17 +5051,17 @@ friendly terms with the Helazoid.
 
 \faqentry{What do I do here?}
 
-Well, if you've returned the Holy Work to \npc{Xen Xheng} and joined his school of
-5 Flowers, you can start collecting the flowers for one. If you haven't read
-the Book of Fables from \place{New City} yet, take it out and read it now,
-and remind yourself about when the witches meet. This next part doesn't seem
-to be hinted anywhere in the game---you have to high-tail it to the
-\place{Giant Cave}. That means you're going to be looking for a path
-\textlcsc{DOWN}, so you're going to look for a cliff where if you take
-another step, you fall into the air. Make a mental note of a place where you
-can climb up if you find it first---you will go there later. If you end up
-near a river, you're in the wrong direction---you're on the \place{Eryn River}
-right now, which you've been to before.
+Well, if you've returned the \gameItem{Holy Work} to \npc{Xen Xheng} and
+joined his school of 5 Flowers, you can start collecting the flowers for
+one. If you haven't read the \gameItem{Book of Fables} from \place{New City}
+yet, take it out and read it now, and remind yourself about when the witches
+meet. This next part doesn't seem to be hinted anywhere in the game---you
+have to high-tail it to the \place{Giant Cave}. That means you're going to be
+looking for a path \textlcsc{DOWN}, so you're going to look for a cliff where
+if you take another step, you fall into the air. Make a mental note of a
+place where you can climb up if you find it first---you will go there
+later. If you end up near a river, you're in the wrong direction---you're on
+the \place{Eryn River} right now, which you've been to before.
 
 \faqentry{So what's up the path that you told me not to go up right now?}
 
@@ -5099,17 +5116,18 @@ able to take a couple more hits.
 
 \faqentry{Anything special here?}
 
-Yes. \WviiSPOT{} has the Necromantic Helm somewhere in his lair.  Look for
-it; it's the witching glass mentioned in the Book of Fables.  Also, the Red
-Rosis is in the underground river. If you can swim four or more steps (and
-have a mass target spell) go to the nearest access to the underground river
-east of the entrance to the giant caves and swim south to that little
-chokepoint of water (where you fight a lot of fishes---hence the need for the
-mass target spell)---the Red Rosis should be on that little piece of dry land
-right next to you to your west. The alternate (and slower way) is to take the
-far eastern entrance to the water and swim to another region of the caves
-that will wrap around the bottom area and stick you near the Red
-Rosis\ldots{}after a couple fights.
+Yes. \WviiSPOT{} has the \gameItem{Necromantic Helm} somewhere in his lair.
+Look for it; it's the witching glass mentioned in the \gameItem{Book of
+  Fables}.  Also, the \gameItem{Red Rosis} is in the underground river. If
+you can swim four or more steps (and have a mass target spell) go to the
+nearest access to the underground river east of the entrance to the giant
+caves and swim south to that little chokepoint of water (where you fight a
+lot of fishes---hence the need for the mass target spell)---the \gameItem{Red
+  Rosis} should be on that little piece of dry land right next to you to your
+west. The alternate (and slower way) is to take the far eastern entrance to
+the water and swim to another region of the caves that will wrap around the
+bottom area and stick you near the \gameItem{Red Rosis}\ldots{}after a couple
+fights.
 
 There's also a chest in the extreme south area\ldots{}but you'll need either
 Stamina Potions or lots of Water mana for Stamina and Restfull to get to it.
@@ -5139,12 +5157,12 @@ down into from the tall cliff.
   made-up name?}
 
 You'll find out the names of the four witches here. Remember the witching
-hour comment from the Book of Fables? That's right---you need to explore
-around at night. If you find the area here that gives your characters the
-chill, stay out of the clearing, rest until night, and then go back in with
-the Necromantic Helm equipped. Too bad nothing seems to really hint that the
-Necromantic Helm is the ``witching glass''. You can also find the White
-Dahlia in this area.
+hour comment from the \gameItem{Book of Fables}? That's right---you need to
+explore around at night. If you find the area here that gives your characters
+the chill, stay out of the clearing, rest until night, and then go back in
+with the \gameItem{Necromantic Helm} equipped. Too bad nothing seems to
+really hint that the Necromantic Helm is the ``witching glass''. You can also
+find the \gameItem{White Dahlia} in this area.
 
 \pagebreak\subsection{\place{Witch Cave}}\label{witch-cave}\nopagebreak
 %
@@ -5237,11 +5255,12 @@ snooping around all the sidepaths and the main path.
 
 \faqentry{What do I do here?}
 
-Read that handy \qmwordqm{SPHINX} map you just got. The Rebus Egge that you
-got from attempting to get the Wand Majestik in \place{New City} is used
-here---you \textlcsc{DID} assay\fshyp{}identify it eventually to find out what
-it was to tell it apart from other stones right? It's the ``seed'' the map
-refers to. You're going to need to swim at most 3 to 4 spaces by the way.
+Read that handy \qmwordqm{SPHINX} map you just got. The \gameItem{Rebus Egge}
+that you got from attempting to get the \gameItem{Wand Majestik} in
+\place{New City} is used here---you \textlcsc{DID} assay\fshyp{}identify it
+eventually to find out what it was to tell it apart from other stones right?
+It's the ``seed'' the map refers to. You're going to need to swim at most 3
+to 4 spaces by the way.
 
 \faqentry{What do I do at the slugs in the floor?}
 
@@ -5300,20 +5319,21 @@ special with them\ldots{}and yes, you have to go in the pillars eventually.
 \faqentry{I found this picture of the Sphinx on one of the walls. Anything
   special?}
 
-Use the Wand Majestik on it. If you're a Greek Mythology buff (or at least
-have been paying attention when the Sphinx was talking before!)  you'll know
-the question she refers to, but you don't have to get the question right.
+Use the \gameItem{Wand Majestik} on it. If you're a Greek Mythology buff (or
+at least have been paying attention when the \npc{Sphinx} was talking
+before!)  you'll know the question she refers to, but you don't have to get
+the question right.
 
 \faqentry{Waaa! That's a lot of booby traps!}
 
 Yep. Save often. You're looking for secret buttons and levers. You're also
-looking for a gold urn to burn that extra use of Jonga Powder.  Aren't those
-traps nasty? If you want an (easier) time getting to the urn, after you get
-to the area with fountains go east (turn left that is) and hug the left wall
-until you get to all the little alcoves, then hug the right wall, ignoring
-any alcoves for the moment. You'll only run into a few fixed encounters for
-the first half of the way and get smacked by Evilspeak once or twice along
-the second half.
+looking for a gold urn to burn that extra use of \gameItem{Jonga Powder}.
+Aren't those traps nasty? If you want an (easier) time getting to the urn,
+after you get to the area with fountains go east (turn left that is) and hug
+the left wall until you get to all the little alcoves, then hug the right
+wall, ignoring any alcoves for the moment. You'll only run into a few fixed
+encounters for the first half of the way and get smacked by Evilspeak once or
+twice along the second half.
 
 \faqentry{What the hell? Why are my characters stoned (or various other nasty
   effects) after drinking? I thought fountains were beneficial?}
@@ -5322,17 +5342,18 @@ Not all of them. S\textlcsc{ave} before trying one. Heck, most of them here are
 booby traps---I can only think of two fountains on this level that aren't
 completely bad.
 
-\faqentry{OK, so I've burned the Jonga Powder and turned off the nasty traps.
-  What now?}
+\faqentry{OK, so I've burned the \gameItem{Jonga Powder} and turned off the
+  nasty traps.  What now?}
 
 Explore of course. There's at least 1 nice treasure chest in here that you
 can get no matter what keys you have. The best item you can get in said chest
-is a Dragon Kite---a shield for \class{Valkyrie}s, \class{Fighter}s, and
-\class{Lord}s that reduces their armor class by 4. That's if you have them
-and need one however. Otherwise, a Faery Cap if you missed it before (or
-Chamail items) is the \nth{2} best. Most of the other stuff is overshadowed by
-better loot elsewhere. Bt the way, search all the Gorn Noblemen you can find,
-but save before doing so!
+is a \gameItem{Dragon Kite}---a shield for \class{Valkyrie}s,
+\class{Fighter}s, and \class{Lord}s that reduces their armor class by
+4. That's if you have them and need one however. Otherwise, a \gameItem{Faery
+  Cap} if you missed it before (or Chamail items) is the \nth{2} best. Most
+of the other stuff is overshadowed by better loot elsewhere. Bt the way,
+search all the \monster{Gorn Noblemen} you can find, but save before doing
+so!
 
 \pagebreak\subsection{\place{Dragon Mountains}}\label{dragon-mountains}\nopagebreak%
 %
@@ -5363,19 +5384,19 @@ hit something unusual\ldots{} (Minor note: You're looking for fog!)
   here!}
 
 Come here at night, then take a peek at the \qmwordqm{SERPENT} map. You're
-going to need something from the Dane Tower here you know\ldots{}
+going to need something from the \place{Dane Tower} here you know\ldots{}
 
-\faqentry{Uh oh. Brombadeg's tough!}
+\faqentry{Uh oh. \npc{Brombadeg}'s tough!}
 
 No kidding. \verb|:)| Well OK, he's not \textlcsc{that} hard. Silence seems
 to stop the ``cast enchantment'' thing he does, but I'm not going to
-guarantee it Treat him like any other unique monster though and you'll be
+guarantee it. Treat him like any other unique monster though and you'll be
 fine.
 
 \faqentry{Geez---this place is huge! What do I do?}
 
 Read the \qmwordqm{DRAGON} map for hints of course. And watch out for
-cave-ins Have fun exploring and watch out for the tightwad! (Well, you have
+cave-ins. Have fun exploring and watch out for the tightwad! (Well, you have
 to find the tightwad anyway.)
 
 \faqentry{A cave-in just occurred! How do I get out?}
@@ -5385,7 +5406,7 @@ cave-ins have an alternate way out, although at least one of those ways
 requires you to have lots of swimming if you want to make it back to the
 boat.
 
-\faqentry{Where do I use the Key of the Dragon?}
+\faqentry{Where do I use the \gameItem{Key of the Dragon}?}
 
 Remember the gate with the black dragon on it in the \place{Isle of Crypts}?
 
@@ -5424,56 +5445,57 @@ and whether enemy monsters will resist your attacks or not.
 
 If you're too lazy though, look at John Needham's FAQ at GameFAQs (if the
 site you're using for FAQs lacks it) for directions on how to get to
-\npc{Dame Ke-Li}---if you don't have a Credit Card you have to go there
-first---and then you probably want to buy some of her fun supply of items as
-well.
+\npc{Dame Ke-Li}---if you don't have a \gameItem{Credit Card} you have to go
+there first---and then you probably want to buy some of her fun supply of
+items as well.
 
 \faqentry{Insert one credit? Where do I get a credit?}
 
 It's referring to credit cards. Surely the Helazoids you've bumped
 into dropped one or two? If not, look around for \npc{Dame Ke-Li} here---she
-sells Credit Cards for 100 gold.
+sells \gameItem{Credit Card}s for 100 gold.
 
-\faqentry{How do I get into the Storage Facility?}
+\faqentry{How do I get into the \place{Storage Facility}?}
 
-The Storage Key for the Storage Facility is in the \place{Hall of
-  Preservation}.
+The \gameItem{Storage Key} for the \place{Storage Facility} is in the
+\place{Hall of Preservation}.
 
 \faqentry{What about that gazebo with the glowing key? There are invisible
   walls around it.}
 
-You need to get into the Storage Facility first. Then go into an alcove on
-your way out (through the other side---there are two exits in the Storage
-Facility).
+You need to get into the \place{Storage Facility} first. Then go into an
+alcove on your way out (through the other side---there are two exits in the
+\place{Storage Facility}).
 
-\faqentry{What is the Key of Light used for?}
+\faqentry{What is the \gameItem{Key of Light} used for?}
 
 Remember those \textlcsc{really} nice looking weapons in the \place{Hall of
   Preservation}?
 
 \faqentry{So which one should I pick then?}
 
-Like all choices, it is up to you. The Frontier Phasers and the Cobaltine
-Power Glove require Powerpaks for use however. If you've imported your party
-from Bane of the Cosmic Forge, you probably have the Diamond Ring which can
-open another one. The Light Sword and the Power Glove get bonuses when
-fighting against robots like the Battle Droid (but not against Savant
-Androids). Be warned that when you use the Diamond Ring to grab an item, the
-Ring gets sacrificed for the item.
+Like all choices, it is up to you. The \gameItem{Frontier Phasers} and the
+\gameItem{Cobaltine Power Glove} require \gameItem{Powerpaks} for use
+however. If you've imported your party from Bane of the Cosmic Forge, you
+probably have the \gameItem{Diamond Ring} which can open another one. The
+\gameItem{Light Sword} and the \gameItem{Power Glove} get bonuses when
+fighting against robots like the \monster{Battle Droid} (but not against
+\monster{Savant Androids}). Be warned that when you use the \gameItem{Diamond
+  Ring} to grab an item, the Ring gets sacrificed for the item.
 
 \faqentry{Anything special I should do with \npc{Dame Ke-Li}?}
 
 You mean besides buy all those nice, wonderful things she's selling?
-Yeah---give her the Helazoid Pennant you got from \npc{Jan-Ette} if you helped
-\npc{Jan-Ette}. Other than that, she's the perfect person to have fun using the
-Five Fingered Discount. Just don't get caught.
+Yeah---give her the \gameItem{Helazoid Pendant} you got from \npc{Jan-Ette}
+if you helped \npc{Jan-Ette}. Other than that, she's the perfect person to
+have fun using the Five Fingered Discount. Just don't get caught.
 
-\faqentry{What exactly does that PK Crystal do?}
+\faqentry{What exactly does that \gameItem{PK Crystal} do?}
 
 −4~AC bonus, Regen~+1, Psionic Resistance +50\%, usable only by
 \class{Psionic}s.
 
-\faqentry{What are the answers to the tests in the Hall of Crusaders?}
+\faqentry{What are the answers to the tests in the \place{Hall of Crusaders}?}
 
 The first one is very obvious if you've been paying attention during the
 game! The second one requires help from the \qmwordqm{STAR} Map and the
@@ -5489,12 +5511,13 @@ Speak the answer to the first test.
 Search the place, like any other group of nosy adventurers would.  Don't stop
 searching until the game keeps you from searching!
 
-\faqentry{Where can I get more Powerpaks, other than killing lots of Helazoids?}
+\faqentry{Where can I get more \gameItem{Powerpaks}, other than killing lots of Helazoids?}
 
-Buy those Credit Cards from \npc{Dame Ke-Li} and use them in a machine in the
-Storage Facility---the machine gives out Powerpaks for Credits. If you really
-have to make money at this point, you \emph{can} keep getting Powerpaks and
-then selling them to \npc{Paluke}---or anyone other than \npc{Dame Ke-Li}.
+Buy those \gameItem{Credit Cards} from \npc{Dame Ke-Li} and use them in a
+machine in the Storage Facility---the machine gives out \gameItem{Powerpaks}
+for Credits. If you really have to make money at this point, you \emph{can}
+keep getting \gameItem{Powerpaks} and then selling them to \npc{Paluke}---or
+anyone other than \npc{Dame Ke-Li}.
 
 \pagebreak\subsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}\nopagebreak
@@ -5531,10 +5554,10 @@ in that pillar and then go in the other one.
 
 \faqentry{How do I open the gate to the \place{Hall of the Past}?}
 
-Do you have the \qmwordqm{LEGEND} map? It's also called the Gaelin Legend.
-Funny, there's a stone in the same area called the \place{Gaelin Stone}. I
-wonder if there's a connection\ldots{}maybe you can use the map on the stone
-somewhere.
+Do you have the \qmwordqm{LEGEND} map? It's also called the \gameItem{Gaelin
+  Legend}.  Funny, there's a stone in the same area called the \place{Gaelin
+  Stone}. I wonder if there's a connection\ldots{}maybe you can use the map
+on the stone somewhere.
 
 \faqentry{These !@\#@! chests here hurt! Is there any reason to open them?
   The loot I'm getting sucks!}
@@ -5547,7 +5570,7 @@ best items, weapons, and armor in the game. You're going to be here for
 at it, visit \url{http://www.softwarespecialties.com/} and thank the guy
 (Llevram that is) if you did look for his hard work. \verb|:)|
 
-\faqentry{I want to kill the Gorrors! Can't you suggest anything?}
+\faqentry{I want to kill the \monster{Gorrors}! Can't you suggest anything?}
 
 Well, let's see\ldots{}besides always cast \spell{Enchanted Blade},
 \spell{Armorplate}, and \spell{Magic Screen} before the fight (except for
@@ -5597,17 +5620,17 @@ distracted by my summoned help, and refreshed the Cloud spells
 constantly. Eventually (after 4 hours) he croaked.
 
 Another suggestion I saw on the Software Specialties board is to equip
-someone who can't hide with the Necromantic Helm, Bat Necklace or another
-Light-resisting item like the Helazoid Pendant, and have him take all the
-\spell{Dazzling Lights} hits; \spell{Dazzling Lights} will go straight for
-the character if he's the only one visible, but with 100\% so Light
-resistance + \spell{Magic Screen}, you should be able to resist it and shrug
-it off.  This is because if everyone is invisible and the Beast casts
-\spell{Dazzling Lights} at you (because you had someone visible in the
-beginning of the round), it is more likely to hit everyone with the Lights.
-Trying with an average level party of around 30th so level is extremely
-difficult; once you get your party to around (or over) 100th level however,
-the Beast stops becoming so invulnerable.
+someone who can't hide with the \gameItem{Necromantic Helm}, \gameItem{Bat
+  Necklace} or another Light-resisting item like the \gameItem{Helazoid
+  Pendant}, and have him take all the \spell{Dazzling Lights} hits;
+\spell{Dazzling Lights} will go straight for the character if he's the only
+one visible, but with 100\% so Light resistance + \spell{Magic Screen}, you
+should be able to resist it and shrug it off.  This is because if everyone is
+invisible and the Beast casts \spell{Dazzling Lights} at you (because you had
+someone visible in the beginning of the round), it is more likely to hit
+everyone with the Lights.  Trying with an average level party of around 30th
+so level is extremely difficult; once you get your party to around (or over)
+100th level however, the Beast stops becoming so invulnerable.
 
 
 \pagebreak\subsection{\place{Hall of the Past}}\label{hall-of-the-past}\nopagebreak
@@ -5640,14 +5663,14 @@ want \spell{Dispel Undead}, \spell{Astral Gate}, \spell{Fire
 earlier. If you didn't use them before, you're definitely going to be using
 them here eventually. The only exception is probably
 \spell{Asphyxiation}--most things in here aren't affected by it. Bring lots
-of Moser's Mojo Tea your first time through, as well as Heavy
+of \gameItem{Moser's Mojo Tea} your first time through, as well as Heavy
 Heal\fshyp{}Stamina potions. Don't settle for the weaker stuff by this point.
 
 \faqentry{There's a fountain there that I keep getting teleported away from!}
 
-You'll need to find the Key of Waters and open a gate elsewhere that opens
-into the same room. As long as you avoid the teleporter spot, you'll be able
-to drink from the fountain. It restores mana only.
+You'll need to find the \gameItem{Key of Waters} and open a gate elsewhere
+that opens into the same room. As long as you avoid the teleporter spot,
+you'll be able to drink from the fountain. It restores mana only.
 
 \faqentry{What's with these crystals?}
 
@@ -5657,7 +5680,7 @@ Just so you know: if you get it wrong, when you step in the pentagram it will
 open up a passageway to the left. When you're right it will open up a passage
 to the right instead.
 
-\faqentry{Great, I've found the Star map. How exactly do I use it?}
+\faqentry{Great, I've found the \gameItem{Star Map}. How exactly do I use it?}
 
 \begin{quoting}%
   Look first at a man, and if thee looks rightly, then soon shall ye come
@@ -5670,11 +5693,11 @@ That's the actual lines in the map that you're interesting in. If you've
 copied down the buttons from the \nth{2} test, great. If you haven't, they're
 Serpent, Gate, Wand, Pyramid, Star, Dragon, Cross, Skull, Map. Start at the
 side with a Man symbol, look for one of the buttons in that group of symbols
-(the Temple Map) and write it down. Move to the next face on the right side
-of the stone (in other words, circle the stone counterclockwise) repeating
-the same thing but using the top section only. Once you're back on the side
-with the Man, do the same thing for the bottom row. The buttons will fall
-into place.
+(the \gameItem{Temple Map}) and write it down. Move to the next face on the
+right side of the stone (in other words, circle the stone counterclockwise)
+repeating the same thing but using the top section only. Once you're back on
+the side with the Man, do the same thing for the bottom row. The buttons will
+fall into place.
 
 \pagebreak\subsection{\place{Tomb of the Astral Dominae}}\label{tomb-of-the-astral-dominae}\nopagebreak
 %
@@ -5707,10 +5730,10 @@ the floor and step on them. This will take you all over the map. After
 you have stepped in all those marked spaces, the gate will automatically
 open.
 
-\faqentry{Hey! Is the Astral Dominae gone?}
+\faqentry{Hey! Is the \npc{Astral Dominae} gone?}
 
-No. Just signal Vitalia to come on down and give her the Ring of the Globe
-and the Locket of the Tomb.
+No. Just signal \npc{Vitalia} to come on down and give her the \gameItem{Ring
+  of the Globe} and the \gameItem{Locket of the Tomb}.
 
 \faqentry{Huh? Where did I get the Locket from?}
 
@@ -5722,21 +5745,22 @@ solving the \qmwordqm{CRYPT} map\ldots{}right?
 Did you finish the Great Test in \place{City of Sky} and completely search the
 shuttle?
 
-\faqentry{And while we're baffled, how the heck do we signal Vitalia?}
+\faqentry{And while we're baffled, how the heck do we signal \npc{Vitalia}?}
 
 You \emph{did} visit the \place{Forbidden Zone} in \place{New City} after
 getting that strange information from the Savant Berserker and the
 \place{Observation Center} in \place{Nyctalinth} and the Comm-Link
 Device\ldots{}didn't you?
 
-\faqentry{Why does the Dark Savant keep wiping the floor with my party?}
+\faqentry{Why does the \npc{Dark Savant} keep wiping the floor with my party?}
 
-You're just unlucky. \texttt{:(} Still, you can use the Elysiad in this
-fight, and this fight only. Personally, I didn't really need it. The Mystery
-Ray was helpful too, at least on the Kui'sa-ka. Hope you have 100 Mind
-Control by the way: they \textlcsc{LOVE} \class{Psionic}s.
+You're just unlucky. \texttt{:(} Still, you can use the \gameItem{Elysiad} in
+this fight, and this fight only. Personally, I didn't really need it. The
+\gameItem{Mystery Ray} was helpful too, at least on the
+\monster{Kui'sa-ka}. Hope you have 100 Mind Control by the way: they
+\textlcsc{LOVE} \class{Psionic}s.
 
-\faqentry{Why does Vitalia ask me about a spaceship?}
+\faqentry{Why does \npc{Vitalia} ask me about a spaceship?}
 
 This decides what endings you can get. Yes means that you have to go to
 Phoonzang's shuttle to grab an ending. No means you go back to the
@@ -5771,21 +5795,21 @@ Here are all I know of:%
   P{0.25\linewidth-\tabcolsep}
   p{0.2\linewidth-\tabcolsep}
   P{0.55\linewidth-\tabcolsep}@{}} \toprule
-Poet's Lute & Sleep & Most bards start with it. \\[1.2ex]
-Angel's Tongue & \spell{Bless} & Buy/steal from \npc{Brother TShober} when you first meet him. \\[1.2ex]
-Chromatic Lyre & Itching Skin & \place{Land of Dreams}. \\[1.2ex]
-Lute of Sloth & Slow & Search the area where you summoned \monster{Maa-Gogg} the \monsterB{Man~O'~Grove}{Man O' Grove} for a chest. \\[1.2ex]
-Silent Lyre & Silence & \place{Dionysceus}, in the Book of Immortals chest. \\[1.2ex]
-Pipes of Doom & Terror & Buy\fshyp{}steal from \npc{Blienmeis} at Ratskells in \place{Rattkin Ruins} when he is in Ratskells. \\[1.2ex]
-Cornu of Demonspawn & \spell{Astral Gate} & Kill \WviiSPAWN{} \\[1.2ex]
-Siren's Wail & Confuse & \place{Dragon Mountains}, in the pirate chest or a Gorrors chest. \\[1.2ex]
-Horn of Prometheus & \spell{Fireball} & Gorrors chest or a certain \place{Hall of Past} chest. \\[1.2ex]
-Lyre of Cakes & Healthfull\footnotemark{} & A certain \place{Hall of Past} chest---you choose between this and the Horn of Prometheus. \\ \bottomrule
+\gameItem{Poet's Lute} & Sleep & Most bards start with it. \\[1.2ex]
+\gameItem{Angel's Tongue} & \spell{Bless} & Buy/steal from \npc{Brother TShober} when you first meet him. \\[1.2ex]
+\gameItem{Chromatic Lyre} & Itching Skin & \place{Land of Dreams}. \\[1.2ex]
+\gameItem{Lute of Sloth} & Slow & Search the area where you summoned \monster{Maa-Gogg} the \monsterB{Man~O'~Grove}{Man O' Grove} for a chest. \\[1.2ex]
+\gameItem{Silent Lyre} & Silence & \place{Dionysceus}, in the \gameItem{Book of Immortals} chest. \\[1.2ex]
+\gameItem{Pipes of Doom} & Terror & Buy\fshyp{}steal from \npc{Blienmeis} at \place{Ratskells} in \place{Rattkin Ruins} when he is in \place{Ratskells}. \\[1.2ex]
+\gameItem{Cornu of Demonspawn} & \spell{Astral Gate} & Kill \WviiSPAWN{} \\[1.2ex]
+\gameItem{Siren's Wail} & Confuse & \place{Dragon Mountains}, in the pirate chest or a Gorrors chest. \\[1.2ex]
+\gameItem{Horn of Prometheus} & \spell{Fireball} & Gorrors chest or a certain \place{Hall of Past} chest. \\[1.2ex]
+\gameItem{Lyre of Cakes} & Healthfull\footnotemark{} & A certain \place{Hall of Past} chest---you choose between this and the \gameItem{Horn of Prometheus}. \\ \bottomrule
 \end{longtable}
 
-\footnotetext{Lyre of Cakes has been proven to not give back your health. People
-  have theorized that it instead acts like a mass version Cure Lesser
-  Condition.}
+\footnotetext{\gameItem{Lyre of Cakes} has been proven to not give back your health. People
+  have theorized that it instead acts like a mass version \spell{Cure Lesser
+  Condition}.}
 
 \faqentry{Where are the items that give me personal skills?}
 
@@ -5798,38 +5822,39 @@ practicing will learn the skill.
 
 \paragraph{Snakespeed} Get the 5 flowers as \npc{Xen Xheng} asked and merge them
 together Use a Holy Water to merge with the White Dahlia before merging the
-Dahlia with the other 4 merged flowers. Only one person can get this.
+\gameItem{Dahlia} with the other 4 merged flowers. Only one person can get this.
 
 \paragraph{Reflextion} Ask \npc{Blienmeis} about ``Reflextion'' when he is in
-Ratskells. He will offer to sell you a Ring of Reflextion for 12000 gold.
-Use the Ring's special ability to give the character using it
-Reflextion. Only one character\fshyp{}game can get this.
+\place{Ratskells}. He will offer to sell you a \gameItem{Ring of Reflextion}
+for 12000 gold.  Use the Ring's special ability to give the character using
+it Reflextion. Only one character\fshyp{}game can get this.
 
-\paragraph{Power Strike} Use the Gem of Power's special ability to give the
-character using it Power Strike. The Gem of Power is located in the secret
-room in Murkato's \place{Inner Sanctum}. Only one character\fshyp{}game can
-get this.
-
-\paragraph{Eagle Eye} Rescue \npc{Jan-Ette} from the \monster{T'Rang
-  Assassins}. Give the Helazoid Pennant she gives you to \npc{Dame Ke-Li} at
-\place{City of Sky} for the Helazoid Pendant. Use the Pendant's special
-ability to give the character using it Eagle Eye. Only one
+\paragraph{Power Strike} Use the \gameItem{Gem of Power}'s special ability to
+give the character using it Power Strike. The \gameItem{Gem of Power} is
+located in the secret room in Murkato's \place{Inner Sanctum}. Only one
 character\fshyp{}game can get this.
 
-\paragraph{Mind Control} Kill the Psi-Beast(s) on the \place{Temple of
+\paragraph{Eagle Eye} Rescue \npc{Jan-Ette} from the \monster{T'Rang
+  Assassins}. Give the \gameItem{Helazoid Pendant} she gives you to \npc{Dame
+  Ke-Li} at \place{City of Sky} for the \gameItem{Helazoid Pendant}. Use the
+Pendant's special ability to give the character using it Eagle Eye. Only one
+character\fshyp{}game can get this.
+
+\paragraph{Mind Control} Kill the \monster{Psi-Beast}(s) on the \place{Temple of
   Eternal Night} level of \place{Dionysceus} and return to the room the Danes
 were in on the same level to meditate. Anyone who doesn't fall asleep gains a
 point in the skill.
 
-\faqentry{Can I get the other items in the Hall of Preservation?}
+\faqentry{Can I get the other items in the \place{Hall of Preservation}?}
 
 As far as I know, the answer is no if you didn't import a party from Bane of
-the Cosmic Forge. The Diamond Ring you get in Bane of the Cosmic Forge can
-open up the doors as well, although like the Key of Light it goes away when
-you use it---which means you have to decide whether the item inside is worth
-losing a −5~AC accessory that females can use. In my opinion, the Cobaltine
-Power Glove, the Light Shield, and the Light Sword are all worth it, but not
-the Frontier Phasers.
+the Cosmic Forge. The \gameItem{Diamond Ring} you get in Bane of the Cosmic
+Forge can open up the doors as well, although like the \gameItem{Key of
+  Light} it goes away when you use it---which means you have to decide
+whether the item inside is worth losing a −5~AC accessory that females can
+use. In my opinion, the \gameItem{Cobaltine Power Glove}, the \gameItem{Light
+  Shield}, and the \gameItem{Light Sword} are all worth it, but not the
+\gameItem{Frontier Phasers}.
 
 \faqentry{What do the wandering NPCs sell?}
 
@@ -5837,22 +5862,22 @@ the Frontier Phasers.
 \item \npc{Lord Galiere} and \npc{King Ulgar}
   \begin{itemize}
     \tightlist
-    \item Spear
-    \item Awl Pike
-    \item Spear+2 (rarely or only in the beginning of the game)
-    \item Quilt Tunic (sometimes)
-    \item Quilt Leggings (sometimes)
-    \item Fur Leggings (sometimes)
-    \item Cuir Gauntlets (sometimes)
-    \item Leather Cuirass (sometimes)
-    \item Studded Hauberk (sometimes)
+    \item \gameItem{Spear}
+    \item \gameItem{Awl Pike}
+    \item \gameItem{Spear+2} (rarely or only in the beginning of the game)
+    \item \gameItem{Quilt Tunic} (sometimes)
+    \item \gameItem{Quilt Leggings} (sometimes)
+    \item \gameItem{Fur Leggings} (sometimes)
+    \item \gameItem{Cuir Gauntlets} (sometimes)
+    \item \gameItem{Leather Cuirass} (sometimes)
+    \item \gameItem{Studded Hauberk} (sometimes)
   \end{itemize}
 
 \item \npc{Capt.~Boerigard}
   \begin{itemize}
     \tightlist
-    \item Spear+2
-    \item Studded Hauberk
+    \item \gameItem{Spear+2}
+    \item \gameItem{Studded Hauberk}
   \end{itemize}
 
 \item \npc{Brother TShober}
@@ -5866,19 +5891,19 @@ the Frontier Phasers.
 \item \npc{Xen Xheng}
   \begin{itemize}
     \tightlist
-    \item Sai (sometimes)
-    \item Nunchukas (sometimes)
-    \item Ninjato (sometimes)
-    \item Shuriken (15)
-    \item Bushido Blade (higher levels)
-    \item Do-Maru (U)
-    \item Do-Maru (L)
-    \item Tosei-do (U) (higher levels)
-    \item Tosei-do (L) (higher levels)
-    \item Ninja Cowl\protect\tikzmark{xen-xheng-topbrace}
-    \item Ninja Garb (U)
-    \item Ninja Garb (L)
-    \item Tabi Boots\tikzmark{xen-xheng-bottombrace}
+    \item \gameItem{Sai} (sometimes)
+    \item \gameItem{Nunchuku} (sometimes)
+    \item \gameItem{Ninjato} (sometimes)
+    \item \gameItem{Shuriken} (15)
+    \item \gameItem{Bushido Blade} (higher levels)
+    \item \gameItem{Do-Maru (U)}
+    \item \gameItem{Do-Maru (L)}
+    \item \gameItem{Tosei-do (U)} (higher levels)
+    \item \gameItem{Tosei-do (L)} (higher levels)
+    \item \gameItem{Ninja Cowl}\protect\tikzmark{xen-xheng-topbrace}
+    \item \gameItem{Ninja Garb~(U)}
+    \item \gameItem{Ninja Garb~(L)}
+    \item \gameItem{Tabi Boots}\tikzmark{xen-xheng-bottombrace}
       \begin{tikzpicture}[overlay, remember picture]
         \draw [decoration={brace,amplitude=0.5em},decorate,ultra thick,black]
         let \p1=(xen-xheng-topbrace), \p2=(xen-xheng-bottombrace) in
@@ -5889,10 +5914,10 @@ the Frontier Phasers.
 \item \npc{Kymas Turan}
   \begin{itemize}
     \tightlist
-    \item Mitre
-    \item Brimstone Nuggets
-    \item Ju-ju Stones (sometimes)
-    \item Dragon's Teeth (sometimes)
+    \item \gameItem{Mitre}
+    \item \gameItem{Brimstone Nuggets}
+    \item \gameItem{Ju-ju Stones} (sometimes)
+    \item \gameItem{Dragon's Teeth} (sometimes)
     \item Random scroll
     \item Random scroll
     \item Random scroll (sometimes)
@@ -5903,15 +5928,15 @@ the Frontier Phasers.
 \item All Umpani NPCs
   \begin{itemize}
     \tightlist
-    \item Powder and Shot (25) (sometimes)
-    \item Walriblade (sometimes)
-    \item Flak Vest (sometimes)
+    \item \gameItem{Powder and Shot} (25) (sometimes)
+    \item \gameItem{Walriblade} (sometimes)
+    \item \gameItem{Flak Vest} (sometimes)
   \end{itemize}
 
 \item All T'Rang NPCs
   \begin{itemize}
     \tightlist
-    \item ??? (I think nothing, but possibly Shock Rod)
+    \item ??? (I think nothing, but possibly \gameItem{Shock Rod})
   \end{itemize}
 
 \item All Rattkin NPCs
@@ -5924,8 +5949,8 @@ the Frontier Phasers.
 \item \npc{Jan-Ette}
   \begin{itemize}
     \tightlist
-    \item Credit Card (most of the time)
-    \item Powerpak (sometimes)
+    \item \gameItem{Credit Card} (most of the time)
+    \item \gameItem{Powerpak} (sometimes)
   \end{itemize}
 \end{twocolumnitemize}
 
@@ -5939,26 +5964,26 @@ get items better than what you should normally be getting if you go
 \textlcsc{ASAP}:
 
 \paragraph{\place{Orkogre Castle}} Try to get into the \place{Armory}
-early. (You have to get in anyway.) Leather and Studded Hauberks may be
-helpful as well as the bows and the occasional naginata or halberd.
+early. (You have to get in anyway.) Leather and \gameItem{Studded Hauberks}
+may be helpful as well as the bows and the occasional naginata or halberd.
 
 \paragraph{\place{Eryn River}} After meeting \npc{Brother TShober}, take the
 first path you see on the left, and follow it to the first place with water
 that you see Save, and swim north---you'll need 30 swimming however. Follow
 the path to the end; the giant battle at the end is a doozy for a weak party.
-When you open the chest there though, you will get a Crusaders's 2H Axe~+1,
-Bracers of Defense, Chain Mail~+1 (U), Chain Mail~+1 (L), and a Crusader Helm
-as well as gold.
+When you open the chest there though, you will get a \gameItem{Crusaders's 2H
+  Axe~+1}, \gameItem{Bracers of Defense}, \gameItem{Chain Mail~+1 (U)},
+\gameItem{Chain Mail~+1 (L)}, and a \gameItem{Crusader Helm} as well as gold.
 
 \paragraph{\place{Giant Cave}} You can get here early by exploring the
 \place{Eryn River} map (The same map that you meet \npc{Brother TShober} the
 first time) and locating the path that leads to the \place{Witch Mountains}
 area. You should max out your swimming however. When you enter, crack open
-the Journey Map Kit and as west and south as possible (you may have to
-explore the entire west area) until you both hit water and can't go west
-anymore. Now, if you have some area effect spells like \spell{Fireball} handy
-and lots of Water points for Stamina spells (or lots Stamina potions), look
-at the area this way.
+the \gameItem{Journey Map Kit} and as west and south as possible (you may
+have to explore the entire west area) until you both hit water and can't go
+west anymore. Now, if you have some area effect spells like \spell{Fireball}
+handy and lots of Water points for Stamina spells (or lots Stamina potions),
+look at the area this way.
 
 You should be facing south, with a wall to your right, part of the passageway
 to your left, and water in front of you and to the left in front of the other
@@ -6021,7 +6046,7 @@ Several places:
 
 \paragraph{\place{New City}} In the \place{Control Center}, stick the Black
 Wafer instead of the Control Card in the slot to summon \monster{Savant
-  Guards} and Troopers.
+  Guards} and \monsterB{Troopers}{Savant Troopers}.
 
 \paragraph{\place{Orkogre Castle}} In the area below the prison; you must
 step in the square you fall in to respawn.
@@ -6105,34 +6130,37 @@ Quite a bit actually. Your starting equipment and low level equipment for
 sure. As for other, more powerful things, it depends on the type of item.
 
 \paragraph{Armor} Anything you can buy in \place{New City} should transfer.
-Also, Chamail and Chain Mail+1 will transfer.  Nothing else that you find in
-the last several areas of the game appear to transfer though, so far,
-although the Wizard's Cone should transfer.
+Also, \gameItem{Chamail} and \gameItem{Chain Mail+1} will transfer.  Nothing
+else that you find in the last several areas of the game appear to transfer
+though, so far, although the \gameItem{Wizard's Cone} should transfer.
 
 \paragraph{Weapons} All Bows, Arrows, Crossbows, Quarrels, Slings, and Sling
-Bullets appear to transfer, no matter what kind, with exception to the Siege
-Arbalest.  Any weapon you can buy in the \place{New City} area when you
-initially enter the area also appears to transfer, but not later equipment
-like Vorpal Blades.  Also, Stun Rods transfer and are \textlcsc{HEAVILY}
-suggested as they do rather obscene amounts of damage for a low level party
-Although I don't have one on a transferring party, the Spear+2 should most
-likely transfer as well.  The Mystery Ray transfers and goes from a weapon
-that only hurts Savant Androids to a weapon that can hurt anything.
-Strangely enough, Powder and Shots will transfer, but not Muskets or the
-Blunderbuss.  Any Shuriken will transfer, so if you have Death Stars, you
-keep them.
+Bullets appear to transfer, no matter what kind, with exception to the
+\gameItem{Siege Arbalest}.  Any weapon you can buy in the \place{New City}
+area when you initially enter the area also appears to transfer, but not
+later equipment like \gameItem{Vorpal Blades}.  Also, \gameItem{Stun Rods}
+transfer and are \textlcsc{HEAVILY} suggested as they do rather obscene
+amounts of damage for a low level party. Although I don't have one on a
+transferring party, the \gameItem{Spear+2} should most likely transfer as
+well.  The \gameItem{Mystery Ray} transfers and goes from a weapon that only
+hurts \monster{Savant Androids} to a weapon that can hurt anything.
+Strangely enough, \gameItem{Powder and Shot} will transfer, but not
+\gameItem{Muskets} or the \gameItem{Blunderbuss}.  Any \gameItem{Shuriken}
+will transfer, so if you have \gameItem{Death Stars}, you keep them.
 
-\paragraph{Miscellaneous} All reagents transfer.  The Book of Relics
-transfers The Valentine Necklace and Storage Key are supposed to transfer
-according to “myrddin” on the Software Specialties Wizardry~8 forum.  Bat
-Necklaces transfer.  Scrolls, Wands, and Potions transfer (even Moser's Mojo
-Tea!).  Mana Stones transfer.  Cross of Protection apparently transfers,
-according to Scronan of the Ironworks Wizardry~8 board.
+\paragraph{Miscellaneous} All reagents transfer.  The \gameItem{Book of
+  Relics} transfers The \gameItem{Valentine Necklace} and \gameItem{Storage
+  Key} are supposed to transfer according to “myrddin” on the Software
+Specialties Wizardry~8 forum.  \gameItem{Bat Necklaces} transfer.  Scrolls,
+Wands, and Potions transfer (even Moser's Mojo Tea!).  Mana Stones transfer.
+Cross of Protection apparently transfers, according to Scronan of the
+Ironworks Wizardry~8 board.
 
-\paragraph{Bardic Instruments} Poet's Lute, Angel's Tongue, Chromatic Lyre,
-Siren's Wail, Cornu of Demonspawn, and Lute of Sloth will transfer.
+\paragraph{Bardic Instruments} \gameItem{Poet's Lute}, \gameItem{Angel's
+  Tongue}, \gameItem{Chromatic Lyre}, \gameItem{Siren's Wail},
+\gameItem{Cornu of Demonspawn}, and \gameItem{Lute of Sloth} will transfer.
 
-\paragraph{What definitely does not transfer} Any of the good Gorrors
+\paragraph{What definitely does not transfer} Any of the good \monster{Gorrors}
 treasure.
 
 \faqentry{Do all items transfer automatically?}
@@ -6292,5 +6320,7 @@ questions get asked pertaining to the game (but not technical stuff)
 \printindex[places]
 
 \printindex[spells]
+
+\printindex[items]
 
 \end{document}
