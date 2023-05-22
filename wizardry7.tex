@@ -123,6 +123,7 @@ contents={%
 \DeclareRobustCommand{\spell}[1]{\texorpdfstring{#1\indexSpell{#1}}{#1}}
 \DeclareRobustCommand{\indexPlace}[1]{\index[places]{#1}}
 \DeclareRobustCommand{\place}[1]{\texorpdfstring{#1\indexPlace{#1}}{#1}}
+\DeclareRobustCommand{\placeB}[2]{\texorpdfstring{#1\indexPlace{#2}}{#1}}
 \DeclareRobustCommand{\indexRace}[1]{\index{#1}}
 \DeclareRobustCommand{\race}[1]{\texorpdfstring{#1\indexRace{#1}}{#1}}
 \DeclareRobustCommand{\indexClass}[1]{\index{#1}}
@@ -137,6 +138,7 @@ contents={%
 \DeclareRobustCommand{\npc}[1]{\texorpdfstring{#1\indexNpc{#1}}{#1}}
 \DeclareRobustCommand{\indexGameItem}[1]{\index[items]{#1}}
 \DeclareRobustCommand{\gameItem}[1]{\texorpdfstring{#1\indexGameItem{#1}}{#1}}
+\DeclareRobustCommand{\gameItemB}[2]{\texorpdfstring{#1\indexGameItem{#2}}{#1}}
 
 %\makeatother
 
@@ -230,7 +232,7 @@ to whatever your request is is no---never assume that I will automatically
 answer yes. Usage of this document without my permission violates copyright
 laws, no matter what you say. For an interesting essay on copyright myths by
 Brad Templeton, take a look at
-\url{http://www.templetons.com/brad/copymyths.html} and read to your heart's
+\url{https://www.templetons.com/brad/copymyths.html} and read to your heart's
 content.
 
 \section{\texorpdfstring{A little ``getting to know you'' stuff and
@@ -255,12 +257,12 @@ on the Galaxynet IRC server as ``Rava'' or ``Ravashack'' on weekdays---just
 login to \url{http://www.galaxynet.org} with a browser or use mIRC to connect
 to a Galaxynet server.
 
-Minor updates such as spelling errors, typos, site additions, etc.\ will
-be habitually done at \url{http://www.gamefaqs.com}. Major updates (such
-as adding a new section or changing the format of the document) will be
-done to all the sites that have this FAQ\ldots{}or at least the
-administrator of the site or whoever it is that manages the FAQs will be
-notified of the update.
+Minor updates such as spelling errors, typos, site additions, etc.\ will be
+habitually done at \url{https://gamefaqs.gamespot.com/}. Major updates (such
+as adding a new section or changing the format of the document) will be done
+to all the sites that have this FAQ\ldots{}or at least the administrator of
+the site or whoever it is that manages the FAQs will be notified of the
+update.
 
 Emails asking about cheat codes, editors or about games I have not
 written a FAQ about will go under the Block Sender list and be ignored
@@ -293,10 +295,10 @@ for putting up with me ever since I joined
 Sir-Tech Canada, for trying to get Wizardry~8 done even though they are
 having difficulties. I know you guys will find a way\ldots{}
 
-D.W. Bradley, for being the brains behind the game. He's working with a
+D.W.\ Bradley, for being the brains behind the game. He's working with a
 different company on a game similar in view to Dark Savant. If you liked
-Crusaders of the Dark Savant, you'll probably like his upcoming game as
-it seems similar. Try visiting \url{http://www.heuristicpark.com}.
+Crusaders of the Dark Savant, you'll probably like his upcoming game as it
+seems similar. Try visiting \url{http://www.heuristicpark.com}.
 (Unfortunately it is quite buggy\ldots{})
 
 DSimpson a.k.a.\ ManyMoose, a GameFAQs FAQ writer, for unconsciously
@@ -3269,10 +3271,11 @@ a killing machine, as most of the mobile NPCs tend to stalk you.
 \item
   If you're not wearing it, chances are you don't need to be lugging it
   around if it isn't a key item or a restorative item. Sell what you don't
-  want, or drop it if you want it around just in case (Thesminster Abbey in
-  \place{New City} is a good place to drop items as it is often used and
-  rather large). Try not to drop \textlcsc{TOO} many items however---there is
-  a set amount of items that can be dropped in each map area.
+  want, or drop it if you want it around just in case (\place{Thesminster
+    Abbey} in \place{New City} is a good place to drop items as it is often
+  used and rather large). Try not to drop \textlcsc{TOO} many items
+  however---there is a set amount of items that can be dropped in each map
+  area.
 \item
   Avoid overloading your characters. When their carrying capacity score
   changes color from grey, their equipment is heavy enough to affect their
@@ -3533,11 +3536,11 @@ devils\ldots{}
 \faqentry{What is that sign in the \place{Condemned Area}?}
 
 It's a way into \place{Old City}. You'll figure out how to get in after you
-help \npc{Barlone} in the \place{Rattkin Ruins}' Funhouse with a favor. Maybe
-\npc{Professor Wunderland} was the friend he was speaking of---after all, he
-\textlcsc{IS} a Rattkin, and he \textlcsc{IS} interested in \place{Old
-  City}. Perhaps mentioning the place \npc{Barlone} mentioned will help jog his
-memory.
+help \npc{Barlone} in the \place{Rattkin Ruins}' \placeB{Funhouse}{Rattkin
+  Funhouse} with a favor. Maybe \npc{Professor Wunderland} was the friend he
+was speaking of---after all, he \textlcsc{IS} a Rattkin, and he \textlcsc{IS}
+interested in \place{Old City}. Perhaps mentioning the place \npc{Barlone}
+mentioned will help jog his memory.
 
 \faqentry{What's the \gameItem{Book of Fables} for? I managed to sneak past
   the \monster{Savant Android} guarding it with my fastest character.}
@@ -4155,7 +4158,7 @@ said you wanted guidance, and followed his directions and the subsequent
 directions from \npc{Brother TShober}. Otherwise, this is a dead end for you.
 
 \faqentry{Is there something special about that middle area in
-  \place{Munkharama} with Phoonzang's statue?}
+  \place{Munkharama} with \npc{Phoonzang}'s statue?}
 
 Read the \qmwordqm{TEMPLE} map for hints. I hope you have decent swimming (at
 least 20) to at least get to the middle area!  Hope your Scouting is decently
@@ -4760,20 +4763,22 @@ meet him---you might get something stolen along the way! I've had key items
 stolen this way before, so remember to save\fshyp{}restore until either
 nothing is stolen or an item you don't care about gets stolen.
 
-\faqentry{How do I get in the Funhouse?}
+\faqentry{How do I get in the \placeB{Funhouse}{Rattkin Funhouse}?}
 
-Ask \npc{Blienmeis} about ``Funhouse''. Oh, and have 1000 gold before you do.
+Ask \npc{Blienmeis} about ``\placeB{Funhouse}{Rattkin Funhouse}''. Oh, and
+have 1000 gold before you do.
 
-\faqentry{What do I do in the Funhouse?}
+\faqentry{What do I do in the \placeB{Funhouse}{Rattkin Funhouse}?}
 
 You're going to be setting up a lot of things. You \textlcsc{need} a
 \spell{Detect Secret} or a good amount of scouting skill in here---especially
 after going downstairs---or you won't be able to find the necessary items
 needed to set up the place. You need various items found throughout the
-Funhouse and a \gameItem{Feather Weight} potion from Birdie's store. Don't
-forget the \gameItem{Black Pyramid} and the \gameItem{Wooden Dowel} from
-upstairs! After you've set everything up, save, use the \gameItem{Feather
-  Weight} potion (but on the main screen!) and set things off.
+\placeB{Funhouse}{Rattkin Funhouse} and a \gameItem{Feather Weight} potion
+from Birdie's store. Don't forget the \gameItem{Black Pyramid} and the
+\gameItem{Wooden Dowel} from upstairs! After you've set everything up, save,
+use the \gameItem{Feather Weight} potion (but on the main screen!) and set
+things off.
 
 \faqentry{What does \npc{Barlone} want?}
 
@@ -4797,7 +4802,8 @@ when you meet them and then come back here to \npc{Barlone}.
 Otherwise\ldots{}there's no way to find out. One of CODS' great
 mysteries. \verb|:)| Think of it as an incentive to get here fast.
 
-\faqentry{Aack! There's \textlcsc{more}? When does this ``Funhouse'' end?!?}
+\faqentry{Aack! There's \textlcsc{more}? When does this
+  ``\placeB{Funhouse}{Rattkin Funhouse}'' end?!?}
 
 Not for a while. Have fun scrambling and trying to piece things out.  If
 you're \textlcsc{REALLY} stuck on things, the Walkthrough at GameFAQs written
@@ -4927,9 +4933,9 @@ at least he won't be trying to hunt you down unless you kill T'Rang NPCs
 \faqentry{Should I go back to \place{Nyctalinth} after talking to
   \npc{Shritis} instead of going into \place{New City}?}
 
-Yes, unless you got the information from \npc{Barlone} already---if you did you
-should head for Professor Wunderland and the entrance to \place{Old City} to
-get the \qmwordqm{DRAGON} map quickly before someone steals it.
+Yes, unless you got the information from \npc{Barlone} already---if you did
+you should head for \npc{Professor Wunderland} and the entrance to \place{Old
+  City} to get the \qmwordqm{DRAGON} map quickly before someone steals it.
 
 \faqentry{Why don't these \gameItem{Finger Rods} work on the \place{Breeding
     Grounds} door?}
@@ -4953,10 +4959,10 @@ near the end of the game and those \monster{Savant Berserkers} you wake up.
 
 You betcha. Take a walk into the \place{Forbidden Zone} after you're bored of
 \place{Nyctalinth}. Make sure you have the \gameItem{Comm-Link Device} from
-the Umpani Detache first though. BTW, if you helping \npc{Barlone}, I hope
-you remembered to look for the \gameItem{TX-Coder} in the \place{Observation
-  Center}. Otherwise you won't be able to read the logbook. Told you to build
-up scouting!
+the \place{Umpani Detache} first though. BTW, if you helping \npc{Barlone}, I
+hope you remembered to look for the \gameItem{TX-Coder} in the
+\place{Observation Center}. Otherwise you won't be able to read the
+logbook. Told you to build up scouting!
 
 \faqentry{What do I do in the \place{Graveyard}? All I see are lots of
   graves, a building, and two alcoves with a psycho ghost who steals a
@@ -4966,16 +4972,17 @@ Well, you \textlcsc{have} to do three things: You have to grab the
 \gameItem{Longstem Spade} in the chest in the building here---it's going to
 be your shovel and you're going grave robbing! \verb|:)| You also have to dig
 out the grave of Notera Furmi (Not Firm) to get out of here. Lastly, you have
-to get the \qmwordqm{SERPENT} map from the Tomb of Vilet Kanebe behind the
-energy barrier, and that means getting that \gameItem{Crux of Crossing} away
-from the crazy ghost and equipping the cursed (literally) staff on someone
-while going through the barrier---both in and out. That also means that
-you're going to be in the graveyard at least twice---you need a little idol
-called the ``\gameItem{Tydnab Emyt}''\footnote{Time Bandit backwards with y's for i's}
-which can only be found in the middle area of \place{Nyctalinth}--if you took
-out your Journey Map kit and looked at that big black spot in the middle of
-the map, you'd find it somewhere in the middle of that. Unfortunately you
-have to go through the graveyard to get there.
+to get the \qmwordqm{SERPENT} map from the \place{Tomb of Vilet Kanebe}
+behind the energy barrier, and that means getting that \gameItem{Crux of
+  Crossing} away from the crazy ghost and equipping the cursed (literally)
+staff on someone while going through the barrier---both in and out. That also
+means that you're going to be in the graveyard at least twice---you need a
+little idol called the ``\gameItem{Tydnab Emyt}''\footnote{Time Bandit
+  backwards with y's for i's} which can only be found in the middle area of
+\place{Nyctalinth}--if you took out your Journey Map kit and looked at that
+big black spot in the middle of the map, you'd find it somewhere in the
+middle of that. Unfortunately you have to go through the graveyard to get
+there.
 
 \faqentry{Help! I've fallen and can't get up!}
 
@@ -4997,7 +5004,7 @@ can't avoid it if you insist on using this route as the way out.
 
 \faqentry{I'm in the middle area now. So where exactly is the Tydnab Emyt?}
 
-It's beneath a statue of Phoonzang. (What a surprise\ldots{}) Use the
+It's beneath a statue of \npc{Phoonzang}. (What a surprise\ldots{}) Use the
 \gameItem{Spade} to dig it up after you deal with the undead waiting in
 ambush where the statue is.
 
@@ -5166,8 +5173,8 @@ hour comment from the \gameItem{Book of Fables}? That's right---you need to
 explore around at night. If you find the area here that gives your characters
 the chill, stay out of the clearing, rest until night, and then go back in
 with the \gameItem{Necromantic Helm} equipped. Too bad nothing seems to
-really hint that the Necromantic Helm is the ``witching glass''. You can also
-find the \gameItem{White Dahlia} in this area.
+really hint that the \gameItem{Necromantic Helm} is the ``witching
+glass''. You can also find the \gameItem{White Dahlia} in this area.
 
 \pagebreak\subsection{\place{Witch Cave}}\label{witch-cave}\nopagebreak
 %
@@ -5197,7 +5204,7 @@ find the \gameItem{White Dahlia} in this area.
 Yes. Sorry. That means you need 4000 gold here\ldots{}not that you're in the
 poorhouse at this point in the game anyway.
 
-\faqentry{What exactly is this Elysiad of Divinity?}
+\faqentry{What exactly is this \gameItem{Elysiad of Divinity}?}
 
 It is for the Final Boss fight. I'll mention which fight it is when you get
 there. Basically, stick it on your toughest character---when it is used it
@@ -5519,10 +5526,10 @@ searching until the game keeps you from searching!
 \faqentry{Where can I get more \gameItem{Powerpaks}, other than killing lots of Helazoids?}
 
 Buy those \gameItem{Credit Card}s from \npc{Dame Ke-Li} and use them in a
-machine in the Storage Facility---the machine gives out \gameItem{Powerpaks}
-for Credits. If you really have to make money at this point, you \emph{can}
-keep getting \gameItem{Powerpaks} and then selling them to \npc{Paluke}---or
-anyone other than \npc{Dame Ke-Li}.
+machine in the \place{Storage Facility}---the machine gives out
+\gameItem{Powerpaks} for Credits. If you really have to make money at this
+point, you \emph{can} keep getting \gameItem{Powerpaks} and then selling them
+to \npc{Paluke}---or anyone other than \npc{Dame Ke-Li}.
 
 \pagebreak\subsection{\place{Hall of Gorrors} (in the \place{Isle of
     Crypts})}\label{hall-of-gorrors-in-the-isle-of-crypts}\nopagebreak
@@ -5725,8 +5732,8 @@ fall into place.
 Liberal use of \spell{Magic Screen}, \spell{Fire Shield}, and \spell{Ice
   Shield} will dampen the damage from the cannons. Can't do squat about the
 lasers other than kill the darn things as fast as possible, although
-\spell{Missile Shield} may deflect them. The Light Sword and Power Glove will
-do double damage to these guys though.
+\spell{Missile Shield} may deflect them. The \gameItem{Light Sword} and
+\gameItem{Power Glove} will do double damage to these guys though.
 
 \faqentry{How do I open the tomb?}
 
@@ -5753,24 +5760,24 @@ shuttle?
 \faqentry{And while we're baffled, how the heck do we signal \npc{Vitalia}?}
 
 You \emph{did} visit the \place{Forbidden Zone} in \place{New City} after
-getting that strange information from the Savant Berserker and the
-\place{Observation Center} in \place{Nyctalinth} and the Comm-Link
-Device\ldots{}didn't you?
+getting that strange information from the \monster{Savant Berserker} and the
+\place{Observation Center} in \place{Nyctalinth} and the \gameItem{Comm-Link
+  Device}\ldots{}didn't you?
 
 \faqentry{Why does the \npc{Dark Savant} keep wiping the floor with my party?}
 
-You're just unlucky. \texttt{:(} Still, you can use the \gameItem{Elysiad} in
-this fight, and this fight only. Personally, I didn't really need it. The
-\gameItem{Mystery Ray} was helpful too, at least on the
-\monster{Kui'sa-ka}. Hope you have 100 Mind Control by the way: they
-\textlcsc{LOVE} \class{Psionic}s.
+You're just unlucky. \texttt{:(} Still, you can use the
+\gameItemB{Elysiad}{Elysiad of Divinity} in this fight, and this fight
+only. Personally, I didn't really need it. The \gameItem{Mystery Ray} was
+helpful too, at least on the \monster{Kui'sa-ka}. Hope you have 100 Mind
+Control by the way: they \textlcsc{LOVE} \class{Psionic}s.
 
 \faqentry{Why does \npc{Vitalia} ask me about a spaceship?}
 
 This decides what endings you can get. Yes means that you have to go to
-Phoonzang's shuttle to grab an ending. No means you go back to the
+\npc{Phoonzang}'s shuttle to grab an ending. No means you go back to the
 \place{Forbidden Zone} for the endings, although I didn't have problems
-getting an ending from Phoonzang's shuttle as well by saying no.
+getting an ending from \npc{Phoonzang}'s shuttle as well by saying no.
 
 Various other possible questions:
 
@@ -6009,37 +6016,39 @@ walk into the room to fight \monster{Pirannha Sharks}, which are tougher
 After you've (hopefully) successfully dealt with them, go forward until you
 hit the wall (you should be facing east now), turn right, take a step forward
 in the water, turn left (facing east again) and you'll see a treasure chest.
-Go in and get your Plate Mail~+2 (both upper and lower) and some random loot.
-Reload the loot until you see some weapon you like---I like the Cat~O'~9
-Tails, but some may like the Vulcan Hammer or Sword of Fire.
+Go in and get your \gameItem{Plate Mail~+2} (both upper and lower) and some
+random loot.  Reload the loot until you see some weapon you like---I like the
+\gameItem{Cat~O'~9 Tails}, but some may like the \gameItem{Vulcan Hammer} or
+\gameItem{Sword of Fire}.
 
 \paragraph{\place{Nyctalinth}} In the underground area, if you explore past
 the Western Gas Pocket Area, you will eventually find a path that leads to an
 encounter with \monsterB{Cave Thraxes}{Cave Thraxe}, but starts with some
 text. After you fry those bugs, if you go to the northeast corner of the room
-and search, you'll find a Broadsword~+1 and random loot. Reload until you get
-something you like, which may include a Dragon Kite.
+and search, you'll find a \gameItem{Broadsword~+1} and random loot. Reload
+until you get something you like, which may include a Dragon Kite.
 
 \paragraph{\place{Rattkin Funhouse}} After you do \npc{Barlone} a favor, if
 \npc{Ratsputin} is still alive you can run into him and he will demand that
 you pay dues that are 20\% of your current amount of gold. Pay at least once,
 then return to \npc{Barlone}---he will offer you his treasure trove and a
-Displacer Cloak (you better have inventory room before talking!) for 40,000
-gold. The loot is decent and can include a Dragon Kite (again).
+\gameItem{Displacer Cloak} (you better have inventory room before talking!)
+for 40,000 gold. The loot is decent and can include a \gameItem{Dragon Kite}
+(again).
 
 \paragraph{\place{Isle of Crypts}} West area after the area with all the
 fountains contains a secret button in one of the alcoves. Press it, go in the
 passage, deal with the demon fight, and pick the chest open for a last chance
-at Chamail items, a Faerie Cap, or a Dragon Kite without wasting a spot in a
-Gorrors chest (although you might get the Dragon Kite again in the
-\place{Dragon Cave}).
+at Chamail items, a \gameItem{Faerie Cap}, or a \gameItem{Dragon Kite}
+without wasting a spot in a Gorrors chest (although you might get the Dragon
+Kite again in the \place{Dragon Cave}).
 
 Or, if you feel you are strong enough, go to the extreme southwest area of
 the map (where the Ugly Gorn Woman corpse is buried) and enter the alcove
 with the Gorn Nobleman that is directly west of her.  Save, cast preparatory
 spells, then search to fight \monster{Ungorn Daimyo} and possibly a bunch of
 \monster{Skeleton Lords}.  Defeat them for the Hi-Kane-Do (U and L), a
-Kabuto, a Bushido Blade, and a Wakizashi~+1
+\gameItem{Kabuto}, a \gameItem{Bushido Blade}, and a \gameItem{Wakizashi~+1}
 
 \faqentry{Where can I get the \gameItem{Cane of Corpus}?}
 
@@ -6073,14 +6082,14 @@ in the game, you will need an \race{Elf} fighter-type, a \race{Faerie}
 \class{Ninja}, (the following non-\race{Faerie}) \class{Samurai},
 \class{Ranger}, \class{Valkyrie}, \class{Psionic}, \class{Bishop}, and one of
 the character profession changed from a (non-\race{Faerie}) bard.  You still
-can't use the Medicine Bag, but you're not missing much from it. If you want
-to just play for fun, anything can work. If you want to get through the first
-areas quickly, you may opt for a simple party of two \class{Fighter}s, a
-\class{Mage}, a \class{Priest}, a \class{Thief}, and a \class{Bard} for
-relative speed through the initial parts. Heck, even a party of all
-\class{Ninja}s can get through the game. If all else fails, use the change
-profession button to get a class that you need at the moment once you have
-the minimum stat requirements to change into the class.
+can't use the \gameItem{Medicine Bag}, but you're not missing much from
+it. If you want to just play for fun, anything can work. If you want to get
+through the first areas quickly, you may opt for a simple party of two
+\class{Fighter}s, a \class{Mage}, a \class{Priest}, a \class{Thief}, and a
+\class{Bard} for relative speed through the initial parts. Heck, even a party
+of all \class{Ninja}s can get through the game. If all else fails, use the
+change profession button to get a class that you need at the moment once you
+have the minimum stat requirements to change into the class.
 
 \faqentry{Should I use missile weapons?}
 
@@ -6135,7 +6144,7 @@ Quite a bit actually. Your starting equipment and low level equipment for
 sure. As for other, more powerful things, it depends on the type of item.
 
 \paragraph{Armor} Anything you can buy in \place{New City} should transfer.
-Also, \gameItem{Chamail} and \gameItem{Chain Mail+1} will transfer.  Nothing
+Also, \gameItem{Chamail} and \gameItem{Chain Mail~+1} will transfer.  Nothing
 else that you find in the last several areas of the game appear to transfer
 though, so far, although the \gameItem{Wizard's Cone} should transfer.
 
@@ -6280,11 +6289,12 @@ on the top to come anytime soon.
   www.softwarespecialties.com. Just scroll down the left menu and click
   on the last link there.
 \item
-  Full color maps saved from the game (and slightly modified in cases
-  like the Funhouse where the waterslide isn't mapped). Some of these
-  are actually done, but I don't have time to go through each and every
-  single area and map everything the way it appears on the Journey Map
-  Kit, \textlcsc{AND} pass my classes I'll get too distracted.
+  Full color maps saved from the game (and slightly modified in cases like
+  the \placeB{Funhouse}{Rattkin Funhouse} where the waterslide isn't
+  mapped). Some of these are actually done, but I don't have time to go
+  through each and every single area and map everything the way it appears on
+  the Journey Map Kit, \textlcsc{AND} pass my classes I'll get too
+  distracted.
 \item
   A spoiler walkthrough. This FAQ is only a semi-spoiler and skips some
   things. The walkthrough will try to guide you on the quickest way
