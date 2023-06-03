@@ -1,0 +1,21 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "arara",
+            "command": "arara",
+            "args": [
+                "-v",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "arara",
+            "tools": [
+                "arara"
+            ]
+        }
+    ]
+}
